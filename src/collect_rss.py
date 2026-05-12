@@ -73,6 +73,7 @@ def fetch_feed(source: Dict) -> List[Dict[str, Any]]:
                 "source_name": source.get(
                     "name", getattr(feed.feed, "title", "Unknown")
                 ),
+                "language": source.get("language", "en"),
                 "published_date": _parse_date(entry),
                 "summary": summary,
                 "raw_content": "",

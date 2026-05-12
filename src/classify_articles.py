@@ -49,29 +49,69 @@ def _load_config() -> Tuple[Dict, Dict, Dict]:
 # Rule-based helpers
 # ---------------------------------------------------------------------------
 
+_CJK_RANGE = re.compile(
+    r"[　-鿿"      # CJK unified, kana, punctuation
+    r"豈-﫿"       # CJK compatibility ideographs
+    r"︰-﹏"       # CJK compatibility forms
+    r"一-鿿"       # CJK unified ideographs (main block)
+    r"぀-ヿ"       # Hiragana + Katakana
+    r"ㇰ-ㇿ]"      # Katakana phonetic extensions
+)
+
+
+def _is_cjk(text: str) -> bool:
+    """Return True if text contains CJK (Chinese / Japanese) characters."""
+    return bool(_CJK_RANGE.search(text))
+
+
 def _term_matches(text: str, terms: List[str]) -> List[str]:
-    """Return terms found in text using whole-word / phrase matching."""
+    """Return terms found in text.
+
+    Strategy:
+    - CJK terms (Chinese/Japanese): simple substring match — no word boundaries
+      exist in CJK scripts, so regex \\b would fail silently.
+    - Latin/German terms: word-boundary regex for single words; substring for phrases.
+    All matching is case-insensitive for the Latin portion.
+    """
     text_lower = text.lower()
     matched = []
     for term in terms:
-        # Use word-boundary regex for single-word terms, simple containment for phrases
-        pattern = re.escape(term.lower())
-        if " " in term or any(c in term for c in ("+", "/", ".")):
-            if pattern.replace(r"\ ", " ") in text_lower or term.lower() in text_lower:
+        term_lower = term.lower()
+        if _is_cjk(term):
+            # CJK: substring match is correct (no spaces between words)
+            if term in text or term_lower in text_lower:
+                matched.append(term)
+        elif " " in term or any(c in term for c in ("+", "/", ".")):
+            # Multi-word Latin/German phrase: simple containment
+            if term_lower in text_lower:
                 matched.append(term)
         else:
+            # Single Latin/German word: word-boundary regex
+            pattern = re.escape(term_lower)
             if re.search(r"(?<!\w)" + pattern + r"(?!\w)", text_lower):
                 matched.append(term)
     return matched
 
 
 def _extract_industries(text: str, domain_map: Dict[str, List[str]]) -> List[str]:
-    """Detect industry domains via domain marker words."""
+    """Detect industry domains via domain marker words.
+
+    Uses simple substring matching for all languages — this already handles CJK
+    correctly since Chinese/Japanese markers are CJK strings that appear verbatim
+    in the text without surrounding spaces.
+    """
     detected = []
     text_lower = text.lower()
     for industry, markers in domain_map.items():
-        if any(m.lower() in text_lower for m in markers):
-            detected.append(industry)
+        for m in markers:
+            # CJK markers: match verbatim; Latin markers: case-insensitive lower
+            if _is_cjk(m):
+                if m in text:
+                    detected.append(industry)
+                    break
+            elif m.lower() in text_lower:
+                detected.append(industry)
+                break
     return detected
 
 

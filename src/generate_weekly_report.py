@@ -71,6 +71,14 @@ def _build_weak_signals(articles: List[Dict]) -> List[Dict]:
 # Section formatters
 # ---------------------------------------------------------------------------
 
+_LANG_FLAGS = {"en": "🇬🇧 EN", "de": "🇩🇪 DE", "zh": "🇨🇳 ZH", "ja": "🇯🇵 JA"}
+
+
+def _lang_tag(article: Dict) -> str:
+    lang = str(article.get("language", "en")).lower()
+    return _LANG_FLAGS.get(lang, lang.upper())
+
+
 def _format_signal_entry(article: Dict) -> str:
     cls = _get_classification(article)
     score = article.get("relevance_score", 0)
@@ -85,9 +93,10 @@ def _format_signal_entry(article: Dict) -> str:
     action = article.get("recommended_action", "watch")
     source = article.get("source_name", "Unknown")
     pub_date = str(article.get("published_date", ""))[:10]
+    lang = _lang_tag(article)
 
     lines = [
-        f"### {title}",
+        f"### {title}  `{lang}`",
         f"- **Development:** {summary}",
         f"- **Companies involved:** {companies}",
         f"- **Region:** {regions}",
@@ -400,11 +409,13 @@ def _html_signal_card(article: Dict) -> str:
     source = _h(article.get("source_name", "Unknown"))
     pub_date = _h(str(article.get("published_date", ""))[:10])
     url = article.get("url", "")
+    lang = _lang_tag(article)
     conf_class = {"high": "b-high", "medium": "b-med"}.get(confidence, "b-low")
     url_html = f'<a href="{_h(url)}" target="_blank">{_h(url[:80])}</a>' if url else "N/A"
     return f"""
 <div class="card">
   <h3>{title}</h3>
+  <span class="badge b-low" style="background:#e8eaf0;color:#555">{lang}</span>
   <span class="badge {conf_class}">{confidence} confidence</span>
   <span class="score">{score:.1f}/10</span>
   <dl style="margin-top:10px;">

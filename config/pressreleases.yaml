@@ -132,3 +132,87 @@ sources:
     reliability: 0.7
     regions: ["global"]
     industries: ["automotive", "software_defined_vehicle", "embedded"]
+
+  # === Google News — Chinese language (ZH) ===
+
+  - name: "GNews ZH: 机器人安全"
+    query: "机器人 安全 功能安全"
+    lang: "zh-CN"
+    country: "CN"
+    language: "zh"
+    category: "technical"
+    reliability: 0.65
+    regions: ["china", "asia"]
+    industries: ["robotics", "functional_safety", "ai"]
+
+  - name: "GNews ZH: 自动驾驶安全"
+    query: "自动驾驶 安全 感知"
+    lang: "zh-CN"
+    country: "CN"
+    language: "zh"
+    category: "automotive"
+    reliability: 0.65
+    regions: ["china", "asia"]
+    industries: ["adas", "automotive", "functional_safety"]
+
+  - name: "GNews ZH: 人形机器人"
+    query: "人形机器人 具身智能"
+    lang: "zh-CN"
+    country: "CN"
+    language: "zh"
+    category: "robotics"
+    reliability: 0.65
+    regions: ["china", "asia"]
+    industries: ["robotics", "ai", "embedded"]
+
+  - name: "GNews ZH: 嵌入式AI汽车"
+    query: "嵌入式AI 智能汽车 芯片安全"
+    lang: "zh-CN"
+    country: "CN"
+    language: "zh"
+    category: "embedded"
+    reliability: 0.65
+    regions: ["china", "asia"]
+    industries: ["embedded", "automotive", "ai"]
+
+  # === Google News — Japanese language (JA) ===
+
+  - name: "GNews JA: ロボット安全"
+    query: "ロボット 安全 機能安全"
+    lang: "ja"
+    country: "JP"
+    language: "ja"
+    category: "technical"
+    reliability: 0.68
+    regions: ["japan", "asia"]
+    industries: ["robotics", "functional_safety", "ai"]
+
+  - name: "GNews JA: 自動運転安全"
+    query: "自動運転 安全 認識システム"
+    lang: "ja"
+    country: "JP"
+    language: "ja"
+    category: "automotive"
+    reliability: 0.68
+    regions: ["japan", "asia"]
+    industries: ["adas", "automotive", "functional_safety"]
+
+  - name: "GNews JA: 組み込みAI"
+    query: "組み込み AI 自動車 安全"
+    lang: "ja"
+    country: "JP"
+    language: "ja"
+    category: "embedded"
+    reliability: 0.68
+    regions: ["japan", "asia"]
+    industries: ["embedded", "automotive", "ai"]
+
+  - name: "GNews JA: 人型ロボット"
+    query: "人型ロボット ヒューマノイド 安全"
+    lang: "ja"
+    country: "JP"
+    language: "ja"
+    category: "robotics"
+    reliability: 0.68
+    regions: ["japan", "asia"]
+    industries: ["robotics", "ai", "embedded"]

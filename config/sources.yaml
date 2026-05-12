@@ -244,3 +244,79 @@ feeds:
     reliability: 0.7
     regions: ["japan", "asia"]
     industries: ["automotive", "embedded", "functional_safety"]
+
+  # === Chinese-language sources (ZH) ===
+
+  - name: "量子位 Qbitai"
+    url: "https://www.qbitai.com/rss"
+    category: "tech_news"
+    language: "zh"
+    reliability: 0.72
+    regions: ["china", "asia"]
+    industries: ["ai", "robotics", "automotive"]
+
+  - name: "雷锋网 Leiphone"
+    url: "https://www.leiphone.com/feed"
+    category: "tech_news"
+    language: "zh"
+    reliability: 0.70
+    regions: ["china", "asia"]
+    industries: ["ai", "robotics", "embedded"]
+
+  - name: "36氪 36Kr"
+    url: "https://36kr.com/feed"
+    category: "tech_news"
+    language: "zh"
+    reliability: 0.68
+    regions: ["china", "asia"]
+    industries: ["ai", "automotive", "robotics"]
+
+  - name: "极客公园 Geekpark"
+    url: "https://www.geekpark.net/rss"
+    category: "tech_news"
+    language: "zh"
+    reliability: 0.68
+    regions: ["china", "asia"]
+    industries: ["ai", "automotive", "robotics"]
+
+  - name: "钛媒体 TMTpost"
+    url: "https://www.tmtpost.com/rss"
+    category: "tech_news"
+    language: "zh"
+    reliability: 0.65
+    regions: ["china", "asia"]
+    industries: ["ai", "automotive"]
+
+  # === Japanese-language sources (JA) ===
+
+  - name: "Response.jp"
+    url: "https://response.jp/rss/index.rdf"
+    category: "automotive"
+    language: "ja"
+    reliability: 0.78
+    regions: ["japan", "asia"]
+    industries: ["automotive", "adas", "software_defined_vehicle"]
+
+  - name: "Robonable"
+    url: "https://www.robonable.jp/rss/"
+    category: "robotics"
+    language: "ja"
+    reliability: 0.75
+    regions: ["japan", "asia"]
+    industries: ["robotics", "ai", "embedded"]
+
+  - name: "自動運転Lab"
+    url: "https://jidounten-lab.com/feed"
+    category: "automotive"
+    language: "ja"
+    reliability: 0.72
+    regions: ["japan", "asia"]
+    industries: ["adas", "automotive", "ai"]
+
+  - name: "ITmedia AI+"
+    url: "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
+    category: "tech_news"
+    language: "ja"
+    reliability: 0.75
+    regions: ["japan", "asia"]
+    industries: ["ai", "robotics", "automotive"]

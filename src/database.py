@@ -19,12 +19,14 @@ def init_db(db_path: Path = DB_PATH) -> None:
     """Create tables and indexes if they do not exist."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
     with get_connection(db_path) as conn:
+        # Step 1: create tables
         conn.executescript("""
             CREATE TABLE IF NOT EXISTS articles (
                 id                INTEGER PRIMARY KEY AUTOINCREMENT,
                 title             TEXT NOT NULL,
                 url               TEXT UNIQUE,
                 source_name       TEXT,
+                language          TEXT DEFAULT 'en',
                 published_date    TEXT,
                 summary           TEXT,
                 raw_content       TEXT,
@@ -43,13 +45,21 @@ def init_db(db_path: Path = DB_PATH) -> None:
                 filepath    TEXT,
                 created_at  TEXT DEFAULT (datetime('now'))
             );
-
+        """)
+        # Step 2: migrate existing databases that pre-date the language column
+        existing = {row[1] for row in conn.execute("PRAGMA table_info(articles)")}
+        if "language" not in existing:
+            conn.execute("ALTER TABLE articles ADD COLUMN language TEXT DEFAULT 'en'")
+        # Step 3: create indexes (after migration so language column is guaranteed present)
+        conn.executescript("""
             CREATE INDEX IF NOT EXISTS idx_articles_published
                 ON articles(published_date);
             CREATE INDEX IF NOT EXISTS idx_articles_score
                 ON articles(relevance_score);
             CREATE INDEX IF NOT EXISTS idx_articles_signal
                 ON articles(signal_strength);
+            CREATE INDEX IF NOT EXISTS idx_articles_language
+                ON articles(language);
         """)
 
 
@@ -59,12 +69,13 @@ def insert_article(article: Dict[str, Any], db_path: Path = DB_PATH) -> Optional
         try:
             cursor = conn.execute(
                 """INSERT INTO articles
-                   (title, url, source_name, published_date, summary, raw_content)
-                   VALUES (?, ?, ?, ?, ?, ?)""",
+                   (title, url, source_name, language, published_date, summary, raw_content)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
                 (
                     article.get("title", ""),
                     article.get("url", ""),
                     article.get("source_name", ""),
+                    article.get("language", "en"),
                     article.get("published_date", ""),
                     article.get("summary", ""),
                     article.get("raw_content", ""),

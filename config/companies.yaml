@@ -34,31 +34,39 @@ companies:
       region: ["usa", "global"]
       tier: 1
     - name: "Toyota"
-      aliases: ["Toyota Motor"]
+      aliases: ["Toyota Motor", "トヨタ", "丰田"]
       region: ["japan", "global"]
       tier: 1
     - name: "Honda"
-      aliases: ["Honda Motor"]
+      aliases: ["Honda Motor", "ホンダ", "本田"]
+      region: ["japan", "global"]
+      tier: 2
+    - name: "Denso"
+      aliases: ["デンソー", "电装"]
+      region: ["japan", "global"]
+      tier: 1
+    - name: "Nissan"
+      aliases: ["日産", "日产"]
       region: ["japan", "global"]
       tier: 2
     - name: "Hyundai"
-      aliases: ["Hyundai Motor"]
+      aliases: ["Hyundai Motor", "현대"]
       region: ["korea", "global"]
       tier: 2
     - name: "BYD"
-      aliases: []
+      aliases: ["比亚迪"]
       region: ["china", "global"]
       tier: 2
     - name: "Geely"
-      aliases: []
+      aliases: ["吉利"]
       region: ["china", "global"]
       tier: 2
     - name: "NIO"
-      aliases: []
+      aliases: ["蔚来"]
       region: ["china", "global"]
       tier: 2
     - name: "XPeng"
-      aliases: ["XPEV"]
+      aliases: ["XPEV", "小鹏"]
       region: ["china", "global"]
       tier: 2
 
@@ -80,11 +88,11 @@ companies:
       region: ["usa"]
       tier: 2
     - name: "Unitree"
-      aliases: ["Unitree Robotics"]
+      aliases: ["Unitree Robotics", "宇树科技", "宇树"]
       region: ["china"]
       tier: 2
     - name: "UBTech"
-      aliases: ["UBTECH"]
+      aliases: ["UBTECH", "优必选"]
       region: ["china"]
       tier: 2
     - name: "ABB Robotics"
@@ -92,19 +100,19 @@ companies:
       region: ["europe", "global"]
       tier: 2
     - name: "KUKA"
-      aliases: []
+      aliases: ["库卡"]
       region: ["germany", "europe"]
       tier: 2
     - name: "FANUC"
-      aliases: []
+      aliases: ["ファナック", "发那科"]
       region: ["japan", "global"]
       tier: 2
     - name: "Yaskawa"
-      aliases: ["Yaskawa Electric"]
+      aliases: ["Yaskawa Electric", "安川電機", "安川电机"]
       region: ["japan", "global"]
       tier: 2
     - name: "Kawasaki Robotics"
-      aliases: ["Kawasaki"]
+      aliases: ["Kawasaki", "川崎重工"]
       region: ["japan", "global"]
       tier: 2
 
@@ -150,11 +158,11 @@ companies:
       region: ["usa", "global"]
       tier: 2
     - name: "Huawei"
-      aliases: []
+      aliases: ["华为"]
       region: ["china", "global"]
       tier: 2
     - name: "Baidu"
-      aliases: []
+      aliases: ["百度"]
       region: ["china", "global"]
       tier: 2
     - name: "Dassault Systèmes"

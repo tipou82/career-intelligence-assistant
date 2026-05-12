@@ -77,6 +77,7 @@ def _fetch_source(source: Dict) -> List[Dict[str, Any]]:
             "title": getattr(entry, "title", "").strip(),
             "url": getattr(entry, "link", ""),
             "source_name": source["name"],
+            "language": source.get("language", "en"),
             "published_date": _parse_date(entry),
             "summary": _strip_html(raw)[:2000],
             "raw_content": "",

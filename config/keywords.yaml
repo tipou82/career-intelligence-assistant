@@ -31,6 +31,22 @@ industries:
       - "EV"
       - "electric vehicle"
       - "charging"
+      # German
+      - "Fahrzeug"
+      - "Automobil"
+      - "Elektrofahrzeug"
+      - "Antrieb"
+      # Chinese
+      - "汽车"
+      - "新能源汽车"
+      - "电动汽车"
+      - "电动车"
+      - "整车"
+      # Japanese
+      - "自動車"
+      - "電気自動車"
+      - "EV車"
+      - "乗用車"
     robotics:
       - "robot"
       - "humanoid"
@@ -39,6 +55,23 @@ industries:
       - "exoskeleton"
       - "legged"
       - "bipedal"
+      # German
+      - "Roboter"
+      - "humanoider Roboter"
+      - "Industrieroboter"
+      # Chinese
+      - "机器人"
+      - "人形机器人"
+      - "工业机器人"
+      - "协作机器人"
+      - "仿人机器人"
+      - "宇树"
+      # Japanese
+      - "ロボット"
+      - "ヒューマノイド"
+      - "人型ロボット"
+      - "産業用ロボット"
+      - "協働ロボット"
     adas:
       - "ADAS"
       - "autonomous"
@@ -49,6 +82,21 @@ industries:
       - "level 3"
       - "level 4"
       - "HAD"
+      # German
+      - "autonomes Fahren"
+      - "Fahrerassistenz"
+      - "automatisiertes Fahren"
+      # Chinese
+      - "自动驾驶"
+      - "辅助驾驶"
+      - "智能驾驶"
+      - "无人驾驶"
+      - "感知系统"
+      # Japanese
+      - "自動運転"
+      - "運転支援"
+      - "先進運転支援"
+      - "自律走行"
     functional_safety:
       - "functional safety"
       - "ISO 26262"
@@ -60,6 +108,20 @@ industries:
       - "FMEA"
       - "FTA"
       - "HARA"
+      # German
+      - "Funktionale Sicherheit"
+      - "Sicherheitskonzept"
+      - "sicherheitskritisch"
+      # Chinese
+      - "功能安全"
+      - "安全完整性"
+      - "失效安全"
+      - "安全标准"
+      # Japanese
+      - "機能安全"
+      - "安全完全性"
+      - "フェールセーフ"
+      - "安全規格"
     embedded:
       - "embedded"
       - "RTOS"
@@ -69,6 +131,21 @@ industries:
       - "SoC"
       - "firmware"
       - "real-time"
+      # German
+      - "eingebettet"
+      - "Echtzeitsystem"
+      - "Mikrocontroller"
+      # Chinese
+      - "嵌入式"
+      - "芯片"
+      - "微控制器"
+      - "实时系统"
+      - "固件"
+      # Japanese
+      - "組み込み"
+      - "マイコン"
+      - "リアルタイム"
+      - "ファームウェア"
     ai:
       - "artificial intelligence"
       - "machine learning"
@@ -78,6 +155,24 @@ industries:
       - "foundation model"
       - "large language model"
       - "generative AI"
+      # German
+      - "künstliche Intelligenz"
+      - "maschinelles Lernen"
+      - "neuronales Netz"
+      # Chinese
+      - "人工智能"
+      - "大模型"
+      - "机器学习"
+      - "深度学习"
+      - "神经网络"
+      - "生成式AI"
+      - "大语言模型"
+      # Japanese
+      - "人工知能"
+      - "機械学習"
+      - "深層学習"
+      - "ニューラルネットワーク"
+      - "大規模言語モデル"
     software_defined_vehicle:
       - "SDV"
       - "software-defined vehicle"
@@ -86,6 +181,19 @@ industries:
       - "vehicle software"
       - "zonal architecture"
       - "central computer"
+      # German
+      - "softwaredefiniertes Fahrzeug"
+      - "Over-the-Air"
+      - "Zonenarchitektur"
+      # Chinese
+      - "软件定义汽车"
+      - "智能网联汽车"
+      - "OTA升级"
+      - "域控制器"
+      # Japanese
+      - "ソフトウェア定義自動車"
+      - "ソフトウェア定義車両"
+      - "OTAアップデート"
     mbse:
       - "MBSE"
       - "SysML"
@@ -93,6 +201,17 @@ industries:
       - "system architecture"
       - "systems engineering"
       - "Capella"
+      # German
+      - "modellbasiert"
+      - "Systemarchitektur"
+      - "Systemtechnik"
+      # Chinese
+      - "基于模型"
+      - "系统建模"
+      - "数字孪生工程"
+      # Japanese
+      - "モデルベース"
+      - "システムアーキテクチャ"
     digital_twin:
       - "digital twin"
       - "virtual twin"
@@ -103,6 +222,19 @@ industries:
       - "SIL"
       - "CARLA"
       - "Isaac Sim"
+      # German
+      - "Digitaler Zwilling"
+      - "virtuelle Validierung"
+      - "Simulation"
+      # Chinese
+      - "数字孪生"
+      - "虚拟验证"
+      - "仿真"
+      - "联合仿真"
+      # Japanese
+      - "デジタルツイン"
+      - "バーチャル検証"
+      - "シミュレーション"
 
 regions:
   terms:
@@ -126,6 +258,38 @@ regions:
     - "beijing"
     - "shanghai"
     - "seoul"
+    # German region names
+    - "Deutschland"
+    - "München"
+    - "Stuttgart"
+    - "Wolfsburg"
+    - "Frankfurt"
+    - "Berlin"
+    # Chinese region names
+    - "中国"
+    - "德国"
+    - "日本"
+    - "美国"
+    - "韩国"
+    - "欧洲"
+    - "北京"
+    - "上海"
+    - "深圳"
+    - "东京"
+    - "硅谷"
+    - "慕尼黑"
+    # Japanese region names
+    - "ドイツ"
+    - "日本"
+    - "中国"
+    - "米国"
+    - "アメリカ"
+    - "韓国"
+    - "東京"
+    - "北京"
+    - "上海"
+    - "シリコンバレー"
+    - "ミュンヘン"
 
 technologies:
   terms:
@@ -166,6 +330,43 @@ technologies:
     - "device tree"
     - CUDA
     - "TensorRT"
+    # German technology terms
+    - "Funktionale Sicherheit"
+    - "Fehlerbaumanalyse"
+    - "Fehlereinspeisung"
+    - "Digitaler Zwilling"
+    - "autonomes Fahren"
+    - "Echtzeitsystem"
+    - "Watchdog"
+    - "Sicherheitsmechanismus"
+    # Chinese technology terms
+    - "功能安全"
+    - "故障注入"
+    - "自动驾驶"
+    - "机器学习"
+    - "深度学习"
+    - "数字孪生"
+    - "激光雷达"
+    - "传感器融合"
+    - "感知算法"
+    - "实时操作系统"
+    - "嵌入式AI"
+    - "预期功能安全"
+    - "人形机器人"
+    - "强化学习"
+    # Japanese technology terms
+    - "機能安全"
+    - "故障注入"
+    - "自動運転"
+    - "機械学習"
+    - "深層学習"
+    - "デジタルツイン"
+    - "レーザーレーダー"
+    - "センサーフュージョン"
+    - "組み込みAI"
+    - "ヒューマノイド"
+    - "強化学習"
+    - "自律走行"
 
 skills:
   terms:
@@ -209,3 +410,14 @@ noise_indicators:
   - "shopping"
   - "social media influencer"
   - "viral"
+  # Chinese noise
+  - "娱乐"
+  - "明星"
+  - "综艺"
+  - "购物"
+  - "游戏"
+  # Japanese noise
+  - "エンターテインメント"
+  - "芸能"
+  - "ショッピング"
+  - "ゲーム"
