@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Generated: 2026-05-12 13:54_
+_Generated: 2026-05-12 14:55_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **3 strong signal(s)** and **55 weak signal(s)**. Key activity in: physical_ai, automotive, adas, embedded, robotics. Notable companies: Hyundai, Figure AI, Tesla, Arm. See Section 2 for full analysis.
+Week 2026-20 produced **3 strong signal(s)** and **55 weak signal(s)**. Key activity in: automotive, embedded, physical_ai, robotics, adas. Notable companies: Figure AI, Tesla, Hyundai, Arm. See Section 2 for full analysis.
 
 ---
 
@@ -83,37 +83,59 @@ Week 2026-20 produced **3 strong signal(s)** and **55 weak signal(s)**. Key acti
 
 ## 4. Skill Priority Update
 
-| Skill | Current Priority | Change | Reason | Recommended Weekly Effort |
-|---|---|---|---|---|
-| ROS2 | high | ↑ | Signals: physical ai | 5 h |
-| C++20 and testing | high | → | No new signals this week | 4 h |
-| AI perception monitoring | high | → | No new signals this week | 3 h |
-| Fault injection and safety testing | high | → | No new signals this week | 2 h |
-| SOTIF / ISO/PAS 8800 | medium | → | No new signals this week | 1 h |
-| MBSE / SysML2 | medium | → | No new signals this week | 2 h |
-| QNX / POSIX supervisor concepts | medium | → | No new signals this week | 1 h |
-| Embedded Linux | medium | → | No new signals this week | 1 h |
-| Python automation | medium | → | No new signals this week | 1 h |
-| Digital twin / virtual validation | medium | → | No new signals this week | 1 h |
-| Technical communication (JP/DE/EN) | medium | → | No new signals this week | 1 h |
+| Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
+|---|---|---|---|---|---|---|
+| **Deep Focus** | | | | | | |
+| ROS2 | 5/5 | 5/5 | 4/5 | ↑ | Signals: physical ai | 5 h |
+| C++20 and safety logic | 5/5 | 5/5 | 5/5 | → | No new signals this week | 5 h |
+| AI perception monitoring | 5/5 | 4/5 | 5/5 | → | No new signals this week | 4 h |
+| Soft skills and interview communication | 5/5 | 5/5 | 4/5 | → | No new signals this week | 2 h |
+| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 3 h |
+| **Serious** | | | | | | |
+| Python automation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 3 h |
+| Linux practical skills | 4/5 | 4/5 | 3/5 | → | No new signals this week | 2 h |
+| ISO 13849 and CMSE | 4/5 | 4/5 | 4/5 | → | No new signals this week | 3 h |
+| SOTIF and ISO/PAS 8800 | 4/5 | 3/5 | 4/5 | → | No new signals this week | 2 h |
+| Requirements engineering and traceability | 4/5 | 3/5 | 4/5 | → | No new signals this week | 2 h |
+| **Lightweight** | | | | | | |
+| MBSE and SysML2 | 3/5 | 3/5 | 3/5 | → | No new signals this week | 2 h |
+| QNX and POSIX supervisor concepts | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
+| MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
+| Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
+| **Defer** | | | | | | |
+| Cybersecurity and safety interface | 2/5 | 1/5 | 2/5 | → | No new signals this week | 0 h |
+| Cloud and MLOps | 2/5 | 1/5 | 1/5 | → | No new signals this week | 0 h |
 
 ---
 
-## 5. Recommended Learning Plan for Next Week
+## 5. Recommended Learning Allocation for Next Week
 
-- **5 h:** Raspberry Pi / ROS2 implementation and safety-supervised nodes
-- **4 h:** C++20 safety logic, GoogleTest, address/UB sanitizers
-- **3 h:** AI monitoring: confidence thresholds, latency watchdog, stale data detection
-- **2 h:** Fault injection tests, safety mechanism validation, documentation
-- **1 h:** SOTIF concepts, ISO/PAS 8800 study, AI safety regulation monitoring
-- **2 h:** MBSE/SysML2 architecture diagrams for portfolio project (Capella or draw.io)
-- **1 h:** QNX POSIX API, process isolation, supervisor watchdog patterns
-- **1 h:** Embedded Linux kernel config, device tree, Yocto Project basics
-- **1 h:** Python tooling: automation scripts, data pipelines, CI integration
-- **1 h:** Digital twin concepts: CARLA, Isaac Sim, co-simulation architecture
-- **1 h:** Japanese/German technical vocabulary: automotive, robotics, safety standards
+**Deep Focus**
+- **6 h:** Raspberry Pi ROS2 nodes: camera, ultrasonic, decision, actuator, health — implement, test and document
+- **5 h:** C++20 StateEvaluator, HeartbeatMonitor, TimeoutChecker, PlausibilityChecker — implement with GoogleTest
+- **4 h:** Implement confidence/latency/stale-data monitoring nodes; add fault injection and degraded-mode logic
+- **2 h:** Practice 5 core interview stories: project, safety philosophy, AI trade-offs, cross-domain standards, target role
+- **3 h:** Write README, test report, architecture diagram, demo video — make portfolio externally readable
+  _(Subtotal: 20 h)_
 
-_Total: ~22 hours_
+**Serious — build steadily**
+- **3 h:** Python camera AI node, fault injection scripts, ROS2 Python nodes, data processing
+- **2 h:** SSH, processes, systemd, GPIO, fault injection via process kill, Ethernet heartbeat
+- **3 h:** Safety function definition, PL/PLr, Categories, MTTFd/DCavg/CCF, SISTEMA basics — apply to robot arm example
+- **2 h:** SOTIF concept, ODD, performance limitations, PAS 8800 overview — connect to AI camera monitoring in demo
+- **2 h:** Write Markdown requirements, YAML interfaces, traceability CSV for the demonstrator — req-to-design-to-test
+  _(Subtotal: 12 h)_
+
+**Lightweight — maintain awareness**
+- **2 h:** Draw architecture diagram (Mermaid), write safety state model, add traceability table to portfolio
+- **1 h:** Implement POSIX watchdog/supervisor on Linux; document QNX portability concept in README
+- **1 h:** Use Claude/Codex via MCP for code review, test generation, requirements drafting — document the workflow
+- **1 h:** Weekly: run pipeline, review report, update cv_skills.yaml self-ratings
+  _(Subtotal: 5 h)_
+
+**Defer**
+  _(Subtotal: 0 h)_
+_Target: 15–20 h/week. This week total: ~37 h. Adjust defer and lightweight items to stay within your available time._
 
 ---
 

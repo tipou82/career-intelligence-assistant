@@ -5,6 +5,7 @@ import pytest
 from src.generate_weekly_report import (
     _build_career_advice,
     _build_executive_summary,
+    _build_learning_allocation,
     _build_risks_section,
     _build_skill_table,
     _build_source_list,
@@ -58,14 +59,49 @@ def make_article(
     }
 
 
+# Minimal skill matrix using the new 3D format (int priority, urgency, required_depth)
 MINIMAL_SKILL_MATRIX = {
     "skills": [
-        {"name": "ROS2", "priority": "high", "weekly_hours": 5,
-         "learning_task": "ROS2 nodes on Raspberry Pi",
-         "triggers": {"increase": ["ros2", "humanoid"], "decrease": []}},
-        {"name": "C++20 and testing", "priority": "high", "weekly_hours": 4,
-         "learning_task": "C++20 safety logic and GoogleTest",
-         "triggers": {"increase": ["c++20"], "decrease": []}},
+        {
+            "name": "ROS2",
+            "priority": 5,
+            "urgency": 5,
+            "required_depth": 4,
+            "weekly_hours_baseline": 5,
+            "group": "deep_focus",
+            "learning_task": "ROS2 nodes on Raspberry Pi",
+            "triggers": {"increase": ["ros2", "humanoid", "physical ai"], "decrease": []},
+        },
+        {
+            "name": "C++20 and safety logic",
+            "priority": 5,
+            "urgency": 5,
+            "required_depth": 5,
+            "weekly_hours_baseline": 4,
+            "group": "deep_focus",
+            "learning_task": "C++20 safety logic and GoogleTest",
+            "triggers": {"increase": ["c++20", "embedded software"], "decrease": []},
+        },
+        {
+            "name": "ISO 13849 and CMSE",
+            "priority": 4,
+            "urgency": 4,
+            "required_depth": 4,
+            "weekly_hours_baseline": 3,
+            "group": "serious",
+            "learning_task": "Safety function, PLr, Categories, MTTFd/DCavg/CCF",
+            "triggers": {"increase": ["iso 13849", "performance level", "safety function"], "decrease": []},
+        },
+        {
+            "name": "MBSE and SysML2",
+            "priority": 3,
+            "urgency": 3,
+            "required_depth": 3,
+            "weekly_hours_baseline": 2,
+            "group": "lightweight",
+            "learning_task": "Mermaid diagrams and lightweight SysML2",
+            "triggers": {"increase": ["mbse", "sysml", "dassault"], "decrease": []},
+        },
     ]
 }
 
@@ -110,17 +146,23 @@ class TestSignalFiltering:
         result = _build_weak_signals(self._articles())
         assert all(a["signal_strength"] == "weak" for a in result)
 
-    def test_strong_below_threshold_excluded(self) -> None:
-        articles = [make_article(signal_strength="strong", relevance_score=5.0)]
-        assert _build_strong_signals(articles) == []
-
     def test_weak_below_threshold_excluded(self) -> None:
+        # Score 2.0 is below the weak threshold (4.5)
         articles = [make_article(signal_strength="weak", relevance_score=2.0)]
         assert _build_weak_signals(articles) == []
+
+    def test_weak_above_threshold_included(self) -> None:
+        articles = [make_article(signal_strength="weak", relevance_score=5.0)]
+        assert len(_build_weak_signals(articles)) == 1
 
     def test_empty_input_returns_empty(self) -> None:
         assert _build_strong_signals([]) == []
         assert _build_weak_signals([]) == []
+
+    def test_strong_signal_included_regardless_of_score(self) -> None:
+        # signal_strength is set by classifier; report trusts it
+        articles = [make_article(signal_strength="strong", relevance_score=6.5)]
+        assert len(_build_strong_signals(articles)) == 1
 
 
 # ---------------------------------------------------------------------------
@@ -168,22 +210,33 @@ class TestExecutiveSummary:
 
 
 # ---------------------------------------------------------------------------
-# Skill table
+# Skill table — 7-column format with 3D scoring
 # ---------------------------------------------------------------------------
 
 class TestSkillTable:
     def test_all_skills_present_in_table(self) -> None:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
         assert "ROS2" in table
-        assert "C++20 and testing" in table
+        assert "C++20 and safety logic" in table
+        assert "ISO 13849 and CMSE" in table
 
-    def test_header_row_present(self) -> None:
+    def test_header_has_three_score_columns(self) -> None:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
-        assert "Skill" in table
-        assert "Current Priority" in table
+        assert "Priority" in table
+        assert "Urgency" in table
+        assert "Req. Depth" in table
+
+    def test_scores_show_out_of_five(self) -> None:
+        table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
+        assert "5/5" in table  # ROS2 priority=5, urgency=5
+
+    def test_group_separator_rows_present(self) -> None:
+        table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
+        assert "Deep Focus" in table
+        assert "Serious" in table
+        assert "Lightweight" in table
 
     def test_trigger_causes_up_arrow(self) -> None:
-        # Article with ros2 signal should cause ROS2 row to show ↑
         article = make_article(technologies=["ros2"])
         table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
         lines = [l for l in table.splitlines() if "ROS2" in l]
@@ -193,6 +246,60 @@ class TestSkillTable:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
         lines = [l for l in table.splitlines() if "ROS2" in l]
         assert any("→" in line for line in lines)
+
+    def test_iso13849_trigger_on_machinery_article(self) -> None:
+        article = make_article(skills=["iso 13849", "performance level"])
+        table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
+        lines = [l for l in table.splitlines() if "ISO 13849" in l]
+        assert any("↑" in line for line in lines)
+
+    def test_mbse_trigger_on_dassault_article(self) -> None:
+        article = make_article(technologies=["sysml", "dassault"])
+        table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
+        lines = [l for l in table.splitlines() if "MBSE" in l]
+        assert any("↑" in line for line in lines)
+
+
+# ---------------------------------------------------------------------------
+# Learning allocation — grouped format
+# ---------------------------------------------------------------------------
+
+class TestLearningAllocation:
+    def test_contains_group_headers(self) -> None:
+        alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
+        assert "Deep Focus" in alloc
+        assert "Serious" in alloc
+
+    def test_contains_learning_tasks(self) -> None:
+        alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
+        assert "ROS2 nodes on Raspberry Pi" in alloc
+        assert "C++20 safety logic and GoogleTest" in alloc
+
+    def test_hours_shown(self) -> None:
+        alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
+        assert " h:" in alloc
+
+    def test_total_hours_shown(self) -> None:
+        alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
+        assert "h/week" in alloc or "hours" in alloc.lower()
+
+    def test_triggered_skill_gets_bonus_hour(self) -> None:
+        article = make_article(technologies=["ros2"])
+        alloc_triggered = _build_learning_allocation([article], MINIMAL_SKILL_MATRIX)
+        alloc_base = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
+        # Triggered allocation should mention more hours for ROS2 (5+1=6 vs 5)
+        assert "6 h:" in alloc_triggered
+        assert "5 h:" in alloc_base  # base is 5h without trigger
+
+    def test_skill_matrix_loading_fields(self) -> None:
+        # All required new fields must be present in MINIMAL_SKILL_MATRIX
+        for skill in MINIMAL_SKILL_MATRIX["skills"]:
+            assert "priority" in skill and isinstance(skill["priority"], int)
+            assert "urgency" in skill and isinstance(skill["urgency"], int)
+            assert "required_depth" in skill and isinstance(skill["required_depth"], int)
+            assert "weekly_hours_baseline" in skill
+            assert "group" in skill
+            assert "triggers" in skill
 
 
 # ---------------------------------------------------------------------------

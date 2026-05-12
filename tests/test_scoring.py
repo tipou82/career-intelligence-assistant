@@ -6,6 +6,7 @@ from src.score_relevance import (
     _domain_score,
     _region_score,
     _skill_score,
+    _career_impact_score,
     score_article,
 )
 
@@ -40,11 +41,16 @@ class TestDomainScore:
         assert _domain_score(make_cls()) == 0.0
 
     def test_best_industry_wins(self) -> None:
-        # robotics (1.0) beats entertainment (0.05)
         assert _domain_score(make_cls(industries=["robotics", "entertainment"])) == 1.0
 
     def test_embedded_scores_high(self) -> None:
         assert _domain_score(make_cls(industries=["embedded"])) == 0.9
+
+    def test_machinery_safety_scores_high(self) -> None:
+        assert _domain_score(make_cls(industries=["machinery_safety"])) == 0.9
+
+    def test_physical_ai_scores_high(self) -> None:
+        assert _domain_score(make_cls(industries=["physical_ai"])) == 0.9
 
 
 # ---------------------------------------------------------------------------
@@ -65,13 +71,32 @@ class TestSkillScore:
         assert _skill_score(make_cls()) == 0.0
 
     def test_best_skill_wins(self) -> None:
-        # ros2 (1.0) > embedded linux (0.8)
         assert _skill_score(make_cls(technologies=["ros2", "embedded linux"])) == 1.0
 
     def test_skills_and_technologies_combined(self) -> None:
-        # skills list also checked
-        score = _skill_score(make_cls(technologies=[], skills=["sotif"]))
+        assert _skill_score(make_cls(technologies=[], skills=["sotif"])) == 1.0
+
+    def test_iso13849_scores_high(self) -> None:
+        assert _skill_score(make_cls(skills=["iso 13849"])) == 1.0
+
+    def test_performance_level_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["performance level"]))
+        assert score >= 0.9
+
+    def test_fault_injection_scores_high(self) -> None:
+        score = _skill_score(make_cls(technologies=["fault injection"]))
+        assert score >= 0.9
+
+    def test_confidence_monitoring_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["confidence monitoring"]))
         assert score == 1.0
+
+    def test_safety_function_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["safety function"]))
+        assert score >= 0.9
+
+    def test_qnx_scores_high(self) -> None:
+        assert _skill_score(make_cls(technologies=["qnx"])) == 0.9
 
 
 # ---------------------------------------------------------------------------
@@ -95,8 +120,14 @@ class TestCompanyScore:
         assert _company_score(make_cls()) == 0.0
 
     def test_tier1_beats_tier2(self) -> None:
-        # Mix: Bosch (tier 1) and Unitree (tier 2)
         assert _company_score(make_cls(companies=["Bosch", "Unitree"])) == 1.0
+
+    def test_pilz_is_tier1(self) -> None:
+        # Pilz: key machinery safety company
+        assert _company_score(make_cls(companies=["Pilz"])) == 1.0
+
+    def test_kuka_is_tier1(self) -> None:
+        assert _company_score(make_cls(companies=["KUKA"])) == 1.0
 
 
 # ---------------------------------------------------------------------------
@@ -114,11 +145,40 @@ class TestRegionScore:
         assert _region_score(make_cls(regions=["antarctica"])) == 0.15
 
     def test_no_region_partial_credit(self) -> None:
-        # Unknown origin still gets some credit (0.3)
         assert _region_score(make_cls()) == 0.3
 
     def test_best_region_wins(self) -> None:
         assert _region_score(make_cls(regions=["germany", "antarctica"])) == 1.0
+
+
+# ---------------------------------------------------------------------------
+# Career impact score
+# ---------------------------------------------------------------------------
+
+class TestCareerImpactScore:
+    def test_robotics_ros2_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["robotics"], technologies=["ros2"])
+        assert _career_impact_score(cls) == 1.0
+
+    def test_robotics_iso13849_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["robotics"], skills=["iso 13849"])
+        assert _career_impact_score(cls) == 1.0
+
+    def test_adas_sotif_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["adas"], technologies=["sotif"])
+        assert _career_impact_score(cls) == 1.0
+
+    def test_ai_fault_injection_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["ai"], skills=["fault injection"])
+        assert _career_impact_score(cls) == 1.0
+
+    def test_generic_industry_lower_impact(self) -> None:
+        cls = make_cls(industries=["ai"])
+        assert _career_impact_score(cls) == 0.5
+
+    def test_empty_minimal_impact(self) -> None:
+        cls = make_cls()
+        assert _career_impact_score(cls) == 0.2
 
 
 # ---------------------------------------------------------------------------
@@ -172,17 +232,11 @@ class TestScoreArticle:
         assert expected <= scores.keys()
 
     def test_high_impact_pair_boosts_score(self) -> None:
-        # robotics + ros2 should trigger career_impact = 1.0
-        cls = make_cls(
-            industries=["robotics"],
-            technologies=["ros2"],
-            source_reliability=0.85,
-        )
+        cls = make_cls(industries=["robotics"], technologies=["ros2"], source_reliability=0.85)
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["career_impact"] == 10.0
 
     def test_score_capped_at_ten(self) -> None:
-        # Perfect classification across all dimensions
         cls = make_cls(
             industries=["robotics"],
             regions=["germany"],
@@ -193,3 +247,25 @@ class TestScoreArticle:
         )
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["total"] <= 10.0
+
+    def test_iso13849_machinery_robotics_scores_high(self) -> None:
+        cls = make_cls(
+            industries=["robotics"],
+            regions=["germany"],
+            companies=["Pilz"],
+            skills=["iso 13849", "safety function", "performance level"],
+            source_reliability=0.85,
+        )
+        scores = score_article(self._article, cls, {}, {}, {})
+        assert scores["total"] >= 7.0
+
+    def test_ai_monitoring_scores_high(self) -> None:
+        cls = make_cls(
+            industries=["ai", "embedded"],
+            regions=["global"],
+            technologies=["confidence monitoring", "fault injection"],
+            skills=["ai perception monitoring"],
+            source_reliability=0.8,
+        )
+        scores = score_article(self._article, cls, {}, {}, {})
+        assert scores["total"] >= 6.0

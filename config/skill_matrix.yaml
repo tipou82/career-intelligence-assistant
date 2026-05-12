@@ -1,92 +1,502 @@
-# Career skill matrix — defines current priorities and weekly effort targets.
-# priority: high | medium | low
-# weekly_hours: target hours per week (total ~15-20 h)
+# Career Skill Matrix — T-shaped profile for AI-augmented safety systems engineer
+#
+# Target positioning: "AI-augmented safety systems engineer for embedded AI / robotics / ADAS systems"
+#
+# Three dimensions per skill:
+#   priority      (1–5): long-term career leverage
+#   urgency       (1–5): importance in the next 3 months
+#   required_depth(1–5): how deep the knowledge must go for the target profile
+#
+# weekly_hours_baseline: default allocation; report may adjust based on article signals
+# category: used for grouping in the report
+# group: strategic focus group (deep_focus | serious | lightweight | defer)
+
+strategic_target: "AI-augmented safety systems engineer for embedded AI / robotics / ADAS systems"
+
+groups:
+  deep_focus:
+    label: "Deep Focus — do intensively now"
+    description: "Core T-shaped depth. These skills define the credibility of the portfolio."
+  serious:
+    label: "Serious — build steadily"
+    description: "Important supporting layer. Allocate consistent weekly time without crowding out deep focus."
+  lightweight:
+    label: "Lightweight — maintain awareness"
+    description: "Relevant but not bottleneck skills. Allocate modest time; avoid rabbit holes."
+  defer:
+    label: "Defer — revisit in 6+ months"
+    description: "Currently lower leverage than embedded AI / ROS2 / C++ safety logic."
 
 skills:
-  - name: "ROS2"
-    priority: "high"
-    weekly_hours: 5
-    learning_task: "Raspberry Pi / ROS2 implementation and safety-supervised nodes"
-    triggers:
-      increase: ["ros2", "humanoid", "physical ai", "robotics investment", "legged robot"]
-      decrease: []
 
-  - name: "C++20 and testing"
-    priority: "high"
-    weekly_hours: 4
-    learning_task: "C++20 safety logic, GoogleTest, address/UB sanitizers"
+  # ════════════════════════════════
+  # GROUP: DEEP FOCUS
+  # ════════════════════════════════
+
+  - name: "ROS2"
+    priority: 5
+    urgency: 5
+    required_depth: 4
+    category: robotics_middleware
+    group: deep_focus
+    weekly_hours_baseline: 5
+    rationale: >
+      Backbone of the Raspberry Pi safety demonstrator. Core robotics middleware for humanoid,
+      ADAS and embedded AI roles. Without running ROS2 code, the portfolio has no implementation credibility.
+    learning_task: "Raspberry Pi ROS2 nodes: camera, ultrasonic, decision, actuator, health — implement, test and document"
+    learning_tasks:
+      - "Nodes and topics (pub/sub)"
+      - "Launch files for multi-node startup"
+      - "Custom message types and QoS basics"
+      - "Lifecycle nodes for deterministic startup/shutdown"
+      - "Integration with C++ decision logic"
     triggers:
-      increase: ["c++20", "embedded software", "performance critical", "safety-critical software"]
+      increase:
+        - ros2
+        - robotics middleware
+        - humanoid robotics
+        - robotic arm
+        - physical ai
+        - robot safety
+        - legged robot
+        - robotics investment
+        - robotics hiring
+      decrease:
+        - ros2 deprecated
+        - ros1 preferred
+
+  - name: "C++20 and safety logic"
+    priority: 5
+    urgency: 5
+    required_depth: 5
+    category: safety_software
+    group: deep_focus
+    weekly_hours_baseline: 5
+    rationale: >
+      Implementation credibility for deterministic decision logic, watchdogs, timeout monitors
+      and testable safety mechanisms. C++20 with GoogleTest is the interview-ready evidence that
+      safety logic can be built and verified.
+    learning_task: "C++20 StateEvaluator, HeartbeatMonitor, TimeoutChecker, PlausibilityChecker — implement with GoogleTest"
+    learning_tasks:
+      - "enum class, strong typing, const correctness"
+      - "std::chrono for timeout and latency monitoring"
+      - "RAII for resource safety"
+      - "GoogleTest: unit tests and mocks"
+      - "CMake build system"
+      - "Address/UBSan for runtime safety checks"
+    triggers:
+      increase:
+        - c++20
+        - c++ safety
+        - embedded software
+        - safety-critical software
+        - performance critical
+        - deterministic logic
+        - real-time embedded
       decrease: []
 
   - name: "AI perception monitoring"
-    priority: "high"
-    weekly_hours: 3
-    learning_task: "AI monitoring: confidence thresholds, latency watchdog, stale data detection"
+    priority: 5
+    urgency: 4
+    required_depth: 5
+    category: ai_safety
+    group: deep_focus
+    weekly_hours_baseline: 4
+    rationale: >
+      Strongest career differentiator. Connects AI perception with deterministic safety supervision.
+      Directly addresses the gap between AI research and safety-certified embedded systems.
+    learning_task: "Implement confidence/latency/stale-data monitoring nodes; add fault injection and degraded-mode logic"
+    learning_tasks:
+      - "Confidence threshold monitoring (camera AI output)"
+      - "Latency and processing deadline monitoring"
+      - "Stale data and frame-counter checks"
+      - "False positive / false negative plausibility analysis"
+      - "Degraded mode and safe-state transition"
+      - "Fault injection: kill node, stop sensor, simulate stale data, CPU stress"
     triggers:
-      increase: ["ai perception", "adas", "sensor fusion", "embedded ai", "camera perception"]
+      increase:
+        - ai perception failure
+        - ai safety validation
+        - latency monitoring
+        - confidence monitoring
+        - sensor plausibility
+        - fault injection
+        - validation of ai systems
+        - physical ai safety
+        - embedded ai safety
+        - ai reliability
+        - ai safety automotive
+        - perception monitoring
       decrease: []
 
-  - name: "Fault injection and safety testing"
-    priority: "high"
-    weekly_hours: 2
-    learning_task: "Fault injection tests, safety mechanism validation, documentation"
+  - name: "Soft skills and interview communication"
+    priority: 5
+    urgency: 5
+    required_depth: 4
+    category: career_positioning
+    group: deep_focus
+    weekly_hours_baseline: 2
+    rationale: >
+      Technical value must be communicated clearly in interviews and career discussions.
+      Confident, structured answers for German, English and basic Japanese professional contexts.
+    learning_task: "Practice 5 core interview stories: project, safety philosophy, AI trade-offs, cross-domain standards, target role"
+    learning_tasks:
+      - "Self-introduction and project storytelling"
+      - "Trade-off explanation (deterministic vs AI-based)"
+      - "German confident professional communication"
+      - "English technical precision for international roles"
+      - "Japanese business introduction (basic)"
     triggers:
-      increase: ["functional safety", "safety testing", "iso 26262", "sotif", "asil"]
+      increase:
+        - layoffs
+        - restructuring
+        - hiring slowdown
+        - job-market competition
+        - japan adas opportunity
+        - bosch japan
+        - interview preparation
+        - talent shortage
+        - hiring boom
       decrease: []
 
-  - name: "SOTIF / ISO/PAS 8800"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "SOTIF concepts, ISO/PAS 8800 study, AI safety regulation monitoring"
+  - name: "GitHub portfolio and documentation"
+    priority: 4
+    urgency: 5
+    required_depth: 3
+    category: portfolio_visibility
+    group: deep_focus
+    weekly_hours_baseline: 3
+    rationale: >
+      Makes all engineering work visible and interview-ready. A recruiter or hiring manager
+      must be able to understand the project within 5 minutes of reading the README.
+    learning_task: "Write README, test report, architecture diagram, demo video — make portfolio externally readable"
+    learning_tasks:
+      - "Professional README with architecture diagram"
+      - "GitHub Issues as structured task tracking"
+      - "CI pipeline with automated GoogleTest run"
+      - "Markdown documentation: requirements, design, test results"
+      - "Demo video showing the system running"
     triggers:
-      increase: ["sotif", "iso/pas 8800", "ai regulation", "high-risk ai", "eu ai act"]
+      increase:
+        - portfolio importance
+        - github profile
+        - open source robotics
+        - demonstrator project
       decrease: []
 
-  - name: "MBSE / SysML2"
-    priority: "medium"
-    weekly_hours: 2
-    learning_task: "MBSE/SysML2 architecture diagrams for portfolio project (Capella or draw.io)"
-    triggers:
-      increase: ["mbse", "sysml", "dassault", "digital twin", "virtual twin", "model-based"]
-      decrease: []
-
-  - name: "QNX / POSIX supervisor concepts"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "QNX POSIX API, process isolation, supervisor watchdog patterns"
-    triggers:
-      increase: ["qnx", "embedded os", "sdv", "rtos", "software-defined vehicle", "zonal"]
-      decrease: []
-
-  - name: "Embedded Linux"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "Embedded Linux kernel config, device tree, Yocto Project basics"
-    triggers:
-      increase: ["embedded linux", "yocto", "linux kernel", "device driver", "buildroot"]
-      decrease: []
+  # ════════════════════════════════
+  # GROUP: SERIOUS
+  # ════════════════════════════════
 
   - name: "Python automation"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "Python tooling: automation scripts, data pipelines, CI integration"
+    priority: 4
+    urgency: 5
+    required_depth: 3
+    category: prototyping_automation
+    group: serious
+    weekly_hours_baseline: 3
+    rationale: >
+      Fast prototyping for camera AI nodes, fault injection scripts, log analysis and
+      career intelligence automation. Used throughout the demonstrator project.
+    learning_task: "Python camera AI node, fault injection scripts, ROS2 Python nodes, data processing"
+    learning_tasks:
+      - "Scripting and process automation"
+      - "OpenCV basics for camera input"
+      - "ROS2 Python nodes (rclpy)"
+      - "RSS/API automation (career assistant)"
+      - "Log analysis and data processing"
     triggers:
-      increase: ["python", "automation", "devops", "toolchain"]
+      increase:
+        - python robotics
+        - python automation
+        - python embedded
       decrease: []
 
-  - name: "Digital twin / virtual validation"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "Digital twin concepts: CARLA, Isaac Sim, co-simulation architecture"
+  - name: "Linux practical skills"
+    priority: 4
+    urgency: 4
+    required_depth: 3
+    category: embedded_linux
+    group: serious
+    weekly_hours_baseline: 2
+    rationale: >
+      Pi5/Linux is the runtime environment for the entire demonstrator. Needed for process
+      handling, fault injection, networking, systemd services and GPIO interaction.
+    learning_task: "SSH, processes, systemd, GPIO, fault injection via process kill, Ethernet heartbeat"
+    learning_tasks:
+      - "SSH remote development"
+      - "Process management and fault injection (kill, nice, stress-ng)"
+      - "systemd service for ROS2 autostart"
+      - "Network configuration and Ethernet heartbeat"
+      - "GPIO and peripheral access"
+      - "Logging, permissions, file system"
     triggers:
-      increase: ["digital twin", "virtual validation", "carla", "isaac sim", "dassault", "simulation"]
+      increase:
+        - embedded linux
+        - linux kernel
+        - yocto
+        - buildroot
+        - device driver
+        - embedded os
+        - linux safety
       decrease: []
 
-  - name: "Technical communication (JP/DE/EN)"
-    priority: "medium"
-    weekly_hours: 1
-    learning_task: "Japanese/German technical vocabulary: automotive, robotics, safety standards"
+  - name: "ISO 13849 and CMSE"
+    priority: 4
+    urgency: 4
+    required_depth: 4
+    category: machinery_safety
+    group: serious
+    weekly_hours_baseline: 3
+    rationale: >
+      Important for robotics and machinery safety credibility, especially with CMSE preparation.
+      Enables cross-domain arguments connecting ISO 26262 (automotive) with ISO 13849 (machinery)
+      and robotics safety functions.
+    learning_task: "Safety function definition, PL/PLr, Categories, MTTFd/DCavg/CCF, SISTEMA basics — apply to robot arm example"
+    learning_tasks:
+      - "Safety function definition and SRP/CS"
+      - "PL and PLr: risk graph and determination"
+      - "Category B, 1, 2, 3, 4 — architecture robustness"
+      - "MTTFd, DCavg and CCF — quantitative parameters"
+      - "SISTEMA basics: worked example"
+      - "ISO 13849-2 validation requirements"
+      - "Comparison: ISO 26262 / ISO 13849 / IEC 62061"
     triggers:
-      increase: ["japan", "toyota", "honda", "bosch japan", "germany", "munich", "stuttgart"]
+      increase:
+        - iso 13849
+        - machinery safety
+        - performance level
+        - pl d
+        - pl e
+        - cmse
+        - collaborative robots
+        - safety functions
+        - emergency stop
+        - protective stop
+        - functional safety machinery
+        - machinery directive
+        - eu machinery regulation
+        - robot safety function
+        - safe speed
+        - safety-rated monitored stop
+      decrease: []
+
+  - name: "SOTIF and ISO/PAS 8800"
+    priority: 4
+    urgency: 3
+    required_depth: 4
+    category: ai_adas_safety
+    group: serious
+    weekly_hours_baseline: 2
+    rationale: >
+      Key standards for AI perception limitations, ODD and AI safety in ADAS/robotics.
+      Links the user's ISO 26262 background to AI safety regulation and ADAS product development.
+    learning_task: "SOTIF concept, ODD, performance limitations, PAS 8800 overview — connect to AI camera monitoring in demo"
+    learning_tasks:
+      - "SOTIF concept and scope (intended function safety)"
+      - "Performance limitations: false positives, false negatives"
+      - "Operational Design Domain (ODD)"
+      - "Scenario-based thinking for AI perception"
+      - "AI uncertainty and data limitations"
+      - "ISO/PAS 8800 overview and key clauses"
+    triggers:
+      increase:
+        - sotif
+        - iso/pas 8800
+        - ai regulation
+        - high-risk ai
+        - ai safety automotive
+        - adas perception limitations
+        - eu ai act automotive
+        - autonomous driving safety
+        - ai safety standard
+      decrease: []
+
+  - name: "Requirements engineering and traceability"
+    priority: 4
+    urgency: 3
+    required_depth: 4
+    category: systems_engineering
+    group: serious
+    weekly_hours_baseline: 2
+    rationale: >
+      Modernizes existing requirements strength and connects safety requirements to design and
+      tests as code artifacts. Directly usable in the portfolio project.
+    learning_task: "Write Markdown requirements, YAML interfaces, traceability CSV for the demonstrator — req-to-design-to-test"
+    learning_tasks:
+      - "Markdown requirements with IDs"
+      - "YAML interface definitions"
+      - "Traceability CSV: requirement → design → test"
+      - "Requirement-to-test mapping in GoogleTest"
+      - "AI-assisted requirement review"
+    triggers:
+      increase:
+        - requirements traceability
+        - model-based requirements
+        - requirements engineering
+        - safety case
+        - assurance case
+      decrease: []
+
+  # ════════════════════════════════
+  # GROUP: LIGHTWEIGHT
+  # ════════════════════════════════
+
+  - name: "MBSE and SysML2"
+    priority: 3
+    urgency: 3
+    required_depth: 3
+    category: systems_modeling
+    group: lightweight
+    weekly_hours_baseline: 2
+    rationale: >
+      Useful for architecture documentation, traceability and Dassault/NEURA-style systems
+      engineering. Should stay lightweight — not a full MBSE toolchain. Mermaid diagrams
+      and textual SysML2 are practical starting points.
+    learning_task: "Draw architecture diagram (Mermaid), write safety state model, add traceability table to portfolio"
+    learning_tasks:
+      - "Block and interface modeling (conceptual)"
+      - "Textual SysML2 basics"
+      - "Safety state diagrams"
+      - "Requirements traceability in model form"
+      - "Mermaid diagrams for GitHub README"
+    triggers:
+      increase:
+        - mbse
+        - sysml
+        - dassault
+        - 3dexperience
+        - digital twin
+        - virtual twin
+        - virtual validation
+        - mbse robotics
+        - capella
+        - model-based
+        - digital thread
+      decrease: []
+
+  - name: "QNX and POSIX supervisor concepts"
+    priority: 3
+    urgency: 2
+    required_depth: 2
+    category: embedded_rt_os
+    group: lightweight
+    weekly_hours_baseline: 1
+    rationale: >
+      Useful differentiator for safety-oriented embedded supervision. Should not block the MVP.
+      Build Linux/POSIX supervisor first; then discuss QNX portability conceptually.
+    learning_task: "Implement POSIX watchdog/supervisor on Linux; document QNX portability concept in README"
+    learning_tasks:
+      - "QNX microkernel concept and safety properties"
+      - "POSIX APIs for process isolation and supervision"
+      - "Watchdog and supervisor process patterns"
+      - "Linux-to-QNX portability design"
+    triggers:
+      increase:
+        - qnx
+        - embedded os
+        - rtos
+        - software-defined vehicle
+        - sdv platform
+        - posix supervisor
+        - watchdog supervision
+        - embedded real-time os
+        - zonal architecture
+      decrease: []
+
+  - name: "MCP and agentic AI workflow"
+    priority: 3
+    urgency: 2
+    required_depth: 2
+    category: ai_productivity
+    group: lightweight
+    weekly_hours_baseline: 1
+    rationale: >
+      Useful productivity layer for AI-assisted engineering. Not the main technical identity.
+      Position as: "I use AI agents to accelerate engineering tasks, not as runtime safety logic."
+    learning_task: "Use Claude/Codex via MCP for code review, test generation, requirements drafting — document the workflow"
+    learning_tasks:
+      - "MCP concept and tool-augmented assistants"
+      - "Reusable AI engineering workflows"
+      - "Claude / Codex usage patterns for safety engineering"
+      - "AI-assisted test generation and code review"
+    triggers:
+      increase:
+        - mcp protocol
+        - agentic ai
+        - ai-assisted engineering
+        - llm tooling
+        - ai productivity
+      decrease: []
+
+  - name: "Career Intelligence Assistant"
+    priority: 3
+    urgency: 2
+    required_depth: 2
+    category: ai_career_strategy
+    group: lightweight
+    weekly_hours_baseline: 1
+    rationale: >
+      This tool itself. Useful side project for monitoring market signals and updating
+      priorities. Lower priority than the Raspberry Pi demonstrator.
+    learning_task: "Weekly: run pipeline, review report, update cv_skills.yaml self-ratings"
+    learning_tasks:
+      - "RSS collection and classification"
+      - "LLM classification with Claude"
+      - "Relevance scoring and signal filtering"
+      - "Weekly report generation and review"
+    triggers:
+      increase:
+        - career intelligence
+        - job market signals
+        - industry monitoring
+      decrease: []
+
+  # ════════════════════════════════
+  # GROUP: DEFER
+  # ════════════════════════════════
+
+  - name: "Cybersecurity and safety interface"
+    priority: 2
+    urgency: 1
+    required_depth: 2
+    category: safety_security_interface
+    group: defer
+    weekly_hours_baseline: 0
+    rationale: >
+      Awareness topic; not the current main focus. Relevant awareness items:
+      authenticated watchdog messages, safe vs secure, network fault vs malicious fault.
+    learning_task: "Read one overview article per month; no project investment yet"
+    learning_tasks:
+      - "Authenticated watchdog message concept"
+      - "Safety/security interaction overview"
+      - "Secure update awareness"
+    triggers:
+      increase:
+        - cybersecurity automotive
+        - iso 21434
+        - safety security interface
+        - secure boot
+        - cyber-physical safety
+      decrease: []
+
+  - name: "Cloud and MLOps"
+    priority: 2
+    urgency: 1
+    required_depth: 1
+    category: deferred
+    group: defer
+    weekly_hours_baseline: 0
+    rationale: >
+      Currently lower leverage than embedded AI, ROS2, C++ safety logic and AI monitoring.
+      Defer until the core embedded / robotics portfolio is established.
+    learning_task: "Defer — revisit after Raspberry Pi demo is complete and portfolio is published"
+    learning_tasks:
+      - "Basic cloud inference awareness"
+      - "MLOps pipeline concepts (conceptual only)"
+    triggers:
+      increase:
+        - edge mlops
+        - tinyml
+        - embedded ml deployment
       decrease: []

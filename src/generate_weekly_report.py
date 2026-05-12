@@ -106,42 +106,113 @@ def _format_signal_entry(article: Dict) -> str:
 
 
 def _build_skill_table(strong_signals: List[Dict], skill_matrix: Dict) -> str:
+    """Build the 7-column skill priority update table."""
+    # Collect all tech/skill mentions from strong signals
     tech_counts: Dict[str, int] = {}
     for article in strong_signals:
         cls = _get_classification(article)
         for item in cls.get("technologies", []) + cls.get("skills", []):
             tech_counts[item.lower()] = tech_counts.get(item.lower(), 0) + 1
 
+    # Map group → display label
+    group_labels = {
+        "deep_focus": "Deep Focus",
+        "serious": "Serious",
+        "lightweight": "Lightweight",
+        "defer": "Defer",
+    }
+
     rows: List[str] = []
+    last_group: str = ""
+
     for skill in skill_matrix.get("skills", []):
         name = skill["name"]
-        priority = skill.get("priority", "medium")
-        effort = f"{skill.get('weekly_hours', 1)} h"
+        priority = skill.get("priority", 3)
+        urgency = skill.get("urgency", 3)
+        depth = skill.get("required_depth", 3)
+        effort = f"{skill.get('weekly_hours_baseline', skill.get('weekly_hours', 1))} h"
+        group = skill.get("group", "")
+
+        # Group separator row
+        if group != last_group and group in group_labels:
+            label = group_labels[group]
+            rows.append(f"| **{label}** | | | | | | |")
+            last_group = group
+
+        # Trigger detection against tech_counts
         triggers = [t.lower() for t in skill.get("triggers", {}).get("increase", [])]
         triggered = [t for t in triggers if t in tech_counts]
+
         if triggered:
             change = "↑"
             reason = f"Signals: {', '.join(triggered[:3])}"
         else:
             change = "→"
             reason = "No new signals this week"
-        rows.append(f"| {name} | {priority} | {change} | {reason} | {effort} |")
 
-    header = "| Skill | Current Priority | Change | Reason | Recommended Weekly Effort |"
-    separator = "|---|---|---|---|---|"
+        rows.append(
+            f"| {name} | {priority}/5 | {urgency}/5 | {depth}/5 | {change} | {reason} | {effort} |"
+        )
+
+    header = "| Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |"
+    separator = "|---|---|---|---|---|---|---|"
     return "\n".join([header, separator] + rows)
 
 
-def _build_learning_plan(skill_matrix: Dict) -> str:
-    lines: List[str] = []
-    total = 0
-    for skill in skill_matrix.get("skills", []):
-        hours = skill.get("weekly_hours", 1)
-        task = skill.get("learning_task", skill["name"])
-        lines.append(f"- **{hours} h:** {task}")
-        total += hours
-    lines.append(f"\n_Total: ~{total} hours_")
-    return "\n".join(lines)
+def _build_learning_allocation(strong_signals: List[Dict], skill_matrix: Dict) -> str:
+    """Build the recommended learning allocation section grouped by strategic focus."""
+    # Detect triggered skills to adjust hours
+    tech_counts: Dict[str, int] = {}
+    for article in strong_signals:
+        cls = _get_classification(article)
+        for item in cls.get("technologies", []) + cls.get("skills", []):
+            tech_counts[item.lower()] = tech_counts.get(item.lower(), 0) + 1
+
+    group_order = ["deep_focus", "serious", "lightweight", "defer"]
+    group_labels = {
+        "deep_focus": "Deep Focus",
+        "serious": "Serious — build steadily",
+        "lightweight": "Lightweight — maintain awareness",
+        "defer": "Defer",
+    }
+
+    sections: List[str] = []
+    grand_total = 0
+
+    for group_key in group_order:
+        group_skills = [s for s in skill_matrix.get("skills", []) if s.get("group") == group_key]
+        if not group_skills:
+            continue
+
+        label = group_labels.get(group_key, group_key)
+        lines = [f"**{label}**"]
+        group_total = 0
+
+        for skill in group_skills:
+            base_hours = skill.get("weekly_hours_baseline", skill.get("weekly_hours", 0))
+            if base_hours == 0:
+                continue
+            name = skill["name"]
+            task = skill.get("learning_task", name)
+
+            # Boost by 1h if strong trigger detected (cap at base + 2)
+            triggers = [t.lower() for t in skill.get("triggers", {}).get("increase", [])]
+            triggered = any(t in tech_counts for t in triggers)
+            hours = base_hours + 1 if triggered and base_hours > 0 else base_hours
+            hours = min(hours, base_hours + 2)
+
+            lines.append(f"- **{hours} h:** {task}")
+            group_total += hours
+
+        lines.append(f"  _(Subtotal: {group_total} h)_")
+        sections.append("\n".join(lines))
+        grand_total += group_total
+
+    target_note = (
+        f"\n_Target: 15–20 h/week. This week total: ~{grand_total} h. "
+        "Adjust defer and lightweight items to stay within your available time._"
+    )
+    return "\n\n".join(sections) + target_note
 
 
 def _build_source_list(articles: List[Dict]) -> str:
@@ -351,17 +422,45 @@ def _html_signal_card(article: Dict) -> str:
 
 
 def _html_skill_table(strong_signals: List[Dict], skill_matrix: Dict) -> str:
+    """Build 7-column HTML skill table with group separators and 3D scoring."""
     tech_counts: Dict[str, int] = {}
     for article in strong_signals:
         cls = _get_classification(article)
         for item in cls.get("technologies", []) + cls.get("skills", []):
             tech_counts[item.lower()] = tech_counts.get(item.lower(), 0) + 1
 
+    group_labels = {
+        "deep_focus": "Deep Focus",
+        "serious": "Serious — build steadily",
+        "lightweight": "Lightweight — maintain awareness",
+        "defer": "Defer",
+    }
+    group_colors = {
+        "deep_focus": "#1a1a2e",
+        "serious": "#2d6a4f",
+        "lightweight": "#6b6b6b",
+        "defer": "#999",
+    }
+
     rows = []
+    last_group = ""
     for skill in skill_matrix.get("skills", []):
         name = _h(skill["name"])
-        priority = skill.get("priority", "medium")
-        effort = f"{skill.get('weekly_hours', 1)} h"
+        priority = skill.get("priority", 3)
+        urgency = skill.get("urgency", 3)
+        depth = skill.get("required_depth", 3)
+        effort = f"{skill.get('weekly_hours_baseline', skill.get('weekly_hours', 1))} h"
+        group = skill.get("group", "")
+
+        if group != last_group and group in group_labels:
+            color = group_colors.get(group, "#555")
+            label = group_labels[group]
+            rows.append(
+                f'<tr style="background:{color};color:white;">'
+                f'<td colspan="7" style="font-weight:600;padding:6px 12px;">{label}</td></tr>'
+            )
+            last_group = group
+
         triggers = [t.lower() for t in skill.get("triggers", {}).get("increase", [])]
         triggered = [t for t in triggers if t in tech_counts]
         if triggered:
@@ -370,33 +469,82 @@ def _html_skill_table(strong_signals: List[Dict], skill_matrix: Dict) -> str:
         else:
             arrow = '<span class="same">→</span>'
             reason = "No new signals this week"
-        p_class = {"high": "ph", "medium": "pm", "low": "pl"}.get(priority, "pm")
+
         rows.append(
             f"<tr><td>{name}</td>"
-            f"<td class='{p_class}'>{priority}</td>"
-            f"<td>{arrow}</td>"
-            f"<td>{reason}</td>"
-            f"<td>{effort}</td></tr>"
+            f"<td style='text-align:center'>{priority}/5</td>"
+            f"<td style='text-align:center'>{urgency}/5</td>"
+            f"<td style='text-align:center'>{depth}/5</td>"
+            f"<td style='text-align:center'>{arrow}</td>"
+            f"<td style='font-size:12px'>{reason}</td>"
+            f"<td style='text-align:center'>{effort}</td></tr>"
         )
     header = (
         "<table><thead><tr>"
-        "<th>Skill</th><th>Priority</th><th>Change</th>"
-        "<th>Reason</th><th>Weekly Effort</th>"
+        "<th>Skill</th><th>Priority</th><th>Urgency</th><th>Req. Depth</th>"
+        "<th>Change</th><th>Reason</th><th>Weekly Effort</th>"
         "</tr></thead><tbody>"
     )
     return header + "\n".join(rows) + "</tbody></table>"
 
 
-def _html_learning_plan(skill_matrix: Dict) -> str:
-    items = []
-    total = 0
-    for skill in skill_matrix.get("skills", []):
-        hours = skill.get("weekly_hours", 1)
-        task = _h(skill.get("learning_task", skill["name"]))
-        items.append(f'<div class="plan-item"><span class="plan-h">{hours} h</span><span>{task}</span></div>')
-        total += hours
-    items.append(f'<p style="font-size:12px;color:#636e72;margin-top:10px;">Total: ~{total} hours/week</p>')
-    return "\n".join(items)
+def _html_learning_allocation(strong_signals: List[Dict], skill_matrix: Dict) -> str:
+    """Build grouped HTML learning allocation section."""
+    tech_counts: Dict[str, int] = {}
+    for article in strong_signals:
+        cls = _get_classification(article)
+        for item in cls.get("technologies", []) + cls.get("skills", []):
+            tech_counts[item.lower()] = tech_counts.get(item.lower(), 0) + 1
+
+    group_order = ["deep_focus", "serious", "lightweight"]
+    group_labels = {
+        "deep_focus": "Deep Focus",
+        "serious": "Serious — build steadily",
+        "lightweight": "Lightweight — maintain awareness",
+    }
+    group_colors = {
+        "deep_focus": "#f0fdf4",
+        "serious": "#fffbf0",
+        "lightweight": "#f5f6fa",
+    }
+
+    sections = []
+    grand_total = 0
+
+    for group_key in group_order:
+        group_skills = [s for s in skill_matrix.get("skills", []) if s.get("group") == group_key]
+        items = []
+        group_total = 0
+        for skill in group_skills:
+            base = skill.get("weekly_hours_baseline", skill.get("weekly_hours", 0))
+            if base == 0:
+                continue
+            triggers = [t.lower() for t in skill.get("triggers", {}).get("increase", [])]
+            triggered = any(t in tech_counts for t in triggers)
+            hours = min(base + 1 if triggered else base, base + 2)
+            task = _h(skill.get("learning_task", skill["name"]))
+            items.append(
+                f'<div class="plan-item"><span class="plan-h">{hours} h</span><span>{task}</span></div>'
+            )
+            group_total += hours
+        if not items:
+            continue
+        label = _h(group_labels.get(group_key, group_key))
+        color = group_colors.get(group_key, "#f5f6fa")
+        sections.append(
+            f'<div style="background:{color};border-radius:8px;padding:14px;margin-bottom:12px;">'
+            f'<strong style="display:block;margin-bottom:8px;">{label}</strong>'
+            + "".join(items)
+            + f'<p style="font-size:11px;color:#636e72;margin-top:6px;">Subtotal: {group_total} h</p>'
+            + "</div>"
+        )
+        grand_total += group_total
+
+    return (
+        "".join(sections)
+        + f'<p style="font-size:12px;color:#636e72;margin-top:4px;">'
+        f'Target: 15–20 h/week · This week total: ~{grand_total} h</p>'
+    )
 
 
 def _render_html(
@@ -500,8 +648,8 @@ def _render_html(
 </div>
 
 <div class="sec">
-  <h2>5. Recommended Learning Plan for Next Week</h2>
-  {_html_learning_plan(skill_matrix)}
+  <h2>5. Recommended Learning Allocation for Next Week</h2>
+  {_html_learning_allocation(strong_signals, skill_matrix)}
 </div>
 
 <div class="sec advice">
@@ -624,9 +772,9 @@ _Generated: {now_str}_
 
 ---
 
-## 5. Recommended Learning Plan for Next Week
+## 5. Recommended Learning Allocation for Next Week
 
-{_build_learning_plan(skill_matrix)}
+{_build_learning_allocation(strong_signals, skill_matrix)}
 
 ---
 

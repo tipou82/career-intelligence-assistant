@@ -1,8 +1,21 @@
 # Career Intelligence Assistant
 
-A lightweight Python CLI tool that monitors industry news, extracts career-relevant signals, and generates a weekly decision-support brief for a functional safety / embedded AI engineer targeting robotics, ADAS, and automotive roles.
+A lightweight Python CLI tool that monitors industry news, extracts career-relevant signals, and generates a weekly decision-support brief.
 
-This is **not** a news aggregator. It is a structured **career decision-support tool** that maps industry signals to a personal skill matrix and produces a weekly Markdown report with actionable recommendations.
+**Target positioning:** *AI-augmented safety systems engineer for embedded AI / robotics / ADAS systems*
+
+This is **not** a news aggregator. It is a structured **career decision-support tool** that maps industry signals to a personal T-shaped skill matrix and produces a weekly Markdown + HTML report with actionable recommendations.
+
+The skill matrix is **intentionally T-shaped:**
+
+```
+Deep core:
+  Functional safety reasoning · C++20 deterministic logic · ROS2 · AI perception monitoring
+
+Broad supporting layer:
+  Python · Linux/QNX concepts · ISO 13849/CMSE · SOTIF/ISO PAS 8800 · MBSE/SysML2
+  AI-assisted engineering workflows · Requirements traceability
+```
 
 ---
 
@@ -122,16 +135,48 @@ feeds:
 
 ### Adjusting Skill Priorities — `config/skill_matrix.yaml`
 
+The skill matrix uses **three independent scoring dimensions:**
+
+| Dimension | Range | Meaning |
+|---|---|---|
+| `priority` | 1–5 | Long-term career leverage |
+| `urgency` | 1–5 | Importance in the next 3 months |
+| `required_depth` | 1–5 | How deep knowledge must go for the target profile |
+
+Skills are organized into four **strategic focus groups:**
+
+| Group | Description |
+|---|---|
+| `deep_focus` | Core T-shaped depth — intensive daily work |
+| `serious` | Important supporting layer — consistent weekly time |
+| `lightweight` | Awareness-level — modest time, avoid rabbit holes |
+| `defer` | Lower leverage now — revisit in 6+ months |
+
+Example skill entry:
+
 ```yaml
 skills:
   - name: "ROS2"
-    priority: "high"            # high | medium | low
-    weekly_hours: 5             # target hours for the learning plan
-    learning_task: "ROS2 safety nodes on Raspberry Pi"
+    priority: 5           # 1–5
+    urgency: 5            # 1–5
+    required_depth: 4     # 1–5
+    category: robotics_middleware
+    group: deep_focus
+    weekly_hours_baseline: 5
+    rationale: "Backbone of the Raspberry Pi demonstrator."
+    learning_task: "ROS2 nodes: camera, ultrasonic, decision, actuator, health"
     triggers:
-      increase: ["ros2", "humanoid", "physical ai"]
+      increase: ["ros2", "humanoid", "physical ai", "robotics investment"]
       decrease: []
 ```
+
+The weekly report table shows all three dimensions:
+
+```
+| Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
+```
+
+Trigger logic adjusts the Change column (↑ or →) based on keyword matches in strong signals from the current week.
 
 ### Tracked Companies — `config/companies.yaml`
 
@@ -146,26 +191,31 @@ Edit `industries.domain_map` to add new domain markers, `technologies.terms` for
 ## Usage
 
 ```bash
-# Collect articles from all RSS feeds
-python -m src.main collect
-
-# Classify all unclassified articles
-python -m src.main classify
-
-# Generate report for current week
-python -m src.main report
-
-# Generate report for a specific week
-python -m src.main report --week 2026-20
-
-# Full weekly pipeline: collect → classify → report
+# Full weekly pipeline — recommended entry point
 python -m src.main run-weekly
 
-# Show database statistics
-python -m src.main status
+# With LLM classification (Claude Haiku — much better accuracy)
+python -m src.main run-weekly --llm claude   # requires ANTHROPIC_API_KEY
+
+# Individual pipeline steps
+python -m src.main collect           # fetch RSS articles
+python -m src.main collect-press     # fetch company newsrooms + Google News monitors
+python -m src.main collect-jobs      # fetch job market signals (Bundesagentur + Indeed)
+python -m src.main classify          # rule-based classification
+python -m src.main classify --llm claude    # LLM-based classification
+python -m src.main report            # generate Markdown + HTML report
+python -m src.main report --week 2026-20   # specific week
+python -m src.main report --format html    # HTML only
+
+# Analysis and utilities
+python -m src.main skill-gap         # print CV vs market demand gap table
+python -m src.main send-email        # send HTML digest via SMTP (configure config/email.yaml)
+python -m src.main status            # database statistics + job market demand
 ```
 
-Reports are saved to `reports/weekly_career_brief_YYYY-WW.md`.
+Reports are saved to:
+- `reports/weekly_career_brief_YYYY-WW.md` — Markdown
+- `reports/weekly_career_brief_YYYY-WW.html` — HTML (with colored skill table and grouped allocation)
 
 ---
 
