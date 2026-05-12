@@ -1,0 +1,134 @@
+# Company press release and newsroom monitor configuration.
+#
+# Each entry is either:
+#   - A direct RSS feed (url:) — for companies that publish one
+#   - A Google News RSS query (query:) — auto-converted to a search URL
+#
+# Google News approach aggregates official press releases + top media coverage
+# for companies/topics that don't expose a direct newsroom RSS.
+
+sources:
+
+  # === Direct newsroom RSS (tested and working) ===
+
+  - name: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/feed/"
+    category: "press_release"
+    reliability: 0.85
+    regions: ["usa", "global"]
+    industries: ["ai", "robotics", "automotive", "embedded"]
+
+  - name: "NVIDIA Developer Blog"
+    url: "https://developer.nvidia.com/blog/feed/"
+    category: "press_release"
+    reliability: 0.85
+    regions: ["usa", "global"]
+    industries: ["ai", "embedded", "robotics"]
+
+  - name: "Arm Newsroom"
+    url: "https://newsroom.arm.com/feed"
+    category: "press_release"
+    reliability: 0.85
+    regions: ["global"]
+    industries: ["embedded", "ai", "automotive"]
+
+  - name: "ZF Press"
+    url: "https://press.zf.com/press/en/rss.xml"
+    category: "press_release"
+    reliability: 0.85
+    regions: ["germany", "europe", "global"]
+    industries: ["automotive", "adas", "software_defined_vehicle"]
+
+  # === Google News RSS — company monitors ===
+
+  - name: "GNews: Bosch Automotive Safety"
+    query: "Bosch automotive safety ADAS"
+    lang: "en"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.7
+    regions: ["germany", "europe"]
+    industries: ["automotive", "adas", "functional_safety"]
+
+  - name: "GNews: NEURA Robotics"
+    query: "NEURA Robotics"
+    lang: "en"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["robotics", "ai"]
+
+  - name: "GNews: Continental ADAS"
+    query: "Continental ADAS safety autonomous"
+    lang: "en"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.7
+    regions: ["germany", "europe"]
+    industries: ["automotive", "adas", "functional_safety"]
+
+  - name: "GNews: Figure AI Robotics"
+    query: '"Figure AI" robot'
+    lang: "en"
+    country: "US"
+    category: "press_release"
+    reliability: 0.7
+    regions: ["usa", "global"]
+    industries: ["robotics", "ai", "physical_ai"]
+
+  - name: "GNews: Mobileye ADAS"
+    query: "Mobileye autonomous driving safety"
+    lang: "en"
+    country: "US"
+    category: "press_release"
+    reliability: 0.75
+    regions: ["usa", "global"]
+    industries: ["adas", "automotive", "functional_safety"]
+
+  - name: "GNews: Boston Dynamics"
+    query: '"Boston Dynamics" robot'
+    lang: "en"
+    country: "US"
+    category: "press_release"
+    reliability: 0.75
+    regions: ["usa", "global"]
+    industries: ["robotics", "ai"]
+
+  # === Google News RSS — topic monitors ===
+
+  - name: "GNews: ISO 26262 SOTIF"
+    query: "ISO 26262 SOTIF automotive AI safety"
+    lang: "en"
+    country: "US"
+    category: "standards"
+    reliability: 0.7
+    regions: ["global"]
+    industries: ["functional_safety", "adas", "automotive"]
+
+  - name: "GNews: ROS2 Robotics Safety"
+    query: "ROS2 robotics safety embedded"
+    lang: "en"
+    country: "US"
+    category: "technical"
+    reliability: 0.65
+    regions: ["global"]
+    industries: ["robotics", "functional_safety", "embedded"]
+
+  - name: "GNews: Physical AI Embedded"
+    query: '"physical AI" OR "embodied AI" robotics embedded'
+    lang: "en"
+    country: "US"
+    category: "technical"
+    reliability: 0.65
+    regions: ["global"]
+    industries: ["robotics", "ai", "embedded"]
+
+  - name: "GNews: QNX SDV"
+    query: "QNX software-defined vehicle automotive safety"
+    lang: "en"
+    country: "US"
+    category: "technical"
+    reliability: 0.7
+    regions: ["global"]
+    industries: ["automotive", "software_defined_vehicle", "embedded"]

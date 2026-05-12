@@ -1,0 +1,62 @@
+# Job market signal queries.
+# Each entry defines a search that collect_jobs.py will run against the
+# Bundesagentur für Arbeit API (Germany) and/or Indeed RSS (global).
+
+searches:
+
+  # --- Germany (Bundesagentur API) ---
+  - query: "Functional Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "iso_26262"]
+
+  - query: "ROS2 Robotics"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["ros2", "robotics"]
+
+  - query: "ADAS Embedded Software"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["adas", "embedded"]
+
+  - query: "ISO 26262 SOTIF"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["iso_26262", "sotif"]
+
+  - query: "Embedded AI Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["embedded_ai", "functional_safety"]
+
+  - query: "QNX Embedded Systems"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["qnx", "embedded"]
+
+  - query: "MBSE SysML Automotive"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["mbse", "sysml"]
+
+  # --- Global (Indeed RSS) ---
+  - query: "ros2 functional safety"
+    region: "global"
+    source: "indeed_rss"
+    skill_tags: ["ros2", "functional_safety"]
+
+  - query: "humanoid robotics safety engineer"
+    region: "global"
+    source: "indeed_rss"
+    skill_tags: ["robotics", "functional_safety"]
+
+  - query: "SOTIF ISO PAS 8800"
+    region: "global"
+    source: "indeed_rss"
+    skill_tags: ["sotif", "iso_pas_8800"]
+
+  - query: "embedded AI ADAS safety"
+    region: "global"
+    source: "indeed_rss"
+    skill_tags: ["embedded_ai", "adas"]

@@ -1,0 +1,98 @@
+# Your current CV skill claims — used for skill gap analysis.
+# Rate each skill: 0 = not on CV / not started, 1–3 = beginner, 4–6 = intermediate, 7–9 = proficient, 10 = expert
+# Update this file to reflect what you would honestly put on your CV today.
+
+profile:
+  name: "Functional Safety Engineer → Robotics/ADAS/Embedded AI"
+  target_roles:
+    - "Functional Safety Engineer – Robotics"
+    - "Safety Engineer – ADAS / Autonomous Driving"
+    - "Embedded AI Safety Engineer"
+    - "Systems Engineer – Safety-Supervised AI"
+
+skills:
+  # --- Core / Already strong ---
+  - name: "ISO 26262"
+    self_rating: 8
+    cv_claimed: true
+    notes: "Primary expertise from automotive role"
+
+  - name: "Functional Safety"
+    self_rating: 8
+    cv_claimed: true
+    notes: "HARA, safety concepts, ASIL decomposition"
+
+  - name: "Requirements Engineering"
+    self_rating: 7
+    cv_claimed: true
+    notes: "Safety requirements, traceability"
+
+  - name: "System Architecture"
+    self_rating: 7
+    cv_claimed: true
+    notes: "Automotive E/E architecture"
+
+  - name: "Safety Mechanisms"
+    self_rating: 7
+    cv_claimed: true
+
+  - name: "FMEA / FTA"
+    self_rating: 7
+    cv_claimed: true
+
+  # --- In progress / Building ---
+  - name: "ROS2"
+    self_rating: 3
+    cv_claimed: false
+    notes: "Learning via Raspberry Pi project"
+
+  # Names below must match skill_matrix.yaml exactly for gap analysis to work
+  - name: "C++20 and testing"
+    self_rating: 4
+    cv_claimed: false
+    notes: "Safety logic and GoogleTest"
+
+  - name: "Embedded Linux"
+    self_rating: 3
+    cv_claimed: false
+    notes: "Raspberry Pi, device tree basics"
+
+  - name: "Python automation"
+    self_rating: 6
+    cv_claimed: true
+    notes: "Automation and tooling"
+
+  - name: "AI perception monitoring"
+    self_rating: 2
+    cv_claimed: false
+    notes: "Confidence thresholds, latency watchdog"
+
+  - name: "Fault injection and safety testing"
+    self_rating: 3
+    cv_claimed: false
+    notes: "Portfolio project in progress"
+
+  # --- Planned / Early stage ---
+  - name: "SOTIF / ISO/PAS 8800"
+    self_rating: 3
+    cv_claimed: false
+    notes: "Self-study"
+
+  - name: "MBSE / SysML2"
+    self_rating: 2
+    cv_claimed: false
+    notes: "Capella basics"
+
+  - name: "QNX / POSIX supervisor concepts"
+    self_rating: 2
+    cv_claimed: false
+    notes: "Conceptual knowledge only"
+
+  - name: "Digital twin / virtual validation"
+    self_rating: 1
+    cv_claimed: false
+
+  - name: "Technical communication (JP/DE/EN)"
+    self_rating: 4
+    cv_claimed: false
+    notes: "DE strong, JP beginner"

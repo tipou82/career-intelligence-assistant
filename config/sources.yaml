@@ -186,3 +186,61 @@ feeds:
     reliability: 0.75
     regions: ["usa", "global"]
     industries: ["embedded", "ai", "automotive"]
+
+  # === German-language sources ===
+  - name: "Heise Auto"
+    url: "https://www.heise.de/autos/rss/news-atom.xml"
+    category: "automotive"
+    reliability: 0.8
+    regions: ["germany", "europe"]
+    industries: ["automotive", "adas", "software_defined_vehicle"]
+
+  - name: "Heise Developer"
+    url: "https://www.heise.de/developer/rss/news-atom.xml"
+    category: "technical"
+    reliability: 0.8
+    regions: ["germany", "europe"]
+    industries: ["embedded", "ai", "software_defined_vehicle"]
+
+  - name: "GNews DE: Autonomes Fahren"
+    url: "https://news.google.com/rss/search?q=autonomes+fahren+sicherheit&hl=de&gl=DE&ceid=DE:de"
+    category: "tech_news"
+    reliability: 0.65
+    regions: ["germany", "europe"]
+    industries: ["automotive", "adas", "functional_safety"]
+
+  - name: "GNews DE: Robotik Sicherheit"
+    url: "https://news.google.com/rss/search?q=robotik+funktionale+sicherheit&hl=de&gl=DE&ceid=DE:de"
+    category: "tech_news"
+    reliability: 0.65
+    regions: ["germany", "europe"]
+    industries: ["robotics", "functional_safety"]
+
+  - name: "GNews DE: Eingebettete KI"
+    url: "https://news.google.com/rss/search?q=eingebettete+KI+automotive&hl=de&gl=DE&ceid=DE:de"
+    category: "tech_news"
+    reliability: 0.65
+    regions: ["germany", "europe"]
+    industries: ["embedded", "ai", "automotive"]
+
+  # === Japan-focused English sources ===
+  - name: "GNews JP: Toyota ADAS"
+    url: "https://news.google.com/rss/search?q=Toyota+ADAS+automated+driving&hl=en&gl=JP&ceid=JP:en"
+    category: "automotive"
+    reliability: 0.7
+    regions: ["japan", "asia"]
+    industries: ["automotive", "adas", "functional_safety"]
+
+  - name: "GNews JP: Honda Robotics"
+    url: "https://news.google.com/rss/search?q=Honda+robotics+safety+software&hl=en&gl=JP&ceid=JP:en"
+    category: "robotics"
+    reliability: 0.7
+    regions: ["japan", "asia"]
+    industries: ["robotics", "automotive", "ai"]
+
+  - name: "GNews JP: Denso Embedded AI"
+    url: "https://news.google.com/rss/search?q=Denso+embedded+AI+safety&hl=en&gl=JP&ceid=JP:en"
+    category: "embedded"
+    reliability: 0.7
+    regions: ["japan", "asia"]
+    industries: ["automotive", "embedded", "functional_safety"]
