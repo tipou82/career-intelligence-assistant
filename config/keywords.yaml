@@ -1,0 +1,211 @@
+industries:
+  terms:
+    - automotive
+    - robotics
+    - "autonomous driving"
+    - "self-driving"
+    - ADAS
+    - "functional safety"
+    - "embedded software"
+    - "embedded systems"
+    - "software-defined vehicle"
+    - SDV
+    - "digital twin"
+    - "virtual validation"
+    - MBSE
+    - SysML
+    - "physical AI"
+    - "humanoid robot"
+    - "machine learning"
+    - "deep learning"
+    - "computer vision"
+    - "sensor fusion"
+  domain_map:
+    automotive:
+      - "vehicle"
+      - "automotive"
+      - "OEM"
+      - "tier 1"
+      - "powertrain"
+      - "ECU"
+      - "EV"
+      - "electric vehicle"
+      - "charging"
+    robotics:
+      - "robot"
+      - "humanoid"
+      - "manipulator"
+      - "locomotion"
+      - "exoskeleton"
+      - "legged"
+      - "bipedal"
+    adas:
+      - "ADAS"
+      - "autonomous"
+      - "self-driving"
+      - "autopilot"
+      - "driver assistance"
+      - "level 2"
+      - "level 3"
+      - "level 4"
+      - "HAD"
+    functional_safety:
+      - "functional safety"
+      - "ISO 26262"
+      - "safety-critical"
+      - "fail-safe"
+      - "ASIL"
+      - "safety integrity"
+      - "SIL"
+      - "FMEA"
+      - "FTA"
+      - "HARA"
+    embedded:
+      - "embedded"
+      - "RTOS"
+      - "bare-metal"
+      - "microcontroller"
+      - "MCU"
+      - "SoC"
+      - "firmware"
+      - "real-time"
+    ai:
+      - "artificial intelligence"
+      - "machine learning"
+      - "neural network"
+      - "deep learning"
+      - "transformer"
+      - "foundation model"
+      - "large language model"
+      - "generative AI"
+    software_defined_vehicle:
+      - "SDV"
+      - "software-defined vehicle"
+      - "over-the-air"
+      - "OTA update"
+      - "vehicle software"
+      - "zonal architecture"
+      - "central computer"
+    mbse:
+      - "MBSE"
+      - "SysML"
+      - "model-based"
+      - "system architecture"
+      - "systems engineering"
+      - "Capella"
+    digital_twin:
+      - "digital twin"
+      - "virtual twin"
+      - "virtual validation"
+      - "simulation"
+      - "co-simulation"
+      - "HIL"
+      - "SIL"
+      - "CARLA"
+      - "Isaac Sim"
+
+regions:
+  terms:
+    - germany
+    - europe
+    - china
+    - japan
+    - usa
+    - "united states"
+    - "united kingdom"
+    - france
+    - korea
+    - global
+    - "north america"
+    - "asia"
+    - "silicon valley"
+    - "munich"
+    - "stuttgart"
+    - "wolfsburg"
+    - "tokyo"
+    - "beijing"
+    - "shanghai"
+    - "seoul"
+
+technologies:
+  terms:
+    - ROS2
+    - "C++20"
+    - QNX
+    - POSIX
+    - "ISO 26262"
+    - "ISO/PAS 8800"
+    - SOTIF
+    - AUTOSAR
+    - "embedded Linux"
+    - RTOS
+    - "neural network"
+    - "computer vision"
+    - "sensor fusion"
+    - LIDAR
+    - RADAR
+    - "camera perception"
+    - "model-based"
+    - SysML
+    - MBSE
+    - "digital twin"
+    - "virtual validation"
+    - "GoogleTest"
+    - "pytest"
+    - "fault injection"
+    - "safety mechanism"
+    - "watchdog"
+    - "over-the-air"
+    - "physical AI"
+    - "humanoid"
+    - "reinforcement learning"
+    - "SLAM"
+    - "point cloud"
+    - "Isaac Sim"
+    - Yocto
+    - "device tree"
+    - CUDA
+    - "TensorRT"
+
+skills:
+  terms:
+    - "functional safety"
+    - "safety engineering"
+    - "ROS2"
+    - "C++20"
+    - "embedded AI"
+    - "AI perception"
+    - "perception monitoring"
+    - "fault injection"
+    - "safety testing"
+    - "SOTIF"
+    - "ISO/PAS 8800"
+    - "MBSE"
+    - "SysML"
+    - "QNX"
+    - "embedded Linux"
+    - "digital twin"
+    - "virtual validation"
+    - "system architecture"
+    - "requirements engineering"
+    - "safety concept"
+    - "ASIL"
+    - "hazard analysis"
+    - "HARA"
+    - "FTA"
+    - "FMEA"
+    - "safety case"
+    - "technical documentation"
+
+# Noise indicators — articles matching these without other signal are likely low relevance
+noise_indicators:
+  - "chatbot"
+  - "ChatGPT"
+  - "marketing campaign"
+  - "brand new"
+  - "celebrity"
+  - "entertainment"
+  - "sports"
+  - "shopping"
+  - "social media influencer"
+  - "viral"

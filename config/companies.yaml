@@ -1,0 +1,163 @@
+companies:
+
+  automotive:
+    - name: "Bosch"
+      aliases: ["Robert Bosch"]
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "Continental"
+      aliases: []
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "ZF"
+      aliases: ["ZF Friedrichshafen"]
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "Mercedes-Benz"
+      aliases: ["Mercedes", "Daimler"]
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "BMW"
+      aliases: ["BMW Group"]
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "Volkswagen"
+      aliases: ["VW", "VW Group"]
+      region: ["germany", "europe", "global"]
+      tier: 1
+    - name: "Porsche"
+      aliases: []
+      region: ["germany", "europe", "global"]
+      tier: 2
+    - name: "Tesla"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 1
+    - name: "Toyota"
+      aliases: ["Toyota Motor"]
+      region: ["japan", "global"]
+      tier: 1
+    - name: "Honda"
+      aliases: ["Honda Motor"]
+      region: ["japan", "global"]
+      tier: 2
+    - name: "Hyundai"
+      aliases: ["Hyundai Motor"]
+      region: ["korea", "global"]
+      tier: 2
+    - name: "BYD"
+      aliases: []
+      region: ["china", "global"]
+      tier: 2
+    - name: "Geely"
+      aliases: []
+      region: ["china", "global"]
+      tier: 2
+    - name: "NIO"
+      aliases: []
+      region: ["china", "global"]
+      tier: 2
+    - name: "XPeng"
+      aliases: ["XPEV"]
+      region: ["china", "global"]
+      tier: 2
+
+  robotics:
+    - name: "NEURA Robotics"
+      aliases: ["NEURA"]
+      region: ["germany", "europe"]
+      tier: 1
+    - name: "Figure AI"
+      aliases: ["Figure"]
+      region: ["usa"]
+      tier: 1
+    - name: "Boston Dynamics"
+      aliases: []
+      region: ["usa"]
+      tier: 1
+    - name: "Agility Robotics"
+      aliases: ["Agility"]
+      region: ["usa"]
+      tier: 2
+    - name: "Unitree"
+      aliases: ["Unitree Robotics"]
+      region: ["china"]
+      tier: 2
+    - name: "UBTech"
+      aliases: ["UBTECH"]
+      region: ["china"]
+      tier: 2
+    - name: "ABB Robotics"
+      aliases: ["ABB"]
+      region: ["europe", "global"]
+      tier: 2
+    - name: "KUKA"
+      aliases: []
+      region: ["germany", "europe"]
+      tier: 2
+    - name: "FANUC"
+      aliases: []
+      region: ["japan", "global"]
+      tier: 2
+    - name: "Yaskawa"
+      aliases: ["Yaskawa Electric"]
+      region: ["japan", "global"]
+      tier: 2
+    - name: "Kawasaki Robotics"
+      aliases: ["Kawasaki"]
+      region: ["japan", "global"]
+      tier: 2
+
+  ai_chips_software:
+    - name: "NVIDIA"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 1
+    - name: "Qualcomm"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 1
+    - name: "Mobileye"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 1
+    - name: "Arm"
+      aliases: ["ARM"]
+      region: ["global"]
+      tier: 1
+    - name: "AMD"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 2
+    - name: "Intel"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 2
+    - name: "OpenAI"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 2
+    - name: "Google DeepMind"
+      aliases: ["DeepMind", "Google"]
+      region: ["usa", "global"]
+      tier: 2
+    - name: "Anthropic"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 2
+    - name: "Microsoft"
+      aliases: []
+      region: ["usa", "global"]
+      tier: 2
+    - name: "Huawei"
+      aliases: []
+      region: ["china", "global"]
+      tier: 2
+    - name: "Baidu"
+      aliases: []
+      region: ["china", "global"]
+      tier: 2
+    - name: "Dassault Systèmes"
+      aliases: ["Dassault", "Dassault Systemes", "3DEXPERIENCE"]
+      region: ["europe", "france"]
+      tier: 1

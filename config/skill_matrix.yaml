@@ -1,0 +1,92 @@
+# Career skill matrix — defines current priorities and weekly effort targets.
+# priority: high | medium | low
+# weekly_hours: target hours per week (total ~15-20 h)
+
+skills:
+  - name: "ROS2"
+    priority: "high"
+    weekly_hours: 5
+    learning_task: "Raspberry Pi / ROS2 implementation and safety-supervised nodes"
+    triggers:
+      increase: ["ros2", "humanoid", "physical ai", "robotics investment", "legged robot"]
+      decrease: []
+
+  - name: "C++20 and testing"
+    priority: "high"
+    weekly_hours: 4
+    learning_task: "C++20 safety logic, GoogleTest, address/UB sanitizers"
+    triggers:
+      increase: ["c++20", "embedded software", "performance critical", "safety-critical software"]
+      decrease: []
+
+  - name: "AI perception monitoring"
+    priority: "high"
+    weekly_hours: 3
+    learning_task: "AI monitoring: confidence thresholds, latency watchdog, stale data detection"
+    triggers:
+      increase: ["ai perception", "adas", "sensor fusion", "embedded ai", "camera perception"]
+      decrease: []
+
+  - name: "Fault injection and safety testing"
+    priority: "high"
+    weekly_hours: 2
+    learning_task: "Fault injection tests, safety mechanism validation, documentation"
+    triggers:
+      increase: ["functional safety", "safety testing", "iso 26262", "sotif", "asil"]
+      decrease: []
+
+  - name: "SOTIF / ISO/PAS 8800"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "SOTIF concepts, ISO/PAS 8800 study, AI safety regulation monitoring"
+    triggers:
+      increase: ["sotif", "iso/pas 8800", "ai regulation", "high-risk ai", "eu ai act"]
+      decrease: []
+
+  - name: "MBSE / SysML2"
+    priority: "medium"
+    weekly_hours: 2
+    learning_task: "MBSE/SysML2 architecture diagrams for portfolio project (Capella or draw.io)"
+    triggers:
+      increase: ["mbse", "sysml", "dassault", "digital twin", "virtual twin", "model-based"]
+      decrease: []
+
+  - name: "QNX / POSIX supervisor concepts"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "QNX POSIX API, process isolation, supervisor watchdog patterns"
+    triggers:
+      increase: ["qnx", "embedded os", "sdv", "rtos", "software-defined vehicle", "zonal"]
+      decrease: []
+
+  - name: "Embedded Linux"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "Embedded Linux kernel config, device tree, Yocto Project basics"
+    triggers:
+      increase: ["embedded linux", "yocto", "linux kernel", "device driver", "buildroot"]
+      decrease: []
+
+  - name: "Python automation"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "Python tooling: automation scripts, data pipelines, CI integration"
+    triggers:
+      increase: ["python", "automation", "devops", "toolchain"]
+      decrease: []
+
+  - name: "Digital twin / virtual validation"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "Digital twin concepts: CARLA, Isaac Sim, co-simulation architecture"
+    triggers:
+      increase: ["digital twin", "virtual validation", "carla", "isaac sim", "dassault", "simulation"]
+      decrease: []
+
+  - name: "Technical communication (JP/DE/EN)"
+    priority: "medium"
+    weekly_hours: 1
+    learning_task: "Japanese/German technical vocabulary: automotive, robotics, safety standards"
+    triggers:
+      increase: ["japan", "toyota", "honda", "bosch japan", "germany", "munich", "stuttgart"]
+      decrease: []
