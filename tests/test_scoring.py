@@ -2,7 +2,6 @@
 
 import pytest
 from src.score_relevance import (
-    _company_score,
     _domain_score,
     _region_score,
     _skill_score,
@@ -100,34 +99,47 @@ class TestSkillScore:
 
 
 # ---------------------------------------------------------------------------
-# Company score
+# Source reliability — tier-based scoring
 # ---------------------------------------------------------------------------
 
-class TestCompanyScore:
-    def test_tier1_company_max(self) -> None:
-        assert _company_score(make_cls(companies=["Bosch"])) == 1.0
+class TestSourceReliability:
+    from src.score_relevance import _source_reliability_score
 
-    def test_tier1_case_insensitive(self) -> None:
-        assert _company_score(make_cls(companies=["bosch"])) == 1.0
+    def _art(self, source_name: str) -> dict:
+        return {"source_name": source_name}
 
-    def test_tier2_company_medium(self) -> None:
-        assert _company_score(make_cls(companies=["Unitree"])) == 0.6
+    def test_ieee_scores_highest(self) -> None:
+        from src.score_relevance import _source_reliability_score, SOURCE_TIERS
+        score = _source_reliability_score({}, self._art("IEEE Spectrum"))
+        assert score >= 0.95
 
-    def test_unknown_company_low(self) -> None:
-        assert _company_score(make_cls(companies=["SomeUnknownCorp"])) == 0.15
+    def test_reuters_scores_high(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        score = _source_reliability_score({}, self._art("Reuters Technology"))
+        assert score >= 0.90
 
-    def test_no_company_zero(self) -> None:
-        assert _company_score(make_cls()) == 0.0
+    def test_techcrunch_scores_lower(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        score = _source_reliability_score({}, self._art("TechCrunch AI"))
+        assert score <= 0.70
 
-    def test_tier1_beats_tier2(self) -> None:
-        assert _company_score(make_cls(companies=["Bosch", "Unitree"])) == 1.0
+    def test_electrek_scores_lower_than_ieee(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        ieee = _source_reliability_score({}, self._art("IEEE Spectrum"))
+        electrek = _source_reliability_score({}, self._art("Electrek"))
+        assert ieee > electrek
 
-    def test_pilz_is_tier1(self) -> None:
-        # Pilz: key machinery safety company
-        assert _company_score(make_cls(companies=["Pilz"])) == 1.0
+    def test_unknown_source_falls_back_to_feed_score(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        score = _source_reliability_score(
+            {"source_reliability": 0.77}, self._art("SomeUnknownBlog")
+        )
+        assert score == 0.77
 
-    def test_kuka_is_tier1(self) -> None:
-        assert _company_score(make_cls(companies=["KUKA"])) == 1.0
+    def test_no_article_uses_feed_score(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        score = _source_reliability_score({"source_reliability": 0.80})
+        assert score == 0.80
 
 
 # ---------------------------------------------------------------------------
@@ -227,9 +239,10 @@ class TestScoreArticle:
     def test_score_dict_has_all_components(self) -> None:
         cls = make_cls()
         scores = score_article(self._article, cls, {}, {}, {})
-        expected = {"domain", "skill", "company", "region", "career_impact",
+        expected = {"domain", "skill", "region", "career_impact",
                     "source_reliability", "total"}
         assert expected <= scores.keys()
+        assert "company" not in scores  # company relevance removed
 
     def test_high_impact_pair_boosts_score(self) -> None:
         cls = make_cls(industries=["robotics"], technologies=["ros2"], source_reliability=0.85)

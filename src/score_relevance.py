@@ -20,14 +20,14 @@ TARGET_INDUSTRIES: Dict[str, float] = {
 
 TARGET_REGIONS: Dict[str, float] = {
     "germany": 1.0,
-    "europe": 0.9,
     "japan": 0.9,
     "usa": 0.8,
-    "china": 0.7,
-    "korea": 0.6,
+    "china": 0.8,   # major market: BYD, NIO, XPeng, Huawei, Baidu — strong signal value
+    "korea": 0.65,
     "global": 0.6,
-    "north america": 0.7,
-    "asia": 0.5,
+    "north america": 0.75,
+    "asia": 0.6,
+    # "europe" removed — too broad; Germany already captures the relevant signal
 }
 
 TARGET_SKILLS: Dict[str, float] = {
@@ -125,13 +125,57 @@ TIER_2_COMPANIES = {
 }
 
 # Weights (must sum to 1.0)
+# Company relevance removed — it biased scores toward articles merely mentioning
+# a tracked company regardless of topic relevance.
+# Redistributed: skill +0.05, domain +0.02, career_impact +0.05, source_reliability +0.03
 WEIGHTS = {
-    "domain": 0.20,
-    "skill": 0.25,
-    "company": 0.15,
+    "domain": 0.22,
+    "skill": 0.30,
+    "company": 0.00,   # removed from total; _company_score kept for career_impact use
     "region": 0.10,
-    "career_impact": 0.20,
-    "source_reliability": 0.10,
+    "career_impact": 0.25,
+    "source_reliability": 0.13,
+}
+
+# Source tiers for reliability scoring — used when source_name is available on the article.
+# Scores are blended with the feed-level reliability from sources.yaml.
+SOURCE_TIERS: Dict[str, float] = {
+    # Academic / standards bodies (most trusted)
+    "ieee": 0.97,
+    "sae": 0.97,
+    "iso": 0.97,
+    "iec": 0.95,
+    "nist": 0.95,
+    "acm": 0.95,
+    "robohub": 0.90,           # academic robotics
+    "mit technology review": 0.88,
+    # Major international news agencies and publishers
+    "reuters": 0.92,
+    "nikkei": 0.90,
+    "nikkei asia": 0.90,
+    "handelsblatt": 0.87,
+    "automotive news": 0.85,
+    "ee times": 0.83,
+    "ee times europe": 0.83,
+    "ee journal": 0.80,
+    "embedded.com": 0.82,
+    "automotive world": 0.78,
+    "heise online": 0.78,
+    "heise auto": 0.78,
+    "heise developer": 0.78,
+    "wired": 0.72,
+    "golem.de": 0.68,
+    # Tech blogs / enthusiast press (lower trust)
+    "techcrunch": 0.62,
+    "venturebeat": 0.60,
+    "technode": 0.62,
+    "electrek": 0.58,
+    "the drive": 0.55,
+    # Company newsrooms / press releases (useful but potentially biased)
+    "nvidia blog": 0.72,
+    "nvidia developer blog": 0.70,
+    "arm newsroom": 0.72,
+    "zf press": 0.72,
 }
 
 
@@ -213,8 +257,32 @@ def _career_impact_score(classification: Dict[str, Any]) -> float:
     return 0.2
 
 
-def _source_reliability_score(classification: Dict[str, Any]) -> float:
-    return min(float(classification.get("source_reliability", 0.5)), 1.0)
+def _source_reliability_score(
+    classification: Dict[str, Any],
+    article: Dict[str, Any] | None = None,
+) -> float:
+    """Return source reliability score.
+
+    Blends:
+    1. Feed-level reliability from sources.yaml (stored in classification dict).
+    2. Named-source tier from SOURCE_TIERS (keyed on article source_name, lowercase).
+
+    If a source_name matches a known tier, that value takes precedence.
+    Falls back to the feed-level value, then to 0.5 for unknown sources.
+    """
+    feed_score = min(float(classification.get("source_reliability", 0.5)), 1.0)
+
+    if article:
+        source_name = str(article.get("source_name", "")).lower().strip()
+        # Exact match first
+        if source_name in SOURCE_TIERS:
+            return SOURCE_TIERS[source_name]
+        # Partial match — e.g. "IEEE Spectrum Robotics" → "ieee"
+        for key, val in SOURCE_TIERS.items():
+            if key in source_name or source_name.startswith(key):
+                return val
+
+    return feed_score
 
 
 # --- Public API ---
@@ -232,15 +300,13 @@ def score_article(
     """
     domain = _domain_score(classification)
     skill = _skill_score(classification)
-    company = _company_score(classification)
     region = _region_score(classification)
     career_impact = _career_impact_score(classification)
-    source_rel = _source_reliability_score(classification)
+    source_rel = _source_reliability_score(classification, article)
 
     total = (
         domain * WEIGHTS["domain"]
         + skill * WEIGHTS["skill"]
-        + company * WEIGHTS["company"]
         + region * WEIGHTS["region"]
         + career_impact * WEIGHTS["career_impact"]
         + source_rel * WEIGHTS["source_reliability"]
@@ -249,7 +315,6 @@ def score_article(
     return {
         "domain": round(domain * 10, 2),
         "skill": round(skill * 10, 2),
-        "company": round(company * 10, 2),
         "region": round(region * 10, 2),
         "career_impact": round(career_impact * 10, 2),
         "source_reliability": round(source_rel * 10, 2),

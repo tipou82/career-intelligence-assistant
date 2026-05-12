@@ -21,6 +21,9 @@ data/*.db
 .env
 *.env
 
+# Config files with credentials — never commit
+config/email.yaml
+
 # Editor / OS
 .DS_Store
 .vscode/
