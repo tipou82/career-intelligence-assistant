@@ -13,6 +13,7 @@ Run:  python -m src.main collect-press
 
 import re
 import time
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
@@ -21,6 +22,8 @@ import feedparser
 import yaml
 
 from .database import init_db, insert_article
+
+FEED_TIMEOUT_SECONDS = 15
 
 CONFIG_PATH = Path(__file__).parent.parent / "config" / "pressreleases.yaml"
 MAX_ENTRIES = 50
@@ -54,10 +57,17 @@ def _fetch_source(source: Dict) -> List[Dict[str, Any]]:
         lang=source.get("lang", "en"),
         country=source.get("country", "US"),
     )
+    name = source.get("name", url)
     try:
-        feed = feedparser.parse(url)
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "career-intelligence-assistant/1.0 (feedparser)"},
+        )
+        with urllib.request.urlopen(req, timeout=FEED_TIMEOUT_SECONDS) as resp:
+            raw_bytes = resp.read()
+        feed = feedparser.parse(raw_bytes)
     except Exception as exc:
-        print(f"    [warn] {source.get('name', url)}: {exc}")
+        print(f"    [warn] Skipped {name}: {exc}")
         return []
 
     articles = []

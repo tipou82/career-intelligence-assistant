@@ -2,6 +2,7 @@
 
 import re
 import time
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
@@ -13,6 +14,7 @@ from .database import init_db, insert_article
 
 CONFIG_PATH = Path(__file__).parent.parent / "config" / "sources.yaml"
 MAX_ENTRIES_PER_FEED = 50
+FEED_TIMEOUT_SECONDS = 15  # per-feed HTTP timeout; skips slow/hanging feeds
 
 
 def load_sources(config_path: Path = CONFIG_PATH) -> List[Dict]:
@@ -38,11 +40,22 @@ def _strip_html(text: str) -> str:
 
 
 def fetch_feed(source: Dict) -> List[Dict[str, Any]]:
-    """Fetch and parse one RSS source. Returns a list of article dicts."""
+    """Fetch and parse one RSS source. Returns a list of article dicts.
+
+    Uses a hard HTTP timeout so a slow server never blocks the whole pipeline.
+    """
+    url = source["url"]
+    name = source.get("name", url)
     try:
-        feed = feedparser.parse(source["url"])
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "career-intelligence-assistant/1.0 (feedparser)"},
+        )
+        with urllib.request.urlopen(req, timeout=FEED_TIMEOUT_SECONDS) as resp:
+            raw_bytes = resp.read()
+        feed = feedparser.parse(raw_bytes)
     except Exception as exc:
-        print(f"    [warn] Parse error for {source.get('name', source['url'])}: {exc}")
+        print(f"    [warn] Skipped {name}: {exc}")
         return []
 
     articles: List[Dict[str, Any]] = []
