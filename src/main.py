@@ -58,14 +58,14 @@ def cmd_classify(args: argparse.Namespace) -> None:
     llm = getattr(args, "llm", None)
     llm_classifier = None
 
-    if llm == "openai":
+    if llm == "claude":
+        from .llm_classifier import AnthropicClassifier
+        print("Classifying articles with Claude (claude-haiku-4-5)...")
+        llm_classifier = AnthropicClassifier()
+    elif llm == "openai":
         from .llm_classifier import OpenAIClassifier
         print("Classifying articles with OpenAI...")
         llm_classifier = OpenAIClassifier()
-    elif llm == "claude":
-        from .llm_classifier import AnthropicClassifier
-        print("Classifying articles with Anthropic Claude...")
-        llm_classifier = AnthropicClassifier()
     else:
         print("Classifying articles (rule-based)...")
 
@@ -211,8 +211,8 @@ def main() -> None:
         choices=["openai", "claude"],
         default=None,
         metavar="PROVIDER",
-        help="Use LLM classifier: 'openai' (requires OPENAI_API_KEY) "
-             "or 'claude' (requires ANTHROPIC_API_KEY)",
+        help="Use LLM classifier: 'claude' (requires ANTHROPIC_API_KEY, recommended) "
+             "or 'openai' (requires OPENAI_API_KEY)",
     )
     p_classify.set_defaults(func=cmd_classify)
 
