@@ -413,9 +413,10 @@ def _build_market_fit_section(articles: List[Dict], career_mode: str) -> str:
     return "\n".join(lines).strip()
 
 
-def _build_job_ads_md(job_ads: List[Dict]) -> str:
+def _build_job_ads_md(job_ads: List[Dict], fallback: bool = False) -> str:
     if not job_ads:
-        return "_No job ads with score ≥ 6 found in the database._"
+        return "_No job ads found in the database._"
+    header = "_No job ads scored ≥ 6 this week — showing top 10 by score:_\n\n" if fallback else ""
     lines: List[str] = []
     for a in job_ads:
         url = a.get("url", "")
@@ -431,12 +432,17 @@ def _build_job_ads_md(job_ads: List[Dict]) -> str:
             f"- **{linked}** (score: {score:.1f}) — {source} — {pub_date}  \n"
             f"  Region: {regions} · Skills: {skills}"
         )
-    return "\n".join(lines)
+    return header + "\n".join(lines)
 
 
-def _build_job_ads_html(job_ads: List[Dict]) -> str:
+def _build_job_ads_html(job_ads: List[Dict], fallback: bool = False) -> str:
     if not job_ads:
-        return "<p><em>No job ads with score ≥ 6 found in the database.</em></p>"
+        return "<p><em>No job ads found in the database.</em></p>"
+    fallback_note = (
+        '<p style="font-size:12px;color:#636e72;margin-bottom:10px;">'
+        '<em>No job ads scored ≥ 6 this week — showing top 10 by score.</em></p>'
+        if fallback else ""
+    )
     items: List[str] = []
     for a in job_ads:
         url = a.get("url", "")
@@ -456,7 +462,7 @@ def _build_job_ads_html(job_ads: List[Dict]) -> str:
             f'Region: {regions} · Skills: {skills} · {source} — {pub_date}'
             f'</span></li>'
         )
-    return f'<ul style="list-style:none;padding:0;margin:0">{"".join(items)}</ul>'
+    return fallback_note + f'<ul style="list-style:none;padding:0;margin:0">{"".join(items)}</ul>'
 
 
 def _build_source_list(articles: List[Dict]) -> str:
@@ -1063,6 +1069,10 @@ def generate_report(
     noise_articles = [a for a in articles if a.get("signal_strength") == "noise"]
 
     job_ads = get_job_ads(min_score=6.0)
+    job_ads_fallback = False
+    if not job_ads:
+        job_ads = get_job_ads(min_score=0.0)[:10]
+        job_ads_fallback = bool(job_ads)
 
     # Pre-compute new sections (only non-empty in external_transition mode)
     career_actions_md = _build_career_actions_section(articles, skill_matrix, career_mode)
@@ -1127,7 +1137,7 @@ def generate_report(
 
         job_ads_section = (
             f"\n\n---\n\n## {sec_job_ads}. Job Ads (score ≥ 6)\n\n"
-            f"{_build_job_ads_md(job_ads)}"
+            f"{_build_job_ads_md(job_ads, fallback=job_ads_fallback)}"
         )
 
         market_fit_section = ""
@@ -1218,7 +1228,7 @@ _Human review required before changing career direction. Not financial advice._
             weak_signals_rest_count=len(weak_signals_rest),
             hours_cap=hours_cap,
             qualification_html=_qual_data_html,
-            job_ads_html=_build_job_ads_html(job_ads),
+            job_ads_html=_build_job_ads_html(job_ads, fallback=job_ads_fallback),
         )
         html_path = REPORTS_DIR / f"weekly_career_brief_{week}.html"
         html_path.write_text(html_content, encoding="utf-8")
