@@ -109,6 +109,7 @@ feeds:
   - name: "Heise Online"
     url: "https://www.heise.de/rss/heise-atom.xml"
     category: "tech_news"
+    language: "de"
     reliability: 0.75
     regions: ["germany", "europe"]
     industries: ["ai", "automotive", "embedded"]
@@ -116,6 +117,7 @@ feeds:
   - name: "Golem.de"
     url: "https://rss.golem.de/rss.php?r=sw"
     category: "tech_news"
+    language: "de"
     reliability: 0.7
     regions: ["germany", "europe"]
     industries: ["ai", "automotive", "embedded"]
@@ -132,6 +134,7 @@ feeds:
   - name: "Handelsblatt Technologie"
     url: "https://www.handelsblatt.com/contentexport/feed/technologie"
     category: "business_news"
+    language: "de"
     reliability: 0.8
     regions: ["germany", "europe"]
     industries: ["automotive", "ai", "software_defined_vehicle"]
@@ -139,6 +142,7 @@ feeds:
   - name: "Handelsblatt Schlagzeilen"
     url: "https://www.handelsblatt.com/contentexport/feed/schlagzeilen"
     category: "business_news"
+    language: "de"
     reliability: 0.8
     regions: ["germany", "europe"]
     industries: ["automotive", "ai", "embedded"]
@@ -186,6 +190,7 @@ feeds:
   - name: "Heise Auto"
     url: "https://www.heise.de/autos/rss/news-atom.xml"
     category: "automotive"
+    language: "de"
     reliability: 0.8
     regions: ["germany", "europe"]
     industries: ["automotive", "adas", "software_defined_vehicle"]
@@ -193,6 +198,7 @@ feeds:
   - name: "Heise Developer"
     url: "https://www.heise.de/developer/rss/news-atom.xml"
     category: "technical"
+    language: "de"
     reliability: 0.8
     regions: ["germany", "europe"]
     industries: ["embedded", "ai", "software_defined_vehicle"]
@@ -200,6 +206,7 @@ feeds:
   - name: "GNews DE: Autonomes Fahren"
     url: "https://news.google.com/rss/search?q=autonomes+fahren+sicherheit&hl=de&gl=DE&ceid=DE:de"
     category: "tech_news"
+    language: "de"
     reliability: 0.65
     regions: ["germany", "europe"]
     industries: ["automotive", "adas", "functional_safety"]
@@ -207,6 +214,7 @@ feeds:
   - name: "GNews DE: Robotik Sicherheit"
     url: "https://news.google.com/rss/search?q=robotik+funktionale+sicherheit&hl=de&gl=DE&ceid=DE:de"
     category: "tech_news"
+    language: "de"
     reliability: 0.65
     regions: ["germany", "europe"]
     industries: ["robotics", "functional_safety"]
@@ -214,6 +222,7 @@ feeds:
   - name: "GNews DE: Eingebettete KI"
     url: "https://news.google.com/rss/search?q=eingebettete+KI+automotive&hl=de&gl=DE&ceid=DE:de"
     category: "tech_news"
+    language: "de"
     reliability: 0.65
     regions: ["germany", "europe"]
     industries: ["embedded", "ai", "automotive"]
