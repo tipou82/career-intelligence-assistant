@@ -232,6 +232,59 @@ def cmd_status(args: argparse.Namespace) -> None:
         pass
 
 
+def cmd_full_run_weekly(args: argparse.Namespace) -> None:
+    """run-weekly + git push reports + send email."""
+    import subprocess
+    from pathlib import Path
+    from datetime import date
+
+    # 1. Run the standard weekly pipeline
+    cmd_run_weekly(args)
+
+    reports_dir = Path(__file__).parent.parent / "reports"
+    week = getattr(args, "week", "current")
+    from .generate_weekly_report import get_week_label
+    week_label = get_week_label(week)
+
+    WIDTH = 60
+    print(f"\n── Push reports to git {'─' * (WIDTH - 22)}")
+
+    # 2. Git add + commit + push the report files
+    md_file = reports_dir / f"weekly_career_brief_{week_label}.md"
+    html_file = reports_dir / f"weekly_career_brief_{week_label}.html"
+
+    files_to_add = [str(p) for p in [md_file, html_file] if p.exists()]
+    if not files_to_add:
+        print("     No report files found to push.")
+    else:
+        today = date.today().isoformat()
+        commit_msg = f"Weekly report {week_label} — generated {today}"
+        try:
+            subprocess.run(["git", "add"] + files_to_add, check=True, capture_output=True)
+            result = subprocess.run(
+                ["git", "diff", "--cached", "--quiet"],
+                capture_output=True,
+            )
+            if result.returncode == 0:
+                print("     No changes to commit (reports unchanged).")
+            else:
+                subprocess.run(
+                    ["git", "commit", "-m", commit_msg],
+                    check=True, capture_output=True,
+                )
+                subprocess.run(["git", "push"], check=True, capture_output=True)
+                print(f"     ✓ Pushed: {', '.join(p.name for p in [md_file, html_file] if p.exists())}")
+        except subprocess.CalledProcessError as exc:
+            print(f"     ✗ Git error: {exc.stderr.decode().strip() if exc.stderr else exc}")
+
+    # 3. Send email
+    print(f"\n── Send email digest {'─' * (WIDTH - 20)}")
+    try:
+        cmd_send_email(args)
+    except SystemExit:
+        pass  # send-email calls sys.exit(1) on failure; already printed the error
+
+
 # ---------------------------------------------------------------------------
 # Argument parser
 # ---------------------------------------------------------------------------
@@ -329,6 +382,16 @@ def main() -> None:
         "--format", choices=["md", "html", "both"], default="both", dest="format"
     )
     p_weekly.set_defaults(func=cmd_run_weekly)
+
+    # full-run-weekly
+    p_full = sub.add_parser(
+        "full-run-weekly",
+        help="run-weekly + git push reports + send email",
+    )
+    p_full.add_argument("--llm", choices=["openai", "claude"], default=None, metavar="PROVIDER")
+    p_full.add_argument("--week", default="current", metavar="WEEK")
+    p_full.add_argument("--format", choices=["md", "html", "both"], default="both", dest="format")
+    p_full.set_defaults(func=cmd_full_run_weekly)
 
     # status
     sub.add_parser("status", help="Show database and job market statistics").set_defaults(

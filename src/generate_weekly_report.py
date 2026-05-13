@@ -580,12 +580,21 @@ def _render_html(
 
     # Weak signals
     if weak_signals:
-        weak_items = "".join(
-            f'<li><strong>{_h(a["title"])}</strong> '
-            f'<span class="ws">{a.get("relevance_score",0):.1f}</span> '
-            f'— {_h(a.get("source_name",""))} — {str(a.get("published_date",""))[:10]}</li>'
-            for a in weak_signals[:15]
-        )
+        def _weak_item_html(a: Dict) -> str:
+            url = a.get("url", "")
+            title = _h(a.get("title", ""))
+            linked = f'<a href="{_h(url)}" target="_blank">{title}</a>' if url else title
+            score = a.get("relevance_score", 0)
+            source = _h(a.get("source_name", ""))
+            date = str(a.get("published_date", ""))[:10]
+            lang = _lang_tag(a)
+            return (
+                f'<li><strong>{linked}</strong> '
+                f'<span style="font-size:11px;color:#888">{lang}</span> '
+                f'<span class="ws">{score:.1f}</span> '
+                f'— {source} — {date}</li>'
+            )
+        weak_items = "".join(_weak_item_html(a) for a in weak_signals[:30])
         weak_html = f'<ul class="weak-ul">{weak_items}</ul>'
     else:
         weak_html = "<p><em>No weak signals this week.</em></p>"
@@ -739,12 +748,18 @@ def generate_report(
             if strong_signals
             else "_No strong signals collected this week._"
         )
+        def _weak_line(a: Dict) -> str:
+            url = a.get("url", "")
+            title = a["title"]
+            linked = f"[{title}]({url})" if url else title
+            score = a.get("relevance_score", 0)
+            source = a.get("source_name", "")
+            date = str(a.get("published_date", ""))[:10]
+            lang = _lang_tag(a)
+            return f"- **{linked}** `{lang}` (score: {score:.1f}) — {source} — {date}"
+
         weak_section = (
-            "\n".join(
-                f"- **{a['title']}** (score: {a.get('relevance_score', 0):.1f}) "
-                f"— {a.get('source_name', '')} — {str(a.get('published_date', ''))[:10]}"
-                for a in weak_signals[:15]
-            )
+            "\n".join(_weak_line(a) for a in weak_signals[:30])
             if weak_signals
             else "_No weak signals this week._"
         )
