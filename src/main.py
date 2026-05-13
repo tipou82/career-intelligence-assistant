@@ -58,6 +58,11 @@ def cmd_report(args: argparse.Namespace) -> None:
     print("  Done.")
 
 
+def cmd_qualifications(args: argparse.Namespace) -> None:
+    from .qualification_layer import print_qualification_report
+    print_qualification_report()
+
+
 def cmd_skill_gap(args: argparse.Namespace) -> None:
     from .skill_gap import analyse_skill_gap, render_gap_markdown
     print("Skill Gap Analysis\n" + "=" * 50)
@@ -344,6 +349,12 @@ def main() -> None:
         help="Output format: md, html, or both (default: both)",
     )
     p_report.set_defaults(func=cmd_report)
+
+    # qualifications
+    sub.add_parser(
+        "qualifications",
+        help="Print qualification action recommendations from config/qualification_actions.yaml",
+    ).set_defaults(func=cmd_qualifications)
 
     # skill-gap
     sub.add_parser(

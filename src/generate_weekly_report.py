@@ -10,6 +10,7 @@ from typing import Any, Dict, List, Literal, Optional
 import yaml
 
 from .database import get_all_articles, get_articles_for_week, init_db, save_report
+from .qualification_layer import build_qualification_md, build_qualification_html, load_and_score
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 REPORTS_DIR = Path(__file__).parent.parent / "reports"
@@ -759,6 +760,7 @@ def _render_html(
     market_fit_md: str = "",
     weak_signals_rest_count: int = 0,
     hours_cap: int = 20,
+    qualification_html: str = "",
 ) -> str:
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
     exec_summary = _h(_build_executive_summary(strong_signals, weak_signals, week))
@@ -867,6 +869,14 @@ def _render_html(
   {skill_gap_html}
 </div>"""
 
+    qualification_section_html = ""
+    if qualification_html:
+        qualification_section_html = f"""
+<div class="sec" style="border-top:3px solid #1a1a2e;margin-top:24px">
+  <h2>Qualification Actions This Week</h2>
+  {qualification_html}
+</div>"""
+
     mode_badge = (
         f'<span style="background:#d63031;color:white;padding:2px 8px;border-radius:4px;'
         f'font-size:11px;font-weight:600">{career_mode.replace("_", " ").upper()}</span> '
@@ -936,6 +946,8 @@ def _render_html(
 
 {skill_gap_section}
 
+{qualification_section_html}
+
 <div class="footer">
   Career Intelligence Assistant · {_h(career_mode)} mode ·
   Human review required before changing career direction. Not financial advice.
@@ -999,6 +1011,11 @@ def generate_report(
     career_actions_md = _build_career_actions_section(articles, skill_matrix, career_mode)
     market_fit_md = _build_market_fit_section(articles, career_mode)
 
+    # Load qualification actions (silently skip if config missing)
+    qual_data = load_and_score()
+    _qual_data_html = build_qualification_html(qual_data) if qual_data["scored_actions"] else ""
+    _qual_data_md   = build_qualification_md(qual_data)   if qual_data["scored_actions"] else ""
+
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     saved: Dict[str, Path] = {}
 
@@ -1052,6 +1069,12 @@ def generate_report(
         skill_gap_md = ""
         if skill_gap_html:
             skill_gap_md = "\n\n---\n\n## Skill Gap Analysis\n\n_(See HTML version for full table.)_"
+
+        qualification_md_section = ""
+        if _qual_data_md:
+            person = qual_data.get("strategy", {}).get("target_person", "")
+            header = f"Qualification Actions This Week" + (f" — {person}" if person else "")
+            qualification_md_section = f"\n\n---\n\n## {header}\n\n{_qual_data_md}"
 
         sec_offset = 1 if career_actions_md else 0  # renumber if new section inserted
         s = lambda n: n + sec_offset
@@ -1108,7 +1131,7 @@ def generate_report(
 
 ## {s(8)}. Source List _(top articles only)_
 
-{_build_source_list(strong_signals + weak_signals_top)}{skill_gap_md}
+{_build_source_list(strong_signals + weak_signals_top)}{skill_gap_md}{qualification_md_section}
 
 ---
 
@@ -1129,6 +1152,7 @@ _Human review required before changing career direction. Not financial advice._
             market_fit_md=market_fit_md,
             weak_signals_rest_count=len(weak_signals_rest),
             hours_cap=hours_cap,
+            qualification_html=_qual_data_html,
         )
         html_path = REPORTS_DIR / f"weekly_career_brief_{week}.html"
         html_path.write_text(html_content, encoding="utf-8")

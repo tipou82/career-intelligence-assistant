@@ -129,9 +129,90 @@ python -m src.main send-email                  # send HTML report via Gmail SMTP
 python -m src.main send-email --week last      # send last week's report
 
 # ── Analysis ───────────────────────────────────────────────────
+python -m src.main qualifications              # qualification recommendations (Xi Liu)
 python -m src.main skill-gap                   # CV self-ratings vs job market demand
 python -m src.main status                      # database stats + job demand summary
 ```
+
+---
+
+## Qualification Layer
+
+The qualification layer recommends targeted qualification actions for a specific person (`config/qualification_actions.yaml`). It follows this rule:
+
+> **Target role → required proof → missing gap → smallest credible qualification → visible output → CV/interview integration**
+
+### Quick start
+
+**1. Fill in the candidate profile** in `config/qualification_actions.yaml`:
+```yaml
+qualification_strategy:
+  target_person: "Xi Liu"
+  weekly_hours_cap: 8
+  candidate_profile:
+    language_levels:
+      german: "A2"   # UPDATE to actual level
+    known_profile_gaps:
+      - "German language below B2"
+```
+
+**2. Update `profile_gap_score`** for each action (0.0–1.0). If a gap no longer exists, set `profile_gap: 0.0` — the item drops out of must-have automatically.
+
+**3. Run:**
+```bash
+python -m src.main qualifications   # standalone terminal output
+python -m src.main report           # section also appears in weekly HTML/MD report
+```
+
+### Scoring formula
+
+```
+qualification_score =
+    market_frequency_score * 0.30   (appears in relevant job ads)
+  + target_role_relevance  * 0.25   (required for target role)
+  + profile_gap_score      * 0.20   (closes a real current gap)
+  + evidence_output_score  * 0.15   (produces visible CV/interview proof)
+  + feasibility_score      * 0.10   (achievable in weekly budget)
+  - cost_time_penalty      * 0.10   (penalises expensive/long programmes)
+```
+
+| Score | Category | Meaning |
+|---|---|---|
+| ≥ 0.72 | `must_have` | Required or deal-breaking gap |
+| ≥ 0.52 | `high_roi` | Not mandatory but improves credibility quickly |
+| ≥ 0.35 | `nice_to_have` | Useful later, not urgent |
+| < 0.35 | `avoid_for_now` | Low return — defer |
+
+Add `override_category: must_have` to any action to force its classification regardless of score.
+
+### Adding a qualification action
+
+```yaml
+- id: "unique_id"
+  name: "Qualification name"
+  scores:
+    market_frequency:      0.70  # how often in job ads (0–1)
+    target_role_relevance: 0.80  # directly needed for target role
+    profile_gap:           0.75  # closes a real current gap
+    evidence_output:       0.70  # produces visible proof
+    feasibility:           0.80  # achievable in weekly budget
+    cost_time_penalty:     0.10  # 0=free/fast, 1=very expensive/long
+  profile_gap_addressed: "Short description of the gap"
+  recommended_action: "Specific, actionable instruction — never vague"
+  expected_visible_output: "Certificate / project / portfolio entry / interview story"
+  estimated_weekly_hours: 3
+  estimated_cost_eur: 0
+  cv_linkedin_usage: "How to list on CV/LinkedIn"
+  interview_usage: "How to use in an interview answer"
+  reason_for_deferral_if_any: null
+```
+
+### Guardrails enforced automatically
+
+- Warns if more than 2 must-have or 3 high-ROI items are present
+- Warns if must-have hours exceed the weekly cap
+- Never generates vague actions — every entry must have `recommended_action` and `expected_visible_output`
+- "Course completed" is not the same as "professional experience" — the tool does not confuse them
 
 ---
 

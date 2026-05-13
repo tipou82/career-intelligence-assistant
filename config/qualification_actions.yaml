@@ -1,0 +1,418 @@
+# Qualification Actions Configuration
+#
+# This file defines a targeted qualification plan for a specific person.
+# The system scores each qualification action and classifies it into:
+#   must_have       — required or strongly expected for target roles
+#   high_roi        — not mandatory, but improves credibility quickly
+#   nice_to_have    — useful later, but not urgent this month
+#   avoid_for_now   — interesting but low return (too expensive, too broad,
+#                     too theoretical, or weakly aligned with target jobs)
+#
+# Scoring formula:
+#   qualification_score =
+#       market_frequency_score * 0.30   (appears in relevant job ads)
+#     + target_role_relevance  * 0.25   (directly needed for target roles)
+#     + profile_gap_score      * 0.20   (closes a real gap in this profile)
+#     + evidence_output_score  * 0.15   (produces visible CV/LinkedIn/portfolio proof)
+#     + feasibility_score      * 0.10   (achievable within weekly time budget)
+#     - cost_time_penalty      * 0.10   (penalises expensive or very long programmes)
+#
+# Score thresholds:
+#   >= 0.72 → must_have
+#   >= 0.52 → high_roi
+#   >= 0.35 → nice_to_have
+#   <  0.35 → avoid_for_now
+#
+# Use override_category to force classification regardless of score.
+# All scores are 0.0–1.0.
+#
+# DECISION RULE: only add a qualification if it passes at least 4 of 6:
+#   1. Appears repeatedly in relevant job ads
+#   2. Closes a real gap in the candidate profile
+#   3. Achievable within the weekly time budget
+#   4. Produces visible evidence (certificate, project, portfolio entry)
+#   5. Cost/time justified by market demand
+#   6. Required, strongly preferred, or closes a deal-breaking gap
+
+# ────────────────────────────────────────────────────────────────────────────
+# STRATEGY
+# ────────────────────────────────────────────────────────────────────────────
+
+qualification_strategy:
+  target_person: "Xi Liu"
+  weekly_hours_cap: 8      # sustainable weekly time budget for qualification
+  currency: "EUR"
+
+  principle: >
+    Recommend only qualifications that improve employability for the target roles.
+    Prefer small credible proof over expensive certificates unless the certificate
+    is clearly required by employers. Never recommend "learn AI" or "improve
+    communication" — every action must be specific and produce visible output.
+    Never encourage overclaiming: "course completed" is not "professional experience".
+
+  coaching_guardrails:
+    - "Do not recommend trendy courses without repeated appearance in relevant job ads."
+    - "Do not recommend expensive certificates before the candidate has 2–3 job rejections citing the specific gap."
+    - "Do not recommend more than 2 must-have and 2 high-roi actions per week."
+    - "Every recommendation must produce a visible, interview-defensible output."
+    - "Distinguish clearly between certificate (proof of learning) and experience (proof of doing)."
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # CANDIDATE PROFILE — fill in Xi Liu's actual background here
+  # ──────────────────────────────────────────────────────────────────────────
+  candidate_profile:
+    name: "Xi Liu"
+    nationality: "Chinese"
+    current_location: "Germany"
+    highest_education: "Bachelor or Master — specify field"   # UPDATE THIS
+    years_of_work_experience: 0    # UPDATE — years in paid employment
+    previous_field: "specify"      # UPDATE — e.g. accounting, engineering, education
+
+    language_levels:
+      german: "A2"     # UPDATE — A1/A2/B1/B2/C1/C2 based on current level
+      english: "B2"    # UPDATE
+      mandarin: "native"
+
+    current_german_certificate: null    # e.g. "Goethe A2", "telc B1", null if none
+    german_recognition_status: null     # "recognised", "pending", "not yet applied", null
+
+    known_profile_gaps:
+      - "German language below B2 — limits office/professional roles"
+      - "No German-recognised professional qualification"
+      - "Limited German professional network"
+      - "CV not yet optimised for German job market format"
+      # Add more gaps here as you discover them from job rejections
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # TARGET ROLES — list the actual roles Xi Liu is applying for or targeting
+  # ──────────────────────────────────────────────────────────────────────────
+  target_roles:
+    - title: "UPDATE — e.g. Office Manager"
+      sector: "UPDATE — e.g. small/medium business, technology company"
+      typical_requirements:
+        - "German B2 minimum"
+        - "MS Office / Google Workspace"
+        - "Organisational and communication skills"
+    # Add more target roles here
+    # - title: "..."
+    #   sector: "..."
+    #   typical_requirements: [...]
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# QUALIFICATION ACTIONS
+# Each action is scored and classified automatically.
+# Update profile_gap_score when Xi Liu's actual gaps are known.
+# ────────────────────────────────────────────────────────────────────────────
+
+qualification_actions:
+
+  # ── LANGUAGE ─────────────────────────────────────────────────────────────
+
+  - id: "german_b2_certificate"
+    name: "German B2 certificate (Goethe-Institut or telc)"
+    scores:
+      market_frequency:    0.95   # B2 appears in virtually every professional job ad in Germany
+      target_role_relevance: 0.95 # deal-breaker gap for most office/professional roles
+      profile_gap:         0.90   # major gap if currently at A2/B1
+      evidence_output:     0.95   # internationally recognised certificate
+      feasibility:         0.50   # 6–12 months of consistent study at 8h/week
+      cost_time_penalty:   0.40   # Goethe B2 exam ~200 EUR; course costs vary
+    override_category: "must_have"
+    profile_gap_addressed: "German language below professional working proficiency"
+    recommended_action: >
+      Enrol in Goethe-Institut or VHS B2 course. Study 8 h/week minimum.
+      Take B2 exam as soon as eligible. Do NOT apply to professional roles before B2.
+    expected_visible_output: "Goethe B2 or telc B2 certificate — required on CV and applications"
+    estimated_weekly_hours: 8
+    estimated_cost_eur: 600
+    estimated_duration_weeks: 24
+    cv_linkedin_usage: "List certificate with date and issuing institution"
+    interview_usage: "Evidence of commitment to Germany and professional integration"
+    target_role_relevance_note: "Required by virtually all professional employers in Germany"
+    reason_for_priority: "Without B2, most professional applications will not advance to interview"
+    reason_for_deferral_if_any: null
+
+  - id: "german_b1_interim"
+    name: "German B1 certificate (intermediate step before B2)"
+    scores:
+      market_frequency:    0.70   # some roles accept B1 (e.g. logistics, retail, entry-level admin)
+      target_role_relevance: 0.75
+      profile_gap:         0.85
+      evidence_output:     0.85
+      feasibility:         0.80   # achievable in 3–6 months from A2
+      cost_time_penalty:   0.20
+    override_category: "must_have"
+    profile_gap_addressed: "German below working level for entry-level or practical roles"
+    recommended_action: >
+      Obtain B1 certificate as milestone before B2. Unlocks entry-level and
+      practical roles (logistics, retail, assistant positions) while studying toward B2.
+    expected_visible_output: "Goethe B1 or telc B1 certificate"
+    estimated_weekly_hours: 8
+    estimated_cost_eur: 250
+    estimated_duration_weeks: 12
+    cv_linkedin_usage: "List as language level; replace with B2 when achieved"
+    interview_usage: "Shows language progression and commitment"
+    target_role_relevance_note: "Minimum threshold for many entry-level positions in Germany"
+    reason_for_priority: "Quick milestone that opens first job applications while progressing to B2"
+    reason_for_deferral_if_any: null
+
+  # ── CV AND JOB APPLICATION READINESS ─────────────────────────────────────
+
+  - id: "german_cv_format"
+    name: "German-format CV (Lebenslauf) and cover letter template"
+    scores:
+      market_frequency:    0.90   # every application requires German-format Lebenslauf
+      target_role_relevance: 0.90
+      profile_gap:         0.80   # Chinese CV format is very different
+      evidence_output:     0.85   # tangible document ready to send
+      feasibility:         0.95   # 1–3 hours one-time investment
+      cost_time_penalty:   0.00   # free
+    override_category: "must_have"
+    profile_gap_addressed: "No German-format CV prepared — cannot apply to jobs"
+    recommended_action: >
+      Create a professional German Lebenslauf (tabellarisch format, reverse chronological,
+      with photo). Write one standard Anschreiben template. Use Europass or Canva
+      as starting point. Have a German native speaker review once.
+    expected_visible_output: "German CV PDF and cover letter template ready to send"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 1
+    cv_linkedin_usage: "The CV itself is the output"
+    interview_usage: "Required for every application — not optional"
+    target_role_relevance_note: "Applications without German-format CV are often rejected automatically"
+    reason_for_priority: "Zero cost, one-time task that unblocks all applications immediately"
+    reason_for_deferral_if_any: null
+
+  - id: "linkedin_profile_de"
+    name: "LinkedIn profile in German and English"
+    scores:
+      market_frequency:    0.80
+      target_role_relevance: 0.75
+      profile_gap:         0.70
+      evidence_output:     0.80
+      feasibility:         0.90
+      cost_time_penalty:   0.00
+    profile_gap_addressed: "No professional online presence visible to German recruiters"
+    recommended_action: >
+      Create or update LinkedIn profile with German headline and summary.
+      Add education, previous experience, and language skills. Connect with
+      3–5 relevant professionals per week. Free to create.
+    expected_visible_output: "LinkedIn profile with German summary and complete work history"
+    estimated_weekly_hours: 2
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 1
+    cv_linkedin_usage: "LinkedIn URL added to CV header"
+    interview_usage: "Recruiters check LinkedIn before inviting to interviews"
+    target_role_relevance_note: "Expected for most professional roles; low cost, high visibility"
+    reason_for_priority: "One-time setup task; free; enables recruiter outreach"
+    reason_for_deferral_if_any: null
+
+  # ── DIGITAL / OFFICE SKILLS ───────────────────────────────────────────────
+
+  - id: "ms_office_practical"
+    name: "MS Office practical competency (Word, Excel, Outlook, PowerPoint)"
+    scores:
+      market_frequency:    0.85   # in virtually every admin/office job ad
+      target_role_relevance: 0.80
+      profile_gap:         0.60   # depends on actual current level — UPDATE
+      evidence_output:     0.65   # no formal certificate needed; demonstrate in interview
+      feasibility:         0.90
+      cost_time_penalty:   0.05
+    profile_gap_addressed: "Office software proficiency expected by most employers"
+    recommended_action: >
+      Self-assess honestly against real job requirements (mail merge, pivot tables,
+      VLOOKUP, standard templates). Practice the specific tasks mentioned in target job
+      ads. Free Microsoft training at microsoft.com/en-us/learning.
+      Do NOT pay for an MS Office certificate — it is not recognised or expected by employers.
+    expected_visible_output: "Can answer 'give me an example of Excel use' in an interview with a concrete story"
+    estimated_weekly_hours: 2
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 4
+    cv_linkedin_usage: "List as MS Office (Word, Excel, Outlook, PowerPoint) — specific tools"
+    interview_usage: "Be ready to describe a specific task you completed using Excel or Word"
+    target_role_relevance_note: "Universal requirement for office/admin roles"
+    reason_for_priority: "Free, fast, directly required — do not skip"
+    reason_for_deferral_if_any: null
+
+  - id: "datev_awareness"
+    name: "DATEV software awareness (German accounting/HR standard)"
+    scores:
+      market_frequency:    0.60   # common in accounting, HR, and office roles in Germany
+      target_role_relevance: 0.55  # UPDATE based on actual target role
+      profile_gap:         0.70
+      evidence_output:     0.50   # DATEV has a training program; Grundkurs is free
+      feasibility:         0.70
+      cost_time_penalty:   0.10
+    profile_gap_addressed: "DATEV is the standard German accounting tool — unknown to most non-German candidates"
+    recommended_action: >
+      Complete DATEV Grundkurs (free online). Understand what DATEV does and how it is
+      used in German SME accounting and HR. Do not invest more time unless accounting is
+      the target role.
+    expected_visible_output: "DATEV Grundkurs completion; can mention in applications for accounting/admin roles"
+    estimated_weekly_hours: 2
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 2
+    cv_linkedin_usage: "List only if applying to accounting/finance/HR roles"
+    interview_usage: "Shows awareness of German business software ecosystem"
+    target_role_relevance_note: "Relevant for accounting, controlling, HR support, office management in Germany"
+    reason_for_priority: "Free, quick, opens accounting/HR application track"
+    reason_for_deferral_if_any: "Skip if target roles do not include accounting or HR"
+
+  # ── PROFESSIONAL QUALIFICATION ────────────────────────────────────────────
+
+  - id: "qs_kaufmaennische_ausbildung_einstieg"
+    name: "Kaufmännische Einführung / BWL Grundkurs (IHK or VHS)"
+    scores:
+      market_frequency:    0.55   # useful context for many German office/admin roles
+      target_role_relevance: 0.50  # UPDATE based on target role
+      profile_gap:         0.65
+      evidence_output:     0.60
+      feasibility:         0.65
+      cost_time_penalty:   0.25
+    profile_gap_addressed: "German business vocabulary and Kaufmann framework is unfamiliar"
+    recommended_action: >
+      Take VHS Kaufmännisches Basiswissen course (50–80 h, ~150 EUR) if applying to
+      German SME admin, purchasing, or junior controlling roles. Only invest if at least
+      3 target job ads mention kaufmännische Ausbildung or BWL Grundkenntnisse.
+    expected_visible_output: "VHS course certificate; business German vocabulary"
+    estimated_weekly_hours: 4
+    estimated_cost_eur: 150
+    estimated_duration_weeks: 12
+    cv_linkedin_usage: "List only if directly relevant to applied roles"
+    interview_usage: "Demonstrates understanding of German business structures"
+    target_role_relevance_note: "Only relevant if target is German SME office/admin/purchasing"
+    reason_for_priority: "Moderate return — only pursue if job ads explicitly mention it"
+    reason_for_deferral_if_any: "Defer until job ads repeatedly mention kaufmännische Kenntnisse"
+
+  - id: "recognition_auslaendischer_abschluss"
+    name: "Recognition of foreign degree in Germany (Anabin / KMK)"
+    scores:
+      market_frequency:    0.70   # required for regulated professions; useful for all
+      target_role_relevance: 0.75
+      profile_gap:         0.80
+      evidence_output:     0.90   # official recognition letter is strong CV evidence
+      feasibility:         0.60   # 3–6 months process; paperwork intensive
+      cost_time_penalty:   0.20
+    profile_gap_addressed: "Foreign degree unrecognised in Germany; reduces credibility for professional roles"
+    recommended_action: >
+      Check anabin.kmk.org for recognition status of Xi Liu's degree.
+      Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority.
+      For non-regulated professions: get certified translation + have employer confirm equivalence.
+      Contact Make it in Germany (make-it-in-germany.com) for free guidance.
+    expected_visible_output: "German recognition letter or equivalent statement; add to CV"
+    estimated_weekly_hours: 2
+    estimated_cost_eur: 100
+    estimated_duration_weeks: 16
+    cv_linkedin_usage: "Add 'equivalent to German [degree]' statement on CV once recognised"
+    interview_usage: "Removes recruiter uncertainty about foreign qualification validity"
+    target_role_relevance_note: "Mandatory for regulated professions; strongly recommended for all professional roles"
+    reason_for_priority: "One-time admin process; high credibility payoff; start early"
+    reason_for_deferral_if_any: "Not urgent if target roles do not require formal qualifications"
+
+  # ── NICE-TO-HAVE ──────────────────────────────────────────────────────────
+
+  - id: "google_workspace_basics"
+    name: "Google Workspace / G Suite basics (Docs, Sheets, Gmail, Drive)"
+    scores:
+      market_frequency:    0.50
+      target_role_relevance: 0.45
+      profile_gap:         0.40
+      evidence_output:     0.40
+      feasibility:         0.95
+      cost_time_penalty:   0.00
+    profile_gap_addressed: "Some employers use Google Workspace instead of MS Office"
+    recommended_action: "Self-study via Google's free training (workspace.google.com/training)"
+    expected_visible_output: "Can demonstrate use in interview if asked"
+    estimated_weekly_hours: 1
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 2
+    cv_linkedin_usage: "List alongside MS Office if used in practice"
+    interview_usage: "Only mention if interviewer raises it"
+    reason_for_deferral_if_any: "Only useful if specific target employer uses Google Workspace"
+
+  - id: "project_management_grundkurs"
+    name: "Project management basics (e.g. VHS PM Grundkurs or PRINCE2 Foundation)"
+    scores:
+      market_frequency:    0.45
+      target_role_relevance: 0.40
+      profile_gap:         0.50
+      evidence_output:     0.55
+      feasibility:         0.50
+      cost_time_penalty:   0.50   # PRINCE2 exam 400+ EUR
+    profile_gap_addressed: "PM skills increasingly requested even in non-PM roles"
+    recommended_action: "Only pursue if PM appears in 3+ target job ads. Start with free PM basics on Coursera before investing in a certificate."
+    expected_visible_output: "Course completion or certificate"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 400
+    estimated_duration_weeks: 8
+    cv_linkedin_usage: "List if completing a recognised programme"
+    interview_usage: "Use if interviewer asks about project coordination experience"
+    reason_for_deferral_if_any: "Defer until PRINCE2 appears repeatedly in job ads for target roles"
+
+  # ── AVOID FOR NOW ─────────────────────────────────────────────────────────
+
+  - id: "mba_or_masters"
+    name: "MBA or second Master's degree in Germany"
+    scores:
+      market_frequency:    0.25
+      target_role_relevance: 0.20
+      profile_gap:         0.20
+      evidence_output:     0.40
+      feasibility:         0.10   # 2–3 years, full-time or part-time
+      cost_time_penalty:   1.00   # very high cost and time
+    profile_gap_addressed: "Advanced degree could open senior positions"
+    recommended_action: "Do not pursue now. Focus on language, work experience, and credibility building first."
+    expected_visible_output: "Degree"
+    estimated_weekly_hours: 20
+    estimated_cost_eur: 15000
+    estimated_duration_weeks: 104
+    reason_for_deferral_if_any: >
+      ROI is very low in the short term. German employers value practical experience
+      over academic degrees for most non-specialist roles. Language and local work
+      experience are higher priority investments.
+
+  - id: "ai_python_bootcamp"
+    name: "AI / Machine Learning / Python bootcamp (general)"
+    scores:
+      market_frequency:    0.30
+      target_role_relevance: 0.20   # only relevant if target is tech/data roles
+      profile_gap:         0.35
+      evidence_output:     0.30
+      feasibility:         0.40
+      cost_time_penalty:   0.60
+    profile_gap_addressed: "Tech skills are in demand — but only for tech roles"
+    recommended_action: >
+      Do not pursue unless target roles require Python or data analysis.
+      Generic AI bootcamps do not produce interview-defensible experience.
+      'Completed a Python course' is not 'used Python to solve a real problem'.
+    expected_visible_output: "Course certificate — weak evidence without a project"
+    estimated_weekly_hours: 6
+    estimated_cost_eur: 1500
+    estimated_duration_weeks: 12
+    reason_for_deferral_if_any: >
+      Too broad for the current employment goal. Unless specific tech roles are
+      targeted, this investment will not produce the expected return.
+      Only pursue if Xi Liu transitions to data or tech roles with a clear job target.
+
+  - id: "ielts_toefl"
+    name: "IELTS or TOEFL certificate"
+    scores:
+      market_frequency:    0.30   # German employers rarely require IELTS; they assess in interview
+      target_role_relevance: 0.25
+      profile_gap:         0.20
+      evidence_output:     0.50
+      feasibility:         0.70
+      cost_time_penalty:   0.30
+    profile_gap_addressed: "English proficiency evidence"
+    recommended_action: >
+      Do not pursue unless target roles explicitly require IELTS/TOEFL score.
+      German employers typically assess English in the interview, not via certificate.
+      Investment is low-return for German job market.
+    expected_visible_output: "IELTS/TOEFL certificate"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 250
+    estimated_duration_weeks: 8
+    reason_for_deferral_if_any: >
+      German employers rarely require IELTS. English proficiency is demonstrated
+      in the interview itself. Spend time on German instead.

@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 10:13_
+_Mode: **External Transition** · Generated: 2026-05-13 10:35_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: digital_twin, robotics, functional_safety, automotive, humanoid_robot. Notable companies: Mercedes-Benz, Renesas, Daimler Truck, Hyundai Motor Group, NIO. See Section 2 for full analysis.
+Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: ai, automotive, digital_twin, physical_ai, software_defined_vehicle. Notable companies: Boston Dynamics, Hyundai Motor Group, Renesas, Irida Labs, Intel. See Section 2 for full analysis.
 
 ---
 
@@ -373,6 +373,55 @@ _Active signals this week: none this week._
 ## Skill Gap Analysis
 
 _(See HTML version for full table.)_
+
+---
+
+## Qualification Actions This Week — Xi Liu
+
+_Target person: **Xi Liu** · Weekly time budget: **8 h**_
+
+> ⚠️ 6 Must-Have items — cap is 2. Lower-scoring items may be noise.
+
+> ⚠️ Must-have items alone require 25 h/week — exceeds cap of 8 h. Prioritise ruthlessly.
+
+
+### Must-Have
+
+| Qualification | Why it matters | Action | Time | Visible evidence |
+|---|---|---|---|---|
+| **German-format CV (Lebenslauf) and cover letter template** | Applications without German-format CV are often rejected automatically | Create a professional German Lebenslauf (tabellarisch format, reverse chronological, with photo). Write one standard Anschreiben template. Use Europass or Canva as starting point. Have a German native speaker review once. | 3 h/wk | German CV PDF and cover letter template ready to send |
+| **German B2 certificate (Goethe-Institut or telc)** | Required by virtually all professional employers in Germany | Enrol in Goethe-Institut or VHS B2 course. Study 8 h/week minimum. Take B2 exam as soon as eligible. Do NOT apply to professional roles before B2. | 8 h/wk · €600 | Goethe B2 or telc B2 certificate — required on CV and applications |
+| **LinkedIn profile in German and English** | Expected for most professional roles; low cost, high visibility | Create or update LinkedIn profile with German headline and summary. Add education, previous experience, and language skills. Connect with 3–5 relevant professionals per week. Free to create. | 2 h/wk | LinkedIn profile with German summary and complete work history |
+| **MS Office practical competency (Word, Excel, Outlook, PowerPoint)** | Universal requirement for office/admin roles | Self-assess honestly against real job requirements (mail merge, pivot tables, VLOOKUP, standard templates). Practice the specific tasks mentioned in target job ads. Free Microsoft training at microsoft.com/en-us/learning. Do NOT pay for an MS Office certificate — it is not recognised or expected by employers. | 2 h/wk | Can answer 'give me an example of Excel use' in an interview with a concrete story |
+| **German B1 certificate (intermediate step before B2)** | Minimum threshold for many entry-level positions in Germany | Obtain B1 certificate as milestone before B2. Unlocks entry-level and practical roles (logistics, retail, assistant positions) while studying toward B2. | 8 h/wk · €250 | Goethe B1 or telc B1 certificate |
+| **Recognition of foreign degree in Germany (Anabin / KMK)** | Mandatory for regulated professions; strongly recommended for all professional roles | Check anabin.kmk.org for recognition status of Xi Liu's degree. Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority. For non-regulated professions: get certified translation + have employer confirm equivalence. Contact Make it in Germany (make-it-in-germany.com) for free guidance. | 2 h/wk · €100 | German recognition letter or equivalent statement; add to CV |
+
+### High-ROI
+
+| Qualification | Why it matters | Action | Time | Visible evidence |
+|---|---|---|---|---|
+| **DATEV software awareness (German accounting/HR standard)** | Relevant for accounting, controlling, HR support, office management in Germany | Complete DATEV Grundkurs (free online). Understand what DATEV does and how it is used in German SME accounting and HR. Do not invest more time unless accounting is the target role. | 2 h/wk | DATEV Grundkurs completion; can mention in applications for accounting/admin roles |
+| **Kaufmännische Einführung / BWL Grundkurs (IHK or VHS)** | Only relevant if target is German SME office/admin/purchasing | Take VHS Kaufmännisches Basiswissen course (50–80 h, ~150 EUR) if applying to German SME admin, purchasing, or junior controlling roles. Only invest if at least 3 target job ads mention kaufmännische Ausbildung or BWL Grundkenntnisse. | 4 h/wk · €150 | VHS course certificate; business German vocabulary |
+
+### Nice-to-Have
+
+| Qualification | Why not urgent | Later action |
+|---|---|---|
+| Google Workspace / G Suite basics (Docs, Sheets, Gmail, Drive) | Only useful if specific target employer uses Google Workspace | Self-study via Google's free training (workspace |
+| Project management basics (e.g. VHS PM Grundkurs or PRINCE2 Foundation) | Defer until PRINCE2 appears repeatedly in job ads for target roles | Only pursue if PM appears in 3+ target job ads |
+
+### Avoid for Now
+
+| Qualification | Why to avoid / defer |
+|---|---|
+| IELTS or TOEFL certificate | German employers rarely require IELTS. English proficiency is demonstrated in the interview itself. Spend time on German instead.
+ |
+| AI / Machine Learning / Python bootcamp (general) | Too broad for the current employment goal. Unless specific tech roles are targeted, this investment will not produce the expected return. Only pursue if Xi Liu transitions to data or tech roles with a clear job target.
+ |
+| MBA or second Master's degree in Germany | ROI is very low in the short term. German employers value practical experience over academic degrees for most non-specialist roles. Language and local work experience are higher priority investments.
+ |
+
+> **Principle:** _Recommend only qualifications that improve employability for the target roles. Prefer small credible proof over expensive certificates unless the certificate is clearly required by employers. Never re_
 
 ---
 
