@@ -1,228 +1,217 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 10:35_
+_Mode: **External Transition** · Generated: 2026-05-13 13:04_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: ai, automotive, digital_twin, physical_ai, software_defined_vehicle. Notable companies: Boston Dynamics, Hyundai Motor Group, Renesas, Irida Labs, Intel. See Section 2 for full analysis.
+Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key activity in: cultural_management, music_classical, museum_exhibition, event_production, education_programs. Notable companies: MDR, KiKA, Schauspiel Stuttgart, Bamberger Symphoniker, Staatsoper München. See Section 2 for full analysis.
 
 ---
 
 ## 2. Career Actions This Week
 
 ### Top 5 Role Clusters to Target
-- Functional Safety Architect / System Safety Engineer
-- Safety Consultant / Assessor (TÜV, SGS, Bureau Veritas)
-- Machine Safety Engineer (ISO 13849 / IEC 62061)
-- Embedded AI Safety Engineer (SOTIF / ISO PAS 8800)
-- RAMS Engineer (Railway / Industrial Automation)
+- Projektmanager*in Kultur (Konzerthaus / Festival / Kulturamt)
+- Bildungsreferent*in Musik / Kulturelle Bildung (Musikvermittlung)
+- Veranstaltungsmanager*in Kultur (Eventagentur / Festival)
+- Education / Outreach Manager (Konzerthaus / Musikhochschule)
+- Pressereferent*in / Kommunikation (Kulturinstitution)
 
 ### Top Companies to Monitor or Approach
-- Google DeepMind
-- Tesla
-- Intel
-- Toyota
-- Figure AI
+- SWR
+- SWR Symphonieorchester
+- Staatstheater Stuttgart
+- Staatsoper Stuttgart
+- Schauspiel Stuttgart
 
 ### Recommended CV / Application Keywords
-`人形机器人`, `自动驾驶`, `自動運転`, `humanoid`, `强化学习`, `ヒューマノイド`, `edge ai`, `robotics engineering`
+`veranstaltungsmanagement`, `musikvermittlung`, `künstlerbetreuung`, `pressearbeit`, `projektmanagement`, `musikpädagogik`, `audience_development`, `ausstellungsmanagement`
 
 ### Networking Targets
-- TÜV SÜD / TÜV Rheinland functional safety teams
-- Safety engineer communities (LinkedIn: Functional Safety Professionals)
-- CMSE/ISO 13849 contacts from machinery/robotics sector
-- ADAS safety architects at Continental, ZF, Mobileye
+- Musikhochschule Stuttgart (HMDK) alumni and Education-Manager-Team
+- Kulturmanagement Network (kulturmanagement.net) and LinkedIn group
+- Netzwerk Junge Ohren — Musikvermittlung professionals
+- Stuttgarter Liederhalle and Schlossfestspiele Ludwigsburg press teams
+- Kulturamt Leonberg / Stuttgart Veranstaltungskoordination
 
 ### 7-Day Concrete Action Plan
-1. **Apply** to 3–5 senior safety architect / consultant roles in Germany/Europe
-2. **Update LinkedIn headline** → include ISO 26262, ISO 13849, SOTIF, AI safety
-3. **Contact** one TÜV / safety consultancy (TÜV SÜD, TÜV Rheinland, SGS, Exida)
-4. **Practice** one interview story: cross-domain safety architecture decision
-5. **Review** this week's strong signals for new employer leads
+1. **Apply** to 3 tailored cultural-PM roles in BW (priority: education, event production)
+2. **Update LinkedIn headline** → 'Projektmanagerin Kultur — Bildung, Veranstaltung, Kommunikation'
+3. **Contact** one Stuttgart-area cultural professional for a 20-minute Kennenlerngespräch
+4. **Practice** one STAR interview answer aloud in German with Sprachcoach or tandem partner
+5. **Advance** one Google PM or Scrum Master I module; log progress to certification tracker
 
 ---
 
 ## 3. Strong Signals
 
-### 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑  `🇨🇳 ZH`
-- **Development:** 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 &nbsp;&nbsp; 电子工程专辑
+### Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»  `🇩🇪 DE`
+- **Development:** Vom Singen bis zur Technik: Bei «chor.com» in Leipzig zeigen Chöre, Verlage und Musikschulen, wie sie Menschen verbinden. Ex-Bundespräsident Wulff verrät, was ihn daran begeistert. Vier Tage lang wird Leipzig im Herbst zum Treffpunkt der deutschen Chorszene: Erstmals findet dort das bundesweite Chorfestival «chor.com» statt. Vom 1. bis 4. Oktober
 - **Companies involved:** N/A
-- **Region:** 上海, 深圳
-- **Industry domain:** functional_safety, robotics
-- **Technology signal:** 功能安全
-- **Career relevance:** Directly relevant to 功能安全
+- **Region:** germany
+- **Industry domain:** education_programs, music_classical, cultural_management
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Musikvermittlung
+- **Confidence level:** medium
+- **Relevance score:** 8.8 / 10
+- **Recommended action:** monitor
+- **Source:** nmz — Neue Musikzeitung — 2026-05-11
+- **URL:** https://www.nmz.de/bildung/chorszene-laienmusik/wulff-zur-festivalpremiere-leipzig-choere-bauen-bruecken
+
+---
+
+### Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“ – Das Sechsstädtebundfestival  `🇩🇪 DE`
+- **Development:** Unter dem Motto „Mittelpunkt“ steht das 9. „Kommen und Gehen“ - Das Sechsstädtebundfestival! vom 12. bis 23. August 2026. Bereits am 20. Mai eröffnet „Hammerschmidt recomposed - Barock trifft Beat“ im Kühlhaus Görlitz das Festivaljahr. Im Rahmen der Reihe „Via Regia – jüdisch – unterwegs“ laden Sibylle Kuhne und Yoed Sorek am 21. Mai in die Alte
+- **Companies involved:** N/A
+- **Region:** germany
+- **Industry domain:** cultural_management, event_production, music_classical
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Musikvermittlung
+- **Confidence level:** low
+- **Relevance score:** 8.8 / 10
+- **Recommended action:** monitor
+- **Source:** nmz — Neue Musikzeitung — 2026-05-13
+- **URL:** https://www.nmz.de/politik-szene/veranstaltungen/auftaktkonzerte-am-20-und-21-mai-zum-9-kommen-und-gehen-das
+
+---
+
+### Prégardien und SWR-Orchester bei Schwetzinger Festspielen - Mannheimer Morgen  `🇬🇧 EN`
+- **Development:** Prégardien und SWR-Orchester bei Schwetzinger Festspielen &nbsp;&nbsp; Mannheimer Morgen
+- **Companies involved:** SWR Symphonieorchester
+- **Region:** baden-württemberg, germany
+- **Industry domain:** music_classical, event_production
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement
 - **Confidence level:** medium
 - **Relevance score:** 8.5 / 10
 - **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 机器人安全 — 2026-05-13
-- **URL:** https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5
+- **Source:** GNews: SWR Symphonieorchester — 2026-05-11
+- **URL:** https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLTJoaDFQejFoZWhKTlVldjEwVElJZGRuMXI5ZUF4VVRCNHNGQTNKaFRTLTZhUlZnNTRnZzV6eHF0U3RudWRSMF9BTG5Ockxfa2ZhMnhTVkhYV285a3JkWURtQ215OUg5Z1dFWU9rWGhNSnJYTndwR1RSMmtreWIwcXNjQTNHeGR3Wkp1dWtXZC1GNXF2TWVOeTJmU3dGM1AyTEJQOHo4X082VnBVQ1hWR1FPa3RQSUhpZVFnUGt2QU9OUzlLeTRQYktpYVdyZFY1bkQ2VXAzUEV4aFMzYlV2VUFVclhrZw?oc=5
 
 ---
 
-### MIPI Alliance Forms Physical AI Group Focused on Humanoids  `🇬🇧 EN`
-- **Development:** The MIPI Alliance has announced the formation of a Physical AI Birds of a Feather (BoF) group focused on emerging technologies in the physical AI market, with an initial emphasis on humanoid robotics. The initiative is designed to evaluate how existing and future MIPI interface specifications can support the rapidly evolving humanoid application ec
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** automotive, embedded, humanoid_robot, physical_ai, robotics
-- **Technology signal:** humanoid, physical AI
-- **Career relevance:** Directly relevant to your profile
+### Oper „Dialogues des Carmélites“: Female Empowerment an der Staatsoper Stuttgart - SWR  `🇬🇧 EN`
+- **Development:** Oper „Dialogues des Carmélites“: Female Empowerment an der Staatsoper Stuttgart &nbsp;&nbsp; SWR
+- **Companies involved:** Staatstheater Stuttgart, SWR
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** music_classical, cultural_management, event_production
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Künstlerbetreuung
+- **Confidence level:** medium
+- **Relevance score:** 8.5 / 10
+- **Recommended action:** monitor_closely
+- **Source:** GNews: Staatstheater Stuttgart — 2026-05-11
+- **URL:** https://news.google.com/rss/articles/CBMimwFBVV95cUxQbW02YXJlalZHd3NsSVdSUjdpakVUdEVZeHRDc3RDZUpHR3pZY29vRTRpbVBDOEFsLTN1UDBvNU9WT0xqQU85TEhKN2pDSW5EOWdyUWRLeVVGS2oyMks5WmhMeW81ZEtNNThoU2tuUEZZRHdJS1RsaW5nRlpScTRhNzFELW96MnJHODNnbUVTeVdHOTdZLV9UcjZ3SQ?oc=5
+
+---
+
+### Spielzeit 2026/27: Faust wird von der KI verführt – Das plant das Schauspiel Stuttgart - stuttgarter-nachrichten.de  `🇬🇧 EN`
+- **Development:** Spielzeit 2026/27: Faust wird von der KI verführt – Das plant das Schauspiel Stuttgart &nbsp;&nbsp; stuttgarter-nachrichten.de
+- **Companies involved:** Schauspiel Stuttgart
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** cultural_management, event_production
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Künstlerbetreuung
+- **Confidence level:** medium
+- **Relevance score:** 8.5 / 10
+- **Recommended action:** monitor_closely
+- **Source:** GNews: Staatstheater Stuttgart — 2026-05-12
+- **URL:** https://news.google.com/rss/articles/CBMiggJBVV95cUxQV3RqU3pIb1Mzc29sZ09rVEw0VGdReHJTV2dLeUp2TW5tS3h2bWtJTnBDZTJSLTd1Y0Y5eDA3SjZ1cGlfczBaVlFsMkt4T0tCYmZpZGFYQWRkWHVhM1ZuUUhOclVuSjZiNGFjYUZzUVpPb1dkN2paLWFrUzBQX1FhYXB6SVhoaFdBOW1haHB4OXkxSFNTa1dsczhIQTFJUVZTUDdGTnF2NmxVMEZvYjFJLThNY1QxelpXTjM5ZFk4T0IyTURwd2pKQ19famcyUVM2VGdBMEFIQTBieV9SdGVyUVYyZGFqeTJtcFUxX0s5QTViUWVyakVhZFI0WlNiWTVwQlE?oc=5
+
+---
+
+### Staatsoper Stuttgart: Der Sound der Gastarbeiter – „Station Paradiso“ unter viel Jubel uraufgeführt - swp.de  `🇬🇧 EN`
+- **Development:** Staatsoper Stuttgart: Der Sound der Gastarbeiter – „Station Paradiso“ unter viel Jubel uraufgeführt &nbsp;&nbsp; swp.de
+- **Companies involved:** Staatsoper Stuttgart
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** music_classical, event_production, cultural_management
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Künstlerbetreuung
 - **Confidence level:** high
-- **Relevance score:** 8.1 / 10
+- **Relevance score:** 8.5 / 10
 - **Recommended action:** monitor_closely
-- **Source:** Embedded.com — 2026-05-12
-- **URL:** https://www.embedded.com/mipi-alliance-forms-physical-ai-group-focused-on-humanoids/
+- **Source:** GNews: Staatstheater Stuttgart — 2026-05-11
+- **URL:** https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS0MwNENvSG50SDRLcGQwcEl5MXdSVXV5dzYyVmNucC1KZGk2MmhJdDc5ajdnRzZmTmpxRkdUSnhVMDF5MjlxRVZvRWp1ZVJ2X2FrNVNWZzlMemJ6WnRJYzFmbW5ETUI5N2NSQTdZQ1BnanU3ZlpFdDFDNTltRmpHczhYbVE1ZlNSZkJUY2ZIa2xPQXFacDBGb1p0bHFBV0NRN2tkTUVsdlhVWHBFNWFQTjVScDdydEVEaC1kaFhRbjVxejk0Q19sWnNiVjBlTGRD?oc=5
 
 ---
 
-### 動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た  `🇯🇵 JA`
-- **Development:** 京都ヒューマノイドアソシエーション（KyoHA）が純国産ヒューマノイドの検証機「SEIMEI」を公開した。足首パーツの破損で動的デモを披露できないというトラブルを隠さず、未完成の現状をさらけ出したところにKyoHAの純国産ヒューマノイド開発に向けた覚悟が見えた。
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** ヒューマノイド
-- **Career relevance:** Directly relevant to ヒューマノイド
-- **Confidence level:** medium
-- **Relevance score:** 8.0 / 10
+### Popsongs und Gastarbeitergeschichten: „Station Paradiso“ von Sara Glojnarić an der Staatsoper Stuttgarts - SWR  `🇬🇧 EN`
+- **Development:** Popsongs und Gastarbeitergeschichten: „Station Paradiso“ von Sara Glojnarić an der Staatsoper Stuttgarts &nbsp;&nbsp; SWR
+- **Companies involved:** Staatsoper Stuttgart, SWR
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** event_production, music_classical, cultural_management
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Künstlerbetreuung, Musikvermittlung
+- **Confidence level:** high
+- **Relevance score:** 8.5 / 10
 - **Recommended action:** monitor_closely
-- **Source:** ITmedia AI+ — 2026-05-12
-- **URL:** https://monoist.itmedia.co.jp/mn/articles/2605/13/news024.html
+- **Source:** GNews: Staatstheater Stuttgart — 2026-05-11
+- **URL:** https://news.google.com/rss/articles/CBMiowFBVV95cUxNMkM2M0JGai1kTm9kR3dzT3l1bkF0NG5aM0N3djFOcUhSNEZMb1U1Q3ljbjhLSWd3UnRtTklKRXYzYlkya0dsbWtMWnR4Zmw5Nk1xeUFkSmxmdEtkdTIyUDZ6aUhjSHY4dWkxb2V6RndiVHZoc2hDV19jMS1sVXdBNVFDZDBQTU9wakJreGp3R3VLUU5KY3MzQ1NjaWVFdHYwQVNn?oc=5
 
 ---
 
-### A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. - CPG Click Petróleo e Gás  `🇬🇧 EN`
-- **Development:** A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. &nbsp;&nbsp; CPG Click Petróleo e Gás
-- **Companies involved:** Boston Dynamics, Figure AI, Tesla
-- **Region:** N/A
-- **Industry domain:** automotive, digital_twin, humanoid_robot, robotics
-- **Technology signal:** humanoid
-- **Career relevance:** Directly relevant to your profile
-- **Confidence level:** medium
-- **Relevance score:** 8.0 / 10
+### Spielzeit 2026/27: Schöne Aussichten! Das plant die Staatsoper Stuttgart - stuttgarter-nachrichten.de  `🇬🇧 EN`
+- **Development:** Spielzeit 2026/27: Schöne Aussichten! Das plant die Staatsoper Stuttgart &nbsp;&nbsp; stuttgarter-nachrichten.de
+- **Companies involved:** Staatstheater Stuttgart
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** music_classical, event_production, cultural_management
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Künstlerbetreuung, Musikvermittlung
+- **Confidence level:** high
+- **Relevance score:** 8.5 / 10
 - **Recommended action:** monitor_closely
-- **Source:** GNews: Boston Dynamics — 2026-05-11
-- **URL:** https://news.google.com/rss/articles/CBMikgJBVV95cUxNZ25MS1FCTWxUd0VxSGp5MHhjSXd6WWRURWdpcUdSR2dFai1FVTVvY0VNcTJaS3JxUVRNd3k0Zlp1emFBV2V4aURHWTBJaF8wYnRFU1dwRG5GQXpXUGF1eDNiTUdLUWtHMlV3Szlrc0c2ZTBRWXh1YXk3ZUZMMDVpODVIUHkwdzhUWFZLTTQ3ZGxDN0ZCWHctanlKY3l2UVRKYmhzV1NpMHhiN1c5RDZ5aE5xTklQQlRDQ2htdDNwbnlqRlR4bWcteVlra3BPX2xISWJrU1BMczBiS3FwbHJyNXVYSktIMEdiODh6aklZdG42VVlGZUhLV29nTzI0UTYxSzlVazRPNWFSNFVwQ3p0TjVB?oc=5
+- **Source:** GNews: Staatstheater Stuttgart — 2026-05-12
+- **URL:** https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalVKaDFtQlQtXzMyV1ZmNnNBNkdNSUFrY2FXZ2EtQ3Z2QVNqNnJkc1pyYU9SMHJIbFVwcWs1M0ktMU9wVDZ5RDVSTzJLTTNXX1R0S2hjbXE0cklaODdDaHJaUHlzbDVXaE1Wb0NJTWJYdzZRaU1HS2Ryb3pmOFJnRW1TQ3RnenF4ZWJOMkxBR204elpWMS1Uc09SdVRSN2JEN1hxZEZSVERvaWVyOHB5V2tsY0R5Qi12bnktSmpIWXRESGdlMEVnc1BYUUxEMzJ1UUpHVlNKT2lnd0NSc2duRlNvS1JOUUpBZzFkY2s1SFE?oc=5
 
 ---
 
-### Renesas Completes Acquisition of Irida Labs to Expand Vision AI Software Capabilities and Accelerates System-Level Vision Solutions  `🇬🇧 EN`
-- **Development:** Renesas Electronics Corporation (TSE:6723, “Renesas”), a premier supplier of advanced semiconductor solutions, today announced that a subsidiary of Renesas has completed the acquisition of Irida Labs, a Greece-based company specializing in embedded software for AI-powered visual perception systems. The acquisition strengthens Renesas’ edge AI embed
-- **Companies involved:** Renesas, Irida Labs
-- **Region:** europe, global
-- **Industry domain:** embedded, ai, robotics
-- **Technology signal:** edge AI, embedded software, visual perception systems, machine vision
-- **Career relevance:** Directly relevant to embedded AI, vision systems integration, edge computing
+### Das SWR Sommerfestival bringt Stuttgart zum Feiern - Presseportal  `🇩🇪 DE`
+- **Development:** Das SWR Sommerfestival bringt Stuttgart zum Feiern &nbsp;&nbsp; Presseportal
+- **Companies involved:** SWR Symphonieorchester
+- **Region:** stuttgart, baden-württemberg, germany
+- **Industry domain:** event_production, music_classical, pr_communication
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Veranstaltungsmanagement, Pressearbeit, Künstlerbetreuung
 - **Confidence level:** medium
-- **Relevance score:** 7.8 / 10
-- **Recommended action:** monitor
-- **Source:** EE Journal — 2026-05-11
-- **URL:** https://www.eejournal.com/industry_news/renesas-completes-acquisition-of-irida-labs-to-expand-vision-ai-software-capabilities-and-accelerates-system-level-vision-solutions/
+- **Relevance score:** 8.5 / 10
+- **Recommended action:** monitor_closely
+- **Source:** GNews DE: Festival Stuttgart Ludwigsburg — 2026-05-11
+- **URL:** https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NSXN0V0xxZ0RQVlFOQVhZcndpckhmNGF1RlN1S3g5MUtCVEN0dXVPTDl1bXlYYjc4V1A0cTZzcm9DSk5PVWlXQ2lsRFFBYW9HdTNTeTR3?oc=5
 
 ---
 
-### 6月上海，这场论坛聊透出海真问题  `🇨🇳 ZH`
-- **Development:** 副标题：韧性全球化，AI向未来｜EqualOcean2026出海全球化百人论坛（GGF2026）将于6月11日在上海举行  
-     
-   出海这件事，已经变了。 
-   如果今天还把出海理解为“寻找增量市场”，大概率已经慢了一步。 
-   &nbsp;如今，中国企业出海已经进入一个全新的阶段。真正拉开差距的，早已不是“是否出海”，而是： 
-   ·&nbsp;下一阶段最值得重仓的区域市场在哪里？ 
-   ·&nbsp;AI应该优先进入哪些关键环节，才能形成真正差异化？ 
-   ·&nbsp;在资本趋于理性、增长更重质量的背景下，什么样的公司还具备穿越周期的可能性？ 
-   ·&nbsp;对于具身智能、自动驾驶、AI硬件等新技术企业而言，如何跨越从技术验证到场景落地、从产品展示到规模商业
-- **Companies involved:** N/A
-- **Region:** 上海, 中国
-- **Industry domain:** adas, robotics
-- **Technology signal:** 人形机器人, 自动驾驶
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.8 / 10
-- **Recommended action:** monitor_closely
-- **Source:** 36氪 36Kr — 2026-05-13
-- **URL:** https://36kr.com/p/3807234971131656?f=rss
-
----
-
-### 专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 - 证券时报  `🇨🇳 ZH`
-- **Development:** 专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 &nbsp;&nbsp; 证券时报
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-12
-- **URL:** https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwWFplYXdLbl90NGdoVmw1d240M0hzV2F4SmVqakRnZFlQU2F3ejV6MWRRZUxmemZYdEFsajlvakQyWnAxc3BjLVE1ZW5BX2l6cmNDajdrWlJuRWh3?oc=5
-
----
-
-### 李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 - 车家号  `🇨🇳 ZH`
-- **Development:** 李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 &nbsp;&nbsp; 车家号
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** adas, robotics
-- **Technology signal:** 人形机器人, 自动驾驶
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-13
-- **URL:** https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IWUlhdWY4d0xvb0dKMUx4NUdteTY1Q2psN0hTMUhCR2NoMEtDZDZNeGtyRU9rZWcyMkRFQUxTZG9EcE1Od0QySXFnaG5ldW1Majl0WXhvcU5wVVU?oc=5
-
----
-
-### 人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” - 驱动之家  `🇨🇳 ZH`
-- **Development:** 人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” &nbsp;&nbsp; 驱动之家
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-13
-- **URL:** https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Ob2MwcW5uVkJ1bkhnSmxHQkJBWU5FcXJRYWJ3LUJKaXlBNGZtQ19Qa1cwamlnaXVvOUIyT01nQkY4cWh2V3dnVVVuUkpzNVlYSnRfaG1Gbi0?oc=5
-
----
-
-### 湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 - 湖北省数据局  `🇨🇳 ZH`
-- **Development:** 湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 &nbsp;&nbsp; 湖北省数据局
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** ai, robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-11
-- **URL:** https://news.google.com/rss/articles/CBMieEFVX3lxTE9PVzVOVkgweEljRzhmbTI1Q2lWbFZBUlQ2bmdaY0prRUlKLWszczBoWFhleTVRc1V6ZFAwQXlQMjdRckN2NmZldlRZU3pJbnIxTTVXcUtJZ1FPRXdFYkUyM3Q1eWE0cUVRVFhhUG5YbDFER2VTbTV5Vg?oc=5
+### Antirassismus-Comedy im Kika: Die biodeutsche Oma fällt in den braunen Fluss  `🇩🇪 DE`
+- **Development:** Die Sketch-Comedy „Moooment!“ im öffentlich-rechtlichen Kika soll Kindern Rassismus erklären. Sie will Stereotype knacken, produziert sie aber selbst. Und jetzt ist sie plötzlich offline. Warum?
+- **Companies involved:** KiKA
+- **Region:** germany
+- **Industry domain:** education_programs, pr_communication
+- **Technology signal:** N/A
+- **Career relevance:** Directly relevant to Musikvermittlung, Pressearbeit
+- **Confidence level:** low
+- **Relevance score:** 8.5 / 10
+- **Recommended action:** watch
+- **Source:** FAZ Feuilleton — 2026-05-12
+- **URL:** https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/kritik-an-der-kika-comedy-moooment-200825999.html
 
 ---
 
 ## 4. Weak Signals / Watchlist _(top 15 by actionability)_
 
-- **[Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Electrek — 2026-05-11
-- **[Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — IEEE Spectrum Robotics — 2026-05-12
-- **[VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive News — 2026-05-12
-- **[Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive World — 2026-05-11
-- **[Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-11
-- **[Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
-- **[Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Nikkei Asia — 2026-05-12
-- **[Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive News — 2026-05-11
-- **[Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
-- **[KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — GNews DE: Eingebettete KI — 2026-05-13
-- **[Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Electrek — 2026-05-11
-- **[Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Nikkei Asia — 2026-05-12
-- **[トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html)** `🇯🇵 JA` (rel: 6.2 · act: 0.0) — Response.jp — 2026-05-13
-- **[Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Heise Online — 2026-05-13
-- **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Automotive World — 2026-05-12
-
-_+ 272 further weak signals not shown. Main themes: automotive (148), robotics (82), embedded (50), ai (46), adas (33)._
+- **[Literatur: Zisch ab, Gegenwart](https://www.sueddeutsche.de/kultur/dirk-von-petersdorff-wir-kinder-der-leichtigkeit-essay-rezension-li.3452471)** `🇩🇪 DE` (rel: 5.8 · act: 3.5) — SZ Kultur — 2026-05-11
+- **[Berlins MuseumsMeileMitte: Kulturwüsten](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/kommentar-zu-der-neu-gegruendeten-berliner-museumsmeilemitte-200825545.html)** `🇩🇪 DE` (rel: 5.7 · act: 3.5) — FAZ Feuilleton — 2026-05-12
+- **[Abendkonzert vom 10.5.2026 - SWR](https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHQwUnJkb3ZIbEpnU3EwcG96RnVMSkNCODdxV3VmWnBndjQxaGZYQ3FPZVVraUt6UkRZWkRrYjFaWlh4TzJYOFh2X2hmZ3YtbllLcWFhVjd4ZVQ0d3ptQUp6NEFqd3YyVmJLVmdMb0pkeldwb25vUjZYc1NOZ294T2FZWTRYY2JWTE5TZXc5ajNWbi1nMFBGZ3lXWmZDdXh3SHU0UkRMMVI3aTlVSmZF?oc=5)** `🇬🇧 EN` (rel: 5.3 · act: 3.5) — GNews: SWR Symphonieorchester — 2026-05-11
+- **[Abonnement Mannheim, 5 Konzerte - SWR](https://news.google.com/rss/articles/CBMikAFBVV95cUxPNUJHYk5NSmFkenczcVZpYVJvX05NRTJPSWR2VXVDVk5tTGVZNlhlc2JobHRYbGtYLXlKRTBaemo2NHpGSkF4Tld4LWRybUNZc0tydHVFSTJKWE5BYVl3dTRvLVpzTTBLQWJ0QVdiRi1Eby1mQ3F0MmNxZEF0dThQUFBGc1FqRmczYTFuSzkyTV8?oc=5)** `🇬🇧 EN` (rel: 5.3 · act: 3.5) — GNews: SWR Symphonieorchester — 2026-05-11
+- **[Mehta cancels Munich opera](https://slippedisc.com/2026/05/mehta-cancels-munich/?utm_source=rss&utm_medium=rss&utm_campaign=mehta-cancels-munich)** `🇬🇧 EN` (rel: 5.0 · act: 3.5) — Slipped Disc — 2026-05-13
+- **[Ausstellung: Spieglein, Spieglein](https://www.sueddeutsche.de/kultur/anish-kapoor-ausstellung-duisburg-lehmbruck-museum-li.3472051)** `🇩🇪 DE` (rel: 4.8 · act: 3.5) — SZ Kultur — 2026-05-11
+- **[Venedig: Check your Ostdeutschness](https://www.sueddeutsche.de/kultur/venedig-biennale-deutscher-pavillon-sung-tieu-henrike-naumann-ddr-kritik-li.3451442)** `🇩🇪 DE` (rel: 4.8 · act: 3.5) — SZ Kultur — 2026-05-12
+- **[Auktionen in Köln: Ein Fest für die Augen](https://www.faz.net/aktuell/feuilleton/kunstmarkt/auktion-alter-meister-bei-lempertz-in-koeln-accg-200809999.html)** `🇩🇪 DE` (rel: 4.8 · act: 3.5) — FAZ Feuilleton — 2026-05-11
+- **[Bryan Adams in Darmstadt: Steril im Museum](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/ausstellung/ist-das-wirklich-kunst-fotografie-von-bryan-adams-im-museum-darmstadt-200818326.html)** `🇩🇪 DE` (rel: 4.8 · act: 3.5) — FAZ Feuilleton — 2026-05-11
+- **[Warhols Förderer: Pop-Art-Galerist Bruno Bischofberger gestorben](https://www.faz.net/aktuell/feuilleton/kunstmarkt/galerist-bruno-bischofberger-gestorben-accg-200819803.html)** `🇩🇪 DE` (rel: 5.5 · act: 3.0) — FAZ Feuilleton — 2026-05-11
+- **[Theater Wien: Von der Trivialität des Lebens im Inneren politischer Macht](https://www.faz.net/aktuell/feuilleton/musik-und-buehne/theater/ewald-palmetshofers-sankt-falstaff-am-burgtheater-200825838.html)** `🇩🇪 DE` (rel: 5.3 · act: 3.0) — FAZ Feuilleton — 2026-05-13
+- **[Why are orchestra musicians so unhappy?](https://slippedisc.com/2026/05/why-are-orchestra-musicians-so-unhappy/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-orchestra-musicians-so-unhappy)** `🇬🇧 EN` (rel: 6.2 · act: 2.5) — Slipped Disc — 2026-05-12
+- **[Why are orchestral musicians so unhappy?](https://slippedisc.com/2026/05/why-are-orchestral-musicians-so-unhappy/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-orchestral-musicians-so-unhappy)** `🇬🇧 EN` (rel: 6.3 · act: 1.2) — Slipped Disc — 2026-05-12
 
 ---
 
@@ -231,142 +220,155 @@ _+ 272 further weak signals not shown. Main themes: automotive (148), robotics (
 | Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
 |---|---|---|---|---|---|---|
 | **Deep Focus** | | | | | | |
-| External job search and applications | 5/5 | 5/5 | 4/5 | → | No new signals this week | 8 h |
-| Interview communication and case studies | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
-| Functional safety and system safety architecture | 5/5 | 5/5 | 5/5 | ↑ | Signals: functional safety, iso 26262 | 3 h |
-| ISO 13849 and CMSE | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
-| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 4 h |
+| External job search and applications | 5/5 | 5/5 | 3/5 | ↑ | Signals: musikvermittlung | 4 h |
+| German oral fluency and interview communication | 5/5 | 5/5 | 4/5 | → | No new signals this week | 3 h |
+| Project management certification (Google PM + Scrum Master I) | 5/5 | 5/5 | 3/5 | → | No new signals this week | 3 h |
+| CV, LinkedIn and portfolio for DE cultural sector | 4/5 | 5/5 | 3/5 | → | No new signals this week | 2 h |
 | **Serious** | | | | | | |
-| ROS2 | 3/5 | 3/5 | 3/5 | ↑ | Signals: physical ai | 2 h |
-| C++20 and safety logic | 3/5 | 2/5 | 4/5 | ↑ | Signals: embedded software | 0 h |
-| AI perception monitoring | 3/5 | 2/5 | 4/5 | → | No new signals this week | 0 h |
-| SOTIF and ISO/PAS 8800 | 4/5 | 4/5 | 4/5 | → | No new signals this week | 2 h |
-| Linux practical skills | 3/5 | 3/5 | 3/5 | → | No new signals this week | 1 h |
+| Cultural project management practice (DE conventions) | 4/5 | 4/5 | 4/5 | → | No new signals this week | 1 h |
+| Music education and Musikvermittlung | 4/5 | 4/5 | 3/5 | ↑ | Signals: musikvermittlung | 1 h |
+| Event production and coordination | 3/5 | 3/5 | 3/5 | ↑ | Signals: veranstaltungsmanagement | 1 h |
+| PR, media and content for cultural institutions | 3/5 | 3/5 | 4/5 | ↑ | Signals: pressearbeit | 0.5 h |
 | **Lightweight** | | | | | | |
-| QNX and POSIX supervisor concepts | 2/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
-| MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
-| Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
-| MBSE and SysML2 | 3/5 | 2/5 | 3/5 | → | No new signals this week | 0 h |
-| General AI trend monitoring | 2/5 | 2/5 | 1/5 | → | No new signals this week | 0 h |
+| AI tools for cultural administration | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
+| Exhibitions and museum education | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
+| Local cultural-sector networking (Stuttgart region) | 3/5 | 3/5 | 2/5 | → | No new signals this week | 0.5 h |
+| Cultural policy and funding awareness | 2/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | **Defer** | | | | | | |
-| Cloud and MLOps | 2/5 | 1/5 | 1/5 | → | No new signals this week | 0 h |
+| French refresh | 2/5 | 1/5 | 1/5 | → | No new signals this week | 0 h |
+| Piano performance practice | 2/5 | 1/5 | 2/5 | → | No new signals this week | 0 h |
 
 ---
 
 ## 6. Recommended Learning Allocation for Next Week
 
 **Deep Focus — highest return on time this week**
-- **8 h:** 3–5 targeted applications, 1 recruiter/TÜV contact, LinkedIn signal check, track pipeline
-- **5 h:** Prepare/refine 2 structured interview stories; practice one answer out loud in German and English
-- **4 h:** Write one cross-domain safety architecture case study (e.g. ISO 26262 safety concept applied to a robotics/automation context with ISO 13849 mapping)
-- **5 h:** CMSE study: safety function → PLr → Category → MTTFd/DCavg/CCF → achieved PL. Document one worked example per week
-- **4 h:** CV: 1 new bullet quantifying safety architecture impact. LinkedIn: update headline/summary. Portfolio: one documentation improvement
-  _(Subtotal: 26 h)_
+- **5 h:** 3 tailored applications + 1 active outreach (recruiter, alumni, or hiring manager) per week; maintain application tracker
+- **3 h:** Two spoken-German sessions per week (tandem, VHS conversation course, or paid Sprachcoach); rehearse 1 STAR-format interview answer aloud
+- **3 h:** Complete one Coursera module of Google PM weekly; one Scrum Master I prep block; book exam dates as soon as both are 80% complete
+- **2 h:** Each week: refine one CV bullet (German), one LinkedIn section, and add one concrete project artefact (programme leaflet, press release, event timeline)
+  _(Subtotal: 13 h)_
 
-**Serious — build steadily to stay hireable**
-- **3 h:** Demonstrator: one ROS2/Linux improvement (node, test, or documentation) — keep scoped, do not expand scope
-- **1 h:** SOTIF/PAS 8800: one clause or concept per week; map to ODD or perception limitation; add to case study
-  _(Subtotal: 4 h)_
-_Weekly total: ~30 h (cap: 30 h). ⚠️ Cap applied. Prioritise Deep Focus items — job search first._
+**Serious — build steadily to stay competitive**
+- **1 h:** Read one short article or one funding-call summary per week; note the institutional vocabulary
+- **1 h:** Read one Musikvermittlung case study or programme description per week; sketch how a similar project would look at a local Stuttgart/Leonberg venue
+  _(Subtotal: 2 h)_
+_Weekly total: ~15 h (cap: 15 h). ⚠️ Cap applied. Prioritise Deep Focus items — job search first._
 
 ---
 
 ## 7. Career Positioning Advice
 
-Based on this week's signals, your positioning in **functional safety + embedded AI systems** remains strategically sound.
+Based on this week's signals, your positioning as a **multilingual cultural project manager for the Stuttgart region** remains sound.
 
-**Robotics activity is strong.** Emphasize ROS2 and safety-supervised robotics in your portfolio and CV/LinkedIn profile.
+**Musikvermittlung / education-program signals are active.** This is your sub-sector #1 — check vacancies at HMDK Stuttgart, Liederhalle, and Netzwerk Junge Ohren this week.
 
-**SDV / QNX signals present.** Your QNX/POSIX supervisor knowledge is a differentiator for automotive SDV roles — make it visible.
+**Event-production activity visible.** Scan Schlossfestspiele Ludwigsburg, SKS Russ and Theaterhaus Stuttgart for coordinator / PM openings.
 
 
 ---
 
 ## 8. Risks and Hype to Ignore
 
-- **Generic GenAI / chatbot news:** Not relevant unless tied to safety-critical or embedded systems.
-- **Single-startup hype without hiring or technical signal:** Log it, but do not change skill priorities.
-- **Vague 'AI transformation' press releases:** Low signal density; treat as background noise.
-- **Consumer robotics without safety or embedded angle:** Watch passively; do not deprioritize core skills.
+- **Celebrity / artist gossip or scandal news:** Not actionable for job search unless it signals leadership change at a target organisation.
+- **Concert reviews and programme notes without hiring signal:** Interesting background reading; do not interrupt application workflow.
+- **Generic 'AI in culture' hype pieces:** Only actionable if tied to a specific tool or vacancy at a target institution.
+- **National or international music prizes / competitions:** Good for network awareness; follow up only if a target org is involved.
 - **Social media opinion pieces without corroborating sources:** Low confidence; require a second source before acting.
 - **Low-relevance articles filtered this week:**
-  - heise-Angebot: KI im Unternehmen: So gelingt der sichere GPT-Einsatz
-  - Digg tries again, this time as an AI news aggregator
-  - Thinking Machines wants to build an AI that actually listens while it talks
-  - Noom Promo Codes: 50% Off Best Deals & Free Trials for April 2026
-  - KI-Update: Verstörende Chatbots, Neue Audio-Modelle, Mythos, Cloudflare
-  - Fostering breakthrough AI innovation through customer-back engineering
+  - Kritik: Sara Glojnarić: Station Paradiso | Stuttgart - Die Deutsche Bühne
+  - Film: Auch Deutsche unter den Auserwählten
+  - Geschichte: Eine Insel wird erfunden
+  - Sudetentag in Tschechien: Gute Deutsche, böse Deutsche
+  - Weimer fährt für Israels Song-Contest-Auftritt nach Wien
+  - Film: Wer sie küsst, kriegt einen Stromschlag
 
 ---
 
 ## External Market Fit
 
-**🚗 Automotive Safety (ISO 26262 / SOTIF)**
-Profile fit: **Strong** — primary background. Senior differentiation through cross-domain and AI safety.
-_Active signals this week: none this week._
-
-**🤖 Robotics & Machine Safety (ISO 13849 / IEC 62061)**
-Profile fit: **Growing** — opens industrial automation, collaborative robotics, humanoid markets.
+**🎓 Education Programs / Musikvermittlung (Priority #1)**
+Profile fit: **Strong match** — musicology degree + conservatoire background + CNSO experience. Target: Bildungsreferent*in at Stuttgarter Liederhalle, HMDK, Musikschulen.
 Active signals this week:
-  - 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑
-  - MIPI Alliance Forms Physical AI Group Focused on Humanoids
-  - 動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た
+  - Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»
+  - Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“
+  - Popsongs und Gastarbeitergeschichten: „Station Paradiso“ von
 
-**🏭 Industrial Automation (IEC 61508 / RAMS)**
-Profile fit: **Adjacent** — cross-domain safety standards apply directly. Underserved by pure automotive engineers.
+**🎪 Event Production & Coordination (Priority #2)**
+Profile fit: **Good match** — 5 years concert-event coordination at CNSO. DE gap: learn Reservix/Eventim, GEMA, KSK on the job.
 Active signals this week:
-  - Figure AI: Bringing Humanoid Robots Into Industry - Thomasne
+  - Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“
+  - Prégardien und SWR-Orchester bei Schwetzinger Festspielen - 
+  - Oper „Dialogues des Carmélites“: Female Empowerment an der S
 
-**🔍 Consulting / TÜV / Assessment**
-Profile fit: **High demand** — senior safety engineers with multi-standard fluency are scarce.
-_Active signals this week: none this week._
+**🎼 Music Institutions (Concert Halls, Opera, Drama) (Priority #3)**
+Profile fit: **Natural home** — deep classical music credibility. Target: Orchesterakademie roles, Dramaturgieassistenz, Künstlerisches Betriebsbüro.
+Active signals this week:
+  - Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»
+  - Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“
+  - Prégardien und SWR-Orchester bei Schwetzinger Festspielen - 
 
-**✈️ Adjacent: Railway / Aerospace / Medical Device**
-Profile fit: **Optional** — transferable standards knowledge; only pursue if direct opportunity arises.
-_Active signals this week: none this week._
+**🖼️ Exhibitions & Museums (Priority #4)**
+Profile fit: **Moderate match** — cultural-PM transferability is real; pursue only if direct vacancy appears at Staatsgalerie, Kunstmuseum or Linden-Museum.
+Active signals this week:
+  - Daniel Libeskind wird 80: Er gab dem Gedenken an den Holocau
+  - Prinzen und Punks - Das unerschöpfliche Potential des Schere
+  - Libeskind-Ausstellung: Die Wahrheit hat Zacken
+
+**📣 PR & Communication (Lateral track)**
+Profile fit: **Fluent** — CNSO press work is the strongest existing credential. Use as secondary pitch, not primary identity. German writing quality is the key gate.
+Active signals this week:
+  - Das SWR Sommerfestival bringt Stuttgart zum Feiern - Pressep
+  - Antirassismus-Comedy im Kika: Die biodeutsche Oma fällt in d
+  - Munich starts choir for homeless people
 
 ---
 
 ## 9. Source List _(top articles only)_
 
-- [【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5) — GNews ZH: 机器人安全 (2026-05-13)
-- [MIPI Alliance Forms Physical AI Group Focused on Humanoids](https://www.embedded.com/mipi-alliance-forms-physical-ai-group-focused-on-humanoids/) — Embedded.com (2026-05-12)
-- [動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た](https://monoist.itmedia.co.jp/mn/articles/2605/13/news024.html) — ITmedia AI+ (2026-05-12)
-- [A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. - CPG Click Petróleo e Gás](https://news.google.com/rss/articles/CBMikgJBVV95cUxNZ25MS1FCTWxUd0VxSGp5MHhjSXd6WWRURWdpcUdSR2dFai1FVTVvY0VNcTJaS3JxUVRNd3k0Zlp1emFBV2V4aURHWTBJaF8wYnRFU1dwRG5GQXpXUGF1eDNiTUdLUWtHMlV3Szlrc0c2ZTBRWXh1YXk3ZUZMMDVpODVIUHkwdzhUWFZLTTQ3ZGxDN0ZCWHctanlKY3l2UVRKYmhzV1NpMHhiN1c5RDZ5aE5xTklQQlRDQ2htdDNwbnlqRlR4bWcteVlra3BPX2xISWJrU1BMczBiS3FwbHJyNXVYSktIMEdiODh6aklZdG42VVlGZUhLV29nTzI0UTYxSzlVazRPNWFSNFVwQ3p0TjVB?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [Renesas Completes Acquisition of Irida Labs to Expand Vision AI Software Capabilities and Accelerates System-Level Vision Solutions](https://www.eejournal.com/industry_news/renesas-completes-acquisition-of-irida-labs-to-expand-vision-ai-software-capabilities-and-accelerates-system-level-vision-solutions/) — EE Journal (2026-05-11)
-- [6月上海，这场论坛聊透出海真问题](https://36kr.com/p/3807234971131656?f=rss) — 36氪 36Kr (2026-05-13)
-- [专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 - 证券时报](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwWFplYXdLbl90NGdoVmw1d240M0hzV2F4SmVqakRnZFlQU2F3ejV6MWRRZUxmemZYdEFsajlvakQyWnAxc3BjLVE1ZW5BX2l6cmNDajdrWlJuRWh3?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 - 车家号](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IWUlhdWY4d0xvb0dKMUx4NUdteTY1Q2psN0hTMUhCR2NoMEtDZDZNeGtyRU9rZWcyMkRFQUxTZG9EcE1Od0QySXFnaG5ldW1Majl0WXhvcU5wVVU?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” - 驱动之家](https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Ob2MwcW5uVkJ1bkhnSmxHQkJBWU5FcXJRYWJ3LUJKaXlBNGZtQ19Qa1cwamlnaXVvOUIyT01nQkY4cWh2V3dnVVVuUkpzNVlYSnRfaG1Gbi0?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 - 湖北省数据局](https://news.google.com/rss/articles/CBMieEFVX3lxTE9PVzVOVkgweEljRzhmbTI1Q2lWbFZBUlQ2bmdaY0prRUlKLWszczBoWFhleTVRc1V6ZFAwQXlQMjdRckN2NmZldlRZU3pJbnIxTTVXcUtJZ1FPRXdFYkUyM3Q1eWE0cUVRVFhhUG5YbDFER2VTbTV5Vg?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [US’s Figure AI humanoid robots make bed, clean room in under two minutes - VnExpress International](https://news.google.com/rss/articles/CBMixwFBVV95cUxPb0x6Ulg4TS1kWjJRNV9QNkRJbENDaGdEQzltTzA0aHRvS3duSWpvcWZVMm9HMjh2UkJrN3UyUDZub25UV2cwUFctcXZCaV9YRkwxS2FLU1l4RDdGSXJ3dDRzSW5NU1JFWURkd0JhMVJaN3hfTmRnay0xdmhqM1p1Rmhmd3JXdGhpMkVOeHZDUVRsZl9oNW5SRU5PTzdGNG5DZlExOVNaZ1ZENnBEQXVPTWdRcjhKZndOdFNFMkNfUXk2SWxnbVlZ?oc=5) — GNews: Figure AI Robotics (2026-05-13)
-- [Anzeige: Schwachstellen bewerten, Patchrisiken priorisieren](https://www.golem.de/news/anzeige-schwachstellen-bewerten-patchrisiken-priorisieren-2605-208551.html) — Golem.de (2026-05-12)
-- [人形机器人当店员的便利店出现在上海，交出“日均400单”业绩 - shobserver.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxNaURWc09BYVVKMGRNOEVDT3JsaEhZdms5ZWZjQ1VxMXNyMGFScU9QQVM0c2hybzhmc0F4aTg4dWZ4ek9uWW5vR01zU28zb09oNnlVXzhsLWlrU0xtb1gzTlNERUxMMDNzS0JlWHFOdGREaW1CZFNpRUFyX29MRnBWUU1uNDc0cDlSR3c?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [凭“芯”而立 向海图强 福州以差异化战略布局人形机器人未来产业 - 数字中国建设峰会](https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ob2RhUXU3dV9DZlcyMmNqR0R0UVlGRVd4U21DaWYxRjJhOFRjTXJudl9aVlFoeVlMOXZWSXdvSXZnUzc0RkpWNlZFa2M2a2JDU1hpcHNNaWFvbUsxa2hGOVRXYzVVaEZtc3FraFFEV3diT2FGeVE?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [In the humanoid robot industry, joint unions between robot hardware companies and artificial intelli.. - 매일경제](https://news.google.com/rss/articles/CBMiS0FVX3lxTE95RDdJN0pQMFRIT3lrNEpaWDFhcTI2S3dPQ0hRenVlNzUtNmNuSk1YTml5TUFnZWNXdzNKOUNmbm5QbzUzMUJmdDZHbw?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [2026 Tesla Model Y becomes first vehicle to meet NHTSA’s new ADAS safety criteria - Automotive Testing Technology International](https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbE84RTU3OVVIZWo3eWt2c3VwMVkxaGQtTmRHQl9GQ3JrWmt6dmdmMXpiV1dMX1E4X3p5aXBHaE95V0cxamVadFpkZ2pCX2V6RXlaY0ptMm51aEVYdGdnUG52VThaQmhRZEUxQVo0d3l5R2VhOHpIUGpkOXFqYm5aMVlSRkJQMV9FbWdqajRjNHZlc0ZKeFZkSW1FVmh0Umg5NWs2WS1zZmhZdUNLSEFyblJMaHdnN2xaTGdqbUhJOWlsZlUxS2phWTNXZlRScGJXTDJNUVpKWHNfYWYtZGJ3ZWduSTA5N1FZdmFuNk9B?oc=5) — GNews: Bosch Automotive Safety (2026-05-11)
-- [Hyundai Motor Group surges on US robot push via Boston Dynamics, RMAC - CHOSUNBIZ - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxPOWhqZm43ZHAta0l1YXdRSlZQejR5WXF3cndhaDFqYl9wVzZPUGZZU0NWVS1Edl9PMEx1NHk3VHFQREVKbEV1d0ZMUm5LeE9DaHcwXy1OcFl5Z3NDOFd6VWFrQzlBcGxJZzVnU1RyR3JzMW5rUTYwZDVVRWFITVQxUtIBlAFBVV95cUxQbnN5MXNmclgtYUhfTFJ5SjYyeDBZX05WQ0wtTFAwblZyLXpmUkVfNXpOdU43SUZzNmMwZGhGeFNvSS1qbmdXLVlwdUJuZFVMSFA4bHFMMTROcDlTSGs2Ny1qMEZDZUN3ZnNDdkZmVFNzclMxZi1sSWdCekwxZkhZa2E3YndPRmFkRXJBeDgwMjczWWNn?oc=5) — GNews: Boston Dynamics (2026-05-12)
-- [Video: Figure’s humanoid robots organize room, hang clothes, and make bed without humans - Interesting Engineering](https://news.google.com/rss/articles/CBMihAFBVV95cUxNU2dEQzZjUGJGYjg5eTBTcFBOMElMLWN6VEJGMHhVa19sYjd6RkpfVVhQdlZqaE5hbEVWS2JBY3QyQUdBeWFJRkdaS2lQZkRZZHlCYy1lZkVqY0gyQkFkcW9iWV9RQXllcVZBQnJ1MzlsbkxmOEoxWHFyLTlpNVBjYjNYZng?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [Figure AI: Bringing Humanoid Robots Into Industry - Thomasnet](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mbk1oLS12QkVyN25HQWpVb0xISkRmNDg0Yk5ndFU4RWtqZ2Vabk9jLXQwX0V3ZEJhX0lpMEtPUUhIbmV3UzUwUldGankxNTh1WS1GOUFKdTRCU3lTNk9ETGJWR0s?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [Daimler Truck JV to bring liquid hydrogen to Hamburg](https://www.automotiveworld.com/news/daimler-truck-jv-to-bring-liquid-hydrogen-to-hamburg/) — Automotive World (2026-05-11)
-- [Figure’s Humanoid Robots Tidy a Bedroom, Hinting at Bigger Home Automation Leap - eWeek](https://news.google.com/rss/articles/CBMidEFVX3lxTE9Yc1VqaC1nTV85N2szU2J5c25sWWdTeG1zaFJWV2h3STRjU2gxSGcwQnVuV0p3cl9Hd0dwRGxmN0lQa3d1bHNBYXQzMkZWSEwwYkhXenBqM0YtRnhJM2JKTjdxN3N1ZWFyam5LeGJvVWdST3Fi?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [Advances in Physical AI Reshape Robotics, Automation - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMijwFBVV95cUxORWlnRGdXNm1OZGx4WFZRenN2YlNvZi1KankxX1JkQTlVWU52LTZDWi1LQ1ZFcDlJSUY3TEZMWmM2aW1kRHFkaUdWYmdNTU9OT1VuUXRWV1pRSmxTaS1JdW5BUHdGTi03am5uZDRicW1rc0RwQjFadGpnTFFyNkY4ZEhuTUw3WXVoT2pNNWpZZw?oc=5) — GNews: Physical AI Embedded (2026-05-12)
-- [Handelsblatt: VW considering Scout Motors IPO](https://www.automotiveworld.com/news/handelsblatt-vw-considering-scout-motors-ipo/) — Automotive World (2026-05-11)
-- [Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/) — Electrek (2026-05-11)
-- [Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot) — IEEE Spectrum Robotics (2026-05-12)
-- [VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/) — Automotive News (2026-05-12)
-- [Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/) — Automotive World (2026-05-11)
-- [Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/) — Automotive World (2026-05-11)
-- [Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/) — Automotive World (2026-05-12)
-- [Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls) — Nikkei Asia (2026-05-12)
-- [Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/) — Automotive News (2026-05-11)
-- [Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/) — Automotive World (2026-05-12)
-- [KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5) — GNews DE: Eingebettete KI (2026-05-13)
-- [Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/) — Electrek (2026-05-11)
-- [Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up) — Nikkei Asia (2026-05-12)
-- [トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html) — Response.jp (2026-05-13)
-- [Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/) — Automotive World (2026-05-12)
+- [Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»](https://www.nmz.de/bildung/chorszene-laienmusik/wulff-zur-festivalpremiere-leipzig-choere-bauen-bruecken) — nmz — Neue Musikzeitung (2026-05-11)
+- [Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“ – Das Sechsstädtebundfestival](https://www.nmz.de/politik-szene/veranstaltungen/auftaktkonzerte-am-20-und-21-mai-zum-9-kommen-und-gehen-das) — nmz — Neue Musikzeitung (2026-05-13)
+- [Prégardien und SWR-Orchester bei Schwetzinger Festspielen - Mannheimer Morgen](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLTJoaDFQejFoZWhKTlVldjEwVElJZGRuMXI5ZUF4VVRCNHNGQTNKaFRTLTZhUlZnNTRnZzV6eHF0U3RudWRSMF9BTG5Ockxfa2ZhMnhTVkhYV285a3JkWURtQ215OUg5Z1dFWU9rWGhNSnJYTndwR1RSMmtreWIwcXNjQTNHeGR3Wkp1dWtXZC1GNXF2TWVOeTJmU3dGM1AyTEJQOHo4X082VnBVQ1hWR1FPa3RQSUhpZVFnUGt2QU9OUzlLeTRQYktpYVdyZFY1bkQ2VXAzUEV4aFMzYlV2VUFVclhrZw?oc=5) — GNews: SWR Symphonieorchester (2026-05-11)
+- [Oper „Dialogues des Carmélites“: Female Empowerment an der Staatsoper Stuttgart - SWR](https://news.google.com/rss/articles/CBMimwFBVV95cUxQbW02YXJlalZHd3NsSVdSUjdpakVUdEVZeHRDc3RDZUpHR3pZY29vRTRpbVBDOEFsLTN1UDBvNU9WT0xqQU85TEhKN2pDSW5EOWdyUWRLeVVGS2oyMks5WmhMeW81ZEtNNThoU2tuUEZZRHdJS1RsaW5nRlpScTRhNzFELW96MnJHODNnbUVTeVdHOTdZLV9UcjZ3SQ?oc=5) — GNews: Staatstheater Stuttgart (2026-05-11)
+- [Spielzeit 2026/27: Faust wird von der KI verführt – Das plant das Schauspiel Stuttgart - stuttgarter-nachrichten.de](https://news.google.com/rss/articles/CBMiggJBVV95cUxQV3RqU3pIb1Mzc29sZ09rVEw0VGdReHJTV2dLeUp2TW5tS3h2bWtJTnBDZTJSLTd1Y0Y5eDA3SjZ1cGlfczBaVlFsMkt4T0tCYmZpZGFYQWRkWHVhM1ZuUUhOclVuSjZiNGFjYUZzUVpPb1dkN2paLWFrUzBQX1FhYXB6SVhoaFdBOW1haHB4OXkxSFNTa1dsczhIQTFJUVZTUDdGTnF2NmxVMEZvYjFJLThNY1QxelpXTjM5ZFk4T0IyTURwd2pKQ19famcyUVM2VGdBMEFIQTBieV9SdGVyUVYyZGFqeTJtcFUxX0s5QTViUWVyakVhZFI0WlNiWTVwQlE?oc=5) — GNews: Staatstheater Stuttgart (2026-05-12)
+- [Staatsoper Stuttgart: Der Sound der Gastarbeiter – „Station Paradiso“ unter viel Jubel uraufgeführt - swp.de](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS0MwNENvSG50SDRLcGQwcEl5MXdSVXV5dzYyVmNucC1KZGk2MmhJdDc5ajdnRzZmTmpxRkdUSnhVMDF5MjlxRVZvRWp1ZVJ2X2FrNVNWZzlMemJ6WnRJYzFmbW5ETUI5N2NSQTdZQ1BnanU3ZlpFdDFDNTltRmpHczhYbVE1ZlNSZkJUY2ZIa2xPQXFacDBGb1p0bHFBV0NRN2tkTUVsdlhVWHBFNWFQTjVScDdydEVEaC1kaFhRbjVxejk0Q19sWnNiVjBlTGRD?oc=5) — GNews: Staatstheater Stuttgart (2026-05-11)
+- [Popsongs und Gastarbeitergeschichten: „Station Paradiso“ von Sara Glojnarić an der Staatsoper Stuttgarts - SWR](https://news.google.com/rss/articles/CBMiowFBVV95cUxNMkM2M0JGai1kTm9kR3dzT3l1bkF0NG5aM0N3djFOcUhSNEZMb1U1Q3ljbjhLSWd3UnRtTklKRXYzYlkya0dsbWtMWnR4Zmw5Nk1xeUFkSmxmdEtkdTIyUDZ6aUhjSHY4dWkxb2V6RndiVHZoc2hDV19jMS1sVXdBNVFDZDBQTU9wakJreGp3R3VLUU5KY3MzQ1NjaWVFdHYwQVNn?oc=5) — GNews: Staatstheater Stuttgart (2026-05-11)
+- [Spielzeit 2026/27: Schöne Aussichten! Das plant die Staatsoper Stuttgart - stuttgarter-nachrichten.de](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalVKaDFtQlQtXzMyV1ZmNnNBNkdNSUFrY2FXZ2EtQ3Z2QVNqNnJkc1pyYU9SMHJIbFVwcWs1M0ktMU9wVDZ5RDVSTzJLTTNXX1R0S2hjbXE0cklaODdDaHJaUHlzbDVXaE1Wb0NJTWJYdzZRaU1HS2Ryb3pmOFJnRW1TQ3RnenF4ZWJOMkxBR204elpWMS1Uc09SdVRSN2JEN1hxZEZSVERvaWVyOHB5V2tsY0R5Qi12bnktSmpIWXRESGdlMEVnc1BYUUxEMzJ1UUpHVlNKT2lnd0NSc2duRlNvS1JOUUpBZzFkY2s1SFE?oc=5) — GNews: Staatstheater Stuttgart (2026-05-12)
+- [Das SWR Sommerfestival bringt Stuttgart zum Feiern - Presseportal](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NSXN0V0xxZ0RQVlFOQVhZcndpckhmNGF1RlN1S3g5MUtCVEN0dXVPTDl1bXlYYjc4V1A0cTZzcm9DSk5PVWlXQ2lsRFFBYW9HdTNTeTR3?oc=5) — GNews DE: Festival Stuttgart Ludwigsburg (2026-05-11)
+- [Antirassismus-Comedy im Kika: Die biodeutsche Oma fällt in den braunen Fluss](https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/kritik-an-der-kika-comedy-moooment-200825999.html) — FAZ Feuilleton (2026-05-12)
+- [Acht Preisträger*innen beim 17. Bundeswettbewerb Schulpraktisches Klavierspiel CARL BECHSTEIN](https://www.nmz.de/bildung/hochschulen-akademien/acht-preistraegerinnen-beim-17-bundeswettbewerb-schulpraktisches) — nmz — Neue Musikzeitung (2026-05-11)
+- [Theater Osnabrück bringt Oper «Peter van Pels» auf die Bühne](https://www.nmz.de/kritik/oper-konzert/theater-osnabrueck-bringt-oper-peter-van-pels-auf-die-buehne) — nmz — Neue Musikzeitung (2026-05-12)
+- [KLIMAbrauchtWERTE im Finale des Nachhaltigkeitspreises](https://www.nmz.de/politik-szene/veranstaltungen/klimabrauchtwerte-im-finale-des-nachhaltigkeitspreises) — nmz — Neue Musikzeitung (2026-05-13)
+- [Lila Chrisp gewinnt 1. Platz bei der Lotte Lenya Competition](https://www.nmz.de/bildung/wettbewerbe/lila-chrisp-gewinnt-1-platz-bei-der-lotte-lenya-competition) — nmz — Neue Musikzeitung (2026-05-13)
+- [„Unvergessen“ begeistert das Publikum im Forum am Schlosspark in Ludwigsburg - LUDWIGSBURG24 | Online Nachrichten](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQemJOZExzVmg2SXJzSC1FQ250bXpGY1dUaEs1Skt3LXJSTmhLem9ROXVxdS1ob2NKZlhrQ3ZwekpfaTkwWUYxSjZ6ZzVONVNrMlNLY1FWU1dMd3JRdVdQSVAtZDFtQWVULUxPdzFfd2l3OUw2Nk40NXlPS1pLLW9UYmFYRnhWb3NlTnJLZm1RMXRnZFI4VTQ4ZUVPZlIyU0RKc1hxdkkyWDM?oc=5) — GNews: Forum Ludwigsburg (2026-05-11)
+- [Oper: Dieser Sound lässt einen nicht los](https://www.sueddeutsche.de/kultur/oper-muenchen-maria-stuart-of-one-blood-brett-dean-urauffuehrung-li.3479999) — SZ Kultur (2026-05-11)
+- [Oper Frankfurt: Wenn ein Dorf an der Rache erstickt](https://www.faz.net/aktuell/feuilleton/musik-und-buehne/oper/wolfgang-fortners-oper-bluthochzeit-in-frankfurt-200821453.html) — FAZ Feuilleton (2026-05-11)
+- [Staatsoper München: Wir Frauen erkennen uns darin wieder](https://www.faz.net/aktuell/feuilleton/musik-und-buehne/oper/wir-frauen-erkennen-uns-darin-wieder-200825484.html) — FAZ Feuilleton (2026-05-12)
+- [Preisträger des „Güldener Herbst Ideenpreises“ 2026 steht fest](https://www.nmz.de/politik-szene/veranstaltungen/preistraeger-des-gueldener-herbst-ideenpreises-2026-steht-fest) — nmz — Neue Musikzeitung (2026-05-13)
+- [FilmLänd Baden-Württemberg: Standort Baden-Württemberg im Wandel – Mehr Film braucht das Land - stuttgarter-nachrichten.de](https://news.google.com/rss/articles/CBMijgJBVV95cUxOQnBVajlIUDBIelRnRnBrN2V6RmV2Nk1IeDhpVFFWNkQ4V25CUnRCTmFfMWtlLTdGSG9fd1FwZ205SkRMSDF5cnFiSHU4bnJIbVFQa3FLZGRhSXZ1cEgwX1dHZk51UFlFUm0wcHhDcG9aRV9abGZrdjR2QUt3bWtBWE8taVp0bzZ5blk0WUZwR2F3Z3VTMS1zclpjYjQ0UW5JclVBeUgtaXN6OWphNGh2Y1RpMkVYODNNS3lrZlFvMlMya1g5SjNRVGlDOXZuVWVhRW5KazJ4MlpJVnBIMkJ1RmJVRm8wT1BLcVkyY3dFaXBDNnlCS3ZUaWJ4eE9QbDc2SmZ1TVFhYnd5UHd5c1E?oc=5) — GNews DE: Festival Stuttgart Ludwigsburg (2026-05-12)
+- [Munich starts choir for homeless people](https://slippedisc.com/2026/05/munich-starts-choir-for-homeless-people/?utm_source=rss&utm_medium=rss&utm_campaign=munich-starts-choir-for-homeless-people) — Slipped Disc (2026-05-13)
+- [Daniel Libeskind wird 80: Er gab dem Gedenken an den Holocaust eine neue Form](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/architektur/der-architekt-daniel-libeskind-wird-80-jahre-alt-accg-200821338.html) — FAZ Feuilleton (2026-05-12)
+- [Männliche Bildungsverlierer: Sind sie am Ende einfach zu faul?](https://www.faz.net/aktuell/feuilleton/debatten/maennliche-schueler-mit-leistungsrueckstand-sind-sie-am-ende-einfach-zu-faul-accg-200820480.html) — FAZ Feuilleton (2026-05-12)
+- [2 Senior Lecturer (w/m/d) für Klavier (Pflichtfach in den Bachelor-Studien sowie Pflichtfach Klavier im Pre-College Salzburg)](https://www.nmz.de/stellenmarkt/2-senior-lecturer-wmd-fuer-klavier-pflichtfach-den-bachelor-studien-sowie-pflichtfach) — nmz — Neue Musikzeitung (2026-05-13)
+- [Prinzen und Punks - Das unerschöpfliche Potential des Scherenschnitts - SWR](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbTBsa05VUlpaYUthSXdOOHo2aXRPUTljYWpoem5VMEFvTzgxSTFKTG5UT1JNTDBqMEh6NHhmUk9nVXpCUmFOaElOZm54V2ZuOWtIWENkdWl2MWo1T0FzeTdFSlA4WGNUdkdoTTFZdThQeHhwckQ4eUxPWDZvQ2FVb3dFOHlPTlRDc2VqUTFuVnplY1RaY3JxcV9aU25kT1hzeHZUdjE2d0tmZ2xyZ2hSU0RobkN0dFQ4Z0tTWEJNam5XejQ?oc=5) — GNews DE: Festival Stuttgart Ludwigsburg (2026-05-11)
+- [„Tatort“-Stopp bis 2028: Der MDR hat sein Konto überzogen](https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/was-ist-da-los-mdr-produziert-drei-jahre-lang-keinen-tatort-200821933.html) — FAZ Feuilleton (2026-05-11)
+- [Silent Woman doesn’t pull in Berlin](https://slippedisc.com/2026/05/silent-woman-doesnt-pull-in-berlin/?utm_source=rss&utm_medium=rss&utm_campaign=silent-woman-doesnt-pull-in-berlin) — Slipped Disc (2026-05-13)
+- [Das haben die Bamberger Symphoniker in der neuen Saison vor](https://www.nmz.de/politik-szene/veranstaltungen/das-haben-die-bamberger-symphoniker-der-neuen-saison-vor) — nmz — Neue Musikzeitung (2026-05-12)
+- [Libeskind-Ausstellung: Die Wahrheit hat Zacken](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/ausstellung/libeskind-ausstellung-in-berlin-die-wahrheit-hat-zacken-200821317.html) — FAZ Feuilleton (2026-05-12)
+- [NS-Raubkunst-Funde: „Es wurde geraubt, erzähl’ niemandem davon“](https://www.faz.net/aktuell/feuilleton/kunstmarkt/raubkunst-aus-der-sammlung-goudstikker-200822918.html) — FAZ Feuilleton (2026-05-12)
+- [Why are orchestral musicians so unhappy?](https://slippedisc.com/2026/05/why-are-orchestral-musicians-so-unhappy/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-orchestral-musicians-so-unhappy) — Slipped Disc (2026-05-12)
+- [Why are orchestra musicians so unhappy?](https://slippedisc.com/2026/05/why-are-orchestra-musicians-so-unhappy/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-orchestra-musicians-so-unhappy) — Slipped Disc (2026-05-12)
+- [Literatur: Zisch ab, Gegenwart](https://www.sueddeutsche.de/kultur/dirk-von-petersdorff-wir-kinder-der-leichtigkeit-essay-rezension-li.3452471) — SZ Kultur (2026-05-11)
+- [Berlins MuseumsMeileMitte: Kulturwüsten](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/kommentar-zu-der-neu-gegruendeten-berliner-museumsmeilemitte-200825545.html) — FAZ Feuilleton (2026-05-12)
+- [Warhols Förderer: Pop-Art-Galerist Bruno Bischofberger gestorben](https://www.faz.net/aktuell/feuilleton/kunstmarkt/galerist-bruno-bischofberger-gestorben-accg-200819803.html) — FAZ Feuilleton (2026-05-11)
+- [Theater Wien: Von der Trivialität des Lebens im Inneren politischer Macht](https://www.faz.net/aktuell/feuilleton/musik-und-buehne/theater/ewald-palmetshofers-sankt-falstaff-am-burgtheater-200825838.html) — FAZ Feuilleton (2026-05-13)
+- [Abendkonzert vom 10.5.2026 - SWR](https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHQwUnJkb3ZIbEpnU3EwcG96RnVMSkNCODdxV3VmWnBndjQxaGZYQ3FPZVVraUt6UkRZWkRrYjFaWlh4TzJYOFh2X2hmZ3YtbllLcWFhVjd4ZVQ0d3ptQUp6NEFqd3YyVmJLVmdMb0pkeldwb25vUjZYc1NOZ294T2FZWTRYY2JWTE5TZXc5ajNWbi1nMFBGZ3lXWmZDdXh3SHU0UkRMMVI3aTlVSmZF?oc=5) — GNews: SWR Symphonieorchester (2026-05-11)
+- [Abonnement Mannheim, 5 Konzerte - SWR](https://news.google.com/rss/articles/CBMikAFBVV95cUxPNUJHYk5NSmFkenczcVZpYVJvX05NRTJPSWR2VXVDVk5tTGVZNlhlc2JobHRYbGtYLXlKRTBaemo2NHpGSkF4Tld4LWRybUNZc0tydHVFSTJKWE5BYVl3dTRvLVpzTTBLQWJ0QVdiRi1Eby1mQ3F0MmNxZEF0dThQUFBGc1FqRmczYTFuSzkyTV8?oc=5) — GNews: SWR Symphonieorchester (2026-05-11)
+- [Mehta cancels Munich opera](https://slippedisc.com/2026/05/mehta-cancels-munich/?utm_source=rss&utm_medium=rss&utm_campaign=mehta-cancels-munich) — Slipped Disc (2026-05-13)
+- [Ausstellung: Spieglein, Spieglein](https://www.sueddeutsche.de/kultur/anish-kapoor-ausstellung-duisburg-lehmbruck-museum-li.3472051) — SZ Kultur (2026-05-11)
+- [Venedig: Check your Ostdeutschness](https://www.sueddeutsche.de/kultur/venedig-biennale-deutscher-pavillon-sung-tieu-henrike-naumann-ddr-kritik-li.3451442) — SZ Kultur (2026-05-12)
+- [Auktionen in Köln: Ein Fest für die Augen](https://www.faz.net/aktuell/feuilleton/kunstmarkt/auktion-alter-meister-bei-lempertz-in-koeln-accg-200809999.html) — FAZ Feuilleton (2026-05-11)
+- [Bryan Adams in Darmstadt: Steril im Museum](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/ausstellung/ist-das-wirklich-kunst-fotografie-von-bryan-adams-im-museum-darmstadt-200818326.html) — FAZ Feuilleton (2026-05-11)
 
 ---
 
@@ -376,52 +378,50 @@ _(See HTML version for full table.)_
 
 ---
 
-## Qualification Actions This Week — Erika Mustermann
+## Qualification Actions This Week — Xi
 
-_Target person: **Erika Mustermann** · Weekly time budget: **8 h**_
+_Target person: **Xi** · Weekly time budget: **15 h**_
 
-> ⚠️ 6 Must-Have items — cap is 2. Lower-scoring items may be noise.
+_🔄 Market signals applied to 2/12 actions this week._
 
-> ⚠️ Must-have items alone require 25 h/week — exceeds cap of 8 h. Prioritise ruthlessly.
+> ⚠️ 4 Must-Have items — cap is 2. Lower-scoring items may be noise.
+
+> ⚠️ 4 High-ROI items — cap is 3. Lower-scoring items may be noise.
 
 
 ### Must-Have
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **German-format CV (Lebenslauf) and cover letter template** | Applications without German-format CV are often rejected automatically | Create a professional German Lebenslauf (tabellarisch format, reverse chronological, with photo). Write one standard Anschreiben template. Use Europass or Canva as starting point. Have a German native speaker review once. | 3 h/wk | German CV PDF and cover letter template ready to send |
-| **German B2 certificate (Goethe-Institut or telc)** | Required by virtually all professional employers in Germany | Enrol in Goethe-Institut or VHS B2 course. Study 8 h/week minimum. Take B2 exam as soon as eligible. Do NOT apply to professional roles before B2. | 8 h/wk · €600 | Goethe B2 or telc B2 certificate — required on CV and applications |
-| **LinkedIn profile in German and English** | Expected for most professional roles; low cost, high visibility | Create or update LinkedIn profile with German headline and summary. Add education, previous experience, and language skills. Connect with 3–5 relevant professionals per week. Free to create. | 2 h/wk | LinkedIn profile with German summary and complete work history |
-| **MS Office practical competency (Word, Excel, Outlook, PowerPoint)** | Universal requirement for office/admin roles | Self-assess honestly against real job requirements (mail merge, pivot tables, VLOOKUP, standard templates). Practice the specific tasks mentioned in target job ads. Free Microsoft training at microsoft.com/en-us/learning. Do NOT pay for an MS Office certificate — it is not recognised or expected by employers. | 2 h/wk | Can answer 'give me an example of Excel use' in an interview with a concrete story |
-| **German B1 certificate (intermediate step before B2)** | Minimum threshold for many entry-level positions in Germany | Obtain B1 certificate as milestone before B2. Unlocks entry-level and practical roles (logistics, retail, assistant positions) while studying toward B2. | 8 h/wk · €250 | Goethe B1 or telc B1 certificate |
-| **Recognition of foreign degree in Germany (Anabin / KMK)** | Mandatory for regulated professions; strongly recommended for all professional roles | Check anabin.kmk.org for recognition status of Erika Mustermann's degree. Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority. For non-regulated professions: get certified translation + have employer confirm equivalence. Contact Make it in Germany (make-it-in-germany.com) for free guidance. | 2 h/wk · €100 | German recognition letter or equivalent statement; add to CV |
+| **Weekly application pipeline for DE cultural-PM roles** | Highest priority — re-entry depends on consistent application activity | Maintain a tracker with target organisations, roles, application status and contacts. Send three tailored applications and one active outreach (recruiter, alumni, hiring manager) per week, prioritising Stuttgart/Leonberg/Böblingen/Ludwigsburg. Focus on education programs and event production first. | 4 h/wk | Application tracker with ≥20 target organisations and ≥8 active applications by end of phase 1 |
+| **Bilingual CV + LinkedIn positioning as Cultural Project Manager** | Directly required for every target role | Produce three artefacts: (1) German master CV with headline "Projektmanagerin Kultur — Bildung, Veranstaltung, Kommunikation", (2) English short CV for international institutions, (3) LinkedIn profile (DE + EN sections) with three concrete CNSO project examples reframed in DE PM vocabulary (Projektkoordination, Künstlerbetreuung, Pressearbeit, Bildungsformate). | 2 h/wk | DE CV, EN CV, LinkedIn profile, three reframed project examples (1-page each) |
+| **Spoken German practice (tandem, conversation course, coaching)** | Required across all target roles | Combine two channels per week: (a) a structured group (VHS Leonberg or Stuttgart cultural-language tandem) and (b) a 1-on-1 paid Sprachcoach or italki tutor once a week. Always practise out loud — never silent reading. Build a personal phrasebook of cultural-sector vocabulary (Pressemitteilung, Programmübersicht, Drittmittel, Künstlerhonorar, Bildungspartnerschaft, etc.). | 3 h/wk · €80 | Weekly phrasebook entries; one recorded mock-interview answer per week |
+| **Complete Google Project Manager + Professional Scrum Master I** | Strongest signal for project-management roles outside the narrow Kulturmanagement track | Set explicit weekly module targets to finish Google PM by ~Q2 2026 and pass PSM I by ~Q3 2026. Book exam dates as soon as preparation is at ~80%. After passing, add to CV (Zertifikate), LinkedIn (Lizenzen & Zertifikate) and cover letters. | 3 h/wk · €150 | Two finished certificates (PDFs) listed on CV and LinkedIn |
 
 ### High-ROI
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **DATEV software awareness (German accounting/HR standard)** | Relevant for accounting, controlling, HR support, office management in Germany | Complete DATEV Grundkurs (free online). Understand what DATEV does and how it is used in German SME accounting and HR. Do not invest more time unless accounting is the target role. | 2 h/wk | DATEV Grundkurs completion; can mention in applications for accounting/admin roles |
-| **Kaufmännische Einführung / BWL Grundkurs (IHK or VHS)** | Only relevant if target is German SME office/admin/purchasing | Take VHS Kaufmännisches Basiswissen course (50–80 h, ~150 EUR) if applying to German SME admin, purchasing, or junior controlling roles. Only invest if at least 3 target job ads mention kaufmännische Ausbildung or BWL Grundkenntnisse. | 4 h/wk · €150 | VHS course certificate; business German vocabulary |
+| **Interview rehearsal in German (case answers + STAR stories)** | Universal — every role requires this | Prepare five STAR-format answers in German: (1) tell me about yourself, (2) why the family-phase gap and what did you do during it, (3) describe a project you coordinated, (4) describe a conflict with an artist or stakeholder, (5) why this organisation. Rehearse aloud with the Sprachcoach. | 0.5 h/wk | Five rehearsed and recorded STAR answers in German |
+| **Musikvermittlung case studies — three concrete programme sketches `↑ market: 10 job postings, 20 articles`** | Essential for sub-sector #1 (education programs) | Sketch three short concept papers (1 page each): (a) a Schulkonzert programme for primary-school children with Stuttgart Liederhalle as venue, (b) a Kinder-Klangwerkstatt format combining piano and music-history storytelling, (c) a Musikhochschule Stuttgart open-house programme for prospective students. Each should include target audience, format, partners, rough budget logic. | 1 h/wk | Three 1-page Musikvermittlung concept sketches in German |
+| **Local cultural-sector networking sprint (Stuttgart region)** | Important for hidden BW cultural-sector job market | One concrete contact step per week: attend an info evening at Leonberger Kulturamt or Stadthalle Leonberg, write to a Musikhochschule Stuttgart alumni officer, or message one cultural-PM person on LinkedIn for a 20-minute Kennenlerngespräch. Track outcomes. | 0.5 h/wk · €20 | Networking tracker with ≥10 contacts and ≥3 conversations by end of phase 1 |
+| **DE cultural-sector governance literacy (KSK, GEMA, Fördermittel, Trägerschaft)** | Important for any role that touches funding or contracts | One topic per week, ~1 page of personal notes: (1) Künstlersozialkasse basics for employers, (2) GEMA tariffs and concert-organiser duties, (3) Fördermittel landscape in BW (Land BW, Stadt Stuttgart, Kulturstiftung des Bundes), (4) öffentliche vs. freie Träger, (5) typical Kulturamt budget structure, (6) Drittmittelantrag basics. | 1 h/wk | One-page note per topic, ~6 notes total |
 
 ### Nice-to-Have
 
 | Qualification | Why not urgent | Later action |
 |---|---|---|
-| Google Workspace / G Suite basics (Docs, Sheets, Gmail, Drive) | Only useful if specific target employer uses Google Workspace | Self-study via Google's free training (workspace |
-| Project management basics (e.g. VHS PM Grundkurs or PRINCE2 Foundation) | Defer until PRINCE2 appears repeatedly in job ads for target roles | Only pursue if PM appears in 3+ target job ads |
+| Map BW event-production landscape (agencies, venues, ticketing) | Lower priority than spoken German and certifications | Build a one-pager listing key BW event agencies, festivals and venues with role types (e |
+| English brush-up for international/outreach roles | Spoken German is more urgent | Lightweight: weekly podcast or article read in English (e |
 
 ### Avoid for Now
 
 | Qualification | Why to avoid / defer |
 |---|---|
-| IELTS or TOEFL certificate | German employers rarely require IELTS. English proficiency is demonstrated in the interview itself. Spend time on German instead.
- |
-| AI / Machine Learning / Python bootcamp (general) | Too broad for the current employment goal. Unless specific tech roles are targeted, this investment will not produce the expected return. Only pursue if Erika Mustermann transitions to data or tech roles with a clear job target.
- |
-| MBA or second Master's degree in Germany | ROI is very low in the short term. German employers value practical experience over academic degrees for most non-specialist roles. Language and local work experience are higher priority investments.
- |
+| Expensive generalist PM bootcamp (e.g. multi-thousand-EUR programme) | Cost/time not justified before in-progress certs are completed |
+| Second master's degree or PhD | Too expensive and slow for the family-income re-entry goal |
 
-> **Principle:** _Recommend only qualifications that improve employability for the target roles. Prefer small credible proof over expensive certificates unless the certificate is clearly required by employers. Never re_
+> **Principle:** _Prioritise qualifications and outputs that improve external employability within 3–6 months. Visible proof matters more than additional theory: complete pending certificates, produce bilingual portfol_
 
 ---
 
