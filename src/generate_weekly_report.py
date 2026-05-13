@@ -281,40 +281,46 @@ def _build_career_actions_section(
         if a.get("career_actionability_score", 0) >= 6.0:
             high_actionability.append(a)
 
-    # Top job clusters from skill_matrix primary goals
+    # Top job clusters aligned with Xi's cultural-PM target roles
     job_clusters = [
-        "Functional Safety Architect / System Safety Engineer",
-        "Safety Consultant / Assessor (TÜV, SGS, Bureau Veritas)",
-        "Machine Safety Engineer (ISO 13849 / IEC 62061)",
-        "Embedded AI Safety Engineer (SOTIF / ISO PAS 8800)",
-        "RAMS Engineer (Railway / Industrial Automation)",
+        "Projektmanager*in Kultur (Konzerthaus / Festival / Kulturamt)",
+        "Bildungsreferent*in Musik / Kulturelle Bildung (Musikvermittlung)",
+        "Veranstaltungsmanager*in Kultur (Eventagentur / Festival)",
+        "Education / Outreach Manager (Konzerthaus / Musikhochschule)",
+        "Pressereferent*in / Kommunikation (Kulturinstitution)",
     ]
 
-    # Top companies from signals (filter to relevant sectors)
-    top_companies = [c for c, _ in company_counts.most_common(8)
-                     if c.lower() not in ("anthropic", "openai", "microsoft")][:5]
+    # Top companies from signals (filter for cultural-sector relevance)
+    top_companies = [c for c, _ in company_counts.most_common(8)][:5]
     if not top_companies:
-        top_companies = ["Bosch", "Continental", "ZF", "TÜV SÜD", "TÜV Rheinland"]
+        top_companies = [
+            "Stuttgarter Liederhalle",
+            "Musikhochschule Stuttgart (HMDK)",
+            "Stuttgarter Philharmoniker",
+            "Schlossfestspiele Ludwigsburg",
+            "Kulturamt Leonberg",
+        ]
 
     # Recommended application keywords (top tech tags)
     keywords = [t for t, _ in tech_counts.most_common(10)
-                if len(t) > 3 and t not in ("robot", "vehicle", "system")][:8]
+                if len(t) > 3][:8]
 
     # Suggested networking targets
     networking = [
-        "TÜV SÜD / TÜV Rheinland functional safety teams",
-        "Safety engineer communities (LinkedIn: Functional Safety Professionals)",
-        "CMSE/ISO 13849 contacts from machinery/robotics sector",
-        "ADAS safety architects at Continental, ZF, Mobileye",
+        "Musikhochschule Stuttgart (HMDK) alumni and Education-Manager-Team",
+        "Kulturmanagement Network (kulturmanagement.net) and LinkedIn group",
+        "Netzwerk Junge Ohren — Musikvermittlung professionals",
+        "Stuttgarter Liederhalle and Schlossfestspiele Ludwigsburg press teams",
+        "Kulturamt Leonberg / Stuttgart Veranstaltungskoordination",
     ]
 
     # Concrete 7-day action plan
     plan_lines = [
-        "1. **Apply** to 3–5 senior safety architect / consultant roles in Germany/Europe",
-        "2. **Update LinkedIn headline** → include ISO 26262, ISO 13849, SOTIF, AI safety",
-        "3. **Contact** one TÜV / safety consultancy (TÜV SÜD, TÜV Rheinland, SGS, Exida)",
-        "4. **Practice** one interview story: cross-domain safety architecture decision",
-        "5. **Review** this week's strong signals for new employer leads",
+        "1. **Apply** to 3 tailored cultural-PM roles in BW (priority: education, event production)",
+        "2. **Update LinkedIn headline** → 'Projektmanagerin Kultur — Bildung, Veranstaltung, Kommunikation'",
+        "3. **Contact** one Stuttgart-area cultural professional for a 20-minute Kennenlerngespräch",
+        "4. **Practice** one STAR interview answer aloud in German with Sprachcoach or tandem partner",
+        "5. **Advance** one Google PM or Scrum Master I module; log progress to certification tracker",
     ]
 
     lines = [
@@ -342,11 +348,11 @@ def _build_market_fit_section(articles: List[Dict], career_mode: str) -> str:
         return ""
 
     industry_signals: Dict[str, List[str]] = {
-        "automotive_safety": [],
-        "robotics_machine_safety": [],
-        "industrial_automation": [],
-        "consulting_tuv_assessment": [],
-        "adjacent_sectors": [],
+        "education_programs": [],
+        "event_production": [],
+        "music_classical": [],
+        "museum_exhibition": [],
+        "pr_communication": [],
     }
 
     for a in articles:
@@ -357,43 +363,55 @@ def _build_market_fit_section(articles: List[Dict], career_mode: str) -> str:
         techs = {t.lower() for t in cls.get("technologies", []) + cls.get("skills", [])}
         title = a.get("title", "")[:60]
 
-        if inds & {"automotive", "adas", "software_defined_vehicle"} and \
-           techs & {"functional safety", "iso 26262", "sotif", "asil"}:
-            industry_signals["automotive_safety"].append(title)
-        if inds & {"robotics", "machinery_safety"} or \
-           techs & {"iso 13849", "performance level", "safety function", "collaborative robot"}:
-            industry_signals["robotics_machine_safety"].append(title)
-        if techs & {"iec 61508", "iec 62061", "industrial automation", "rams"}:
-            industry_signals["industrial_automation"].append(title)
-        if techs & {"safety assessor", "safety consultant", "tüv", "tuv", "assessment", "certification"}:
-            industry_signals["consulting_tuv_assessment"].append(title)
-        if techs & {"railway safety", "aerospace safety", "medical safety", "iec 62304"}:
-            industry_signals["adjacent_sectors"].append(title)
+        if inds & {"education_programs"} or \
+           techs & {"musikvermittlung", "konzertpädagogik", "bildungsreferent",
+                    "kulturelle bildung", "music education", "outreach"}:
+            industry_signals["education_programs"].append(title)
+        if inds & {"event_production"} or \
+           techs & {"veranstaltungsmanagement", "eventmanagement", "konzertdirektion",
+                    "festival", "künstlerbetreuung"}:
+            industry_signals["event_production"].append(title)
+        if inds & {"music_classical"} or \
+           techs & {"orchester", "philharmonie", "konzerthaus", "oper",
+                    "klassik", "klassische musik", "theater"}:
+            industry_signals["music_classical"].append(title)
+        if inds & {"museum_exhibition"} or \
+           techs & {"museum", "ausstellung", "museumspädagogik", "galerie"}:
+            industry_signals["museum_exhibition"].append(title)
+        if inds & {"pr_communication"} or \
+           techs & {"pressearbeit", "öffentlichkeitsarbeit", "kommunikation",
+                    "social media", "newsletter"}:
+            industry_signals["pr_communication"].append(title)
 
     profile_map = {
-        "automotive_safety": {
-            "label": "🚗 Automotive Safety (ISO 26262 / SOTIF)",
-            "fit": "**Strong** — primary background. Senior differentiation through cross-domain and AI safety.",
+        "education_programs": {
+            "label": "🎓 Education Programs / Musikvermittlung (Priority #1)",
+            "fit": "**Strong match** — musicology degree + conservatoire background + CNSO experience. "
+                   "Target: Bildungsreferent*in at Stuttgarter Liederhalle, HMDK, Musikschulen.",
             "signal_label": "Active signals this week",
         },
-        "robotics_machine_safety": {
-            "label": "🤖 Robotics & Machine Safety (ISO 13849 / IEC 62061)",
-            "fit": "**Growing** — opens industrial automation, collaborative robotics, humanoid markets.",
+        "event_production": {
+            "label": "🎪 Event Production & Coordination (Priority #2)",
+            "fit": "**Good match** — 5 years concert-event coordination at CNSO. "
+                   "DE gap: learn Reservix/Eventim, GEMA, KSK on the job.",
             "signal_label": "Active signals this week",
         },
-        "industrial_automation": {
-            "label": "🏭 Industrial Automation (IEC 61508 / RAMS)",
-            "fit": "**Adjacent** — cross-domain safety standards apply directly. Underserved by pure automotive engineers.",
+        "music_classical": {
+            "label": "🎼 Music Institutions (Concert Halls, Opera, Drama) (Priority #3)",
+            "fit": "**Natural home** — deep classical music credibility. "
+                   "Target: Orchesterakademie roles, Dramaturgieassistenz, Künstlerisches Betriebsbüro.",
             "signal_label": "Active signals this week",
         },
-        "consulting_tuv_assessment": {
-            "label": "🔍 Consulting / TÜV / Assessment",
-            "fit": "**High demand** — senior safety engineers with multi-standard fluency are scarce.",
+        "museum_exhibition": {
+            "label": "🖼️ Exhibitions & Museums (Priority #4)",
+            "fit": "**Moderate match** — cultural-PM transferability is real; "
+                   "pursue only if direct vacancy appears at Staatsgalerie, Kunstmuseum or Linden-Museum.",
             "signal_label": "Active signals this week",
         },
-        "adjacent_sectors": {
-            "label": "✈️ Adjacent: Railway / Aerospace / Medical Device",
-            "fit": "**Optional** — transferable standards knowledge; only pursue if direct opportunity arises.",
+        "pr_communication": {
+            "label": "📣 PR & Communication (Lateral track)",
+            "fit": "**Fluent** — CNSO press work is the strongest existing credential. "
+                   "Use as secondary pitch, not primary identity. German writing quality is the key gate.",
             "signal_label": "Active signals this week",
         },
     }
@@ -459,60 +477,62 @@ def _build_executive_summary(
 def _build_career_advice(strong_signals: List[Dict]) -> str:
     if not strong_signals:
         return (
-            "No major shifts this week. Continue current priorities: ROS2 implementation, "
-            "C++20 safety logic, AI perception monitoring, and fault injection tests.\n\n"
-            "Your portfolio project (Safety-Supervised Edge AI Demo on Raspberry Pi) "
-            "remains well-aligned with the industry direction in embedded AI safety."
+            "No major signals this week. Continue current priorities: job applications "
+            "(3+ per week), spoken German practice, and Google PM / Scrum Master I "
+            "module completion.\n\n"
+            "Maintain the bilingual CV and LinkedIn profile update rhythm — "
+            "one refined bullet per week is enough to keep momentum."
         )
     industries: set = set()
     techs: set = set()
     for a in strong_signals:
         cls = _get_classification(a)
         industries.update(i.lower() for i in cls.get("industries", []))
-        techs.update(t.lower() for t in cls.get("technologies", []))
+        techs.update(t.lower() for t in cls.get("technologies", []) + cls.get("skills", []))
 
     parts = [
-        "Based on this week's signals, your positioning in "
-        "**functional safety + embedded AI systems** remains strategically sound.\n"
+        "Based on this week's signals, your positioning as a "
+        "**multilingual cultural project manager for the Stuttgart region** remains sound.\n"
     ]
-    if "robotics" in industries or "humanoid" in techs or "physical ai" in techs:
+    if "education_programs" in industries or \
+       techs & {"musikvermittlung", "bildungsreferent", "kulturelle bildung", "konzertpädagogik"}:
         parts.append(
-            "**Robotics activity is strong.** Emphasize ROS2 and safety-supervised "
-            "robotics in your portfolio and CV/LinkedIn profile.\n"
+            "**Musikvermittlung / education-program signals are active.** "
+            "This is your sub-sector #1 — check vacancies at HMDK Stuttgart, "
+            "Liederhalle, and Netzwerk Junge Ohren this week.\n"
         )
-    if "sotif" in techs or "iso/pas 8800" in techs:
+    if "event_production" in industries or \
+       techs & {"veranstaltungsmanagement", "festival", "konzertdirektion"}:
         parts.append(
-            "**SOTIF/ISO PAS 8800 signals are visible.** This reinforces your AI safety "
-            "specialization. Highlight it when applying to ADAS-focused or AI-safety roles.\n"
+            "**Event-production activity visible.** "
+            "Scan Schlossfestspiele Ludwigsburg, SKS Russ and Theaterhaus Stuttgart "
+            "for coordinator / PM openings.\n"
         )
-    if "mbse" in techs or "sysml" in techs:
+    if "funding_policy" in industries or \
+       techs & {"kulturförderung", "fördermittel", "drittmittel", "förderaufruf"}:
         parts.append(
-            "**MBSE/SysML2 signals detected.** Consider adding SysML2 architecture "
-            "diagrams to your portfolio project to demonstrate systems engineering depth.\n"
-        )
-    if "qnx" in techs or "software_defined_vehicle" in industries:
-        parts.append(
-            "**SDV / QNX signals present.** Your QNX/POSIX supervisor knowledge "
-            "is a differentiator for automotive SDV roles — make it visible.\n"
+            "**Funding or cultural-policy news detected.** "
+            "Note any budget changes at local cultural institutions — they signal "
+            "staffing changes in 3–6 months.\n"
         )
     if not parts[1:]:
         parts.append(
             "Signals this week are broad. No specific pivot recommended. "
-            "Maintain current skill trajectory.\n"
+            "Maintain weekly application rhythm and spoken-German practice.\n"
         )
     return "\n".join(parts)
 
 
 def _build_risks_section(noise_articles: List[Dict]) -> str:
     warnings = [
-        "- **Generic GenAI / chatbot news:** Not relevant unless tied to "
-        "safety-critical or embedded systems.",
-        "- **Single-startup hype without hiring or technical signal:** "
-        "Log it, but do not change skill priorities.",
-        "- **Vague 'AI transformation' press releases:** Low signal density; "
-        "treat as background noise.",
-        "- **Consumer robotics without safety or embedded angle:** "
-        "Watch passively; do not deprioritize core skills.",
+        "- **Celebrity / artist gossip or scandal news:** Not actionable for job search "
+        "unless it signals leadership change at a target organisation.",
+        "- **Concert reviews and programme notes without hiring signal:** "
+        "Interesting background reading; do not interrupt application workflow.",
+        "- **Generic 'AI in culture' hype pieces:** Only actionable if tied to a specific "
+        "tool or vacancy at a target institution.",
+        "- **National or international music prizes / competitions:** "
+        "Good for network awareness; follow up only if a target org is involved.",
         "- **Social media opinion pieces without corroborating sources:** "
         "Low confidence; require a second source before acting.",
     ]

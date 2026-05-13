@@ -19,22 +19,20 @@ import yaml
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 
-# Skill name → job_signals skill_tag mapping (lowercase)
+# Skill matrix name → job_signals skill_tag mapping (lowercase, matches jobs.yaml).
 _SKILL_TO_TAG: Dict[str, str] = {
-    "ros2": "ros2",
-    "iso 26262": "iso_26262",
-    "functional safety": "functional_safety",
-    "sotif": "sotif",
-    "iso/pas 8800": "iso_pas_8800",
-    "embedded ai": "embedded_ai",
-    "adas": "adas",
-    "qnx": "qnx",
-    "mbse / sysml2": "mbse",
-    "c++20": "c++20",
-    "embedded linux": "embedded",
-    "fault injection testing": "functional_safety",
-    "ai perception monitoring": "embedded_ai",
-    "digital twin / virtual validation": "digital_twin",
+    "external job search and applications": "cultural_management",
+    "german oral fluency and interview communication": "cultural_management",
+    "project management certification (google pm + scrum master i)": "project_management",
+    "cv, linkedin and portfolio for de cultural sector": "cultural_management",
+    "cultural project management practice (de conventions)": "cultural_management",
+    "music education and musikvermittlung": "education_programs",
+    "event production and coordination": "event_production",
+    "pr, media and content for cultural institutions": "pr_communication",
+    "ai tools for cultural administration": "project_management",
+    "exhibitions and museum education": "museum_exhibition",
+    "local cultural-sector networking (stuttgart region)": "cultural_management",
+    "cultural policy and funding awareness": "funding_policy",
 }
 
 # Job demand tier thresholds (posting count from bundesagentur/indeed)

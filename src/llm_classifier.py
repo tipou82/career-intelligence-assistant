@@ -17,21 +17,36 @@ import os
 from typing import Any, Dict
 
 SYSTEM_PROMPT = """\
-You are a career intelligence classifier for a functional safety engineer targeting:
-- Robotics, ADAS, embedded AI, automotive safety
-- Standards: ISO 26262, SOTIF, ISO/PAS 8800
-- Technologies: ROS2, QNX, C++20, MBSE/SysML2, digital twin, fault injection
-- Companies: Bosch, Continental, ZF, NEURA Robotics, Figure AI, NVIDIA, Mobileye,
-  Toyota, Honda, BMW, Mercedes-Benz, Volkswagen, BYD, NIO, XPeng, Dassault Systèmes
+You are a career intelligence classifier for a cultural project manager
+re-entering the German labour market in the Stuttgart / Leonberg region.
+Target profile:
+- Sub-sectors (priority order): education programs / Musikvermittlung,
+  event production, music institutions (concert halls, opera, drama),
+  museums & exhibitions
+- Skills: project management (Google PM + Scrum), cultural-sector PR &
+  media, artist relations, audience development, multilingual (CN/DE/EN/FR)
+- Target organisations: Stuttgarter Liederhalle, Musikhochschule Stuttgart
+  (HMDK), Stuttgarter Philharmoniker, SWR Symphonieorchester, Staatstheater
+  Stuttgart, Internationale Bachakademie, Schlossfestspiele Ludwigsburg,
+  Kulturämter (Stuttgart, Leonberg), Musikschulen, Staatsgalerie /
+  Kunstmuseum Stuttgart, Linden-Museum, plus DACH-level (Berliner
+  Philharmoniker, Bühnenverein, Goethe-Institut, Netzwerk Junge Ohren)
 
 Analyze the article and return a JSON object with EXACTLY these keys:
 {
-  "industries":         list from [automotive, robotics, adas, functional_safety,
-                        embedded, software_defined_vehicle, digital_twin, mbse, ai],
-  "regions":            list from [germany, europe, japan, usa, china, korea, global],
-  "companies":          list of company names explicitly mentioned (canonical form),
-  "technologies":       list of specific technologies (e.g. ROS2, QNX, ISO 26262, SOTIF),
-  "skills":             list of relevant skills (e.g. functional safety, fault injection),
+  "industries":         list from [cultural_management, education_programs,
+                        event_production, music_classical, museum_exhibition,
+                        pr_communication, project_management, funding_policy],
+  "regions":            list from [stuttgart, leonberg, ludwigsburg, böblingen,
+                        baden-württemberg, germany, europe, austria, switzerland,
+                        france, china, global],
+  "companies":          list of organisation names explicitly mentioned
+                        (canonical form, e.g. "Stuttgarter Liederhalle"),
+  "technologies":       list of tools / platforms mentioned (e.g. MS Office,
+                        Reservix, CTS Eventim, Mailchimp, Asana, Jira),
+  "skills":             list of cultural-PM skills referenced (e.g.
+                        Projektmanagement, Musikvermittlung, Pressearbeit,
+                        Künstlerbetreuung, Veranstaltungsmanagement, Scrum),
   "confidence_level":   one of "high" | "medium" | "low",
   "recommended_action": one of "study_and_apply" | "monitor_closely" | "monitor" | "watch",
   "source_reliability": float 0.0-1.0
@@ -39,8 +54,11 @@ Analyze the article and return a JSON object with EXACTLY these keys:
 
 Rules:
 - Only include items explicitly mentioned or strongly implied.
-- Generic AI/chatbot news with no embedded or safety angle → industries=["ai"], low confidence.
-- Consumer articles (e-bikes, food, politics, sports) → all lists empty, confidence="low".
+- Celebrity gossip / scandals / consumer entertainment → all lists empty, confidence="low".
+- Generic political or business news without a cultural-sector angle → confidence="low".
+- Hiring or vacancy announcements at cultural organisations → recommended_action="study_and_apply".
+- Funding-call announcements (Förderaufruf, Drittmittel, Stipendien) → recommended_action="study_and_apply".
+- Programme / season announcements at target orgs → recommended_action="monitor_closely".
 """
 
 USER_TEMPLATE = "Title: {title}\n\nSummary: {summary}\n\nClassify this article."

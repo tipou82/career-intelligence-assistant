@@ -1,4 +1,4 @@
-"""Tests for relevance scoring logic in src/score_relevance.py."""
+"""Tests for relevance scoring logic in src/score_relevance.py (cultural-PM profile)."""
 
 import pytest
 from src.score_relevance import (
@@ -34,25 +34,29 @@ def make_cls(**kwargs: object) -> dict:
 
 class TestDomainScore:
     def test_known_high_value_industry(self) -> None:
-        assert _domain_score(make_cls(industries=["robotics"])) == 1.0
+        assert _domain_score(make_cls(industries=["cultural_management"])) == 1.0
+
+    def test_education_programs_scores_max(self) -> None:
+        assert _domain_score(make_cls(industries=["education_programs"])) == 1.0
 
     def test_unknown_industry_scores_low(self) -> None:
-        assert _domain_score(make_cls(industries=["entertainment"])) == 0.05
+        assert _domain_score(make_cls(industries=["automotive"])) == 0.05
 
     def test_empty_industries_scores_zero(self) -> None:
         assert _domain_score(make_cls()) == 0.0
 
     def test_best_industry_wins(self) -> None:
-        assert _domain_score(make_cls(industries=["robotics", "entertainment"])) == 1.0
+        assert _domain_score(make_cls(industries=["cultural_management", "automotive"])) == 1.0
 
-    def test_embedded_scores_high(self) -> None:
-        assert _domain_score(make_cls(industries=["embedded"])) == 0.9
+    def test_event_production_scores_high(self) -> None:
+        assert _domain_score(make_cls(industries=["event_production"])) == 0.95
 
-    def test_machinery_safety_scores_high(self) -> None:
-        assert _domain_score(make_cls(industries=["machinery_safety"])) == 0.9
+    def test_music_classical_scores_high(self) -> None:
+        assert _domain_score(make_cls(industries=["music_classical"])) == 0.9
 
-    def test_physical_ai_scores_high(self) -> None:
-        assert _domain_score(make_cls(industries=["physical_ai"])) == 0.9
+    def test_museum_lower_than_core(self) -> None:
+        score = _domain_score(make_cls(industries=["museum_exhibition"]))
+        assert score < _domain_score(make_cls(industries=["cultural_management"]))
 
 
 # ---------------------------------------------------------------------------
@@ -60,45 +64,43 @@ class TestDomainScore:
 # ---------------------------------------------------------------------------
 
 class TestSkillScore:
-    def test_ros2_scores_max(self) -> None:
-        assert _skill_score(make_cls(technologies=["ros2"])) == 1.0
+    def test_kulturmanagement_scores_max(self) -> None:
+        assert _skill_score(make_cls(skills=["kulturmanagement"])) == 1.0
 
-    def test_iso26262_scores_max(self) -> None:
-        assert _skill_score(make_cls(skills=["iso 26262"])) == 1.0
+    def test_musikvermittlung_scores_max(self) -> None:
+        assert _skill_score(make_cls(skills=["musikvermittlung"])) == 1.0
+
+    def test_bildungsreferent_scores_max(self) -> None:
+        assert _skill_score(make_cls(skills=["bildungsreferent"])) == 1.0
+
+    def test_veranstaltungsmanagement_scores_max(self) -> None:
+        assert _skill_score(make_cls(skills=["veranstaltungsmanagement"])) == 1.0
 
     def test_unknown_skill_scores_low(self) -> None:
-        assert _skill_score(make_cls(skills=["powerpoint"])) == 0.05
+        assert _skill_score(make_cls(skills=["iso 26262"])) == 0.05
 
     def test_empty_returns_zero(self) -> None:
         assert _skill_score(make_cls()) == 0.0
 
     def test_best_skill_wins(self) -> None:
-        assert _skill_score(make_cls(technologies=["ros2", "embedded linux"])) == 1.0
+        # An unknown skill alongside a top one should still return the top score
+        assert _skill_score(make_cls(skills=["musikvermittlung", "powerpoint"])) == 1.0
 
-    def test_skills_and_technologies_combined(self) -> None:
-        assert _skill_score(make_cls(technologies=[], skills=["sotif"])) == 1.0
+    def test_scrum_master_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["scrum master"]))
+        assert score >= 0.85
 
-    def test_iso13849_scores_high(self) -> None:
-        assert _skill_score(make_cls(skills=["iso 13849"])) == 1.0
+    def test_pressearbeit_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["pressearbeit"]))
+        assert score >= 0.85
 
-    def test_performance_level_scores_high(self) -> None:
-        score = _skill_score(make_cls(skills=["performance level"]))
-        assert score >= 0.9
+    def test_audience_development_scores_high(self) -> None:
+        score = _skill_score(make_cls(skills=["audience development"]))
+        assert score >= 0.85
 
-    def test_fault_injection_scores_high(self) -> None:
-        score = _skill_score(make_cls(technologies=["fault injection"]))
-        assert score >= 0.9
-
-    def test_confidence_monitoring_scores_high(self) -> None:
-        score = _skill_score(make_cls(skills=["confidence monitoring"]))
-        assert score == 1.0
-
-    def test_safety_function_scores_high(self) -> None:
-        score = _skill_score(make_cls(skills=["safety function"]))
-        assert score >= 0.9
-
-    def test_qnx_scores_high(self) -> None:
-        assert _skill_score(make_cls(technologies=["qnx"])) == 0.9
+    def test_chinese_term_normalised(self) -> None:
+        # 项目管理 → "project management"
+        assert _skill_score(make_cls(skills=["项目管理"])) == 1.0
 
 
 # ---------------------------------------------------------------------------
@@ -111,26 +113,26 @@ class TestSourceReliability:
     def _art(self, source_name: str) -> dict:
         return {"source_name": source_name}
 
-    def test_ieee_scores_highest(self) -> None:
-        from src.score_relevance import _source_reliability_score, SOURCE_TIERS
-        score = _source_reliability_score({}, self._art("IEEE Spectrum"))
-        assert score >= 0.95
-
-    def test_reuters_scores_high(self) -> None:
+    def test_faz_scores_highest(self) -> None:
         from src.score_relevance import _source_reliability_score
-        score = _source_reliability_score({}, self._art("Reuters Technology"))
+        score = _source_reliability_score({}, self._art("FAZ Feuilleton"))
         assert score >= 0.90
 
-    def test_techcrunch_scores_lower(self) -> None:
+    def test_nmz_scores_high(self) -> None:
         from src.score_relevance import _source_reliability_score
-        score = _source_reliability_score({}, self._art("TechCrunch AI"))
+        score = _source_reliability_score({}, self._art("nmz"))
+        assert score >= 0.85
+
+    def test_slipped_disc_scores_lower(self) -> None:
+        from src.score_relevance import _source_reliability_score
+        score = _source_reliability_score({}, self._art("Slipped Disc"))
         assert score <= 0.70
 
-    def test_electrek_scores_lower_than_ieee(self) -> None:
+    def test_faz_higher_than_slipped_disc(self) -> None:
         from src.score_relevance import _source_reliability_score
-        ieee = _source_reliability_score({}, self._art("IEEE Spectrum"))
-        electrek = _source_reliability_score({}, self._art("Electrek"))
-        assert ieee > electrek
+        faz = _source_reliability_score({}, self._art("FAZ"))
+        slipped = _source_reliability_score({}, self._art("Slipped Disc"))
+        assert faz > slipped
 
     def test_unknown_source_falls_back_to_feed_score(self) -> None:
         from src.score_relevance import _source_reliability_score
@@ -150,11 +152,17 @@ class TestSourceReliability:
 # ---------------------------------------------------------------------------
 
 class TestRegionScore:
-    def test_germany_max(self) -> None:
-        assert _region_score(make_cls(regions=["germany"])) == 1.0
+    def test_stuttgart_max(self) -> None:
+        assert _region_score(make_cls(regions=["stuttgart"])) == 1.0
 
-    def test_japan_high(self) -> None:
-        assert _region_score(make_cls(regions=["japan"])) == 0.9
+    def test_leonberg_max(self) -> None:
+        assert _region_score(make_cls(regions=["leonberg"])) == 1.0
+
+    def test_germany_high(self) -> None:
+        assert _region_score(make_cls(regions=["germany"])) == 0.9
+
+    def test_europe_medium(self) -> None:
+        assert _region_score(make_cls(regions=["europe"])) == 0.75
 
     def test_unknown_region_low(self) -> None:
         assert _region_score(make_cls(regions=["antarctica"])) == 0.15
@@ -163,7 +171,12 @@ class TestRegionScore:
         assert _region_score(make_cls()) == 0.3
 
     def test_best_region_wins(self) -> None:
-        assert _region_score(make_cls(regions=["germany", "antarctica"])) == 1.0
+        assert _region_score(make_cls(regions=["stuttgart", "antarctica"])) == 1.0
+
+    def test_stuttgart_outscores_germany(self) -> None:
+        assert _region_score(make_cls(regions=["stuttgart"])) > _region_score(
+            make_cls(regions=["germany"])
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -171,25 +184,25 @@ class TestRegionScore:
 # ---------------------------------------------------------------------------
 
 class TestCareerImpactScore:
-    def test_robotics_ros2_pair_max_impact(self) -> None:
-        cls = make_cls(industries=["robotics"], technologies=["ros2"])
+    def test_cultural_pm_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["cultural_management"], skills=["projektmanagement"])
         assert _career_impact_score(cls) == 1.0
 
-    def test_robotics_iso13849_pair_max_impact(self) -> None:
-        cls = make_cls(industries=["robotics"], skills=["iso 13849"])
+    def test_education_musikvermittlung_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["education_programs"], skills=["musikvermittlung"])
         assert _career_impact_score(cls) == 1.0
 
-    def test_adas_sotif_pair_max_impact(self) -> None:
-        cls = make_cls(industries=["adas"], technologies=["sotif"])
+    def test_event_production_konzertdirektion_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["event_production"], skills=["konzertdirektion"])
         assert _career_impact_score(cls) == 1.0
 
-    def test_ai_fault_injection_pair_max_impact(self) -> None:
-        cls = make_cls(industries=["ai"], skills=["fault injection"])
+    def test_museum_education_pair_max_impact(self) -> None:
+        cls = make_cls(industries=["museum_exhibition"], skills=["museumspädagogik"])
         assert _career_impact_score(cls) == 1.0
 
     def test_generic_industry_lower_impact(self) -> None:
-        cls = make_cls(industries=["ai"])
-        assert _career_impact_score(cls) == 0.5
+        cls = make_cls(industries=["pr_communication"])
+        assert _career_impact_score(cls) == 0.65
 
     def test_empty_minimal_impact(self) -> None:
         cls = make_cls()
@@ -205,11 +218,11 @@ class TestScoreArticle:
 
     def test_high_relevance_above_seven(self) -> None:
         cls = make_cls(
-            industries=["robotics", "automotive"],
-            regions=["germany"],
-            companies=["Bosch"],
-            technologies=["ros2", "functional safety"],
-            skills=["safety testing"],
+            industries=["cultural_management", "education_programs"],
+            regions=["stuttgart"],
+            companies=["Stuttgarter Liederhalle"],
+            technologies=["scrum"],
+            skills=["musikvermittlung", "projektmanagement"],
             source_reliability=0.9,
         )
         scores = score_article(self._article, cls, {}, {}, {})
@@ -217,7 +230,7 @@ class TestScoreArticle:
 
     def test_low_relevance_below_four(self) -> None:
         cls = make_cls(
-            industries=["entertainment"],
+            industries=["automotive"],
             regions=[],
             companies=[],
             technologies=[],
@@ -229,11 +242,11 @@ class TestScoreArticle:
 
     def test_score_within_0_to_10(self) -> None:
         cls = make_cls(
-            industries=["automotive"],
+            industries=["music_classical"],
             regions=["europe"],
-            companies=["Tesla"],
-            technologies=["sotif"],
-            skills=["functional safety"],
+            companies=["Berliner Philharmoniker"],
+            technologies=["ticketing"],
+            skills=["pressearbeit"],
             source_reliability=0.8,
         )
         scores = score_article(self._article, cls, {}, {}, {})
@@ -248,39 +261,40 @@ class TestScoreArticle:
         assert "company" not in scores  # company relevance removed
 
     def test_high_impact_pair_boosts_score(self) -> None:
-        cls = make_cls(industries=["robotics"], technologies=["ros2"], source_reliability=0.85)
+        cls = make_cls(industries=["cultural_management"], skills=["projektmanagement"],
+                       source_reliability=0.85)
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["career_impact"] == 10.0
 
     def test_score_capped_at_ten(self) -> None:
         cls = make_cls(
-            industries=["robotics"],
-            regions=["germany"],
-            companies=["Bosch"],
-            technologies=["ros2", "iso/pas 8800", "sotif"],
-            skills=["functional safety"],
+            industries=["cultural_management", "education_programs"],
+            regions=["stuttgart"],
+            companies=["Stuttgarter Liederhalle"],
+            technologies=["scrum master"],
+            skills=["musikvermittlung", "projektmanagement", "veranstaltungsmanagement"],
             source_reliability=1.0,
         )
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["total"] <= 10.0
 
-    def test_iso13849_machinery_robotics_scores_high(self) -> None:
+    def test_education_in_stuttgart_scores_high(self) -> None:
         cls = make_cls(
-            industries=["robotics"],
-            regions=["germany"],
-            companies=["Pilz"],
-            skills=["iso 13849", "safety function", "performance level"],
+            industries=["education_programs"],
+            regions=["stuttgart"],
+            companies=["Musikhochschule Stuttgart"],
+            skills=["bildungsreferent", "musikvermittlung", "kulturelle bildung"],
             source_reliability=0.85,
         )
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["total"] >= 7.0
 
-    def test_ai_monitoring_scores_high(self) -> None:
+    def test_event_production_local_scores_high(self) -> None:
         cls = make_cls(
-            industries=["ai", "embedded"],
-            regions=["global"],
-            technologies=["confidence monitoring", "fault injection"],
-            skills=["ai perception monitoring"],
+            industries=["event_production"],
+            regions=["ludwigsburg"],
+            companies=["Schlossfestspiele Ludwigsburg"],
+            skills=["veranstaltungsmanagement", "künstlerbetreuung"],
             source_reliability=0.8,
         )
         scores = score_article(self._article, cls, {}, {}, {})
@@ -302,26 +316,39 @@ class TestScoreArticle:
         total = sum(v for v in w.values())
         assert abs(total - 1.0) < 1e-9
 
-    def test_external_transition_mode_scores_germany_higher(self) -> None:
-        cls_de = make_cls(industries=["functional_safety"], regions=["germany"],
-                          technologies=["iso 26262"], source_reliability=0.85)
-        cls_us = make_cls(industries=["functional_safety"], regions=["usa"],
-                          technologies=["iso 26262"], source_reliability=0.85)
-        art = {"id": 1, "title": "Safety job opening", "summary": "We are hiring safety engineers"}
-        score_de = score_article(art, cls_de, {}, {}, {}, career_mode="external_transition")
-        score_us = score_article(art, cls_us, {}, {}, {}, career_mode="external_transition")
-        assert score_de["total"] > score_us["total"]
+    def test_external_transition_mode_scores_stuttgart_higher(self) -> None:
+        cls_stu = make_cls(industries=["cultural_management"], regions=["stuttgart"],
+                           skills=["projektmanagement"], source_reliability=0.85)
+        cls_global = make_cls(industries=["cultural_management"], regions=["global"],
+                              skills=["projektmanagement"], source_reliability=0.85)
+        art = {"id": 1, "title": "Cultural project manager opening", "summary": "We are hiring a Projektmanager Kultur"}
+        score_stu = score_article(art, cls_stu, {}, {}, {}, career_mode="external_transition")
+        score_global = score_article(art, cls_global, {}, {}, {}, career_mode="external_transition")
+        assert score_stu["total"] > score_global["total"]
 
-    def test_bosch_japan_not_dominant(self) -> None:
-        # Bosch Japan article should score below a safety job opening in Germany
-        art_japan = {"id": 1, "title": "Bosch Japan opens new office in Tokyo", "summary": "Bosch expands Japan operations"}
-        art_job = {"id": 2, "title": "Safety architect vacancy Germany", "summary": "We are hiring functional safety architect ISO 26262"}
-        cls_japan = make_cls(industries=["automotive"], regions=["japan"], companies=["Bosch"])
-        cls_job = make_cls(industries=["functional_safety"], regions=["germany"],
-                           technologies=["iso 26262", "safety architecture"])
-        score_japan = score_article(art_japan, cls_japan, {}, {}, {}, career_mode="external_transition")
-        score_job = score_article(art_job, cls_job, {}, {}, {}, career_mode="external_transition")
-        assert score_job["total"] >= score_japan["total"]
+    def test_local_job_outscores_remote_news(self) -> None:
+        # A local vacancy should score above a generic distant industry update
+        art_local = {
+            "id": 1,
+            "title": "Stuttgarter Liederhalle sucht Projektmanager Kultur",
+            "summary": "Wir suchen ab sofort eine Projektmanagerin Kultur in Vollzeit",
+        }
+        art_remote = {
+            "id": 2,
+            "title": "New York Philharmonic announces season",
+            "summary": "The orchestra unveils a new season programme",
+        }
+        cls_local = make_cls(
+            industries=["cultural_management"], regions=["stuttgart"],
+            companies=["Stuttgarter Liederhalle"], skills=["projektmanagement"],
+        )
+        cls_remote = make_cls(
+            industries=["music_classical"], regions=["global"],
+            companies=["NY Philharmonic"],
+        )
+        s_local = score_article(art_local, cls_local, {}, {}, {}, career_mode="external_transition")
+        s_remote = score_article(art_remote, cls_remote, {}, {}, {}, career_mode="external_transition")
+        assert s_local["total"] >= s_remote["total"]
 
 
 # ---------------------------------------------------------------------------
@@ -333,38 +360,41 @@ class TestActionabilityScore:
         return {"id": 1, "title": title, "summary": summary}
 
     def test_hiring_signal_scores_high(self) -> None:
-        art = self._art("We are hiring functional safety engineers in Munich")
-        cls = make_cls(industries=["functional_safety"], regions=["germany"])
+        art = self._art("Wir suchen Projektmanagerin Kultur in Stuttgart")
+        cls = make_cls(industries=["cultural_management"], regions=["stuttgart"])
         score = _actionability_score(art, cls)
         assert score >= 0.7
 
-    def test_generic_chatgpt_news_scores_low(self) -> None:
-        art = self._art("ChatGPT viral marketing campaign drives brand engagement")
-        cls = make_cls(industries=["ai"])
+    def test_generic_celebrity_news_scores_low(self) -> None:
+        art = self._art("Celebrity gossip viral influencer scandal")
+        cls = make_cls(industries=["music_classical"])
         score = _actionability_score(art, cls)
         assert score <= 0.3
 
-    def test_safety_standard_event_scores_medium(self) -> None:
-        art = self._art("ISO 13849 update: new requirements for machinery safety certification")
-        cls = make_cls(industries=["functional_safety"])
+    def test_funding_call_scores_medium(self) -> None:
+        art = self._art("Förderaufruf Kulturelle Bildung 2026 — Antragsfrist bis Juni")
+        cls = make_cls(industries=["funding_policy"], regions=["baden-württemberg"])
         score = _actionability_score(art, cls)
         assert score >= 0.4
 
     def test_restructuring_signal_scores_medium_plus(self) -> None:
-        art = self._art("Bosch announces restructuring and headcount reduction in automotive division",
-                        "Major layoffs announced in Germany engineering teams")
-        cls = make_cls(industries=["automotive"], regions=["germany"])
+        art = self._art(
+            "Etatkürzung trifft Stuttgarter Kulturhaushalt — Stellenabbau angekündigt",
+            "Die Stadt kündigt Sparmaßnahmen für die kommende Spielzeit an",
+        )
+        cls = make_cls(industries=["cultural_management"], regions=["stuttgart"])
         score = _actionability_score(art, cls)
         assert score >= 0.35
 
-    def test_humanoid_demo_without_safety_scores_low(self) -> None:
-        art = self._art("Amazing humanoid demo wows investors at CES")
-        cls = make_cls(industries=["robotics"])
+    def test_teaser_without_hiring_scores_low(self) -> None:
+        art = self._art("Concert preview teaser: amazing performance ahead")
+        cls = make_cls(industries=["music_classical"])
         score = _actionability_score(art, cls)
         assert score <= 0.4
 
-    def test_germany_region_boosts_score(self) -> None:
-        art = self._art("Safety engineer job opening in Stuttgart")
-        cls_de = make_cls(industries=["functional_safety"], regions=["germany"])
-        cls_us = make_cls(industries=["functional_safety"], regions=["usa"])
-        assert _actionability_score(art, cls_de) > _actionability_score(art, cls_us)
+    def test_local_region_boosts_score(self) -> None:
+        # Use a milder signal so the region delta is observable
+        art = self._art("Kulturveranstaltung wird verschoben")
+        cls_local = make_cls(industries=["cultural_management"], regions=["stuttgart"])
+        cls_remote = make_cls(industries=["cultural_management"], regions=["global"])
+        assert _actionability_score(art, cls_local) > _actionability_score(art, cls_remote)

@@ -26,8 +26,8 @@ from src.generate_weekly_report import (
 
 def make_article(
     title: str = "Test Article",
-    summary: str = "Test summary about ROS2 and functional safety in Germany.",
-    source_name: str = "IEEE Spectrum",
+    summary: str = "Test summary about Musikvermittlung and Projektmanagement in Stuttgart.",
+    source_name: str = "nmz — Neue Musikzeitung",
     published_date: str = "2026-05-12T00:00:00",
     url: str = "https://example.com/test",
     relevance_score: float = 8.5,
@@ -41,11 +41,11 @@ def make_article(
     skills: list | None = None,
 ) -> dict:
     cls = {
-        "industries": industries or ["robotics", "automotive"],
-        "technologies": technologies or ["ros2", "functional safety"],
-        "companies": companies or ["Bosch"],
-        "regions": regions or ["germany"],
-        "skills": skills or ["safety testing"],
+        "industries": industries or ["cultural_management", "education_programs"],
+        "technologies": technologies or ["scrum", "ms office"],
+        "companies": companies or ["Stuttgarter Liederhalle"],
+        "regions": regions or ["stuttgart"],
+        "skills": skills or ["musikvermittlung", "projektmanagement"],
         "source_reliability": 0.9,
     }
     return {
@@ -67,44 +67,44 @@ def make_article(
 MINIMAL_SKILL_MATRIX = {
     "skills": [
         {
-            "name": "ROS2",
+            "name": "External job search and applications",
             "priority": 5,
             "urgency": 5,
             "required_depth": 4,
-            "weekly_hours_baseline": 5,
-            "group": "deep_focus",
-            "learning_task": "ROS2 nodes on Raspberry Pi",
-            "triggers": {"increase": ["ros2", "humanoid", "physical ai"], "decrease": []},
-        },
-        {
-            "name": "C++20 and safety logic",
-            "priority": 5,
-            "urgency": 5,
-            "required_depth": 5,
             "weekly_hours_baseline": 4,
             "group": "deep_focus",
-            "learning_task": "C++20 safety logic and GoogleTest",
-            "triggers": {"increase": ["c++20", "embedded software"], "decrease": []},
+            "learning_task": "3 applications + 1 outreach per week; update tracker",
+            "triggers": {"increase": ["stellenangebot", "wir suchen", "kulturmanager"], "decrease": []},
         },
         {
-            "name": "ISO 13849 and CMSE",
-            "priority": 4,
-            "urgency": 4,
+            "name": "Google PM and Scrum Master I certification",
+            "priority": 5,
+            "urgency": 5,
             "required_depth": 4,
             "weekly_hours_baseline": 3,
-            "group": "serious",
-            "learning_task": "Safety function, PLr, Categories, MTTFd/DCavg/CCF",
-            "triggers": {"increase": ["iso 13849", "performance level", "safety function"], "decrease": []},
+            "group": "deep_focus",
+            "learning_task": "Complete one Coursera module; one Scrum I prep session",
+            "triggers": {"increase": ["scrum", "agile", "projektmanagement"], "decrease": []},
         },
         {
-            "name": "MBSE and SysML2",
-            "priority": 3,
-            "urgency": 3,
+            "name": "Music education and Musikvermittlung",
+            "priority": 4,
+            "urgency": 4,
             "required_depth": 3,
-            "weekly_hours_baseline": 2,
+            "weekly_hours_baseline": 1,
+            "group": "serious",
+            "learning_task": "Read one Musikvermittlung case study; sketch one local programme concept",
+            "triggers": {"increase": ["musikvermittlung", "bildungsreferent", "kulturelle bildung"], "decrease": []},
+        },
+        {
+            "name": "Cultural policy and funding awareness",
+            "priority": 2,
+            "urgency": 2,
+            "required_depth": 2,
+            "weekly_hours_baseline": 0,
             "group": "lightweight",
-            "learning_task": "Mermaid diagrams and lightweight SysML2",
-            "triggers": {"increase": ["mbse", "sysml", "dassault"], "decrease": []},
+            "learning_task": "Scan Kulturförderung headlines; bookmark any funding calls",
+            "triggers": {"increase": ["kulturförderung", "fördermittel", "kulturstiftung"], "decrease": []},
         },
     ]
 }
@@ -220,9 +220,9 @@ class TestExecutiveSummary:
 class TestSkillTable:
     def test_all_skills_present_in_table(self) -> None:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
-        assert "ROS2" in table
-        assert "C++20 and safety logic" in table
-        assert "ISO 13849 and CMSE" in table
+        assert "External job search and applications" in table
+        assert "Google PM and Scrum Master I certification" in table
+        assert "Music education and Musikvermittlung" in table
 
     def test_header_has_three_score_columns(self) -> None:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
@@ -241,26 +241,26 @@ class TestSkillTable:
         assert "Lightweight" in table
 
     def test_trigger_causes_up_arrow(self) -> None:
-        article = make_article(technologies=["ros2"])
+        article = make_article(skills=["projektmanagement"])
         table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
-        lines = [l for l in table.splitlines() if "ROS2" in l]
+        lines = [l for l in table.splitlines() if "Google PM" in l]
         assert any("↑" in line for line in lines)
 
     def test_no_trigger_causes_right_arrow(self) -> None:
         table = _build_skill_table([], MINIMAL_SKILL_MATRIX)
-        lines = [l for l in table.splitlines() if "ROS2" in l]
+        lines = [l for l in table.splitlines() if "Google PM" in l]
         assert any("→" in line for line in lines)
 
-    def test_iso13849_trigger_on_machinery_article(self) -> None:
-        article = make_article(skills=["iso 13849", "performance level"])
+    def test_musikvermittlung_trigger(self) -> None:
+        article = make_article(skills=["musikvermittlung", "bildungsreferent"])
         table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
-        lines = [l for l in table.splitlines() if "ISO 13849" in l]
+        lines = [l for l in table.splitlines() if "Music education" in l]
         assert any("↑" in line for line in lines)
 
-    def test_mbse_trigger_on_dassault_article(self) -> None:
-        article = make_article(technologies=["sysml", "dassault"])
+    def test_funding_trigger_on_kulturförderung_article(self) -> None:
+        article = make_article(technologies=["kulturförderung", "fördermittel"])
         table = _build_skill_table([article], MINIMAL_SKILL_MATRIX)
-        lines = [l for l in table.splitlines() if "MBSE" in l]
+        lines = [l for l in table.splitlines() if "Cultural policy" in l]
         assert any("↑" in line for line in lines)
 
 
@@ -276,8 +276,8 @@ class TestLearningAllocation:
 
     def test_contains_learning_tasks(self) -> None:
         alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
-        assert "ROS2 nodes on Raspberry Pi" in alloc
-        assert "C++20 safety logic and GoogleTest" in alloc
+        assert "3 applications + 1 outreach per week" in alloc
+        assert "Complete one Coursera module" in alloc
 
     def test_hours_shown(self) -> None:
         alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
@@ -288,12 +288,12 @@ class TestLearningAllocation:
         assert "total" in alloc.lower() or "cap" in alloc.lower()
 
     def test_triggered_skill_gets_bonus_hour(self) -> None:
-        article = make_article(technologies=["ros2"])
+        article = make_article(skills=["projektmanagement"])
         alloc_triggered = _build_learning_allocation([article], MINIMAL_SKILL_MATRIX)
         alloc_base = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
-        # Triggered allocation should mention more hours for ROS2 (5+1=6 vs 5)
-        assert "6 h:" in alloc_triggered
-        assert "5 h:" in alloc_base  # base is 5h without trigger
+        # Google PM baseline is 3h; triggered should add 1h → 4h
+        assert "4 h:" in alloc_triggered
+        assert "3 h:" in alloc_base
 
     def test_skill_matrix_loading_fields(self) -> None:
         # All required new fields must be present in MINIMAL_SKILL_MATRIX
@@ -312,8 +312,8 @@ class TestLearningAllocation:
 
 class TestSourceList:
     def test_article_title_in_list(self) -> None:
-        articles = [make_article(title="Bosch Announces ROS2 Platform")]
-        assert "Bosch Announces ROS2 Platform" in _build_source_list(articles)
+        articles = [make_article(title="Liederhalle Stuttgart sucht Projektmanager Kultur")]
+        assert "Liederhalle Stuttgart sucht Projektmanager Kultur" in _build_source_list(articles)
 
     def test_empty_returns_placeholder(self) -> None:
         assert "_No sources" in _build_source_list([])
@@ -331,12 +331,12 @@ class TestSourceList:
 class TestCareerAdvice:
     def test_empty_signals_returns_default(self) -> None:
         advice = _build_career_advice([])
-        assert "ros2" in advice.lower() or "c++20" in advice.lower() or "current" in advice.lower()
+        assert "application" in advice.lower() or "current" in advice.lower() or "german" in advice.lower()
 
-    def test_robotics_signal_mentioned(self) -> None:
-        a = make_article(industries=["robotics"], technologies=["ros2"])
+    def test_musikvermittlung_signal_mentioned(self) -> None:
+        a = make_article(industries=["education_programs"], skills=["musikvermittlung"])
         advice = _build_career_advice([a])
-        assert "ros2" in advice.lower() or "robotics" in advice.lower()
+        assert "musikvermittlung" in advice.lower() or "education" in advice.lower() or "hmdk" in advice.lower()
 
 
 # ---------------------------------------------------------------------------
@@ -346,7 +346,7 @@ class TestCareerAdvice:
 class TestRisksSection:
     def test_contains_standard_warnings(self) -> None:
         text = _build_risks_section([])
-        assert "GenAI" in text or "chatbot" in text.lower()
+        assert "gossip" in text.lower() or "hype" in text.lower() or "social media" in text.lower()
 
     def test_noise_titles_listed(self) -> None:
         noise = [make_article(title="Top 10 ChatGPT Prompts for Marketers")]
@@ -404,9 +404,9 @@ class TestCareerMode:
         assert text == ""
 
     def test_market_fit_section_in_external_mode(self) -> None:
-        articles = [make_article(industries=["functional_safety"], technologies=["iso 26262"])]
+        articles = [make_article(industries=["education_programs"], skills=["musikvermittlung"])]
         text = _build_market_fit_section(articles, "external_transition")
-        assert "Automotive" in text or "Market Fit" in text or "fit" in text.lower()
+        assert "Education" in text or "Market Fit" in text or "fit" in text.lower()
 
     def test_market_fit_empty_in_default_mode(self) -> None:
         text = _build_market_fit_section([], "default")
@@ -415,17 +415,17 @@ class TestCareerMode:
     def test_weak_signals_sorted_by_actionability(self) -> None:
         # Article with hiring signal should rank above generic article
         high_act = make_article(
-            title="Functional safety engineer vacancy Germany",
-            summary="We are hiring ISO 26262 experts",
+            title="Stuttgarter Liederhalle sucht Projektmanagerin Kultur",
+            summary="Wir suchen ab sofort eine Projektmanagerin Kultur in Stuttgart",
             signal_strength="weak", relevance_score=5.0
         )
         low_act = make_article(
-            title="Generic AI news", summary="ChatGPT gets new features",
+            title="Concert preview teaser", summary="Amazing performance at Carnegie Hall",
             signal_strength="weak", relevance_score=5.5
         )
         # high_act has higher actionability despite lower relevance_score
         from src.score_relevance import _actionability_score
-        cls = {"industries": ["functional_safety"], "regions": ["germany"],
+        cls = {"industries": ["cultural_management"], "regions": ["stuttgart"],
                "technologies": [], "skills": []}
         act_high = _actionability_score(high_act, cls)
         act_low = _actionability_score(low_act, {})
