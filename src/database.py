@@ -27,6 +27,8 @@ WHERE is_job_ad = 0 AND (
     OR title LIKE '%Lehrauftrag%'
     OR title LIKE 'Anzeige: IT-Jobs%'
     OR source_name LIKE 'GNews StepStone%'
+    OR source_name LIKE 'GNews Zeit Stellenmarkt%'
+    OR source_name LIKE 'GNews nmz Stellenmarkt%'
     OR (title LIKE '%sucht%' AND (
         title LIKE '%Projektmanager%' OR title LIKE '%Leiter%'
         OR title LIKE '%Koordinator%' OR title LIKE '%Referent%'
