@@ -229,6 +229,34 @@ def rule_based_classify(
 
 
 # ---------------------------------------------------------------------------
+# Job-ad detection
+# ---------------------------------------------------------------------------
+
+_JOB_AD_URL_PATTERNS = ("stellenmarkt",)
+_JOB_AD_TITLE_SUBSTRINGS = (
+    "(m/w/d)", "(w/m/d)", "(m/f/d)", "(f/m/d)",
+    "stellenausschreibung", "lehrauftrag",
+)
+_JOB_AD_SUCHT_WORDS = (
+    "projektmanager", "leiter", "koordinator", "referent",
+)
+
+
+def _is_job_ad(title: str, url: str) -> bool:
+    title_l = title.lower()
+    url_l = url.lower()
+    if any(p in url_l for p in _JOB_AD_URL_PATTERNS):
+        return True
+    if any(s in title_l for s in _JOB_AD_TITLE_SUBSTRINGS):
+        return True
+    if "sucht" in title_l and any(w in title_l for w in _JOB_AD_SUCHT_WORDS):
+        return True
+    if "schreibt" in title_l and "stellen aus" in title_l:
+        return True
+    return False
+
+
+# ---------------------------------------------------------------------------
 # Signal strength
 # ---------------------------------------------------------------------------
 
@@ -281,6 +309,7 @@ def classify_all(
             career_mode=career_mode,
         )
         strength = _signal_strength(scores["total"])
+        job_ad = _is_job_ad(title, article.get("url", ""))
 
         update_article_classification(
             article_id=article["id"],
@@ -290,6 +319,7 @@ def classify_all(
             confidence_level=classification.get("confidence_level", "low"),
             signal_strength=strength,
             recommended_action=classification.get("recommended_action", "watch"),
+            is_job_ad=job_ad,
         )
         stats["classified"] += 1
 
