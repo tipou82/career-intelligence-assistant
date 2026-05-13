@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Literal, Optional
 
 import yaml
 
-from .database import get_all_articles, get_articles_for_week, init_db, save_report
+from .database import get_all_articles, get_articles_for_week, get_job_ads, init_db, save_report
 from .qualification_layer import build_qualification_md, build_qualification_html, load_and_score
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
@@ -431,6 +431,52 @@ def _build_market_fit_section(articles: List[Dict], career_mode: str) -> str:
     return "\n".join(lines).strip()
 
 
+def _build_job_ads_md(job_ads: List[Dict]) -> str:
+    if not job_ads:
+        return "_No job ads with score ≥ 6 found in the database._"
+    lines: List[str] = []
+    for a in job_ads:
+        url = a.get("url", "")
+        title = a.get("title", "Untitled")
+        linked = f"[{title}]({url})" if url else title
+        score = a.get("relevance_score", 0)
+        source = a.get("source_name", "")
+        pub_date = str(a.get("published_date", ""))[:10]
+        cls = _get_classification(a)
+        regions = ", ".join(cls.get("regions", [])) or "N/A"
+        skills = ", ".join(cls.get("skills", [])) or "N/A"
+        lines.append(
+            f"- **{linked}** (score: {score:.1f}) — {source} — {pub_date}  \n"
+            f"  Region: {regions} · Skills: {skills}"
+        )
+    return "\n".join(lines)
+
+
+def _build_job_ads_html(job_ads: List[Dict]) -> str:
+    if not job_ads:
+        return "<p><em>No job ads with score ≥ 6 found in the database.</em></p>"
+    items: List[str] = []
+    for a in job_ads:
+        url = a.get("url", "")
+        title = _h(a.get("title", "Untitled"))
+        score = a.get("relevance_score", 0)
+        source = _h(a.get("source_name", ""))
+        pub_date = _h(str(a.get("published_date", ""))[:10])
+        cls = _get_classification(a)
+        regions = _h(", ".join(cls.get("regions", [])) or "N/A")
+        skills = _h(", ".join(cls.get("skills", [])) or "N/A")
+        link = f'<a href="{_h(url)}" target="_blank">{title}</a>' if url else title
+        items.append(
+            f'<li style="padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:13px;">'
+            f'<strong>{link}</strong> '
+            f'<span class="score" style="background:#d63031">{score:.1f}/10</span><br>'
+            f'<span style="font-size:12px;color:#636e72">'
+            f'Region: {regions} · Skills: {skills} · {source} — {pub_date}'
+            f'</span></li>'
+        )
+    return f'<ul style="list-style:none;padding:0;margin:0">{"".join(items)}</ul>'
+
+
 def _build_source_list(articles: List[Dict]) -> str:
     lines: List[str] = []
     seen: set = set()
@@ -781,6 +827,7 @@ def _render_html(
     weak_signals_rest_count: int = 0,
     hours_cap: int = 20,
     qualification_html: str = "",
+    job_ads_html: str = "",
 ) -> str:
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
     exec_summary = _h(_build_executive_summary(strong_signals, weak_signals, week))
@@ -897,13 +944,19 @@ def _render_html(
   {qualification_html}
 </div>"""
 
+    job_ads_section_html = f"""
+<div class="sec" style="border-left:4px solid #d63031;padding-left:20px">
+  <h2>{1 + (1 if career_actions_md else 0) + 1}. Job Ads (score &ge; 6)</h2>
+  {job_ads_html}
+</div>"""
+
     mode_badge = (
         f'<span style="background:#d63031;color:white;padding:2px 8px;border-radius:4px;'
         f'font-size:11px;font-weight:600">{career_mode.replace("_", " ").upper()}</span> '
         if career_mode != "default" else ""
     )
 
-    sec = lambda n: n + (1 if career_actions_md else 0)
+    sec = lambda n: n + (1 if career_actions_md else 0) + 1  # +1 career actions, +1 job ads
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -926,6 +979,8 @@ def _render_html(
 </div>
 
 {career_actions_section_html}
+
+{job_ads_section_html}
 
 <div class="sec">
   <h2>{sec(2)}. Strong Signals</h2>
@@ -1027,6 +1082,8 @@ def generate_report(
     weak_signals_rest = all_weak_sorted[15:]    # remainder → summarised by theme
     noise_articles = [a for a in articles if a.get("signal_strength") == "noise"]
 
+    job_ads = get_job_ads(min_score=6.0)
+
     # Pre-compute new sections (only non-empty in external_transition mode)
     career_actions_md = _build_career_actions_section(articles, skill_matrix, career_mode)
     market_fit_md = _build_market_fit_section(articles, career_mode)
@@ -1078,9 +1135,20 @@ def generate_report(
                 f"Main themes: {top_themes}._"
             )
 
+        # Section numbering: 1=Exec, 2=CareerActions(optional), N=JobAds, N+1=Strong, ...
+        sec_offset = (1 if career_actions_md else 0) + 1  # +1 for job ads section
+        s = lambda n: n + sec_offset
+
+        sec_job_ads = 1 + (1 if career_actions_md else 0) + 1
+
         career_actions_section = ""
         if career_actions_md:
             career_actions_section = f"\n\n---\n\n## 2. Career Actions This Week\n\n{career_actions_md}"
+
+        job_ads_section = (
+            f"\n\n---\n\n## {sec_job_ads}. Job Ads (score ≥ 6)\n\n"
+            f"{_build_job_ads_md(job_ads)}"
+        )
 
         market_fit_section = ""
         if market_fit_md:
@@ -1096,9 +1164,6 @@ def generate_report(
             header = f"Qualification Actions This Week" + (f" — {person}" if person else "")
             qualification_md_section = f"\n\n---\n\n## {header}\n\n{_qual_data_md}"
 
-        sec_offset = 1 if career_actions_md else 0  # renumber if new section inserted
-        s = lambda n: n + sec_offset
-
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
         mode_line = f"_Mode: **{career_mode.replace('_', ' ').title()}** · " if career_mode != "default" else "_"
         report_md = f"""# Weekly Career Intelligence Brief – {week}
@@ -1109,7 +1174,7 @@ def generate_report(
 
 ## 1. Executive Summary
 
-{_build_executive_summary(strong_signals, all_weak, week)}{career_actions_section}
+{_build_executive_summary(strong_signals, all_weak, week)}{career_actions_section}{job_ads_section}
 
 ---
 
@@ -1173,6 +1238,7 @@ _Human review required before changing career direction. Not financial advice._
             weak_signals_rest_count=len(weak_signals_rest),
             hours_cap=hours_cap,
             qualification_html=_qual_data_html,
+            job_ads_html=_build_job_ads_html(job_ads),
         )
         html_path = REPORTS_DIR / f"weekly_career_brief_{week}.html"
         html_path.write_text(html_content, encoding="utf-8")

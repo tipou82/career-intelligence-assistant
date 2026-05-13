@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 13:04_
+_Mode: **External Transition** · Generated: 2026-05-13 15:54_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key activity in: cultural_management, music_classical, museum_exhibition, event_production, education_programs. Notable companies: MDR, KiKA, Schauspiel Stuttgart, Bamberger Symphoniker, Staatsoper München. See Section 2 for full analysis.
+Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key activity in: museum_exhibition, education_programs, cultural_management, event_production, pr_communication. Notable companies: Theater Freiburg, Forum am Schlosspark, ARD, SWR Symphonieorchester, Schauspiel Stuttgart. See Section 2 for full analysis.
 
 ---
 
@@ -45,7 +45,20 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ---
 
-## 3. Strong Signals
+## 3. Job Ads (score ≥ 6)
+
+- **[2 Senior Lecturer (w/m/d) für Klavier (Pflichtfach in den Bachelor-Studien sowie Pflichtfach Klavier im Pre-College Salzburg)](https://www.nmz.de/stellenmarkt/2-senior-lecturer-wmd-fuer-klavier-pflichtfach-den-bachelor-studien-sowie-pflichtfach)** (score: 8.1) — nmz — Neue Musikzeitung — 2026-05-13  
+  Region: austria, europe · Skills: Musikvermittlung, Projektmanagement
+- **[MUNICH ARENA sucht Projektmanager (m/w/d) - Stadionwelt](https://news.google.com/rss/articles/CBMigAFBVV95cUxQcV9VNHl4TGdWTl9GYklnZWxOUVFiczA4enhvSF9ITHdLME56eXB3OWE1WUNrRXhwOTVuOXEzUjBnaHk3d2VvWUd2X19pSkJkdjlzWjFQQnN3dVRRb0I2MnR1N1ZGTWZvLTVnVmx2OVVQbEJQSGdIcENSUmRfajNTUQ?oc=5)** (score: 8.0) — GNews DE: Projektmanagement Kultur Stellen — 2025-03-19  
+  Region: germany, baden-württemberg · Skills: Projektmanagement
+- **[Redakteur:in/Projektmanager:in Corporate Podcasts (m/w/d) - detektor.fm](https://news.google.com/rss/articles/CBMie0FVX3lxTE51QU05eGJsb3AtVG5rdVZrdlFyNE1JMVlWYjVGM2cxMXNLbkRaSUdUWWNJM1drYS13Y2lQUk1qZ1lOcGtHMzNkVTRRRjdscUpsaXdUVjIwOWZlOTQtZmx2bmhhN3AyMjk3bFVkSklUX0IzYm5VMXRYb1RVTQ?oc=5)** (score: 7.7) — GNews DE: Projektmanagement Kultur Stellen — 2021-12-23  
+  Region: germany · Skills: Projektmanagement, Pressearbeit
+- **[BEBE Medien GmbH sucht Junior Projektmanager (m/w/d) - detektor.fm](https://news.google.com/rss/articles/CBMifkFVX3lxTE1rZm1YMml6bU9rVXVRYmhqQ0RaS3JGRG4xWGcyM1BsZ3RuMEFySXQzZTB5NWtJX19DbFhJRGdza1F6WndTU1hDNFM4U3EtdGpEU2tZQVM4elVVSXM4QmdaVkNhdGE4YzRQaFVRNzh3OTFwZVpoTGhKazI2Z3ZJdw?oc=5)** (score: 7.5) — GNews DE: Projektmanagement Kultur Stellen — 2020-10-26  
+  Region: germany · Skills: Projektmanagement
+
+---
+
+## 4. Strong Signals
 
 ### Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»  `🇩🇪 DE`
 - **Development:** Vom Singen bis zur Technik: Bei «chor.com» in Leipzig zeigen Chöre, Verlage und Musikschulen, wie sie Menschen verbinden. Ex-Bundespräsident Wulff verrät, was ihn daran begeistert. Vier Tage lang wird Leipzig im Herbst zum Treffpunkt der deutschen Chorszene: Erstmals findet dort das bundesweite Chorfestival «chor.com» statt. Vom 1. bis 4. Oktober
@@ -197,7 +210,7 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ---
 
-## 4. Weak Signals / Watchlist _(top 15 by actionability)_
+## 5. Weak Signals / Watchlist _(top 15 by actionability)_
 
 - **[Literatur: Zisch ab, Gegenwart](https://www.sueddeutsche.de/kultur/dirk-von-petersdorff-wir-kinder-der-leichtigkeit-essay-rezension-li.3452471)** `🇩🇪 DE` (rel: 5.8 · act: 3.5) — SZ Kultur — 2026-05-11
 - **[Berlins MuseumsMeileMitte: Kulturwüsten](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/kommentar-zu-der-neu-gegruendeten-berliner-museumsmeilemitte-200825545.html)** `🇩🇪 DE` (rel: 5.7 · act: 3.5) — FAZ Feuilleton — 2026-05-12
@@ -215,7 +228,7 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ---
 
-## 5. Skill Priority Update
+## 6. Skill Priority Update
 
 | Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
 |---|---|---|---|---|---|---|
@@ -240,7 +253,7 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ---
 
-## 6. Recommended Learning Allocation for Next Week
+## 7. Recommended Learning Allocation for Next Week
 
 **Deep Focus — highest return on time this week**
 - **5 h:** 3 tailored applications + 1 active outreach (recruiter, alumni, or hiring manager) per week; maintain application tracker
@@ -257,7 +270,7 @@ _Weekly total: ~15 h (cap: 15 h). ⚠️ Cap applied. Prioritise Deep Focus item
 
 ---
 
-## 7. Career Positioning Advice
+## 8. Career Positioning Advice
 
 Based on this week's signals, your positioning as a **multilingual cultural project manager for the Stuttgart region** remains sound.
 
@@ -268,7 +281,7 @@ Based on this week's signals, your positioning as a **multilingual cultural proj
 
 ---
 
-## 8. Risks and Hype to Ignore
+## 9. Risks and Hype to Ignore
 
 - **Celebrity / artist gossip or scandal news:** Not actionable for job search unless it signals leadership change at a target organisation.
 - **Concert reviews and programme notes without hiring signal:** Interesting background reading; do not interrupt application workflow.
@@ -324,7 +337,7 @@ Active signals this week:
 
 ---
 
-## 9. Source List _(top articles only)_
+## 10. Source List _(top articles only)_
 
 - [Wulff zur Festivalpremiere in Leipzig: «Chöre bauen Brücken»](https://www.nmz.de/bildung/chorszene-laienmusik/wulff-zur-festivalpremiere-leipzig-choere-bauen-bruecken) — nmz — Neue Musikzeitung (2026-05-11)
 - [Auftaktkonzerte am 20. und 21. Mai zum 9. „Kommen und Gehen“ – Das Sechsstädtebundfestival](https://www.nmz.de/politik-szene/veranstaltungen/auftaktkonzerte-am-20-und-21-mai-zum-9-kommen-und-gehen-das) — nmz — Neue Musikzeitung (2026-05-13)

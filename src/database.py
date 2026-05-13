@@ -15,6 +15,25 @@ def get_connection(db_path: Path = DB_PATH) -> sqlite3.Connection:
     return conn
 
 
+_JOB_AD_BACKFILL_SQL = """
+UPDATE articles SET is_job_ad = 1
+WHERE is_job_ad = 0 AND (
+    url   LIKE '%stellenmarkt%'
+    OR title LIKE '%(m/w/d)%'
+    OR title LIKE '%(w/m/d)%'
+    OR title LIKE '%(m/f/d)%'
+    OR title LIKE '%(f/m/d)%'
+    OR title LIKE '%Stellenausschreibung%'
+    OR title LIKE '%Lehrauftrag%'
+    OR (title LIKE '%sucht%' AND (
+        title LIKE '%Projektmanager%' OR title LIKE '%Leiter%'
+        OR title LIKE '%Koordinator%' OR title LIKE '%Referent%'
+    ))
+    OR title LIKE '%schreibt%Stellen aus%'
+);
+"""
+
+
 def init_db(db_path: Path = DB_PATH) -> None:
     """Create tables and indexes if they do not exist."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -36,6 +55,7 @@ def init_db(db_path: Path = DB_PATH) -> None:
                 signal_strength   TEXT DEFAULT 'noise',
                 recommended_action TEXT DEFAULT 'watch',
                 career_actionability_score REAL DEFAULT 0.0,
+                is_job_ad         INTEGER DEFAULT 0,
                 classified_at     TEXT,
                 created_at        TEXT DEFAULT (datetime('now'))
             );
@@ -53,7 +73,11 @@ def init_db(db_path: Path = DB_PATH) -> None:
             conn.execute("ALTER TABLE articles ADD COLUMN language TEXT DEFAULT 'en'")
         if "career_actionability_score" not in existing:
             conn.execute("ALTER TABLE articles ADD COLUMN career_actionability_score REAL DEFAULT 0.0")
-        # Step 3: create indexes (after migration so language column is guaranteed present)
+        if "is_job_ad" not in existing:
+            conn.execute("ALTER TABLE articles ADD COLUMN is_job_ad INTEGER DEFAULT 0")
+        # Step 3: backfill is_job_ad for rows classified before this column existed
+        conn.execute(_JOB_AD_BACKFILL_SQL)
+        # Step 4: create indexes (after migration so language column is guaranteed present)
         conn.executescript("""
             CREATE INDEX IF NOT EXISTS idx_articles_published
                 ON articles(published_date);
@@ -63,6 +87,8 @@ def init_db(db_path: Path = DB_PATH) -> None:
                 ON articles(signal_strength);
             CREATE INDEX IF NOT EXISTS idx_articles_language
                 ON articles(language);
+            CREATE INDEX IF NOT EXISTS idx_articles_job_ad
+                ON articles(is_job_ad);
         """)
 
 
@@ -97,6 +123,7 @@ def update_article_classification(
     signal_strength: str,
     recommended_action: str,
     career_actionability_score: float = 0.0,
+    is_job_ad: bool = False,
     db_path: Path = DB_PATH,
 ) -> None:
     with get_connection(db_path) as conn:
@@ -108,6 +135,7 @@ def update_article_classification(
                confidence_level           = ?,
                signal_strength            = ?,
                recommended_action         = ?,
+               is_job_ad                  = ?,
                classified_at              = datetime('now')
                WHERE id = ?""",
             (
@@ -117,6 +145,7 @@ def update_article_classification(
                 confidence_level,
                 signal_strength,
                 recommended_action,
+                1 if is_job_ad else 0,
                 article_id,
             ),
         )
@@ -162,6 +191,18 @@ def save_report(week_label: str, filepath: str, db_path: Path = DB_PATH) -> None
             "INSERT OR REPLACE INTO reports (week_label, filepath) VALUES (?, ?)",
             (week_label, filepath),
         )
+
+
+def get_job_ads(min_score: float = 6.0, db_path: Path = DB_PATH) -> List[Dict]:
+    """Return all job-ad articles with relevance_score >= min_score, newest first."""
+    with get_connection(db_path) as conn:
+        rows = conn.execute(
+            """SELECT * FROM articles
+               WHERE is_job_ad = 1 AND relevance_score >= ?
+               ORDER BY relevance_score DESC, published_date DESC""",
+            (min_score,),
+        ).fetchall()
+    return [dict(r) for r in rows]
 
 
 def get_stats(db_path: Path = DB_PATH) -> Dict[str, int]:
