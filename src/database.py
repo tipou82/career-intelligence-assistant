@@ -25,11 +25,18 @@ WHERE is_job_ad = 0 AND (
     OR title LIKE '%(f/m/d)%'
     OR title LIKE '%Stellenausschreibung%'
     OR title LIKE '%Lehrauftrag%'
+    OR title LIKE 'Anzeige: IT-Jobs%'
     OR (title LIKE '%sucht%' AND (
         title LIKE '%Projektmanager%' OR title LIKE '%Leiter%'
         OR title LIKE '%Koordinator%' OR title LIKE '%Referent%'
+        OR title LIKE '%Engineer%' OR title LIKE '%Ingenieur%'
+        OR title LIKE '%Entwickler%' OR title LIKE '%Developer%'
+        OR title LIKE '%Architekt%' OR title LIKE '%Consultant%'
     ))
     OR title LIKE '%schreibt%Stellen aus%'
+    OR (url LIKE '%/jobs/%' AND source_name LIKE '%LinkedIn%')
+    OR (url LIKE '%/jobs/%' AND source_name LIKE '%StepStone%')
+    OR (url LIKE '%/jobs/%' AND source_name LIKE '%Indeed%')
 );
 """
 
