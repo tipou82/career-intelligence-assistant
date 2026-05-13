@@ -315,3 +315,14 @@ feeds:
     reliability: 0.75
     regions: ["japan", "asia"]
     industries: ["ai", "robotics", "automotive"]
+
+  # === Zeit Stellenmarkt via Google News site: search ===
+  # Articles from this feed are auto-flagged as job ads.
+
+  - name: "GNews Zeit Stellenmarkt: Ingenieur Safety"
+    url: "https://news.google.com/rss/search?q=site:jobs.zeit.de+Ingenieur+safety&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.8
+    regions: ["germany", "europe"]
+    industries: ["functional_safety", "robotics", "embedded"]
