@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 16:32_
+_Mode: **External Transition** · Generated: 2026-05-13 22:40_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key activity in: functional_safety, embedded, automotive, physical_ai, humanoid_robot. Notable companies: Dreame, MIPI Alliance, Hyundai, Tesla, Nidec. See Section 2 for full analysis.
+Week 2026-20 produced **18 strong signal(s)** and **277 weak signal(s)**. Key activity in: physical_ai, mbse, robotics, software_defined_vehicle, functional_safety. Notable companies: Arm, Li Auto, Tesla, Hyundai, Texas Instruments. See Section 2 for full analysis.
 
 ---
 
@@ -27,7 +27,7 @@ Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key ac
 - BYD
 
 ### Recommended CV / Application Keywords
-`embodied ai`, `gemini`, `autonomous driving`, `computer vision`, `humanoid robotics`, `functional safety`, `physical ai`, `ai integration`
+`embodied ai`, `gemini`, `autonomous driving`, `computer vision`, `humanoid robotics`, `physical ai`, `人形机器人`, `functional safety`
 
 ### Networking Targets
 - TÜV SÜD / TÜV Rheinland functional safety teams
@@ -49,6 +49,8 @@ Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key ac
 - **[Iso 26262 Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBscUtXYVFHSlVOb1ctS2RDS2Y4MW84eEdzVzNmMWhlNTRZaVY1bFd2c1k2WE5VVlBGc3FVQWI3U2x2T3dwQVkySlNtQ1ZXeTJ5?oc=5)** (score: 8.6) — GNews StepStone: ISO 26262 Automotive — 2021-09-30  
   Region: N/A · Skills: N/A
 - **[Functional Safety: 6 Jobs & Stellenangebote in Augsburg | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTE93Rk1ZdlJmbUpPcElyTlpSVGRkSndBdEZhS05PT1ZZRmhnYTF2bnZ5Mjk0MmNOYkNoZmlNUk5VWEwta3Y3aTFEbks2c09sb1ZwMW1MVjlKOHFUdVNKQ2FWMzJtcXBLQ2R5SXZn?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2022-07-22  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Engineer: 5 Jobs & Stellenangebote in Dresden | 12. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMidkFVX3lxTE0wWnRDeUZoXzRhMk1uWGhrc181dHd0ZW9USFpqemdHNWRhcjhNWXdZRGRnUzhKZFhmR2tGdkVBczlkV1ZIcG56QmlONHVmaFRnN1NoWkk3Ymc0ODJRZXVvN1lOUkd4VmdQQXpoRmx6MmRwRlpwQlE?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2022-04-26  
   Region: N/A · Skills: functional safety
 - **[Functional Safety Manager: 2153 Jobs & Stellenangebote in Westliches Europa | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiggFBVV95cUxPSlZUOFBZeXRHcXlFa2ROdWROcTV5LVFEa3o5R2RsYUM2NmJhZVFjdVZwX01wM2xGUnRqb2xJeU9qOWRlTlRpLUs1TU5BM0s4NjlwQ1FlQ0VTa1h2ZldGUTdrdTNLZFdpaUd3cV9YeW01SVNhS1R2elRfLWlRR20tUC1n?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-12-16  
   Region: N/A · Skills: functional safety
@@ -258,7 +260,7 @@ Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key ac
 - **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 5.6 · act: 3.5) — Automotive World — 2026-05-12
 - **[Automobilindustrie: Autobranche rechnet mit Wegfall von weiteren 125.000 Jobs bis 2035](https://www.handelsblatt.com/unternehmen/industrie/automobilindustrie-autobranche-rechnet-mit-wegfall-von-weiteren-125.000-jobs-bis-2035/100224795.html)** `🇩🇪 DE` (rel: 5.5 · act: 3.5) — Handelsblatt Schlagzeilen — 2026-05-13
 
-_+ 251 further weak signals not shown. Main themes: automotive (146), robotics (72), embedded (64), ai (58), adas (34)._
+_+ 262 further weak signals not shown. Main themes: automotive (151), robotics (77), embedded (64), ai (58), adas (35)._
 
 ---
 
@@ -430,20 +432,20 @@ _🔄 Market signals applied to 15/16 actions this week._
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **External job search pipeline for senior safety roles `↑ market: 1160 job postings`** | This is the highest-priority action for income protection and transition execution | Build and maintain an application tracker with target companies, job titles, application status, recruiter contacts, interview feedback and next actions. Apply weekly to carefully selected senior safety roles in Germany/Europe rather than waiting for internal Bosch options. | 8 h/wk | Application tracker with at least 30 target companies and 10 active applications |
-| **CV and LinkedIn repositioning as Senior Safety Architect `↓ market: 1020 job postings, 10 articles`** | Directly required for every external application | Create one English master CV, one German CV and one LinkedIn profile version using the headline 'Senior Functional Safety / System Safety Architect'. Emphasize ISO 26262, safety architecture, safety requirements, safety mechanisms, embedded platform safety, MBSE, and transition toward robotics, industrial automation and AI-enabled safety-critical systems. | 4 h/wk | English CV, German CV and updated LinkedIn profile |
-| **Three senior safety interview case studies `↑ market: 880 job postings, 10 articles`** | Relevant to all target roles, especially safety architect and consultant roles | Prepare three one-page case studies: 1) S32G/platform safety and safe-state/reset concept, 2) Mobileye/TDA4 missing-NMI workaround with FIQ plus cyclic monitoring, and 3) safety-supervised edge AI demonstrator with deterministic runtime safety supervision. Use STAR/CAR structure and emphasize constraints, decisions, safety argumentation and business impact. | 5 h/wk | Three one-page interview case-study notes |
-| **CMSE / ISO 13849 preparation before 15 June 2026 `↑ market: 90 job postings`** | High relevance for robotics, machinery and industrial automation safety roles | Prepare before CMSE by studying safety functions, PLr determination, Categories B/1/2/3/4, MTTFd, DCavg, CCF and SISTEMA basics. Focus on understanding and transfer from ISO 26262, not on memorizing every formula. Training/certification is scheduled for 2026-06-15 to 2026-06-18. | 7 h/wk | CMSE preparation notes and later CMSE certificate if passed |
+| **External job search pipeline for senior safety roles `↑ market: 1749 job postings`** | This is the highest-priority action for income protection and transition execution | Build and maintain an application tracker with target companies, job titles, application status, recruiter contacts, interview feedback and next actions. Apply weekly to carefully selected senior safety roles in Germany/Europe rather than waiting for internal Bosch options. | 8 h/wk | Application tracker with at least 30 target companies and 10 active applications |
+| **CV and LinkedIn repositioning as Senior Safety Architect `↓ market: 1538 job postings, 10 articles`** | Directly required for every external application | Create one English master CV, one German CV and one LinkedIn profile version using the headline 'Senior Functional Safety / System Safety Architect'. Emphasize ISO 26262, safety architecture, safety requirements, safety mechanisms, embedded platform safety, MBSE, and transition toward robotics, industrial automation and AI-enabled safety-critical systems. | 4 h/wk | English CV, German CV and updated LinkedIn profile |
+| **Three senior safety interview case studies `↑ market: 1327 job postings, 10 articles`** | Relevant to all target roles, especially safety architect and consultant roles | Prepare three one-page case studies: 1) S32G/platform safety and safe-state/reset concept, 2) Mobileye/TDA4 missing-NMI workaround with FIQ plus cyclic monitoring, and 3) safety-supervised edge AI demonstrator with deterministic runtime safety supervision. Use STAR/CAR structure and emphasize constraints, decisions, safety argumentation and business impact. | 5 h/wk | Three one-page interview case-study notes |
+| **CMSE / ISO 13849 preparation before 15 June 2026 `↑ market: 135 job postings`** | High relevance for robotics, machinery and industrial automation safety roles | Prepare before CMSE by studying safety functions, PLr determination, Categories B/1/2/3/4, MTTFd, DCavg, CCF and SISTEMA basics. Focus on understanding and transfer from ISO 26262, not on memorizing every formula. Training/certification is scheduled for 2026-06-15 to 2026-06-18. | 7 h/wk | CMSE preparation notes and later CMSE certificate if passed |
 
 ### High-ROI
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **LinkedIn recruiter and professional networking sprint `↑ market: 876 job postings`** | Important for hidden job market and senior roles | Contact 5–10 relevant recruiters, hiring managers or safety professionals per week. Use a concise message focused on senior safety architecture, ISO 26262, platform safety, CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles. | 3 h/wk | Networking tracker with contacts, replies and follow-up actions |
-| **Post-CMSE machinery safety mini-case and transfer note `↑ market: 48 job postings`** | Especially relevant for robotics, industrial automation and consulting roles | After CMSE, create one robot-cell safety function mini-case and one portfolio note titled 'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard, safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea. | 4 h/wk | docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case |
-| **Functional safety and system safety architecture refresh `↑ market: 954 job postings, 15 articles`** | Directly relevant to all senior functional safety and system safety roles | Refresh and document core safety architecture topics: safety mechanisms, safe states, degraded modes, diagnostics, FFI, safety requirements, technical safety concepts, PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe, non-confidential interview language. | 3 h/wk | Senior safety architecture notes and CV/interview bullet points |
-| **Polish safety-supervised edge AI portfolio demonstrator `↑ market: 16 articles`** | Relevant for robotics, embedded AI safety and safety architecture roles | Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram, traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation over endless implementation depth. | 3 h/wk | Interview-ready GitHub repository and portfolio summary |
-| **SOTIF / ISO/PAS 8800 / AI safety bridge `↑ market: 304 job postings, 1 articles`** | Useful for ADAS, automated-driving and AI-enabled embedded safety roles | Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring, deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to the principle that AI/LLMs should not be part of the runtime safety decision path. | 2 h/wk | Two-page AI-enabled safety concept note linked to portfolio project |
+| **Post-CMSE machinery safety mini-case and transfer note `↑ market: 72 job postings`** | Especially relevant for robotics, industrial automation and consulting roles | After CMSE, create one robot-cell safety function mini-case and one portfolio note titled 'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard, safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea. | 4 h/wk | docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case |
+| **LinkedIn recruiter and professional networking sprint `↑ market: 1321 job postings`** | Important for hidden job market and senior roles | Contact 5–10 relevant recruiters, hiring managers or safety professionals per week. Use a concise message focused on senior safety architecture, ISO 26262, platform safety, CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles. | 3 h/wk | Networking tracker with contacts, replies and follow-up actions |
+| **Functional safety and system safety architecture refresh `↑ market: 1438 job postings, 15 articles`** | Directly relevant to all senior functional safety and system safety roles | Refresh and document core safety architecture topics: safety mechanisms, safe states, degraded modes, diagnostics, FFI, safety requirements, technical safety concepts, PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe, non-confidential interview language. | 3 h/wk | Senior safety architecture notes and CV/interview bullet points |
+| **Polish safety-supervised edge AI portfolio demonstrator `↑ market: 18 articles`** | Relevant for robotics, embedded AI safety and safety architecture roles | Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram, traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation over endless implementation depth. | 3 h/wk | Interview-ready GitHub repository and portfolio summary |
+| **SOTIF / ISO/PAS 8800 / AI safety bridge `↑ market: 458 job postings, 1 articles`** | Useful for ADAS, automated-driving and AI-enabled embedded safety roles | Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring, deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to the principle that AI/LLMs should not be part of the runtime safety decision path. | 2 h/wk | Two-page AI-enabled safety concept note linked to portfolio project |
 
 ### Nice-to-Have
 
