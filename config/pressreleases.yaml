@@ -1,218 +1,196 @@
-# Company press release and newsroom monitor configuration.
+# Company press release and newsroom monitor configuration —
+# cultural-PM profile, Stuttgart / Leonberg region focus.
 #
 # Each entry is either:
-#   - A direct RSS feed (url:) — for companies that publish one
+#   - A direct RSS feed (url:) — for organisations that publish one
 #   - A Google News RSS query (query:) — auto-converted to a search URL
-#
-# Google News approach aggregates official press releases + top media coverage
-# for companies/topics that don't expose a direct newsroom RSS.
 
 sources:
 
-  # === Direct newsroom RSS (tested and working) ===
+  # === Google News monitors — local venues & ensembles ====================
 
-  - name: "NVIDIA Blog"
-    url: "https://blogs.nvidia.com/feed/"
-    category: "press_release"
-    reliability: 0.85
-    regions: ["usa", "global"]
-    industries: ["ai", "robotics", "automotive", "embedded"]
-
-  - name: "NVIDIA Developer Blog"
-    url: "https://developer.nvidia.com/blog/feed/"
-    category: "press_release"
-    reliability: 0.85
-    regions: ["usa", "global"]
-    industries: ["ai", "embedded", "robotics"]
-
-  - name: "Arm Newsroom"
-    url: "https://newsroom.arm.com/feed"
-    category: "press_release"
-    reliability: 0.85
-    regions: ["global"]
-    industries: ["embedded", "ai", "automotive"]
-
-  - name: "ZF Press"
-    url: "https://press.zf.com/press/en/rss.xml"
-    category: "press_release"
-    reliability: 0.85
-    regions: ["germany", "europe", "global"]
-    industries: ["automotive", "adas", "software_defined_vehicle"]
-
-  # === Google News RSS — company monitors ===
-
-  - name: "GNews: Bosch Automotive Safety"
-    query: "Bosch automotive safety ADAS"
-    lang: "en"
+  - name: "GNews: Stuttgarter Liederhalle"
+    query: '"Stuttgarter Liederhalle" OR "Liederhalle Stuttgart"'
+    lang: "de"
     country: "DE"
     category: "press_release"
-    reliability: 0.7
-    regions: ["germany", "europe"]
-    industries: ["automotive", "adas", "functional_safety"]
+    reliability: 0.70
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["music_classical", "event_production", "cultural_management"]
 
-  - name: "GNews: NEURA Robotics"
-    query: "NEURA Robotics"
-    lang: "en"
+  - name: "GNews: Musikhochschule Stuttgart"
+    query: '"Musikhochschule Stuttgart" OR "HMDK Stuttgart"'
+    lang: "de"
     country: "DE"
     category: "press_release"
-    reliability: 0.75
-    regions: ["germany", "europe"]
-    industries: ["robotics", "ai"]
+    reliability: 0.70
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["education_programs", "music_classical"]
 
-  - name: "GNews: Continental ADAS"
-    query: "Continental ADAS safety autonomous"
-    lang: "en"
+  - name: "GNews: Stuttgarter Philharmoniker"
+    query: '"Stuttgarter Philharmoniker"'
+    lang: "de"
     country: "DE"
     category: "press_release"
-    reliability: 0.7
-    regions: ["germany", "europe"]
-    industries: ["automotive", "adas", "functional_safety"]
+    reliability: 0.70
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["music_classical", "event_production"]
 
-  - name: "GNews: Figure AI Robotics"
-    query: '"Figure AI" robot'
-    lang: "en"
-    country: "US"
+  - name: "GNews: SWR Symphonieorchester"
+    query: '"SWR Symphonieorchester"'
+    lang: "de"
+    country: "DE"
     category: "press_release"
-    reliability: 0.7
-    regions: ["usa", "global"]
-    industries: ["robotics", "ai", "physical_ai"]
+    reliability: 0.70
+    regions: ["baden-württemberg", "germany"]
+    industries: ["music_classical", "event_production"]
 
-  - name: "GNews: Mobileye ADAS"
-    query: "Mobileye autonomous driving safety"
-    lang: "en"
-    country: "US"
+  - name: "GNews: Staatstheater Stuttgart"
+    query: '"Staatstheater Stuttgart" OR "Staatsoper Stuttgart"'
+    lang: "de"
+    country: "DE"
     category: "press_release"
-    reliability: 0.75
-    regions: ["usa", "global"]
-    industries: ["adas", "automotive", "functional_safety"]
+    reliability: 0.70
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["music_classical", "cultural_management"]
 
-  - name: "GNews: Boston Dynamics"
-    query: '"Boston Dynamics" robot'
-    lang: "en"
-    country: "US"
+  - name: "GNews: Internationale Bachakademie Stuttgart"
+    query: '"Bachakademie Stuttgart" OR "Internationale Bachakademie"'
+    lang: "de"
+    country: "DE"
     category: "press_release"
-    reliability: 0.75
-    regions: ["usa", "global"]
-    industries: ["robotics", "ai"]
+    reliability: 0.70
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["music_classical", "education_programs"]
 
-  # === Google News RSS — topic monitors ===
+  - name: "GNews: Schlossfestspiele Ludwigsburg"
+    query: '"Schlossfestspiele Ludwigsburg" OR "Ludwigsburger Schlossfestspiele"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.70
+    regions: ["ludwigsburg", "baden-württemberg", "germany"]
+    industries: ["music_classical", "event_production"]
 
-  - name: "GNews: ISO 26262 SOTIF"
-    query: "ISO 26262 SOTIF automotive AI safety"
-    lang: "en"
-    country: "US"
-    category: "standards"
-    reliability: 0.7
-    regions: ["global"]
-    industries: ["functional_safety", "adas", "automotive"]
-
-  - name: "GNews: ROS2 Robotics Safety"
-    query: "ROS2 robotics safety embedded"
-    lang: "en"
-    country: "US"
-    category: "technical"
+  - name: "GNews: Theaterhaus Stuttgart"
+    query: '"Theaterhaus Stuttgart"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["global"]
-    industries: ["robotics", "functional_safety", "embedded"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["music_classical", "cultural_management"]
 
-  - name: "GNews: Physical AI Embedded"
-    query: '"physical AI" OR "embodied AI" robotics embedded'
-    lang: "en"
-    country: "US"
-    category: "technical"
+  - name: "GNews: Forum Ludwigsburg"
+    query: '"Forum am Schlosspark" OR "Forum Ludwigsburg"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["global"]
-    industries: ["robotics", "ai", "embedded"]
+    regions: ["ludwigsburg", "baden-württemberg", "germany"]
+    industries: ["event_production", "music_classical"]
 
-  - name: "GNews: QNX SDV"
-    query: "QNX software-defined vehicle automotive safety"
-    lang: "en"
-    country: "US"
-    category: "technical"
-    reliability: 0.7
-    regions: ["global"]
-    industries: ["automotive", "software_defined_vehicle", "embedded"]
-
-  # === Google News — Chinese language (ZH) ===
-
-  - name: "GNews ZH: 机器人安全"
-    query: "机器人 安全 功能安全"
-    lang: "zh-CN"
-    country: "CN"
-    language: "zh"
-    category: "technical"
+  - name: "GNews: Kulturamt Leonberg"
+    query: '"Kulturamt Leonberg" OR "Stadt Leonberg Kultur"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["china", "asia"]
-    industries: ["robotics", "functional_safety", "ai"]
+    regions: ["leonberg", "baden-württemberg", "germany"]
+    industries: ["cultural_management", "event_production"]
 
-  - name: "GNews ZH: 自动驾驶安全"
-    query: "自动驾驶 安全 感知"
-    lang: "zh-CN"
-    country: "CN"
-    language: "zh"
-    category: "automotive"
+  - name: "GNews: Kulturamt Stuttgart"
+    query: '"Kulturamt Stuttgart" OR "Landeshauptstadt Stuttgart Kultur"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["china", "asia"]
-    industries: ["adas", "automotive", "functional_safety"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["cultural_management", "funding_policy"]
 
-  - name: "GNews ZH: 人形机器人"
-    query: "人形机器人 具身智能"
-    lang: "zh-CN"
-    country: "CN"
-    language: "zh"
-    category: "robotics"
+  # === Google News monitors — local museums =============================
+
+  - name: "GNews: Staatsgalerie Stuttgart"
+    query: '"Staatsgalerie Stuttgart"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["china", "asia"]
-    industries: ["robotics", "ai", "embedded"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["museum_exhibition"]
 
-  - name: "GNews ZH: 嵌入式AI汽车"
-    query: "嵌入式AI 智能汽车 芯片安全"
-    lang: "zh-CN"
-    country: "CN"
-    language: "zh"
-    category: "embedded"
+  - name: "GNews: Kunstmuseum Stuttgart"
+    query: '"Kunstmuseum Stuttgart"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
     reliability: 0.65
-    regions: ["china", "asia"]
-    industries: ["embedded", "automotive", "ai"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["museum_exhibition"]
 
-  # === Google News — Japanese language (JA) ===
+  - name: "GNews: Linden-Museum"
+    query: '"Linden-Museum" OR "Lindenmuseum"'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.65
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["museum_exhibition", "education_programs"]
 
-  - name: "GNews JA: ロボット安全"
-    query: "ロボット 安全 機能安全"
-    lang: "ja"
-    country: "JP"
-    language: "ja"
-    category: "technical"
-    reliability: 0.68
-    regions: ["japan", "asia"]
-    industries: ["robotics", "functional_safety", "ai"]
+  # === Google News monitors — DACH cultural-sector themes ===============
 
-  - name: "GNews JA: 自動運転安全"
-    query: "自動運転 安全 認識システム"
-    lang: "ja"
-    country: "JP"
-    language: "ja"
-    category: "automotive"
-    reliability: 0.68
-    regions: ["japan", "asia"]
-    industries: ["adas", "automotive", "functional_safety"]
+  - name: "GNews: Musikvermittlung Deutschland"
+    query: 'Musikvermittlung Deutschland Programm'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.65
+    regions: ["germany"]
+    industries: ["education_programs", "music_classical"]
 
-  - name: "GNews JA: 組み込みAI"
-    query: "組み込み AI 自動車 安全"
-    lang: "ja"
-    country: "JP"
-    language: "ja"
-    category: "embedded"
-    reliability: 0.68
-    regions: ["japan", "asia"]
-    industries: ["embedded", "automotive", "ai"]
+  - name: "GNews: Netzwerk Junge Ohren"
+    query: '"Junge Ohren" Musikvermittlung'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.70
+    regions: ["germany"]
+    industries: ["education_programs", "music_classical"]
 
-  - name: "GNews JA: 人型ロボット"
-    query: "人型ロボット ヒューマノイド 安全"
-    lang: "ja"
-    country: "JP"
-    language: "ja"
-    category: "robotics"
-    reliability: 0.68
-    regions: ["japan", "asia"]
-    industries: ["robotics", "ai", "embedded"]
+  - name: "GNews: Kulturförderung Land BW"
+    query: 'Kulturförderung Baden-Württemberg Land'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.65
+    regions: ["baden-württemberg", "germany"]
+    industries: ["funding_policy", "cultural_management"]
+
+  - name: "GNews: Goethe-Institut China Musik"
+    query: 'Goethe-Institut China Musik OR Kulturaustausch'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.65
+    regions: ["germany", "global"]
+    industries: ["cultural_management", "education_programs"]
+
+  # === Google News monitors — event agencies ============================
+
+  - name: "GNews: SKS Russ Konzert"
+    query: '"SKS Russ" Konzert'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.60
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["event_production", "music_classical"]
+
+  - name: "GNews: CTS Eventim Kultur"
+    query: '"CTS Eventim" Kultur Veranstaltung'
+    lang: "de"
+    country: "DE"
+    category: "press_release"
+    reliability: 0.60
+    regions: ["germany"]
+    industries: ["event_production"]

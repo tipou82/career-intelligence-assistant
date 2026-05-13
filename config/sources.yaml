@@ -1,317 +1,185 @@
 feeds:
 
-  # === Technical / Academic ===
-  - name: "IEEE Spectrum"
-    url: "https://spectrum.ieee.org/feeds/feed.rss"
-    category: "technical"
-    reliability: 0.9
-    regions: ["global"]
-    industries: ["embedded", "ai", "robotics", "automotive"]
+  # === Cultural-sector trade press (German, primary) ====================
 
-  - name: "MIT Technology Review"
-    url: "https://www.technologyreview.com/feed/"
-    category: "technical"
+  - name: "nmz — Neue Musikzeitung"
+    url: "https://www.nmz.de/rss.xml"
+    category: "trade_press"
+    language: "de"
     reliability: 0.85
-    regions: ["usa", "global"]
-    industries: ["ai", "robotics", "automotive"]
+    regions: ["germany", "europe"]
+    industries: ["music_classical", "education_programs", "cultural_management"]
 
-  - name: "IEEE Robotics and Automation"
-    url: "https://ieeexplore.ieee.org/rss/TOC8860.XML"
-    category: "technical"
-    reliability: 0.9
-    regions: ["global"]
-    industries: ["robotics", "ai"]
+  - name: "Backstage PRO"
+    url: "https://backstagepro.de/rss/news"
+    category: "trade_press"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany"]
+    industries: ["event_production", "music_classical", "cultural_management"]
 
-  # === Automotive / ADAS ===
-  - name: "SAE International"
-    url: "https://www.sae.org/rss/news"
-    category: "standards"
+  - name: "nachtkritik.de"
+    url: "https://nachtkritik.de/rss.xml"
+    category: "trade_press"
+    language: "de"
     reliability: 0.85
-    regions: ["usa", "global"]
-    industries: ["automotive", "adas", "functional_safety"]
-
-  - name: "Automotive News"
-    url: "https://www.autonews.com/arc/outboundfeeds/rss/?outputType=xml"
-    category: "automotive"
-    reliability: 0.8
-    regions: ["usa", "global"]
-    industries: ["automotive", "adas", "software_defined_vehicle"]
-
-  - name: "Electrek"
-    url: "https://electrek.co/feed/"
-    category: "automotive"
-    reliability: 0.7
-    regions: ["usa", "global"]
-    industries: ["automotive", "software_defined_vehicle"]
-
-  - name: "The Drive"
-    url: "https://www.thedrive.com/feed"
-    category: "automotive"
-    reliability: 0.65
-    regions: ["usa", "global"]
-    industries: ["automotive", "adas"]
-
-  # === Robotics ===
-  - name: "The Robot Report"
-    url: "https://www.therobotreport.com/feed/"
-    category: "robotics"
-    reliability: 0.8
-    regions: ["global"]
-    industries: ["robotics", "ai", "embedded"]
-
-  - name: "IEEE Spectrum Robotics"
-    url: "https://spectrum.ieee.org/feeds/robotics.rss"
-    category: "robotics"
-    reliability: 0.9
-    regions: ["global"]
-    industries: ["robotics", "ai"]
-
-  # === Embedded / Safety ===
-  - name: "Embedded.com"
-    url: "https://www.embedded.com/feed/"
-    category: "embedded"
-    reliability: 0.8
-    regions: ["usa", "global"]
-    industries: ["embedded", "automotive", "functional_safety"]
-
-  - name: "EE Times"
-    url: "https://www.eetimes.com/feed/"
-    category: "embedded"
-    reliability: 0.8
-    regions: ["usa", "global"]
-    industries: ["embedded", "ai", "automotive"]
-
-  # EE Times Europe removed — server consistently times out (>15s response)
-
-  # === AI / Tech ===
-  - name: "VentureBeat AI"
-    url: "https://feeds.feedburner.com/venturebeat/SZYF"
-    category: "tech_news"
-    reliability: 0.65
-    regions: ["usa", "global"]
-    industries: ["ai", "robotics"]
-
-  - name: "TechCrunch AI"
-    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
-    category: "tech_news"
-    reliability: 0.65
-    regions: ["usa", "global"]
-    industries: ["ai", "robotics", "automotive"]
-
-  - name: "Wired"
-    url: "https://www.wired.com/feed/rss"
-    category: "tech_news"
-    reliability: 0.7
-    regions: ["usa", "global"]
-    industries: ["ai", "robotics", "automotive"]
-
-  # === German / European ===
-  - name: "Heise Online"
-    url: "https://www.heise.de/rss/heise-atom.xml"
-    category: "tech_news"
-    reliability: 0.75
     regions: ["germany", "europe"]
-    industries: ["ai", "automotive", "embedded"]
+    industries: ["music_classical", "cultural_management"]
 
-  - name: "Golem.de"
-    url: "https://rss.golem.de/rss.php?r=sw"
-    category: "tech_news"
-    reliability: 0.7
-    regions: ["germany", "europe"]
-    industries: ["ai", "automotive", "embedded"]
-
-  # === News Agencies ===
-  - name: "Reuters Technology"
-    url: "https://feeds.reuters.com/reuters/technologyNews"
-    category: "news"
+  - name: "Deutscher Bühnenverein News"
+    url: "https://www.buehnenverein.de/de/aktuelles.rss"
+    category: "trade_press"
+    language: "de"
     reliability: 0.85
-    regions: ["global"]
-    industries: ["ai", "automotive", "robotics"]
+    regions: ["germany"]
+    industries: ["music_classical", "cultural_management"]
 
-  # === German / European Business ===
-  - name: "Handelsblatt Technologie"
-    url: "https://www.handelsblatt.com/contentexport/feed/technologie"
-    category: "business_news"
-    reliability: 0.8
-    regions: ["germany", "europe"]
-    industries: ["automotive", "ai", "software_defined_vehicle"]
+  # === German broadsheet & regional culture sections ====================
 
-  - name: "Handelsblatt Schlagzeilen"
-    url: "https://www.handelsblatt.com/contentexport/feed/schlagzeilen"
-    category: "business_news"
-    reliability: 0.8
-    regions: ["germany", "europe"]
-    industries: ["automotive", "ai", "embedded"]
-
-  # === Japan / Asia ===
-  - name: "Nikkei Asia"
-    url: "https://asia.nikkei.com/rss/feed/nar"
-    category: "business_news"
+  - name: "FAZ Feuilleton"
+    url: "https://www.faz.net/rss/aktuell/feuilleton/"
+    category: "press_culture"
+    language: "de"
     reliability: 0.85
-    regions: ["japan", "asia", "global"]
-    industries: ["automotive", "ai", "robotics", "embedded"]
+    regions: ["germany"]
+    industries: ["cultural_management", "music_classical", "museum_exhibition"]
 
-  - name: "Automotive World"
-    url: "https://www.automotiveworld.com/feed/"
-    category: "automotive"
-    reliability: 0.75
-    regions: ["japan", "global"]
-    industries: ["automotive", "adas", "software_defined_vehicle"]
-
-  # === Robotics Research ===
-  - name: "Robohub"
-    url: "https://robohub.org/feed/"
-    category: "robotics"
+  - name: "SZ Kultur"
+    url: "https://rss.sueddeutsche.de/rss/Kultur"
+    category: "press_culture"
+    language: "de"
     reliability: 0.85
-    regions: ["global"]
-    industries: ["robotics", "ai", "embedded"]
+    regions: ["germany"]
+    industries: ["cultural_management", "music_classical", "museum_exhibition"]
 
-  # === China Tech ===
-  - name: "Technode"
-    url: "https://technode.com/feed/"
-    category: "tech_news"
-    reliability: 0.7
-    regions: ["china", "asia"]
-    industries: ["ai", "automotive", "robotics"]
+  - name: "Zeit Kultur"
+    url: "https://newsfeed.zeit.de/kultur/index"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.85
+    regions: ["germany"]
+    industries: ["cultural_management", "music_classical", "museum_exhibition"]
 
-  # === Embedded / Engineering ===
-  - name: "EE Journal"
-    url: "https://www.eejournal.com/feed/"
-    category: "embedded"
+  - name: "Deutschlandfunk Kultur"
+    url: "https://www.deutschlandfunkkultur.de/themen-100.rss"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.85
+    regions: ["germany"]
+    industries: ["cultural_management", "music_classical", "education_programs"]
+
+  - name: "Stuttgarter Zeitung Kultur"
+    url: "https://www.stuttgarter-zeitung.de/themen/kultur.rss.feed"
+    category: "press_culture"
+    language: "de"
     reliability: 0.75
-    regions: ["usa", "global"]
-    industries: ["embedded", "ai", "automotive"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["cultural_management", "music_classical", "museum_exhibition"]
 
-  # === German-language sources ===
-  - name: "Heise Auto"
-    url: "https://www.heise.de/autos/rss/news-atom.xml"
-    category: "automotive"
-    reliability: 0.8
-    regions: ["germany", "europe"]
-    industries: ["automotive", "adas", "software_defined_vehicle"]
-
-  - name: "Heise Developer"
-    url: "https://www.heise.de/developer/rss/news-atom.xml"
-    category: "technical"
-    reliability: 0.8
-    regions: ["germany", "europe"]
-    industries: ["embedded", "ai", "software_defined_vehicle"]
-
-  - name: "GNews DE: Autonomes Fahren"
-    url: "https://news.google.com/rss/search?q=autonomes+fahren+sicherheit&hl=de&gl=DE&ceid=DE:de"
-    category: "tech_news"
-    reliability: 0.65
-    regions: ["germany", "europe"]
-    industries: ["automotive", "adas", "functional_safety"]
-
-  - name: "GNews DE: Robotik Sicherheit"
-    url: "https://news.google.com/rss/search?q=robotik+funktionale+sicherheit&hl=de&gl=DE&ceid=DE:de"
-    category: "tech_news"
-    reliability: 0.65
-    regions: ["germany", "europe"]
-    industries: ["robotics", "functional_safety"]
-
-  - name: "GNews DE: Eingebettete KI"
-    url: "https://news.google.com/rss/search?q=eingebettete+KI+automotive&hl=de&gl=DE&ceid=DE:de"
-    category: "tech_news"
-    reliability: 0.65
-    regions: ["germany", "europe"]
-    industries: ["embedded", "ai", "automotive"]
-
-  # === Japan-focused English sources ===
-  - name: "GNews JP: Toyota ADAS"
-    url: "https://news.google.com/rss/search?q=Toyota+ADAS+automated+driving&hl=en&gl=JP&ceid=JP:en"
-    category: "automotive"
-    reliability: 0.7
-    regions: ["japan", "asia"]
-    industries: ["automotive", "adas", "functional_safety"]
-
-  - name: "GNews JP: Honda Robotics"
-    url: "https://news.google.com/rss/search?q=Honda+robotics+safety+software&hl=en&gl=JP&ceid=JP:en"
-    category: "robotics"
-    reliability: 0.7
-    regions: ["japan", "asia"]
-    industries: ["robotics", "automotive", "ai"]
-
-  - name: "GNews JP: Denso Embedded AI"
-    url: "https://news.google.com/rss/search?q=Denso+embedded+AI+safety&hl=en&gl=JP&ceid=JP:en"
-    category: "embedded"
-    reliability: 0.7
-    regions: ["japan", "asia"]
-    industries: ["automotive", "embedded", "functional_safety"]
-
-  # === Chinese-language sources (ZH) ===
-
-  - name: "量子位 Qbitai"
-    url: "https://www.qbitai.com/rss"
-    category: "tech_news"
-    language: "zh"
-    reliability: 0.72
-    regions: ["china", "asia"]
-    industries: ["ai", "robotics", "automotive"]
-
-  - name: "雷锋网 Leiphone"
-    url: "https://www.leiphone.com/feed"
-    category: "tech_news"
-    language: "zh"
-    reliability: 0.70
-    regions: ["china", "asia"]
-    industries: ["ai", "robotics", "embedded"]
-
-  - name: "36氪 36Kr"
-    url: "https://36kr.com/feed"
-    category: "tech_news"
-    language: "zh"
-    reliability: 0.68
-    regions: ["china", "asia"]
-    industries: ["ai", "automotive", "robotics"]
-
-  - name: "极客公园 Geekpark"
-    url: "https://www.geekpark.net/rss"
-    category: "tech_news"
-    language: "zh"
-    reliability: 0.68
-    regions: ["china", "asia"]
-    industries: ["ai", "automotive", "robotics"]
-
-  - name: "钛媒体 TMTpost"
-    url: "https://www.tmtpost.com/rss"
-    category: "tech_news"
-    language: "zh"
-    reliability: 0.65
-    regions: ["china", "asia"]
-    industries: ["ai", "automotive"]
-
-  # === Japanese-language sources (JA) ===
-
-  - name: "Response.jp"
-    url: "https://response.jp/rss/index.rdf"
-    category: "automotive"
-    language: "ja"
-    reliability: 0.78
-    regions: ["japan", "asia"]
-    industries: ["automotive", "adas", "software_defined_vehicle"]
-
-  - name: "Robonable"
-    url: "https://www.robonable.jp/rss/"
-    category: "robotics"
-    language: "ja"
+  - name: "Stuttgarter Nachrichten Kultur"
+    url: "https://www.stuttgarter-nachrichten.de/themen/kultur.rss.feed"
+    category: "press_culture"
+    language: "de"
     reliability: 0.75
-    regions: ["japan", "asia"]
-    industries: ["robotics", "ai", "embedded"]
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["cultural_management", "music_classical", "museum_exhibition"]
 
-  - name: "自動運転Lab"
-    url: "https://jidounten-lab.com/feed"
-    category: "automotive"
-    language: "ja"
-    reliability: 0.72
-    regions: ["japan", "asia"]
-    industries: ["adas", "automotive", "ai"]
+  - name: "SWR Kultur"
+    url: "https://www.swr.de/swrkultur/index.rss"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.80
+    regions: ["baden-württemberg", "germany"]
+    industries: ["cultural_management", "music_classical", "education_programs"]
 
-  - name: "ITmedia AI+"
-    url: "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"
-    category: "tech_news"
-    language: "ja"
+  # === English-language cultural press ==================================
+
+  - name: "The Strad"
+    url: "https://www.thestrad.com/articles.feed"
+    category: "trade_press"
+    language: "en"
     reliability: 0.75
-    regions: ["japan", "asia"]
-    industries: ["ai", "robotics", "automotive"]
+    regions: ["europe", "global"]
+    industries: ["music_classical", "education_programs"]
+
+  - name: "Gramophone"
+    url: "https://www.gramophone.co.uk/rss"
+    category: "trade_press"
+    language: "en"
+    reliability: 0.75
+    regions: ["europe", "global"]
+    industries: ["music_classical"]
+
+  - name: "Bachtrack"
+    url: "https://bachtrack.com/rss"
+    category: "trade_press"
+    language: "en"
+    reliability: 0.75
+    regions: ["europe", "global"]
+    industries: ["music_classical"]
+
+  - name: "Slipped Disc"
+    url: "https://slippedisc.com/feed/"
+    category: "trade_press"
+    language: "en"
+    reliability: 0.65
+    regions: ["europe", "global"]
+    industries: ["music_classical"]
+
+  # === Google News monitors (German, region-tailored) ===================
+
+  - name: "GNews DE: Kulturmanagement Stellen Stuttgart"
+    url: "https://news.google.com/rss/search?q=Kulturmanagement+Stelle+Stuttgart&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.65
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["cultural_management"]
+
+  - name: "GNews DE: Musikvermittlung"
+    url: "https://news.google.com/rss/search?q=Musikvermittlung+Konzertpädagogik&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.65
+    regions: ["germany"]
+    industries: ["education_programs", "music_classical"]
+
+  - name: "GNews DE: Konzerthaus Bildungsprogramm"
+    url: "https://news.google.com/rss/search?q=Konzerthaus+Bildungsprogramm+OR+Education&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.65
+    regions: ["germany"]
+    industries: ["education_programs", "music_classical"]
+
+  - name: "GNews DE: Festival Stuttgart Ludwigsburg"
+    url: "https://news.google.com/rss/search?q=Festival+Stuttgart+OR+Ludwigsburg&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.60
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["event_production", "music_classical"]
+
+  - name: "GNews DE: Kulturförderung Baden-Württemberg"
+    url: "https://news.google.com/rss/search?q=Kulturförderung+Baden-Württemberg&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.65
+    regions: ["baden-württemberg", "germany"]
+    industries: ["funding_policy", "cultural_management"]
+
+  - name: "GNews DE: Museum Stuttgart Ausstellung"
+    url: "https://news.google.com/rss/search?q=Museum+Stuttgart+Ausstellung&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.60
+    regions: ["stuttgart", "baden-württemberg", "germany"]
+    industries: ["museum_exhibition"]
+
+  - name: "GNews DE: Projektmanagement Kultur Stellen"
+    url: "https://news.google.com/rss/search?q=Projektmanagement+Kultur+Stellenangebot&hl=de&gl=DE&ceid=DE:de"
+    category: "press_culture"
+    language: "de"
+    reliability: 0.65
+    regions: ["germany"]
+    industries: ["project_management", "cultural_management"]

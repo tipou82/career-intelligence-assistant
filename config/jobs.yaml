@@ -1,182 +1,195 @@
-# Job market signal queries.
-# Each entry defines a search run against the Bundesagentur für Arbeit API
-# (Germany) and/or Indeed RSS (global/Europe).
+# Job market signal queries — cultural project management, Baden-Württemberg focus.
 #
-# Region priority: germany first, then europe, then global.
-# For external_transition mode, Germany and Europe queries are most actionable.
+# Each entry defines a search against Bundesagentur für Arbeit (Germany)
+# and/or Indeed RSS. Region priority: Stuttgart region → BW → Germany → Europe.
 
 searches:
 
-  # ── Core safety architecture roles (Germany) ──────────────────────────────
+  # ── Core cultural PM roles (Bundesagentur, BW + DE) ──────────────────────
 
-  - query: "Functional Safety Engineer"
+  - query: "Kulturmanager"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "iso_26262"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "Functional Safety Architect"
+  - query: "Projektmanager Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "safety_architecture"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "System Safety Engineer"
+  - query: "Projektleiter Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "system_safety"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "Safety Architect"
+  - query: "Projektkoordinator Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["safety_architecture", "functional_safety"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "Functional Safety Manager"
+  - query: "Projektassistenz Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "safety_management"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "Software Safety Engineer"
+  - query: "Kulturreferent"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "embedded"]
+    skill_tags: ["cultural_management", "pr_communication"]
 
-  - query: "Safety Case Engineer"
+  # ── Education / Musikvermittlung (priority #1 sub-sector) ────────────────
+
+  - query: "Musikvermittlung"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "safety_case"]
+    skill_tags: ["education_programs", "music_classical"]
 
-  - query: "Product Safety Engineer"
+  - query: "Bildungsreferent Musik"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "product_safety"]
+    skill_tags: ["education_programs"]
 
-  # ── Machinery and industrial automation safety (Germany) ──────────────────
-
-  - query: "Machine Safety Engineer"
+  - query: "Konzertpädagogik"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["iso_13849", "machinery_safety"]
+    skill_tags: ["education_programs", "music_classical"]
 
-  - query: "ISO 13849 CMSE"
+  - query: "Kulturelle Bildung"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["iso_13849", "cmse"]
+    skill_tags: ["education_programs"]
 
-  - query: "Industrial Automation Safety"
+  - query: "Education Manager"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "industrial_automation"]
+    skill_tags: ["education_programs"]
 
-  - query: "AUTOSAR Safety Automotive"
+  - query: "Musikschule Verwaltung"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["autosar", "functional_safety"]
+    skill_tags: ["education_programs"]
 
-  # ── Consulting and assessment (Germany/Europe) ─────────────────────────────
+  # ── Event production (priority #2 sub-sector) ────────────────────────────
 
-  - query: "Safety Consultant Functional Safety"
+  - query: "Veranstaltungsmanager Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "consulting"]
+    skill_tags: ["event_production", "project_management"]
 
-  - query: "Safety Assessor Functional Safety"
+  - query: "Eventmanager Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "assessment"]
+    skill_tags: ["event_production", "project_management"]
 
-  - query: "TÜV Functional Safety"
+  - query: "Konzertdirektion"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["functional_safety", "tuv_certification"]
+    skill_tags: ["event_production", "music_classical"]
 
-  # ── Cross-domain safety standards ─────────────────────────────────────────
-
-  - query: "IEC 61508 Safety Engineer"
+  - query: "Künstlerische Betriebsbüro"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["iec_61508", "functional_safety"]
+    skill_tags: ["event_production", "music_classical"]
 
-  - query: "IEC 62061 Machine Safety"
+  - query: "Disposition Theater"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["iec_62061", "machinery_safety"]
+    skill_tags: ["event_production"]
 
-  - query: "RAMS Engineer"
+  - query: "Tour Manager Musik"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["rams", "functional_safety"]
+    skill_tags: ["event_production", "music_classical"]
 
-  - query: "SOTIF ADAS Safety Engineer"
+  # ── Music institutions (priority #3) ──────────────────────────────────────
+
+  - query: "Konzerthaus Verwaltung"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["sotif", "adas"]
+    skill_tags: ["music_classical", "cultural_management"]
 
-  # ── Adjacent sector safety (Germany) ──────────────────────────────────────
-
-  - query: "Railway Safety Engineer"
+  - query: "Orchestermanagement"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["railway_safety", "functional_safety"]
+    skill_tags: ["music_classical", "cultural_management"]
 
-  - query: "Embedded Safety Architect"
+  - query: "Künstlerbetreuung Orchester"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["embedded", "functional_safety"]
+    skill_tags: ["music_classical", "event_production"]
 
-  - query: "Aerospace Safety Engineer"
+  - query: "Theaterreferent"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["aerospace_safety", "functional_safety"]
+    skill_tags: ["music_classical", "cultural_management"]
 
-  - query: "Medical Device Safety Engineer"
+  # ── Exhibitions / museums (priority #4) ──────────────────────────────────
+
+  - query: "Museumspädagogik"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["medical_safety", "iec_62304"]
+    skill_tags: ["museum_exhibition", "education_programs"]
 
-  # ── ROS2 and robotics safety (Germany) ────────────────────────────────────
-
-  - query: "ROS2 Robotics Safety"
+  - query: "Ausstellungskoordinator"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["ros2", "robotics"]
+    skill_tags: ["museum_exhibition", "project_management"]
 
-  - query: "ADAS Embedded Software Safety"
+  - query: "Bildungsreferent Museum"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["adas", "embedded"]
+    skill_tags: ["museum_exhibition", "education_programs"]
 
-  - query: "QNX Embedded Systems Safety"
+  # ── PR & communication (lateral target) ──────────────────────────────────
+
+  - query: "Pressereferent Kultur"
     region: "germany"
     source: "bundesagentur"
-    skill_tags: ["qnx", "embedded"]
+    skill_tags: ["pr_communication", "cultural_management"]
 
-  # ── Europe-wide (Indeed RSS) ───────────────────────────────────────────────
+  - query: "Kommunikation Theater"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["pr_communication", "music_classical"]
 
-  - query: "functional safety architect europe"
+  - query: "Öffentlichkeitsarbeit Musik"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["pr_communication", "music_classical"]
+
+  # ── Indeed RSS — broader DE / EU sweep ──────────────────────────────────
+
+  - query: "Kulturmanagement Stuttgart"
+    region: "germany"
+    source: "indeed_rss"
+    skill_tags: ["cultural_management"]
+
+  - query: "Projektmanager Kultur Baden-Württemberg"
+    region: "germany"
+    source: "indeed_rss"
+    skill_tags: ["cultural_management", "project_management"]
+
+  - query: "Musikvermittlung Bildungsreferent"
+    region: "germany"
+    source: "indeed_rss"
+    skill_tags: ["education_programs"]
+
+  - query: "Veranstaltungsmanagement Kultur Stuttgart Ludwigsburg"
+    region: "germany"
+    source: "indeed_rss"
+    skill_tags: ["event_production"]
+
+  - query: "Education Manager Konzerthaus"
+    region: "germany"
+    source: "indeed_rss"
+    skill_tags: ["education_programs", "music_classical"]
+
+  - query: "cultural project manager Germany"
     region: "europe"
     source: "indeed_rss"
-    skill_tags: ["functional_safety", "safety_architecture"]
+    skill_tags: ["cultural_management", "project_management"]
 
-  - query: "system safety engineer germany europe"
+  - query: "music education manager Europe"
     region: "europe"
     source: "indeed_rss"
-    skill_tags: ["system_safety", "functional_safety"]
-
-  - query: "safety consultant iso 26262 europe"
-    region: "europe"
-    source: "indeed_rss"
-    skill_tags: ["functional_safety", "consulting"]
-
-  - query: "robotics safety engineer iso 13849"
-    region: "europe"
-    source: "indeed_rss"
-    skill_tags: ["robotics", "iso_13849"]
-
-  - query: "SOTIF ISO PAS 8800 safety"
-    region: "global"
-    source: "indeed_rss"
-    skill_tags: ["sotif", "iso_pas_8800"]
-
-  - query: "embedded AI safety engineer"
-    region: "global"
-    source: "indeed_rss"
-    skill_tags: ["embedded_ai", "functional_safety"]
+    skill_tags: ["education_programs"]
