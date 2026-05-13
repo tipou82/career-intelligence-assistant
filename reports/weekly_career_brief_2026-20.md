@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 17:03_
+_Mode: **External Transition** · Generated: 2026-05-13 17:07_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **30 strong signal(s)** and **15 weak signal(s)**. Key activity in: cultural_management, pr_communication, education_programs, music_classical, event_production. Notable companies: Staatsoper München, Schauspiel Stuttgart, KiKA, MDR, Bamberger Symphoniker. See Section 2 for full analysis.
+Week 2026-20 produced **30 strong signal(s)** and **15 weak signal(s)**. Key activity in: pr_communication, museum_exhibition, event_production, music_classical, cultural_management. Notable companies: Forum am Schlosspark, Staatstheater Stuttgart, Staatsoper Stuttgart, Theater Freiburg, Oper Frankfurt. See Section 2 for full analysis.
 
 ---
 
@@ -95,6 +95,8 @@ Week 2026-20 produced **30 strong signal(s)** and **15 weak signal(s)**. Key act
   Region: berlin · Skills: eventmanagement
 - **[BEBE Medien GmbH sucht Junior Projektmanager (m/w/d) - detektor.fm](https://news.google.com/rss/articles/CBMifkFVX3lxTE1rZm1YMml6bU9rVXVRYmhqQ0RaS3JGRG4xWGcyM1BsZ3RuMEFySXQzZTB5NWtJX19DbFhJRGdza1F6WndTU1hDNFM4U3EtdGpEU2tZQVM4elVVSXM4QmdaVkNhdGE4YzRQaFVRNzh3OTFwZVpoTGhKazI2Z3ZJdw?oc=5)** (score: 7.5) — GNews DE: Projektmanagement Kultur Stellen — 2020-10-26  
   Region: germany · Skills: Projektmanagement
+- **[Projektmanagement Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aU3BmRVRJODF1Nk9SUEZ2YS1LSnIyWk41dG14ZVJwUTNFSkEtdEJOS2RDT3Nsa3pmSFE5S01lZ2c5UjgtWERJQzFPN2NQbWprRkdfQjlQalgxa3M?oc=5)** (score: 7.4) — GNews StepStone: Projektmanager Kultur — 2021-09-08  
+  Region: N/A · Skills: projektmanagement
 - **[Kulturmanagement: 3 Jobs & Stellenangebote in Ludwigsburg | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMibkFVX3lxTE1zRkF6X19PeTZ4bXhRTm1fa3lPVmdqMVIyTVA5cTUxV2RDbjRkbEo1QzNFQ3VnWDFBb1VLMVBqMHNlYUhIVVhHSTRsbTB1S3k4d1loWTFydmZ6S0lXWmJKbnozNlJsVlNCMkJxam53?oc=5)** (score: 6.7) — GNews StepStone: Kulturmanagement — 2022-05-06  
   Region: ludwigsburg · Skills: N/A
 - **[Kulturmanagement: 2 Jobs & Stellenangebote in Stuttgart | 12. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTE5ieU41TGlVOG9ITjJvaWdhcHBQM1pxUHByaTZhc2Uta2RJN05RS3NQeFdFZlY3clJ6SGJGVzBKazdKanZ1VHpvT2lYSkxOc0ZOeGZ0bDFETXhoNEctcnRLdXlpaVdwcTRjUVpB?oc=5)** (score: 6.7) — GNews StepStone: Kulturmanagement — 2022-02-17  
@@ -474,7 +476,7 @@ _🔄 Market signals applied to 2/12 actions this week._
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
 | **Interview rehearsal in German (case answers + STAR stories)** | Universal — every role requires this | Prepare five STAR-format answers in German: (1) tell me about yourself, (2) why the family-phase gap and what did you do during it, (3) describe a project you coordinated, (4) describe a conflict with an artist or stakeholder, (5) why this organisation. Rehearse aloud with the Sprachcoach. | 0.5 h/wk | Five rehearsed and recorded STAR answers in German |
-| **Musikvermittlung case studies — three concrete programme sketches `↑ market: 20 job postings, 20 articles`** | Essential for sub-sector #1 (education programs) | Sketch three short concept papers (1 page each): (a) a Schulkonzert programme for primary-school children with Stuttgart Liederhalle as venue, (b) a Kinder-Klangwerkstatt format combining piano and music-history storytelling, (c) a Musikhochschule Stuttgart open-house programme for prospective students. Each should include target audience, format, partners, rough budget logic. | 1 h/wk | Three 1-page Musikvermittlung concept sketches in German |
+| **Musikvermittlung case studies — three concrete programme sketches `↑ market: 30 job postings, 20 articles`** | Essential for sub-sector #1 (education programs) | Sketch three short concept papers (1 page each): (a) a Schulkonzert programme for primary-school children with Stuttgart Liederhalle as venue, (b) a Kinder-Klangwerkstatt format combining piano and music-history storytelling, (c) a Musikhochschule Stuttgart open-house programme for prospective students. Each should include target audience, format, partners, rough budget logic. | 1 h/wk | Three 1-page Musikvermittlung concept sketches in German |
 | **Local cultural-sector networking sprint (Stuttgart region)** | Important for hidden BW cultural-sector job market | One concrete contact step per week: attend an info evening at Leonberger Kulturamt or Stadthalle Leonberg, write to a Musikhochschule Stuttgart alumni officer, or message one cultural-PM person on LinkedIn for a 20-minute Kennenlerngespräch. Track outcomes. | 0.5 h/wk · €20 | Networking tracker with ≥10 contacts and ≥3 conversations by end of phase 1 |
 | **DE cultural-sector governance literacy (KSK, GEMA, Fördermittel, Trägerschaft)** | Important for any role that touches funding or contracts | One topic per week, ~1 page of personal notes: (1) Künstlersozialkasse basics for employers, (2) GEMA tariffs and concert-organiser duties, (3) Fördermittel landscape in BW (Land BW, Stadt Stuttgart, Kulturstiftung des Bundes), (4) öffentliche vs. freie Träger, (5) typical Kulturamt budget structure, (6) Drittmittelantrag basics. | 1 h/wk | One-page note per topic, ~6 notes total |
 
