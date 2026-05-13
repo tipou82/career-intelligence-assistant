@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 15:54_
+_Mode: **External Transition** · Generated: 2026-05-13 17:03_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key activity in: museum_exhibition, education_programs, cultural_management, event_production, pr_communication. Notable companies: Theater Freiburg, Forum am Schlosspark, ARD, SWR Symphonieorchester, Schauspiel Stuttgart. See Section 2 for full analysis.
+Week 2026-20 produced **30 strong signal(s)** and **15 weak signal(s)**. Key activity in: cultural_management, pr_communication, education_programs, music_classical, event_production. Notable companies: Staatsoper München, Schauspiel Stuttgart, KiKA, MDR, Bamberger Symphoniker. See Section 2 for full analysis.
 
 ---
 
@@ -47,14 +47,68 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ## 3. Job Ads (score ≥ 6)
 
+- **[Eventmanagement: 271 Jobs & Stellenangebote in Böblingen | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMicEFVX3lxTE4zT2dHTmdrMUkzRGRfRFg2VXdVbjNnbTVNUU41REtzQnhHNExESFB0VWt6aWsycldpRHZTSllRU2FMTkwtYWZFVDBNS052bXBUOUxMQ09JRktKQUNyYjhiYWtXS2NUWW40b2dkUGhYOTE?oc=5)** (score: 9.2) — GNews StepStone: Veranstaltungsmanagement Kultur — 2021-10-21  
+  Region: böblingen · Skills: eventmanagement
+- **[Eventmanagement: 285 Jobs & Stellenangebote in Sindelfingen | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMibkFVX3lxTFBCRWQ3UHlXbE9OU0wzNTZQd3V5RmttVVhBcFlxU24yWk1pWkJjTnp3enN1Z1VWUmxhNnk5cG16UmE5OTg4VncwdVJ1M0FaSnNjS0p1eWQzVVFVSVVWdmplREoxUjMtQnhCaWJVQWtR?oc=5)** (score: 8.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-01-04  
+  Region: sindelfingen · Skills: eventmanagement
 - **[2 Senior Lecturer (w/m/d) für Klavier (Pflichtfach in den Bachelor-Studien sowie Pflichtfach Klavier im Pre-College Salzburg)](https://www.nmz.de/stellenmarkt/2-senior-lecturer-wmd-fuer-klavier-pflichtfach-den-bachelor-studien-sowie-pflichtfach)** (score: 8.1) — nmz — Neue Musikzeitung — 2026-05-13  
   Region: austria, europe · Skills: Musikvermittlung, Projektmanagement
+- **[Veranstaltungsmanagement: 16 Jobs & Stellenangebote in Lörrach | 9. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiekFVX3lxTE51cnItWG9OanVpSjBKRGhwcjZfTGpDV3RvR2Z0X3JMQjl2TmxYMzZLYjFpS1Z0cURDdU8wMWtNY3FRQUIyUlN1cXRuMUxkRW9GWm1jcFhPZ0ZJc0dfSUJsTXBnSjlBQVJWU2g5ZDJsRXQ3NFpzVlZyLXd3?oc=5)** (score: 8.0) — GNews StepStone: Veranstaltungsmanagement Kultur — 2021-12-09  
+  Region: N/A · Skills: veranstaltungsmanagement
 - **[MUNICH ARENA sucht Projektmanager (m/w/d) - Stadionwelt](https://news.google.com/rss/articles/CBMigAFBVV95cUxQcV9VNHl4TGdWTl9GYklnZWxOUVFiczA4enhvSF9ITHdLME56eXB3OWE1WUNrRXhwOTVuOXEzUjBnaHk3d2VvWUd2X19pSkJkdjlzWjFQQnN3dVRRb0I2MnR1N1ZGTWZvLTVnVmx2OVVQbEJQSGdIcENSUmRfajNTUQ?oc=5)** (score: 8.0) — GNews DE: Projektmanagement Kultur Stellen — 2025-03-19  
   Region: germany, baden-württemberg · Skills: Projektmanagement
+- **[Eventmanagement: 30 Jobs & Stellenangebote in Saarland | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zdDFEWGJHSHZzV2M1WTNPMmdETXFLYjNzQWpVb3BMb2J2YXdqNGN5YkI3UkoxQS1XR1BBVzBtNGtyRFZzWWNURnJqanoyQzM3cGluQU5yM2FvdTFwUXB0NE5zaDltUk9B?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2023-11-05  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 976 Jobs & Stellenangebote in Bayern | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZkFVX3lxTE4zUEF1cmxLQmJwb2RmMjVrZi1BdFBUV2JGT3pyYW1WTXNhcUdEQTh4SjNZeW4yX3JCN281ZGtpNUNCMUhral8wRFhiOFlRWlFubWxqejlrRVVNWk5LdlRQeUJBdGx3UQ?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2023-06-05  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 23 Jobs & Stellenangebote in Schopfheim | 9. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTE9JVWxVaXBBR3U2czJYLWRZd21PVFpDaGZJY0w2bVNPTGR5Rld0Wk1PbklIMk8xQms5ZkZGdXdBSHpaQ1hjZzcwWV9tQUFzcUM0aGpPVlFMUUJQRnpOUnowWkxSd25lRjl4Wkh3?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2023-01-26  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 81 Jobs & Stellenangebote in ÖHringen | 6. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMib0FVX3lxTE4wTnRYbFFOSzUxdDlSSHB6Y0NaMjdRYS1FZ2xzOVBOZXdaQTlkZkRoRTdTN21BNHI4c1RjUnZpS3o5TUUyeHd2Sm5HY2pZd3pNMDJpdmFvM01ncWVJaGJSbDk4SjFfaE5ZTTNqeTBISQ?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-11-09  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 62 Jobs & Stellenangebote in Mosbach | 7. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13ZTNwTmVjSHpLY0pLclpNM3FBQURoNnBzcHJDV2hUWXotVldRVkh2eFJqc1ExaE5zbUdqN2t6ckRQd2xnbFNsSElnczFTS1RtdXB3d0dZeVhuT1p4bU11MjdPeTZCb3c?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-07-20  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 111 Jobs & Stellenangebote in Herrenberg | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTFB0WnZMdlNmOGQxTm9EMEluSGdEZlNFTE5uWnR5Ti1iRFJVRWJNZGZxcHpzQmtvX1J4NjJVTi1DdzRuMGQ2bTVWUUQzT2F0cVZCMHlTYUx1VnBqWmZ0OW5OQ2hJc3dlT2xnNXlJ?oc=5)** (score: 7.9) — GNews StepStone: Kulturmanagement — 2022-05-19  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 207 Jobs & Stellenangebote in Weil Der Stadt | 24. Apr. 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMicEFVX3lxTE9TanlpVHQ0WDNVa1ZOSDJHQVh6c2JyN2FlYm0zcEpfdkUtYTlYOFhBdVRRdERocGREMThpR2lnRktHWU5qcTRCdnVDV1ZfVE45ZExfeE1QOHYtTHVjckg5My10SnYyYmljVUN6WkVmeDM?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-04-20  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 233 Jobs & Stellenangebote in Metzingen | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiakFVX3lxTE9Gd2FUWFI1ZHF4NG1rWnBQVGNKYmEzeVVqRmJKaU9lanFCcU9KVy05aUZRV1ozaVgyUEFxUG1Jc3djaVh4VUxxdUNIMGdkMXFwQjRxRmJ3RXkzY1lDNjRGT3A2MFBfaGpld1E?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-02-22  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 46 Jobs & Stellenangebote in Horb Am Neckar | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMicEFVX3lxTE9BdzZHa1QzS1N5Tk9zcXJSUTFLWHhOVzhlYlZfeGlCSnVDWVRsd2kwaHY2dE1lbVBaaWUteXp5Y1ZYUHVnLUpqLUFKTExJdDdGWDFVWlJ5RUNhUmpGU3hjRkNVOHZ6cVE3R1R1a19oT0g?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-02-13  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 327 Jobs & Stellenangebote in Siegburg | 9. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiaEFVX3lxTE85cGVOcGw0d1RUdkFaNWZvUXVwVVFDcmNRM0luazNhQnJkb2x5dWtxRTJNUVNXSHNaLXBlaWFtdzctbTlDMlcwa0s3TXRNbHFGUGVhTnl5MEt0Y0NTZlBtZzdiZGFtbFNq?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-02-07  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 54 Jobs & Stellenangebote in Nagold | 6. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZkFVX3lxTE55NXBsVW1DODlGLVNhczZ0VEM5RjhOamZfVmd4RUxPV00zMW82WEppdzlEX0JqdWdKOGdYQzBHUlUzM1pPd21SamY0VVctUlhxWjVJMVFUaVZWVnhWNTNUTUVCblBBQQ?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2021-12-10  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 82 Jobs & Stellenangebote in Calw | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vd1hlb3M0TUpFbmN2cTZWcVM5OTBlYmQ0N25fS05aVjZnbjRuQ0ZQMWUwQUI4UnZqdW1lOV9jTG1HZUhvX1pGT1AzVjNFQTN0M09NNXNSeW8tZVhsanNwTjloWQ?oc=5)** (score: 7.9) — GNews StepStone: Kulturmanagement — 2021-12-07  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 89 Jobs & Stellenangebote in Rottenburg Am Neckar | 8. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMieEFVX3lxTFBnMVJTbVZsRndESVJvWFFjZXBidmlIeFNFSndQN01nX3IxaXRnNmFxVVkzVnJ3WXY0S3ZwS0tqb213Ums4UDlLR1NIUGZkbDFPMmVSdWNqbDZfOEFGTzJsbEhmRU0tblNHMUYyal84aWFuc1ZHLU1uYw?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2021-11-26  
+  Region: N/A · Skills: eventmanagement
+- **[Eventmanagement: 139 Jobs & Stellenangebote in Schwäbische Alb | 9. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMieEFVX3lxTFB2NnNrSVVEMXVTTkNETlNwSHNRbGdvcnlZbTlRMGF1UXFiWjNDcWhDSUVHbHJ5MkllSjVzaThKN2VoZnI0UEpjdVY0NnUwWUxMaDFPMG0tLWpPcjI1RU5wbEpfVEpPVjVlaTVmUVc4S3hKak1iSE5iRw?oc=5)** (score: 7.9) — GNews StepStone: Veranstaltungsmanagement Kultur — 2021-11-25  
+  Region: N/A · Skills: eventmanagement
 - **[Redakteur:in/Projektmanager:in Corporate Podcasts (m/w/d) - detektor.fm](https://news.google.com/rss/articles/CBMie0FVX3lxTE51QU05eGJsb3AtVG5rdVZrdlFyNE1JMVlWYjVGM2cxMXNLbkRaSUdUWWNJM1drYS13Y2lQUk1qZ1lOcGtHMzNkVTRRRjdscUpsaXdUVjIwOWZlOTQtZmx2bmhhN3AyMjk3bFVkSklUX0IzYm5VMXRYb1RVTQ?oc=5)** (score: 7.7) — GNews DE: Projektmanagement Kultur Stellen — 2021-12-23  
   Region: germany · Skills: Projektmanagement, Pressearbeit
+- **[Praktikum Eventmanagement: 856 Jobs & Stellenangebote in Tübingen | 9. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMifEFVX3lxTE5TZGhXdmJvaU1jNzVpUFVLUnR6VGZfNUVWOWJ4RWRURF9kRjhMQWp2bXNZRld6aS1ZUHVuaDctYmZQYmtPS2VWc3c4T3VqZ2s1MTdmQWozN1dfbTNkVDJDbEpsbDQtQTBVWWRHckRrM2dwV1JnZWFkZGNWb1Q?oc=5)** (score: 7.7) — GNews StepStone: Kulturmanagement — 2022-03-21  
+  Region: tübingen · Skills: eventmanagement
+- **[Eventmanagement: 856 Jobs & Stellenangebote in Baden Württemberg | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMie0FVX3lxTFB3U3M5RWlFeVNiUE1DcEZOdHRHTlBJZGlKTGNiOHRlLXZ6dkNIMm9PM19MRUZzZHozUVFwVW03T1NURFVTdEZRemRVRnpCcmxKeVkyQjVEdFZrZl9qc2ZOMldkLVVJZHhwUDRYelo5SUNkMV94MllJRk9kWQ?oc=5)** (score: 7.7) — GNews StepStone: Veranstaltungsmanagement Kultur — 2022-02-06  
+  Region: baden württemberg · Skills: eventmanagement
+- **[Trainee Eventmanagement: 24 Jobs & Stellenangebote in Berlin | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMicEFVX3lxTE9DckNmYWkxdkJtOXI5LTFUYUdQRzBlaGtzS0ZVWDA4N21Zd3BWREtXYjJYNGpQeUdnQnNMdVhHSkNVdWpxOW52VmhJTFkzREVBN3VWT3c2WHF4WjA0RGpnZHRBWkRmY28xTUlNX0lNSnY?oc=5)** (score: 7.7) — GNews StepStone: Kulturmanagement — 2021-09-30  
+  Region: berlin · Skills: eventmanagement
 - **[BEBE Medien GmbH sucht Junior Projektmanager (m/w/d) - detektor.fm](https://news.google.com/rss/articles/CBMifkFVX3lxTE1rZm1YMml6bU9rVXVRYmhqQ0RaS3JGRG4xWGcyM1BsZ3RuMEFySXQzZTB5NWtJX19DbFhJRGdza1F6WndTU1hDNFM4U3EtdGpEU2tZQVM4elVVSXM4QmdaVkNhdGE4YzRQaFVRNzh3OTFwZVpoTGhKazI2Z3ZJdw?oc=5)** (score: 7.5) — GNews DE: Projektmanagement Kultur Stellen — 2020-10-26  
   Region: germany · Skills: Projektmanagement
+- **[Kulturmanagement: 3 Jobs & Stellenangebote in Ludwigsburg | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMibkFVX3lxTE1zRkF6X19PeTZ4bXhRTm1fa3lPVmdqMVIyTVA5cTUxV2RDbjRkbEo1QzNFQ3VnWDFBb1VLMVBqMHNlYUhIVVhHSTRsbTB1S3k4d1loWTFydmZ6S0lXWmJKbnozNlJsVlNCMkJxam53?oc=5)** (score: 6.7) — GNews StepStone: Kulturmanagement — 2022-05-06  
+  Region: ludwigsburg · Skills: N/A
+- **[Kulturmanagement: 2 Jobs & Stellenangebote in Stuttgart | 12. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTE5ieU41TGlVOG9ITjJvaWdhcHBQM1pxUHByaTZhc2Uta2RJN05RS3NQeFdFZlY3clJ6SGJGVzBKazdKanZ1VHpvT2lYSkxOc0ZOeGZ0bDFETXhoNEctcnRLdXlpaVdwcTRjUVpB?oc=5)** (score: 6.7) — GNews StepStone: Kulturmanagement — 2022-02-17  
+  Region: stuttgart · Skills: N/A
+- **[Mitarbeiter*in im Projektmanagement - Programmplanung (m/w/d) - www.stepstone.de](https://news.google.com/rss/articles/CBMi_wFBVV95cUxPemdVZUstUEtSQTFsV2JPa05xdVh3U0ZkUEZTTWdOdGNCbzVUMk1URXBaMU1xOVFGQVJ4b3ptZHpodHFISFp3cWI1VWhPN1o3ZmE1QlRuR2NIQkcyQTcwS240cGlzVl9YNS1vSGZSbjVjcFVXeHJrTTJJaWdSMENVUDhaRTlOSnVERnZmdm9FeGVKVlVpZFhRUkxHMjNKLTUwa1JuNkRsTGNBMTNpbXM4OWR5QUI0US1vbmJEY1B2bDYzNjFDcllVRUd3X1piMVJGSXdaNE9KZWIyRDJVaWp0YUt5WXl0OTlOdzdmU1FWYlB4WVkwSzFPcnMteDZBMkU?oc=5)** (score: 6.5) — GNews StepStone: Projektmanager Kultur — 2026-04-16  
+  Region: N/A · Skills: projektmanagement
+- **[Ehrenamtliche/r Mitarbeiter:innen Projektmanagement Städtepartnerschaften (m/w/d) für "Live Peace" - www.stepstone.de](https://news.google.com/rss/articles/CBMilgJBVV95cUxObDRiel9jcF9ldkp0LVBYRDFmcW5NaFpWWnZFWmluZHFreXg5R3hNQVoyRVFBY3FxMDRQTEVHaW9pVkpkRnBnUzkzbGFCU1dhRW10M0JUbk5sRml3YWpKRHZXdVRMMmZ1dHNLQUFsZ3hteVM4MWpSSDNwMzdqQnBYUno3enZKdURfMFRCQk44aDU2ZkpyODAxdTViQ1FRMVlVNkRHN2V4T0N3cjM2M1VjTnlRempJak1Oek5YcG5fUDRTY25pb05kVi1uLVY4UC1IN0ZwZ25CYnNZb09waDdEaE5GOUFycnJrT1ZORERVZlpWT2lkeXVVc21ncXNXbU5Uem5TN0FQUUI3Sk1VVm84YjVoSGNUQQ?oc=5)** (score: 6.5) — GNews StepStone: Projektmanager Kultur — 2026-04-05  
+  Region: N/A · Skills: projektmanagement
+- **[42 Aktuelle Projektmanagement Jobs bei HENSOLDT - www.stepstone.de](https://news.google.com/rss/articles/CBMiekFVX3lxTFBqRTl1XzdnV0QyRlI2WFJ2ZERUZHZJcDQwRzdMdkd3RmZ5ZDJUd2hVQURKZXJ3SURORUViRElneDZzQ0hDMkliMVBJNXEzR1ZYMWhEUEE1UFlXb29YbUNkTkpZYnFSZlNSMFhhZHJTYkVTdzBROHlsSDdR?oc=5)** (score: 6.5) — GNews StepStone: Projektmanager Kultur — 2021-11-25  
+  Region: N/A · Skills: projektmanagement
+- **[Praktikum - Kulturmanagement und Kommunikation - Institut français Bremen - www.stepstone.de](https://news.google.com/rss/articles/CBMipgJBVV95cUxPaENyVWp5RzZqVnVmMlpoUHhqVC12MVdGeGhaQldzbnBnRjZTcmVQRW1XOUpyMU1vamF5MFgzem01QWJyUGw4UXBxWVdZVE5DcjcxZmNvaUw2QjBHczVWTnFiWUVyUUV4MXhmcGkzOWk4UUJuNUE5azljRVlJSkgxNHNBdlpzbHBVN3R0MDluMUZZMlh4ZWhVQmhHeXcxaEpsbDY2ckFLV1RfcWg0WTlvR3BfM0o2eTgwVnFnYXcxRmR3MEp5MktOVl93aDJndjJQS1RubWRWTkN6aGxLYU0tX3BGY3g0dUFSYlpxR01ha3kyZS1OMm8ycFFqNERwb0FtVENTWjFzV2FuVF9LbkVDTUt2a21sQ2ZxU3hTTGQ2N2FUWkRRdXc?oc=5)** (score: 6.2) — GNews StepStone: Kulturmanagement — 2025-09-05  
+  Region: N/A · Skills: kommunikation
+- **[Kulturmanagement: 77 Jobs & Stellenangebote in Europa | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKSzRrQl8zUXc4eHgtRXdaaThTc29tNWNfSU5CS0RmVlZfcjFnUVNTcE1wTVNkcV9xcTA4YlNuZjcxNW81V1dhVnQtMUVDbGIyMkxRQjAweGhfNHZ0eHdjNmJ4eC1aZlk?oc=5)** (score: 6.1) — GNews StepStone: Kulturmanagement — 2021-11-07  
+  Region: europa · Skills: N/A
 
 ---
 
@@ -212,6 +266,8 @@ Week 2026-20 produced **30 strong signal(s)** and **13 weak signal(s)**. Key act
 
 ## 5. Weak Signals / Watchlist _(top 15 by actionability)_
 
+- **[Jan Vogler: «Wir müssen neu über Kulturfinanzierung nachdenken»](https://www.nmz.de/politik-szene/kulturpolitik/jan-vogler-wir-muessen-neu-ueber-kulturfinanzierung-nachdenken)** `🇩🇪 DE` (rel: 5.0 · act: 5.0) — nmz — Neue Musikzeitung — 2026-05-13
+- **[Theater Magdeburg bereichert «Festival der Moderne»](https://www.nmz.de/politik-szene/veranstaltungen/theater-magdeburg-bereichert-festival-der-moderne)** `🇩🇪 DE` (rel: 4.8 · act: 4.0) — nmz — Neue Musikzeitung — 2026-05-13
 - **[Literatur: Zisch ab, Gegenwart](https://www.sueddeutsche.de/kultur/dirk-von-petersdorff-wir-kinder-der-leichtigkeit-essay-rezension-li.3452471)** `🇩🇪 DE` (rel: 5.8 · act: 3.5) — SZ Kultur — 2026-05-11
 - **[Berlins MuseumsMeileMitte: Kulturwüsten](https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/kommentar-zu-der-neu-gegruendeten-berliner-museumsmeilemitte-200825545.html)** `🇩🇪 DE` (rel: 5.7 · act: 3.5) — FAZ Feuilleton — 2026-05-12
 - **[Abendkonzert vom 10.5.2026 - SWR](https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHQwUnJkb3ZIbEpnU3EwcG96RnVMSkNCODdxV3VmWnBndjQxaGZYQ3FPZVVraUt6UkRZWkRrYjFaWlh4TzJYOFh2X2hmZ3YtbllLcWFhVjd4ZVQ0d3ptQUp6NEFqd3YyVmJLVmdMb0pkeldwb25vUjZYc1NOZ294T2FZWTRYY2JWTE5TZXc5ajNWbi1nMFBGZ3lXWmZDdXh3SHU0UkRMMVI3aTlVSmZF?oc=5)** `🇬🇧 EN` (rel: 5.3 · act: 3.5) — GNews: SWR Symphonieorchester — 2026-05-11
@@ -290,11 +346,11 @@ Based on this week's signals, your positioning as a **multilingual cultural proj
 - **Social media opinion pieces without corroborating sources:** Low confidence; require a second source before acting.
 - **Low-relevance articles filtered this week:**
   - Kritik: Sara Glojnarić: Station Paradiso | Stuttgart - Die Deutsche Bühne
+  - Niedrige Geburtenrate: Deutschland behandelt seinen Nachwuchs, als sei er eine Last
   - Film: Auch Deutsche unter den Auserwählten
   - Geschichte: Eine Insel wird erfunden
   - Sudetentag in Tschechien: Gute Deutsche, böse Deutsche
   - Weimer fährt für Israels Song-Contest-Auftritt nach Wien
-  - Film: Wer sie küsst, kriegt einen Stromschlag
 
 ---
 
@@ -377,7 +433,9 @@ Active signals this week:
 - [Theater Wien: Von der Trivialität des Lebens im Inneren politischer Macht](https://www.faz.net/aktuell/feuilleton/musik-und-buehne/theater/ewald-palmetshofers-sankt-falstaff-am-burgtheater-200825838.html) — FAZ Feuilleton (2026-05-13)
 - [Abendkonzert vom 10.5.2026 - SWR](https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHQwUnJkb3ZIbEpnU3EwcG96RnVMSkNCODdxV3VmWnBndjQxaGZYQ3FPZVVraUt6UkRZWkRrYjFaWlh4TzJYOFh2X2hmZ3YtbllLcWFhVjd4ZVQ0d3ptQUp6NEFqd3YyVmJLVmdMb0pkeldwb25vUjZYc1NOZ294T2FZWTRYY2JWTE5TZXc5ajNWbi1nMFBGZ3lXWmZDdXh3SHU0UkRMMVI3aTlVSmZF?oc=5) — GNews: SWR Symphonieorchester (2026-05-11)
 - [Abonnement Mannheim, 5 Konzerte - SWR](https://news.google.com/rss/articles/CBMikAFBVV95cUxPNUJHYk5NSmFkenczcVZpYVJvX05NRTJPSWR2VXVDVk5tTGVZNlhlc2JobHRYbGtYLXlKRTBaemo2NHpGSkF4Tld4LWRybUNZc0tydHVFSTJKWE5BYVl3dTRvLVpzTTBLQWJ0QVdiRi1Eby1mQ3F0MmNxZEF0dThQUFBGc1FqRmczYTFuSzkyTV8?oc=5) — GNews: SWR Symphonieorchester (2026-05-11)
+- [Jan Vogler: «Wir müssen neu über Kulturfinanzierung nachdenken»](https://www.nmz.de/politik-szene/kulturpolitik/jan-vogler-wir-muessen-neu-ueber-kulturfinanzierung-nachdenken) — nmz — Neue Musikzeitung (2026-05-13)
 - [Mehta cancels Munich opera](https://slippedisc.com/2026/05/mehta-cancels-munich/?utm_source=rss&utm_medium=rss&utm_campaign=mehta-cancels-munich) — Slipped Disc (2026-05-13)
+- [Theater Magdeburg bereichert «Festival der Moderne»](https://www.nmz.de/politik-szene/veranstaltungen/theater-magdeburg-bereichert-festival-der-moderne) — nmz — Neue Musikzeitung (2026-05-13)
 - [Ausstellung: Spieglein, Spieglein](https://www.sueddeutsche.de/kultur/anish-kapoor-ausstellung-duisburg-lehmbruck-museum-li.3472051) — SZ Kultur (2026-05-11)
 - [Venedig: Check your Ostdeutschness](https://www.sueddeutsche.de/kultur/venedig-biennale-deutscher-pavillon-sung-tieu-henrike-naumann-ddr-kritik-li.3451442) — SZ Kultur (2026-05-12)
 - [Auktionen in Köln: Ein Fest für die Augen](https://www.faz.net/aktuell/feuilleton/kunstmarkt/auktion-alter-meister-bei-lempertz-in-koeln-accg-200809999.html) — FAZ Feuilleton (2026-05-11)
@@ -416,7 +474,7 @@ _🔄 Market signals applied to 2/12 actions this week._
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
 | **Interview rehearsal in German (case answers + STAR stories)** | Universal — every role requires this | Prepare five STAR-format answers in German: (1) tell me about yourself, (2) why the family-phase gap and what did you do during it, (3) describe a project you coordinated, (4) describe a conflict with an artist or stakeholder, (5) why this organisation. Rehearse aloud with the Sprachcoach. | 0.5 h/wk | Five rehearsed and recorded STAR answers in German |
-| **Musikvermittlung case studies — three concrete programme sketches `↑ market: 10 job postings, 20 articles`** | Essential for sub-sector #1 (education programs) | Sketch three short concept papers (1 page each): (a) a Schulkonzert programme for primary-school children with Stuttgart Liederhalle as venue, (b) a Kinder-Klangwerkstatt format combining piano and music-history storytelling, (c) a Musikhochschule Stuttgart open-house programme for prospective students. Each should include target audience, format, partners, rough budget logic. | 1 h/wk | Three 1-page Musikvermittlung concept sketches in German |
+| **Musikvermittlung case studies — three concrete programme sketches `↑ market: 20 job postings, 20 articles`** | Essential for sub-sector #1 (education programs) | Sketch three short concept papers (1 page each): (a) a Schulkonzert programme for primary-school children with Stuttgart Liederhalle as venue, (b) a Kinder-Klangwerkstatt format combining piano and music-history storytelling, (c) a Musikhochschule Stuttgart open-house programme for prospective students. Each should include target audience, format, partners, rough budget logic. | 1 h/wk | Three 1-page Musikvermittlung concept sketches in German |
 | **Local cultural-sector networking sprint (Stuttgart region)** | Important for hidden BW cultural-sector job market | One concrete contact step per week: attend an info evening at Leonberger Kulturamt or Stadthalle Leonberg, write to a Musikhochschule Stuttgart alumni officer, or message one cultural-PM person on LinkedIn for a 20-minute Kennenlerngespräch. Track outcomes. | 0.5 h/wk · €20 | Networking tracker with ≥10 contacts and ≥3 conversations by end of phase 1 |
 | **DE cultural-sector governance literacy (KSK, GEMA, Fördermittel, Trägerschaft)** | Important for any role that touches funding or contracts | One topic per week, ~1 page of personal notes: (1) Künstlersozialkasse basics for employers, (2) GEMA tariffs and concert-organiser duties, (3) Fördermittel landscape in BW (Land BW, Stadt Stuttgart, Kulturstiftung des Bundes), (4) öffentliche vs. freie Träger, (5) typical Kulturamt budget structure, (6) Drittmittelantrag basics. | 1 h/wk | One-page note per topic, ~6 notes total |
 
