@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 14:51_
+_Mode: **External Transition** · Generated: 2026-05-13 16:10_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: physical_ai, functional_safety, embedded, robotics, software_defined_vehicle. Notable companies: MIPI Alliance, Figure AI, Dreame, Hyundai, Li Auto. See Section 2 for full analysis.
+Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: digital_twin, robotics, ai, functional_safety, adas. Notable companies: Tesla, Synapticon, Faraday Future, NEURA Robotics, Arm. See Section 2 for full analysis.
 
 ---
 
@@ -44,7 +44,13 @@ Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key ac
 
 ---
 
-## 3. Strong Signals
+## 3. Job Ads (score ≥ 6)
+
+_No job ads with score ≥ 6 found in the database._
+
+---
+
+## 4. Strong Signals
 
 ### Japan's Nidec suspected of over 1,000 cases of quality tampering  `🇬🇧 EN`
 - **Development:** 
@@ -197,7 +203,7 @@ Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key ac
 
 ---
 
-## 4. Weak Signals / Watchlist _(top 15 by actionability)_
+## 5. Weak Signals / Watchlist _(top 15 by actionability)_
 
 - **[VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html)** `🇩🇪 DE` (rel: 6.3 · act: 8.0) — Heise Auto — 2026-05-13
 - **[VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇩🇪 DE` (rel: 6.3 · act: 8.0) — Heise Online — 2026-05-13
@@ -219,7 +225,7 @@ _+ 245 further weak signals not shown. Main themes: automotive (143), robotics (
 
 ---
 
-## 5. Skill Priority Update
+## 6. Skill Priority Update
 
 | Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
 |---|---|---|---|---|---|---|
@@ -246,7 +252,7 @@ _+ 245 further weak signals not shown. Main themes: automotive (143), robotics (
 
 ---
 
-## 6. Recommended Learning Allocation for Next Week
+## 7. Recommended Learning Allocation for Next Week
 
 **Deep Focus — highest return on time this week**
 - **8 h:** 3–5 targeted applications, 1 recruiter/TÜV contact, LinkedIn signal check, track pipeline
@@ -264,7 +270,7 @@ _Weekly total: ~30 h (cap: 30 h). ⚠️ Cap applied. Prioritise Deep Focus item
 
 ---
 
-## 7. Career Positioning Advice
+## 8. Career Positioning Advice
 
 Based on this week's signals, your positioning in **functional safety + embedded AI systems** remains strategically sound.
 
@@ -277,7 +283,7 @@ Based on this week's signals, your positioning in **functional safety + embedded
 
 ---
 
-## 8. Risks and Hype to Ignore
+## 9. Risks and Hype to Ignore
 
 - **Generic GenAI / chatbot news:** Not relevant unless tied to safety-critical or embedded systems.
 - **Single-startup hype without hiring or technical signal:** Log it, but do not change skill priorities.
@@ -326,7 +332,7 @@ _Active signals this week: none this week._
 
 ---
 
-## 9. Source List _(top articles only)_
+## 10. Source List _(top articles only)_
 
 - [Japan's Nidec suspected of over 1,000 cases of quality tampering](https://asia.nikkei.com/business/companies/japan-s-nidec-suspected-of-over-1-000-cases-of-quality-tampering) — Nikkei Asia (2026-05-13)
 - [【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5) — GNews ZH: 机器人安全 (2026-05-13)

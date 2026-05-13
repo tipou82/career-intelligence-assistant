@@ -236,15 +236,20 @@ _JOB_AD_URL_PATTERNS = ("stellenmarkt",)
 _JOB_AD_TITLE_SUBSTRINGS = (
     "(m/w/d)", "(w/m/d)", "(m/f/d)", "(f/m/d)",
     "stellenausschreibung", "lehrauftrag",
+    "anzeige: it-jobs",
 )
 _JOB_AD_SUCHT_WORDS = (
     "projektmanager", "leiter", "koordinator", "referent",
+    "engineer", "ingenieur", "entwickler", "developer",
+    "architekt", "consultant",
 )
+_JOB_AD_JOB_BOARD_SOURCES = ("linkedin", "stepstone", "indeed")
 
 
-def _is_job_ad(title: str, url: str) -> bool:
+def _is_job_ad(title: str, url: str, source_name: str = "") -> bool:
     title_l = title.lower()
     url_l = url.lower()
+    source_l = source_name.lower()
     if any(p in url_l for p in _JOB_AD_URL_PATTERNS):
         return True
     if any(s in title_l for s in _JOB_AD_TITLE_SUBSTRINGS):
@@ -252,6 +257,8 @@ def _is_job_ad(title: str, url: str) -> bool:
     if "sucht" in title_l and any(w in title_l for w in _JOB_AD_SUCHT_WORDS):
         return True
     if "schreibt" in title_l and "stellen aus" in title_l:
+        return True
+    if "/jobs/" in url_l and any(s in source_l for s in _JOB_AD_JOB_BOARD_SOURCES):
         return True
     return False
 
@@ -309,7 +316,7 @@ def classify_all(
             career_mode=career_mode,
         )
         strength = _signal_strength(scores["total"])
-        job_ad = _is_job_ad(title, article.get("url", ""))
+        job_ad = _is_job_ad(title, article.get("url", ""), article.get("source_name", ""))
 
         update_article_classification(
             article_id=article["id"],
