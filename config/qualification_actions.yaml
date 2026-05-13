@@ -1,628 +1,528 @@
-# Qualification Actions Configuration
-# Career transition sprint configuration for external-market readiness.
-# Context: senior Bosch functional safety / system safety engineer in Drehscheibe;
-# focus is broad external transition in Germany/Europe. Bosch Japan remains optional.
+# Qualification Actions Configuration — cultural-PM transition sprint
+#
+# Context: cultural-project-manager re-entry into the German labour market
+# (Stuttgart / Leonberg region), 15h weekly budget, family phase with two
+# small children. Two PM certifications already in progress.
 
 qualification_strategy:
-  target_person: "Max Mustermann"
+  target_person: "Xi"
   career_mode: "external_transition"
-  weekly_hours_cap: 30
-  weekly_hours_stretch_cap: 35
-  daily_deep_focus_hours: 6
+  weekly_hours_cap: 15
+  weekly_hours_stretch_cap: 18
+  daily_deep_focus_hours: 2
   currency: "EUR"
   planning_date: "2026-05-13"
 
   current_situation: >
-    Full-time available for qualification, job search, portfolio work and interview preparation,
-    while also having family responsibilities with two small children. Bosch Japan remains a
-    still-possible option but is not the focus. The main objective is to secure external-market
-    employability and income stability in Germany/Europe.
+    Re-entering the German cultural-sector labour market after a 6.7-year
+    family phase. Two children (childcare secured). Telc B2 German achieved
+    with spoken fluency lagging. Google Project Manager certificate and
+    Professional Scrum Master I in progress. Local focus on Leonberg,
+    Stuttgart, Böblingen, Ludwigsburg; mid-level cultural-PM roles in
+    education programs, event production, music institutions and museums
+    (in that priority order).
 
   strategic_positioning: >
-    Senior System Safety / Functional Safety Architect for safety-critical embedded systems,
-    ADAS, robotics, industrial automation and AI-enabled systems.
+    Cultural Project Manager with international cultural-administration
+    background (China National Symphony Orchestra; Master of Arts in
+    Music & Cultural Administration, France), modern PM methodology
+    (Google PM + Scrum), and trilingual (CN/DE/EN) profile.
 
   principle: >
-    Prioritize qualifications and outputs that improve external employability within 3–6 months.
-    Prefer visible proof such as CV updates, LinkedIn positioning, interview case studies,
-    certification milestones and portfolio artifacts. Avoid overclaiming: conceptual understanding,
-    course completion and practical project experience must be clearly distinguished.
+    Prioritise qualifications and outputs that improve external
+    employability within 3–6 months. Visible proof matters more than
+    additional theory: complete pending certificates, produce bilingual
+    portfolio artefacts, and structure interview stories around concrete
+    CNSO project examples reframed in German PM vocabulary. Be honest
+    about practice gaps (DE-specific funding, KSK, GEMA, spoken German
+    pressure-test).
 
   coaching_guardrails:
-    - "Protect family income: prioritize senior roles and transferable safety expertise over risky junior reskilling."
-    - "Do not let ROS2, C++, QNX or AI implementation work dominate over job search and interview conversion."
-    - "Use CMSE as a robotics/industrial-automation bridge, not as a complete identity change."
-    - "Never claim professional QNX experience; phrase it as QNX/POSIX supervisor concept understanding."
-    - "Keep Bosch Japan optional, not central."
-    - "Every weekly recommendation must produce a visible output or improve application conversion."
-    - "Do not recommend expensive certificates unless they clearly improve target-role access."
-
-  cmse_milestone:
-    name: "CMSE training and certification"
-    provider_context: "TÜV NORD / PILZ"
-    date_start: "2026-06-15"
-    date_end: "2026-06-18"
-    career_relevance: "Robotics safety, machinery safety, industrial automation and ISO 13849 transition credibility"
-    pre_training_target_rating: 4
-    after_training_target_rating: 5
-    three_month_target_rating: 6
+    - "Spoken German fluency is the single biggest interview risk — protect that learning time first."
+    - "Finish the in-progress Google PM and Scrum Master I before starting another course."
+    - "Reframe CNSO work in DE PM vocabulary — do not present Xi as 'former Chinese PR' but as 'multilingual cultural project manager'."
+    - "Education programs and event production are the primary sub-sectors — do not let museum or pure-PR vacancies dominate the pipeline."
+    - "Do not pursue further academic degrees during the sprint — the existing French M.A. plus PM certs is enough."
+    - "Local first — Leonberg / Stuttgart / Böblingen / Ludwigsburg — before broader DE/EU."
+    - "Family time is non-negotiable; weekly plan must stay within 15h cap."
 
   phase_plan:
-    pre_cmse:
-      date_until: "2026-06-14"
-      goal: "External market readiness plus CMSE preparation"
+    pre_certifications:
+      date_until: "2026-08-15"
+      goal: "Complete Google PM + Scrum Master I, rebuild bilingual portfolio, start application pipeline"
       weekly_allocation_hours:
-        external_job_search_pipeline: 8
-        interview_preparation: 5
-        cmse_iso_13849_preparation: 7
-        cv_linkedin_portfolio: 4
-        functional_safety_case_studies: 3
-        ai_safety_sotif_iso_pas_8800: 1.5
-        ros2_qnx_linux_demonstrator: 1.5
-    cmse_week:
-      date_start: "2026-06-15"
-      date_end: "2026-06-18"
-      goal: "Pass certification and extract interview-relevant machinery safety language"
-      daily_note_template:
-        - "Key concepts learned today"
-        - "Concepts transferable from ISO 26262"
-        - "Concepts different from ISO 26262"
-        - "Interview wording"
-        - "Portfolio application"
-    post_cmse:
-      date_from: "2026-06-19"
-      goal: "Convert CMSE into external-market value"
+        applications_and_outreach: 4
+        spoken_german_practice: 3
+        google_pm_and_scrum_certifications: 3
+        cv_linkedin_portfolio: 2
+        cultural_pm_dach_practice: 1
+        musikvermittlung_event_production: 1.5
+        networking_local: 0.5
+    post_certifications:
+      date_from: "2026-08-16"
+      goal: "Convert certifications into offers; widen pipeline"
       weekly_allocation_hours:
-        applications_and_recruiters: 10
-        interview_preparation: 5
-        cmse_practical_consolidation: 4
-        cv_linkedin_portfolio_update: 4
-        functional_safety_case_studies: 3
-        ai_safety_sotif_iso_pas_8800: 2
-        ros2_qnx_linux_demonstrator: 2
+        applications_and_outreach: 5
+        spoken_german_practice: 3
+        interview_rehearsal: 2
+        cv_linkedin_portfolio_update: 2
+        musikvermittlung_event_production: 2
+        networking_local: 1
 
   candidate_profile:
-    name: "Max Mustermann"
+    name: "Xi"
     nationality: "Chinese"
-    current_location: "Germany"
-    highest_education: "Master of Science in Electrical / Electronics Engineering, Technical University of Munich"
-    years_of_work_experience: 19
-    current_employer_context: "Robert Bosch GmbH; currently in Drehscheibe/internal transition context"
-    previous_field: "Automotive embedded systems, AUTOSAR, HiL, functional safety, system safety, platform safety"
+    work_permit: "unrestricted (Germany)"
+    current_location: "Leonberg, Baden-Württemberg"
+    family_status: "married, two small children (childcare secured)"
+    highest_education: "Master of Arts in Music & Cultural Administration, Université d'Evry val d'Essonne, France (2014)"
+    additional_education:
+      - "Diplôme d'Études Musicales (Piano), Conservatoire à Rayonnement Départemental Evry, 2012"
+      - "Études musicales (Piano), Conservatoire à Rayonnement Régional Perpignan, 2008–2011"
+      - "Bachelor of Arts in Musicology, Xinghai Conservatory of Music, Guangzhou, 2008"
+    years_of_work_experience: 5
+    career_gap: "August 2019 – ongoing (family phase + German language acquisition)"
+    previous_field: "Cultural project management, PR & media work at China National Symphony Orchestra (Beijing)"
 
     language_levels:
-      mandarin: "native"
-      german: "C1/C2 professional working proficiency; goal is C2-level rhetorical precision"
-      english: "C1/C2 professional working proficiency"
-      japanese: "JLPT N1; business communication possible, still improving formal keigo and interview fluency"
+      chinese: "native (editorial level)"
+      german: "Telc B2 written; spoken below written — target B2+/C1 spoken confidence"
+      english: "B1"
+      french: "basic conversational (lapsed since 2014)"
 
-    current_certificates:
-      - "JLPT N1"
-      - "IBM Generative AI Engineering Specialization, Coursera, 2024"
-      - "DeepLearning.AI Deep Learning Specialization, 2018"
-      - "CMSE scheduled for 2026-06-15 to 2026-06-18"
+    current_certificates_in_progress:
+      - "Google Project Manager (Coursera) — in progress, target completion 2026 Q2/Q3"
+      - "Professional Scrum Master I (PSM I) — in progress, target exam 2026 Q2/Q3"
+
+    completed_certificates:
+      - "Telc B2 German"
+      - "Diplôme d'Études Musicales (Piano)"
 
     known_profile_gaps:
-      - "No practical QNX project experience; only conceptual QNX/POSIX supervisor understanding"
-      - "Limited practical ISO 13849 / machinery safety project experience before CMSE"
-      - "ROS2 and modern C++ are portfolio-level skills, not yet senior professional robotics software skills"
-      - "SOTIF and ISO/PAS 8800 are conceptually understood but not yet deep project ownership areas"
-      - "External-market CV, LinkedIn and application pipeline need to be sharpened for Germany/Europe"
-      - "Need interview-ready senior case studies that translate Bosch platform safety experience into external value"
-      - "Need broader company targeting outside Bosch, especially robotics, industrial automation, safety consulting, TÜV/assessment, aerospace and rail"
+      - "Spoken German fluency below written B2 (Xi's own #1 priority)"
+      - "Career gap since 2019 — needs reframing as deliberate family + skills phase"
+      - "No DE work history — recruiters use this as a filter"
+      - "DE cultural-sector governance vocabulary (Trägerschaft, KSK, GEMA, Fördermittel) is theoretical"
+      - "Local Stuttgart-area cultural network is thin"
+      - "Pending PM certificates are not yet completed (cannot yet be claimed)"
 
     core_strengths:
-      - "ISO 26262 functional safety experience in automotive embedded systems"
-      - "System safety requirements and technical safety concept work"
-      - "Safety mechanism architecture and safety trade-off reasoning"
-      - "Platform safety experience with SoC, PMIC, reset, safe state, diagnostics and FFI concepts"
-      - "Requirements engineering, traceability and review experience with DOORS NG"
-      - "MBSE/SysML understanding and architecture documentation"
-      - "Multilingual profile: Chinese, German, English and Japanese"
-      - "Current portfolio project: safety-supervised edge AI demonstrator using Raspberry Pi, ROS2, Linux and QNX-inspired supervisor concepts"
+      - "Five years' practical cultural project work at a national symphony orchestra"
+      - "Master's degree in music and cultural administration (France)"
+      - "Lead responsibility for press, media and social-media at CNSO"
+      - "Multilingual (Chinese native, German B2, English B1, French basic)"
+      - "Conservatory-level musical training (piano, musicology) — gives credibility with artists"
+      - "Two PM certifications actively in progress — signals proactive re-entry"
+      - "Unrestricted DE work permit; family logistics secured"
 
     self_ratings_0_to_10:
-      functional_safety_iso26262: 8
-      system_safety_architecture: 8
-      safety_requirements_engineering: 8
-      mbse_sysml: 7
-      sotif_iso21448: 5
-      iso_pas_8800: 4
-      iso_13849_cmse_current: 3
-      qnx_posix_supervisor_concepts: 3
-      linux_practical_skills: 4.5
-      ros2: 4
-      cpp20_safety_logic: 3.5
-      python_automation: 5
-      ai_perception_monitoring: 4
-      github_portfolio_documentation: 5
-      interview_communication: 6
+      cultural_project_management_dach: 5
+      pm_certification_pipeline: 3
+      pr_media_cultural: 7
+      music_education_musikvermittlung: 4
+      event_production_dach: 5
+      museum_exhibition: 2
+      german_spoken: 4
+      german_written: 6
+      english: 5
+      chinese: 10
+      french: 3
+      ms_office: 7
+      ai_tools_productivity: 5
+      local_network_stuttgart: 2
 
   target_roles:
-    - title: "Senior Functional Safety Engineer / Functional Safety Architect"
-      sector: "Automotive, embedded systems, Tier-1, OEM, engineering service providers"
+    - title: "Projektmanager*in Kultur"
+      sector: "Konzerthäuser, Festivals, Musikschulen, Kulturämter"
       typical_requirements:
-        - "ISO 26262 project experience"
-        - "Safety concepts, safety requirements and safety mechanisms"
-        - "System/software/hardware interface understanding"
-        - "Stakeholder communication and safety argumentation"
-    - title: "System Safety Engineer / Safety Architect"
-      sector: "Safety-critical embedded systems, ADAS, robotics, industrial automation"
+        - "Projektkoordination und Schnittstellenmanagement"
+        - "Veranstaltungsplanung und -abwicklung"
+        - "Stakeholderkommunikation in DE"
+        - "Sicherer Umgang mit MS Office"
+    - title: "Bildungsreferent*in Kulturelle Bildung / Musikvermittlung"
+      sector: "Konzerthäuser, Musikhochschulen, Musikschulen, Bildungsstiftungen"
       typical_requirements:
-        - "Risk-based safety engineering"
-        - "Architecture-level trade-off reasoning"
-        - "Requirements traceability"
-        - "Cross-domain hardware/software/system collaboration"
-    - title: "Machine Safety / Robotics Safety Engineer"
-      sector: "Robotics, machinery, industrial automation"
+        - "Konzeption und Umsetzung von Bildungsformaten"
+        - "Kooperation mit Schulen und Kitas"
+        - "Pädagogisches Grundverständnis"
+        - "Musikalische Sachkompetenz"
+    - title: "Veranstaltungs- und Projektassistenz Kultur"
+      sector: "Eventagenturen, Festivals, Konzertdirektionen, Kulturämter"
       typical_requirements:
-        - "ISO 13849, IEC 62061 or IEC 61508 awareness"
-        - "Safety functions, PLr/PL, Categories, MTTFd, DCavg and CCF"
-        - "Robot cell or machinery risk assessment"
-        - "CMSE or comparable certification preferred"
-    - title: "Safety Consultant / Assessor"
-      sector: "TÜV, certification bodies, engineering consulting, safety assessment"
+        - "Operative Veranstaltungsabwicklung"
+        - "Künstlerbetreuung"
+        - "Reise- und Logistikplanung"
+        - "Belastbarkeit am Veranstaltungstag"
+    - title: "Pressereferent*in / Kommunikation"
+      sector: "Kulturinstitutionen, Theater, Orchester, Museen"
       typical_requirements:
-        - "Strong safety standard knowledge"
-        - "Customer-facing communication"
-        - "Safety case and assessment logic"
-        - "Ability to translate across automotive, machinery and embedded domains"
-    - title: "Embedded / Platform Safety Architect"
-      sector: "Automotive SDV, embedded platforms, SoC-based safety systems"
+        - "Pressetexte und Programmkommunikation"
+        - "Social-Media-Betreuung"
+        - "Newsletter und Webseite"
+        - "Englischkenntnisse"
+    - title: "Education / Outreach Manager"
+      sector: "Internationale Konzerthäuser, Stiftungen, Festivals"
       typical_requirements:
-        - "Embedded platform safety"
-        - "SoC/PMIC/reset/safe-state/diagnostics reasoning"
-        - "Freedom from interference concepts"
-        - "AUTOSAR, Linux/QNX or comparable embedded-platform awareness"
-    - title: "ADAS / SOTIF / AI-enabled Safety Engineer"
-      sector: "ADAS, automated driving, safety-critical AI-enabled systems"
-      typical_requirements:
-        - "ISO 26262 and SOTIF understanding"
-        - "ODD, perception limitations, monitoring and fallback concepts"
-        - "AI outside safety-critical decision path where necessary"
-        - "Safety-supervised architecture concepts"
+        - "Konzeption von Outreach- und Education-Programmen"
+        - "Audience development"
+        - "Englischkenntnisse"
+        - "Erfahrung mit Drittmittelförderung"
 
 qualification_actions:
+
   - id: "external_job_search_pipeline"
     market_signal_keywords:
-      job_signals: ["functional_safety", "safety_architecture", "system_safety", "safety architect", "safety manager"]
-      articles:    ["hiring", "layoffs", "restructuring", "job opening", "wir suchen"]
-    name: "External job search pipeline for senior safety roles"
+      job_signals: ["kulturmanagement", "projektmanagement_kultur", "bildungsreferent", "veranstaltungsmanagement"]
+      articles:    ["hiring", "stellenausschreibung", "wir suchen", "stellenangebot", "kulturmanager"]
+    name: "Weekly application pipeline for DE cultural-PM roles"
     scores:
-      market_frequency: 0.95
+      market_frequency: 0.85
       target_role_relevance: 1.00
       profile_gap: 0.90
       evidence_output: 0.90
-      feasibility: 0.90
-      cost_time_penalty: 0.05
+      feasibility: 0.95
+      cost_time_penalty: 0.00
     override_category: "must_have"
-    profile_gap_addressed: "External-market transition requires a structured application pipeline beyond Bosch"
+    profile_gap_addressed: "No active application pipeline yet — without applications, qualification work does not convert"
     recommended_action: >
-      Build and maintain an application tracker with target companies, job titles, application status,
-      recruiter contacts, interview feedback and next actions. Apply weekly to carefully selected senior
-      safety roles in Germany/Europe rather than waiting for internal Bosch options.
-    expected_visible_output: "Application tracker with at least 30 target companies and 10 active applications"
-    estimated_weekly_hours: 8
+      Maintain a tracker with target organisations, roles, application
+      status and contacts. Send three tailored applications and one active
+      outreach (recruiter, alumni, hiring manager) per week, prioritising
+      Stuttgart/Leonberg/Böblingen/Ludwigsburg. Focus on education programs
+      and event production first.
+    expected_visible_output: "Application tracker with ≥20 target organisations and ≥8 active applications by end of phase 1"
+    estimated_weekly_hours: 4
     estimated_cost_eur: 0
-    estimated_duration_weeks: 12
-    cv_linkedin_usage: "Use market feedback to continuously tune CV and LinkedIn wording"
-    interview_usage: "Clarifies target narrative and salary/seniority positioning"
-    target_role_relevance_note: "This is the highest-priority action for income protection and transition execution"
-    reason_for_priority: "Without applications and recruiter outreach, qualification work does not convert into offers"
+    estimated_duration_weeks: 13
+    cv_linkedin_usage: "Continuously refined based on application feedback"
+    interview_usage: "Tracker informs the conversation about which roles Xi has researched"
+    target_role_relevance_note: "Highest priority — re-entry depends on consistent application activity"
+    reason_for_priority: "Conversion to offers requires applications, not more theory"
     reason_for_deferral_if_any: null
 
-  - id: "cv_linkedin_safety_architect_positioning"
+  - id: "spoken_german_intensive"
     market_signal_keywords:
-      job_signals: ["functional_safety", "system_safety", "safety_architecture"]
-      articles:    ["functional safety", "safety architect", "senior safety"]
-    name: "CV and LinkedIn repositioning as Senior Safety Architect"
+      job_signals: ["kulturmanagement", "projektmanagement_kultur"]
+      articles:    ["interview", "vorstellungsgespräch", "sprachkurs", "tandem"]
+    name: "Spoken German practice (tandem, conversation course, coaching)"
     scores:
-      market_frequency: 0.95
+      market_frequency: 0.90
       target_role_relevance: 0.95
-      profile_gap: 0.85
+      profile_gap: 0.95
+      evidence_output: 0.65
+      feasibility: 0.85
+      cost_time_penalty: 0.15
+    override_category: "must_have"
+    profile_gap_addressed: "Spoken German below written B2 is Xi's own #1 priority and the single biggest interview risk"
+    recommended_action: >
+      Combine two channels per week: (a) a structured group (VHS Leonberg
+      or Stuttgart cultural-language tandem) and (b) a 1-on-1 paid Sprachcoach
+      or italki tutor once a week. Always practise out loud — never silent
+      reading. Build a personal phrasebook of cultural-sector vocabulary
+      (Pressemitteilung, Programmübersicht, Drittmittel, Künstlerhonorar,
+      Bildungspartnerschaft, etc.).
+    expected_visible_output: "Weekly phrasebook entries; one recorded mock-interview answer per week"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 80
+    estimated_duration_weeks: 26
+    cv_linkedin_usage: "Improves performance in interviews and networking calls — not a CV line"
+    interview_usage: "Directly affects every interview outcome"
+    target_role_relevance_note: "Required across all target roles"
+    reason_for_priority: "All other strengths fail to convert if spoken German falters under pressure"
+    reason_for_deferral_if_any: null
+
+  - id: "google_pm_scrum_certifications"
+    market_signal_keywords:
+      job_signals: ["projektmanagement_kultur", "veranstaltungsmanagement"]
+      articles:    ["scrum master", "agile", "project manager certification", "pmp", "pmi"]
+    name: "Complete Google Project Manager + Professional Scrum Master I"
+    scores:
+      market_frequency: 0.65
+      target_role_relevance: 0.80
+      profile_gap: 0.75
+      evidence_output: 0.90
+      feasibility: 0.85
+      cost_time_penalty: 0.15
+    override_category: "must_have"
+    profile_gap_addressed: "Two certifications already in progress but not yet completed — completion adds visible credibility and reframes the family-phase gap"
+    recommended_action: >
+      Set explicit weekly module targets to finish Google PM by ~Q2 2026 and
+      pass PSM I by ~Q3 2026. Book exam dates as soon as preparation is at
+      ~80%. After passing, add to CV (Zertifikate), LinkedIn (Lizenzen &
+      Zertifikate) and cover letters.
+    expected_visible_output: "Two finished certificates (PDFs) listed on CV and LinkedIn"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 150
+    estimated_duration_weeks: 16
+    cv_linkedin_usage: "List under Zertifikate; reference in summary line"
+    interview_usage: "Answers 'what have you been doing during the family phase' with concrete proof"
+    target_role_relevance_note: "Strongest signal for project-management roles outside the narrow Kulturmanagement track"
+    reason_for_priority: "Half-finished credentials are worth little; finishing them is the highest-leverage learning task"
+    reason_for_deferral_if_any: null
+
+  - id: "cv_linkedin_de_cultural_pm"
+    market_signal_keywords:
+      job_signals: ["kulturmanagement", "projektmanagement_kultur"]
+      articles:    ["kulturmanagement", "bewerbung", "linkedin tipps"]
+    name: "Bilingual CV + LinkedIn positioning as Cultural Project Manager"
+    scores:
+      market_frequency: 0.90
+      target_role_relevance: 0.90
+      profile_gap: 0.80
       evidence_output: 0.95
       feasibility: 0.95
       cost_time_penalty: 0.00
     override_category: "must_have"
-    profile_gap_addressed: "Current profile must be externally readable and not too Bosch-internal"
+    profile_gap_addressed: "CV currently reads as 'former Chinese-orchestra PR' — needs translation into DE cultural-PM vocabulary"
     recommended_action: >
-      Create one English master CV, one German CV and one LinkedIn profile version using the headline
-      'Senior Functional Safety / System Safety Architect'. Emphasize ISO 26262, safety architecture,
-      safety requirements, safety mechanisms, embedded platform safety, MBSE, and transition toward
-      robotics, industrial automation and AI-enabled safety-critical systems.
-    expected_visible_output: "English CV, German CV and updated LinkedIn profile"
-    estimated_weekly_hours: 4
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 2
-    cv_linkedin_usage: "Primary output used in all applications"
-    interview_usage: "Ensures recruiter and interviewer understand senior safety value immediately"
-    target_role_relevance_note: "Directly required for every external application"
-    reason_for_priority: "High leverage, low cost, immediate effect"
-    reason_for_deferral_if_any: null
-
-  - id: "interview_case_studies_senior_safety"
-    market_signal_keywords:
-      job_signals: ["functional_safety", "safety_architecture", "safety case"]
-      articles:    ["functional safety", "safety architecture", "safety concept"]
-    name: "Three senior safety interview case studies"
-    scores:
-      market_frequency: 0.90
-      target_role_relevance: 0.95
-      profile_gap: 0.85
-      evidence_output: 0.90
-      feasibility: 0.90
-      cost_time_penalty: 0.00
-    override_category: "must_have"
-    profile_gap_addressed: "Need interview-defensible evidence for senior safety architecture value"
-    recommended_action: >
-      Prepare three one-page case studies: 1) S32G/platform safety and safe-state/reset concept,
-      2) Mobileye/TDA4 missing-NMI workaround with FIQ plus cyclic monitoring, and 3) safety-supervised
-      edge AI demonstrator with deterministic runtime safety supervision. Use STAR/CAR structure and
-      emphasize constraints, decisions, safety argumentation and business impact.
-    expected_visible_output: "Three one-page interview case-study notes"
-    estimated_weekly_hours: 5
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 3
-    cv_linkedin_usage: "Convert into achievement bullets and LinkedIn project descriptions"
-    interview_usage: "Core evidence for seniority, problem-solving and architecture judgment"
-    target_role_relevance_note: "Relevant to all target roles, especially safety architect and consultant roles"
-    reason_for_priority: "Interview conversion depends more on strong stories than on another generic course"
-    reason_for_deferral_if_any: null
-
-  - id: "cmse_iso_13849_preparation"
-    market_signal_keywords:
-      job_signals: ["iso_13849", "cmse", "machinery_safety"]
-      articles:    ["iso 13849", "machinery safety", "performance level", "cmse", "safety function"]
-    name: "CMSE / ISO 13849 preparation before 15 June 2026"
-    scores:
-      market_frequency: 0.75
-      target_role_relevance: 0.85
-      profile_gap: 0.90
-      evidence_output: 0.85
-      feasibility: 0.80
-      cost_time_penalty: 0.20
-    override_category: "must_have"
-    profile_gap_addressed: "Limited practical machinery safety and ISO 13849 experience before CMSE"
-    recommended_action: >
-      Prepare before CMSE by studying safety functions, PLr determination, Categories B/1/2/3/4,
-      MTTFd, DCavg, CCF and SISTEMA basics. Focus on understanding and transfer from ISO 26262,
-      not on memorizing every formula. Training/certification is scheduled for 2026-06-15 to 2026-06-18.
-    expected_visible_output: "CMSE preparation notes and later CMSE certificate if passed"
-    estimated_weekly_hours: 7
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 5
-    cv_linkedin_usage: "Before course: 'CMSE certification scheduled June 2026'; after passing: list certificate"
-    interview_usage: "Explain how ISO 26262 experience transfers to machinery and robotics safety"
-    target_role_relevance_note: "High relevance for robotics, machinery and industrial automation safety roles"
-    reason_for_priority: "Fixed milestone on 15 June; improves external-market breadth"
-    reason_for_deferral_if_any: null
-
-  - id: "post_cmse_practical_consolidation"
-    market_signal_keywords:
-      job_signals: ["iso_13849", "cmse", "robotics"]
-      articles:    ["iso 13849", "machinery safety", "collaborative robot"]
-    name: "Post-CMSE machinery safety mini-case and transfer note"
-    scores:
-      market_frequency: 0.70
-      target_role_relevance: 0.85
-      profile_gap: 0.85
-      evidence_output: 0.90
-      feasibility: 0.85
-      cost_time_penalty: 0.00
-    override_category: "high_roi"
-    profile_gap_addressed: "Certification alone is weaker than practical, interview-defensible application"
-    recommended_action: >
-      After CMSE, create one robot-cell safety function mini-case and one portfolio note titled
-      'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard,
-      safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea.
-    expected_visible_output: "docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case"
-    estimated_weekly_hours: 4
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 3
-    cv_linkedin_usage: "Use as portfolio evidence for robotics/machinery safety transition"
-    interview_usage: "Shows ability to apply CMSE concepts rather than merely attending the course"
-    target_role_relevance_note: "Especially relevant for robotics, industrial automation and consulting roles"
-    reason_for_priority: "Converts certificate into usable market evidence"
-    reason_for_deferral_if_any: "Start after CMSE training week"
-
-  - id: "functional_safety_architecture_refresh"
-    market_signal_keywords:
-      job_signals: ["functional_safety", "iso_26262", "safety_architecture"]
-      articles:    ["functional safety", "iso 26262", "safety mechanism", "safety concept"]
-    name: "Functional safety and system safety architecture refresh"
-    scores:
-      market_frequency: 0.95
-      target_role_relevance: 0.95
-      profile_gap: 0.35
-      evidence_output: 0.75
-      feasibility: 0.90
-      cost_time_penalty: 0.00
-    override_category: "high_roi"
-    profile_gap_addressed: "Strong existing skill must be packaged as external-market value"
-    recommended_action: >
-      Refresh and document core safety architecture topics: safety mechanisms, safe states,
-      degraded modes, diagnostics, FFI, safety requirements, technical safety concepts,
-      PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe,
-      non-confidential interview language.
-    expected_visible_output: "Senior safety architecture notes and CV/interview bullet points"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 6
-    cv_linkedin_usage: "Supports senior safety architect positioning"
-    interview_usage: "Foundation for technical interviews"
-    target_role_relevance_note: "Directly relevant to all senior functional safety and system safety roles"
-    reason_for_priority: "This is the candidate's strongest market differentiator"
-    reason_for_deferral_if_any: null
-
-  - id: "sotif_iso_pas_8800_ai_safety_bridge"
-    market_signal_keywords:
-      job_signals: ["sotif", "iso_pas_8800", "adas"]
-      articles:    ["sotif", "iso/pas 8800", "ai safety automotive", "ai regulation"]
-    name: "SOTIF / ISO/PAS 8800 / AI safety bridge"
-    scores:
-      market_frequency: 0.65
-      target_role_relevance: 0.75
-      profile_gap: 0.70
-      evidence_output: 0.65
-      feasibility: 0.75
-      cost_time_penalty: 0.10
-    override_category: "high_roi"
-    profile_gap_addressed: "Need credible but not overclaimed AI-enabled safety positioning"
-    recommended_action: >
-      Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring,
-      deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to
-      the principle that AI/LLMs should not be part of the runtime safety decision path.
-    expected_visible_output: "Two-page AI-enabled safety concept note linked to portfolio project"
+      Produce three artefacts: (1) German master CV with headline
+      "Projektmanagerin Kultur — Bildung, Veranstaltung, Kommunikation",
+      (2) English short CV for international institutions, (3) LinkedIn
+      profile (DE + EN sections) with three concrete CNSO project examples
+      reframed in DE PM vocabulary (Projektkoordination, Künstlerbetreuung,
+      Pressearbeit, Bildungsformate).
+    expected_visible_output: "DE CV, EN CV, LinkedIn profile, three reframed project examples (1-page each)"
     estimated_weekly_hours: 2
     estimated_cost_eur: 0
     estimated_duration_weeks: 6
-    cv_linkedin_usage: "Mention as strategic extension, not as deep production experience"
-    interview_usage: "Answer questions about ADAS, SOTIF and AI safety trade-offs"
-    target_role_relevance_note: "Useful for ADAS, automated-driving and AI-enabled embedded safety roles"
-    reason_for_priority: "Differentiates the candidate while keeping focus on safety architecture"
+    cv_linkedin_usage: "Primary output used in every application"
+    interview_usage: "Provides the structured examples interviewers will probe"
+    target_role_relevance_note: "Directly required for every target role"
+    reason_for_priority: "High leverage, low cost, immediate effect on application response rate"
     reason_for_deferral_if_any: null
 
-  - id: "github_portfolio_safety_supervised_ai_demo"
+  - id: "musikvermittlung_case_studies"
     market_signal_keywords:
-      job_signals: ["ros2", "robotics", "embedded_ai"]
-      articles:    ["ros2", "physical ai", "humanoid", "embedded ai", "robotics safety"]
-    name: "Polish safety-supervised edge AI portfolio demonstrator"
+      job_signals: ["bildungsreferent", "musikvermittlung"]
+      articles:    ["musikvermittlung", "konzertpädagogik", "kinderkonzert", "kulturelle bildung"]
+    name: "Musikvermittlung case studies — three concrete programme sketches"
     scores:
       market_frequency: 0.55
-      target_role_relevance: 0.75
-      profile_gap: 0.65
-      evidence_output: 0.95
-      feasibility: 0.75
-      cost_time_penalty: 0.05
-    override_category: "high_roi"
-    profile_gap_addressed: "Need visible proof of future-facing AI/robotics safety positioning"
-    recommended_action: >
-      Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram,
-      traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation
-      over endless implementation depth.
-    expected_visible_output: "Interview-ready GitHub repository and portfolio summary"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 8
-    cv_linkedin_usage: "Add selected project link and concise project description"
-    interview_usage: "Demonstrates initiative and ability to connect safety architecture with AI-enabled systems"
-    target_role_relevance_note: "Relevant for robotics, embedded AI safety and safety architecture roles"
-    reason_for_priority: "Visible proof is valuable, but it should not displace applications"
-    reason_for_deferral_if_any: null
-
-  - id: "linkedin_recruiter_networking"
-    market_signal_keywords:
-      job_signals: ["functional_safety", "safety_architecture"]
-      articles:    ["hiring", "layoffs", "restructuring", "talent shortage"]
-    name: "LinkedIn recruiter and professional networking sprint"
-    scores:
-      market_frequency: 0.85
       target_role_relevance: 0.85
-      profile_gap: 0.80
-      evidence_output: 0.70
-      feasibility: 0.90
+      profile_gap: 0.75
+      evidence_output: 0.85
+      feasibility: 0.85
       cost_time_penalty: 0.00
     override_category: "high_roi"
-    profile_gap_addressed: "Need broader external professional network outside Bosch"
+    profile_gap_addressed: "Education programs are sub-sector #1 but Xi has no DE-side practical Musikvermittlung project on file"
     recommended_action: >
-      Contact 5–10 relevant recruiters, hiring managers or safety professionals per week.
-      Use a concise message focused on senior safety architecture, ISO 26262, platform safety,
-      CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles.
-    expected_visible_output: "Networking tracker with contacts, replies and follow-up actions"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 12
-    cv_linkedin_usage: "Improves profile visibility and recruiter inbound probability"
-    interview_usage: "Provides market feedback and possible referral channels"
-    target_role_relevance_note: "Important for hidden job market and senior roles"
-    reason_for_priority: "Many senior roles are filled via recruiters or referrals"
-    reason_for_deferral_if_any: null
-
-  - id: "ros2_practical_basics"
-    market_signal_keywords:
-      job_signals: ["ros2", "robotics"]
-      articles:    ["ros2", "robotics", "humanoid", "physical ai"]
-    name: "ROS2 practical basics for safety-supervised robotics demonstrator"
-    scores:
-      market_frequency: 0.60
-      target_role_relevance: 0.55
-      profile_gap: 0.75
-      evidence_output: 0.75
-      feasibility: 0.65
-      cost_time_penalty: 0.05
-    override_category: "nice_to_have"
-    profile_gap_addressed: "ROS2 is useful for robotics credibility but not core senior safety value"
-    recommended_action: >
-      Continue ROS2 only at portfolio-support level: nodes, topics, launch files, fault injection and monitoring.
-      Do not attempt to become a senior ROS2 developer during the transition sprint.
-    expected_visible_output: "Working ROS2 demo elements and concise documentation"
-    estimated_weekly_hours: 1.5
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 12
-    cv_linkedin_usage: "List as portfolio experience, not professional robotics software experience"
-    interview_usage: "Shows technical curiosity and enough practical understanding to collaborate with robotics teams"
-    target_role_relevance_note: "Useful mainly for robotics-oriented roles"
-    reason_for_priority: "Helpful, but secondary to safety architecture and job search"
-    reason_for_deferral_if_any: "Keep time-boxed; do not let it dominate"
-
-  - id: "qnx_posix_supervisor_concepts"
-    market_signal_keywords:
-      job_signals: ["qnx", "embedded"]
-      articles:    ["qnx", "software-defined vehicle", "rtos"]
-    name: "QNX / POSIX supervisor concept consolidation"
-    scores:
-      market_frequency: 0.45
-      target_role_relevance: 0.55
-      profile_gap: 0.70
-      evidence_output: 0.65
-      feasibility: 0.60
-      cost_time_penalty: 0.10
-    override_category: "nice_to_have"
-    profile_gap_addressed: "No practical QNX experience; only conceptual understanding"
-    recommended_action: >
-      Document QNX-inspired supervisor concepts using POSIX/Linux implementation where available.
-      State honestly that this is conceptual and demonstrator-level, not professional QNX project experience.
-    expected_visible_output: "QNX/POSIX supervisor concept note in portfolio"
+      Sketch three short concept papers (1 page each): (a) a Schulkonzert
+      programme for primary-school children with Stuttgart Liederhalle as
+      venue, (b) a Kinder-Klangwerkstatt format combining piano and
+      music-history storytelling, (c) a Musikhochschule Stuttgart
+      open-house programme for prospective students. Each should include
+      target audience, format, partners, rough budget logic.
+    expected_visible_output: "Three 1-page Musikvermittlung concept sketches in German"
     estimated_weekly_hours: 1
     estimated_cost_eur: 0
     estimated_duration_weeks: 8
-    cv_linkedin_usage: "Phrase as 'QNX/POSIX supervisor concepts' rather than 'QNX experience'"
-    interview_usage: "Useful when discussing SDV, safety supervisor and partitioning concepts"
-    target_role_relevance_note: "Differentiator for embedded platform safety, but not a must-have"
-    reason_for_priority: "Useful conceptually; low practical depth must be transparent"
-    reason_for_deferral_if_any: "Do not invest heavily unless target jobs repeatedly require QNX"
+    cv_linkedin_usage: "Add as 'Konzepte' samples on portfolio or LinkedIn"
+    interview_usage: "Concrete proof of Musikvermittlung thinking for Bildungsreferent interviews"
+    target_role_relevance_note: "Essential for sub-sector #1 (education programs)"
+    reason_for_priority: "Closes the no-DE-Musikvermittlung-experience gap with visible artefacts"
+    reason_for_deferral_if_any: null
 
-  - id: "cpp20_safety_logic_basics"
+  - id: "dach_cultural_sector_governance"
     market_signal_keywords:
-      job_signals: ["embedded", "functional_safety"]
-      articles:    ["c++20", "embedded software", "safety-critical software"]
-    name: "C++20 safety logic basics with tests"
+      job_signals: ["kulturmanagement", "projektmanagement_kultur"]
+      articles:    ["kulturförderung", "fördermittel", "ksk", "gema", "trägerschaft"]
+    name: "DE cultural-sector governance literacy (KSK, GEMA, Fördermittel, Trägerschaft)"
     scores:
       market_frequency: 0.70
-      target_role_relevance: 0.45
-      profile_gap: 0.75
-      evidence_output: 0.65
-      feasibility: 0.55
-      cost_time_penalty: 0.05
-    override_category: "nice_to_have"
-    profile_gap_addressed: "Modern C++ is useful but not the core target identity"
-    recommended_action: >
-      Implement small, testable safety-logic components such as StateEvaluator, HeartbeatMonitor,
-      TimeoutChecker and PlausibilityChecker with unit tests. Keep scope small and portfolio-focused.
-    expected_visible_output: "Small C++ safety-logic module with tests"
-    estimated_weekly_hours: 1.5
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 8
-    cv_linkedin_usage: "Mention only as demonstrator implementation support"
-    interview_usage: "Shows hands-on credibility without claiming senior C++ developer level"
-    target_role_relevance_note: "Helpful for embedded safety roles but not mandatory for safety architect positioning"
-    reason_for_priority: "Useful, but lower ROI than applications, interviews and CMSE"
-    reason_for_deferral_if_any: "Increase only if job ads repeatedly require hands-on C++"
-
-  - id: "mbse_sysml2_maintenance"
-    market_signal_keywords:
-      job_signals: ["mbse"]
-      articles:    ["mbse", "sysml", "digital twin", "dassault"]
-    name: "MBSE / SysML2 lightweight maintenance"
-    scores:
-      market_frequency: 0.50
-      target_role_relevance: 0.55
-      profile_gap: 0.40
+      target_role_relevance: 0.75
+      profile_gap: 0.80
       evidence_output: 0.55
-      feasibility: 0.80
-      cost_time_penalty: 0.00
-    override_category: "nice_to_have"
-    profile_gap_addressed: "Existing MBSE knowledge should remain visible but not dominate the sprint"
+      feasibility: 0.85
+      cost_time_penalty: 0.05
+    override_category: "high_roi"
+    profile_gap_addressed: "Theoretical only — needs to become interview-fluent vocabulary"
     recommended_action: >
-      Maintain MBSE credibility by creating one architecture diagram, one safety state model and one traceability table
-      for the demonstrator. Do not deep-dive SysML2 unless target job ads explicitly demand it.
-    expected_visible_output: "Architecture diagram and traceability table"
+      One topic per week, ~1 page of personal notes: (1) Künstlersozialkasse
+      basics for employers, (2) GEMA tariffs and concert-organiser duties,
+      (3) Fördermittel landscape in BW (Land BW, Stadt Stuttgart,
+      Kulturstiftung des Bundes), (4) öffentliche vs. freie Träger,
+      (5) typical Kulturamt budget structure, (6) Drittmittelantrag basics.
+    expected_visible_output: "One-page note per topic, ~6 notes total"
     estimated_weekly_hours: 1
     estimated_cost_eur: 0
     estimated_duration_weeks: 6
-    cv_linkedin_usage: "Mention MBSE/SysML experience where relevant"
-    interview_usage: "Supports system architecture and requirements traceability discussions"
-    target_role_relevance_note: "Moderately useful for systems engineering and safety architecture roles"
-    reason_for_priority: "Maintain as supporting skill"
-    reason_for_deferral_if_any: "Avoid major SysML2 investment during active job search"
+    cv_linkedin_usage: "Underpins LinkedIn summary phrasing"
+    interview_usage: "Allows competent answers to 'How would you structure a Drittmittelantrag?'"
+    target_role_relevance_note: "Important for any role that touches funding or contracts"
+    reason_for_priority: "Cheap, fast and closes a real recruiter-perceived gap"
+    reason_for_deferral_if_any: null
 
-  - id: "generic_ai_bootcamp"
+  - id: "local_network_stuttgart"
     market_signal_keywords:
-      job_signals: []
-      articles:    ["chatgpt", "chatbot"]
-    name: "Generic AI / ML bootcamp"
+      job_signals: ["kulturmanagement", "veranstaltungsmanagement"]
+      articles:    ["kulturveranstaltung", "kulturnetzwerk", "kulturamt"]
+    name: "Local cultural-sector networking sprint (Stuttgart region)"
     scores:
-      market_frequency: 0.40
-      target_role_relevance: 0.25
-      profile_gap: 0.30
-      evidence_output: 0.35
-      feasibility: 0.50
-      cost_time_penalty: 0.70
-    override_category: "avoid_for_now"
-    profile_gap_addressed: "General AI knowledge is interesting but not the urgent employability gap"
+      market_frequency: 0.70
+      target_role_relevance: 0.75
+      profile_gap: 0.85
+      evidence_output: 0.65
+      feasibility: 0.80
+      cost_time_penalty: 0.05
+    override_category: "high_roi"
+    profile_gap_addressed: "Many cultural roles in BW are filled via network — Xi's current network is thin"
     recommended_action: >
-      Do not pursue a generic AI bootcamp now. Use existing AI course background and the portfolio demonstrator instead.
-      Focus on safety-specific AI topics such as monitoring, fallback, ODD, SOTIF and ISO/PAS 8800.
-    expected_visible_output: "None recommended now"
-    estimated_weekly_hours: 0
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 0
-    cv_linkedin_usage: "Existing AI specializations are enough for now"
-    interview_usage: "Discuss AI safety architecture rather than generic ML theory"
-    target_role_relevance_note: "Low immediate ROI for senior safety architect roles"
-    reason_for_priority: "Avoid for now"
-    reason_for_deferral_if_any: "Too broad and may distract from external transition"
+      One concrete contact step per week: attend an info evening at
+      Leonberger Kulturamt or Stadthalle Leonberg, write to a Musikhochschule
+      Stuttgart alumni officer, or message one cultural-PM person on
+      LinkedIn for a 20-minute Kennenlerngespräch. Track outcomes.
+    expected_visible_output: "Networking tracker with ≥10 contacts and ≥3 conversations by end of phase 1"
+    estimated_weekly_hours: 0.5
+    estimated_cost_eur: 20
+    estimated_duration_weeks: 26
+    cv_linkedin_usage: "Improves LinkedIn visibility and inbound recruiter probability"
+    interview_usage: "Provides referral channels and informal market feedback"
+    target_role_relevance_note: "Important for hidden BW cultural-sector job market"
+    reason_for_priority: "Hidden market is large in cultural sector; small weekly cost"
+    reason_for_deferral_if_any: null
 
-  - id: "mba_second_master"
+  - id: "interview_rehearsal_in_german"
+    market_signal_keywords:
+      job_signals: ["kulturmanagement", "projektmanagement_kultur", "bildungsreferent"]
+      articles:    ["interview", "vorstellungsgespräch", "auswahlverfahren"]
+    name: "Interview rehearsal in German (case answers + STAR stories)"
+    scores:
+      market_frequency: 0.80
+      target_role_relevance: 0.90
+      profile_gap: 0.75
+      evidence_output: 0.75
+      feasibility: 0.85
+      cost_time_penalty: 0.00
+    override_category: "high_roi"
+    profile_gap_addressed: "No DE-cultural-sector interview practice yet; gap-explanation answer needs polish"
+    recommended_action: >
+      Prepare five STAR-format answers in German: (1) tell me about
+      yourself, (2) why the family-phase gap and what did you do during it,
+      (3) describe a project you coordinated, (4) describe a conflict with
+      an artist or stakeholder, (5) why this organisation. Rehearse aloud
+      with the Sprachcoach.
+    expected_visible_output: "Five rehearsed and recorded STAR answers in German"
+    estimated_weekly_hours: 0.5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 6
+    cv_linkedin_usage: "Reused as concrete examples in cover letters"
+    interview_usage: "Direct material for every interview"
+    target_role_relevance_note: "Universal — every role requires this"
+    reason_for_priority: "Cheap, fast, and the marginal return on each rehearsal is high"
+    reason_for_deferral_if_any: null
+
+  - id: "event_production_local_landscape"
+    market_signal_keywords:
+      job_signals: ["veranstaltungsmanagement", "eventmanagement"]
+      articles:    ["festival", "konzertdirektion", "eventagentur", "veranstaltungstechnik"]
+    name: "Map BW event-production landscape (agencies, venues, ticketing)"
+    scores:
+      market_frequency: 0.60
+      target_role_relevance: 0.70
+      profile_gap: 0.65
+      evidence_output: 0.60
+      feasibility: 0.80
+      cost_time_penalty: 0.00
+    override_category: "nice_to_have"
+    profile_gap_addressed: "Sub-sector #2 — DE event-agency landscape is not yet mapped"
+    recommended_action: >
+      Build a one-pager listing key BW event agencies, festivals and venues
+      with role types (e.g. SKS Russ, Music & More, Schlossfestspiele
+      Ludwigsburg, Forum Ludwigsburg, Theaterhaus Stuttgart, Stadthalle
+      Sindelfingen). Note ticketing provider where visible.
+    expected_visible_output: "One-page BW event-production landscape map"
+    estimated_weekly_hours: 0.5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 4
+    cv_linkedin_usage: "Background research, not a CV item"
+    interview_usage: "Informs role-specific tailoring of applications and interview prep"
+    target_role_relevance_note: "Relevant for sub-sector #2 (event production / agencies)"
+    reason_for_priority: "Cheap orientation work; speeds up applications"
+    reason_for_deferral_if_any: "Lower priority than spoken German and certifications"
+
+  - id: "english_brushup_for_outreach_roles"
+    market_signal_keywords:
+      job_signals: ["education manager", "outreach"]
+      articles:    ["english cultural sector", "international festival"]
+    name: "English brush-up for international/outreach roles"
+    scores:
+      market_frequency: 0.45
+      target_role_relevance: 0.55
+      profile_gap: 0.60
+      evidence_output: 0.50
+      feasibility: 0.70
+      cost_time_penalty: 0.05
+    override_category: "nice_to_have"
+    profile_gap_addressed: "B1 may limit Education Manager / Outreach roles at international institutions"
+    recommended_action: >
+      Lightweight: weekly podcast or article read in English (e.g. ABO/
+      League of American Orchestras blog, Aspen Music Festival programme
+      notes); occasional English self-introduction practice with tandem
+      partner.
+    expected_visible_output: "Improved comfort in English interview small-talk"
+    estimated_weekly_hours: 0.5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 26
+    cv_linkedin_usage: "Maintain B1 claim honestly; do not over-claim"
+    interview_usage: "Useful when an interview switches to English unexpectedly"
+    target_role_relevance_note: "Most BW roles are in German; this is a tail-risk hedge"
+    reason_for_priority: "Low cost, modest return"
+    reason_for_deferral_if_any: "Spoken German is more urgent"
+
+  - id: "second_master_or_phd"
     market_signal_keywords:
       job_signals: []
       articles:    []
-    name: "MBA or second Master's degree"
+    name: "Second master's degree or PhD"
     scores:
-      market_frequency: 0.20
+      market_frequency: 0.15
       target_role_relevance: 0.20
       profile_gap: 0.10
       evidence_output: 0.50
       feasibility: 0.10
       cost_time_penalty: 1.00
     override_category: "avoid_for_now"
-    profile_gap_addressed: "Advanced academic credential is not the current bottleneck"
+    profile_gap_addressed: "Not the current bottleneck"
     recommended_action: >
-      Do not pursue now. The candidate already has a master's degree and strong industry experience.
-      The current bottleneck is external positioning, applications, interview conversion and targeted safety-domain expansion.
+      Do not pursue. Xi already has a master's degree in cultural
+      administration. Current bottlenecks are spoken German, finished
+      certifications, and an active application pipeline — not more
+      academic credentials.
     expected_visible_output: "None recommended now"
     estimated_weekly_hours: 0
     estimated_cost_eur: 0
     estimated_duration_weeks: 0
-    cv_linkedin_usage: "Existing TUM master's degree is sufficient"
+    cv_linkedin_usage: "Existing master's degree is sufficient"
     interview_usage: "Not relevant"
-    target_role_relevance_note: "Low immediate ROI for transition sprint"
+    target_role_relevance_note: "Low ROI for re-entry sprint"
     reason_for_priority: "Avoid for now"
-    reason_for_deferral_if_any: "Too expensive and too slow for current family-income protection goal"
+    reason_for_deferral_if_any: "Too expensive and slow for the family-income re-entry goal"
 
-  - id: "deep_qnx_training_certificate"
+  - id: "expensive_generalist_pm_bootcamp"
     market_signal_keywords:
-      job_signals: ["qnx"]
-      articles:    ["qnx", "rtos"]
-    name: "Deep QNX training or paid QNX certificate"
+      job_signals: []
+      articles:    []
+    name: "Expensive generalist PM bootcamp (e.g. multi-thousand-EUR programme)"
     scores:
-      market_frequency: 0.35
-      target_role_relevance: 0.35
-      profile_gap: 0.70
-      evidence_output: 0.45
-      feasibility: 0.35
-      cost_time_penalty: 0.65
+      market_frequency: 0.30
+      target_role_relevance: 0.30
+      profile_gap: 0.30
+      evidence_output: 0.40
+      feasibility: 0.30
+      cost_time_penalty: 0.80
     override_category: "avoid_for_now"
-    profile_gap_addressed: "QNX gap exists, but deep QNX training is not the most urgent ROI"
+    profile_gap_addressed: "Already addressed by Google PM + Scrum Master I in progress"
     recommended_action: >
-      Avoid paid deep QNX training unless multiple target job ads or interview feedback explicitly identify QNX
-      as the decisive gap. Maintain conceptual QNX/POSIX supervisor understanding through the portfolio instead.
+      Do not pay for an additional generalist PM bootcamp before finishing
+      the two in-progress certificates. Re-evaluate only if specific target
+      jobs repeatedly require PMP and only after Scrum/Google PM are
+      complete.
     expected_visible_output: "None recommended now"
     estimated_weekly_hours: 0
     estimated_cost_eur: 0
     estimated_duration_weeks: 0
-    cv_linkedin_usage: "Do not claim QNX experience"
-    interview_usage: "Discuss concepts honestly if asked"
-    target_role_relevance_note: "Potentially useful for SDV roles, but currently lower ROI than CMSE and applications"
+    cv_linkedin_usage: "Two in-progress certs are sufficient signal"
+    interview_usage: "Not relevant yet"
+    target_role_relevance_note: "Low marginal value until current credentials are completed"
     reason_for_priority: "Avoid for now"
-    reason_for_deferral_if_any: "Cost/time not justified before market feedback confirms QNX as bottleneck"
+    reason_for_deferral_if_any: "Cost/time not justified before in-progress certs are completed"

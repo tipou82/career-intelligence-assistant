@@ -1,52 +1,58 @@
-# Career Skill Matrix — external transition mode
+# Career Skill Matrix — external transition mode (cultural project management)
 #
 # career_mode controls scoring weights and report framing:
 #   external_transition  → bias toward Germany/Europe employability signals
 #   default              → general industry monitoring
 #
 # Target positioning:
-# "Senior System Safety / Functional Safety Architect for safety-critical
-#  embedded systems, robotics, ADAS, industrial automation, and AI-enabled systems."
+# "Cultural Project Manager for education programs, event production,
+#  concert/theatre houses and exhibitions in the Stuttgart / Leonberg region."
 
 career_mode: external_transition
 
 strategic_target: >
-  Senior System Safety / Functional Safety Architect for safety-critical embedded
-  systems, robotics, ADAS, industrial automation, and AI-enabled systems.
-  External transition from current employer into stable senior safety
-  architecture roles in Germany/Europe.
+  Cultural project manager (Kulturmanager*in / Projektmanager*in Kultur)
+  in the Stuttgart–Leonberg–Ludwigsburg–Böblingen area, focusing on
+  education programs and event production as primary, music institutions
+  and exhibitions as secondary. Re-entry into the German labour market
+  after a family phase, leveraging international experience from
+  the China National Symphony Orchestra and a French master's in
+  music & cultural administration.
 
 primary_goals:
-  - "Protect family income and employability — realistic external transition"
-  - "Senior safety/system architecture roles over junior implementation roles"
-  - "Germany and Europe first — remote Europe as fallback"
-  - "ISO 13849/CMSE, SOTIF, embedded AI safety as differentiation alongside ISO 26262 core"
-  - "Consulting / TÜV / assessment as parallel track"
-  - "Bosch Japan remains optional only — do not treat as default career path"
+  - "Re-enter the German cultural-sector labour market with a credible mid-level project-management profile"
+  - "Education programs and event production first; classical music institutions and museums second"
+  - "Local first — Leonberg, Stuttgart, Böblingen, Ludwigsburg — remote BW/DE as fallback"
+  - "Close the German-oral-fluency gap to interview level (current Telc B2, target spoken B2+/C1 confidence)"
+  - "Convert Google Project Manager certificate and Professional Scrum Master I into visible CV/LinkedIn credentials"
+  - "Reframe China National Symphony Orchestra experience into German-readable mid-level project management language"
 
 core_differentiator: >
-  Senior functional safety / system safety architecture expertise (ISO 26262, safety
-  concepts, safety requirements, safety mechanisms, architecture trade-offs) built
-  at current employer. ROS2 / C++20 / embedded implementation are supporting demonstrator skills —
-  they are NOT the primary market value. Do not over-prioritize them over safety
-  architecture, ISO 13849, SOTIF or cross-domain communication.
+  Bilingual cultural-administration profile (Chinese native, German B2, English B1,
+  French basics) with a master's in music & cultural administration from France and
+  five years of PR / media / project coordination at a national symphony orchestra.
+  Currently strengthening modern PM methodology (Google PM, Scrum) — positions
+  Xi as a methodical, international, music-literate project manager rather than a
+  general administrator. Do not over-pivot into pure event-marketing or pure
+  music-teaching identities — the value sits in PROJECT MANAGEMENT inside
+  cultural organisations.
 
-weekly_hours_cap: 30          # sustainable planning cap (full-time + two small children)
-weekly_hours_stretch_cap: 35  # hard ceiling — never generate plans above this
+weekly_hours_cap: 15          # sustainable planning cap (family phase, 2 small children)
+weekly_hours_stretch_cap: 18  # hard ceiling — never generate plans above this
 
 groups:
   deep_focus:
     label: "Deep Focus — highest return on time this week"
-    description: "Direct impact on job search success and income protection."
+    description: "Directly converts to interviews, offers, or closing the German-oral gap."
   serious:
-    label: "Serious — build steadily to stay hireable"
-    description: "Technical credibility that differentiates you in interviews."
+    label: "Serious — build steadily to stay competitive"
+    description: "Subject-matter credibility for cultural-PM interviews."
   lightweight:
     label: "Lightweight — maintain awareness only"
-    description: "Low time investment; mostly monitoring."
+    description: "Low time investment; mostly scanning."
   defer:
-    label: "Defer — revisit after transition"
-    description: "Currently lower leverage than safety architecture positioning."
+    label: "Defer — revisit after first offer"
+    description: "Not load-bearing for the current re-entry sprint."
 
 skills:
 
@@ -57,256 +63,209 @@ skills:
   - name: "External job search and applications"
     priority: 5
     urgency: 5
-    required_depth: 4
+    required_depth: 3
     category: career_transition
     group: deep_focus
-    weekly_hours_baseline: 8
+    weekly_hours_baseline: 4
     rationale: >
-      Direct income protection. Senior safety roles in Germany/Europe are available
-      but require active pipeline management: applications, CV tailoring, LinkedIn
-      signals, recruiter contact. No pipeline = no options.
-    learning_task: "3–5 targeted applications, 1 recruiter/TÜV contact, LinkedIn signal check, track pipeline"
+      The only activity that converts into offers. Local cultural-sector roles
+      in BW are scarce relative to tech jobs, so a steady pipeline of 3–5
+      tailored applications per week is required. Includes job-board scanning
+      (Bundesagentur, Kulturmanagement.net, Indeed, LinkedIn, Stadtverwaltung
+      sites) and active outreach to Stuttgarter Liederhalle, Musikhochschule
+      Stuttgart, Leonberger Kulturamt and similar.
+    learning_task: "3 tailored applications + 1 active outreach (recruiter, alumni, or hiring manager) per week; maintain application tracker"
     triggers:
       increase:
-        - layoffs
-        - restructuring
-        - stellenabbau
         - hiring
-        - job opening
-        - safety engineer vacancy
-        - we are hiring
+        - stellenausschreibung
         - wir suchen
+        - stellenangebot
+        - kulturmanager
+        - bildungsreferent
+        - musikvermittlung
+        - veranstaltungsmanager
+        - projektmanager kultur
+        - education manager
+        - konzertdirektion
       decrease: []
 
-  - name: "Interview communication and case studies"
+  - name: "German oral fluency and interview communication"
     priority: 5
     urgency: 5
     required_depth: 4
-    category: career_transition
-    group: deep_focus
-    weekly_hours_baseline: 5
-    rationale: >
-      The gap between "good CV" and "offer" is closed in interviews.
-      Senior safety architects need polished answers for: safety philosophy,
-      cross-domain experience, AI trade-offs, ISO 26262 vs ISO 13849, system
-      architecture decisions, and leadership positioning in German/English.
-    learning_task: "Prepare/refine 2 structured interview stories; practice one answer out loud in German and English"
-    triggers:
-      increase:
-        - interview
-        - hiring process
-        - assessment center
-        - case study
-      decrease: []
-
-  - name: "Functional safety and system safety architecture"
-    priority: 5
-    urgency: 5
-    required_depth: 5
-    category: core_expertise
+    category: language_communication
     group: deep_focus
     weekly_hours_baseline: 3
     rationale: >
-      PRIMARY market value and negotiation lever. Strong project background from current employer:
-      safety concepts, safety requirements, safety mechanisms, embedded platform safety,
-      and architecture trade-offs. Deepen cross-domain fluency and case-study packaging:
-      ISO 26262 ↔ ISO 13849 ↔ IEC 61508 ↔ SOTIF. This is what makes the candidate
-      senior — not ROS2 or C++ implementation.
-    learning_task: "Write one cross-domain safety architecture case study (e.g. ISO 26262 safety concept applied to a robotics/automation context with ISO 13849 mapping)"
+      Xi's self-identified largest gap. Telc B2 written is achieved, spoken
+      register lags behind. German cultural-sector interviews are conducted
+      in German, with idiomatic expectations around Kommunikation,
+      Stakeholdermanagement and Empathie. Closing this gap is the single
+      highest-ROI development item.
+    learning_task: "Two spoken-German sessions per week (tandem, VHS conversation course, or paid Sprachcoach); rehearse 1 STAR-format interview answer aloud"
     triggers:
       increase:
-        - functional safety
-        - system safety
-        - safety architecture
-        - iso 26262
-        - iec 61508
-        - safety-critical systems
-        - safety assessment
-        - safety case
+        - interview
+        - vorstellungsgespräch
+        - assessment center
+        - bewerbungsgespräch
       decrease: []
 
-  - name: "ISO 13849 and CMSE"
+  - name: "Project management certification (Google PM + Scrum Master I)"
     priority: 5
     urgency: 5
-    required_depth: 4
-    category: machinery_safety
+    required_depth: 3
+    category: pm_credentials
     group: deep_focus
-    weekly_hours_baseline: 5
+    weekly_hours_baseline: 3
     rationale: >
-      Opens industrial automation, robotics, and machinery safety market —
-      underserved by automotive-only ISO 26262 engineers. CMSE certification
-      is a concrete, verifiable credential. Strong transferable background
-      from ISO 26262 (HARA ↔ risk graph, ASIL ↔ PL, safety mechanisms ↔ SRP/CS).
-      Urgency raised: no practical machinery project yet, structured study needed.
-    learning_task: "CMSE study: safety function → PLr → Category → MTTFd/DCavg/CCF → achieved PL. Document one worked example per week"
+      Two certifications already in progress. Together they signal modern,
+      methodical project management practice — directly addresses the
+      "what have you been doing during the family phase" interview question
+      and reframes Xi as PM-current, not just "former orchestra
+      administrator". Finish both within 8–12 weeks and add to CV/LinkedIn.
+    learning_task: "Complete one Coursera module of Google PM weekly; one Scrum Master I prep block; book exam dates as soon as both are 80% complete"
     triggers:
       increase:
-        - iso 13849
-        - machinery safety
-        - performance level
-        - pl d
-        - cmse
-        - collaborative robot
-        - emergency stop
-        - protective stop
-        - safety function
-        - machine safety
-        - eu machinery regulation
+        - scrum master
+        - project manager certification
+        - agile project management
+        - pmi
+        - pmp
       decrease: []
 
-  - name: "GitHub portfolio and documentation"
+  - name: "CV, LinkedIn and portfolio for DE cultural sector"
     priority: 4
     urgency: 5
     required_depth: 3
     category: portfolio_visibility
     group: deep_focus
-    weekly_hours_baseline: 4
+    weekly_hours_baseline: 2
     rationale: >
-      Covers CV tailoring, LinkedIn positioning, and portfolio documentation.
-      Includes: writing one concrete CV bullet per week, updating LinkedIn headline/
-      summary with cross-domain safety story, polishing portfolio README.
-      External visibility for senior roles — closes interviews.
-    learning_task: "CV: 1 new bullet quantifying safety architecture impact. LinkedIn: update headline/summary. Portfolio: one documentation improvement"
+      Current CV is correctly formatted but still presents Xi primarily as a
+      former Chinese-orchestra PR person. Needs translation into the
+      vocabulary of DE cultural project management: Projektkoordination,
+      Veranstaltungsmanagement, Stakeholderkommunikation, Künstlerbetreuung,
+      Pressearbeit, Bildungsformate, interkulturelle Vermittlung.
+      LinkedIn profile (German + English) should match.
+    learning_task: "Each week: refine one CV bullet (German), one LinkedIn section, and add one concrete project artefact (programme leaflet, press release, event timeline)"
     triggers:
       increase:
-        - portfolio importance
-        - github
-        - open source robotics
+        - cv tips
+        - linkedin
+        - personal branding
+        - kulturmanagement netzwerk
       decrease: []
 
   # ════════════════════════════════
   # GROUP: SERIOUS
   # ════════════════════════════════
 
-  - name: "ROS2"
-    priority: 3
-    urgency: 3
-    required_depth: 3
-    category: robotics_middleware
-    group: serious
-    weekly_hours_baseline: 2
-    rationale: >
-      Supporting demonstrator skill — useful context for robotics safety roles.
-      NOT the primary market value; safety architecture and ISO standards matter more.
-      Allocate demonstrator improvement time here only after job-search and CMSE work.
-      3h/week total for ROS2 + Linux demonstrator combined.
-    learning_task: "Demonstrator: one ROS2/Linux improvement (node, test, or documentation) — keep scoped, do not expand scope"
-    triggers:
-      increase:
-        - ros2
-        - robotics middleware
-        - humanoid robotics
-        - physical ai
-        - robot safety
-      decrease: []
-
-  - name: "C++20 and safety logic"
-    priority: 3
-    urgency: 2
-    required_depth: 4
-    category: safety_software
-    group: serious
-    weekly_hours_baseline: 0
-    rationale: >
-      Implementation credibility for safety logic demonstrator. NOT a primary
-      differentiator for senior safety architecture roles. Bundled into ROS2/
-      demonstrator time when relevant. Do not allocate separate weekly hours
-      until safety architecture, CMSE, and job-search tracks are stable.
-    learning_task: "Bundled into demonstrator time — implement only when directly needed for ROS2 safety node"
-    triggers:
-      increase:
-        - c++20
-        - embedded software
-        - safety-critical software
-      decrease: []
-
-  - name: "AI perception monitoring"
-    priority: 3
-    urgency: 2
-    required_depth: 4
-    category: ai_safety
-    group: serious
-    weekly_hours_baseline: 0
-    rationale: >
-      Strong differentiator for ADAS/AI safety roles. Bundled into demonstrator
-      time when relevant. Not a standalone weekly commitment during job-search phase.
-    learning_task: "Bundled into demonstrator time — add one monitoring concept (confidence/latency) when working on ROS2 nodes"
-    triggers:
-      increase:
-        - ai perception failure
-        - ai safety validation
-        - confidence monitoring
-        - fault injection
-        - physical ai safety
-        - embedded ai safety
-      decrease: []
-
-  - name: "SOTIF and ISO/PAS 8800"
+  - name: "Cultural project management practice (DE conventions)"
     priority: 4
     urgency: 4
     required_depth: 4
-    category: ai_adas_safety
-    group: serious
-    weekly_hours_baseline: 2
-    rationale: >
-      Key differentiator for ADAS/AI safety roles and growing mandatory for any
-      senior safety architect discussing AI-enabled systems. Links ISO 26262
-      background to AI safety regulation and EU AI Act compliance requirements.
-    learning_task: "SOTIF/PAS 8800: one clause or concept per week; map to ODD or perception limitation; add to case study"
-    triggers:
-      increase:
-        - sotif
-        - iso/pas 8800
-        - ai regulation
-        - high-risk ai
-        - ai safety automotive
-        - eu ai act
-      decrease: []
-
-  - name: "Linux practical skills"
-    priority: 3
-    urgency: 3
-    required_depth: 3
-    category: embedded_linux
+    category: core_expertise
     group: serious
     weekly_hours_baseline: 1
     rationale: >
-      Runtime environment for demonstrator. Bundled with ROS2 demonstrator time.
-      Not a career differentiator — practical competency only.
-    learning_task: "Bundled with ROS2 demonstrator time — one Linux task when needed for Pi project"
+      Xi has practiced cultural project work in China; the German cultural
+      sector uses different governance models (Trägerschaft, öffentlich vs.
+      frei, Fördermittel, GEMA, Künstlersozialkasse). Build a working mental
+      model of these so interviews don't expose unfamiliarity. Use
+      Kulturmanagement Network (kulturmanagement.net) and Bühnenverein
+      materials as primary references.
+    learning_task: "Read one short article or one funding-call summary per week; note the institutional vocabulary"
     triggers:
       increase:
-        - embedded linux
-        - linux kernel
-        - yocto
+        - kulturmanagement
+        - kulturförderung
+        - fördermittel
+        - bühnenverein
+        - kulturstiftung
+        - öffentlich gefördert
       decrease: []
 
-  - name: "QNX and POSIX supervisor concepts"
-    priority: 2
-    urgency: 2
-    required_depth: 2
-    category: embedded_rt_os
-    group: lightweight
-    weekly_hours_baseline: 0
+  - name: "Music education and Musikvermittlung"
+    priority: 4
+    urgency: 4
+    required_depth: 3
+    category: education_programs
+    group: serious
+    weekly_hours_baseline: 1
     rationale: >
-      Conceptual knowledge only — no practical project experience yet.
-      Mention as design consideration in portfolio; do not claim hands-on
-      proficiency. Only invest time if a specific SDV/RTOS role requires it.
-    learning_task: "Read one QNX/POSIX concept; mention portability design in portfolio README — no coding sprint"
+      Education programs are Xi's #1 sub-sector. Musikvermittlung is the
+      German term-of-art for music education projects in concert houses,
+      orchestras and music schools (Konzertpädagogik, Kinderkonzerte,
+      Schulkooperationen). Xi's conservatory background plus orchestra
+      experience makes this a credible pitch. Track Netzwerk Junge Ohren,
+      Bundesverband Musikunterricht, and Musikschulen-Verband signals.
+    learning_task: "Read one Musikvermittlung case study or programme description per week; sketch how a similar project would look at a local Stuttgart/Leonberg venue"
     triggers:
       increase:
-        - qnx
-        - rtos
-        - software-defined vehicle
-        - sdv platform
-        - watchdog supervision
+        - musikvermittlung
+        - konzertpädagogik
+        - kinderkonzert
+        - schulkonzert
+        - jugendkonzert
+        - musikschule
+        - bildungspartnerschaft
+        - kulturelle bildung
+      decrease: []
+
+  - name: "Event production and coordination"
+    priority: 3
+    urgency: 3
+    required_depth: 3
+    category: event_production
+    group: serious
+    weekly_hours_baseline: 1
+    rationale: >
+      Sub-sector #2. Operational backbone of cultural project work:
+      schedule, venue logistics, artist contracting, technical riders, GEMA,
+      ticketing. Xi has practical experience from CNSO but must learn the
+      DE-specific service-provider landscape (CTS Eventim, ticket.io,
+      Reservix; agencies in BW like SKS Russ, Music & More, c/o pop).
+    learning_task: "Identify one BW event agency or venue per week; note their typical event size, niche, and any open vacancies"
+    triggers:
+      increase:
+        - veranstaltungsmanagement
+        - eventmanagement
+        - veranstaltungstechnik
+        - festival
+        - konzertdirektion
+        - tournee
+        - tour management
+      decrease: []
+
+  - name: "PR, media and content for cultural institutions"
+    priority: 3
+    urgency: 3
+    required_depth: 4
+    category: pr_communication
+    group: serious
+    weekly_hours_baseline: 0.5
+    rationale: >
+      This was Xi's strongest area at CNSO. Maintain as recognised secondary
+      skill but do NOT let it become the headline identity (PR-only roles
+      are crowded and lower-paid than PM roles in DE). Keep one writing
+      sample per quarter to demonstrate fluency.
+    learning_task: "Maintain one bilingual writing sample (press release or programme note); track DE cultural-PR style trends lightly"
+    triggers:
+      increase:
+        - pressearbeit
+        - öffentlichkeitsarbeit
+        - kommunikation
+        - social media kultur
+        - newsletter kultur
       decrease: []
 
   # ════════════════════════════════
   # GROUP: LIGHTWEIGHT
   # ════════════════════════════════
 
-  - name: "MCP and agentic AI workflow"
+  - name: "AI tools for cultural administration"
     priority: 3
     urgency: 2
     required_depth: 2
@@ -314,82 +273,85 @@ skills:
     group: lightweight
     weekly_hours_baseline: 0
     rationale: >
-      Useful productivity layer for AI-assisted engineering. Not a career
-      identity. Position as: I use AI to accelerate safety work, not replace
-      safety judgment.
-    learning_task: "Use Claude/Codex for one engineering task; document result"
+      Already on CV. Useful productivity layer (drafting, translation,
+      proof-reading, data analysis of audience or ticket data). Frame as
+      tool, never as primary identity.
+    learning_task: "Use Claude or similar for one practical task per week; note where it saved time"
     triggers:
       increase:
-        - mcp protocol
-        - agentic ai
-        - ai-assisted engineering
+        - chatgpt cultural
+        - ki im kulturbetrieb
+        - ai cultural sector
+        - copilot office
       decrease: []
 
-  - name: "Career Intelligence Assistant"
+  - name: "Exhibitions and museum education"
     priority: 3
     urgency: 2
     required_depth: 2
-    category: ai_career_strategy
+    category: museum_education
     group: lightweight
     weekly_hours_baseline: 0
     rationale: >
-      This tool itself. Running and reviewing takes minimal time; do not build
-      new features during active job search phase.
-    learning_task: "Weekly: run pipeline, review report, update cv_skills.yaml self-ratings"
+      Sub-sector #4. Awareness only — Staatsgalerie Stuttgart, Kunstmuseum
+      Stuttgart, Lindenmuseum, Mercedes-Benz Museum and the Leonberg
+      Heimatmuseum are credible secondary targets if a museum-education
+      vacancy opens. Vocabulary differs from concert-house PM.
+    learning_task: "Scan headlines; deep-read only if a relevant vacancy or programme call appears"
     triggers:
       increase:
-        - career intelligence
-        - job market signals
+        - museumspädagogik
+        - museumsführung
+        - ausstellungskonzeption
+        - kuratorisch
+        - sammlungsmanagement
       decrease: []
 
-  - name: "MBSE and SysML2"
+  - name: "Local cultural-sector networking (Stuttgart region)"
     priority: 3
-    urgency: 2
-    required_depth: 3
-    category: systems_modeling
+    urgency: 3
+    required_depth: 2
+    category: networking
     group: lightweight
-    weekly_hours_baseline: 0
+    weekly_hours_baseline: 0.5
     rationale: >
-      Useful for senior architecture positioning and Dassault/NEURA-facing roles.
-      Lightweight: one Mermaid diagram per project, not full toolchain mastery.
-    learning_task: "Add one Mermaid architecture diagram to portfolio"
+      Many cultural-sector roles in BW are not openly advertised. Network
+      access via VHS, Kreisvolkshochschule Böblingen, alumni groups, and
+      cultural events compensates for that. One concrete contact attempt
+      per week is enough.
+    learning_task: "Attend or contact one local event/person per week (Kulturamt info-evening, Liederhalle workshop, alumni meet-up)"
     triggers:
       increase:
-        - mbse
-        - sysml
-        - dassault
-        - digital twin
-        - virtual validation
+        - kulturveranstaltung leonberg
+        - kulturnetzwerk stuttgart
+        - alumni musikhochschule
       decrease: []
 
-  - name: "General AI trend monitoring"
+  - name: "Cultural policy and funding awareness"
     priority: 2
     urgency: 2
-    required_depth: 1
-    category: awareness
+    required_depth: 2
+    category: policy_funding
     group: lightweight
     weekly_hours_baseline: 0
     rationale: >
-      Awareness only. Generic GenAI news has near-zero actionability for a
-      senior safety architect. Scan headlines; do not act unless tied to
-      safety-critical embedded systems or hiring signals.
-    learning_task: "Scan weekly brief; note only items directly relevant to safety standards or job market"
+      Programmable for later: deeper knowledge of Kulturstiftung des Bundes,
+      Land BW funding, Stadt-Stiftung programmes is useful for senior roles
+      but not for entry/mid-level applications.
+    learning_task: "Scan headlines; bookmark funding calls but do not deep-read yet"
     triggers:
       increase:
-        - ai regulation
-        - ai act
-        - embedded ai safety
-      decrease:
-        - chatbot
-        - chatgpt
-        - consumer ai
-        - generative ai marketing
+        - kulturpolitik
+        - kulturstiftung
+        - kulturhaushalt
+        - fördermittel kultur
+      decrease: []
 
   # ════════════════════════════════
   # GROUP: DEFER
   # ════════════════════════════════
 
-  - name: "Cloud and MLOps"
+  - name: "French refresh"
     priority: 2
     urgency: 1
     required_depth: 1
@@ -397,12 +359,29 @@ skills:
     group: defer
     weekly_hours_baseline: 0
     rationale: >
-      Low leverage for safety architecture transition. Revisit only if a
-      specific edge AI deployment role requires it.
-    learning_task: "Defer — revisit after transition if required by a specific role"
+      Useful only if a francophone-cooperation role appears (Goethe Institut
+      partnerships, French cultural institute, EU cross-border project).
+      Do not invest until such a role is in pipeline.
+    learning_task: "Defer — revisit if a francophone vacancy enters the pipeline"
     triggers:
       increase:
-        - edge mlops
-        - tinyml
-        - embedded ml deployment
+        - institut français
+        - franco-german culture
+        - co-production france
+      decrease: []
+
+  - name: "Piano performance practice"
+    priority: 2
+    urgency: 1
+    required_depth: 2
+    category: deferred
+    group: defer
+    weekly_hours_baseline: 0
+    rationale: >
+      Personal capability that backs the credibility story but is not part
+      of the job-search budget. Maintain privately if desired; not counted
+      against the 15h weekly cap.
+    learning_task: "Outside scope of this plan — personal time"
+    triggers:
+      increase: []
       decrease: []

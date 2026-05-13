@@ -1,230 +1,225 @@
-# CV Skill Self-Assessment — honest calibration for external transition
+# CV Skill Self-Assessment — honest calibration for the German cultural-PM job market
 #
 # self_rating: 0–10 scale
 #   0    = not started
 #   1–3  = awareness / conceptual only
-#   4–6  = intermediate / working knowledge, could discuss in an interview
-#   7–9  = proficient / can design, defend, and lead projects
-#   10   = recognised expert / published authority
+#   4–6  = intermediate / working knowledge, defensible in an interview
+#   7–9  = proficient / can lead projects and defend choices
+#   10   = recognised expert
 #
-# cv_claimed: true = currently on CV
+# cv_claimed: true = currently presented on Xi's CV
 # evidence: concrete projects or experience that backs the rating
 # limitations: what is missing and could be challenged in an interview
 #
-# Skill names MUST match skill_matrix.yaml exactly for gap analysis to work.
+# Skill names MUST match skill_matrix.yaml for gap analysis to work.
 
 profile:
-  name: "Senior System Safety / Functional Safety Architect"
+  name: "Cultural Project Manager"
   target_positioning: >
-    Senior System Safety / Functional Safety Architect for safety-critical embedded
-    systems, robotics, ADAS, industrial automation, and AI-enabled systems.
-  current_employer: "[current employer]"
+    Cultural project manager for education programs, event production,
+    concert houses and exhibitions in Germany (Stuttgart / Leonberg
+    region), re-entering after a family phase with renewed PM
+    methodology (Google PM, Scrum Master I).
+  current_status: "Family phase since 2019; active job search starting 2026"
   target_roles:
-    - "Functional Safety Architect (automotive / robotics / automation)"
-    - "System Safety Engineer — senior / lead"
-    - "Functional Safety Consultant / Assessor (TÜV, SGS, Exida)"
-    - "Safety Architect — embedded AI / ADAS"
-    - "Safety Manager — cross-domain (ISO 26262 + ISO 13849)"
+    - "Projektmanager*in Kultur (concert house, music school, festival)"
+    - "Bildungsreferent*in Musik / Kulturelle Bildung"
+    - "Education Manager — Konzerthaus / Musikhochschule"
+    - "Veranstaltungsmanager*in Kultur"
+    - "Projektassistenz / Projektkoordination Kulturamt"
+    - "Pressereferent*in / Kommunikationsreferent*in (cultural institution)"
 
 skills:
 
-  # ── Core strengths — ISO 26262 background ─────────────────────────────────
+  # ── Project management core ──────────────────────────────────────────────
 
-  - name: "Functional safety and system safety architecture"
-    self_rating: 8
+  - name: "Cultural project management practice (DE conventions)"
+    self_rating: 5
     cv_claimed: true
     evidence: >
-      [Employer] project experience: developed safety concepts, safety requirements,
-      safety mechanisms, and technical safety concepts for embedded automotive
-      platforms. Led architecture trade-off decisions including ASIL decomposition,
-      safety mechanism selection, and cross-system safety argument construction.
-      Familiar with HARA, FTA, FMEA, safety cases, and confirmation measures.
+      Five years of practical cultural project work at China National Symphony
+      Orchestra (CNSO), Beijing: coordinated concert workflows, supported concert
+      managers across scheduling, artist liaison, and press cycles. Master of
+      Arts in Music & Cultural Administration (Université d'Evry val d'Essonne)
+      gave a structured grounding in cultural-sector management theory.
     limitations: >
-      Experience primarily in automotive (ISO 26262). Cross-domain application
-      to ISO 13849 (machinery) and IEC 61508 (industrial) is transferable but
-      not yet validated in external projects.
+      Practical experience is in the Chinese public-orchestra system. German
+      cultural-sector governance (Trägerschaft, öffentliche/freie Träger,
+      Fördermittel, GEMA, Künstlersozialkasse) is studied but not yet practised
+      at first hand. No DE work history yet.
 
-  - name: "Requirements engineering and traceability"
-    self_rating: 8
+  - name: "Project management certification (Google PM + Scrum Master I)"
+    self_rating: 3
     cv_claimed: true
     evidence: >
-      Extensive [employer] experience writing safety requirements at system and
-      subsystem level. Familiar with requirements traceability from safety goals
-      down to implementation tests. Used in-house tooling for requirements
-      management and impact analysis.
+      Google Project Manager certificate in progress on Coursera. Professional
+      Scrum Master I (PSM I) preparation in progress. Mention both as
+      "in progress, expected Q2/Q3 2026" — do not yet claim completed.
     limitations: >
-      Tooling experience is mostly in [employer]-internal tools (DOORS variants).
-      Less experience with DOORS NG / Jama / Polarion as independent tools.
-      Agile-style requirements (user stories with safety) is an area to develop.
+      Neither certificate is completed. Should not be listed as a finished
+      credential until exam pass. No prior agile delivery practice in
+      production cultural projects.
 
-  - name: "MBSE and SysML2"
+  - name: "External job search and applications"
+    self_rating: 4
+    cv_claimed: false
+    evidence: >
+      Actively building an application pipeline for the DE cultural sector.
+      Familiar with major job boards (Bundesagentur für Arbeit, Indeed,
+      LinkedIn, Kulturmanagement.net Stellenmarkt, Stepstone). Starting to
+      track open Stuttgart-region vacancies systematically.
+    limitations: >
+      Pipeline is young; few completed application cycles yet. Limited
+      recruiter network in the German cultural sector. Has not yet
+      conducted a DE-cultural-sector interview.
+
+  - name: "CV, LinkedIn and portfolio for DE cultural sector"
+    self_rating: 4
+    cv_claimed: false
+    evidence: >
+      German CV (Lebenslauf) drafted in DE-standard format with photo and
+      handwritten signature. LinkedIn profile exists. Initial reframing of
+      CNSO experience into Projektmanagement vocabulary in progress.
+    limitations: >
+      LinkedIn German content still light. Portfolio artefacts (programme
+      booklets, press releases, event timelines) from China are mostly in
+      Chinese — bilingual versions need to be prepared for interviews.
+
+  # ── Subject-matter strengths ─────────────────────────────────────────────
+
+  - name: "PR, media and content for cultural institutions"
     self_rating: 7
     cv_claimed: true
     evidence: >
-      Practical MBSE experience at [employer]: system architecture modelling,
-      interface definition, and requirements traceability using model-based
-      approaches. Familiar with SysML block definitions, activity diagrams,
-      state machines, and interface tables.
+      Five years' lead responsibility for CNSO press and media work:
+      conception and execution of press strategy within institutional
+      guidelines, drafting of all advertising and programme copy in Chinese
+      (print and online), management of social-media channels, central
+      interface between musicians, composers and journalists.
     limitations: >
-      Primary tooling experience is [employer]-internal. Less experience with Capella
-      or open-source SysML2 tools. Textual SysML2 is new — portfolio work in
-      progress with Mermaid diagrams as an entry point.
+      Strongest in Chinese-language PR; German-language PR writing is at
+      B2 level and would require editorial support for final published
+      copy. No DE press-distribution-list knowledge yet.
 
-  - name: "SOTIF and ISO/PAS 8800"
+  - name: "Music education and Musikvermittlung"
+    self_rating: 4
+    cv_claimed: false
+    evidence: >
+      Bachelor of Arts in Musicology (Xinghai Conservatory, Guangzhou) plus
+      multi-year piano studies at Conservatoire de Perpignan and
+      Conservatoire d'Evry (Diplôme d'Études Musicales, piano). Familiar
+      with the pedagogical landscape from the inside. Some indirect
+      exposure to music-education programming at CNSO.
+    limitations: >
+      No formal Musikvermittlung project ownership yet. Konzertpädagogik,
+      Schulkooperation and Kinderkonzert-format experience is theoretical
+      rather than practical. Limited contact with DE music-school
+      ecosystem so far.
+
+  - name: "Event production and coordination"
+    self_rating: 5
+    cv_claimed: true
+    evidence: >
+      Concert event coordination at CNSO: schedule liaison, artist hosting,
+      programme-book production, dress-rehearsal logistics, press calls.
+      Supported tour and guest-conductor visits.
+    limitations: >
+      DE-specific operational landscape (GEMA settlement, KSK obligations,
+      ticketing platforms Reservix/Eventim, venue tech-rider conventions,
+      BG Bau and event-safety rules) is new and would need on-the-job
+      learning. No production-tech background.
+
+  - name: "Exhibitions and museum education"
     self_rating: 2
     cv_claimed: false
     evidence: >
-      Self-study: understand SOTIF (ISO 21448) concept, intended function,
-      performance limitations, ODD, and the distinction from ISO 26262
-      (functional faults vs intended function safety). Familiar with how SOTIF
-      connects to AI perception monitoring and sensor limitations.
+      Conceptual awareness from music-institution context (programme
+      curation, audience development principles transfer). No museum-sector
+      project experience.
     limitations: >
-      No formal project application of SOTIF yet. ISO/PAS 8800 (AI safety in
-      vehicles) awareness only at clause-level — not yet applied to a concrete
-      safety argument. Both standards are still maturing; depth is limited.
+      No curatorial, Sammlungsmanagement or Museumspädagogik experience.
+      Only pursue museum vacancies that explicitly value cross-art-form
+      cultural-PM transferability.
 
-  - name: "ISO 13849 and CMSE"
-    self_rating: 3
-    cv_claimed: false
-    evidence: >
-      Strong transferable foundation from ISO 26262 (HARA ↔ risk graph,
-      ASIL ↔ PL, safety mechanisms ↔ SRP/CS, safety integrity ↔ MTTFd/DCavg).
-      Currently in structured CMSE preparation: studying safety function
-      definition, PLr determination, Category selection, MTTFd/DCavg/CCF.
-      Able to discuss concepts and analogies to ISO 26262 in an interview.
-    limitations: >
-      No practical machinery safety project experience yet. Cannot claim
-      SISTEMA use or actual PL calculation signed off. CMSE certification
-      pending. Do not claim proficiency until at least one worked project or
-      certification is complete.
+  # ── Languages ────────────────────────────────────────────────────────────
 
-  # ── Technical implementation skills ────────────────────────────────────────
-
-  - name: "ROS2"
-    self_rating: 4
-    cv_claimed: false
-    evidence: >
-      Active learning via Raspberry Pi safety demonstrator project.
-      Implemented publisher/subscriber nodes, launch files, basic message types.
-      Understands ROS2 node lifecycle, QoS concepts, and integration with
-      C++ safety logic.
-    limitations: >
-      No production ROS2 experience. Cannot lead a ROS2 architecture for a
-      real product yet. Demonstrator scope is limited. DDS configuration,
-      real-time ROS2, and ROS2 security are areas not yet covered.
-
-  - name: "C++20 and safety logic"
-    self_rating: 3
-    cv_claimed: false
-    evidence: >
-      Building StateEvaluator, HeartbeatMonitor, and TimeoutChecker modules
-      in the Raspberry Pi demonstrator with GoogleTest. Understands enum class,
-      strong typing, RAII, std::chrono, and CMake basics.
-    limitations: >
-      Not a professional-grade C++20 developer. Templates, advanced concurrency,
-      and production-grade performance optimization are out of scope for current
-      work. This is a supporting demonstrator skill, not a core market claim.
-
-  - name: "Python automation"
+  - name: "German language (written and spoken)"
     self_rating: 5
     cv_claimed: true
     evidence: >
-      Built and maintains the Career Intelligence Assistant (this tool):
-      RSS collection, SQLite, YAML configuration, LLM API integration,
-      HTML report generation. Also uses Python for fault injection scripts,
-      log analysis, and OpenCV basics in the Pi demonstrator.
+      Telc B2 certificate. Written B2 confirmed. Daily German use at home
+      and in family administration context. Comfortable reading cultural-
+      sector job ads and writing application letters with editorial review.
     limitations: >
-      Not a data scientist or ML engineer. Cannot claim deep ML/PyTorch
-      experience. Scripting and automation strength, not production backend.
+      Spoken fluency lags written: noticeable hesitation under interview
+      pressure, formal Bürokommunikation register still developing. This
+      is Xi's self-identified largest gap; structured spoken practice is
+      the highest-ROI development item.
 
-  - name: "AI perception monitoring"
-    self_rating: 4
-    cv_claimed: false
+  - name: "English language"
+    self_rating: 5
+    cv_claimed: true
     evidence: >
-      Conceptual understanding and early demonstrator implementation:
-      confidence threshold monitoring, latency watchdog design, stale-data
-      detection patterns. Understands how AI perception output supervision
-      connects to safety-critical decision logic.
+      B1 self-declared. Working knowledge for reading professional content
+      and basic written communication.
     limitations: >
-      No production AI safety monitoring system deployed. Knowledge of specific
-      ADAS AI stacks (Mobileye, NVIDIA Drive) is theoretical only.
+      Not used as primary working language in past role. Spoken English
+      not yet tested in a professional cultural-sector context.
 
-  - name: "Linux practical skills"
-    self_rating: 4
-    cv_claimed: false
+  - name: "Chinese language"
+    self_rating: 10
+    cv_claimed: true
     evidence: >
-      Daily use of Ubuntu/Raspberry Pi OS for development: SSH, process
-      management, systemd basics, GPIO, logging, Ethernet configuration.
-      Uses Linux for ROS2, fault injection, and demonstrator testing.
+      Native speaker, editorial-level written competence (multi-year
+      practice writing press releases, programme notes, and advertising
+      copy at CNSO).
     limitations: >
-      Not a Linux kernel or Yocto/Buildroot engineer. Device driver development
-      and kernel configuration are out of scope. Can claim practical developer
-      competency, not embedded OS expertise.
+      Translates into a CV asset where bilingual or trilingual roles exist
+      (Chinese-cultural-exchange programmes, Goethe-Institut China
+      partnerships, museums with Asian-collection programming).
 
-  - name: "QNX and POSIX supervisor concepts"
+  - name: "French language"
     self_rating: 3
-    cv_claimed: false
-    evidence: >
-      Conceptual understanding of QNX microkernel properties relevant to
-      functional safety: process isolation, POSIX API, watchdog patterns,
-      supervisor process design. Can articulate why QNX is preferred for
-      safety-critical automotive software over Linux.
-    limitations: >
-      NO practical QNX project experience. No QNX Momentics usage. Do not
-      claim hands-on proficiency. Only mention as "familiar with QNX concepts
-      and safety rationale" — never as a practical skill in interviews or CV
-      until a real QNX project is complete.
-
-  # ── Career and communication ─────────────────────────────────────────────
-
-  - name: "GitHub portfolio and documentation"
-    self_rating: 5
-    cv_claimed: false
-    evidence: >
-      Career Intelligence Assistant published on GitHub with structured README.
-      Raspberry Pi demonstrator project in progress. Demonstrates Python,
-      SQLite, LLM integration, RSS pipeline, and basic CI.
-    limitations: >
-      Portfolio does not yet show safety architecture work prominently.
-      Missing: safety case documents, architecture decision records, and
-      cross-domain standards mapping docs. CV bullets not yet fully quantified.
-
-  - name: "Soft skills and interview communication"
-    self_rating: 6
     cv_claimed: true
     evidence: >
-      Experienced professional communicator in German (native) and English
-      (proficient). Proven ability to present safety architecture decisions to
-      technical and management audiences at [employer]. Can structure STAR-format
-      interview stories.
+      Three years of university study and life in France (Perpignan, Evry,
+      Paris) during conservatory and master's studies; conversational
+      basics retained.
     limitations: >
-      Interview story preparation for external market is still in progress.
-      Needs more practice with: "why are you leaving", "walk me through your
-      safety concept process", and "how do you handle disagreement with a
-      safety assessor". Japanese business level is beginner only.
+      Not maintained at professional level since 2014. Should be presented
+      as Grundkenntnisse, not professional working language.
 
-  # ── Additional [employer] context skills (not in skill_matrix but relevant) ────
+  # ── Productivity ─────────────────────────────────────────────────────────
 
-  - name: "ISO 26262"
-    self_rating: 8
+  - name: "MS Office (Word, Excel, PowerPoint)"
+    self_rating: 7
     cv_claimed: true
     evidence: >
-      Primary professional expertise from [employer] automotive projects.
-      Covered: HARA, FSC, TSC, safety requirements, safety mechanisms,
-      safety analyses, confirmation measures, and safety case construction.
+      Routine daily use throughout CNSO role and continuing through family
+      phase: programme documents, contact lists, presentations, budget
+      tracking.
     limitations: >
-      Experience is primarily Part 4/5/6 (system/hardware/software) for
-      embedded platform safety. Part 8 (supporting processes) and Part 9
-      (ASIL-targeted analyses) are familiar but less hands-on.
+      No advanced Excel (PivotTables/Power Query) or PowerBI experience
+      claimed.
 
-  - name: "Technical communication (JP/DE/EN)"
+  - name: "AI tools for cultural administration"
     self_rating: 5
+    cv_claimed: true
+    evidence: >
+      Active use of Claude / ChatGPT-class tools for drafting, translation
+      proof-reading, audience-data summarisation, and information
+      management. Treats AI as productivity tool, not as decision system.
+    limitations: >
+      No prompt-engineering certification. Not positioning as AI/ML
+      practitioner — only as competent end-user.
+
+  - name: "Local cultural-sector networking (Stuttgart region)"
+    self_rating: 2
     cv_claimed: false
     evidence: >
-      German: native-level professional. English: proficient (working language
-      in international [employer] teams). Japanese: beginner — can handle basic
-      business introductions and simple email context.
+      Resident of Leonberg with access to Stuttgart cultural infrastructure.
+      Aware of key venues (Liederhalle, Staatsoper Stuttgart, Musikhochschule
+      Stuttgart, Theaterhaus, Schlossfestspiele Ludwigsburg).
     limitations: >
-      Japanese is not sufficient for technical safety discussions. Bosch Japan
-      should not be positioned as a primary career path based on current
-      language level.
+      Has not yet built a personal contact network inside these
+      institutions. Active networking is part of the weekly plan.
