@@ -238,6 +238,7 @@ _JOB_AD_TITLE_SUBSTRINGS = (
     "stellenausschreibung", "lehrauftrag",
     "anzeige: it-jobs",
 )
+_JOB_AD_SOURCE_PREFIXES = ("gnews stepstone",)
 _JOB_AD_SUCHT_WORDS = (
     "projektmanager", "leiter", "koordinator", "referent",
     "engineer", "ingenieur", "entwickler", "developer",
@@ -259,6 +260,8 @@ def _is_job_ad(title: str, url: str, source_name: str = "") -> bool:
     if "schreibt" in title_l and "stellen aus" in title_l:
         return True
     if "/jobs/" in url_l and any(s in source_l for s in _JOB_AD_JOB_BOARD_SOURCES):
+        return True
+    if any(source_l.startswith(p) for p in _JOB_AD_SOURCE_PREFIXES):
         return True
     return False
 
