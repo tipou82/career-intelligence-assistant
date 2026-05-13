@@ -1,171 +1,189 @@
 companies:
 
-  automotive:
-    - name: "Bosch"
-      aliases: ["Robert Bosch"]
-      region: ["germany", "europe", "global"]
+  # ── Local venues, ensembles and Kulturämter (Stuttgart / Leonberg region) ──
+  local_stuttgart_region:
+    - name: "Stuttgarter Liederhalle"
+      aliases: ["Liederhalle", "Liederhalle Stuttgart", "Kultur- und Kongresszentrum Liederhalle"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 1
-    - name: "Continental"
+    - name: "Musikhochschule Stuttgart"
+      aliases: ["HMDK Stuttgart", "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Stuttgarter Philharmoniker"
+      aliases: ["Philharmoniker Stuttgart"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "SWR Symphonieorchester"
+      aliases: ["SWR Symphonie", "SWR-Symphonieorchester"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Staatstheater Stuttgart"
+      aliases: ["Württembergische Staatstheater", "Staatsoper Stuttgart"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Internationale Bachakademie Stuttgart"
+      aliases: ["Bachakademie", "Bach-Akademie Stuttgart"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Theaterhaus Stuttgart"
+      aliases: ["Theaterhaus"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 2
+    - name: "Junges Ensemble Stuttgart"
+      aliases: ["JES"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 2
+    - name: "Schlossfestspiele Ludwigsburg"
+      aliases: ["Ludwigsburger Schlossfestspiele"]
+      region: ["ludwigsburg", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Forum am Schlosspark Ludwigsburg"
+      aliases: ["Forum Ludwigsburg"]
+      region: ["ludwigsburg", "baden-württemberg", "germany"]
+      tier: 2
+    - name: "Stadthalle Sindelfingen"
       aliases: []
-      region: ["germany", "europe", "global"]
-      tier: 1
-    - name: "ZF"
-      aliases: ["ZF Friedrichshafen"]
-      region: ["germany", "europe", "global"]
-      tier: 1
-    - name: "Mercedes-Benz"
-      aliases: ["Mercedes", "Daimler"]
-      region: ["germany", "europe", "global"]
-      tier: 1
-    - name: "BMW"
-      aliases: ["BMW Group"]
-      region: ["germany", "europe", "global"]
-      tier: 1
-    - name: "Volkswagen"
-      aliases: ["VW", "VW Group"]
-      region: ["germany", "europe", "global"]
-      tier: 1
-    - name: "Porsche"
+      region: ["sindelfingen", "baden-württemberg", "germany"]
+      tier: 2
+    - name: "Stadthalle Leonberg"
       aliases: []
-      region: ["germany", "europe", "global"]
-      tier: 2
-    - name: "Tesla"
+      region: ["leonberg", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Kulturamt Leonberg"
+      aliases: ["Stadt Leonberg Kulturamt"]
+      region: ["leonberg", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Kulturamt Stuttgart"
+      aliases: ["Stadt Stuttgart Kulturamt", "Landeshauptstadt Stuttgart Kulturamt"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Musikschule Stuttgart"
+      aliases: ["Stuttgarter Musikschule"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Musikschule Leonberg"
       aliases: []
-      region: ["usa", "global"]
+      region: ["leonberg", "baden-württemberg", "germany"]
       tier: 1
-    - name: "Toyota"
-      aliases: ["Toyota Motor", "トヨタ", "丰田"]
-      region: ["japan", "global"]
-      tier: 1
-    - name: "Honda"
-      aliases: ["Honda Motor", "ホンダ", "本田"]
-      region: ["japan", "global"]
+    - name: "Volkshochschule Stuttgart"
+      aliases: ["VHS Stuttgart"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "Denso"
-      aliases: ["デンソー", "电装"]
-      region: ["japan", "global"]
-      tier: 1
-    - name: "Nissan"
-      aliases: ["日産", "日产"]
-      region: ["japan", "global"]
+    - name: "Kreisvolkshochschule Böblingen"
+      aliases: ["VHS Böblingen"]
+      region: ["böblingen", "baden-württemberg", "germany"]
       tier: 2
-    - name: "Hyundai"
-      aliases: ["Hyundai Motor", "현대"]
-      region: ["korea", "global"]
+    - name: "Tanzhaus Stuttgart"
+      aliases: []
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "BYD"
-      aliases: ["比亚迪"]
-      region: ["china", "global"]
-      tier: 2
-    - name: "Geely"
-      aliases: ["吉利"]
-      region: ["china", "global"]
-      tier: 2
-    - name: "NIO"
-      aliases: ["蔚来"]
-      region: ["china", "global"]
-      tier: 2
-    - name: "XPeng"
-      aliases: ["XPEV", "小鹏"]
-      region: ["china", "global"]
+    - name: "Junge Oper Stuttgart"
+      aliases: []
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
 
-  robotics:
-    - name: "NEURA Robotics"
-      aliases: ["NEURA"]
-      region: ["germany", "europe"]
-      tier: 1
-    - name: "Figure AI"
-      aliases: ["Figure"]
-      region: ["usa"]
-      tier: 1
-    - name: "Boston Dynamics"
+  # ── Local museums & visual arts (Stuttgart / Leonberg region) ──
+  local_museums:
+    - name: "Staatsgalerie Stuttgart"
       aliases: []
-      region: ["usa"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 1
-    - name: "Agility Robotics"
-      aliases: ["Agility"]
-      region: ["usa"]
+    - name: "Kunstmuseum Stuttgart"
+      aliases: []
+      region: ["stuttgart", "baden-württemberg", "germany"]
+      tier: 1
+    - name: "Linden-Museum Stuttgart"
+      aliases: ["Lindenmuseum"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "Unitree"
-      aliases: ["Unitree Robotics", "宇树科技", "宇树"]
-      region: ["china"]
+    - name: "Mercedes-Benz Museum"
+      aliases: []
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "UBTech"
-      aliases: ["UBTECH", "优必选"]
-      region: ["china"]
+    - name: "Porsche Museum"
+      aliases: []
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "ABB Robotics"
-      aliases: ["ABB"]
-      region: ["europe", "global"]
+    - name: "Stadtmuseum Leonberg"
+      aliases: ["Heimatmuseum Leonberg"]
+      region: ["leonberg", "baden-württemberg", "germany"]
       tier: 2
-    - name: "KUKA"
-      aliases: ["库卡"]
-      region: ["germany", "europe"]
-      tier: 2
-    - name: "FANUC"
-      aliases: ["ファナック", "发那科"]
-      region: ["japan", "global"]
-      tier: 2
-    - name: "Yaskawa"
-      aliases: ["Yaskawa Electric", "安川電機", "安川电机"]
-      region: ["japan", "global"]
-      tier: 2
-    - name: "Kawasaki Robotics"
-      aliases: ["Kawasaki", "川崎重工"]
-      region: ["japan", "global"]
+    - name: "Akademie Schloss Solitude"
+      aliases: ["Schloss Solitude"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
 
-  ai_chips_software:
-    - name: "NVIDIA"
-      aliases: []
-      region: ["usa", "global"]
-      tier: 1
-    - name: "Qualcomm"
-      aliases: []
-      region: ["usa", "global"]
-      tier: 1
-    - name: "Mobileye"
-      aliases: []
-      region: ["usa", "global"]
-      tier: 1
-    - name: "Arm"
-      aliases: ["ARM"]
-      region: ["global"]
-      tier: 1
-    - name: "AMD"
-      aliases: []
-      region: ["usa", "global"]
+  # ── National & DACH cultural institutions ──
+  national_dach:
+    - name: "Berliner Philharmoniker"
+      aliases: ["Berlin Philharmonic", "Berlin Phil"]
+      region: ["berlin", "germany"]
       tier: 2
-    - name: "Intel"
+    - name: "Bayerische Staatsoper"
+      aliases: ["Staatsoper München"]
+      region: ["münchen", "bayern", "germany"]
+      tier: 2
+    - name: "Elbphilharmonie Hamburg"
+      aliases: ["Elbphilharmonie"]
+      region: ["hamburg", "germany"]
+      tier: 2
+    - name: "Kölner Philharmonie"
       aliases: []
-      region: ["usa", "global"]
+      region: ["köln", "germany"]
       tier: 2
-    - name: "OpenAI"
+    - name: "Goethe-Institut"
+      aliases: ["Goethe Institute"]
+      region: ["germany", "global"]
+      tier: 2
+    - name: "Deutsche Stiftung Musikleben"
       aliases: []
-      region: ["usa", "global"]
+      region: ["germany"]
       tier: 2
-    - name: "Google DeepMind"
-      aliases: ["DeepMind", "Google"]
-      region: ["usa", "global"]
+    - name: "Bundesverband Musikunterricht"
+      aliases: ["BMU"]
+      region: ["germany"]
       tier: 2
-    - name: "Anthropic"
+    - name: "Deutscher Musikrat"
       aliases: []
-      region: ["usa", "global"]
+      region: ["germany"]
       tier: 2
-    - name: "Microsoft"
+    - name: "Deutscher Bühnenverein"
+      aliases: ["Bühnenverein"]
+      region: ["germany"]
+      tier: 2
+    - name: "Netzwerk Junge Ohren"
+      aliases: ["Junge Ohren"]
+      region: ["germany"]
+      tier: 2
+    - name: "Kulturstiftung des Bundes"
       aliases: []
-      region: ["usa", "global"]
+      region: ["germany"]
       tier: 2
-    - name: "Huawei"
-      aliases: ["华为"]
-      region: ["china", "global"]
+
+  # ── Event agencies & concert promoters relevant in BW ──
+  event_agencies:
+    - name: "SKS Russ"
+      aliases: ["SKS"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "Baidu"
-      aliases: ["百度"]
-      region: ["china", "global"]
+    - name: "Music & More Konzert"
+      aliases: ["Music & More"]
+      region: ["stuttgart", "baden-württemberg", "germany"]
       tier: 2
-    - name: "Dassault Systèmes"
-      aliases: ["Dassault", "Dassault Systemes", "3DEXPERIENCE"]
-      region: ["europe", "france"]
-      tier: 1
+    - name: "CTS Eventim"
+      aliases: ["Eventim"]
+      region: ["germany", "europe"]
+      tier: 2
+    - name: "Reservix"
+      aliases: []
+      region: ["germany"]
+      tier: 2
+    - name: "DEAG"
+      aliases: ["Deutsche Entertainment AG"]
+      region: ["germany"]
+      tier: 2
+    - name: "Karsten Jahnke Konzertdirektion"
+      aliases: ["Karsten Jahnke"]
+      region: ["germany"]
+      tier: 2
