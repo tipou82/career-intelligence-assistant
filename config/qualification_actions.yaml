@@ -1,418 +1,628 @@
 # Qualification Actions Configuration
-#
-# This file defines a targeted qualification plan for a specific person.
-# The system scores each qualification action and classifies it into:
-#   must_have       — required or strongly expected for target roles
-#   high_roi        — not mandatory, but improves credibility quickly
-#   nice_to_have    — useful later, but not urgent this month
-#   avoid_for_now   — interesting but low return (too expensive, too broad,
-#                     too theoretical, or weakly aligned with target jobs)
-#
-# Scoring formula:
-#   qualification_score =
-#       market_frequency_score * 0.30   (appears in relevant job ads)
-#     + target_role_relevance  * 0.25   (directly needed for target roles)
-#     + profile_gap_score      * 0.20   (closes a real gap in this profile)
-#     + evidence_output_score  * 0.15   (produces visible CV/LinkedIn/portfolio proof)
-#     + feasibility_score      * 0.10   (achievable within weekly time budget)
-#     - cost_time_penalty      * 0.10   (penalises expensive or very long programmes)
-#
-# Score thresholds:
-#   >= 0.72 → must_have
-#   >= 0.52 → high_roi
-#   >= 0.35 → nice_to_have
-#   <  0.35 → avoid_for_now
-#
-# Use override_category to force classification regardless of score.
-# All scores are 0.0–1.0.
-#
-# DECISION RULE: only add a qualification if it passes at least 4 of 6:
-#   1. Appears repeatedly in relevant job ads
-#   2. Closes a real gap in the candidate profile
-#   3. Achievable within the weekly time budget
-#   4. Produces visible evidence (certificate, project, portfolio entry)
-#   5. Cost/time justified by market demand
-#   6. Required, strongly preferred, or closes a deal-breaking gap
-
-# ────────────────────────────────────────────────────────────────────────────
-# STRATEGY
-# ────────────────────────────────────────────────────────────────────────────
+# Career transition sprint configuration for external-market readiness.
+# Context: senior Bosch functional safety / system safety engineer in Drehscheibe;
+# focus is broad external transition in Germany/Europe. Bosch Japan remains optional.
 
 qualification_strategy:
-  target_person: "Erika Mustermann"
-  weekly_hours_cap: 8      # sustainable weekly time budget for qualification
+  target_person: "Max Mustermann"
+  career_mode: "external_transition"
+  weekly_hours_cap: 30
+  weekly_hours_stretch_cap: 35
+  daily_deep_focus_hours: 6
   currency: "EUR"
+  planning_date: "2026-05-13"
+
+  current_situation: >
+    Full-time available for qualification, job search, portfolio work and interview preparation,
+    while also having family responsibilities with two small children. Bosch Japan remains a
+    still-possible option but is not the focus. The main objective is to secure external-market
+    employability and income stability in Germany/Europe.
+
+  strategic_positioning: >
+    Senior System Safety / Functional Safety Architect for safety-critical embedded systems,
+    ADAS, robotics, industrial automation and AI-enabled systems.
 
   principle: >
-    Recommend only qualifications that improve employability for the target roles.
-    Prefer small credible proof over expensive certificates unless the certificate
-    is clearly required by employers. Never recommend "learn AI" or "improve
-    communication" — every action must be specific and produce visible output.
-    Never encourage overclaiming: "course completed" is not "professional experience".
+    Prioritize qualifications and outputs that improve external employability within 3–6 months.
+    Prefer visible proof such as CV updates, LinkedIn positioning, interview case studies,
+    certification milestones and portfolio artifacts. Avoid overclaiming: conceptual understanding,
+    course completion and practical project experience must be clearly distinguished.
 
   coaching_guardrails:
-    - "Do not recommend trendy courses without repeated appearance in relevant job ads."
-    - "Do not recommend expensive certificates before the candidate has 2–3 job rejections citing the specific gap."
-    - "Do not recommend more than 2 must-have and 2 high-roi actions per week."
-    - "Every recommendation must produce a visible, interview-defensible output."
-    - "Distinguish clearly between certificate (proof of learning) and experience (proof of doing)."
+    - "Protect family income: prioritize senior roles and transferable safety expertise over risky junior reskilling."
+    - "Do not let ROS2, C++, QNX or AI implementation work dominate over job search and interview conversion."
+    - "Use CMSE as a robotics/industrial-automation bridge, not as a complete identity change."
+    - "Never claim professional QNX experience; phrase it as QNX/POSIX supervisor concept understanding."
+    - "Keep Bosch Japan optional, not central."
+    - "Every weekly recommendation must produce a visible output or improve application conversion."
+    - "Do not recommend expensive certificates unless they clearly improve target-role access."
 
-  # ──────────────────────────────────────────────────────────────────────────
-  # CANDIDATE PROFILE — fill in Erika Mustermann's actual background here
-  # ──────────────────────────────────────────────────────────────────────────
+  cmse_milestone:
+    name: "CMSE training and certification"
+    provider_context: "TÜV NORD / PILZ"
+    date_start: "2026-06-15"
+    date_end: "2026-06-18"
+    career_relevance: "Robotics safety, machinery safety, industrial automation and ISO 13849 transition credibility"
+    pre_training_target_rating: 4
+    after_training_target_rating: 5
+    three_month_target_rating: 6
+
+  phase_plan:
+    pre_cmse:
+      date_until: "2026-06-14"
+      goal: "External market readiness plus CMSE preparation"
+      weekly_allocation_hours:
+        external_job_search_pipeline: 8
+        interview_preparation: 5
+        cmse_iso_13849_preparation: 7
+        cv_linkedin_portfolio: 4
+        functional_safety_case_studies: 3
+        ai_safety_sotif_iso_pas_8800: 1.5
+        ros2_qnx_linux_demonstrator: 1.5
+    cmse_week:
+      date_start: "2026-06-15"
+      date_end: "2026-06-18"
+      goal: "Pass certification and extract interview-relevant machinery safety language"
+      daily_note_template:
+        - "Key concepts learned today"
+        - "Concepts transferable from ISO 26262"
+        - "Concepts different from ISO 26262"
+        - "Interview wording"
+        - "Portfolio application"
+    post_cmse:
+      date_from: "2026-06-19"
+      goal: "Convert CMSE into external-market value"
+      weekly_allocation_hours:
+        applications_and_recruiters: 10
+        interview_preparation: 5
+        cmse_practical_consolidation: 4
+        cv_linkedin_portfolio_update: 4
+        functional_safety_case_studies: 3
+        ai_safety_sotif_iso_pas_8800: 2
+        ros2_qnx_linux_demonstrator: 2
+
   candidate_profile:
-    name: "Erika Mustermann"
+    name: "Max Mustermann"
     nationality: "Chinese"
     current_location: "Germany"
-    highest_education: "Bachelor or Master — specify field"   # UPDATE THIS
-    years_of_work_experience: 0    # UPDATE — years in paid employment
-    previous_field: "specify"      # UPDATE — e.g. accounting, engineering, education
+    highest_education: "Master of Science in Electrical / Electronics Engineering, Technical University of Munich"
+    years_of_work_experience: 19
+    current_employer_context: "Robert Bosch GmbH; currently in Drehscheibe/internal transition context"
+    previous_field: "Automotive embedded systems, AUTOSAR, HiL, functional safety, system safety, platform safety"
 
     language_levels:
-      german: "A2"     # UPDATE — A1/A2/B1/B2/C1/C2 based on current level
-      english: "B2"    # UPDATE
       mandarin: "native"
+      german: "C1/C2 professional working proficiency; goal is C2-level rhetorical precision"
+      english: "C1/C2 professional working proficiency"
+      japanese: "JLPT N1; business communication possible, still improving formal keigo and interview fluency"
 
-    current_german_certificate: null    # e.g. "Goethe A2", "telc B1", null if none
-    german_recognition_status: null     # "recognised", "pending", "not yet applied", null
+    current_certificates:
+      - "JLPT N1"
+      - "IBM Generative AI Engineering Specialization, Coursera, 2024"
+      - "DeepLearning.AI Deep Learning Specialization, 2018"
+      - "CMSE scheduled for 2026-06-15 to 2026-06-18"
 
     known_profile_gaps:
-      - "German language below B2 — limits office/professional roles"
-      - "No German-recognised professional qualification"
-      - "Limited German professional network"
-      - "CV not yet optimised for German job market format"
-      # Add more gaps here as you discover them from job rejections
+      - "No practical QNX project experience; only conceptual QNX/POSIX supervisor understanding"
+      - "Limited practical ISO 13849 / machinery safety project experience before CMSE"
+      - "ROS2 and modern C++ are portfolio-level skills, not yet senior professional robotics software skills"
+      - "SOTIF and ISO/PAS 8800 are conceptually understood but not yet deep project ownership areas"
+      - "External-market CV, LinkedIn and application pipeline need to be sharpened for Germany/Europe"
+      - "Need interview-ready senior case studies that translate Bosch platform safety experience into external value"
+      - "Need broader company targeting outside Bosch, especially robotics, industrial automation, safety consulting, TÜV/assessment, aerospace and rail"
 
-  # ──────────────────────────────────────────────────────────────────────────
-  # TARGET ROLES — list the actual roles Erika Mustermann is applying for or targeting
-  # ──────────────────────────────────────────────────────────────────────────
+    core_strengths:
+      - "ISO 26262 functional safety experience in automotive embedded systems"
+      - "System safety requirements and technical safety concept work"
+      - "Safety mechanism architecture and safety trade-off reasoning"
+      - "Platform safety experience with SoC, PMIC, reset, safe state, diagnostics and FFI concepts"
+      - "Requirements engineering, traceability and review experience with DOORS NG"
+      - "MBSE/SysML understanding and architecture documentation"
+      - "Multilingual profile: Chinese, German, English and Japanese"
+      - "Current portfolio project: safety-supervised edge AI demonstrator using Raspberry Pi, ROS2, Linux and QNX-inspired supervisor concepts"
+
+    self_ratings_0_to_10:
+      functional_safety_iso26262: 8
+      system_safety_architecture: 8
+      safety_requirements_engineering: 8
+      mbse_sysml: 7
+      sotif_iso21448: 5
+      iso_pas_8800: 4
+      iso_13849_cmse_current: 3
+      qnx_posix_supervisor_concepts: 3
+      linux_practical_skills: 4.5
+      ros2: 4
+      cpp20_safety_logic: 3.5
+      python_automation: 5
+      ai_perception_monitoring: 4
+      github_portfolio_documentation: 5
+      interview_communication: 6
+
   target_roles:
-    - title: "UPDATE — e.g. Office Manager"
-      sector: "UPDATE — e.g. small/medium business, technology company"
+    - title: "Senior Functional Safety Engineer / Functional Safety Architect"
+      sector: "Automotive, embedded systems, Tier-1, OEM, engineering service providers"
       typical_requirements:
-        - "German B2 minimum"
-        - "MS Office / Google Workspace"
-        - "Organisational and communication skills"
-    # Add more target roles here
-    # - title: "..."
-    #   sector: "..."
-    #   typical_requirements: [...]
-
-
-# ────────────────────────────────────────────────────────────────────────────
-# QUALIFICATION ACTIONS
-# Each action is scored and classified automatically.
-# Update profile_gap_score when Erika Mustermann's actual gaps are known.
-# ────────────────────────────────────────────────────────────────────────────
+        - "ISO 26262 project experience"
+        - "Safety concepts, safety requirements and safety mechanisms"
+        - "System/software/hardware interface understanding"
+        - "Stakeholder communication and safety argumentation"
+    - title: "System Safety Engineer / Safety Architect"
+      sector: "Safety-critical embedded systems, ADAS, robotics, industrial automation"
+      typical_requirements:
+        - "Risk-based safety engineering"
+        - "Architecture-level trade-off reasoning"
+        - "Requirements traceability"
+        - "Cross-domain hardware/software/system collaboration"
+    - title: "Machine Safety / Robotics Safety Engineer"
+      sector: "Robotics, machinery, industrial automation"
+      typical_requirements:
+        - "ISO 13849, IEC 62061 or IEC 61508 awareness"
+        - "Safety functions, PLr/PL, Categories, MTTFd, DCavg and CCF"
+        - "Robot cell or machinery risk assessment"
+        - "CMSE or comparable certification preferred"
+    - title: "Safety Consultant / Assessor"
+      sector: "TÜV, certification bodies, engineering consulting, safety assessment"
+      typical_requirements:
+        - "Strong safety standard knowledge"
+        - "Customer-facing communication"
+        - "Safety case and assessment logic"
+        - "Ability to translate across automotive, machinery and embedded domains"
+    - title: "Embedded / Platform Safety Architect"
+      sector: "Automotive SDV, embedded platforms, SoC-based safety systems"
+      typical_requirements:
+        - "Embedded platform safety"
+        - "SoC/PMIC/reset/safe-state/diagnostics reasoning"
+        - "Freedom from interference concepts"
+        - "AUTOSAR, Linux/QNX or comparable embedded-platform awareness"
+    - title: "ADAS / SOTIF / AI-enabled Safety Engineer"
+      sector: "ADAS, automated driving, safety-critical AI-enabled systems"
+      typical_requirements:
+        - "ISO 26262 and SOTIF understanding"
+        - "ODD, perception limitations, monitoring and fallback concepts"
+        - "AI outside safety-critical decision path where necessary"
+        - "Safety-supervised architecture concepts"
 
 qualification_actions:
-
-  # ── LANGUAGE ─────────────────────────────────────────────────────────────
-
-  - id: "german_b2_certificate"
-    name: "German B2 certificate (Goethe-Institut or telc)"
+  - id: "external_job_search_pipeline"
+    market_signal_keywords:
+      job_signals: ["functional_safety", "safety_architecture", "system_safety", "safety architect", "safety manager"]
+      articles:    ["hiring", "layoffs", "restructuring", "job opening", "wir suchen"]
+    name: "External job search pipeline for senior safety roles"
     scores:
-      market_frequency:    0.95   # B2 appears in virtually every professional job ad in Germany
-      target_role_relevance: 0.95 # deal-breaker gap for most office/professional roles
-      profile_gap:         0.90   # major gap if currently at A2/B1
-      evidence_output:     0.95   # internationally recognised certificate
-      feasibility:         0.50   # 6–12 months of consistent study at 8h/week
-      cost_time_penalty:   0.40   # Goethe B2 exam ~200 EUR; course costs vary
+      market_frequency: 0.95
+      target_role_relevance: 1.00
+      profile_gap: 0.90
+      evidence_output: 0.90
+      feasibility: 0.90
+      cost_time_penalty: 0.05
     override_category: "must_have"
-    profile_gap_addressed: "German language below professional working proficiency"
+    profile_gap_addressed: "External-market transition requires a structured application pipeline beyond Bosch"
     recommended_action: >
-      Enrol in Goethe-Institut or VHS B2 course. Study 8 h/week minimum.
-      Take B2 exam as soon as eligible. Do NOT apply to professional roles before B2.
-    expected_visible_output: "Goethe B2 or telc B2 certificate — required on CV and applications"
+      Build and maintain an application tracker with target companies, job titles, application status,
+      recruiter contacts, interview feedback and next actions. Apply weekly to carefully selected senior
+      safety roles in Germany/Europe rather than waiting for internal Bosch options.
+    expected_visible_output: "Application tracker with at least 30 target companies and 10 active applications"
     estimated_weekly_hours: 8
-    estimated_cost_eur: 600
-    estimated_duration_weeks: 24
-    cv_linkedin_usage: "List certificate with date and issuing institution"
-    interview_usage: "Evidence of commitment to Germany and professional integration"
-    target_role_relevance_note: "Required by virtually all professional employers in Germany"
-    reason_for_priority: "Without B2, most professional applications will not advance to interview"
-    reason_for_deferral_if_any: null
-
-  - id: "german_b1_interim"
-    name: "German B1 certificate (intermediate step before B2)"
-    scores:
-      market_frequency:    0.70   # some roles accept B1 (e.g. logistics, retail, entry-level admin)
-      target_role_relevance: 0.75
-      profile_gap:         0.85
-      evidence_output:     0.85
-      feasibility:         0.80   # achievable in 3–6 months from A2
-      cost_time_penalty:   0.20
-    override_category: "must_have"
-    profile_gap_addressed: "German below working level for entry-level or practical roles"
-    recommended_action: >
-      Obtain B1 certificate as milestone before B2. Unlocks entry-level and
-      practical roles (logistics, retail, assistant positions) while studying toward B2.
-    expected_visible_output: "Goethe B1 or telc B1 certificate"
-    estimated_weekly_hours: 8
-    estimated_cost_eur: 250
+    estimated_cost_eur: 0
     estimated_duration_weeks: 12
-    cv_linkedin_usage: "List as language level; replace with B2 when achieved"
-    interview_usage: "Shows language progression and commitment"
-    target_role_relevance_note: "Minimum threshold for many entry-level positions in Germany"
-    reason_for_priority: "Quick milestone that opens first job applications while progressing to B2"
+    cv_linkedin_usage: "Use market feedback to continuously tune CV and LinkedIn wording"
+    interview_usage: "Clarifies target narrative and salary/seniority positioning"
+    target_role_relevance_note: "This is the highest-priority action for income protection and transition execution"
+    reason_for_priority: "Without applications and recruiter outreach, qualification work does not convert into offers"
     reason_for_deferral_if_any: null
 
-  # ── CV AND JOB APPLICATION READINESS ─────────────────────────────────────
-
-  - id: "german_cv_format"
-    name: "German-format CV (Lebenslauf) and cover letter template"
+  - id: "cv_linkedin_safety_architect_positioning"
+    market_signal_keywords:
+      job_signals: ["functional_safety", "system_safety", "safety_architecture"]
+      articles:    ["functional safety", "safety architect", "senior safety"]
+    name: "CV and LinkedIn repositioning as Senior Safety Architect"
     scores:
-      market_frequency:    0.90   # every application requires German-format Lebenslauf
-      target_role_relevance: 0.90
-      profile_gap:         0.80   # Chinese CV format is very different
-      evidence_output:     0.85   # tangible document ready to send
-      feasibility:         0.95   # 1–3 hours one-time investment
-      cost_time_penalty:   0.00   # free
+      market_frequency: 0.95
+      target_role_relevance: 0.95
+      profile_gap: 0.85
+      evidence_output: 0.95
+      feasibility: 0.95
+      cost_time_penalty: 0.00
     override_category: "must_have"
-    profile_gap_addressed: "No German-format CV prepared — cannot apply to jobs"
+    profile_gap_addressed: "Current profile must be externally readable and not too Bosch-internal"
     recommended_action: >
-      Create a professional German Lebenslauf (tabellarisch format, reverse chronological,
-      with photo). Write one standard Anschreiben template. Use Europass or Canva
-      as starting point. Have a German native speaker review once.
-    expected_visible_output: "German CV PDF and cover letter template ready to send"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 1
-    cv_linkedin_usage: "The CV itself is the output"
-    interview_usage: "Required for every application — not optional"
-    target_role_relevance_note: "Applications without German-format CV are often rejected automatically"
-    reason_for_priority: "Zero cost, one-time task that unblocks all applications immediately"
-    reason_for_deferral_if_any: null
-
-  - id: "linkedin_profile_de"
-    name: "LinkedIn profile in German and English"
-    scores:
-      market_frequency:    0.80
-      target_role_relevance: 0.75
-      profile_gap:         0.70
-      evidence_output:     0.80
-      feasibility:         0.90
-      cost_time_penalty:   0.00
-    profile_gap_addressed: "No professional online presence visible to German recruiters"
-    recommended_action: >
-      Create or update LinkedIn profile with German headline and summary.
-      Add education, previous experience, and language skills. Connect with
-      3–5 relevant professionals per week. Free to create.
-    expected_visible_output: "LinkedIn profile with German summary and complete work history"
-    estimated_weekly_hours: 2
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 1
-    cv_linkedin_usage: "LinkedIn URL added to CV header"
-    interview_usage: "Recruiters check LinkedIn before inviting to interviews"
-    target_role_relevance_note: "Expected for most professional roles; low cost, high visibility"
-    reason_for_priority: "One-time setup task; free; enables recruiter outreach"
-    reason_for_deferral_if_any: null
-
-  # ── DIGITAL / OFFICE SKILLS ───────────────────────────────────────────────
-
-  - id: "ms_office_practical"
-    name: "MS Office practical competency (Word, Excel, Outlook, PowerPoint)"
-    scores:
-      market_frequency:    0.85   # in virtually every admin/office job ad
-      target_role_relevance: 0.80
-      profile_gap:         0.60   # depends on actual current level — UPDATE
-      evidence_output:     0.65   # no formal certificate needed; demonstrate in interview
-      feasibility:         0.90
-      cost_time_penalty:   0.05
-    profile_gap_addressed: "Office software proficiency expected by most employers"
-    recommended_action: >
-      Self-assess honestly against real job requirements (mail merge, pivot tables,
-      VLOOKUP, standard templates). Practice the specific tasks mentioned in target job
-      ads. Free Microsoft training at microsoft.com/en-us/learning.
-      Do NOT pay for an MS Office certificate — it is not recognised or expected by employers.
-    expected_visible_output: "Can answer 'give me an example of Excel use' in an interview with a concrete story"
-    estimated_weekly_hours: 2
-    estimated_cost_eur: 0
-    estimated_duration_weeks: 4
-    cv_linkedin_usage: "List as MS Office (Word, Excel, Outlook, PowerPoint) — specific tools"
-    interview_usage: "Be ready to describe a specific task you completed using Excel or Word"
-    target_role_relevance_note: "Universal requirement for office/admin roles"
-    reason_for_priority: "Free, fast, directly required — do not skip"
-    reason_for_deferral_if_any: null
-
-  - id: "datev_awareness"
-    name: "DATEV software awareness (German accounting/HR standard)"
-    scores:
-      market_frequency:    0.60   # common in accounting, HR, and office roles in Germany
-      target_role_relevance: 0.55  # UPDATE based on actual target role
-      profile_gap:         0.70
-      evidence_output:     0.50   # DATEV has a training program; Grundkurs is free
-      feasibility:         0.70
-      cost_time_penalty:   0.10
-    profile_gap_addressed: "DATEV is the standard German accounting tool — unknown to most non-German candidates"
-    recommended_action: >
-      Complete DATEV Grundkurs (free online). Understand what DATEV does and how it is
-      used in German SME accounting and HR. Do not invest more time unless accounting is
-      the target role.
-    expected_visible_output: "DATEV Grundkurs completion; can mention in applications for accounting/admin roles"
-    estimated_weekly_hours: 2
+      Create one English master CV, one German CV and one LinkedIn profile version using the headline
+      'Senior Functional Safety / System Safety Architect'. Emphasize ISO 26262, safety architecture,
+      safety requirements, safety mechanisms, embedded platform safety, MBSE, and transition toward
+      robotics, industrial automation and AI-enabled safety-critical systems.
+    expected_visible_output: "English CV, German CV and updated LinkedIn profile"
+    estimated_weekly_hours: 4
     estimated_cost_eur: 0
     estimated_duration_weeks: 2
-    cv_linkedin_usage: "List only if applying to accounting/finance/HR roles"
-    interview_usage: "Shows awareness of German business software ecosystem"
-    target_role_relevance_note: "Relevant for accounting, controlling, HR support, office management in Germany"
-    reason_for_priority: "Free, quick, opens accounting/HR application track"
-    reason_for_deferral_if_any: "Skip if target roles do not include accounting or HR"
+    cv_linkedin_usage: "Primary output used in all applications"
+    interview_usage: "Ensures recruiter and interviewer understand senior safety value immediately"
+    target_role_relevance_note: "Directly required for every external application"
+    reason_for_priority: "High leverage, low cost, immediate effect"
+    reason_for_deferral_if_any: null
 
-  # ── PROFESSIONAL QUALIFICATION ────────────────────────────────────────────
-
-  - id: "qs_kaufmaennische_ausbildung_einstieg"
-    name: "Kaufmännische Einführung / BWL Grundkurs (IHK or VHS)"
+  - id: "interview_case_studies_senior_safety"
+    market_signal_keywords:
+      job_signals: ["functional_safety", "safety_architecture", "safety case"]
+      articles:    ["functional safety", "safety architecture", "safety concept"]
+    name: "Three senior safety interview case studies"
     scores:
-      market_frequency:    0.55   # useful context for many German office/admin roles
-      target_role_relevance: 0.50  # UPDATE based on target role
-      profile_gap:         0.65
-      evidence_output:     0.60
-      feasibility:         0.65
-      cost_time_penalty:   0.25
-    profile_gap_addressed: "German business vocabulary and Kaufmann framework is unfamiliar"
+      market_frequency: 0.90
+      target_role_relevance: 0.95
+      profile_gap: 0.85
+      evidence_output: 0.90
+      feasibility: 0.90
+      cost_time_penalty: 0.00
+    override_category: "must_have"
+    profile_gap_addressed: "Need interview-defensible evidence for senior safety architecture value"
     recommended_action: >
-      Take VHS Kaufmännisches Basiswissen course (50–80 h, ~150 EUR) if applying to
-      German SME admin, purchasing, or junior controlling roles. Only invest if at least
-      3 target job ads mention kaufmännische Ausbildung or BWL Grundkenntnisse.
-    expected_visible_output: "VHS course certificate; business German vocabulary"
+      Prepare three one-page case studies: 1) S32G/platform safety and safe-state/reset concept,
+      2) Mobileye/TDA4 missing-NMI workaround with FIQ plus cyclic monitoring, and 3) safety-supervised
+      edge AI demonstrator with deterministic runtime safety supervision. Use STAR/CAR structure and
+      emphasize constraints, decisions, safety argumentation and business impact.
+    expected_visible_output: "Three one-page interview case-study notes"
+    estimated_weekly_hours: 5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 3
+    cv_linkedin_usage: "Convert into achievement bullets and LinkedIn project descriptions"
+    interview_usage: "Core evidence for seniority, problem-solving and architecture judgment"
+    target_role_relevance_note: "Relevant to all target roles, especially safety architect and consultant roles"
+    reason_for_priority: "Interview conversion depends more on strong stories than on another generic course"
+    reason_for_deferral_if_any: null
+
+  - id: "cmse_iso_13849_preparation"
+    market_signal_keywords:
+      job_signals: ["iso_13849", "cmse", "machinery_safety"]
+      articles:    ["iso 13849", "machinery safety", "performance level", "cmse", "safety function"]
+    name: "CMSE / ISO 13849 preparation before 15 June 2026"
+    scores:
+      market_frequency: 0.75
+      target_role_relevance: 0.85
+      profile_gap: 0.90
+      evidence_output: 0.85
+      feasibility: 0.80
+      cost_time_penalty: 0.20
+    override_category: "must_have"
+    profile_gap_addressed: "Limited practical machinery safety and ISO 13849 experience before CMSE"
+    recommended_action: >
+      Prepare before CMSE by studying safety functions, PLr determination, Categories B/1/2/3/4,
+      MTTFd, DCavg, CCF and SISTEMA basics. Focus on understanding and transfer from ISO 26262,
+      not on memorizing every formula. Training/certification is scheduled for 2026-06-15 to 2026-06-18.
+    expected_visible_output: "CMSE preparation notes and later CMSE certificate if passed"
+    estimated_weekly_hours: 7
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 5
+    cv_linkedin_usage: "Before course: 'CMSE certification scheduled June 2026'; after passing: list certificate"
+    interview_usage: "Explain how ISO 26262 experience transfers to machinery and robotics safety"
+    target_role_relevance_note: "High relevance for robotics, machinery and industrial automation safety roles"
+    reason_for_priority: "Fixed milestone on 15 June; improves external-market breadth"
+    reason_for_deferral_if_any: null
+
+  - id: "post_cmse_practical_consolidation"
+    market_signal_keywords:
+      job_signals: ["iso_13849", "cmse", "robotics"]
+      articles:    ["iso 13849", "machinery safety", "collaborative robot"]
+    name: "Post-CMSE machinery safety mini-case and transfer note"
+    scores:
+      market_frequency: 0.70
+      target_role_relevance: 0.85
+      profile_gap: 0.85
+      evidence_output: 0.90
+      feasibility: 0.85
+      cost_time_penalty: 0.00
+    override_category: "high_roi"
+    profile_gap_addressed: "Certification alone is weaker than practical, interview-defensible application"
+    recommended_action: >
+      After CMSE, create one robot-cell safety function mini-case and one portfolio note titled
+      'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard,
+      safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea.
+    expected_visible_output: "docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case"
     estimated_weekly_hours: 4
-    estimated_cost_eur: 150
-    estimated_duration_weeks: 12
-    cv_linkedin_usage: "List only if directly relevant to applied roles"
-    interview_usage: "Demonstrates understanding of German business structures"
-    target_role_relevance_note: "Only relevant if target is German SME office/admin/purchasing"
-    reason_for_priority: "Moderate return — only pursue if job ads explicitly mention it"
-    reason_for_deferral_if_any: "Defer until job ads repeatedly mention kaufmännische Kenntnisse"
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 3
+    cv_linkedin_usage: "Use as portfolio evidence for robotics/machinery safety transition"
+    interview_usage: "Shows ability to apply CMSE concepts rather than merely attending the course"
+    target_role_relevance_note: "Especially relevant for robotics, industrial automation and consulting roles"
+    reason_for_priority: "Converts certificate into usable market evidence"
+    reason_for_deferral_if_any: "Start after CMSE training week"
 
-  - id: "recognition_auslaendischer_abschluss"
-    name: "Recognition of foreign degree in Germany (Anabin / KMK)"
+  - id: "functional_safety_architecture_refresh"
+    market_signal_keywords:
+      job_signals: ["functional_safety", "iso_26262", "safety_architecture"]
+      articles:    ["functional safety", "iso 26262", "safety mechanism", "safety concept"]
+    name: "Functional safety and system safety architecture refresh"
     scores:
-      market_frequency:    0.70   # required for regulated professions; useful for all
-      target_role_relevance: 0.75
-      profile_gap:         0.80
-      evidence_output:     0.90   # official recognition letter is strong CV evidence
-      feasibility:         0.60   # 3–6 months process; paperwork intensive
-      cost_time_penalty:   0.20
-    profile_gap_addressed: "Foreign degree unrecognised in Germany; reduces credibility for professional roles"
+      market_frequency: 0.95
+      target_role_relevance: 0.95
+      profile_gap: 0.35
+      evidence_output: 0.75
+      feasibility: 0.90
+      cost_time_penalty: 0.00
+    override_category: "high_roi"
+    profile_gap_addressed: "Strong existing skill must be packaged as external-market value"
     recommended_action: >
-      Check anabin.kmk.org for recognition status of Erika Mustermann's degree.
-      Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority.
-      For non-regulated professions: get certified translation + have employer confirm equivalence.
-      Contact Make it in Germany (make-it-in-germany.com) for free guidance.
-    expected_visible_output: "German recognition letter or equivalent statement; add to CV"
-    estimated_weekly_hours: 2
-    estimated_cost_eur: 100
-    estimated_duration_weeks: 16
-    cv_linkedin_usage: "Add 'equivalent to German [degree]' statement on CV once recognised"
-    interview_usage: "Removes recruiter uncertainty about foreign qualification validity"
-    target_role_relevance_note: "Mandatory for regulated professions; strongly recommended for all professional roles"
-    reason_for_priority: "One-time admin process; high credibility payoff; start early"
-    reason_for_deferral_if_any: "Not urgent if target roles do not require formal qualifications"
+      Refresh and document core safety architecture topics: safety mechanisms, safe states,
+      degraded modes, diagnostics, FFI, safety requirements, technical safety concepts,
+      PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe,
+      non-confidential interview language.
+    expected_visible_output: "Senior safety architecture notes and CV/interview bullet points"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 6
+    cv_linkedin_usage: "Supports senior safety architect positioning"
+    interview_usage: "Foundation for technical interviews"
+    target_role_relevance_note: "Directly relevant to all senior functional safety and system safety roles"
+    reason_for_priority: "This is the candidate's strongest market differentiator"
+    reason_for_deferral_if_any: null
 
-  # ── NICE-TO-HAVE ──────────────────────────────────────────────────────────
-
-  - id: "google_workspace_basics"
-    name: "Google Workspace / G Suite basics (Docs, Sheets, Gmail, Drive)"
+  - id: "sotif_iso_pas_8800_ai_safety_bridge"
+    market_signal_keywords:
+      job_signals: ["sotif", "iso_pas_8800", "adas"]
+      articles:    ["sotif", "iso/pas 8800", "ai safety automotive", "ai regulation"]
+    name: "SOTIF / ISO/PAS 8800 / AI safety bridge"
     scores:
-      market_frequency:    0.50
-      target_role_relevance: 0.45
-      profile_gap:         0.40
-      evidence_output:     0.40
-      feasibility:         0.95
-      cost_time_penalty:   0.00
-    profile_gap_addressed: "Some employers use Google Workspace instead of MS Office"
-    recommended_action: "Self-study via Google's free training (workspace.google.com/training)"
-    expected_visible_output: "Can demonstrate use in interview if asked"
+      market_frequency: 0.65
+      target_role_relevance: 0.75
+      profile_gap: 0.70
+      evidence_output: 0.65
+      feasibility: 0.75
+      cost_time_penalty: 0.10
+    override_category: "high_roi"
+    profile_gap_addressed: "Need credible but not overclaimed AI-enabled safety positioning"
+    recommended_action: >
+      Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring,
+      deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to
+      the principle that AI/LLMs should not be part of the runtime safety decision path.
+    expected_visible_output: "Two-page AI-enabled safety concept note linked to portfolio project"
+    estimated_weekly_hours: 2
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 6
+    cv_linkedin_usage: "Mention as strategic extension, not as deep production experience"
+    interview_usage: "Answer questions about ADAS, SOTIF and AI safety trade-offs"
+    target_role_relevance_note: "Useful for ADAS, automated-driving and AI-enabled embedded safety roles"
+    reason_for_priority: "Differentiates the candidate while keeping focus on safety architecture"
+    reason_for_deferral_if_any: null
+
+  - id: "github_portfolio_safety_supervised_ai_demo"
+    market_signal_keywords:
+      job_signals: ["ros2", "robotics", "embedded_ai"]
+      articles:    ["ros2", "physical ai", "humanoid", "embedded ai", "robotics safety"]
+    name: "Polish safety-supervised edge AI portfolio demonstrator"
+    scores:
+      market_frequency: 0.55
+      target_role_relevance: 0.75
+      profile_gap: 0.65
+      evidence_output: 0.95
+      feasibility: 0.75
+      cost_time_penalty: 0.05
+    override_category: "high_roi"
+    profile_gap_addressed: "Need visible proof of future-facing AI/robotics safety positioning"
+    recommended_action: >
+      Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram,
+      traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation
+      over endless implementation depth.
+    expected_visible_output: "Interview-ready GitHub repository and portfolio summary"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 8
+    cv_linkedin_usage: "Add selected project link and concise project description"
+    interview_usage: "Demonstrates initiative and ability to connect safety architecture with AI-enabled systems"
+    target_role_relevance_note: "Relevant for robotics, embedded AI safety and safety architecture roles"
+    reason_for_priority: "Visible proof is valuable, but it should not displace applications"
+    reason_for_deferral_if_any: null
+
+  - id: "linkedin_recruiter_networking"
+    market_signal_keywords:
+      job_signals: ["functional_safety", "safety_architecture"]
+      articles:    ["hiring", "layoffs", "restructuring", "talent shortage"]
+    name: "LinkedIn recruiter and professional networking sprint"
+    scores:
+      market_frequency: 0.85
+      target_role_relevance: 0.85
+      profile_gap: 0.80
+      evidence_output: 0.70
+      feasibility: 0.90
+      cost_time_penalty: 0.00
+    override_category: "high_roi"
+    profile_gap_addressed: "Need broader external professional network outside Bosch"
+    recommended_action: >
+      Contact 5–10 relevant recruiters, hiring managers or safety professionals per week.
+      Use a concise message focused on senior safety architecture, ISO 26262, platform safety,
+      CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles.
+    expected_visible_output: "Networking tracker with contacts, replies and follow-up actions"
+    estimated_weekly_hours: 3
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 12
+    cv_linkedin_usage: "Improves profile visibility and recruiter inbound probability"
+    interview_usage: "Provides market feedback and possible referral channels"
+    target_role_relevance_note: "Important for hidden job market and senior roles"
+    reason_for_priority: "Many senior roles are filled via recruiters or referrals"
+    reason_for_deferral_if_any: null
+
+  - id: "ros2_practical_basics"
+    market_signal_keywords:
+      job_signals: ["ros2", "robotics"]
+      articles:    ["ros2", "robotics", "humanoid", "physical ai"]
+    name: "ROS2 practical basics for safety-supervised robotics demonstrator"
+    scores:
+      market_frequency: 0.60
+      target_role_relevance: 0.55
+      profile_gap: 0.75
+      evidence_output: 0.75
+      feasibility: 0.65
+      cost_time_penalty: 0.05
+    override_category: "nice_to_have"
+    profile_gap_addressed: "ROS2 is useful for robotics credibility but not core senior safety value"
+    recommended_action: >
+      Continue ROS2 only at portfolio-support level: nodes, topics, launch files, fault injection and monitoring.
+      Do not attempt to become a senior ROS2 developer during the transition sprint.
+    expected_visible_output: "Working ROS2 demo elements and concise documentation"
+    estimated_weekly_hours: 1.5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 12
+    cv_linkedin_usage: "List as portfolio experience, not professional robotics software experience"
+    interview_usage: "Shows technical curiosity and enough practical understanding to collaborate with robotics teams"
+    target_role_relevance_note: "Useful mainly for robotics-oriented roles"
+    reason_for_priority: "Helpful, but secondary to safety architecture and job search"
+    reason_for_deferral_if_any: "Keep time-boxed; do not let it dominate"
+
+  - id: "qnx_posix_supervisor_concepts"
+    market_signal_keywords:
+      job_signals: ["qnx", "embedded"]
+      articles:    ["qnx", "software-defined vehicle", "rtos"]
+    name: "QNX / POSIX supervisor concept consolidation"
+    scores:
+      market_frequency: 0.45
+      target_role_relevance: 0.55
+      profile_gap: 0.70
+      evidence_output: 0.65
+      feasibility: 0.60
+      cost_time_penalty: 0.10
+    override_category: "nice_to_have"
+    profile_gap_addressed: "No practical QNX experience; only conceptual understanding"
+    recommended_action: >
+      Document QNX-inspired supervisor concepts using POSIX/Linux implementation where available.
+      State honestly that this is conceptual and demonstrator-level, not professional QNX project experience.
+    expected_visible_output: "QNX/POSIX supervisor concept note in portfolio"
     estimated_weekly_hours: 1
     estimated_cost_eur: 0
-    estimated_duration_weeks: 2
-    cv_linkedin_usage: "List alongside MS Office if used in practice"
-    interview_usage: "Only mention if interviewer raises it"
-    reason_for_deferral_if_any: "Only useful if specific target employer uses Google Workspace"
-
-  - id: "project_management_grundkurs"
-    name: "Project management basics (e.g. VHS PM Grundkurs or PRINCE2 Foundation)"
-    scores:
-      market_frequency:    0.45
-      target_role_relevance: 0.40
-      profile_gap:         0.50
-      evidence_output:     0.55
-      feasibility:         0.50
-      cost_time_penalty:   0.50   # PRINCE2 exam 400+ EUR
-    profile_gap_addressed: "PM skills increasingly requested even in non-PM roles"
-    recommended_action: "Only pursue if PM appears in 3+ target job ads. Start with free PM basics on Coursera before investing in a certificate."
-    expected_visible_output: "Course completion or certificate"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 400
     estimated_duration_weeks: 8
-    cv_linkedin_usage: "List if completing a recognised programme"
-    interview_usage: "Use if interviewer asks about project coordination experience"
-    reason_for_deferral_if_any: "Defer until PRINCE2 appears repeatedly in job ads for target roles"
+    cv_linkedin_usage: "Phrase as 'QNX/POSIX supervisor concepts' rather than 'QNX experience'"
+    interview_usage: "Useful when discussing SDV, safety supervisor and partitioning concepts"
+    target_role_relevance_note: "Differentiator for embedded platform safety, but not a must-have"
+    reason_for_priority: "Useful conceptually; low practical depth must be transparent"
+    reason_for_deferral_if_any: "Do not invest heavily unless target jobs repeatedly require QNX"
 
-  # ── AVOID FOR NOW ─────────────────────────────────────────────────────────
-
-  - id: "mba_or_masters"
-    name: "MBA or second Master's degree in Germany"
+  - id: "cpp20_safety_logic_basics"
+    market_signal_keywords:
+      job_signals: ["embedded", "functional_safety"]
+      articles:    ["c++20", "embedded software", "safety-critical software"]
+    name: "C++20 safety logic basics with tests"
     scores:
-      market_frequency:    0.25
-      target_role_relevance: 0.20
-      profile_gap:         0.20
-      evidence_output:     0.40
-      feasibility:         0.10   # 2–3 years, full-time or part-time
-      cost_time_penalty:   1.00   # very high cost and time
-    profile_gap_addressed: "Advanced degree could open senior positions"
-    recommended_action: "Do not pursue now. Focus on language, work experience, and credibility building first."
-    expected_visible_output: "Degree"
-    estimated_weekly_hours: 20
-    estimated_cost_eur: 15000
-    estimated_duration_weeks: 104
-    reason_for_deferral_if_any: >
-      ROI is very low in the short term. German employers value practical experience
-      over academic degrees for most non-specialist roles. Language and local work
-      experience are higher priority investments.
-
-  - id: "ai_python_bootcamp"
-    name: "AI / Machine Learning / Python bootcamp (general)"
-    scores:
-      market_frequency:    0.30
-      target_role_relevance: 0.20   # only relevant if target is tech/data roles
-      profile_gap:         0.35
-      evidence_output:     0.30
-      feasibility:         0.40
-      cost_time_penalty:   0.60
-    profile_gap_addressed: "Tech skills are in demand — but only for tech roles"
+      market_frequency: 0.70
+      target_role_relevance: 0.45
+      profile_gap: 0.75
+      evidence_output: 0.65
+      feasibility: 0.55
+      cost_time_penalty: 0.05
+    override_category: "nice_to_have"
+    profile_gap_addressed: "Modern C++ is useful but not the core target identity"
     recommended_action: >
-      Do not pursue unless target roles require Python or data analysis.
-      Generic AI bootcamps do not produce interview-defensible experience.
-      'Completed a Python course' is not 'used Python to solve a real problem'.
-    expected_visible_output: "Course certificate — weak evidence without a project"
-    estimated_weekly_hours: 6
-    estimated_cost_eur: 1500
-    estimated_duration_weeks: 12
-    reason_for_deferral_if_any: >
-      Too broad for the current employment goal. Unless specific tech roles are
-      targeted, this investment will not produce the expected return.
-      Only pursue if Erika Mustermann transitions to data or tech roles with a clear job target.
+      Implement small, testable safety-logic components such as StateEvaluator, HeartbeatMonitor,
+      TimeoutChecker and PlausibilityChecker with unit tests. Keep scope small and portfolio-focused.
+    expected_visible_output: "Small C++ safety-logic module with tests"
+    estimated_weekly_hours: 1.5
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 8
+    cv_linkedin_usage: "Mention only as demonstrator implementation support"
+    interview_usage: "Shows hands-on credibility without claiming senior C++ developer level"
+    target_role_relevance_note: "Helpful for embedded safety roles but not mandatory for safety architect positioning"
+    reason_for_priority: "Useful, but lower ROI than applications, interviews and CMSE"
+    reason_for_deferral_if_any: "Increase only if job ads repeatedly require hands-on C++"
 
-  - id: "ielts_toefl"
-    name: "IELTS or TOEFL certificate"
+  - id: "mbse_sysml2_maintenance"
+    market_signal_keywords:
+      job_signals: ["mbse"]
+      articles:    ["mbse", "sysml", "digital twin", "dassault"]
+    name: "MBSE / SysML2 lightweight maintenance"
     scores:
-      market_frequency:    0.30   # German employers rarely require IELTS; they assess in interview
+      market_frequency: 0.50
+      target_role_relevance: 0.55
+      profile_gap: 0.40
+      evidence_output: 0.55
+      feasibility: 0.80
+      cost_time_penalty: 0.00
+    override_category: "nice_to_have"
+    profile_gap_addressed: "Existing MBSE knowledge should remain visible but not dominate the sprint"
+    recommended_action: >
+      Maintain MBSE credibility by creating one architecture diagram, one safety state model and one traceability table
+      for the demonstrator. Do not deep-dive SysML2 unless target job ads explicitly demand it.
+    expected_visible_output: "Architecture diagram and traceability table"
+    estimated_weekly_hours: 1
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 6
+    cv_linkedin_usage: "Mention MBSE/SysML experience where relevant"
+    interview_usage: "Supports system architecture and requirements traceability discussions"
+    target_role_relevance_note: "Moderately useful for systems engineering and safety architecture roles"
+    reason_for_priority: "Maintain as supporting skill"
+    reason_for_deferral_if_any: "Avoid major SysML2 investment during active job search"
+
+  - id: "generic_ai_bootcamp"
+    market_signal_keywords:
+      job_signals: []
+      articles:    ["chatgpt", "chatbot"]
+    name: "Generic AI / ML bootcamp"
+    scores:
+      market_frequency: 0.40
       target_role_relevance: 0.25
-      profile_gap:         0.20
-      evidence_output:     0.50
-      feasibility:         0.70
-      cost_time_penalty:   0.30
-    profile_gap_addressed: "English proficiency evidence"
+      profile_gap: 0.30
+      evidence_output: 0.35
+      feasibility: 0.50
+      cost_time_penalty: 0.70
+    override_category: "avoid_for_now"
+    profile_gap_addressed: "General AI knowledge is interesting but not the urgent employability gap"
     recommended_action: >
-      Do not pursue unless target roles explicitly require IELTS/TOEFL score.
-      German employers typically assess English in the interview, not via certificate.
-      Investment is low-return for German job market.
-    expected_visible_output: "IELTS/TOEFL certificate"
-    estimated_weekly_hours: 3
-    estimated_cost_eur: 250
-    estimated_duration_weeks: 8
-    reason_for_deferral_if_any: >
-      German employers rarely require IELTS. English proficiency is demonstrated
-      in the interview itself. Spend time on German instead.
+      Do not pursue a generic AI bootcamp now. Use existing AI course background and the portfolio demonstrator instead.
+      Focus on safety-specific AI topics such as monitoring, fallback, ODD, SOTIF and ISO/PAS 8800.
+    expected_visible_output: "None recommended now"
+    estimated_weekly_hours: 0
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 0
+    cv_linkedin_usage: "Existing AI specializations are enough for now"
+    interview_usage: "Discuss AI safety architecture rather than generic ML theory"
+    target_role_relevance_note: "Low immediate ROI for senior safety architect roles"
+    reason_for_priority: "Avoid for now"
+    reason_for_deferral_if_any: "Too broad and may distract from external transition"
+
+  - id: "mba_second_master"
+    market_signal_keywords:
+      job_signals: []
+      articles:    []
+    name: "MBA or second Master's degree"
+    scores:
+      market_frequency: 0.20
+      target_role_relevance: 0.20
+      profile_gap: 0.10
+      evidence_output: 0.50
+      feasibility: 0.10
+      cost_time_penalty: 1.00
+    override_category: "avoid_for_now"
+    profile_gap_addressed: "Advanced academic credential is not the current bottleneck"
+    recommended_action: >
+      Do not pursue now. The candidate already has a master's degree and strong industry experience.
+      The current bottleneck is external positioning, applications, interview conversion and targeted safety-domain expansion.
+    expected_visible_output: "None recommended now"
+    estimated_weekly_hours: 0
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 0
+    cv_linkedin_usage: "Existing TUM master's degree is sufficient"
+    interview_usage: "Not relevant"
+    target_role_relevance_note: "Low immediate ROI for transition sprint"
+    reason_for_priority: "Avoid for now"
+    reason_for_deferral_if_any: "Too expensive and too slow for current family-income protection goal"
+
+  - id: "deep_qnx_training_certificate"
+    market_signal_keywords:
+      job_signals: ["qnx"]
+      articles:    ["qnx", "rtos"]
+    name: "Deep QNX training or paid QNX certificate"
+    scores:
+      market_frequency: 0.35
+      target_role_relevance: 0.35
+      profile_gap: 0.70
+      evidence_output: 0.45
+      feasibility: 0.35
+      cost_time_penalty: 0.65
+    override_category: "avoid_for_now"
+    profile_gap_addressed: "QNX gap exists, but deep QNX training is not the most urgent ROI"
+    recommended_action: >
+      Avoid paid deep QNX training unless multiple target job ads or interview feedback explicitly identify QNX
+      as the decisive gap. Maintain conceptual QNX/POSIX supervisor understanding through the portfolio instead.
+    expected_visible_output: "None recommended now"
+    estimated_weekly_hours: 0
+    estimated_cost_eur: 0
+    estimated_duration_weeks: 0
+    cv_linkedin_usage: "Do not claim QNX experience"
+    interview_usage: "Discuss concepts honestly if asked"
+    target_role_relevance_note: "Potentially useful for SDV roles, but currently lower ROI than CMSE and applications"
+    reason_for_priority: "Avoid for now"
+    reason_for_deferral_if_any: "Cost/time not justified before market feedback confirms QNX as bottleneck"

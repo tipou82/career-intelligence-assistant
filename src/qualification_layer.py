@@ -1,9 +1,16 @@
-"""Qualification layer — targeted qualification recommendations for a specific person.
+"""Qualification layer — targeted qualification recommendations with market-signal enrichment.
 
-Loads config/qualification_actions.yaml, scores each action, classifies into
-must_have / high_roi / nice_to_have / avoid_for_now, and builds report sections.
+Static scoring (config/qualification_actions.yaml) is enriched weekly by:
+  1. job_signals table  — posting counts for keywords from collect-jobs
+  2. articles table     — how often related topics appear in this week's signals
 
-Scoring formula (all inputs 0.0–1.0):
+Dynamic market_frequency replaces the static value when market data is available:
+  blended = 0.5 x dynamic_signal_score  +  0.5 x static_expert_score
+
+This ensures the report responds to actual market conditions rather than showing
+the same scores every week.
+
+Scoring formula (all inputs 0.0-1.0):
     qualification_score =
         market_frequency_score * 0.30
       + target_role_relevance  * 0.25
@@ -23,8 +30,11 @@ Run standalone:
 """
 
 import html as html_lib
+import json
+import math
+from datetime import date, timedelta
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import yaml
 
@@ -96,6 +106,197 @@ def classify_action(action: Dict[str, Any], score: float) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Market signal enrichment
+# ---------------------------------------------------------------------------
+
+def _current_week() -> str:
+    d = date.today()
+    y, w, _ = d.isocalendar()
+    return f"{y}-{w:02d}"
+
+
+def _build_job_index(week_label: str) -> Dict[str, int]:
+    """Return {lowercased_keyword: total_posting_count} from job_signals for the week."""
+    try:
+        from .database import get_connection
+        with get_connection() as conn:
+            rows = conn.execute(
+                "SELECT query, skill_tags, result_count FROM job_signals WHERE week_label = ?",
+                (week_label,),
+            ).fetchall()
+    except Exception:
+        return {}
+    index: Dict[str, int] = {}
+    for query, skill_tags, count in rows:
+        count = int(count or 0)
+        # Index each word in the query
+        for word in (query or "").lower().split():
+            index[word] = index.get(word, 0) + count
+        # Index the full query phrase
+        q = (query or "").lower().strip()
+        if q:
+            index[q] = index.get(q, 0) + count
+        # Index skill_tags as individual entries
+        for tag in (skill_tags or "").split(","):
+            t = tag.strip().lower()
+            if t:
+                index[t] = index.get(t, 0) + count
+    return index
+
+
+def _build_article_index(days_back: int = 14) -> Dict[str, int]:
+    """Return {lowercased_term: article_count} from classified articles in recent days."""
+    cutoff = (date.today() - timedelta(days=days_back)).isoformat()
+    try:
+        from .database import get_connection
+        with get_connection() as conn:
+            rows = conn.execute(
+                """SELECT classification FROM articles
+                   WHERE date(published_date) >= ?
+                     AND signal_strength IN ('strong', 'weak')
+                     AND classified_at IS NOT NULL""",
+                (cutoff,),
+            ).fetchall()
+    except Exception:
+        return {}
+    index: Dict[str, int] = {}
+    for (cls_json,) in rows:
+        try:
+            cls = json.loads(cls_json) if cls_json else {}
+        except (json.JSONDecodeError, TypeError):
+            continue
+        terms = cls.get("technologies", []) + cls.get("skills", [])
+        for t in terms:
+            key = t.lower().strip()
+            if key:
+                index[key] = index.get(key, 0) + 1
+    return index
+
+
+def _match_count(keywords: List[str], index: Dict[str, int]) -> int:
+    """Sum index counts for keywords (exact match first, then substring)."""
+    total = 0
+    counted: set = set()
+    for kw in keywords:
+        kl = kw.lower().strip()
+        if not kl:
+            continue
+        if kl in index:
+            total += index[kl]
+            counted.add(kl)
+        else:
+            # Substring: find first index key that contains this keyword
+            for k, v in index.items():
+                if kl in k and k not in counted:
+                    total += v
+                    counted.add(k)
+                    break
+    return total
+
+
+def _blend_frequency(static: float, job_count: int, art_count: int) -> Tuple[float, str]:
+    """Blend static expert score with live market signal counts.
+
+    Returns (blended_score, display_note).
+    No data → returns static unchanged.
+    """
+    if job_count == 0 and art_count == 0:
+        return static, ""
+
+    # Normalize: log scale, 100 job postings or 20 articles → signal_score = 1.0
+    job_freq = min(math.log1p(job_count) / math.log1p(100), 1.0) if job_count > 0 else 0.0
+    art_freq = min(math.log1p(art_count) / math.log1p(20), 1.0)  if art_count > 0 else 0.0
+
+    if job_count > 0 and art_count > 0:
+        dynamic = 0.6 * job_freq + 0.4 * art_freq
+    elif job_count > 0:
+        dynamic = job_freq
+    else:
+        dynamic = 0.7 * art_freq  # articles alone carry less weight
+
+    blended = round(0.5 * dynamic + 0.5 * static, 3)
+
+    parts = []
+    if job_count > 0:
+        parts.append(f"{job_count} job postings")
+    if art_count > 0:
+        parts.append(f"{art_count} article signals")
+    note = "Market signals this week: " + ", ".join(parts)
+
+    return blended, note
+
+
+def enrich_scores_from_market(
+    data: Dict[str, Any],
+    week_label: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Dynamically adjust market_frequency scores based on current week's signals.
+
+    Reads job_signals (from collect-jobs) and recent articles (from classify)
+    to compute a live market_frequency for each qualification action.
+
+    The blended score replaces the static score only when market data is found.
+    The original static score is preserved in _market_freq_was for transparency.
+    """
+    if week_label is None:
+        week_label = _current_week()
+
+    job_index = _build_job_index(week_label)
+    art_index = _build_article_index(days_back=14)
+
+    if not job_index and not art_index:
+        # No data at all — return unchanged, add note
+        return {**data, "_enriched": False, "_week_label": week_label,
+                "_enrichment_note": "No market data found — run collect-jobs first."}
+
+    enriched: List[Dict] = []
+    for action in data.get("scored_actions", []):
+        kw_block = action.get("market_signal_keywords", {})
+        job_kws = kw_block.get("job_signals", [])
+        art_kws = kw_block.get("articles", [])
+
+        job_count = _match_count(job_kws, job_index)
+        art_count = _match_count(art_kws, art_index)
+
+        if job_count > 0 or art_count > 0:
+            static_freq = action.get("scores", {}).get("market_frequency", 0.5)
+            blended, note = _blend_frequency(static_freq, job_count, art_count)
+
+            updated_scores = {**action.get("scores", {}), "market_frequency": blended}
+            new_score = compute_qualification_score({**action, "scores": updated_scores})
+            new_cat = classify_action(action, new_score)
+
+            enriched.append({
+                **action,
+                "scores": updated_scores,
+                "_score": new_score,
+                "_category": new_cat,
+                "_market_job_count": job_count,
+                "_market_art_count": art_count,
+                "_market_freq_was": static_freq,
+                "_market_freq_now": blended,
+                "_market_note": note,
+            })
+        else:
+            enriched.append(action)
+
+    enriched.sort(key=lambda a: a["_score"], reverse=True)
+    by_category: Dict[str, List] = {c: [] for c in CATEGORY_ORDER}
+    for a in enriched:
+        by_category[a["_category"]].append(a)
+
+    adjusted = sum(1 for a in enriched if "_market_note" in a)
+    return {
+        **data,
+        "scored_actions": enriched,
+        "by_category": by_category,
+        "_enriched": True,
+        "_week_label": week_label,
+        "_enrichment_note": f"Market signals applied to {adjusted}/{len(enriched)} actions this week.",
+    }
+
+
+# ---------------------------------------------------------------------------
 # Load and score
 # ---------------------------------------------------------------------------
 
@@ -128,11 +329,14 @@ def load_and_score(config_path: Path = CONFIG_PATH) -> Dict[str, Any]:
     for action in scored:
         by_category[action["_category"]].append(action)
 
-    return {
+    base = {
         "strategy": strategy,
         "scored_actions": scored,
         "by_category": by_category,
     }
+
+    # Enrich with live market signals (silently skips if no data)
+    return enrich_scores_from_market(base)
 
 
 # ---------------------------------------------------------------------------
@@ -175,6 +379,23 @@ def _check_guardrails(strategy: Dict, by_category: Dict) -> List[str]:
 # Markdown section builder
 # ---------------------------------------------------------------------------
 
+def _market_badge_md(action: Dict) -> str:
+    """Return a short market-signal badge for Markdown."""
+    jc = action.get("_market_job_count", 0)
+    ac = action.get("_market_art_count", 0)
+    was = action.get("_market_freq_was")
+    now = action.get("_market_freq_now")
+    if was is None:
+        return ""
+    direction = "↑" if now > was else ("↓" if now < was else "→")
+    parts = []
+    if jc > 0:
+        parts.append(f"{jc} job postings")
+    if ac > 0:
+        parts.append(f"{ac} articles")
+    return f" `{direction} market: {', '.join(parts)}`" if parts else ""
+
+
 def build_qualification_md(data: Dict[str, Any]) -> str:
     """Build the Markdown section for insertion into the weekly report."""
     strategy = data.get("strategy", {})
@@ -182,12 +403,15 @@ def build_qualification_md(data: Dict[str, Any]) -> str:
 
     person = strategy.get("target_person", "N/A")
     cap = strategy.get("weekly_hours_cap", 8)
+    enrichment_note = data.get("_enrichment_note", "")
 
     warnings = _check_guardrails(strategy, by_category)
 
     lines: List[str] = [
         f"_Target person: **{person}** · Weekly time budget: **{cap} h**_\n",
     ]
+    if enrichment_note:
+        lines.append(f"_🔄 {enrichment_note}_\n")
 
     if warnings:
         for w in warnings:
@@ -203,7 +427,7 @@ def build_qualification_md(data: Dict[str, Any]) -> str:
         lines.append("| Qualification | Why it matters | Action | Time | Visible evidence |")
         lines.append("|---|---|---|---|---|")
         for a in actions:
-            name = a.get("name", "—")
+            name = a.get("name", "—") + _market_badge_md(a)
             why = a.get("target_role_relevance_note", a.get("profile_gap_addressed", "—"))
             action_text = a.get("recommended_action", "—").replace("\n", " ").strip()
             time_h = a.get("estimated_weekly_hours", "?")
@@ -274,6 +498,14 @@ def build_qualification_html(data: Dict[str, Any]) -> str:
         f'Weekly time budget: <strong>{cap} h</strong></p>'
     ]
 
+    enrichment_note = data.get("_enrichment_note", "")
+    if enrichment_note:
+        icon = "🔄" if data.get("_enriched") else "⚠"
+        html_parts.append(
+            f'<p style="font-size:11px;color:#00b894;margin-bottom:10px">'
+            f'{icon} {_h(enrichment_note)}</p>'
+        )
+
     for w in warnings:
         html_parts.append(
             f'<p style="color:#e17055;font-size:12px">⚠ {_h(w)}</p>'
@@ -309,9 +541,24 @@ def build_qualification_html(data: Dict[str, Any]) -> str:
                 evidence = _h(a.get("expected_visible_output", "—")[:80])
                 score = a.get("_score", 0)
                 score_badge = f'<span style="font-size:10px;color:#999">{score:.2f}</span>'
+                # Market signal badge
+                jc = a.get("_market_job_count", 0)
+                ac = a.get("_market_art_count", 0)
+                was = a.get("_market_freq_was")
+                market_badge = ""
+                if was is not None and (jc > 0 or ac > 0):
+                    direction = "↑" if a.get("_market_freq_now", was) > was else "↓"
+                    parts = []
+                    if jc > 0: parts.append(f"{jc} jobs")
+                    if ac > 0: parts.append(f"{ac} articles")
+                    market_badge = (
+                        f' <span style="font-size:10px;background:#00b89420;color:#00745e;'
+                        f'padding:1px 5px;border-radius:8px">'
+                        f'{direction} {", ".join(parts)}</span>'
+                    )
                 html_parts.append(
                     f'<tr style="background:{bg_color}">'
-                    f'<td><strong>{name}</strong> {score_badge}</td>'
+                    f'<td><strong>{name}</strong> {score_badge}{market_badge}</td>'
                     f'<td style="font-size:12px">{why}</td>'
                     f'<td style="font-size:12px">{action_text}</td>'
                     f'<td style="font-size:12px;white-space:nowrap">{time_str}</td>'
