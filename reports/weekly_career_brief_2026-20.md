@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 16:24_
+_Mode: **External Transition** · Generated: 2026-05-13 16:32_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key activity in: adas, robotics, ai, functional_safety, digital_twin. Notable companies: Dreame, NEURA Robotics, Hyundai, Tesla, MIPI Alliance. See Section 2 for full analysis.
+Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key activity in: functional_safety, embedded, automotive, physical_ai, humanoid_robot. Notable companies: Dreame, MIPI Alliance, Hyundai, Tesla, Nidec. See Section 2 for full analysis.
 
 ---
 
