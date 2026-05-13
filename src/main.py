@@ -25,71 +25,37 @@ import sys
 # ---------------------------------------------------------------------------
 
 def cmd_collect(args: argparse.Namespace) -> None:
-    from .collect_rss import collect_all
     print("Collecting RSS feeds...")
-    stats = collect_all()
-    print(
-        f"  Done.  Fetched: {stats['fetched']}  |  "
-        f"New: {stats['new']}  |  Duplicates skipped: {stats['skipped']}"
-    )
+    stats = _run_collect(args)
+    print(f"  Done.  Fetched: {stats['fetched']}  New: {stats['new']}  Skipped: {stats['skipped']}")
 
 
 def cmd_collect_press(args: argparse.Namespace) -> None:
-    from .collect_pressreleases import collect_pressreleases
     print("Collecting company press releases and newsroom feeds...")
-    stats = collect_pressreleases()
-    print(
-        f"  Done.  Fetched: {stats['fetched']}  |  "
-        f"New: {stats['new']}  |  Duplicates skipped: {stats['skipped']}"
-    )
+    stats = _run_collect_press(args)
+    print(f"  Done.  Fetched: {stats['fetched']}  New: {stats['new']}  Skipped: {stats['skipped']}")
 
 
 def cmd_collect_jobs(args: argparse.Namespace) -> None:
-    from .collect_jobs import collect_jobs
     print("Collecting job market signals...")
-    stats = collect_jobs()
-    print(
-        f"  Done.  Searched: {stats['searched']}  |  "
-        f"Saved: {stats['saved']}  |  Errors: {stats['errors']}"
-    )
+    stats = _run_collect_jobs(args)
+    print(f"  Done.  Searched: {stats['searched']}  Saved: {stats['saved']}  Errors: {stats['errors']}")
 
 
 def cmd_classify(args: argparse.Namespace) -> None:
     llm = getattr(args, "llm", None)
-    llm_classifier = None
-
-    if llm == "claude":
-        from .llm_classifier import AnthropicClassifier
-        print("Classifying articles with Claude (claude-haiku-4-5)...")
-        llm_classifier = AnthropicClassifier()
-    elif llm == "openai":
-        from .llm_classifier import OpenAIClassifier
-        print("Classifying articles with OpenAI...")
-        llm_classifier = OpenAIClassifier()
-    else:
-        print("Classifying articles (rule-based)...")
-
-    from .classify_articles import classify_all
-    stats = classify_all(llm_classifier=llm_classifier)
+    label = {"claude": "Claude (claude-haiku-4-5)", "openai": "OpenAI"}.get(llm, "rule-based")
+    print(f"Classifying articles ({label})...")
+    stats = _run_classify(args)
     print(f"  Done.  Classified: {stats['classified']}")
 
 
 def cmd_report(args: argparse.Namespace) -> None:
-    from .generate_weekly_report import generate_report
-    from .skill_gap import analyse_skill_gap, render_gap_html
-
     week = getattr(args, "week", "current")
     fmt = getattr(args, "format", "both")
-
-    print(f"Analysing skill gap...")
-    gap_data = analyse_skill_gap()
-    gap_html = render_gap_html(gap_data)
-
     print(f"Generating report (week={week}, format={fmt})...")
-    saved = generate_report(week_label=week, fmt=fmt, skill_gap_html=gap_html)
-
-    for fmt_key, path in saved.items():
-        print(f"  Saved [{fmt_key.upper()}]: {path}")
+    _run_report(args)
+    print("  Done.")
 
 
 def cmd_skill_gap(args: argparse.Namespace) -> None:
@@ -128,25 +94,118 @@ def cmd_send_email(args: argparse.Namespace) -> None:
 
 
 def cmd_run_weekly(args: argparse.Namespace) -> None:
-    print("=" * 60)
-    print("  Career Intelligence Assistant – Weekly Pipeline")
-    print("=" * 60)
+    import time
 
-    cmd_collect(args)
-    cmd_collect_press(args)
-    cmd_collect_jobs(args)
-    cmd_classify(args)
-    cmd_report(args)
+    llm = getattr(args, "llm", None)
+    week = getattr(args, "week", "current")
+    fmt = getattr(args, "format", "both")
+
+    WIDTH = 60
+    print("=" * WIDTH)
+    print("  Career Intelligence Assistant – Weekly Pipeline")
+    llm_label = f"  Classifier : {llm} (LLM)" if llm else "  Classifier : rule-based"
+    print(llm_label)
+    print("=" * WIDTH)
+
+    steps = [
+        ("1/5  Collect RSS feeds",           lambda: _run_collect(args)),
+        ("2/5  Collect press & newsrooms",   lambda: _run_collect_press(args)),
+        ("3/5  Collect job signals",         lambda: _run_collect_jobs(args)),
+        ("4/5  Classify articles",           lambda: _run_classify(args)),
+        ("5/5  Generate report",             lambda: _run_report(args)),
+    ]
+
+    results = {}
+    pipeline_start = time.time()
+
+    for label, fn in steps:
+        print(f"\n── {label} {'─' * (WIDTH - len(label) - 4)}")
+        t0 = time.time()
+        try:
+            result = fn()
+            elapsed = time.time() - t0
+            results[label] = ("ok", result, elapsed)
+            print(f"     ✓ done in {elapsed:.1f}s")
+        except Exception as exc:
+            elapsed = time.time() - t0
+            results[label] = ("error", str(exc), elapsed)
+            print(f"     ✗ error: {exc}")
 
     # Auto-send email if configured
     from .email_digest import _load_config as _email_cfg
     cfg = _email_cfg()
     if cfg.get("enabled", False):
-        cmd_send_email(args)
+        print(f"\n── 6/6  Send email digest {'─' * (WIDTH - 24)}")
+        try:
+            cmd_send_email(args)
+        except Exception as exc:
+            print(f"     ✗ error: {exc}")
 
-    print("=" * 60)
-    print("  Weekly run complete.")
-    print("=" * 60)
+    total = time.time() - pipeline_start
+    print("\n" + "=" * WIDTH)
+    print("  Summary")
+    print("=" * WIDTH)
+    for label, (status, info, elapsed) in results.items():
+        icon = "✓" if status == "ok" else "✗"
+        # Show concise info per step
+        if isinstance(info, dict):
+            parts = [f"{k}={v}" for k, v in info.items() if isinstance(v, int)]
+            detail = "  " + "  ".join(parts) if parts else ""
+        else:
+            detail = f"  {info}" if info and status == "error" else ""
+        print(f"  {icon}  {label}{detail}")
+    print(f"\n  Total time: {total:.0f}s")
+    print("=" * WIDTH)
+
+
+# ── Step runners that return stats dicts ──────────────────────────────────
+
+def _run_collect(args: argparse.Namespace) -> dict:
+    from .collect_rss import collect_all
+    stats = collect_all()
+    print(f"     fetched={stats['fetched']}  new={stats['new']}  skipped={stats['skipped']}")
+    return stats
+
+
+def _run_collect_press(args: argparse.Namespace) -> dict:
+    from .collect_pressreleases import collect_pressreleases
+    stats = collect_pressreleases()
+    print(f"     fetched={stats['fetched']}  new={stats['new']}  skipped={stats['skipped']}")
+    return stats
+
+
+def _run_collect_jobs(args: argparse.Namespace) -> dict:
+    from .collect_jobs import collect_jobs
+    stats = collect_jobs()
+    print(f"     searched={stats['searched']}  saved={stats['saved']}  errors={stats['errors']}")
+    return stats
+
+
+def _run_classify(args: argparse.Namespace) -> dict:
+    llm = getattr(args, "llm", None)
+    llm_classifier = None
+    if llm == "claude":
+        from .llm_classifier import AnthropicClassifier
+        llm_classifier = AnthropicClassifier()
+    elif llm == "openai":
+        from .llm_classifier import OpenAIClassifier
+        llm_classifier = OpenAIClassifier()
+    from .classify_articles import classify_all
+    stats = classify_all(llm_classifier=llm_classifier)
+    print(f"     classified={stats['classified']}")
+    return stats
+
+
+def _run_report(args: argparse.Namespace) -> dict:
+    from .generate_weekly_report import generate_report
+    from .skill_gap import analyse_skill_gap, render_gap_html
+    week = getattr(args, "week", "current")
+    fmt = getattr(args, "format", "both")
+    gap_html = render_gap_html(analyse_skill_gap())
+    saved = generate_report(week_label=week, fmt=fmt, skill_gap_html=gap_html)
+    for fmt_key, path in saved.items():
+        print(f"     [{fmt_key.upper()}] {path.name}")
+    return {"formats": len(saved)}
 
 
 def cmd_status(args: argparse.Namespace) -> None:
