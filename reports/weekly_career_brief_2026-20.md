@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 16:10_
+_Mode: **External Transition** · Generated: 2026-05-13 16:12_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: digital_twin, robotics, ai, functional_safety, adas. Notable companies: Tesla, Synapticon, Faraday Future, NEURA Robotics, Arm. See Section 2 for full analysis.
+Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: ai, robotics, functional_safety, software_defined_vehicle, mbse. Notable companies: Dreame, NEURA Robotics, Li Auto, Tesla, Hyundai Motor. See Section 2 for full analysis.
 
 ---
 
