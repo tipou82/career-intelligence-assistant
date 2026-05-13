@@ -137,6 +137,80 @@ WEIGHTS = {
     "source_reliability": 0.13,
 }
 
+_CJK_TO_EN: Dict[str, str] = {
+    # Functional safety
+    "功能安全": "functional safety",
+    "機能安全": "functional safety",
+    "安全完整性": "safety integrity",
+    "失效安全": "fail-safe",
+    "安全规格": "safety integrity",
+    "安全規格": "safety integrity",
+    # Standards
+    "预期功能安全": "sotif",
+    "預期機能安全": "sotif",
+    # AI perception / monitoring
+    "嵌入式AI": "embedded ai",
+    "組み込みAI": "embedded ai",
+    "感知算法": "ai perception",
+    "传感器融合": "sensor fusion",
+    "センサーフュージョン": "sensor fusion",
+    "置信度监控": "confidence monitoring",
+    "遅延監視": "latency monitoring",
+    # Fault injection
+    "故障注入": "fault injection",
+    # Robots / physical
+    "人形机器人": "humanoid",
+    "人型ロボット": "humanoid",
+    "ヒューマノイド": "humanoid",
+    "物理AI": "physical ai",
+    "具身智能": "physical ai",
+    # Reinforcement / ML
+    "强化学习": "reinforcement learning",
+    "強化学習": "reinforcement learning",
+    "深度学习": "deep learning",
+    "深層学習": "deep learning",
+    "机器学习": "machine learning",
+    "機械学習": "machine learning",
+    "神经网络": "neural network",
+    "ニューラルネットワーク": "neural network",
+    # Digital twin / simulation
+    "数字孪生": "digital twin",
+    "デジタルツイン": "digital twin",
+    "虚拟验证": "virtual validation",
+    "バーチャル検証": "virtual validation",
+    "仿真": "simulation",
+    "シミュレーション": "simulation",
+    # ADAS / autonomous
+    "自动驾驶": "autonomous driving",
+    "自動運転": "autonomous driving",
+    "自律走行": "autonomous driving",
+    # Embedded / OS
+    "实时操作系统": "rtos",
+    "リアルタイムOS": "rtos",
+    "激光雷达": "lidar",
+    "レーザーレーダー": "lidar",
+    # MBSE / SysML
+    "基于模型": "mbse",
+    "モデルベース": "model-based",
+    # Safety mechanisms
+    "安全机制": "safety mechanism",
+    "安全メカニズム": "safety mechanism",
+    "监控": "perception monitoring",
+    "監視": "perception monitoring",
+    # Requirements
+    "需求追溯": "requirements traceability",
+    "要求トレーサビリティ": "requirements traceability",
+}
+
+
+def _normalize_cjk_term(term: str) -> str:
+    """Map a CJK technology/skill tag to its English equivalent for scoring.
+
+    Returns the original term if no mapping exists.
+    """
+    return _CJK_TO_EN.get(term, term)
+
+
 # Source tiers for reliability scoring — used when source_name is available on the article.
 # Scores are blended with the feed-level reliability from sources.yaml.
 SOURCE_TIERS: Dict[str, float] = {
@@ -189,12 +263,11 @@ def _domain_score(classification: Dict[str, Any]) -> float:
 
 
 def _skill_score(classification: Dict[str, Any]) -> float:
-    combined = [
-        t.lower()
-        for t in classification.get("technologies", []) + classification.get("skills", [])
-    ]
-    if not combined:
+    raw = classification.get("technologies", []) + classification.get("skills", [])
+    if not raw:
         return 0.0
+    # Normalize CJK tags to English equivalents before lookup
+    combined = [_normalize_cjk_term(t).lower() for t in raw]
     return max(TARGET_SKILLS.get(item, 0.05) for item in combined)
 
 
@@ -219,8 +292,9 @@ def _region_score(classification: Dict[str, Any]) -> float:
 def _career_impact_score(classification: Dict[str, Any]) -> float:
     """Estimate career impact from the combination of domain and skills."""
     industries = {i.lower() for i in classification.get("industries", [])}
+    # Normalize CJK technology tags before matching against high-impact pairs
     techs = {
-        t.lower()
+        _normalize_cjk_term(t).lower()
         for t in classification.get("technologies", []) + classification.get("skills", [])
     }
 
