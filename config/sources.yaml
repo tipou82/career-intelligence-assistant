@@ -60,7 +60,7 @@ feeds:
     industries: ["robotics", "ai", "embedded"]
 
   - name: "IEEE Spectrum Robotics"
-    url: "https://spectrum.ieee.org/feeds/blog/automaton.rss"
+    url: "https://spectrum.ieee.org/feeds/robotics.rss"
     category: "robotics"
     reliability: 0.9
     regions: ["global"]
@@ -81,16 +81,11 @@ feeds:
     regions: ["usa", "global"]
     industries: ["embedded", "ai", "automotive"]
 
-  - name: "EE Times Europe"
-    url: "https://www.eetimes.eu/feed/"
-    category: "embedded"
-    reliability: 0.8
-    regions: ["europe", "germany"]
-    industries: ["embedded", "automotive", "functional_safety"]
+  # EE Times Europe removed — server consistently times out (>15s response)
 
   # === AI / Tech ===
   - name: "VentureBeat AI"
-    url: "https://venturebeat.com/category/ai/feed/"
+    url: "https://feeds.feedburner.com/venturebeat/SZYF"
     category: "tech_news"
     reliability: 0.65
     regions: ["usa", "global"]

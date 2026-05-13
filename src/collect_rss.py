@@ -17,6 +17,19 @@ MAX_ENTRIES_PER_FEED = 50
 FEED_TIMEOUT_SECONDS = 15  # per-feed HTTP timeout; skips slow/hanging feeds
 
 
+class _RedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Extend urllib's redirect handler to also follow HTTP 308 (Permanent Redirect).
+
+    urllib handles 301/302/303/307 by default but silently fails on 308,
+    which some feeds (e.g. VentureBeat) use. Treat 308 the same as 302.
+    """
+    def http_error_308(self, req, fp, code, msg, headers):
+        return self.http_error_302(req, fp, code, msg, headers)
+
+
+_URL_OPENER = urllib.request.build_opener(_RedirectHandler())
+
+
 def load_sources(config_path: Path = CONFIG_PATH) -> List[Dict]:
     with open(config_path, encoding="utf-8") as f:
         data = yaml.safe_load(f)
@@ -51,7 +64,7 @@ def fetch_feed(source: Dict) -> List[Dict[str, Any]]:
             url,
             headers={"User-Agent": "career-intelligence-assistant/1.0 (feedparser)"},
         )
-        with urllib.request.urlopen(req, timeout=FEED_TIMEOUT_SECONDS) as resp:
+        with _URL_OPENER.open(req, timeout=FEED_TIMEOUT_SECONDS) as resp:
             raw_bytes = resp.read()
         feed = feedparser.parse(raw_bytes)
     except Exception as exc:
