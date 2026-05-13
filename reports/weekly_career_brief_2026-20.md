@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 09:57_
+_Mode: **External Transition** · Generated: 2026-05-13 10:13_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: physical_ai, ai, adas, automotive, software_defined_vehicle. Notable companies: NIO, Scout Motors, Tesla, Mercedes-Benz, Figure AI. See Section 2 for full analysis.
+Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: digital_twin, robotics, functional_safety, automotive, humanoid_robot. Notable companies: Mercedes-Benz, Renesas, Daimler Truck, Hyundai Motor Group, NIO. See Section 2 for full analysis.
 
 ---
 
@@ -231,19 +231,19 @@ _+ 272 further weak signals not shown. Main themes: automotive (148), robotics (
 | Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
 |---|---|---|---|---|---|---|
 | **Deep Focus** | | | | | | |
-| External job search and applications | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
-| Interview communication and case studies | 5/5 | 5/5 | 4/5 | → | No new signals this week | 3 h |
+| External job search and applications | 5/5 | 5/5 | 4/5 | → | No new signals this week | 8 h |
+| Interview communication and case studies | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
 | Functional safety and system safety architecture | 5/5 | 5/5 | 5/5 | ↑ | Signals: functional safety, iso 26262 | 3 h |
-| ISO 13849 and CMSE | 5/5 | 4/5 | 4/5 | → | No new signals this week | 2 h |
-| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 2 h |
+| ISO 13849 and CMSE | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
+| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 4 h |
 | **Serious** | | | | | | |
-| ROS2 | 4/5 | 4/5 | 4/5 | ↑ | Signals: physical ai | 1 h |
-| C++20 and safety logic | 4/5 | 3/5 | 5/5 | ↑ | Signals: embedded software | 1 h |
-| AI perception monitoring | 4/5 | 3/5 | 5/5 | → | No new signals this week | 1 h |
-| SOTIF and ISO/PAS 8800 | 4/5 | 3/5 | 4/5 | → | No new signals this week | 1 h |
+| ROS2 | 3/5 | 3/5 | 3/5 | ↑ | Signals: physical ai | 2 h |
+| C++20 and safety logic | 3/5 | 2/5 | 4/5 | ↑ | Signals: embedded software | 0 h |
+| AI perception monitoring | 3/5 | 2/5 | 4/5 | → | No new signals this week | 0 h |
+| SOTIF and ISO/PAS 8800 | 4/5 | 4/5 | 4/5 | → | No new signals this week | 2 h |
 | Linux practical skills | 3/5 | 3/5 | 3/5 | → | No new signals this week | 1 h |
-| QNX and POSIX supervisor concepts | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | **Lightweight** | | | | | | |
+| QNX and POSIX supervisor concepts | 2/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | MBSE and SysML2 | 3/5 | 2/5 | 3/5 | → | No new signals this week | 0 h |
@@ -256,17 +256,18 @@ _+ 272 further weak signals not shown. Main themes: automotive (148), robotics (
 ## 6. Recommended Learning Allocation for Next Week
 
 **Deep Focus — highest return on time this week**
-- **5 h:** Apply to 3–5 roles, update LinkedIn headline, contact 1–2 recruiters or TÜV/consultancy leads
-- **3 h:** Prepare 3 structured interview stories: cross-domain safety, AI safety trade-off, architecture leadership
-- **4 h:** Write one architecture case study or decision record connecting ISO 26262 and ISO 13849 for a robotics/automation context
-- **2 h:** Work through one PLr determination example with Category/MTTFd/DCavg; document in portfolio
-- **2 h:** Update README, add architecture diagram, publish test results — make portfolio externally readable in 5 min
-  _(Subtotal: 16 h)_
+- **8 h:** 3–5 targeted applications, 1 recruiter/TÜV contact, LinkedIn signal check, track pipeline
+- **5 h:** Prepare/refine 2 structured interview stories; practice one answer out loud in German and English
+- **4 h:** Write one cross-domain safety architecture case study (e.g. ISO 26262 safety concept applied to a robotics/automation context with ISO 13849 mapping)
+- **5 h:** CMSE study: safety function → PLr → Category → MTTFd/DCavg/CCF → achieved PL. Document one worked example per week
+- **4 h:** CV: 1 new bullet quantifying safety architecture impact. LinkedIn: update headline/summary. Portfolio: one documentation improvement
+  _(Subtotal: 26 h)_
 
 **Serious — build steadily to stay hireable**
-- **2 h:** Implement one ROS2 safety node; document interface in architecture diagram
-  _(Subtotal: 2 h)_
-_Weekly total: ~18 h (cap: 18 h). ⚠️ Cap applied. Prioritise Deep Focus items — job search first._
+- **3 h:** Demonstrator: one ROS2/Linux improvement (node, test, or documentation) — keep scoped, do not expand scope
+- **1 h:** SOTIF/PAS 8800: one clause or concept per week; map to ODD or perception limitation; add to case study
+  _(Subtotal: 4 h)_
+_Weekly total: ~30 h (cap: 30 h). ⚠️ Cap applied. Prioritise Deep Focus items — job search first._
 
 ---
 

@@ -20,10 +20,19 @@ primary_goals:
   - "Protect family income and employability — realistic external transition"
   - "Senior safety/system architecture roles over junior implementation roles"
   - "Germany and Europe first — remote Europe as fallback"
-  - "Robotics, ISO 13849/CMSE, SOTIF, embedded AI safety as differentiation"
+  - "ISO 13849/CMSE, SOTIF, embedded AI safety as differentiation alongside ISO 26262 core"
   - "Consulting / TÜV / assessment as parallel track"
+  - "Bosch Japan remains optional only — do not treat as default career path"
 
-weekly_hours_cap: 18   # hard cap — do not generate plans above this
+core_differentiator: >
+  Senior functional safety / system safety architecture expertise (ISO 26262, safety
+  concepts, safety requirements, safety mechanisms, architecture trade-offs) built
+  at Bosch. ROS2 / C++20 / embedded implementation are supporting demonstrator skills —
+  they are NOT the primary market value. Do not over-prioritize them over safety
+  architecture, ISO 13849, SOTIF or cross-domain communication.
+
+weekly_hours_cap: 30          # sustainable planning cap (full-time + two small children)
+weekly_hours_stretch_cap: 35  # hard ceiling — never generate plans above this
 
 groups:
   deep_focus:
@@ -51,12 +60,12 @@ skills:
     required_depth: 4
     category: career_transition
     group: deep_focus
-    weekly_hours_baseline: 5
+    weekly_hours_baseline: 8
     rationale: >
       Direct income protection. Senior safety roles in Germany/Europe are available
       but require active pipeline management: applications, CV tailoring, LinkedIn
       signals, recruiter contact. No pipeline = no options.
-    learning_task: "Apply to 3–5 roles, update LinkedIn headline, contact 1–2 recruiters or TÜV/consultancy leads"
+    learning_task: "3–5 targeted applications, 1 recruiter/TÜV contact, LinkedIn signal check, track pipeline"
     triggers:
       increase:
         - layoffs
@@ -75,13 +84,13 @@ skills:
     required_depth: 4
     category: career_transition
     group: deep_focus
-    weekly_hours_baseline: 3
+    weekly_hours_baseline: 5
     rationale: >
       The gap between "good CV" and "offer" is closed in interviews.
       Senior safety architects need polished answers for: safety philosophy,
       cross-domain experience, AI trade-offs, ISO 26262 vs ISO 13849, system
-      architecture decisions, and leadership positioning.
-    learning_task: "Prepare 3 structured interview stories: cross-domain safety, AI safety trade-off, architecture leadership"
+      architecture decisions, and leadership positioning in German/English.
+    learning_task: "Prepare/refine 2 structured interview stories; practice one answer out loud in German and English"
     triggers:
       increase:
         - interview
@@ -98,10 +107,12 @@ skills:
     group: deep_focus
     weekly_hours_baseline: 3
     rationale: >
-      Primary differentiator and negotiation lever. Deepen cross-domain fluency:
-      ISO 26262 ↔ ISO 13849 ↔ IEC 61508 ↔ IEC 62061. Safety architecture at
-      system level (not just item/component level) is the senior differentiator.
-    learning_task: "Write one architecture case study or decision record connecting ISO 26262 and ISO 13849 for a robotics/automation context"
+      PRIMARY market value and negotiation lever. Strong Bosch project background:
+      safety concepts, safety requirements, safety mechanisms, embedded platform safety,
+      and architecture trade-offs. Deepen cross-domain fluency and case-study packaging:
+      ISO 26262 ↔ ISO 13849 ↔ IEC 61508 ↔ SOTIF. This is what makes the candidate
+      senior — not ROS2 or C++ implementation.
+    learning_task: "Write one cross-domain safety architecture case study (e.g. ISO 26262 safety concept applied to a robotics/automation context with ISO 13849 mapping)"
     triggers:
       increase:
         - functional safety
@@ -116,16 +127,18 @@ skills:
 
   - name: "ISO 13849 and CMSE"
     priority: 5
-    urgency: 4
+    urgency: 5
     required_depth: 4
     category: machinery_safety
     group: deep_focus
-    weekly_hours_baseline: 2
+    weekly_hours_baseline: 5
     rationale: >
-      Opens the industrial automation, robotics, and machinery safety market
-      which is underserved by automotive-only ISO 26262 engineers. CMSE
-      certification is a concrete, verifiable credential that employers recognize.
-    learning_task: "Work through one PLr determination example with Category/MTTFd/DCavg; document in portfolio"
+      Opens industrial automation, robotics, and machinery safety market —
+      underserved by automotive-only ISO 26262 engineers. CMSE certification
+      is a concrete, verifiable credential. Strong transferable background
+      from ISO 26262 (HARA ↔ risk graph, ASIL ↔ PL, safety mechanisms ↔ SRP/CS).
+      Urgency raised: no practical machinery project yet, structured study needed.
+    learning_task: "CMSE study: safety function → PLr → Category → MTTFd/DCavg/CCF → achieved PL. Document one worked example per week"
     triggers:
       increase:
         - iso 13849
@@ -147,11 +160,13 @@ skills:
     required_depth: 3
     category: portfolio_visibility
     group: deep_focus
-    weekly_hours_baseline: 2
+    weekly_hours_baseline: 4
     rationale: >
-      External visibility for senior roles. Hiring managers at larger companies
-      check GitHub. A clear architecture + documentation story closes interviews.
-    learning_task: "Update README, add architecture diagram, publish test results — make portfolio externally readable in 5 min"
+      Covers CV tailoring, LinkedIn positioning, and portfolio documentation.
+      Includes: writing one concrete CV bullet per week, updating LinkedIn headline/
+      summary with cross-domain safety story, polishing portfolio README.
+      External visibility for senior roles — closes interviews.
+    learning_task: "CV: 1 new bullet quantifying safety architecture impact. LinkedIn: update headline/summary. Portfolio: one documentation improvement"
     triggers:
       increase:
         - portfolio importance
@@ -164,16 +179,18 @@ skills:
   # ════════════════════════════════
 
   - name: "ROS2"
-    priority: 4
-    urgency: 4
-    required_depth: 4
+    priority: 3
+    urgency: 3
+    required_depth: 3
     category: robotics_middleware
     group: serious
-    weekly_hours_baseline: 1
+    weekly_hours_baseline: 2
     rationale: >
-      Differentiator for robotics and embedded AI safety roles. Maintain progress
-      on Raspberry Pi demonstrator but do not let it crowd out job-search hours.
-    learning_task: "Implement one ROS2 safety node; document interface in architecture diagram"
+      Supporting demonstrator skill — useful context for robotics safety roles.
+      NOT the primary market value; safety architecture and ISO standards matter more.
+      Allocate demonstrator improvement time here only after job-search and CMSE work.
+      3h/week total for ROS2 + Linux demonstrator combined.
+    learning_task: "Demonstrator: one ROS2/Linux improvement (node, test, or documentation) — keep scoped, do not expand scope"
     triggers:
       increase:
         - ros2
@@ -184,16 +201,18 @@ skills:
       decrease: []
 
   - name: "C++20 and safety logic"
-    priority: 4
-    urgency: 3
-    required_depth: 5
+    priority: 3
+    urgency: 2
+    required_depth: 4
     category: safety_software
     group: serious
-    weekly_hours_baseline: 1
+    weekly_hours_baseline: 0
     rationale: >
-      Implementation credibility for safety logic. Shows you can specify AND
-      implement — valued for senior roles. Keep progressing but cap time.
-    learning_task: "Implement one deterministic safety module (StateEvaluator or TimeoutChecker) with GoogleTest"
+      Implementation credibility for safety logic demonstrator. NOT a primary
+      differentiator for senior safety architecture roles. Bundled into ROS2/
+      demonstrator time when relevant. Do not allocate separate weekly hours
+      until safety architecture, CMSE, and job-search tracks are stable.
+    learning_task: "Bundled into demonstrator time — implement only when directly needed for ROS2 safety node"
     triggers:
       increase:
         - c++20
@@ -202,16 +221,16 @@ skills:
       decrease: []
 
   - name: "AI perception monitoring"
-    priority: 4
-    urgency: 3
-    required_depth: 5
+    priority: 3
+    urgency: 2
+    required_depth: 4
     category: ai_safety
     group: serious
-    weekly_hours_baseline: 1
+    weekly_hours_baseline: 0
     rationale: >
-      Strongest technical differentiator for AI-enabled safety roles. Connects
-      AI perception with deterministic safety supervision.
-    learning_task: "Implement confidence/latency/stale-data monitoring nodes; document in portfolio"
+      Strong differentiator for ADAS/AI safety roles. Bundled into demonstrator
+      time when relevant. Not a standalone weekly commitment during job-search phase.
+    learning_task: "Bundled into demonstrator time — add one monitoring concept (confidence/latency) when working on ROS2 nodes"
     triggers:
       increase:
         - ai perception failure
@@ -224,15 +243,16 @@ skills:
 
   - name: "SOTIF and ISO/PAS 8800"
     priority: 4
-    urgency: 3
+    urgency: 4
     required_depth: 4
     category: ai_adas_safety
     group: serious
-    weekly_hours_baseline: 1
+    weekly_hours_baseline: 2
     rationale: >
-      Key differentiator for ADAS/AI safety roles. Links ISO 26262 background
-      to AI safety regulation and upcoming compliance requirements.
-    learning_task: "Read one ISO/PAS 8800 clause; map to SOTIF concept; add to portfolio ODD/scenario table"
+      Key differentiator for ADAS/AI safety roles and growing mandatory for any
+      senior safety architect discussing AI-enabled systems. Links ISO 26262
+      background to AI safety regulation and EU AI Act compliance requirements.
+    learning_task: "SOTIF/PAS 8800: one clause or concept per week; map to ODD or perception limitation; add to case study"
     triggers:
       increase:
         - sotif
@@ -251,9 +271,9 @@ skills:
     group: serious
     weekly_hours_baseline: 1
     rationale: >
-      Runtime environment for demonstrator. Needed for fault injection, process
-      management, and debugging — practical competency, not a career differentiator.
-    learning_task: "One focused Linux task: process isolation, fault injection script, or systemd service"
+      Runtime environment for demonstrator. Bundled with ROS2 demonstrator time.
+      Not a career differentiator — practical competency only.
+    learning_task: "Bundled with ROS2 demonstrator time — one Linux task when needed for Pi project"
     triggers:
       increase:
         - embedded linux
@@ -262,16 +282,17 @@ skills:
       decrease: []
 
   - name: "QNX and POSIX supervisor concepts"
-    priority: 3
+    priority: 2
     urgency: 2
     required_depth: 2
     category: embedded_rt_os
-    group: serious
+    group: lightweight
     weekly_hours_baseline: 0
     rationale: >
-      Useful differentiator for automotive SDV / safety RTOS roles. Build
-      Linux/POSIX supervisor first; keep QNX as conceptual enhancement.
-    learning_task: "Document QNX portability concept in one README section"
+      Conceptual knowledge only — no practical project experience yet.
+      Mention as design consideration in portfolio; do not claim hands-on
+      proficiency. Only invest time if a specific SDV/RTOS role requires it.
+    learning_task: "Read one QNX/POSIX concept; mention portability design in portfolio README — no coding sprint"
     triggers:
       increase:
         - qnx

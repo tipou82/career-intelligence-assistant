@@ -1,118 +1,230 @@
-# Your current CV skill claims — used for skill gap analysis.
+# CV Skill Self-Assessment — honest calibration for external transition
 #
-# self_rating: 0–10 (honest current level — what you could defend in an interview today)
-#   0  = not started
-#   1–3 = beginner / awareness
-#   4–6 = intermediate / working knowledge
-#   7–9 = proficient / can design and defend
-#   10  = expert / recognised authority
+# self_rating: 0–10 scale
+#   0    = not started
+#   1–3  = awareness / conceptual only
+#   4–6  = intermediate / working knowledge, could discuss in an interview
+#   7–9  = proficient / can design, defend, and lead projects
+#   10   = recognised expert / published authority
 #
-# cv_claimed: true = you currently put this on your CV
+# cv_claimed: true = currently on CV
+# evidence: concrete projects or experience that backs the rating
+# limitations: what is missing and could be challenged in an interview
 #
 # Skill names MUST match skill_matrix.yaml exactly for gap analysis to work.
 
 profile:
-  name: "Functional Safety Engineer → AI-augmented safety systems engineer"
-  target_positioning: "AI-augmented safety systems engineer for embedded AI / robotics / ADAS systems"
+  name: "Senior System Safety / Functional Safety Architect"
+  target_positioning: >
+    Senior System Safety / Functional Safety Architect for safety-critical embedded
+    systems, robotics, ADAS, industrial automation, and AI-enabled systems.
+  current_employer: "Bosch (Bosch Drehscheibe — active, external transition)"
   target_roles:
-    - "Functional Safety Engineer – Robotics / Embedded AI"
-    - "Safety Engineer – ADAS / Autonomous Driving"
-    - "Embedded AI Safety Engineer"
-    - "Systems Safety Engineer – Safety-Supervised AI"
-    - "AI Safety Engineer – Automotive / Robotics"
+    - "Functional Safety Architect (automotive / robotics / automation)"
+    - "System Safety Engineer — senior / lead"
+    - "Functional Safety Consultant / Assessor (TÜV, SGS, Exida)"
+    - "Safety Architect — embedded AI / ADAS"
+    - "Safety Manager — cross-domain (ISO 26262 + ISO 13849)"
 
 skills:
-  # ── Core strengths (ISO 26262 background) ─────────────────────
-  - name: "ISO 26262"
-    self_rating: 8
-    cv_claimed: true
-    notes: "Primary expertise from automotive role. HARA, safety concepts, ASIL decomposition."
 
-  - name: "Functional Safety"
+  # ── Core strengths — ISO 26262 background ─────────────────────────────────
+
+  - name: "Functional safety and system safety architecture"
     self_rating: 8
     cv_claimed: true
-    notes: "Safety requirements, safety mechanisms, confirmation measures."
+    evidence: >
+      Bosch project experience: developed safety concepts, safety requirements,
+      safety mechanisms, and technical safety concepts for embedded automotive
+      platforms. Led architecture trade-off decisions including ASIL decomposition,
+      safety mechanism selection, and cross-system safety argument construction.
+      Familiar with HARA, FTA, FMEA, safety cases, and confirmation measures.
+    limitations: >
+      Experience primarily in automotive (ISO 26262). Cross-domain application
+      to ISO 13849 (machinery) and IEC 61508 (industrial) is transferable but
+      not yet validated in external projects.
 
   - name: "Requirements engineering and traceability"
+    self_rating: 8
+    cv_claimed: true
+    evidence: >
+      Extensive Bosch experience writing safety requirements at system and
+      subsystem level. Familiar with requirements traceability from safety goals
+      down to implementation tests. Used in-house tooling for requirements
+      management and impact analysis.
+    limitations: >
+      Tooling experience is mostly in Bosch-internal tools (DOORS variants).
+      Less experience with DOORS NG / Jama / Polarion as independent tools.
+      Agile-style requirements (user stories with safety) is an area to develop.
+
+  - name: "MBSE and SysML2"
     self_rating: 7
     cv_claimed: true
-    notes: "Safety requirements, traceability, system architecture docs."
+    evidence: >
+      Practical MBSE experience at Bosch: system architecture modelling,
+      interface definition, and requirements traceability using model-based
+      approaches. Familiar with SysML block definitions, activity diagrams,
+      state machines, and interface tables.
+    limitations: >
+      Primary tooling experience is Bosch-internal. Less experience with Capella
+      or open-source SysML2 tools. Textual SysML2 is new — portfolio work in
+      progress with Mermaid diagrams as an entry point.
 
-  - name: "System Architecture"
-    self_rating: 7
-    cv_claimed: true
-    notes: "Automotive E/E architecture, item definition, technical safety concept."
+  - name: "SOTIF and ISO/PAS 8800"
+    self_rating: 5
+    cv_claimed: false
+    evidence: >
+      Self-study: understand SOTIF (ISO 21448) concept, intended function,
+      performance limitations, ODD, and the distinction from ISO 26262
+      (functional faults vs intended function safety). Familiar with how SOTIF
+      connects to AI perception monitoring and sensor limitations.
+    limitations: >
+      No formal project application of SOTIF yet. ISO/PAS 8800 (AI safety in
+      vehicles) awareness only at clause-level — not yet applied to a concrete
+      safety argument. Both standards are still maturing; depth is limited.
 
-  # ── Deep focus skills (must match skill_matrix.yaml names) ─────
-  - name: "ROS2"
+  - name: "ISO 13849 and CMSE"
     self_rating: 3
     cv_claimed: false
-    notes: "Learning via Raspberry Pi demonstrator. Nodes and topics running."
+    evidence: >
+      Strong transferable foundation from ISO 26262 (HARA ↔ risk graph,
+      ASIL ↔ PL, safety mechanisms ↔ SRP/CS, safety integrity ↔ MTTFd/DCavg).
+      Currently in structured CMSE preparation: studying safety function
+      definition, PLr determination, Category selection, MTTFd/DCavg/CCF.
+      Able to discuss concepts and analogies to ISO 26262 in an interview.
+    limitations: >
+      No practical machinery safety project experience yet. Cannot claim
+      SISTEMA use or actual PL calculation signed off. CMSE certification
+      pending. Do not claim proficiency until at least one worked project or
+      certification is complete.
+
+  # ── Technical implementation skills ────────────────────────────────────────
+
+  - name: "ROS2"
+    self_rating: 4
+    cv_claimed: false
+    evidence: >
+      Active learning via Raspberry Pi safety demonstrator project.
+      Implemented publisher/subscriber nodes, launch files, basic message types.
+      Understands ROS2 node lifecycle, QoS concepts, and integration with
+      C++ safety logic.
+    limitations: >
+      No production ROS2 experience. Cannot lead a ROS2 architecture for a
+      real product yet. Demonstrator scope is limited. DDS configuration,
+      real-time ROS2, and ROS2 security are areas not yet covered.
 
   - name: "C++20 and safety logic"
-    self_rating: 4
+    self_rating: 3
     cv_claimed: false
-    notes: "Building StateEvaluator and timeout monitors with GoogleTest."
+    evidence: >
+      Building StateEvaluator, HeartbeatMonitor, and TimeoutChecker modules
+      in the Raspberry Pi demonstrator with GoogleTest. Understands enum class,
+      strong typing, RAII, std::chrono, and CMake basics.
+    limitations: >
+      Not a professional-grade C++20 developer. Templates, advanced concurrency,
+      and production-grade performance optimization are out of scope for current
+      work. This is a supporting demonstrator skill, not a core market claim.
 
-  - name: "AI perception monitoring"
-    self_rating: 2
-    cv_claimed: false
-    notes: "Implementing confidence/latency/stale-data monitoring nodes."
-
-  - name: "Soft skills and interview communication"
+  - name: "Python automation"
     self_rating: 5
     cv_claimed: true
-    notes: "Experienced but needs more structured interview story preparation."
+    evidence: >
+      Built and maintains the Career Intelligence Assistant (this tool):
+      RSS collection, SQLite, YAML configuration, LLM API integration,
+      HTML report generation. Also uses Python for fault injection scripts,
+      log analysis, and OpenCV basics in the Pi demonstrator.
+    limitations: >
+      Not a data scientist or ML engineer. Cannot claim deep ML/PyTorch
+      experience. Scripting and automation strength, not production backend.
 
-  - name: "GitHub portfolio and documentation"
+  - name: "AI perception monitoring"
     self_rating: 4
     cv_claimed: false
-    notes: "Portfolio project in progress. README and CI not yet published."
-
-  # ── Serious skills ──────────────────────────────────────────────
-  - name: "Python automation"
-    self_rating: 6
-    cv_claimed: true
-    notes: "Scripting, data processing, this career assistant tool."
+    evidence: >
+      Conceptual understanding and early demonstrator implementation:
+      confidence threshold monitoring, latency watchdog design, stale-data
+      detection patterns. Understands how AI perception output supervision
+      connects to safety-critical decision logic.
+    limitations: >
+      No production AI safety monitoring system deployed. Knowledge of specific
+      ADAS AI stacks (Mobileye, NVIDIA Drive) is theoretical only.
 
   - name: "Linux practical skills"
     self_rating: 4
     cv_claimed: false
-    notes: "Raspberry Pi Linux work in progress."
-
-  - name: "ISO 13849 and CMSE"
-    self_rating: 2
-    cv_claimed: false
-    notes: "Beginning structured study. Target: working engineer level for CMSE prep."
-
-  - name: "SOTIF and ISO/PAS 8800"
-    self_rating: 3
-    cv_claimed: false
-    notes: "Following standard development; self-study on SOTIF concepts."
-
-  # ── Lightweight skills ─────────────────────────────────────────
-  - name: "MBSE and SysML2"
-    self_rating: 2
-    cv_claimed: false
-    notes: "Capella basics. Target: Mermaid diagrams and lightweight SysML2 in portfolio."
+    evidence: >
+      Daily use of Ubuntu/Raspberry Pi OS for development: SSH, process
+      management, systemd basics, GPIO, logging, Ethernet configuration.
+      Uses Linux for ROS2, fault injection, and demonstrator testing.
+    limitations: >
+      Not a Linux kernel or Yocto/Buildroot engineer. Device driver development
+      and kernel configuration are out of scope. Can claim practical developer
+      competency, not embedded OS expertise.
 
   - name: "QNX and POSIX supervisor concepts"
-    self_rating: 2
+    self_rating: 3
     cv_claimed: false
-    notes: "Conceptual knowledge. Building POSIX supervisor on Linux first."
+    evidence: >
+      Conceptual understanding of QNX microkernel properties relevant to
+      functional safety: process isolation, POSIX API, watchdog patterns,
+      supervisor process design. Can articulate why QNX is preferred for
+      safety-critical automotive software over Linux.
+    limitations: >
+      NO practical QNX project experience. No QNX Momentics usage. Do not
+      claim hands-on proficiency. Only mention as "familiar with QNX concepts
+      and safety rationale" — never as a practical skill in interviews or CV
+      until a real QNX project is complete.
 
-  - name: "MCP and agentic AI workflow"
-    self_rating: 4
+  # ── Career and communication ─────────────────────────────────────────────
+
+  - name: "GitHub portfolio and documentation"
+    self_rating: 5
     cv_claimed: false
-    notes: "Using Claude Code and AI tools actively for engineering productivity."
+    evidence: >
+      Career Intelligence Assistant published on GitHub with structured README.
+      Raspberry Pi demonstrator project in progress. Demonstrates Python,
+      SQLite, LLM integration, RSS pipeline, and basic CI.
+    limitations: >
+      Portfolio does not yet show safety architecture work prominently.
+      Missing: safety case documents, architecture decision records, and
+      cross-domain standards mapping docs. CV bullets not yet fully quantified.
 
-  - name: "Career Intelligence Assistant"
+  - name: "Soft skills and interview communication"
     self_rating: 6
-    cv_claimed: false
-    notes: "Built and running this tool — Python, SQLite, RSS, LLM classification."
+    cv_claimed: true
+    evidence: >
+      Experienced professional communicator in German (native) and English
+      (proficient). Proven ability to present safety architecture decisions to
+      technical and management audiences at Bosch. Can structure STAR-format
+      interview stories.
+    limitations: >
+      Interview story preparation for external market is still in progress.
+      Needs more practice with: "why are you leaving", "walk me through your
+      safety concept process", and "how do you handle disagreement with a
+      safety assessor". Japanese business level is beginner only.
 
-  # ── Technical communication ────────────────────────────────────
+  # ── Additional Bosch context skills (not in skill_matrix but relevant) ────
+
+  - name: "ISO 26262"
+    self_rating: 8
+    cv_claimed: true
+    evidence: >
+      Primary professional expertise from Bosch automotive projects.
+      Covered: HARA, FSC, TSC, safety requirements, safety mechanisms,
+      safety analyses, confirmation measures, and safety case construction.
+    limitations: >
+      Experience is primarily Part 4/5/6 (system/hardware/software) for
+      embedded platform safety. Part 8 (supporting processes) and Part 9
+      (ASIL-targeted analyses) are familiar but less hands-on.
+
   - name: "Technical communication (JP/DE/EN)"
     self_rating: 5
     cv_claimed: false
-    notes: "DE strong (professional), EN proficient, JP beginner (business basics)."
+    evidence: >
+      German: native-level professional. English: proficient (working language
+      in international Bosch teams). Japanese: beginner — can handle basic
+      business introductions and simple email context.
+    limitations: >
+      Japanese is not sufficient for technical safety discussions. Bosch Japan
+      should not be positioned as a primary career path based on current
+      language level.
