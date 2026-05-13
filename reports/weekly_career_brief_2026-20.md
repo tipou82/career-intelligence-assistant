@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 10:35_
+_Mode: **External Transition** · Generated: 2026-05-13 14:51_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: ai, automotive, digital_twin, physical_ai, software_defined_vehicle. Notable companies: Boston Dynamics, Hyundai Motor Group, Renesas, Irida Labs, Intel. See Section 2 for full analysis.
+Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: physical_ai, functional_safety, embedded, robotics, software_defined_vehicle. Notable companies: MIPI Alliance, Figure AI, Dreame, Hyundai, Li Auto. See Section 2 for full analysis.
 
 ---
 
@@ -20,14 +20,14 @@ Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key ac
 - RAMS Engineer (Railway / Industrial Automation)
 
 ### Top Companies to Monitor or Approach
-- Google DeepMind
+- Google
 - Tesla
-- Intel
-- Toyota
 - Figure AI
+- Toyota
+- Hyundai
 
 ### Recommended CV / Application Keywords
-`人形机器人`, `自动驾驶`, `自動運転`, `humanoid`, `强化学习`, `ヒューマノイド`, `edge ai`, `robotics engineering`
+`embodied ai`, `gemini`, `autonomous driving`, `computer vision`, `humanoid robotics`, `functional safety`, `ai integration`, `chip design`
 
 ### Networking Targets
 - TÜV SÜD / TÜV Rheinland functional safety teams
@@ -46,183 +46,176 @@ Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key ac
 
 ## 3. Strong Signals
 
+### Japan's Nidec suspected of over 1,000 cases of quality tampering  `🇬🇧 EN`
+- **Development:** 
+- **Companies involved:** Nidec
+- **Region:** japan, global
+- **Industry domain:** automotive, functional_safety, embedded
+- **Technology signal:** ISO 26262
+- **Career relevance:** Directly relevant to quality assurance, functional safety, compliance
+- **Confidence level:** medium
+- **Relevance score:** 8.2 / 10
+- **Recommended action:** monitor_closely
+- **Source:** Nikkei Asia — 2026-05-13
+- **URL:** https://asia.nikkei.com/business/companies/japan-s-nidec-suspected-of-over-1-000-cases-of-quality-tampering
+
+---
+
 ### 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑  `🇨🇳 ZH`
 - **Development:** 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 &nbsp;&nbsp; 电子工程专辑
-- **Companies involved:** N/A
-- **Region:** 上海, 深圳
-- **Industry domain:** functional_safety, robotics
-- **Technology signal:** 功能安全
-- **Career relevance:** Directly relevant to 功能安全
+- **Companies involved:** Texas Instruments
+- **Region:** china
+- **Industry domain:** robotics, functional_safety, embedded
+- **Technology signal:** functional safety
+- **Career relevance:** Directly relevant to functional safety, industrial automation, robotics safety
 - **Confidence level:** medium
-- **Relevance score:** 8.5 / 10
+- **Relevance score:** 7.9 / 10
 - **Recommended action:** monitor_closely
 - **Source:** GNews ZH: 机器人安全 — 2026-05-13
 - **URL:** https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5
 
 ---
 
+### 自動運転中、中国人女性は「化粧」する  `🇯🇵 JA`
+- **Development:** 自動運転レベル2の普及が進む中国。テスラのFSDと遜色ない水準のADASを各メーカーが実用化し、しのぎを削っている。 一方、誤った使用方法による事故も増加傾向にあるようで、現地メディアによると、運転中、コンパクトミラーを [&#8230;] 
+ The post  自動運転中、中国人女性は「化粧」する  first appeared on  自動運転ラボ .
+- **Companies involved:** Tesla
+- **Region:** china
+- **Industry domain:** automotive, adas, functional_safety
+- **Technology signal:** ADAS, FSD
+- **Career relevance:** Directly relevant to functional safety, driver monitoring, misuse prevention
+- **Confidence level:** medium
+- **Relevance score:** 7.9 / 10
+- **Recommended action:** monitor_closely
+- **Source:** 自動運転Lab — 2026-05-11
+- **URL:** https://jidounten-lab.com/u_62129
+
+---
+
+### Ensure that Parts Suppliers Provide EV-Compliant Parts  `🇬🇧 EN`
+- **Development:** Using an electric drive unit (EDU) battery module within a battery pack as a real-world case study, this webinar demonstrates how to connect supplier collaboration, material compliance and engineering qualification into a single digital thread.
+- **Companies involved:** N/A
+- **Region:** global
+- **Industry domain:** automotive, embedded, software_defined_vehicle, digital_twin, mbse
+- **Technology signal:** digital_twin, MBSE
+- **Career relevance:** Directly relevant to supplier collaboration, material compliance, engineering qualification, battery pack design
+- **Confidence level:** medium
+- **Relevance score:** 7.4 / 10
+- **Recommended action:** monitor
+- **Source:** Automotive News — 2026-05-12
+- **URL:** https://www.autonews.com/resource_center/dassault-systemes/an-ensure-that-parts-suppliers-provide-ev-compliant-parts-0602/
+
+---
+
+### 愿景2036丨一场关于未来10年AI技术主权争夺战，追觅打了头阵  `🇨🇳 ZH`
+- **Development:** 2026年的春天，硅谷的空气里弥漫        着        未来        的气息。            美国时间       4月2       8        日，追觅科技在这里        呈现了        一个覆盖起居、烹饪、清洁、护理乃至庭院的庞大智能产品矩阵。           能感知用户、定向送风的空调，能管理全家营养健康的冰箱，能自主完成全流程的洗衣机器人，以及更聪明的割草机、泳池机器人      ……这些产品共同指向一个明确的信号：AI正在深入硬件的骨髓，重写每一个家电品类的定义。          行业喧嚣，人人皆言      “重做一遍”。          然而，口号背后，一个更现实的问题浮现：谁有能力定义这场      “重写”的标准与方向？
+- **Companies involved:** Dreame
+- **Region:** china, usa, global
+- **Industry domain:** ai, embedded, robotics
+- **Technology signal:** AI, machine learning, millimeter wave radar, sensing systems
+- **Career relevance:** Directly relevant to AI algorithm development, sensor fusion, scene understanding, embedded AI
+- **Confidence level:** low
+- **Relevance score:** 7.3 / 10
+- **Recommended action:** watch
+- **Source:** 雷锋网 Leiphone — 2026-05-12
+- **URL:** https://www.leiphone.com/category/weiwu/qzNsjHpqOoV0W2HX.html
+
+---
+
+### 理想汽车用全栈自研，定义具身智能的上半场与下半场 - 搜狐网  `🇨🇳 ZH`
+- **Development:** 理想汽车用全栈自研，定义具身智能的上半场与下半场 &nbsp;&nbsp; 搜狐网
+- **Companies involved:** Li Auto
+- **Region:** china, global
+- **Industry domain:** automotive, embedded, software_defined_vehicle, ai
+- **Technology signal:** full-stack self-research, embodied intelligence
+- **Career relevance:** Directly relevant to embedded AI, software architecture
+- **Confidence level:** medium
+- **Relevance score:** 7.2 / 10
+- **Recommended action:** monitor_closely
+- **Source:** GNews ZH: 人形机器人 — 2026-05-13
+- **URL:** https://news.google.com/rss/articles/CBMijAFBVV95cUxPYllrQkoyZjM3QUFyTlV6VjZ1MGtxcUhVXzkzOHNWemYtM1ZBUXdpVE5nWGRjZnpfcEhSWXh3TWl1RnZ2VTFpQTJibnRiamdhSjZPLTFNS1dkMzhEUk82M1R1TGNVNUJHX0R6OGJEQ0ZpVnFycUtVQ3pIZEtSRWc5bEJCNHJKcnRrUExnSQ?oc=5
+
+---
+
+### 对话简智朱雁鸣：不卷模型卷基建，具身智能核心是读懂人的数据  `🇨🇳 ZH`
+- **Development:** 「自动化」是具身数据行业的第一竞争力。                &nbsp; &nbsp; 作者丨高景辉                  &nbsp; &nbsp; 编辑丨马晓宁           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &
+- **Companies involved:** NEURA Robotics
+- **Region:** china, global
+- **Industry domain:** robotics, embedded, ai
+- **Technology signal:** digital twin, multimodal perception
+- **Career relevance:** Directly relevant to data annotation, human motion capture, behavioral analysis
+- **Confidence level:** medium
+- **Relevance score:** 7.2 / 10
+- **Recommended action:** monitor
+- **Source:** 雷锋网 Leiphone — 2026-05-12
+- **URL:** https://www.leiphone.com/category/robot/vNZuXhOJsA0EWTuG.html
+
+---
+
+### 贾跃亭宣布FF升级为物理AI生态公司：转战具身智能机器人，造车12年累计交付不足20辆 - 电子工程专辑  `🇨🇳 ZH`
+- **Development:** 贾跃亭宣布FF升级为物理AI生态公司：转战具身智能机器人，造车12年累计交付不足20辆 &nbsp;&nbsp; 电子工程专辑
+- **Companies involved:** Faraday Future
+- **Region:** china, usa
+- **Industry domain:** robotics, ai, embedded
+- **Technology signal:** embodied AI
+- **Career relevance:** Directly relevant to physical AI, robotics development
+- **Confidence level:** low
+- **Relevance score:** 7.1 / 10
+- **Recommended action:** watch
+- **Source:** GNews ZH: 人形机器人 — 2026-05-13
+- **URL:** https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZMzNCa3RCMGVoMmZKWWladkd6YzlIbVJIZXlhZURNZnNrSlFOZWFMYk45b28yTmZPWldyWmQ1LXNWaVpXYlJ5d2dManhnUFdYcFp5LWMyZVpCOEsy?oc=5
+
+---
+
+### Hyundai Motor aims to turn robot factory into data gold mine, with $2.7 bn annual profit potential - KED Global  `🇬🇧 EN`
+- **Development:** Hyundai Motor aims to turn robot factory into data gold mine, with $2.7 bn annual profit potential &nbsp;&nbsp; KED Global
+- **Companies involved:** Hyundai Motor
+- **Region:** korea, global
+- **Industry domain:** robotics, automotive, digital_twin
+- **Technology signal:** digital twin, data analytics
+- **Career relevance:** Directly relevant to data engineering, factory automation, robotics optimization
+- **Confidence level:** medium
+- **Relevance score:** 7.0 / 10
+- **Recommended action:** monitor_closely
+- **Source:** GNews: Boston Dynamics — 2026-05-13
+- **URL:** https://news.google.com/rss/articles/CBMia0FVX3lxTE45NzB0blJFbXJiSGhteGwxRXRZZUFMcExxMmZsa3VydEkzSS1XQWd3OWFFSWpfLWJhZW1zaG9PMy1OZFNSS3VnYUQ4VDZXUFo2M1d2bVE4a1pTNmFaWk1RRDNTUG11RnRiczFF?oc=5
+
+---
+
 ### MIPI Alliance Forms Physical AI Group Focused on Humanoids  `🇬🇧 EN`
 - **Development:** The MIPI Alliance has announced the formation of a Physical AI Birds of a Feather (BoF) group focused on emerging technologies in the physical AI market, with an initial emphasis on humanoid robotics. The initiative is designed to evaluate how existing and future MIPI interface specifications can support the rapidly evolving humanoid application ec
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** automotive, embedded, humanoid_robot, physical_ai, robotics
-- **Technology signal:** humanoid, physical AI
-- **Career relevance:** Directly relevant to your profile
-- **Confidence level:** high
-- **Relevance score:** 8.1 / 10
+- **Companies involved:** MIPI Alliance
+- **Region:** global
+- **Industry domain:** robotics, embedded, ai
+- **Technology signal:** MIPI interface specifications
+- **Career relevance:** Directly relevant to physical AI, humanoid robotics integration
+- **Confidence level:** medium
+- **Relevance score:** 7.0 / 10
 - **Recommended action:** monitor_closely
 - **Source:** Embedded.com — 2026-05-12
 - **URL:** https://www.embedded.com/mipi-alliance-forms-physical-ai-group-focused-on-humanoids/
 
 ---
 
-### 動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た  `🇯🇵 JA`
-- **Development:** 京都ヒューマノイドアソシエーション（KyoHA）が純国産ヒューマノイドの検証機「SEIMEI」を公開した。足首パーツの破損で動的デモを披露できないというトラブルを隠さず、未完成の現状をさらけ出したところにKyoHAの純国産ヒューマノイド開発に向けた覚悟が見えた。
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** ヒューマノイド
-- **Career relevance:** Directly relevant to ヒューマノイド
-- **Confidence level:** medium
-- **Relevance score:** 8.0 / 10
-- **Recommended action:** monitor_closely
-- **Source:** ITmedia AI+ — 2026-05-12
-- **URL:** https://monoist.itmedia.co.jp/mn/articles/2605/13/news024.html
-
----
-
-### A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. - CPG Click Petróleo e Gás  `🇬🇧 EN`
-- **Development:** A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. &nbsp;&nbsp; CPG Click Petróleo e Gás
-- **Companies involved:** Boston Dynamics, Figure AI, Tesla
-- **Region:** N/A
-- **Industry domain:** automotive, digital_twin, humanoid_robot, robotics
-- **Technology signal:** humanoid
-- **Career relevance:** Directly relevant to your profile
-- **Confidence level:** medium
-- **Relevance score:** 8.0 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews: Boston Dynamics — 2026-05-11
-- **URL:** https://news.google.com/rss/articles/CBMikgJBVV95cUxNZ25MS1FCTWxUd0VxSGp5MHhjSXd6WWRURWdpcUdSR2dFai1FVTVvY0VNcTJaS3JxUVRNd3k0Zlp1emFBV2V4aURHWTBJaF8wYnRFU1dwRG5GQXpXUGF1eDNiTUdLUWtHMlV3Szlrc0c2ZTBRWXh1YXk3ZUZMMDVpODVIUHkwdzhUWFZLTTQ3ZGxDN0ZCWHctanlKY3l2UVRKYmhzV1NpMHhiN1c5RDZ5aE5xTklQQlRDQ2htdDNwbnlqRlR4bWcteVlra3BPX2xISWJrU1BMczBiS3FwbHJyNXVYSktIMEdiODh6aklZdG42VVlGZUhLV29nTzI0UTYxSzlVazRPNWFSNFVwQ3p0TjVB?oc=5
-
----
-
-### Renesas Completes Acquisition of Irida Labs to Expand Vision AI Software Capabilities and Accelerates System-Level Vision Solutions  `🇬🇧 EN`
-- **Development:** Renesas Electronics Corporation (TSE:6723, “Renesas”), a premier supplier of advanced semiconductor solutions, today announced that a subsidiary of Renesas has completed the acquisition of Irida Labs, a Greece-based company specializing in embedded software for AI-powered visual perception systems. The acquisition strengthens Renesas’ edge AI embed
-- **Companies involved:** Renesas, Irida Labs
-- **Region:** europe, global
-- **Industry domain:** embedded, ai, robotics
-- **Technology signal:** edge AI, embedded software, visual perception systems, machine vision
-- **Career relevance:** Directly relevant to embedded AI, vision systems integration, edge computing
-- **Confidence level:** medium
-- **Relevance score:** 7.8 / 10
-- **Recommended action:** monitor
-- **Source:** EE Journal — 2026-05-11
-- **URL:** https://www.eejournal.com/industry_news/renesas-completes-acquisition-of-irida-labs-to-expand-vision-ai-software-capabilities-and-accelerates-system-level-vision-solutions/
-
----
-
-### 6月上海，这场论坛聊透出海真问题  `🇨🇳 ZH`
-- **Development:** 副标题：韧性全球化，AI向未来｜EqualOcean2026出海全球化百人论坛（GGF2026）将于6月11日在上海举行  
-     
-   出海这件事，已经变了。 
-   如果今天还把出海理解为“寻找增量市场”，大概率已经慢了一步。 
-   &nbsp;如今，中国企业出海已经进入一个全新的阶段。真正拉开差距的，早已不是“是否出海”，而是： 
-   ·&nbsp;下一阶段最值得重仓的区域市场在哪里？ 
-   ·&nbsp;AI应该优先进入哪些关键环节，才能形成真正差异化？ 
-   ·&nbsp;在资本趋于理性、增长更重质量的背景下，什么样的公司还具备穿越周期的可能性？ 
-   ·&nbsp;对于具身智能、自动驾驶、AI硬件等新技术企业而言，如何跨越从技术验证到场景落地、从产品展示到规模商业
-- **Companies involved:** N/A
-- **Region:** 上海, 中国
-- **Industry domain:** adas, robotics
-- **Technology signal:** 人形机器人, 自动驾驶
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.8 / 10
-- **Recommended action:** monitor_closely
-- **Source:** 36氪 36Kr — 2026-05-13
-- **URL:** https://36kr.com/p/3807234971131656?f=rss
-
----
-
-### 专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 - 证券时报  `🇨🇳 ZH`
-- **Development:** 专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 &nbsp;&nbsp; 证券时报
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-12
-- **URL:** https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwWFplYXdLbl90NGdoVmw1d240M0hzV2F4SmVqakRnZFlQU2F3ejV6MWRRZUxmemZYdEFsajlvakQyWnAxc3BjLVE1ZW5BX2l6cmNDajdrWlJuRWh3?oc=5
-
----
-
-### 李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 - 车家号  `🇨🇳 ZH`
-- **Development:** 李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 &nbsp;&nbsp; 车家号
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** adas, robotics
-- **Technology signal:** 人形机器人, 自动驾驶
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-13
-- **URL:** https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IWUlhdWY4d0xvb0dKMUx4NUdteTY1Q2psN0hTMUhCR2NoMEtDZDZNeGtyRU9rZWcyMkRFQUxTZG9EcE1Od0QySXFnaG5ldW1Majl0WXhvcU5wVVU?oc=5
-
----
-
-### 人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” - 驱动之家  `🇨🇳 ZH`
-- **Development:** 人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” &nbsp;&nbsp; 驱动之家
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-13
-- **URL:** https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Ob2MwcW5uVkJ1bkhnSmxHQkJBWU5FcXJRYWJ3LUJKaXlBNGZtQ19Qa1cwamlnaXVvOUIyT01nQkY4cWh2V3dnVVVuUkpzNVlYSnRfaG1Gbi0?oc=5
-
----
-
-### 湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 - 湖北省数据局  `🇨🇳 ZH`
-- **Development:** 湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 &nbsp;&nbsp; 湖北省数据局
-- **Companies involved:** N/A
-- **Region:** N/A
-- **Industry domain:** ai, robotics
-- **Technology signal:** 人形机器人
-- **Career relevance:** Directly relevant to 人形机器人
-- **Confidence level:** medium
-- **Relevance score:** 7.7 / 10
-- **Recommended action:** monitor_closely
-- **Source:** GNews ZH: 人形机器人 — 2026-05-11
-- **URL:** https://news.google.com/rss/articles/CBMieEFVX3lxTE9PVzVOVkgweEljRzhmbTI1Q2lWbFZBUlQ2bmdaY0prRUlKLWszczBoWFhleTVRc1V6ZFAwQXlQMjdRckN2NmZldlRZU3pJbnIxTTVXcUtJZ1FPRXdFYkUyM3Q1eWE0cUVRVFhhUG5YbDFER2VTbTV5Vg?oc=5
-
----
-
 ## 4. Weak Signals / Watchlist _(top 15 by actionability)_
 
-- **[Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Electrek — 2026-05-11
-- **[Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — IEEE Spectrum Robotics — 2026-05-12
-- **[VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive News — 2026-05-12
-- **[Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive World — 2026-05-11
-- **[Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-11
-- **[Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
-- **[Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Nikkei Asia — 2026-05-12
-- **[Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive News — 2026-05-11
-- **[Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
-- **[KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — GNews DE: Eingebettete KI — 2026-05-13
-- **[Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Electrek — 2026-05-11
-- **[Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Nikkei Asia — 2026-05-12
-- **[トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html)** `🇯🇵 JA` (rel: 6.2 · act: 0.0) — Response.jp — 2026-05-13
-- **[Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Heise Online — 2026-05-13
-- **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Automotive World — 2026-05-12
+- **[VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html)** `🇩🇪 DE` (rel: 6.3 · act: 8.0) — Heise Auto — 2026-05-13
+- **[VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇩🇪 DE` (rel: 6.3 · act: 8.0) — Heise Online — 2026-05-13
+- **[Künstliche Intelligenz: „Eine neue SAP“ – Softwarehersteller stellt Vision für autonome Unternehmen vor](https://www.handelsblatt.com/technik/it-internet/kuenstliche-intelligenz-sap-stellt-vision-fuer-autonome-unternehmen-vor/100223581.html)** `🇩🇪 DE` (rel: 6.0 · act: 8.0) — Handelsblatt Technologie — 2026-05-12
+- **[Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html)** `🇩🇪 DE` (rel: 6.2 · act: 7.0) — Heise Auto — 2026-05-13
+- **[Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇩🇪 DE` (rel: 6.2 · act: 7.0) — Heise Online — 2026-05-13
+- **[马斯克、库克随特朗普访华，黄仁勋虽迟但到；SK海力士中国员工无法做管理层，奖金不到韩国人的5%；390万元起！宇树发布载人变形机甲](https://www.leiphone.com/category/zaobao/rod6WpUrAa8maOpv.html)** `🇨🇳 ZH` (rel: 6.0 · act: 7.0) — 雷锋网 Leiphone — 2026-05-13
+- **[不用再找了，AI落地最全的实战打法，都在亦庄这场大会里](https://36kr.com/p/3806179759496711?f=rss)** `🇨🇳 ZH` (rel: 4.8 · act: 7.0) — 36氪 36Kr — 2026-05-12
+- **[KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇩🇪 DE` (rel: 4.9 · act: 4.0) — Heise Online — 2026-05-13
+- **[KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html)** `🇩🇪 DE` (rel: 4.5 · act: 4.0) — Heise Developer — 2026-05-13
+- **[BYD in talks with Stellantis, other European automakers to take over underused factories](https://www.autonews.com/byd/ane-byd-stellantis-others-europe-plant-takeovers-0513/)** `🇬🇧 EN` (rel: 5.3 · act: 3.8) — Automotive News — 2026-05-13
+- **[Anzeige: Cyber Resilience und Compliance: NIS 2, DORA, AI Act einordnen](https://www.golem.de/news/anzeige-cyber-resilience-und-compliance-nis-2-dora-ai-act-einordnen-2605-208552.html)** `🇩🇪 DE` (rel: 5.7 · act: 3.5) — Golem.de — 2026-05-13
+- **[Luxuslimousine: So fährt sich die Mercedes S-Klasse nach dem Update](https://www.handelsblatt.com/mobilitaet/motor/mercedes-s-klasse-so-faehrt-sich-die-luxuslimousine-nach-dem-update/100224792.html)** `🇩🇪 DE` (rel: 5.7 · act: 3.5) — Handelsblatt Schlagzeilen — 2026-05-13
+- **[Infineon’s new XHP™ 2 CoolSiC™ high-power modules boost efficiency and power density in high-voltage energy systems](https://www.eejournal.com/industry_news/infineons-new-xhp-2-coolsic-high-power-modules-boost-efficiency-and-power-density-in-high-voltage-energy-systems/)** `🇬🇧 EN` (rel: 5.6 · act: 3.5) — EE Journal — 2026-05-12
+- **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 5.6 · act: 3.5) — Automotive World — 2026-05-12
+- **[Automobilindustrie: Autobranche rechnet mit Wegfall von weiteren 125.000 Jobs bis 2035](https://www.handelsblatt.com/unternehmen/industrie/automobilindustrie-autobranche-rechnet-mit-wegfall-von-weiteren-125.000-jobs-bis-2035/100224795.html)** `🇩🇪 DE` (rel: 5.5 · act: 3.5) — Handelsblatt Schlagzeilen — 2026-05-13
 
-_+ 272 further weak signals not shown. Main themes: automotive (148), robotics (82), embedded (50), ai (46), adas (33)._
+_+ 245 further weak signals not shown. Main themes: automotive (143), robotics (70), embedded (64), ai (57), adas (34)._
 
 ---
 
@@ -238,7 +231,7 @@ _+ 272 further weak signals not shown. Main themes: automotive (148), robotics (
 | GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 4 h |
 | **Serious** | | | | | | |
 | ROS2 | 3/5 | 3/5 | 3/5 | ↑ | Signals: physical ai | 2 h |
-| C++20 and safety logic | 3/5 | 2/5 | 4/5 | ↑ | Signals: embedded software | 0 h |
+| C++20 and safety logic | 3/5 | 2/5 | 4/5 | ↑ | Signals: c++20 | 0 h |
 | AI perception monitoring | 3/5 | 2/5 | 4/5 | → | No new signals this week | 0 h |
 | SOTIF and ISO/PAS 8800 | 4/5 | 4/5 | 4/5 | → | No new signals this week | 2 h |
 | Linux practical skills | 3/5 | 3/5 | 3/5 | → | No new signals this week | 1 h |
@@ -246,7 +239,7 @@ _+ 272 further weak signals not shown. Main themes: automotive (148), robotics (
 | QNX and POSIX supervisor concepts | 2/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
-| MBSE and SysML2 | 3/5 | 2/5 | 3/5 | → | No new signals this week | 0 h |
+| MBSE and SysML2 | 3/5 | 2/5 | 3/5 | ↑ | Signals: mbse, digital twin | 0 h |
 | General AI trend monitoring | 2/5 | 2/5 | 1/5 | → | No new signals this week | 0 h |
 | **Defer** | | | | | | |
 | Cloud and MLOps | 2/5 | 1/5 | 1/5 | → | No new signals this week | 0 h |
@@ -277,6 +270,8 @@ Based on this week's signals, your positioning in **functional safety + embedded
 
 **Robotics activity is strong.** Emphasize ROS2 and safety-supervised robotics in your portfolio and CV/LinkedIn profile.
 
+**MBSE/SysML2 signals detected.** Consider adding SysML2 architecture diagrams to your portfolio project to demonstrate systems engineering depth.
+
 **SDV / QNX signals present.** Your QNX/POSIX supervisor knowledge is a differentiator for automotive SDV roles — make it visible.
 
 
@@ -290,12 +285,12 @@ Based on this week's signals, your positioning in **functional safety + embedded
 - **Consumer robotics without safety or embedded angle:** Watch passively; do not deprioritize core skills.
 - **Social media opinion pieces without corroborating sources:** Low confidence; require a second source before acting.
 - **Low-relevance articles filtered this week:**
-  - heise-Angebot: KI im Unternehmen: So gelingt der sichere GPT-Einsatz
-  - Digg tries again, this time as an AI news aggregator
-  - Thinking Machines wants to build an AI that actually listens while it talks
-  - Noom Promo Codes: 50% Off Best Deals & Free Trials for April 2026
-  - KI-Update: Verstörende Chatbots, Neue Audio-Modelle, Mythos, Cloudflare
-  - Fostering breakthrough AI innovation through customer-back engineering
+  - ノルウェー電池メーカーMorrow、破産申請…世界的な電池市場の供給過剰と価格下落が影響
+  - Siri als Chatbot: Bericht zu Apples Planungen verrät Details
+  - Münchens IT-Wende: Open Source ist für die neue Koalition der Normalfall
+  - heise-Angebot: Mastering GitOps 2026: Rendered Manifests, Argo CD und Platform Engineering
+  - heise-Angebot: iX-Workshop Advanced Kubernetes Security: Effektive Maßnahmen und Best Prac
+  - First Shift: GM boosts pickup inventory
 
 ---
 
@@ -303,19 +298,23 @@ Based on this week's signals, your positioning in **functional safety + embedded
 
 **🚗 Automotive Safety (ISO 26262 / SOTIF)**
 Profile fit: **Strong** — primary background. Senior differentiation through cross-domain and AI safety.
-_Active signals this week: none this week._
+Active signals this week:
+  - Japan's Nidec suspected of over 1,000 cases of quality tampe
+  - 自動運転中、中国人女性は「化粧」する
 
 **🤖 Robotics & Machine Safety (ISO 13849 / IEC 62061)**
 Profile fit: **Growing** — opens industrial automation, collaborative robotics, humanoid markets.
 Active signals this week:
   - 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑
-  - MIPI Alliance Forms Physical AI Group Focused on Humanoids
-  - 動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た
+  - 愿景2036丨一场关于未来10年AI技术主权争夺战，追觅打了头阵
+  - 对话简智朱雁鸣：不卷模型卷基建，具身智能核心是读懂人的数据
 
 **🏭 Industrial Automation (IEC 61508 / RAMS)**
 Profile fit: **Adjacent** — cross-domain safety standards apply directly. Underserved by pure automotive engineers.
 Active signals this week:
+  - 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑
   - Figure AI: Bringing Humanoid Robots Into Industry - Thomasne
+  - 普罗宇宙机器人全球合作伙伴大会启幕，正式发布全域共生生态战略
 
 **🔍 Consulting / TÜV / Assessment**
 Profile fit: **High demand** — senior safety engineers with multi-standard fluency are scarce.
@@ -329,44 +328,37 @@ _Active signals this week: none this week._
 
 ## 9. Source List _(top articles only)_
 
+- [Japan's Nidec suspected of over 1,000 cases of quality tampering](https://asia.nikkei.com/business/companies/japan-s-nidec-suspected-of-over-1-000-cases-of-quality-tampering) — Nikkei Asia (2026-05-13)
 - [【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5) — GNews ZH: 机器人安全 (2026-05-13)
+- [自動運転中、中国人女性は「化粧」する](https://jidounten-lab.com/u_62129) — 自動運転Lab (2026-05-11)
+- [Ensure that Parts Suppliers Provide EV-Compliant Parts](https://www.autonews.com/resource_center/dassault-systemes/an-ensure-that-parts-suppliers-provide-ev-compliant-parts-0602/) — Automotive News (2026-05-12)
+- [愿景2036丨一场关于未来10年AI技术主权争夺战，追觅打了头阵](https://www.leiphone.com/category/weiwu/qzNsjHpqOoV0W2HX.html) — 雷锋网 Leiphone (2026-05-12)
+- [理想汽车用全栈自研，定义具身智能的上半场与下半场 - 搜狐网](https://news.google.com/rss/articles/CBMijAFBVV95cUxPYllrQkoyZjM3QUFyTlV6VjZ1MGtxcUhVXzkzOHNWemYtM1ZBUXdpVE5nWGRjZnpfcEhSWXh3TWl1RnZ2VTFpQTJibnRiamdhSjZPLTFNS1dkMzhEUk82M1R1TGNVNUJHX0R6OGJEQ0ZpVnFycUtVQ3pIZEtSRWc5bEJCNHJKcnRrUExnSQ?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
+- [对话简智朱雁鸣：不卷模型卷基建，具身智能核心是读懂人的数据](https://www.leiphone.com/category/robot/vNZuXhOJsA0EWTuG.html) — 雷锋网 Leiphone (2026-05-12)
+- [贾跃亭宣布FF升级为物理AI生态公司：转战具身智能机器人，造车12年累计交付不足20辆 - 电子工程专辑](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZMzNCa3RCMGVoMmZKWWladkd6YzlIbVJIZXlhZURNZnNrSlFOZWFMYk45b28yTmZPWldyWmQ1LXNWaVpXYlJ5d2dManhnUFdYcFp5LWMyZVpCOEsy?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
+- [Hyundai Motor aims to turn robot factory into data gold mine, with $2.7 bn annual profit potential - KED Global](https://news.google.com/rss/articles/CBMia0FVX3lxTE45NzB0blJFbXJiSGhteGwxRXRZZUFMcExxMmZsa3VydEkzSS1XQWd3OWFFSWpfLWJhZW1zaG9PMy1OZFNSS3VnYUQ4VDZXUFo2M1d2bVE4a1pTNmFaWk1RRDNTUG11RnRiczFF?oc=5) — GNews: Boston Dynamics (2026-05-13)
 - [MIPI Alliance Forms Physical AI Group Focused on Humanoids](https://www.embedded.com/mipi-alliance-forms-physical-ai-group-focused-on-humanoids/) — Embedded.com (2026-05-12)
-- [動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た](https://monoist.itmedia.co.jp/mn/articles/2605/13/news024.html) — ITmedia AI+ (2026-05-12)
-- [A Chinese factory in Guangdong is assembling a humanoid robot every 30 minutes while Tesla, Figure, and Boston Dynamics still struggle to deliver 10 thousand per year. - CPG Click Petróleo e Gás](https://news.google.com/rss/articles/CBMikgJBVV95cUxNZ25MS1FCTWxUd0VxSGp5MHhjSXd6WWRURWdpcUdSR2dFai1FVTVvY0VNcTJaS3JxUVRNd3k0Zlp1emFBV2V4aURHWTBJaF8wYnRFU1dwRG5GQXpXUGF1eDNiTUdLUWtHMlV3Szlrc0c2ZTBRWXh1YXk3ZUZMMDVpODVIUHkwdzhUWFZLTTQ3ZGxDN0ZCWHctanlKY3l2UVRKYmhzV1NpMHhiN1c5RDZ5aE5xTklQQlRDQ2htdDNwbnlqRlR4bWcteVlra3BPX2xISWJrU1BMczBiS3FwbHJyNXVYSktIMEdiODh6aklZdG42VVlGZUhLV29nTzI0UTYxSzlVazRPNWFSNFVwQ3p0TjVB?oc=5) — GNews: Boston Dynamics (2026-05-11)
+- [Synapticon: Funktionale Sicherheit für Humanoide - Computer&Automation](https://news.google.com/rss/articles/CBMinAFBVV95cUxNVVl2Y2dQeTFkVEhiSW5WQ0x5OXBGUEctLWdQeEh3NnZYM2h5dHRLQ19XZUhQaC1pYVQtdUJIdzIyZDM1RXRDblp5ZnRXYlU2RmFNTDRNYms4XzFXYlo0bEZBRFVJSnFsQXB6TUhxV0FPdUN3SGxxMUMxNmFpakFyNW9fTDhwbjVWNFhQX3pMVy1FZzZPbjF5aGJKQUU?oc=5) — GNews DE: Robotik Sicherheit (2026-05-13)
+- [C++-Entwickler nutzen KI häufiger, bleiben aber skeptisch](https://www.heise.de/news/C-Entwickler-nutzen-KI-haeufiger-bleiben-aber-skeptisch-11287695.html) — Heise Developer (2026-05-11)
 - [Renesas Completes Acquisition of Irida Labs to Expand Vision AI Software Capabilities and Accelerates System-Level Vision Solutions](https://www.eejournal.com/industry_news/renesas-completes-acquisition-of-irida-labs-to-expand-vision-ai-software-capabilities-and-accelerates-system-level-vision-solutions/) — EE Journal (2026-05-11)
-- [6月上海，这场论坛聊透出海真问题](https://36kr.com/p/3807234971131656?f=rss) — 36氪 36Kr (2026-05-13)
-- [专访智元机器人王闯：人形机器人的“ChatGPT时刻”可能在2026年或2027年 - 证券时报](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwWFplYXdLbl90NGdoVmw1d240M0hzV2F4SmVqakRnZFlQU2F3ejV6MWRRZUxmemZYdEFsajlvakQyWnAxc3BjLVE1ZW5BX2l6cmNDajdrWlJuRWh3?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [李想：具身智能会有两个阶段 自动驾驶和通用人形机器人 - 车家号](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IWUlhdWY4d0xvb0dKMUx4NUdteTY1Q2psN0hTMUhCR2NoMEtDZDZNeGtyRU9rZWcyMkRFQUxTZG9EcE1Od0QySXFnaG5ldW1Majl0WXhvcU5wVVU?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [人形机器人产业全速狂奔 微美全息AI具身智能产业战略卡位成关键“胜负手” - 驱动之家](https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Ob2MwcW5uVkJ1bkhnSmxHQkJBWU5FcXJRYWJ3LUJKaXlBNGZtQ19Qa1cwamlnaXVvOUIyT01nQkY4cWh2V3dnVVVuUkpzNVlYSnRfaG1Gbi0?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [湖北人形机器人创新中心发布动作大模型 打通机器人“肢体智能”最后一公里 - 湖北省数据局](https://news.google.com/rss/articles/CBMieEFVX3lxTE9PVzVOVkgweEljRzhmbTI1Q2lWbFZBUlQ2bmdaY0prRUlKLWszczBoWFhleTVRc1V6ZFAwQXlQMjdRckN2NmZldlRZU3pJbnIxTTVXcUtJZ1FPRXdFYkUyM3Q1eWE0cUVRVFhhUG5YbDFER2VTbTV5Vg?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [US’s Figure AI humanoid robots make bed, clean room in under two minutes - VnExpress International](https://news.google.com/rss/articles/CBMixwFBVV95cUxPb0x6Ulg4TS1kWjJRNV9QNkRJbENDaGdEQzltTzA0aHRvS3duSWpvcWZVMm9HMjh2UkJrN3UyUDZub25UV2cwUFctcXZCaV9YRkwxS2FLU1l4RDdGSXJ3dDRzSW5NU1JFWURkd0JhMVJaN3hfTmRnay0xdmhqM1p1Rmhmd3JXdGhpMkVOeHZDUVRsZl9oNW5SRU5PTzdGNG5DZlExOVNaZ1ZENnBEQXVPTWdRcjhKZndOdFNFMkNfUXk2SWxnbVlZ?oc=5) — GNews: Figure AI Robotics (2026-05-13)
-- [Anzeige: Schwachstellen bewerten, Patchrisiken priorisieren](https://www.golem.de/news/anzeige-schwachstellen-bewerten-patchrisiken-priorisieren-2605-208551.html) — Golem.de (2026-05-12)
-- [人形机器人当店员的便利店出现在上海，交出“日均400单”业绩 - shobserver.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxNaURWc09BYVVKMGRNOEVDT3JsaEhZdms5ZWZjQ1VxMXNyMGFScU9QQVM0c2hybzhmc0F4aTg4dWZ4ek9uWW5vR01zU28zb09oNnlVXzhsLWlrU0xtb1gzTlNERUxMMDNzS0JlWHFOdGREaW1CZFNpRUFyX29MRnBWUU1uNDc0cDlSR3c?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [凭“芯”而立 向海图强 福州以差异化战略布局人形机器人未来产业 - 数字中国建设峰会](https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ob2RhUXU3dV9DZlcyMmNqR0R0UVlGRVd4U21DaWYxRjJhOFRjTXJudl9aVlFoeVlMOXZWSXdvSXZnUzc0RkpWNlZFa2M2a2JDU1hpcHNNaWFvbUsxa2hGOVRXYzVVaEZtc3FraFFEV3diT2FGeVE?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [In the humanoid robot industry, joint unions between robot hardware companies and artificial intelli.. - 매일경제](https://news.google.com/rss/articles/CBMiS0FVX3lxTE95RDdJN0pQMFRIT3lrNEpaWDFhcTI2S3dPQ0hRenVlNzUtNmNuSk1YTml5TUFnZWNXdzNKOUNmbm5QbzUzMUJmdDZHbw?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [2026 Tesla Model Y becomes first vehicle to meet NHTSA’s new ADAS safety criteria - Automotive Testing Technology International](https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbE84RTU3OVVIZWo3eWt2c3VwMVkxaGQtTmRHQl9GQ3JrWmt6dmdmMXpiV1dMX1E4X3p5aXBHaE95V0cxamVadFpkZ2pCX2V6RXlaY0ptMm51aEVYdGdnUG52VThaQmhRZEUxQVo0d3l5R2VhOHpIUGpkOXFqYm5aMVlSRkJQMV9FbWdqajRjNHZlc0ZKeFZkSW1FVmh0Umg5NWs2WS1zZmhZdUNLSEFyblJMaHdnN2xaTGdqbUhJOWlsZlUxS2phWTNXZlRScGJXTDJNUVpKWHNfYWYtZGJ3ZWduSTA5N1FZdmFuNk9B?oc=5) — GNews: Bosch Automotive Safety (2026-05-11)
-- [Hyundai Motor Group surges on US robot push via Boston Dynamics, RMAC - CHOSUNBIZ - Chosunbiz](https://news.google.com/rss/articles/CBMigAFBVV95cUxPOWhqZm43ZHAta0l1YXdRSlZQejR5WXF3cndhaDFqYl9wVzZPUGZZU0NWVS1Edl9PMEx1NHk3VHFQREVKbEV1d0ZMUm5LeE9DaHcwXy1OcFl5Z3NDOFd6VWFrQzlBcGxJZzVnU1RyR3JzMW5rUTYwZDVVRWFITVQxUtIBlAFBVV95cUxQbnN5MXNmclgtYUhfTFJ5SjYyeDBZX05WQ0wtTFAwblZyLXpmUkVfNXpOdU43SUZzNmMwZGhGeFNvSS1qbmdXLVlwdUJuZFVMSFA4bHFMMTROcDlTSGs2Ny1qMEZDZUN3ZnNDdkZmVFNzclMxZi1sSWdCekwxZkhZa2E3YndPRmFkRXJBeDgwMjczWWNn?oc=5) — GNews: Boston Dynamics (2026-05-12)
-- [Video: Figure’s humanoid robots organize room, hang clothes, and make bed without humans - Interesting Engineering](https://news.google.com/rss/articles/CBMihAFBVV95cUxNU2dEQzZjUGJGYjg5eTBTcFBOMElMLWN6VEJGMHhVa19sYjd6RkpfVVhQdlZqaE5hbEVWS2JBY3QyQUdBeWFJRkdaS2lQZkRZZHlCYy1lZkVqY0gyQkFkcW9iWV9RQXllcVZBQnJ1MzlsbkxmOEoxWHFyLTlpNVBjYjNYZng?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [Figure AI: Bringing Humanoid Robots Into Industry - Thomasnet](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mbk1oLS12QkVyN25HQWpVb0xISkRmNDg0Yk5ndFU4RWtqZ2Vabk9jLXQwX0V3ZEJhX0lpMEtPUUhIbmV3UzUwUldGankxNTh1WS1GOUFKdTRCU3lTNk9ETGJWR0s?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [Daimler Truck JV to bring liquid hydrogen to Hamburg](https://www.automotiveworld.com/news/daimler-truck-jv-to-bring-liquid-hydrogen-to-hamburg/) — Automotive World (2026-05-11)
-- [Figure’s Humanoid Robots Tidy a Bedroom, Hinting at Bigger Home Automation Leap - eWeek](https://news.google.com/rss/articles/CBMidEFVX3lxTE9Yc1VqaC1nTV85N2szU2J5c25sWWdTeG1zaFJWV2h3STRjU2gxSGcwQnVuV0p3cl9Hd0dwRGxmN0lQa3d1bHNBYXQzMkZWSEwwYkhXenBqM0YtRnhJM2JKTjdxN3N1ZWFyam5LeGJvVWdST3Fi?oc=5) — GNews: Figure AI Robotics (2026-05-11)
 - [Advances in Physical AI Reshape Robotics, Automation - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMijwFBVV95cUxORWlnRGdXNm1OZGx4WFZRenN2YlNvZi1KankxX1JkQTlVWU52LTZDWi1LQ1ZFcDlJSUY3TEZMWmM2aW1kRHFkaUdWYmdNTU9OT1VuUXRWV1pRSmxTaS1JdW5BUHdGTi03am5uZDRicW1rc0RwQjFadGpnTFFyNkY4ZEhuTUw3WXVoT2pNNWpZZw?oc=5) — GNews: Physical AI Embedded (2026-05-12)
-- [Handelsblatt: VW considering Scout Motors IPO](https://www.automotiveworld.com/news/handelsblatt-vw-considering-scout-motors-ipo/) — Automotive World (2026-05-11)
-- [Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/) — Electrek (2026-05-11)
-- [Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot) — IEEE Spectrum Robotics (2026-05-12)
-- [VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/) — Automotive News (2026-05-12)
-- [Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/) — Automotive World (2026-05-11)
-- [Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/) — Automotive World (2026-05-11)
-- [Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/) — Automotive World (2026-05-12)
-- [Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls) — Nikkei Asia (2026-05-12)
-- [Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/) — Automotive News (2026-05-11)
-- [Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/) — Automotive World (2026-05-12)
-- [KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5) — GNews DE: Eingebettete KI (2026-05-13)
-- [Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/) — Electrek (2026-05-11)
-- [Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up) — Nikkei Asia (2026-05-12)
-- [トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html) — Response.jp (2026-05-13)
-- [Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
+- [Tesla China retail sales fall 10% in April despite reports of 36% surge](https://electrek.co/2026/05/11/tesla-china-retail-sales-decline-april-2026-wholesale-misleading/) — Electrek (2026-05-11)
+- [South Korea explores using Hyundai robots as army numbers fall](https://www.autonews.com/hyundai/an-south-korea-hyundai-robots-military-deployment-0511/) — Automotive News (2026-05-11)
+- [VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html) — Heise Auto (2026-05-13)
+- [VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
+- [Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html) — Heise Auto (2026-05-13)
+- [Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
+- [Künstliche Intelligenz: „Eine neue SAP“ – Softwarehersteller stellt Vision für autonome Unternehmen vor](https://www.handelsblatt.com/technik/it-internet/kuenstliche-intelligenz-sap-stellt-vision-fuer-autonome-unternehmen-vor/100223581.html) — Handelsblatt Technologie (2026-05-12)
+- [马斯克、库克随特朗普访华，黄仁勋虽迟但到；SK海力士中国员工无法做管理层，奖金不到韩国人的5%；390万元起！宇树发布载人变形机甲](https://www.leiphone.com/category/zaobao/rod6WpUrAa8maOpv.html) — 雷锋网 Leiphone (2026-05-13)
+- [Anzeige: Cyber Resilience und Compliance: NIS 2, DORA, AI Act einordnen](https://www.golem.de/news/anzeige-cyber-resilience-und-compliance-nis-2-dora-ai-act-einordnen-2605-208552.html) — Golem.de (2026-05-13)
+- [Luxuslimousine: So fährt sich die Mercedes S-Klasse nach dem Update](https://www.handelsblatt.com/mobilitaet/motor/mercedes-s-klasse-so-faehrt-sich-die-luxuslimousine-nach-dem-update/100224792.html) — Handelsblatt Schlagzeilen (2026-05-13)
+- [Infineon’s new XHP™ 2 CoolSiC™ high-power modules boost efficiency and power density in high-voltage energy systems](https://www.eejournal.com/industry_news/infineons-new-xhp-2-coolsic-high-power-modules-boost-efficiency-and-power-density-in-high-voltage-energy-systems/) — EE Journal (2026-05-12)
 - [Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/) — Automotive World (2026-05-12)
+- [Automobilindustrie: Autobranche rechnet mit Wegfall von weiteren 125.000 Jobs bis 2035](https://www.handelsblatt.com/unternehmen/industrie/automobilindustrie-autobranche-rechnet-mit-wegfall-von-weiteren-125.000-jobs-bis-2035/100224795.html) — Handelsblatt Schlagzeilen (2026-05-13)
+- [BYD in talks with Stellantis, other European automakers to take over underused factories](https://www.autonews.com/byd/ane-byd-stellantis-others-europe-plant-takeovers-0513/) — Automotive News (2026-05-13)
+- [KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
+- [不用再找了，AI落地最全的实战打法，都在亦庄这场大会里](https://36kr.com/p/3806179759496711?f=rss) — 36氪 36Kr (2026-05-12)
+- [KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html) — Heise Developer (2026-05-13)
 
 ---
 
@@ -376,52 +368,56 @@ _(See HTML version for full table.)_
 
 ---
 
-## Qualification Actions This Week — Erika Mustermann
+## Qualification Actions This Week — Max Mustermann
 
-_Target person: **Erika Mustermann** · Weekly time budget: **8 h**_
+_Target person: **Max Mustermann** · Weekly time budget: **30 h**_
 
-> ⚠️ 6 Must-Have items — cap is 2. Lower-scoring items may be noise.
+_🔄 Market signals applied to 15/16 actions this week._
 
-> ⚠️ Must-have items alone require 25 h/week — exceeds cap of 8 h. Prioritise ruthlessly.
+> ⚠️ 4 Must-Have items — cap is 2. Lower-scoring items may be noise.
+
+> ⚠️ 5 High-ROI items — cap is 3. Lower-scoring items may be noise.
+
+> ⚠️ 4 Nice-to-Have items — cap is 2. Lower-scoring items may be noise.
 
 
 ### Must-Have
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **German-format CV (Lebenslauf) and cover letter template** | Applications without German-format CV are often rejected automatically | Create a professional German Lebenslauf (tabellarisch format, reverse chronological, with photo). Write one standard Anschreiben template. Use Europass or Canva as starting point. Have a German native speaker review once. | 3 h/wk | German CV PDF and cover letter template ready to send |
-| **German B2 certificate (Goethe-Institut or telc)** | Required by virtually all professional employers in Germany | Enrol in Goethe-Institut or VHS B2 course. Study 8 h/week minimum. Take B2 exam as soon as eligible. Do NOT apply to professional roles before B2. | 8 h/wk · €600 | Goethe B2 or telc B2 certificate — required on CV and applications |
-| **LinkedIn profile in German and English** | Expected for most professional roles; low cost, high visibility | Create or update LinkedIn profile with German headline and summary. Add education, previous experience, and language skills. Connect with 3–5 relevant professionals per week. Free to create. | 2 h/wk | LinkedIn profile with German summary and complete work history |
-| **MS Office practical competency (Word, Excel, Outlook, PowerPoint)** | Universal requirement for office/admin roles | Self-assess honestly against real job requirements (mail merge, pivot tables, VLOOKUP, standard templates). Practice the specific tasks mentioned in target job ads. Free Microsoft training at microsoft.com/en-us/learning. Do NOT pay for an MS Office certificate — it is not recognised or expected by employers. | 2 h/wk | Can answer 'give me an example of Excel use' in an interview with a concrete story |
-| **German B1 certificate (intermediate step before B2)** | Minimum threshold for many entry-level positions in Germany | Obtain B1 certificate as milestone before B2. Unlocks entry-level and practical roles (logistics, retail, assistant positions) while studying toward B2. | 8 h/wk · €250 | Goethe B1 or telc B1 certificate |
-| **Recognition of foreign degree in Germany (Anabin / KMK)** | Mandatory for regulated professions; strongly recommended for all professional roles | Check anabin.kmk.org for recognition status of Erika Mustermann's degree. Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority. For non-regulated professions: get certified translation + have employer confirm equivalence. Contact Make it in Germany (make-it-in-germany.com) for free guidance. | 2 h/wk · €100 | German recognition letter or equivalent statement; add to CV |
+| **External job search pipeline for senior safety roles `↑ market: 1160 job postings`** | This is the highest-priority action for income protection and transition execution | Build and maintain an application tracker with target companies, job titles, application status, recruiter contacts, interview feedback and next actions. Apply weekly to carefully selected senior safety roles in Germany/Europe rather than waiting for internal Bosch options. | 8 h/wk | Application tracker with at least 30 target companies and 10 active applications |
+| **CV and LinkedIn repositioning as Senior Safety Architect `↓ market: 1020 job postings, 10 articles`** | Directly required for every external application | Create one English master CV, one German CV and one LinkedIn profile version using the headline 'Senior Functional Safety / System Safety Architect'. Emphasize ISO 26262, safety architecture, safety requirements, safety mechanisms, embedded platform safety, MBSE, and transition toward robotics, industrial automation and AI-enabled safety-critical systems. | 4 h/wk | English CV, German CV and updated LinkedIn profile |
+| **Three senior safety interview case studies `↑ market: 880 job postings, 10 articles`** | Relevant to all target roles, especially safety architect and consultant roles | Prepare three one-page case studies: 1) S32G/platform safety and safe-state/reset concept, 2) Mobileye/TDA4 missing-NMI workaround with FIQ plus cyclic monitoring, and 3) safety-supervised edge AI demonstrator with deterministic runtime safety supervision. Use STAR/CAR structure and emphasize constraints, decisions, safety argumentation and business impact. | 5 h/wk | Three one-page interview case-study notes |
+| **CMSE / ISO 13849 preparation before 15 June 2026 `↑ market: 90 job postings`** | High relevance for robotics, machinery and industrial automation safety roles | Prepare before CMSE by studying safety functions, PLr determination, Categories B/1/2/3/4, MTTFd, DCavg, CCF and SISTEMA basics. Focus on understanding and transfer from ISO 26262, not on memorizing every formula. Training/certification is scheduled for 2026-06-15 to 2026-06-18. | 7 h/wk | CMSE preparation notes and later CMSE certificate if passed |
 
 ### High-ROI
 
 | Qualification | Why it matters | Action | Time | Visible evidence |
 |---|---|---|---|---|
-| **DATEV software awareness (German accounting/HR standard)** | Relevant for accounting, controlling, HR support, office management in Germany | Complete DATEV Grundkurs (free online). Understand what DATEV does and how it is used in German SME accounting and HR. Do not invest more time unless accounting is the target role. | 2 h/wk | DATEV Grundkurs completion; can mention in applications for accounting/admin roles |
-| **Kaufmännische Einführung / BWL Grundkurs (IHK or VHS)** | Only relevant if target is German SME office/admin/purchasing | Take VHS Kaufmännisches Basiswissen course (50–80 h, ~150 EUR) if applying to German SME admin, purchasing, or junior controlling roles. Only invest if at least 3 target job ads mention kaufmännische Ausbildung or BWL Grundkenntnisse. | 4 h/wk · €150 | VHS course certificate; business German vocabulary |
+| **LinkedIn recruiter and professional networking sprint `↑ market: 876 job postings`** | Important for hidden job market and senior roles | Contact 5–10 relevant recruiters, hiring managers or safety professionals per week. Use a concise message focused on senior safety architecture, ISO 26262, platform safety, CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles. | 3 h/wk | Networking tracker with contacts, replies and follow-up actions |
+| **Post-CMSE machinery safety mini-case and transfer note `↑ market: 48 job postings`** | Especially relevant for robotics, industrial automation and consulting roles | After CMSE, create one robot-cell safety function mini-case and one portfolio note titled 'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard, safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea. | 4 h/wk | docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case |
+| **Functional safety and system safety architecture refresh `↑ market: 954 job postings, 15 articles`** | Directly relevant to all senior functional safety and system safety roles | Refresh and document core safety architecture topics: safety mechanisms, safe states, degraded modes, diagnostics, FFI, safety requirements, technical safety concepts, PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe, non-confidential interview language. | 3 h/wk | Senior safety architecture notes and CV/interview bullet points |
+| **Polish safety-supervised edge AI portfolio demonstrator `↑ market: 14 articles`** | Relevant for robotics, embedded AI safety and safety architecture roles | Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram, traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation over endless implementation depth. | 3 h/wk | Interview-ready GitHub repository and portfolio summary |
+| **SOTIF / ISO/PAS 8800 / AI safety bridge `↑ market: 304 job postings, 1 articles`** | Useful for ADAS, automated-driving and AI-enabled embedded safety roles | Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring, deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to the principle that AI/LLMs should not be part of the runtime safety decision path. | 2 h/wk | Two-page AI-enabled safety concept note linked to portfolio project |
 
 ### Nice-to-Have
 
 | Qualification | Why not urgent | Later action |
 |---|---|---|
-| Google Workspace / G Suite basics (Docs, Sheets, Gmail, Drive) | Only useful if specific target employer uses Google Workspace | Self-study via Google's free training (workspace |
-| Project management basics (e.g. VHS PM Grundkurs or PRINCE2 Foundation) | Defer until PRINCE2 appears repeatedly in job ads for target roles | Only pursue if PM appears in 3+ target job ads |
+| ROS2 practical basics for safety-supervised robotics demonstrator | Keep time-boxed; do not let it dominate | Continue ROS2 only at portfolio-support level: nodes, topics, launch files, fault injection and monitoring |
+| C++20 safety logic basics with tests | Increase only if job ads repeatedly require hands-on C++ | Implement small, testable safety-logic components such as StateEvaluator, HeartbeatMonitor, TimeoutChecker and PlausibilityChecker with unit tests |
+| QNX / POSIX supervisor concept consolidation | Do not invest heavily unless target jobs repeatedly require QNX | Document QNX-inspired supervisor concepts using POSIX/Linux implementation where available |
+| MBSE / SysML2 lightweight maintenance | Avoid major SysML2 investment during active job search | Maintain MBSE credibility by creating one architecture diagram, one safety state model and one traceability table for the demonstrator |
 
 ### Avoid for Now
 
 | Qualification | Why to avoid / defer |
 |---|---|
-| IELTS or TOEFL certificate | German employers rarely require IELTS. English proficiency is demonstrated in the interview itself. Spend time on German instead.
- |
-| AI / Machine Learning / Python bootcamp (general) | Too broad for the current employment goal. Unless specific tech roles are targeted, this investment will not produce the expected return. Only pursue if Erika Mustermann transitions to data or tech roles with a clear job target.
- |
-| MBA or second Master's degree in Germany | ROI is very low in the short term. German employers value practical experience over academic degrees for most non-specialist roles. Language and local work experience are higher priority investments.
- |
+| Deep QNX training or paid QNX certificate | Cost/time not justified before market feedback confirms QNX as bottleneck |
+| Generic AI / ML bootcamp | Too broad and may distract from external transition |
+| MBA or second Master's degree | Too expensive and too slow for current family-income protection goal |
 
-> **Principle:** _Recommend only qualifications that improve employability for the target roles. Prefer small credible proof over expensive certificates unless the certificate is clearly required by employers. Never re_
+> **Principle:** _Prioritize qualifications and outputs that improve external employability within 3–6 months. Prefer visible proof such as CV updates, LinkedIn positioning, interview case studies, certification milest_
 
 ---
 
