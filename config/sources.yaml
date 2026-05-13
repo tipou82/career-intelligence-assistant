@@ -187,13 +187,13 @@ feeds:
   # === Zeit Stellenmarkt + nmz Stellenmarkt via Google News site: search ===
   # Articles from these feeds are auto-flagged as job ads.
 
-  - name: "GNews Zeit Stellenmarkt: Kulturmanagement"
-    url: "https://news.google.com/rss/search?q=site:jobs.zeit.de+Kulturmanagement&hl=de&gl=DE&ceid=DE:de"
+  - name: "GNews Zeit Stellenmarkt: Veranstaltungskoordinator"
+    url: "https://news.google.com/rss/search?q=site:jobs.zeit.de+Veranstaltungskoordinator&hl=de&gl=DE&ceid=DE:de"
     category: "jobs"
     language: "de"
     reliability: 0.8
     regions: ["germany", "baden-württemberg"]
-    industries: ["cultural_management", "project_management"]
+    industries: ["event_production", "cultural_management"]
 
   - name: "GNews Zeit Stellenmarkt: Musikvermittlung"
     url: "https://news.google.com/rss/search?q=site:jobs.zeit.de+Musikvermittlung&hl=de&gl=DE&ceid=DE:de"
@@ -210,6 +210,14 @@ feeds:
     reliability: 0.8
     regions: ["germany", "baden-württemberg"]
     industries: ["education_programs", "cultural_management"]
+
+  - name: "GNews Zeit Stellenmarkt: Kultureinrichtung"
+    url: "https://news.google.com/rss/search?q=site:jobs.zeit.de+Kultureinrichtung&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.8
+    regions: ["germany", "baden-württemberg"]
+    industries: ["cultural_management", "event_production", "music_classical"]
 
   - name: "GNews nmz Stellenmarkt"
     url: "https://news.google.com/rss/search?q=site:nmz.de/stellenmarkt&hl=de&gl=DE&ceid=DE:de"
