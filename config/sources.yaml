@@ -324,3 +324,47 @@ feeds:
     reliability: 0.75
     regions: ["japan", "asia"]
     industries: ["ai", "robotics", "automotive"]
+
+  # === StepStone job feeds via Google News site: search ===
+  # Coverage is sparse (Google News indexes some but not all listings);
+  # articles from these feeds are auto-flagged as job ads.
+
+  - name: "GNews StepStone: Functional Safety"
+    url: "https://news.google.com/rss/search?q=site:stepstone.de+functional+safety+engineer&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["functional_safety", "automotive", "embedded"]
+
+  - name: "GNews StepStone: ISO 26262 Automotive"
+    url: "https://news.google.com/rss/search?q=site:stepstone.de+ISO+26262&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["functional_safety", "automotive"]
+
+  - name: "GNews StepStone: Robotics Safety"
+    url: "https://news.google.com/rss/search?q=site:stepstone.de+robotics+safety+engineer&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["robotics", "functional_safety"]
+
+  - name: "GNews StepStone: Embedded ADAS"
+    url: "https://news.google.com/rss/search?q=site:stepstone.de+ADAS+embedded+engineer&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["adas", "embedded", "automotive"]
+
+  - name: "GNews StepStone: Safety Architect"
+    url: "https://news.google.com/rss/search?q=site:stepstone.de+safety+architect&hl=de&gl=DE&ceid=DE:de"
+    category: "jobs"
+    language: "de"
+    reliability: 0.75
+    regions: ["germany", "europe"]
+    industries: ["functional_safety", "automotive"]

@@ -1,12 +1,12 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Mode: **External Transition** · Generated: 2026-05-13 16:12_
+_Mode: **External Transition** · Generated: 2026-05-13 16:24_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key activity in: ai, robotics, functional_safety, software_defined_vehicle, mbse. Notable companies: Dreame, NEURA Robotics, Li Auto, Tesla, Hyundai Motor. See Section 2 for full analysis.
+Week 2026-20 produced **18 strong signal(s)** and **266 weak signal(s)**. Key activity in: adas, robotics, ai, functional_safety, digital_twin. Notable companies: Dreame, NEURA Robotics, Hyundai, Tesla, MIPI Alliance. See Section 2 for full analysis.
 
 ---
 
@@ -24,10 +24,10 @@ Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key ac
 - Tesla
 - Figure AI
 - Toyota
-- Hyundai
+- BYD
 
 ### Recommended CV / Application Keywords
-`embodied ai`, `gemini`, `autonomous driving`, `computer vision`, `humanoid robotics`, `functional safety`, `ai integration`, `chip design`
+`embodied ai`, `gemini`, `autonomous driving`, `computer vision`, `humanoid robotics`, `functional safety`, `physical ai`, `ai integration`
 
 ### Networking Targets
 - TÜV SÜD / TÜV Rheinland functional safety teams
@@ -46,7 +46,44 @@ Week 2026-20 produced **16 strong signal(s)** and **260 weak signal(s)**. Key ac
 
 ## 3. Job Ads (score ≥ 6)
 
-_No job ads with score ≥ 6 found in the database._
+- **[Iso 26262 Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBscUtXYVFHSlVOb1ctS2RDS2Y4MW84eEdzVzNmMWhlNTRZaVY1bFd2c1k2WE5VVlBGc3FVQWI3U2x2T3dwQVkySlNtQ1ZXeTJ5?oc=5)** (score: 8.6) — GNews StepStone: ISO 26262 Automotive — 2021-09-30  
+  Region: N/A · Skills: N/A
+- **[Functional Safety: 6 Jobs & Stellenangebote in Augsburg | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMia0FVX3lxTE93Rk1ZdlJmbUpPcElyTlpSVGRkSndBdEZhS05PT1ZZRmhnYTF2bnZ5Mjk0MmNOYkNoZmlNUk5VWEwta3Y3aTFEbks2c09sb1ZwMW1MVjlKOHFUdVNKQ2FWMzJtcXBLQ2R5SXZn?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2022-07-22  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Manager: 2153 Jobs & Stellenangebote in Westliches Europa | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiggFBVV95cUxPSlZUOFBZeXRHcXlFa2ROdWROcTV5LVFEa3o5R2RsYUM2NmJhZVFjdVZwX01wM2xGUnRqb2xJeU9qOWRlTlRpLUs1TU5BM0s4NjlwQ1FlQ0VTa1h2ZldGUTdrdTNLZFdpaUd3cV9YeW01SVNhS1R2elRfLWlRR20tUC1n?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-12-16  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety: 20 Jobs & Stellenangebote in Karlsruhe | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMibEFVX3lxTE1STVZiMGhsZ1g1VmtYMUZfQlNhQUxDRUxGUGFXWWhLbEc5Y2FqczQ1Y3BFMGk4MG9NRXhSME04S0ptSU8zZWlGUEZNSVhYS2ZienhBLTVqQU1welN4ZVlZbUg2OS15OXpHRWxRWA?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-11-28  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety: 27 Jobs & Stellenangebote in Nürnberg | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMickFVX3lxTE1vdDlkbWtkYVNhS01UVk5lTVN5UFU4Y1RDTEFmWTBWQlg3OHhSUnpUdk1Wc1hGMUFlWEcyMTVFNzVHYXd5bXhrQVlOUVJmQzJPTDFpQUhIS2ZUdlpBUzF1WjVSemRBcHN4LTBkUk5QaGNNUQ?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-10-16  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety: 141 Jobs & Stellenangebote in Hessen | 7. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuVU5mNFdJQWVvMTdoZEw0ZFZoMkZVelZBOEVKVlRHQ3RodnZaWkxVaTQ5UjE1bFE4a3V0OU0xWFY2c2ZVdWJTaUQ1N3NmVTdqUkozT3lNVi1mV0pXbEFmc1pQRUZ3ZzBi?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-10-10  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety: 268 Jobs & Stellenangebote in Nordrhein Westfalen | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiekFVX3lxTE9sR2ctbm9xVVRCSHJpUXlHWE4yaWpyUUFqNHFnZUJxcnJ3eVBzaDJQcjdFMC1DaGlhOVVDVVZUYktvSUUxaUlvY2w3Mi16TVRRWmNRbmh2WTJkQkVYV3hTSzNTYTcxMzJ0c2lRalBzT1BwWEJjZ1V4b3lB?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-10-01  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Manager Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FYkpvaHRIbENrLURCakJ5aDVfbll0U0NqSWJXLVJwcnoyWjBmM29XZkladnlLV3FlUDkxQXRYRFlfeHNlaVptSndyaU8tdzl5WU5nNjh6M1hmUldwZFdXdlJrSnJzQQ?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-09-27  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Engineer Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tc2ZvMHlaTFJDbnVqY1F0WTI4MTNCZUFkYTRNb3UwVkNqMDIydHp5SlFkdkFocXFfVWcxeTU2SUV4d1hfbHNHeU5GNC0xLXFvWDhjQl9RV0h6RzM4TkRQbFZ0Yk1lM1U?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-09-27  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Jobs und Stellenangebote - 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TRHNoeFZnMU1LUm54WU4yYkJmMTQ3a3paMzhCaTktQmh2SGJqNm5RYWpuQ3VSYTI4anhtbkVkSWJDOFZoeGY0Sng3T3RRbXM0elFET29tVXloQnc?oc=5)** (score: 8.3) — GNews StepStone: Functional Safety — 2021-09-08  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety: 115 Jobs & Stellenangebote in Frankfurt Am Main | 11. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMid0FVX3lxTE8xVS1KQVZMNlhaNU5yV2Rmb2w1TFBfVm82bWhXQ0lxY3NOU1pJUUlKOGRjaUl2eVY4NjNOOHNvWldWSGdDcXREUHIzRDNNcmhHWllrdTJVWlJXM3pIeFVNVGJnR3pMZXJnYTR4QndnLUUyZHZFNVRv?oc=5)** (score: 8.1) — GNews StepStone: Functional Safety — 2023-05-29  
+  Region: Frankfurt · Skills: functional safety
+- **[Functional Safety Engineer: 6 Jobs & Stellenangebote in München | 12. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMifEFVX3lxTE91VzZOblJhbXBvMmdicWt3bDNQRU83TFNQTjNadC1CLVpxaEFqNXFQRnVvQzBSNDNxb0JPUlJGYVNObEtkUzFtUFNfdEZmOE02eWtidjh3bUhrdGpjZGVlWGdjTi1QMnNnNkM4V1ZkaVpqbTFmT1VqOWJBRi0?oc=5)** (score: 8.1) — GNews StepStone: Robotics Safety — 2021-10-22  
+  Region: München · Skills: functional safety
+- **[Functional Safety: 68 Jobs & Stellenangebote in Stuttgart | 12. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMibEFVX3lxTE1FRmo0SkRfSmpmM3Jkbl9nb1FRLUJEWFVkSHg1aVJuT3RFUkozZFY0bTEyM1dVS25aRXRxQ1RpX09uT0g3UjYtVHRUVXdoaUNjUGhMRFhCWHJVYndjQWs4YlZjZ0pZeEZsU1ZSdQ?oc=5)** (score: 8.1) — GNews StepStone: Functional Safety — 2021-09-30  
+  Region: Stuttgart, stuttgart · Skills: functional safety
+- **[Functional Safety: 156 Jobs & Stellenangebote in München | 10. Mai 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMicEFVX3lxTE9yTzl3aGFvU0ZMWjViOFp2V21VVF9Zam8za3ZoVDFZZURZa20wLXhsOGk3RFl5cUFybjZ6dDNfWDJYNTZfSmQzYUJVNjlSVVU5cDJ5enMwM1hKZEZMSW9xOTBGSjJQWWNKdmVLYkxoRWs?oc=5)** (score: 8.1) — GNews StepStone: Functional Safety — 2021-09-28  
+  Region: München · Skills: functional safety
+- **[Projektingenieur:in Functional Safety Schienenfahrzeuge - www.stepstone.de](https://news.google.com/rss/articles/CBMigAJBVV95cUxQY3ViRDNJaTFXQmJLT29TNmRONHF0MldwWkZWQjJUUjdNSmhuV2Y5RTZXTEpMYkFzZmVFZVpob2UtOTlKNjZoMjBvNExFVEZSZDc0aFl0YkJGek45ekpnTnN3eHFFWXZmZnlieW5vSlpnNzJOSkJiX3podVh1WjVzOFZkUjh6OVZLbnJKa0pUQU9ZV2hJOU1lQnVpWTdpZzJNQm1ZMjhDSUF1NGtWa1pRemIzU1hFM1dqNDVRdElJOXJfTGpXWHNzWDR2alF5WE53dE9kb1l4cU9rUUU2Qk41T1RWR0hUWGZnTExWcXljQk1QZlpacWY4X2diQ0h0VDZR?oc=5)** (score: 7.7) — GNews StepStone: Functional Safety — 2026-03-02  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Manager (m/w/d) - Job bei der Firma Rheinmetall Landsysteme GmbH in Kiel - www.stepstone.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkdUMnZrbjdCc0xDME94RndJSkx4eDE0VnVHWjZfdU42NnJ3QW10czFYVlZNSFhlTDBwd0lfNVF2UXpoWEo4OTBXUGxYeVVCTUFWTlo4Wm9lQ3NhcFAxODB0bG5yZFU1VXA3MnltbmotNnM1UXlsNVpIdzVUVGIzQWw2cUdtazJCVDRPX1IyQ3JIUThRaFJKaXphVkpVUENuU3hTVG5mbWg2SXZrYjlMLTFsdnc1MEJLaGR2dnc2SGJMYnlfNU1tTw?oc=5)** (score: 7.6) — GNews StepStone: ISO 26262 Automotive — 2025-11-13  
+  Region: N/A · Skills: functional safety
+- **[Functional Safety Expert (m/w/d) - www.stepstone.de](https://news.google.com/rss/articles/CBMitwFBVV95cUxQUkVJdmp2c2ZUNjEzUnMzTU1pblJiSWFnaFNIcFpyOEZKdlhPbTFnZVk0M1ZwSFJEOXdKREk2NEhXVU9QdmM2WGlReDRQWk1SWkYxdUlnSWNNWGlWbGZYRXJYWWtOZXNRVllZcGhFcW1PZFFUdElLRk9sSW5JMVh0Zy1IUkh2RTAwNlhDdkxYb2VwZDk4eGVJdERyMTRjUEFZT251S00xZGE5SklTWnJNazU0Mk11cjg?oc=5)** (score: 7.4) — GNews StepStone: Functional Safety — 2026-04-24  
+  Region: N/A · Skills: functional safety
+- **[R&D Electrical Engineer – Functional Safety (m/w/d) - Job bei der Firma ASMPT GmbH & Co. KG in München - www.stepstone.de](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUlHRElqLTRlLTBxX3g2YldHMURmRzZRcm1fMjVWbXUtYzlsQTY0V1N3VEFHZ3hkZ2twcGllVWpjb3ZjY00tSXhPbkw5TS1LMWdZLV83U2hZZXFmdjlTd3pXUGZRVkEzMVFMekVOY0JpUTRKMFhpNXVBem9wMHNha2pOZF80UXpNeXhtdzJkNmVRTmlnUlM5UERBZzUyRE84WWNyOGNPUkFiREFvSnFvVlFGZ25JdXd2Z25icWhFTXFZMkNDYzVncktuY0FCc19KS1E?oc=5)** (score: 7.2) — GNews StepStone: Functional Safety — 2026-03-03  
+  Region: München · Skills: functional safety
+- **[Functional Safety Manager Gehälter in Deutschland 2026 - www.stepstone.de](https://news.google.com/rss/articles/CBMib0FVX3lxTE9MMVd1VEkwazFGbk00TXo1WWFmX1BEeUZ3Um5FUE5UY3ZtbDBKbk9EdFpMQ1dYNGZuTHR1Y0I0ODI1RXdsRVh5RmRJdm9BdEc3UGxVbjNLaXhfQ3pCdTFyY1k2REhFeVpDNWJWLTF0UQ?oc=5)** (score: 7.2) — GNews StepStone: Functional Safety — 2019-01-11  
+  Region: Deutschland · Skills: functional safety
 
 ---
 
@@ -221,7 +258,7 @@ _No job ads with score ≥ 6 found in the database._
 - **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 5.6 · act: 3.5) — Automotive World — 2026-05-12
 - **[Automobilindustrie: Autobranche rechnet mit Wegfall von weiteren 125.000 Jobs bis 2035](https://www.handelsblatt.com/unternehmen/industrie/automobilindustrie-autobranche-rechnet-mit-wegfall-von-weiteren-125.000-jobs-bis-2035/100224795.html)** `🇩🇪 DE` (rel: 5.5 · act: 3.5) — Handelsblatt Schlagzeilen — 2026-05-13
 
-_+ 245 further weak signals not shown. Main themes: automotive (143), robotics (70), embedded (64), ai (57), adas (34)._
+_+ 251 further weak signals not shown. Main themes: automotive (146), robotics (72), embedded (64), ai (58), adas (34)._
 
 ---
 
@@ -348,6 +385,8 @@ _Active signals this week: none this week._
 - [C++-Entwickler nutzen KI häufiger, bleiben aber skeptisch](https://www.heise.de/news/C-Entwickler-nutzen-KI-haeufiger-bleiben-aber-skeptisch-11287695.html) — Heise Developer (2026-05-11)
 - [Renesas Completes Acquisition of Irida Labs to Expand Vision AI Software Capabilities and Accelerates System-Level Vision Solutions](https://www.eejournal.com/industry_news/renesas-completes-acquisition-of-irida-labs-to-expand-vision-ai-software-capabilities-and-accelerates-system-level-vision-solutions/) — EE Journal (2026-05-11)
 - [Advances in Physical AI Reshape Robotics, Automation - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMijwFBVV95cUxORWlnRGdXNm1OZGx4WFZRenN2YlNvZi1KankxX1JkQTlVWU52LTZDWi1LQ1ZFcDlJSUY3TEZMWmM2aW1kRHFkaUdWYmdNTU9OT1VuUXRWV1pRSmxTaS1JdW5BUHdGTi03am5uZDRicW1rc0RwQjFadGpnTFFyNkY4ZEhuTUw3WXVoT2pNNWpZZw?oc=5) — GNews: Physical AI Embedded (2026-05-12)
+- [The Convergence in Perception Systems from Cars to Robots](https://www.therobotreport.com/the-convergence-in-perception-systems-from-cars-to-robots/) — The Robot Report (2026-05-13)
+- [Bridging the gap: Profitability meets sustainability through physical AI](https://www.therobotreport.com/bridging-gap-profitability-meets-sustainability-through-physical-ai/) — The Robot Report (2026-05-13)
 - [Tesla China retail sales fall 10% in April despite reports of 36% surge](https://electrek.co/2026/05/11/tesla-china-retail-sales-decline-april-2026-wholesale-misleading/) — Electrek (2026-05-11)
 - [South Korea explores using Hyundai robots as army numbers fall](https://www.autonews.com/hyundai/an-south-korea-hyundai-robots-military-deployment-0511/) — Automotive News (2026-05-11)
 - [VDA nennt Technologieoffenheit Schlüssel gegen Jobverluste in der Autoindustrie](https://www.heise.de/news/VDA-nennt-Technologieoffenheit-Schluessel-gegen-Jobverluste-in-der-Autoindustrie-11292707.html) — Heise Auto (2026-05-13)
@@ -403,7 +442,7 @@ _🔄 Market signals applied to 15/16 actions this week._
 | **LinkedIn recruiter and professional networking sprint `↑ market: 876 job postings`** | Important for hidden job market and senior roles | Contact 5–10 relevant recruiters, hiring managers or safety professionals per week. Use a concise message focused on senior safety architecture, ISO 26262, platform safety, CMSE timeline and openness to robotics/industrial automation/ADAS/safety consulting roles. | 3 h/wk | Networking tracker with contacts, replies and follow-up actions |
 | **Post-CMSE machinery safety mini-case and transfer note `↑ market: 48 job postings`** | Especially relevant for robotics, industrial automation and consulting roles | After CMSE, create one robot-cell safety function mini-case and one portfolio note titled 'From ISO 26262 to ISO 13849: Transferable Safety Engineering Principles'. Include hazard, safety function, PLr reasoning, category assumption, diagnostics, safe state and validation idea. | 4 h/wk | docs/safety/iso13849_cmse_transfer_note.md and one robot-cell safety-function mini-case |
 | **Functional safety and system safety architecture refresh `↑ market: 954 job postings, 15 articles`** | Directly relevant to all senior functional safety and system safety roles | Refresh and document core safety architecture topics: safety mechanisms, safe states, degraded modes, diagnostics, FFI, safety requirements, technical safety concepts, PMHF reasoning and safety argumentation. Convert Bosch project knowledge into public-safe, non-confidential interview language. | 3 h/wk | Senior safety architecture notes and CV/interview bullet points |
-| **Polish safety-supervised edge AI portfolio demonstrator `↑ market: 14 articles`** | Relevant for robotics, embedded AI safety and safety architecture roles | Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram, traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation over endless implementation depth. | 3 h/wk | Interview-ready GitHub repository and portfolio summary |
+| **Polish safety-supervised edge AI portfolio demonstrator `↑ market: 16 articles`** | Relevant for robotics, embedded AI safety and safety architecture roles | Make the GitHub portfolio externally readable: clear README, safety concept, architecture diagram, traceability table, test evidence and short demo video. Prioritize documentation and safety argumentation over endless implementation depth. | 3 h/wk | Interview-ready GitHub repository and portfolio summary |
 | **SOTIF / ISO/PAS 8800 / AI safety bridge `↑ market: 304 job postings, 1 articles`** | Useful for ADAS, automated-driving and AI-enabled embedded safety roles | Build concise knowledge notes on SOTIF, ODD, perception limitations, runtime monitoring, deterministic fallback and ISO/PAS 8800. Connect these to the edge AI demonstrator and to the principle that AI/LLMs should not be part of the runtime safety decision path. | 2 h/wk | Two-page AI-enabled safety concept note linked to portfolio project |
 
 ### Nice-to-Have
