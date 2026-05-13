@@ -71,7 +71,7 @@ skills:
       progress with Mermaid diagrams as an entry point.
 
   - name: "SOTIF and ISO/PAS 8800"
-    self_rating: 5
+    self_rating: 2
     cv_claimed: false
     evidence: >
       Self-study: understand SOTIF (ISO 21448) concept, intended function,

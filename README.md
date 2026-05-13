@@ -320,7 +320,21 @@ feeds:
 
 ### Updating your CV self-ratings — `config/cv_skills.yaml`
 
-Update `self_rating` (0–10) and `cv_claimed` after each learning sprint. The `skill-gap` command compares these against job market demand signals.
+Edit after each learning sprint or milestone. Fields:
+
+```yaml
+- name: "ISO 13849 and CMSE"    # must match skill_matrix.yaml exactly
+  self_rating: 3                # 0–10: 0=not started, 3=awareness, 6=working, 8=proficient
+  cv_claimed: false             # true = currently on CV
+  evidence: >                   # what project or experience backs this rating
+    Structured CMSE study ongoing; ISO 26262 transferable background.
+  limitations: >                # what could be challenged in an interview
+    No practical machinery project yet. CMSE certification pending.
+```
+
+The `skill-gap` command (`python -m src.main skill-gap`) compares your self-ratings against job market demand signals from `collect-jobs`.
+
+**Important:** Ratings should be honest — conservative enough that you could defend every claim in a senior-level interview. The limitations field is the safety check: if you cannot fill it in honestly, the rating is probably too high.
 
 ---
 
@@ -330,19 +344,38 @@ Update `self_rating` (0–10) and `cv_claimed` after each learning sprint. The `
 pytest tests/ -v
 ```
 
-82 tests covering scoring logic, signal filtering, skill table generation, learning allocation, trigger detection and source reliability tiers.
+102 tests covering: scoring logic, signal filtering, skill table generation, learning allocation with hours cap, actionability scoring, career mode loading, trigger detection, source reliability tiers, and weak signal sorting.
 
 ---
 
 ## Limitations
 
-- This tool is for personal career intelligence, **not financial advice**.
-- It does not guarantee job-market predictions.
-- Rule-based classification (`classify` without `--llm`) relies on keyword matching and will miss nuanced signals.
-- LLM classification improves accuracy but the model can still misclassify ambiguous articles.
-- **Human review is required before changing career direction.**
-- RSS feeds may change URLs or stop publishing without notice.
+### Classification accuracy
+- Rule-based classification (`classify` without `--llm`) relies on keyword matching. It will miss signals in paraphrased text and may incorrectly tag off-topic articles that happen to contain tracked company names.
+- LLM classification (Claude Haiku via `--llm claude`) is more accurate but not perfect. Ambiguous or multilingual articles may still be misclassified.
+- Chinese (ZH) and Japanese (JA) articles are classified using substring matching — more reliable than English word-boundary matching but can still produce false positives on short titles.
+
+### Signal coverage
+- The tool covers ~25 RSS feeds plus targeted Google News monitors. It does not scrape LinkedIn job postings directly or monitor company career pages. Job market signals from `collect-jobs` are indicative counts, not exhaustive.
+- Weak signals are capped at 15 per report (sorted by `career_actionability_score`). Articles below the threshold are summarised by theme only — some relevant signals may be suppressed.
+- The `career_actionability_score` is rule-based (keyword heuristic). It cannot reason about context: a press release about "hiring safety engineers" will score high even if the role is in a country or sector not relevant to you.
+
+### Scoring and weights
+- The `external_transition` scoring weights (20% actionability, 15% Germany/Europe region) are a heuristic calibration, not a validated career model. They prioritise Germany/Europe signals but cannot account for individual employer preferences or market conditions at the time of your search.
+- The tool does not know your specific salary requirements, notice period, family constraints, or target company shortlist. Use the report as input to your judgment, not as a decision-maker.
+- Bosch Japan is intentionally kept as an optional signal — the tool does not treat it as the default or primary career path.
+
+### Skill gap analysis
+- `cv_skills.yaml` self-ratings are only as reliable as your honesty. The gap analysis compares ratings against job demand keyword counts — it cannot assess interview performance, cultural fit, or management-level expectations.
+- QNX, ISO 13849/CMSE, and SOTIF/ISO PAS 8800 are rated conservatively because they have limited or no practical project backing. Do not let the tool prompt you to overclaim these on a CV.
+
+### General
+- This tool is for personal career intelligence, **not financial advice or career guarantees**.
+- It does not predict which company will hire you or how long your job search will take.
+- **Human review is required before acting on any report recommendation.** The tool supports your decision-making — it does not make decisions for you.
+- RSS feeds may change URLs or go offline. Run `collect` + `collect-press` weekly to stay current; stale data degrades report quality.
+- `config/email.yaml` contains SMTP credentials and is gitignored. Never commit it.
 
 ---
 
-_Built as a personal career decision-support tool. Not affiliated with any company or organization listed._
+_Built as a personal career decision-support tool. Not affiliated with Bosch or any other company listed._
