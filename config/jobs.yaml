@@ -1,62 +1,182 @@
 # Job market signal queries.
-# Each entry defines a search that collect_jobs.py will run against the
-# Bundesagentur für Arbeit API (Germany) and/or Indeed RSS (global).
+# Each entry defines a search run against the Bundesagentur für Arbeit API
+# (Germany) and/or Indeed RSS (global/Europe).
+#
+# Region priority: germany first, then europe, then global.
+# For external_transition mode, Germany and Europe queries are most actionable.
 
 searches:
 
-  # --- Germany (Bundesagentur API) ---
+  # ── Core safety architecture roles (Germany) ──────────────────────────────
+
   - query: "Functional Safety Engineer"
     region: "germany"
     source: "bundesagentur"
     skill_tags: ["functional_safety", "iso_26262"]
 
-  - query: "ROS2 Robotics"
+  - query: "Functional Safety Architect"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "safety_architecture"]
+
+  - query: "System Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "system_safety"]
+
+  - query: "Safety Architect"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["safety_architecture", "functional_safety"]
+
+  - query: "Functional Safety Manager"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "safety_management"]
+
+  - query: "Software Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "embedded"]
+
+  - query: "Safety Case Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "safety_case"]
+
+  - query: "Product Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "product_safety"]
+
+  # ── Machinery and industrial automation safety (Germany) ──────────────────
+
+  - query: "Machine Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["iso_13849", "machinery_safety"]
+
+  - query: "ISO 13849 CMSE"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["iso_13849", "cmse"]
+
+  - query: "Industrial Automation Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "industrial_automation"]
+
+  - query: "AUTOSAR Safety Automotive"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["autosar", "functional_safety"]
+
+  # ── Consulting and assessment (Germany/Europe) ─────────────────────────────
+
+  - query: "Safety Consultant Functional Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "consulting"]
+
+  - query: "Safety Assessor Functional Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "assessment"]
+
+  - query: "TÜV Functional Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["functional_safety", "tuv_certification"]
+
+  # ── Cross-domain safety standards ─────────────────────────────────────────
+
+  - query: "IEC 61508 Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["iec_61508", "functional_safety"]
+
+  - query: "IEC 62061 Machine Safety"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["iec_62061", "machinery_safety"]
+
+  - query: "RAMS Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["rams", "functional_safety"]
+
+  - query: "SOTIF ADAS Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["sotif", "adas"]
+
+  # ── Adjacent sector safety (Germany) ──────────────────────────────────────
+
+  - query: "Railway Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["railway_safety", "functional_safety"]
+
+  - query: "Embedded Safety Architect"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["embedded", "functional_safety"]
+
+  - query: "Aerospace Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["aerospace_safety", "functional_safety"]
+
+  - query: "Medical Device Safety Engineer"
+    region: "germany"
+    source: "bundesagentur"
+    skill_tags: ["medical_safety", "iec_62304"]
+
+  # ── ROS2 and robotics safety (Germany) ────────────────────────────────────
+
+  - query: "ROS2 Robotics Safety"
     region: "germany"
     source: "bundesagentur"
     skill_tags: ["ros2", "robotics"]
 
-  - query: "ADAS Embedded Software"
+  - query: "ADAS Embedded Software Safety"
     region: "germany"
     source: "bundesagentur"
     skill_tags: ["adas", "embedded"]
 
-  - query: "ISO 26262 SOTIF"
-    region: "germany"
-    source: "bundesagentur"
-    skill_tags: ["iso_26262", "sotif"]
-
-  - query: "Embedded AI Safety"
-    region: "germany"
-    source: "bundesagentur"
-    skill_tags: ["embedded_ai", "functional_safety"]
-
-  - query: "QNX Embedded Systems"
+  - query: "QNX Embedded Systems Safety"
     region: "germany"
     source: "bundesagentur"
     skill_tags: ["qnx", "embedded"]
 
-  - query: "MBSE SysML Automotive"
-    region: "germany"
-    source: "bundesagentur"
-    skill_tags: ["mbse", "sysml"]
+  # ── Europe-wide (Indeed RSS) ───────────────────────────────────────────────
 
-  # --- Global (Indeed RSS) ---
-  - query: "ros2 functional safety"
-    region: "global"
+  - query: "functional safety architect europe"
+    region: "europe"
     source: "indeed_rss"
-    skill_tags: ["ros2", "functional_safety"]
+    skill_tags: ["functional_safety", "safety_architecture"]
 
-  - query: "humanoid robotics safety engineer"
-    region: "global"
+  - query: "system safety engineer germany europe"
+    region: "europe"
     source: "indeed_rss"
-    skill_tags: ["robotics", "functional_safety"]
+    skill_tags: ["system_safety", "functional_safety"]
 
-  - query: "SOTIF ISO PAS 8800"
+  - query: "safety consultant iso 26262 europe"
+    region: "europe"
+    source: "indeed_rss"
+    skill_tags: ["functional_safety", "consulting"]
+
+  - query: "robotics safety engineer iso 13849"
+    region: "europe"
+    source: "indeed_rss"
+    skill_tags: ["robotics", "iso_13849"]
+
+  - query: "SOTIF ISO PAS 8800 safety"
     region: "global"
     source: "indeed_rss"
     skill_tags: ["sotif", "iso_pas_8800"]
 
-  - query: "embedded AI ADAS safety"
+  - query: "embedded AI safety engineer"
     region: "global"
     source: "indeed_rss"
-    skill_tags: ["embedded_ai", "adas"]
+    skill_tags: ["embedded_ai", "functional_safety"]

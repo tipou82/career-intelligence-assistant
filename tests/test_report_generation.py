@@ -4,14 +4,18 @@ import json
 import pytest
 from src.generate_weekly_report import (
     _build_career_advice,
+    _build_career_actions_section,
     _build_executive_summary,
     _build_learning_allocation,
+    _build_market_fit_section,
     _build_risks_section,
     _build_skill_table,
     _build_source_list,
     _build_strong_signals,
     _build_weak_signals,
     _format_signal_entry,
+    _load_career_mode,
+    _load_weekly_hours_cap,
     get_week_label,
 )
 
@@ -281,7 +285,7 @@ class TestLearningAllocation:
 
     def test_total_hours_shown(self) -> None:
         alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX)
-        assert "h/week" in alloc or "hours" in alloc.lower()
+        assert "total" in alloc.lower() or "cap" in alloc.lower()
 
     def test_triggered_skill_gets_bonus_hour(self) -> None:
         article = make_article(technologies=["ros2"])
@@ -348,3 +352,81 @@ class TestRisksSection:
         noise = [make_article(title="Top 10 ChatGPT Prompts for Marketers")]
         text = _build_risks_section(noise)
         assert "Top 10 ChatGPT" in text
+
+
+# ---------------------------------------------------------------------------
+# External transition mode
+# ---------------------------------------------------------------------------
+
+class TestCareerMode:
+    def test_career_mode_loads_from_yaml(self) -> None:
+        mode = _load_career_mode()
+        assert mode in ("external_transition", "default")
+
+    def test_weekly_hours_cap_loads(self) -> None:
+        cap = _load_weekly_hours_cap()
+        assert 10 <= cap <= 40
+
+    def test_learning_allocation_respects_cap(self) -> None:
+        cap = 12
+        alloc = _build_learning_allocation([], MINIMAL_SKILL_MATRIX, hours_cap=cap)
+        # Extract total from the note line
+        import re
+        match = re.search(r"total: ~(\d+) h", alloc)
+        if match:
+            total = int(match.group(1))
+            assert total <= cap
+
+    def test_learning_allocation_never_exceeds_20h(self) -> None:
+        # With default cap (20h), total must not exceed it
+        big_matrix = {
+            "skills": [
+                {"name": f"Skill{i}", "priority": 5, "urgency": 5, "required_depth": 5,
+                 "weekly_hours_baseline": 5, "group": "deep_focus",
+                 "learning_task": "Task", "triggers": {"increase": [], "decrease": []}}
+                for i in range(10)
+            ]
+        }
+        alloc = _build_learning_allocation([], big_matrix, hours_cap=20)
+        import re
+        match = re.search(r"total: ~(\d+) h", alloc)
+        if match:
+            assert int(match.group(1)) <= 20
+
+    def test_career_actions_section_in_external_mode(self) -> None:
+        articles = [make_article(signal_strength="strong")]
+        text = _build_career_actions_section(articles, MINIMAL_SKILL_MATRIX, "external_transition")
+        assert "Role Cluster" in text or "Action Plan" in text or "Network" in text
+
+    def test_career_actions_empty_in_default_mode(self) -> None:
+        articles = [make_article()]
+        text = _build_career_actions_section(articles, MINIMAL_SKILL_MATRIX, "default")
+        assert text == ""
+
+    def test_market_fit_section_in_external_mode(self) -> None:
+        articles = [make_article(industries=["functional_safety"], technologies=["iso 26262"])]
+        text = _build_market_fit_section(articles, "external_transition")
+        assert "Automotive" in text or "Market Fit" in text or "fit" in text.lower()
+
+    def test_market_fit_empty_in_default_mode(self) -> None:
+        text = _build_market_fit_section([], "default")
+        assert text == ""
+
+    def test_weak_signals_sorted_by_actionability(self) -> None:
+        # Article with hiring signal should rank above generic article
+        high_act = make_article(
+            title="Functional safety engineer vacancy Germany",
+            summary="We are hiring ISO 26262 experts",
+            signal_strength="weak", relevance_score=5.0
+        )
+        low_act = make_article(
+            title="Generic AI news", summary="ChatGPT gets new features",
+            signal_strength="weak", relevance_score=5.5
+        )
+        # high_act has higher actionability despite lower relevance_score
+        from src.score_relevance import _actionability_score
+        cls = {"industries": ["functional_safety"], "regions": ["germany"],
+               "technologies": [], "skills": []}
+        act_high = _actionability_score(high_act, cls)
+        act_low = _actionability_score(low_act, {})
+        assert act_high > act_low

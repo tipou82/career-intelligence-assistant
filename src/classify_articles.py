@@ -45,6 +45,16 @@ def _load_config() -> Tuple[Dict, Dict, Dict]:
     return keywords, companies, sources
 
 
+def _load_career_mode() -> str:
+    """Read career_mode from skill_matrix.yaml. Returns 'default' if unset."""
+    try:
+        with open(CONFIG_DIR / "skill_matrix.yaml", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        return str(data.get("career_mode", "default"))
+    except Exception:
+        return "default"
+
+
 # ---------------------------------------------------------------------------
 # Rule-based helpers
 # ---------------------------------------------------------------------------
@@ -246,6 +256,7 @@ def classify_all(
     """
     init_db()
     keywords, companies_cfg, sources_config = _load_config()
+    career_mode = _load_career_mode()
     articles = get_unclassified_articles()
     stats: Dict[str, int] = {"classified": 0, "skipped": 0}
 
@@ -265,13 +276,17 @@ def classify_all(
                 sources_config,
             )
 
-        scores = score_article(article, classification, keywords, companies_cfg, sources_config)
+        scores = score_article(
+            article, classification, keywords, companies_cfg, sources_config,
+            career_mode=career_mode,
+        )
         strength = _signal_strength(scores["total"])
 
         update_article_classification(
             article_id=article["id"],
             classification=classification,
             relevance_score=scores["total"],
+            career_actionability_score=scores.get("actionability", 0.0) / 10.0 * 10.0,
             confidence_level=classification.get("confidence_level", "low"),
             signal_strength=strength,
             recommended_action=classification.get("recommended_action", "watch"),

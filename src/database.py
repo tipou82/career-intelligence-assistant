@@ -35,6 +35,7 @@ def init_db(db_path: Path = DB_PATH) -> None:
                 confidence_level  TEXT DEFAULT 'low',
                 signal_strength   TEXT DEFAULT 'noise',
                 recommended_action TEXT DEFAULT 'watch',
+                career_actionability_score REAL DEFAULT 0.0,
                 classified_at     TEXT,
                 created_at        TEXT DEFAULT (datetime('now'))
             );
@@ -46,10 +47,12 @@ def init_db(db_path: Path = DB_PATH) -> None:
                 created_at  TEXT DEFAULT (datetime('now'))
             );
         """)
-        # Step 2: migrate existing databases that pre-date the language column
+        # Step 2: migrate existing databases — add new columns if absent
         existing = {row[1] for row in conn.execute("PRAGMA table_info(articles)")}
         if "language" not in existing:
             conn.execute("ALTER TABLE articles ADD COLUMN language TEXT DEFAULT 'en'")
+        if "career_actionability_score" not in existing:
+            conn.execute("ALTER TABLE articles ADD COLUMN career_actionability_score REAL DEFAULT 0.0")
         # Step 3: create indexes (after migration so language column is guaranteed present)
         conn.executescript("""
             CREATE INDEX IF NOT EXISTS idx_articles_published
@@ -93,21 +96,24 @@ def update_article_classification(
     confidence_level: str,
     signal_strength: str,
     recommended_action: str,
+    career_actionability_score: float = 0.0,
     db_path: Path = DB_PATH,
 ) -> None:
     with get_connection(db_path) as conn:
         conn.execute(
             """UPDATE articles SET
-               classification     = ?,
-               relevance_score    = ?,
-               confidence_level   = ?,
-               signal_strength    = ?,
-               recommended_action = ?,
-               classified_at      = datetime('now')
+               classification             = ?,
+               relevance_score            = ?,
+               career_actionability_score = ?,
+               confidence_level           = ?,
+               signal_strength            = ?,
+               recommended_action         = ?,
+               classified_at              = datetime('now')
                WHERE id = ?""",
             (
                 json.dumps(classification),
                 round(relevance_score, 2),
+                round(career_actionability_score, 2),
                 confidence_level,
                 signal_strength,
                 recommended_action,

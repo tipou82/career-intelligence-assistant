@@ -2,6 +2,7 @@
 
 import html as html_lib
 import json
+from collections import Counter
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional
@@ -12,6 +13,22 @@ from .database import get_all_articles, get_articles_for_week, init_db, save_rep
 
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 REPORTS_DIR = Path(__file__).parent.parent / "reports"
+
+
+def _load_career_mode() -> str:
+    try:
+        data = yaml.safe_load((CONFIG_DIR / "skill_matrix.yaml").read_text(encoding="utf-8"))
+        return str(data.get("career_mode", "default"))
+    except Exception:
+        return "default"
+
+
+def _load_weekly_hours_cap() -> int:
+    try:
+        data = yaml.safe_load((CONFIG_DIR / "skill_matrix.yaml").read_text(encoding="utf-8"))
+        return int(data.get("weekly_hours_cap", 20))
+    except Exception:
+        return 20
 
 
 # ---------------------------------------------------------------------------
@@ -168,9 +185,12 @@ def _build_skill_table(strong_signals: List[Dict], skill_matrix: Dict) -> str:
     return "\n".join([header, separator] + rows)
 
 
-def _build_learning_allocation(strong_signals: List[Dict], skill_matrix: Dict) -> str:
-    """Build the recommended learning allocation section grouped by strategic focus."""
-    # Detect triggered skills to adjust hours
+def _build_learning_allocation(
+    strong_signals: List[Dict],
+    skill_matrix: Dict,
+    hours_cap: int = 20,
+) -> str:
+    """Build the recommended learning allocation, respecting the weekly hours cap."""
     tech_counts: Dict[str, int] = {}
     for article in strong_signals:
         cls = _get_classification(article)
@@ -179,9 +199,9 @@ def _build_learning_allocation(strong_signals: List[Dict], skill_matrix: Dict) -
 
     group_order = ["deep_focus", "serious", "lightweight", "defer"]
     group_labels = {
-        "deep_focus": "Deep Focus",
-        "serious": "Serious — build steadily",
-        "lightweight": "Lightweight — maintain awareness",
+        "deep_focus": skill_matrix.get("groups", {}).get("deep_focus", {}).get("label", "Deep Focus"),
+        "serious": skill_matrix.get("groups", {}).get("serious", {}).get("label", "Serious"),
+        "lightweight": skill_matrix.get("groups", {}).get("lightweight", {}).get("label", "Lightweight"),
         "defer": "Defer",
     }
 
@@ -201,27 +221,195 @@ def _build_learning_allocation(strong_signals: List[Dict], skill_matrix: Dict) -
             base_hours = skill.get("weekly_hours_baseline", skill.get("weekly_hours", 0))
             if base_hours == 0:
                 continue
-            name = skill["name"]
-            task = skill.get("learning_task", name)
-
-            # Boost by 1h if strong trigger detected (cap at base + 2)
+            # Stop adding hours if cap already reached
+            if grand_total + group_total >= hours_cap:
+                break
+            task = skill.get("learning_task", skill["name"])
             triggers = [t.lower() for t in skill.get("triggers", {}).get("increase", [])]
             triggered = any(t in tech_counts for t in triggers)
-            hours = base_hours + 1 if triggered and base_hours > 0 else base_hours
-            hours = min(hours, base_hours + 2)
-
+            hours = min(base_hours + 1 if triggered else base_hours, base_hours + 2)
+            # Clamp to remaining budget
+            remaining = hours_cap - grand_total - group_total
+            hours = min(hours, remaining)
+            if hours <= 0:
+                break
             lines.append(f"- **{hours} h:** {task}")
             group_total += hours
 
-        lines.append(f"  _(Subtotal: {group_total} h)_")
-        sections.append("\n".join(lines))
-        grand_total += group_total
+        if group_total > 0:
+            lines.append(f"  _(Subtotal: {group_total} h)_")
+            sections.append("\n".join(lines))
+            grand_total += group_total
 
+    over_note = " ⚠️ Cap applied." if grand_total >= hours_cap else ""
     target_note = (
-        f"\n_Target: 15–20 h/week. This week total: ~{grand_total} h. "
-        "Adjust defer and lightweight items to stay within your available time._"
+        f"\n_Weekly total: ~{grand_total} h (cap: {hours_cap} h).{over_note} "
+        "Prioritise Deep Focus items — job search first._"
     )
     return "\n\n".join(sections) + target_note
+
+
+def _build_career_actions_section(
+    articles: List[Dict],
+    skill_matrix: Dict,
+    career_mode: str,
+) -> str:
+    """Section 2a: Career Actions This Week — concrete steps for the next 7 days."""
+    if career_mode != "external_transition":
+        return ""
+
+    # Collect company signals from all strong+weak articles
+    company_counts: Counter = Counter()
+    tech_counts: Counter = Counter()
+    region_counts: Counter = Counter()
+    industry_counts: Counter = Counter()
+    high_actionability = []
+
+    for a in articles:
+        if a.get("signal_strength") not in ("strong", "weak"):
+            continue
+        cls = _get_classification(a)
+        for c in cls.get("companies", []):
+            company_counts[c] += 1
+        for t in cls.get("technologies", []) + cls.get("skills", []):
+            tech_counts[t.lower()] += 1
+        for r in cls.get("regions", []):
+            region_counts[r.lower()] += 1
+        for i in cls.get("industries", []):
+            industry_counts[i.lower()] += 1
+        if a.get("career_actionability_score", 0) >= 6.0:
+            high_actionability.append(a)
+
+    # Top job clusters from skill_matrix primary goals
+    job_clusters = [
+        "Functional Safety Architect / System Safety Engineer",
+        "Safety Consultant / Assessor (TÜV, SGS, Bureau Veritas)",
+        "Machine Safety Engineer (ISO 13849 / IEC 62061)",
+        "Embedded AI Safety Engineer (SOTIF / ISO PAS 8800)",
+        "RAMS Engineer (Railway / Industrial Automation)",
+    ]
+
+    # Top companies from signals (filter to relevant sectors)
+    top_companies = [c for c, _ in company_counts.most_common(8)
+                     if c.lower() not in ("anthropic", "openai", "microsoft")][:5]
+    if not top_companies:
+        top_companies = ["Bosch", "Continental", "ZF", "TÜV SÜD", "TÜV Rheinland"]
+
+    # Recommended application keywords (top tech tags)
+    keywords = [t for t, _ in tech_counts.most_common(10)
+                if len(t) > 3 and t not in ("robot", "vehicle", "system")][:8]
+
+    # Suggested networking targets
+    networking = [
+        "TÜV SÜD / TÜV Rheinland functional safety teams",
+        "Safety engineer communities (LinkedIn: Functional Safety Professionals)",
+        "CMSE/ISO 13849 contacts from machinery/robotics sector",
+        "ADAS safety architects at Continental, ZF, Mobileye",
+    ]
+
+    # Concrete 7-day action plan
+    plan_lines = [
+        "1. **Apply** to 3–5 senior safety architect / consultant roles in Germany/Europe",
+        "2. **Update LinkedIn headline** → include ISO 26262, ISO 13849, SOTIF, AI safety",
+        "3. **Contact** one TÜV / safety consultancy (TÜV SÜD, TÜV Rheinland, SGS, Exida)",
+        "4. **Practice** one interview story: cross-domain safety architecture decision",
+        "5. **Review** this week's strong signals for new employer leads",
+    ]
+
+    lines = [
+        "### Top 5 Role Clusters to Target",
+        "\n".join(f"- {c}" for c in job_clusters),
+        "",
+        "### Top Companies to Monitor or Approach",
+        "\n".join(f"- {c}" for c in top_companies),
+        "",
+        "### Recommended CV / Application Keywords",
+        ", ".join(f"`{k}`" for k in keywords) if keywords else "_Based on this week's signals — update after classify._",
+        "",
+        "### Networking Targets",
+        "\n".join(f"- {n}" for n in networking),
+        "",
+        "### 7-Day Concrete Action Plan",
+        "\n".join(plan_lines),
+    ]
+    return "\n".join(lines)
+
+
+def _build_market_fit_section(articles: List[Dict], career_mode: str) -> str:
+    """Section: External Market Fit — profile mapping to target industries."""
+    if career_mode != "external_transition":
+        return ""
+
+    industry_signals: Dict[str, List[str]] = {
+        "automotive_safety": [],
+        "robotics_machine_safety": [],
+        "industrial_automation": [],
+        "consulting_tuv_assessment": [],
+        "adjacent_sectors": [],
+    }
+
+    for a in articles:
+        if a.get("signal_strength") not in ("strong", "weak"):
+            continue
+        cls = _get_classification(a)
+        inds = {i.lower() for i in cls.get("industries", [])}
+        techs = {t.lower() for t in cls.get("technologies", []) + cls.get("skills", [])}
+        title = a.get("title", "")[:60]
+
+        if inds & {"automotive", "adas", "software_defined_vehicle"} and \
+           techs & {"functional safety", "iso 26262", "sotif", "asil"}:
+            industry_signals["automotive_safety"].append(title)
+        if inds & {"robotics", "machinery_safety"} or \
+           techs & {"iso 13849", "performance level", "safety function", "collaborative robot"}:
+            industry_signals["robotics_machine_safety"].append(title)
+        if techs & {"iec 61508", "iec 62061", "industrial automation", "rams"}:
+            industry_signals["industrial_automation"].append(title)
+        if techs & {"safety assessor", "safety consultant", "tüv", "tuv", "assessment", "certification"}:
+            industry_signals["consulting_tuv_assessment"].append(title)
+        if techs & {"railway safety", "aerospace safety", "medical safety", "iec 62304"}:
+            industry_signals["adjacent_sectors"].append(title)
+
+    profile_map = {
+        "automotive_safety": {
+            "label": "🚗 Automotive Safety (ISO 26262 / SOTIF)",
+            "fit": "**Strong** — primary background. Senior differentiation through cross-domain and AI safety.",
+            "signal_label": "Active signals this week",
+        },
+        "robotics_machine_safety": {
+            "label": "🤖 Robotics & Machine Safety (ISO 13849 / IEC 62061)",
+            "fit": "**Growing** — opens industrial automation, collaborative robotics, humanoid markets.",
+            "signal_label": "Active signals this week",
+        },
+        "industrial_automation": {
+            "label": "🏭 Industrial Automation (IEC 61508 / RAMS)",
+            "fit": "**Adjacent** — cross-domain safety standards apply directly. Underserved by pure automotive engineers.",
+            "signal_label": "Active signals this week",
+        },
+        "consulting_tuv_assessment": {
+            "label": "🔍 Consulting / TÜV / Assessment",
+            "fit": "**High demand** — senior safety engineers with multi-standard fluency are scarce.",
+            "signal_label": "Active signals this week",
+        },
+        "adjacent_sectors": {
+            "label": "✈️ Adjacent: Railway / Aerospace / Medical Device",
+            "fit": "**Optional** — transferable standards knowledge; only pursue if direct opportunity arises.",
+            "signal_label": "Active signals this week",
+        },
+    }
+
+    lines = []
+    for key, meta in profile_map.items():
+        signals = industry_signals[key][:3]
+        lines.append(f"**{meta['label']}**")
+        lines.append(f"Profile fit: {meta['fit']}")
+        if signals:
+            lines.append(f"{meta['signal_label']}:")
+            lines.extend(f"  - {s}" for s in signals)
+        else:
+            lines.append(f"_{meta['signal_label']}: none this week._")
+        lines.append("")
+
+    return "\n".join(lines).strip()
 
 
 def _build_source_list(articles: List[Dict]) -> str:
@@ -566,6 +754,11 @@ def _render_html(
     skill_matrix: Dict,
     articles: List[Dict],
     skill_gap_html: str = "",
+    career_mode: str = "default",
+    career_actions_md: str = "",
+    market_fit_md: str = "",
+    weak_signals_rest_count: int = 0,
+    hours_cap: int = 20,
 ) -> str:
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
     exec_summary = _h(_build_executive_summary(strong_signals, weak_signals, week))
@@ -578,31 +771,39 @@ def _render_html(
     else:
         strong_html = "<p><em>No strong signals collected this week.</em></p>"
 
-    # Weak signals
+    # Weak signals — show top 15 with actionability score
     if weak_signals:
         def _weak_item_html(a: Dict) -> str:
             url = a.get("url", "")
             title = _h(a.get("title", ""))
             linked = f'<a href="{_h(url)}" target="_blank">{title}</a>' if url else title
             score = a.get("relevance_score", 0)
+            act = a.get("career_actionability_score", 0)
             source = _h(a.get("source_name", ""))
-            date = str(a.get("published_date", ""))[:10]
+            date_str2 = str(a.get("published_date", ""))[:10]
             lang = _lang_tag(a)
             return (
                 f'<li><strong>{linked}</strong> '
                 f'<span style="font-size:11px;color:#888">{lang}</span> '
                 f'<span class="ws">{score:.1f}</span> '
-                f'— {source} — {date}</li>'
+                f'<span style="font-size:11px;color:#00b894">act:{act:.1f}</span> '
+                f'— {source} — {date_str2}</li>'
             )
-        weak_items = "".join(_weak_item_html(a) for a in weak_signals[:30])
-        weak_html = f'<ul class="weak-ul">{weak_items}</ul>'
+        weak_items = "".join(_weak_item_html(a) for a in weak_signals)
+        rest_note = (
+            f'<p style="font-size:12px;color:#636e72;margin-top:6px;">'
+            f'+ {weak_signals_rest_count} further signals not shown (low actionability).</p>'
+            if weak_signals_rest_count > 0 else ""
+        )
+        weak_html = f'<ul class="weak-ul">{weak_items}</ul>{rest_note}'
     else:
         weak_html = "<p><em>No weak signals this week.</em></p>"
 
-    # Source list
+    # Source list — only strong + shown weak (not full dump)
+    top_articles = strong_signals + weak_signals
     seen: set = set()
     src_items = []
-    for a in sorted(articles, key=lambda x: x.get("relevance_score", 0), reverse=True):
+    for a in sorted(top_articles, key=lambda x: x.get("relevance_score", 0), reverse=True):
         url = a.get("url", "")
         if url in seen:
             continue
@@ -614,23 +815,65 @@ def _render_html(
         src_items.append(f"<li>{link} — {src} ({date_str})</li>")
     src_html = f'<ul class="src-ul">{"".join(src_items)}</ul>' if src_items else "<p><em>No sources.</em></p>"
 
-    # Career advice (already Markdown-ish plain text — convert newlines)
+    # Career advice
     advice_html = "".join(
         f"<p>{_h(line.strip())}</p>" if line.strip() else ""
         for line in career_advice.split("\n")
     )
 
-    # Risks (bullet list from plain text)
+    # Risks
     risk_lines = [l.lstrip("- ").strip() for l in risks.split("\n") if l.strip().startswith("-")]
     risk_html = "<ul class='risk-ul'>" + "".join(f"<li>{_h(l)}</li>" for l in risk_lines) + "</ul>"
+
+    # Career Actions section (external_transition mode only)
+    career_actions_section_html = ""
+    if career_actions_md:
+        ca_lines = []
+        for line in career_actions_md.split("\n"):
+            if line.startswith("### "):
+                ca_lines.append(f'<h4 style="margin:14px 0 6px">{_h(line[4:])}</h4>')
+            elif line.startswith("- "):
+                ca_lines.append(f'<li style="font-size:13px">{_h(line[2:])}</li>')
+            elif line.strip():
+                ca_lines.append(f'<p style="font-size:13px">{_h(line)}</p>')
+        career_actions_section_html = f"""
+<div class="sec" style="border-left:4px solid #d63031;padding-left:20px">
+  <h2>2. Career Actions This Week</h2>
+  {"".join(ca_lines)}
+</div>"""
+
+    # Market Fit section
+    market_fit_section_html = ""
+    if market_fit_md:
+        mf_lines = []
+        for line in market_fit_md.split("\n"):
+            if line.startswith("**"):
+                mf_lines.append(f'<p style="font-size:13px;font-weight:600">{_h(line.strip("*"))}</p>')
+            elif line.startswith("  - "):
+                mf_lines.append(f'<li style="font-size:12px;color:#636e72">{_h(line[4:])}</li>')
+            elif line.strip():
+                mf_lines.append(f'<p style="font-size:13px">{_h(line)}</p>')
+        market_fit_section_html = f"""
+<div class="sec" style="background:#f8f9fa">
+  <h2>External Market Fit</h2>
+  {"".join(mf_lines)}
+</div>"""
 
     skill_gap_section = ""
     if skill_gap_html:
         skill_gap_section = f"""
 <div class="sec">
-  <h2>9. Skill Gap Analysis</h2>
+  <h2>Skill Gap Analysis</h2>
   {skill_gap_html}
 </div>"""
+
+    mode_badge = (
+        f'<span style="background:#d63031;color:white;padding:2px 8px;border-radius:4px;'
+        f'font-size:11px;font-weight:600">{career_mode.replace("_", " ").upper()}</span> '
+        if career_mode != "default" else ""
+    )
+
+    sec = lambda n: n + (1 if career_actions_md else 0)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -644,7 +887,7 @@ def _render_html(
 
 <div class="hdr">
   <h1>Weekly Career Intelligence Brief – {_h(week)}</h1>
-  <div class="meta">Generated: {_h(now_str)}</div>
+  <div class="meta">{mode_badge}Generated: {_h(now_str)}</div>
 </div>
 
 <div class="sec exec">
@@ -652,45 +895,49 @@ def _render_html(
   <p>{exec_summary}</p>
 </div>
 
+{career_actions_section_html}
+
 <div class="sec">
-  <h2>2. Strong Signals</h2>
+  <h2>{sec(2)}. Strong Signals</h2>
   {strong_html}
 </div>
 
 <div class="sec">
-  <h2>3. Weak Signals / Watchlist</h2>
+  <h2>{sec(3)}. Weak Signals / Watchlist <small style="color:#636e72;font-weight:normal">(top 15 by actionability)</small></h2>
   {weak_html}
 </div>
 
 <div class="sec">
-  <h2>4. Skill Priority Update</h2>
+  <h2>{sec(4)}. Skill Priority Update</h2>
   {_html_skill_table(strong_signals, skill_matrix)}
 </div>
 
 <div class="sec">
-  <h2>5. Recommended Learning Allocation for Next Week</h2>
+  <h2>{sec(5)}. Recommended Learning Allocation</h2>
   {_html_learning_allocation(strong_signals, skill_matrix)}
 </div>
 
 <div class="sec advice">
-  <h2>6. Career Positioning Advice</h2>
+  <h2>{sec(6)}. Career Positioning Advice</h2>
   {advice_html}
 </div>
 
 <div class="sec">
-  <h2>7. Risks and Hype to Ignore</h2>
+  <h2>{sec(7)}. Risks and Hype to Ignore</h2>
   {risk_html}
 </div>
 
+{market_fit_section_html}
+
 <div class="sec">
-  <h2>8. Source List</h2>
+  <h2>{sec(8)}. Source List</h2>
   {src_html}
 </div>
 
 {skill_gap_section}
 
 <div class="footer">
-  Career Intelligence Assistant · Rule-based classifier v1 ·
+  Career Intelligence Assistant · {_h(career_mode)} mode ·
   Human review required before changing career direction. Not financial advice.
 </div>
 
@@ -718,6 +965,8 @@ def generate_report(
     skill_matrix = yaml.safe_load(
         (CONFIG_DIR / "skill_matrix.yaml").read_text(encoding="utf-8")
     )
+    career_mode = _load_career_mode()
+    hours_cap = _load_weekly_hours_cap()
 
     articles = get_articles_for_week(week)
     if not articles:
@@ -735,8 +984,20 @@ def generate_report(
         articles = articles + supplement
 
     strong_signals = _build_strong_signals(articles)
-    weak_signals = _build_weak_signals(articles)
+    # Sort weak signals by career_actionability_score desc, then by relevance
+    all_weak = _build_weak_signals(articles)
+    all_weak_sorted = sorted(
+        all_weak,
+        key=lambda a: (a.get("career_actionability_score", 0), a.get("relevance_score", 0)),
+        reverse=True,
+    )
+    weak_signals_top = all_weak_sorted[:15]     # top 15 by actionability
+    weak_signals_rest = all_weak_sorted[15:]    # remainder → summarised by theme
     noise_articles = [a for a in articles if a.get("signal_strength") == "noise"]
+
+    # Pre-compute new sections (only non-empty in external_transition mode)
+    career_actions_md = _build_career_actions_section(articles, skill_matrix, career_mode)
+    market_fit_md = _build_market_fit_section(articles, career_mode)
 
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     saved: Dict[str, Path] = {}
@@ -748,81 +1009,110 @@ def generate_report(
             if strong_signals
             else "_No strong signals collected this week._"
         )
+
         def _weak_line(a: Dict) -> str:
             url = a.get("url", "")
             title = a["title"]
             linked = f"[{title}]({url})" if url else title
             score = a.get("relevance_score", 0)
+            act = a.get("career_actionability_score", 0)
             source = a.get("source_name", "")
-            date = str(a.get("published_date", ""))[:10]
+            date_str = str(a.get("published_date", ""))[:10]
             lang = _lang_tag(a)
-            return f"- **{linked}** `{lang}` (score: {score:.1f}) — {source} — {date}"
+            return f"- **{linked}** `{lang}` (rel: {score:.1f} · act: {act:.1f}) — {source} — {date_str}"
 
         weak_section = (
-            "\n".join(_weak_line(a) for a in weak_signals[:30])
-            if weak_signals
+            "\n".join(_weak_line(a) for a in weak_signals_top)
+            if weak_signals_top
             else "_No weak signals this week._"
         )
+
+        # Summarise the rest by industry theme
+        rest_summary = ""
+        if weak_signals_rest:
+            theme_counts: Counter = Counter()
+            for a in weak_signals_rest:
+                cls = _get_classification(a)
+                for i in cls.get("industries", []):
+                    theme_counts[i] += 1
+            top_themes = ", ".join(f"{t} ({n})" for t, n in theme_counts.most_common(5))
+            rest_summary = (
+                f"\n\n_+ {len(weak_signals_rest)} further weak signals not shown. "
+                f"Main themes: {top_themes}._"
+            )
+
+        career_actions_section = ""
+        if career_actions_md:
+            career_actions_section = f"\n\n---\n\n## 2. Career Actions This Week\n\n{career_actions_md}"
+
+        market_fit_section = ""
+        if market_fit_md:
+            market_fit_section = f"\n\n---\n\n## External Market Fit\n\n{market_fit_md}"
+
         skill_gap_md = ""
         if skill_gap_html:
-            skill_gap_md = "\n\n---\n\n## 9. Skill Gap Analysis\n\n_(See HTML version for full table.)_"
+            skill_gap_md = "\n\n---\n\n## Skill Gap Analysis\n\n_(See HTML version for full table.)_"
+
+        sec_offset = 1 if career_actions_md else 0  # renumber if new section inserted
+        s = lambda n: n + sec_offset
 
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+        mode_line = f"_Mode: **{career_mode.replace('_', ' ').title()}** · " if career_mode != "default" else "_"
         report_md = f"""# Weekly Career Intelligence Brief – {week}
 
-_Generated: {now_str}_
+{mode_line}Generated: {now_str}_
 
 ---
 
 ## 1. Executive Summary
 
-{_build_executive_summary(strong_signals, weak_signals, week)}
+{_build_executive_summary(strong_signals, all_weak, week)}{career_actions_section}
 
 ---
 
-## 2. Strong Signals
+## {s(2)}. Strong Signals
 
 {strong_section}
 
 ---
 
-## 3. Weak Signals / Watchlist
+## {s(3)}. Weak Signals / Watchlist _(top 15 by actionability)_
 
-{weak_section}
+{weak_section}{rest_summary}
 
 ---
 
-## 4. Skill Priority Update
+## {s(4)}. Skill Priority Update
 
 {_build_skill_table(strong_signals, skill_matrix)}
 
 ---
 
-## 5. Recommended Learning Allocation for Next Week
+## {s(5)}. Recommended Learning Allocation for Next Week
 
-{_build_learning_allocation(strong_signals, skill_matrix)}
+{_build_learning_allocation(strong_signals, skill_matrix, hours_cap=hours_cap)}
 
 ---
 
-## 6. Career Positioning Advice
+## {s(6)}. Career Positioning Advice
 
 {_build_career_advice(strong_signals)}
 
 ---
 
-## 7. Risks and Hype to Ignore
+## {s(7)}. Risks and Hype to Ignore
 
-{_build_risks_section(noise_articles)}
-
----
-
-## 8. Source List
-
-{_build_source_list(articles)}{skill_gap_md}
+{_build_risks_section(noise_articles)}{market_fit_section}
 
 ---
 
-_Career Intelligence Assistant · rule-based classifier v1_
+## {s(8)}. Source List _(top articles only)_
+
+{_build_source_list(strong_signals + weak_signals_top)}{skill_gap_md}
+
+---
+
+_Career Intelligence Assistant · {career_mode} mode_
 _Human review required before changing career direction. Not financial advice._
 """
         md_path = REPORTS_DIR / f"weekly_career_brief_{week}.md"
@@ -832,8 +1122,13 @@ _Human review required before changing career direction. Not financial advice._
     # --- HTML ---
     if fmt in ("html", "both"):
         html_content = _render_html(
-            week, strong_signals, weak_signals, noise_articles,
+            week, strong_signals, weak_signals_top, noise_articles,
             skill_matrix, articles, skill_gap_html,
+            career_mode=career_mode,
+            career_actions_md=career_actions_md,
+            market_fit_md=market_fit_md,
+            weak_signals_rest_count=len(weak_signals_rest),
+            hours_cap=hours_cap,
         )
         html_path = REPORTS_DIR / f"weekly_career_brief_{week}.html"
         html_path.write_text(html_content, encoding="utf-8")

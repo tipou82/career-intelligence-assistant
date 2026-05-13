@@ -1,10 +1,24 @@
 # Career Intelligence Assistant
 
-A lightweight Python CLI tool that monitors industry news, extracts career-relevant signals, and generates a weekly decision-support brief.
+A lightweight Python CLI tool that monitors industry news, extracts career-relevant signals, and generates a weekly decision-support brief for a senior safety architect in external transition.
 
-**Target positioning:** *AI-augmented safety systems engineer for embedded AI / robotics / ADAS systems*
+**Current mode:** `external_transition`
 
-This is **not** a news aggregator. It is a structured **career decision-support tool** that maps industry signals to a personal T-shaped skill matrix and produces a weekly Markdown + HTML report with actionable recommendations.
+**Target positioning:**
+*Senior System Safety / Functional Safety Architect for safety-critical embedded systems, robotics, ADAS, industrial automation, and AI-enabled systems.*
+
+**Primary goals:**
+- Protect family income and employability through a realistic external transition
+- Identify senior safety architecture roles in Germany / Europe
+- Prioritize ISO 26262, ISO 13849/CMSE, SOTIF, IEC 61508/62061, embedded AI safety as differentiators
+- Consulting / TÜV / assessment track as parallel option
+
+This is **not** a news aggregator. It is a structured **career decision-support tool** that maps industry signals to a personal skill matrix and produces a weekly Markdown + HTML report with:
+
+- **Career Actions This Week** — concrete job search steps, companies to contact, keywords
+- **External Market Fit** — where your profile maps to the market
+- **Actionability scoring** — every signal rated for how much it should change your actions this week
+- Skill priority table, learning allocation (hard-capped at 15–20 h/week), risks to ignore
 
 ---
 
@@ -92,8 +106,8 @@ python -m src.main classify --llm claude
 
 ```bash
 # ── Core pipeline ──────────────────────────────────────────────
-python -m src.main run-weekly                  # full pipeline (rule-based)
-python -m src.main run-weekly --llm claude     # full pipeline (Claude Haiku)
+python -m src.main full-run-weekly --llm claude   # recommended: pipeline + push + email
+python -m src.main run-weekly --llm claude        # pipeline only (no push/email)
 
 # ── Individual steps ───────────────────────────────────────────
 python -m src.main collect                     # fetch RSS articles
@@ -155,63 +169,106 @@ python -m src.main send-email --week current
 
 ---
 
+## Career Mode
+
+Set `career_mode` in `config/skill_matrix.yaml`:
+
+| Mode | Description |
+|---|---|
+| `external_transition` | Optimised for senior safety architect job search in Germany/Europe. Adds "Career Actions This Week" and "External Market Fit" sections. Boosts Germany/Europe signals. Weights actionability at 20%. |
+| `default` | General industry monitoring. No career-specific sections. |
+
+**To switch modes**, edit one line:
+```yaml
+# config/skill_matrix.yaml
+career_mode: external_transition   # or: default
+```
+
+### external_transition mode features
+
+- **Section 2: Career Actions This Week** — top role clusters, companies to contact, CV keywords, networking targets, 7-day action plan
+- **External Market Fit** — maps your profile to: automotive safety, robotics/machine safety, industrial automation, consulting/TÜV, adjacent sectors
+- **Actionability score** (0–10) on every article — measures whether this signal should change your actions this week (hiring signal = 9+, generic GenAI = 1–2)
+- **Weak signals capped at 15** by actionability score, with theme summary for the rest
+- **Weekly learning allocation hard-capped** at `weekly_hours_cap` (default 18h) — job search and interview prep always appear first
+- **Scoring weights** shifted toward Germany/Europe regional fit (15%) and actionability (20%)
+
+---
+
 ## What the Report Contains
 
-Each weekly report has 8 sections:
+In `external_transition` mode, each weekly report has these sections:
 
 | Section | Content |
 |---|---|
 | 1. Executive Summary | Count of strong/weak signals, key industries and companies |
-| 2. Strong Signals | Top articles with full analysis: development, region, technologies, career relevance, recommended action |
-| 3. Weak Signals / Watchlist | Articles that may become important — monitor but don't act yet |
-| 4. Skill Priority Update | 7-column table: skill · priority · urgency · required depth · change · reason · weekly effort |
-| 5. Learning Allocation | Grouped learning plan by strategic focus (Deep Focus / Serious / Lightweight) |
-| 6. Career Positioning Advice | How this week's signals affect your positioning |
-| 7. Risks and Hype to Ignore | What to filter out |
-| 8. Source List | All articles used, with links |
+| **2. Career Actions This Week** | Role clusters, companies, CV keywords, networking, 7-day plan |
+| 3. Strong Signals | Top articles with full analysis + actionability score |
+| 4. Weak Signals / Watchlist | Top 15 by actionability (linked, with language flag) |
+| 5. Skill Priority Update | 7-column table: skill · priority · urgency · depth · change · reason · effort |
+| 6. Learning Allocation | Grouped plan (hard-capped at weekly_hours_cap h) |
+| 7. Career Positioning Advice | How this week's signals affect positioning |
+| 8. Risks and Hype to Ignore | What to filter out |
+| **External Market Fit** | Profile mapping to automotive / robotics / industrial / consulting |
+| Source List | Strong + shown weak signals, with links |
 
 ---
 
 ## Skill Matrix
 
-The skill matrix (`config/skill_matrix.yaml`) is **T-shaped**:
+The skill matrix (`config/skill_matrix.yaml`) is configured for **external transition**:
 
 ```
-Deep core (do intensively):
-  C++20 safety logic · ROS2 · AI perception monitoring · Soft skills · Portfolio
+Deep Focus (job search first):
+  External job search · Interview communication · Functional safety architecture
+  ISO 13849/CMSE · GitHub portfolio
 
-Broad supporting layer (build steadily):
-  Python · Linux · ISO 13849/CMSE · SOTIF/ISO PAS 8800 · Requirements traceability
+Serious (technical credibility):
+  ROS2 · C++20 · AI perception monitoring · SOTIF/ISO PAS 8800 · Linux
 
-Lightweight (maintain awareness):
-  MBSE/SysML2 · QNX concepts · MCP workflows · Career assistant
+Lightweight (awareness only):
+  MCP workflows · Career assistant · MBSE/SysML2 · General AI monitoring
 ```
 
-Each skill has three dimensions:
+Each skill has three dimensions plus a group:
 
-| Dimension | Range | Meaning |
+| Field | Range | Meaning |
 |---|---|---|
 | `priority` | 1–5 | Long-term career leverage |
 | `urgency` | 1–5 | Importance in the next 3 months |
 | `required_depth` | 1–5 | How deep the knowledge must go |
+| `weekly_hours_baseline` | 0–5 | Default weekly time allocation |
 
-Triggers in the skill matrix automatically show ↑ in the weekly table when relevant signals appear. For example: an article about "ISO 13849 collaborative robot safety function" triggers ↑ on the ISO 13849/CMSE skill row.
+The `weekly_hours_cap` field hard-limits the total recommended learning hours per week. Deep Focus items are allocated first. If the cap is reached, later items are trimmed automatically.
+
+Triggers in the skill matrix automatically show ↑ in the weekly table when relevant signals appear. For example: an article mentioning "ISO 13849" or "machinery safety" triggers ↑ on the ISO 13849/CMSE row.
 
 ---
 
 ## Relevance Scoring
 
-Each article is scored 1–10:
+Each article gets two scores:
 
-| Factor | Weight | Description |
+**`relevance_score` (1–10):** How relevant is this signal to your profile?
+
+| Factor | Default | `external_transition` | Description |
+|---|---|---|---|
+| Skill relevance | 30% | 25% | Match against target skills |
+| Career impact | 25% | 15% | High-value domain+skill combos |
+| Domain relevance | 22% | 15% | Target industries |
+| Actionability | — | **20%** | Hiring signals, job openings, restructuring |
+| Region (DE/EU) | 10% | **15%** | Germany 1.0 · Japan/China 0.8 |
+| Source reliability | 13% | 10% | IEEE/SAE 0.95+ · blogs 0.55–0.68 |
+
+**`career_actionability_score` (0–10):** Should this signal change your actions this week?
+
+| Score | Meaning | Examples |
 |---|---|---|
-| Skill relevance | 30% | Match against target skills (ROS2, ISO 26262, SOTIF, fault injection, …) |
-| Career impact | 25% | High-value domain + skill combinations (e.g. robotics + ROS2) |
-| Domain relevance | 22% | Match against target industries (robotics, automotive, ADAS, …) |
-| Source reliability | 13% | IEEE/SAE 0.95+ · news agencies 0.87–0.92 · blogs 0.55–0.68 |
-| Region relevance | 10% | Germany 1.0 · Japan/China 0.8 · USA 0.8 |
+| 8–10 | Act now | Safety job openings, hiring signals, layoffs in target sector |
+| 5–7 | Monitor | Company safety news, standards updates, technology signals |
+| 1–4 | Ignore | Generic GenAI, consumer hype, demos without hiring/safety signal |
 
-Articles scoring ≥ 6.5 → **strong signal**. Articles 3.5–6.4 → **weak signal**. Below → noise.
+Articles scoring ≥ 6.5 → **strong signal**. Articles 3.5–6.4 → **weak signal** (shown top 15 by actionability). Below → noise.
 
 ---
 

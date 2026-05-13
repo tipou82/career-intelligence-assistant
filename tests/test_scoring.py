@@ -6,7 +6,10 @@ from src.score_relevance import (
     _region_score,
     _skill_score,
     _career_impact_score,
+    _actionability_score,
     score_article,
+    WEIGHTS,
+    WEIGHTS_EXTERNAL_TRANSITION,
 )
 
 
@@ -282,3 +285,86 @@ class TestScoreArticle:
         )
         scores = score_article(self._article, cls, {}, {}, {})
         assert scores["total"] >= 6.0
+
+    def test_actionability_score_in_result(self) -> None:
+        cls = make_cls()
+        scores = score_article(self._article, cls, {}, {}, {})
+        assert "actionability" in scores
+        assert 0.0 <= scores["actionability"] <= 10.0
+
+    def test_external_transition_mode_weights_sum_to_one(self) -> None:
+        w = WEIGHTS_EXTERNAL_TRANSITION
+        total = sum(v for v in w.values())
+        assert abs(total - 1.0) < 1e-9
+
+    def test_default_mode_weights_sum_to_one(self) -> None:
+        w = WEIGHTS
+        total = sum(v for v in w.values())
+        assert abs(total - 1.0) < 1e-9
+
+    def test_external_transition_mode_scores_germany_higher(self) -> None:
+        cls_de = make_cls(industries=["functional_safety"], regions=["germany"],
+                          technologies=["iso 26262"], source_reliability=0.85)
+        cls_us = make_cls(industries=["functional_safety"], regions=["usa"],
+                          technologies=["iso 26262"], source_reliability=0.85)
+        art = {"id": 1, "title": "Safety job opening", "summary": "We are hiring safety engineers"}
+        score_de = score_article(art, cls_de, {}, {}, {}, career_mode="external_transition")
+        score_us = score_article(art, cls_us, {}, {}, {}, career_mode="external_transition")
+        assert score_de["total"] > score_us["total"]
+
+    def test_bosch_japan_not_dominant(self) -> None:
+        # Bosch Japan article should score below a safety job opening in Germany
+        art_japan = {"id": 1, "title": "Bosch Japan opens new office in Tokyo", "summary": "Bosch expands Japan operations"}
+        art_job = {"id": 2, "title": "Safety architect vacancy Germany", "summary": "We are hiring functional safety architect ISO 26262"}
+        cls_japan = make_cls(industries=["automotive"], regions=["japan"], companies=["Bosch"])
+        cls_job = make_cls(industries=["functional_safety"], regions=["germany"],
+                           technologies=["iso 26262", "safety architecture"])
+        score_japan = score_article(art_japan, cls_japan, {}, {}, {}, career_mode="external_transition")
+        score_job = score_article(art_job, cls_job, {}, {}, {}, career_mode="external_transition")
+        assert score_job["total"] >= score_japan["total"]
+
+
+# ---------------------------------------------------------------------------
+# Actionability score
+# ---------------------------------------------------------------------------
+
+class TestActionabilityScore:
+    def _art(self, title: str, summary: str = "") -> dict:
+        return {"id": 1, "title": title, "summary": summary}
+
+    def test_hiring_signal_scores_high(self) -> None:
+        art = self._art("We are hiring functional safety engineers in Munich")
+        cls = make_cls(industries=["functional_safety"], regions=["germany"])
+        score = _actionability_score(art, cls)
+        assert score >= 0.7
+
+    def test_generic_chatgpt_news_scores_low(self) -> None:
+        art = self._art("ChatGPT viral marketing campaign drives brand engagement")
+        cls = make_cls(industries=["ai"])
+        score = _actionability_score(art, cls)
+        assert score <= 0.3
+
+    def test_safety_standard_event_scores_medium(self) -> None:
+        art = self._art("ISO 13849 update: new requirements for machinery safety certification")
+        cls = make_cls(industries=["functional_safety"])
+        score = _actionability_score(art, cls)
+        assert score >= 0.4
+
+    def test_restructuring_signal_scores_medium_plus(self) -> None:
+        art = self._art("Bosch announces restructuring and headcount reduction in automotive division",
+                        "Major layoffs announced in Germany engineering teams")
+        cls = make_cls(industries=["automotive"], regions=["germany"])
+        score = _actionability_score(art, cls)
+        assert score >= 0.35
+
+    def test_humanoid_demo_without_safety_scores_low(self) -> None:
+        art = self._art("Amazing humanoid demo wows investors at CES")
+        cls = make_cls(industries=["robotics"])
+        score = _actionability_score(art, cls)
+        assert score <= 0.4
+
+    def test_germany_region_boosts_score(self) -> None:
+        art = self._art("Safety engineer job opening in Stuttgart")
+        cls_de = make_cls(industries=["functional_safety"], regions=["germany"])
+        cls_us = make_cls(industries=["functional_safety"], regions=["usa"])
+        assert _actionability_score(art, cls_de) > _actionability_score(art, cls_us)

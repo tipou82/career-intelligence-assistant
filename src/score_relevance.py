@@ -124,18 +124,66 @@ TIER_2_COMPANIES = {
     "anthropic", "microsoft", "huawei", "baidu", "amd", "intel",
 }
 
-# Weights (must sum to 1.0)
-# Company relevance removed — it biased scores toward articles merely mentioning
-# a tracked company regardless of topic relevance.
-# Redistributed: skill +0.05, domain +0.02, career_impact +0.05, source_reliability +0.03
+# Weights — default mode
 WEIGHTS = {
     "domain": 0.22,
     "skill": 0.30,
-    "company": 0.00,   # removed from total; _company_score kept for career_impact use
+    "company": 0.00,
     "region": 0.10,
     "career_impact": 0.25,
     "source_reliability": 0.13,
 }
+
+# Weights — external_transition mode
+# Prioritises employability signals, Germany/Europe fit, and actionability
+# over general trend coverage.
+WEIGHTS_EXTERNAL_TRANSITION = {
+    "domain": 0.15,
+    "skill": 0.25,
+    "company": 0.00,
+    "region": 0.15,        # Germany/Europe fit matters more
+    "career_impact": 0.15,
+    "source_reliability": 0.10,
+    "actionability": 0.20, # new dimension
+}
+
+# Terms that strongly signal career actionability for a senior safety architect
+_HIRING_TERMS = frozenset([
+    "hiring", "job opening", "vacancy", "vacancies", "open position",
+    "we are hiring", "we're hiring", "join our team", "looking for",
+    "job posting", "career opportunity", "stellenangebot", "wir suchen",
+    "stelle", "stellenausschreibung", "bewerbung", "stellen frei",
+    "求人", "採用", "募集",  # Japanese hiring terms
+    "招聘", "职位", "岗位",  # Chinese hiring terms
+])
+_RESTRUCTURING_TERMS = frozenset([
+    "restructuring", "layoffs", "redundancy", "job cuts", "headcount reduction",
+    "downsizing", "restrukturierung", "stellenabbau", "entlassungen",
+    "kurzarbeit", "workforce reduction",
+])
+_SAFETY_JOB_TERMS = frozenset([
+    "safety engineer", "safety architect", "functional safety", "system safety",
+    "safety manager", "safety consultant", "safety assessor", "safety case",
+    "iso 26262", "iso 13849", "iec 61508", "iec 62061", "sotif", "iso/pas 8800",
+    "cmse", "tüv", "tuv", "fsae", "fse certified",
+    "safety-critical", "rams engineer", "safety certification",
+])
+_STANDARD_EVENT_TERMS = frozenset([
+    "iso 13849", "iec 61508", "iec 62061", "iso 26262", "sotif", "iso/pas 8800",
+    "cmse certification", "tüv certification", "safety standard", "safety regulation",
+    "machinery directive", "eu ai act", "new standard", "standard update",
+])
+# Terms that make an article LOW actionability for a safety architect
+_HYPE_TERMS = frozenset([
+    "chatgpt", "chatbot", "viral", "social media", "influencer", "celebrity",
+    "investment round", "funding round", "unicorn", "ipo", "valuation",
+    "billion dollar", "marketing", "brand", "consumer app", "lifestyle",
+    "entertainment", "sports", "gaming",
+])
+_DEMO_WITHOUT_SIGNAL = frozenset([
+    "humanoid demo", "robot dance", "concept car", "prototype reveal",
+    "impressive demo", "viral robot", "amazing robot",
+])
 
 _CJK_TO_EN: Dict[str, str] = {
     # Functional safety
@@ -331,6 +379,63 @@ def _career_impact_score(classification: Dict[str, Any]) -> float:
     return 0.2
 
 
+def _actionability_score(
+    article: Dict[str, Any],
+    classification: Dict[str, Any],
+) -> float:
+    """Score how much this signal should change concrete career actions this week.
+
+    Returns 0.0–1.0. Used only in external_transition mode.
+
+    High (0.7–1.0): job openings, hiring signals, restructuring, safety standards events
+    Medium (0.4–0.6): company safety news, regulations, technology signals
+    Low (0.0–0.3): generic GenAI, consumer hype, demos without hiring/safety signal
+    """
+    text = (
+        (article.get("title") or "") + " " + (article.get("summary") or "")
+    ).lower()
+    score = 0.25  # baseline
+
+    # Strong positive: explicit hiring or job signal
+    if any(t in text for t in _HIRING_TERMS):
+        score += 0.45
+
+    # Strong positive: safety-specific job role terms
+    if any(t in text for t in _SAFETY_JOB_TERMS):
+        score += 0.25
+
+    # Moderate positive: restructuring → opportunity elsewhere
+    if any(t in text for t in _RESTRUCTURING_TERMS):
+        score += 0.15
+
+    # Moderate positive: safety standards events → certification/consulting demand
+    if any(t in text for t in _STANDARD_EVENT_TERMS):
+        score += 0.15
+
+    # Regional boost: Germany/Europe signals are most actionable
+    regions = {r.lower() for r in classification.get("regions", [])}
+    if "germany" in regions:
+        score += 0.10
+    elif "europe" in regions:
+        score += 0.05
+
+    # Negative: pure hype with no safety/hiring angle
+    hype_count = sum(1 for t in _HYPE_TERMS if t in text)
+    if hype_count >= 2:
+        score *= 0.25
+    elif hype_count == 1:
+        # Only penalise if no safety terms present
+        if not any(t in text for t in _SAFETY_JOB_TERMS):
+            score *= 0.5
+
+    # Negative: demos with no hiring/production/safety signal
+    if any(t in text for t in _DEMO_WITHOUT_SIGNAL):
+        if not any(t in text for t in _HIRING_TERMS | _SAFETY_JOB_TERMS):
+            score *= 0.3
+
+    return min(score, 1.0)
+
+
 def _source_reliability_score(
     classification: Dict[str, Any],
     article: Dict[str, Any] | None = None,
@@ -364,27 +469,42 @@ def _source_reliability_score(
 def score_article(
     article: Dict[str, Any],
     classification: Dict[str, Any],
-    keywords: Dict,  # reserved for future use
-    companies: Dict,  # reserved for future use
-    sources_config: Dict,  # reserved for future use
+    keywords: Dict,
+    companies: Dict,
+    sources_config: Dict,
+    career_mode: str = "default",
 ) -> Dict[str, float]:
-    """Compute weighted relevance score.
+    """Compute weighted relevance score and career actionability score.
 
-    Returns a dict with individual component scores (0–10 scale) and 'total'.
+    Returns a dict with component scores (0–10 scale), 'total', and
+    'actionability' (0–10, always computed regardless of mode).
     """
     domain = _domain_score(classification)
     skill = _skill_score(classification)
     region = _region_score(classification)
     career_impact = _career_impact_score(classification)
     source_rel = _source_reliability_score(classification, article)
+    actionability = _actionability_score(article, classification)
 
-    total = (
-        domain * WEIGHTS["domain"]
-        + skill * WEIGHTS["skill"]
-        + region * WEIGHTS["region"]
-        + career_impact * WEIGHTS["career_impact"]
-        + source_rel * WEIGHTS["source_reliability"]
-    ) * 10.0
+    if career_mode == "external_transition":
+        w = WEIGHTS_EXTERNAL_TRANSITION
+        total = (
+            domain * w["domain"]
+            + skill * w["skill"]
+            + region * w["region"]
+            + career_impact * w["career_impact"]
+            + source_rel * w["source_reliability"]
+            + actionability * w["actionability"]
+        ) * 10.0
+    else:
+        w = WEIGHTS
+        total = (
+            domain * w["domain"]
+            + skill * w["skill"]
+            + region * w["region"]
+            + career_impact * w["career_impact"]
+            + source_rel * w["source_reliability"]
+        ) * 10.0
 
     return {
         "domain": round(domain * 10, 2),
@@ -392,5 +512,6 @@ def score_article(
         "region": round(region * 10, 2),
         "career_impact": round(career_impact * 10, 2),
         "source_reliability": round(source_rel * 10, 2),
+        "actionability": round(actionability * 10, 2),
         "total": round(min(total, 10.0), 2),
     }

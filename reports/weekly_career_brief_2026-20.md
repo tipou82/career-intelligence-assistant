@@ -1,16 +1,50 @@
 # Weekly Career Intelligence Brief – 2026-20
 
-_Generated: 2026-05-13 09:29_
+_Mode: **External Transition** · Generated: 2026-05-13 09:57_
 
 ---
 
 ## 1. Executive Summary
 
-Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: adas, ai, digital_twin, physical_ai, automotive. Notable companies: Hyundai Motor Group, Mercedes-Benz, Figure AI, Intel, Daimler Truck. See Section 2 for full analysis.
+Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key activity in: physical_ai, ai, adas, automotive, software_defined_vehicle. Notable companies: NIO, Scout Motors, Tesla, Mercedes-Benz, Figure AI. See Section 2 for full analysis.
 
 ---
 
-## 2. Strong Signals
+## 2. Career Actions This Week
+
+### Top 5 Role Clusters to Target
+- Functional Safety Architect / System Safety Engineer
+- Safety Consultant / Assessor (TÜV, SGS, Bureau Veritas)
+- Machine Safety Engineer (ISO 13849 / IEC 62061)
+- Embedded AI Safety Engineer (SOTIF / ISO PAS 8800)
+- RAMS Engineer (Railway / Industrial Automation)
+
+### Top Companies to Monitor or Approach
+- Google DeepMind
+- Tesla
+- Intel
+- Toyota
+- Figure AI
+
+### Recommended CV / Application Keywords
+`人形机器人`, `自动驾驶`, `自動運転`, `humanoid`, `强化学习`, `ヒューマノイド`, `edge ai`, `robotics engineering`
+
+### Networking Targets
+- TÜV SÜD / TÜV Rheinland functional safety teams
+- Safety engineer communities (LinkedIn: Functional Safety Professionals)
+- CMSE/ISO 13849 contacts from machinery/robotics sector
+- ADAS safety architects at Continental, ZF, Mobileye
+
+### 7-Day Concrete Action Plan
+1. **Apply** to 3–5 senior safety architect / consultant roles in Germany/Europe
+2. **Update LinkedIn headline** → include ISO 26262, ISO 13849, SOTIF, AI safety
+3. **Contact** one TÜV / safety consultancy (TÜV SÜD, TÜV Rheinland, SGS, Exida)
+4. **Practice** one interview story: cross-domain safety architecture decision
+5. **Review** this week's strong signals for new employer leads
+
+---
+
+## 3. Strong Signals
 
 ### 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑  `🇨🇳 ZH`
 - **Development:** 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 &nbsp;&nbsp; 电子工程专辑
@@ -170,100 +204,73 @@ Week 2026-20 produced **23 strong signal(s)** and **287 weak signal(s)**. Key ac
 
 ---
 
-## 3. Weak Signals / Watchlist
+## 4. Weak Signals / Watchlist _(top 15 by actionability)_
 
-- **[Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/)** `🇬🇧 EN` (score: 6.4) — Electrek — 2026-05-11
-- **[Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot)** `🇬🇧 EN` (score: 6.4) — IEEE Spectrum Robotics — 2026-05-12
-- **[VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/)** `🇬🇧 EN` (score: 6.4) — Automotive News — 2026-05-12
-- **[Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/)** `🇬🇧 EN` (score: 6.4) — Automotive World — 2026-05-11
-- **[Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/)** `🇬🇧 EN` (score: 6.3) — Automotive World — 2026-05-11
-- **[Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/)** `🇬🇧 EN` (score: 6.3) — Automotive World — 2026-05-12
-- **[Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls)** `🇬🇧 EN` (score: 6.3) — Nikkei Asia — 2026-05-12
-- **[Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/)** `🇬🇧 EN` (score: 6.3) — Automotive News — 2026-05-11
-- **[Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/)** `🇬🇧 EN` (score: 6.3) — Automotive World — 2026-05-12
-- **[KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5)** `🇬🇧 EN` (score: 6.3) — GNews DE: Eingebettete KI — 2026-05-13
-- **[Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/)** `🇬🇧 EN` (score: 6.2) — Electrek — 2026-05-11
-- **[Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up)** `🇬🇧 EN` (score: 6.2) — Nikkei Asia — 2026-05-12
-- **[トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html)** `🇯🇵 JA` (score: 6.2) — Response.jp — 2026-05-13
-- **[Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇬🇧 EN` (score: 6.2) — Heise Online — 2026-05-13
-- **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (score: 6.2) — Automotive World — 2026-05-12
-- **[Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization](https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/)** `🇬🇧 EN` (score: 6.1) — NVIDIA Developer Blog — 2026-05-11
-- **[Tesla Robotaxi’s ‘convenience issues’ are hiding the real safety bottleneck](https://electrek.co/2026/05/12/tesla-robotaxi-convenience-issues-hide-safety-bottleneck/)** `🇬🇧 EN` (score: 6.1) — Electrek — 2026-05-12
-- **[Tesla China retail sales fall 10% in April despite reports of 36% surge](https://electrek.co/2026/05/11/tesla-china-retail-sales-decline-april-2026-wholesale-misleading/)** `🇬🇧 EN` (score: 6.1) — Electrek — 2026-05-11
-- **[South Korea Exploring Using Hyundai Robots as Army Numbers Fall - Bloomberg.com](https://news.google.com/rss/articles/CBMitAFBVV95cUxQRWFFRUQ4YzF2WmxWSk1VaG9NTDlnNjR4WTBLUGdieXB1NFNXLTZJaHJGdGdrQ0FEaXpUTVJHUHEtdFQ3TWVUX1Nja0pKajN3d296X3NuU1dIaWZVemM3WWZtdTN3YXVFLWtPZ3hOU3A1d2p3TTlDMGh4UlMwV3B5aDZwYjFoMDdleHdhcXJHaEk1enVySHZZLUtoTnV3VzZhNktSa0J4TktObFNJc3lkcXhiaXM?oc=5)** `🇬🇧 EN` (score: 6.1) — GNews: Boston Dynamics — 2026-05-11
-- **[BYD’s cheapest EV now has a roof-mounted LiDAR, and it still starts at just $13,000](https://electrek.co/2026/05/11/byd-upgrades-cheapest-ev-with-lidar-still-starts-at-13k/)** `🇬🇧 EN` (score: 6.1) — Electrek — 2026-05-11
-- **[Neutralizing the Gigascale Problem: How to Solve the Physical Power Paradox of Extreme AI Training Loads](https://spectrum.ieee.org/gigascale-ai-datacenter-power)** `🇬🇧 EN` (score: 6.1) — IEEE Spectrum — 2026-05-12
-- **[CUDA Proves Nvidia Is a Software Company](https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/)** `🇬🇧 EN` (score: 6.0) — Wired — 2026-05-11
-- **[林俊旸创业，新公司估值约20亿美金丨智能涌现独家](https://36kr.com/p/3807382930251523?f=rss)** `🇨🇳 ZH` (score: 6.0) — 36氪 36Kr — 2026-05-13
-- **[先导智能与北京人形机器人创新中心签署战略合作协议 - 金融界](https://news.google.com/rss/articles/CBMib0FVX3lxTFBoNDgxZTY1Uk9SSTVTNDZIQTJDN2N2b25FWGdfRlRYWnY2Y1FMN3k3Z2VENUJLZjZGYkRld2JCTGp2cHN3eHAxbkNmQld6VXRHeUx5MHFRTUpuSVZCNkhFUUQ0Q1hMNUJuVlR0aGNqOA?oc=5)** `🇨🇳 ZH` (score: 6.0) — GNews ZH: 人形机器人 — 2026-05-13
-- **[Toyota steps up India ambitions, targets one million upa](https://www.automotiveworld.com/analysis/toyota-steps-up-india-ambitions-targets-one-million-upa/)** `🇬🇧 EN` (score: 6.0) — Automotive World — 2026-05-11
-- **[Automobilbranche: Autoindustrie rechnet mit größerem Stellenabbau](https://www.handelsblatt.com/politik/deutschland/automobilbranche-autoindustrie-rechnet-mit-groesserem-stellenabbau/100224763.html)** `🇬🇧 EN` (score: 6.0) — Handelsblatt Schlagzeilen — 2026-05-13
-- **[The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy](https://www.wired.com/story/unitree-gd01-mecha-robot/)** `🇬🇧 EN` (score: 5.9) — Wired — 2026-05-12
-- **[【研报 A118】具身智能机器人和移动通信技术研究报告：端网云协同重构汽车智造与自动驾驶 - blog.csdn.net](https://news.google.com/rss/articles/CBMiakFVX3lxTE5BbXI4M0JqakhabVZFRVBDb3MtcnZ0S1NyRzVicFJWUHdPMU03SzRGNmpKc2JuTGlFdG5xVkFuMW9sQktzemZoZnc0UkxrR2U4RjZCZDFUbzdNYmVuQ2kySTdaaHplM2VMMEE?oc=5)** `🇨🇳 ZH` (score: 5.9) — GNews ZH: 人形机器人 — 2026-05-13
-- **[常州具身智能数据实验平台正式投运 - 中国科技网](https://news.google.com/rss/articles/CBMicEFVX3lxTE9YVTREU01tLXJNeGkzd2VmTzBWR3lEOXhyOHNyMmNWWWl2ZjUzaE8tN3hwRmZJSnVaSVJEbzR3bVIzdTIzMEZvTnVDQXdqcF9CNXBCSHVYajdOSGdsRTNQYWlkVkQtR01CVE9VWFZtdGU?oc=5)** `🇨🇳 ZH` (score: 5.9) — GNews ZH: 人形机器人 — 2026-05-12
-- **[Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers](https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat)** `🇬🇧 EN` (score: 5.9) — Arm Newsroom — 2026-05-11
+- **[Honda is bringing Mobile Power Pack e: battery swap tech to the US](https://electrek.co/2026/05/10/honda-is-bringing-mobile-power-pack-e-battery-swap-tech-to-the-us/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Electrek — 2026-05-11
+- **[Hello Robot Sets the Standard for Practical, Safe Home Robots](https://spectrum.ieee.org/stretch-4-home-robot)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — IEEE Spectrum Robotics — 2026-05-12
+- **[VW-backed IAV faces protests over plans to cut 1,400 jobs](https://www.autonews.com/technology/mobility/ane-vw-iav-berlin-job-cuts-protests-germany-software-0512/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive News — 2026-05-12
+- **[Toyota plans 100,000-unit India plant in Maharashtra](https://www.automotiveworld.com/news/toyota-plans-100000-unit-india-plant-in-maharashtra/)** `🇬🇧 EN` (rel: 6.4 · act: 0.0) — Automotive World — 2026-05-11
+- **[Tariffs and forex lead to significant fall in Toyota profit](https://www.automotiveworld.com/analysis/tariffs-and-forex-lead-to-significant-fall-in-toyota-profit/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-11
+- **[Panasonic’s 4680 mass production pushed back yet again](https://www.automotiveworld.com/news/panasonics-4680-mass-production-pushed-back-yet-again/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
+- **[Panasonic EV battery production delayed again as customer order stalls](https://asia.nikkei.com/business/automobiles/electric-vehicles/panasonic-ev-battery-production-delayed-again-as-customer-order-stalls)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Nikkei Asia — 2026-05-12
+- **[Embattled Honda CEO Toshihiro Mibe scrambles for reboot in face of historic loss from bad bet on EVs](https://www.autonews.com/honda/an-honda-ev-loss-earnings-restructuring-plan-toshihiro-mibe-0511/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive News — 2026-05-11
+- **[Ouster Rev8 colour LiDAR joins Nvidia Drive Hyperion](https://www.automotiveworld.com/news/ouster-rev8-colour-lidar-joins-nvidia-drive-hyperion/)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — Automotive World — 2026-05-12
+- **[KI in der automobilen Softwareentwicklung: Saskia Kohlhaas, IAV - all-electronics.de](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTUFRdE1TbS1yc3pXWVM4UXEyNFFvY19GbEZWR25IbVUxRHFPU1JTX2c4VGxYQ25kUDdHVjZtT1BhcWVOUUtkcERVT01RamJfekFMVk1jQThKczd2eGIxamVwR0RXMTluTUJWLWRfZmZoR1ZpVDRKVmVySmdkcDR3WkNqRGJ2cUc2Yng1VGIwdVkza05ubjltOFJNZUtqQmduNGpJQVpZZHFwSTFwVlpIRmhuS0ZkT29QMldMM05wcWtOVU9sYXRLZ3FuWENDTW9vNGhpbWdsR2kzQQ?oc=5)** `🇬🇧 EN` (rel: 6.3 · act: 0.0) — GNews DE: Eingebettete KI — 2026-05-13
+- **[Around the world in 80 charges: The first electric semi to circumnavigate the globe](https://electrek.co/2026/05/11/this-electric-semi-truck-will-drive-around-the-world-in-80-charges/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Electrek — 2026-05-11
+- **[Honda and Toyota see sharp Chinese sales drops as competition heats up](https://asia.nikkei.com/business/automobiles/honda-and-toyota-see-sharp-chinese-sales-drops-as-competition-heats-up)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Nikkei Asia — 2026-05-12
+- **[トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html)** `🇯🇵 JA` (rel: 6.2 · act: 0.0) — Response.jp — 2026-05-13
+- **[Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Heise Online — 2026-05-13
+- **[Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/)** `🇬🇧 EN` (rel: 6.2 · act: 0.0) — Automotive World — 2026-05-12
+
+_+ 272 further weak signals not shown. Main themes: automotive (148), robotics (82), embedded (50), ai (46), adas (33)._
 
 ---
 
-## 4. Skill Priority Update
+## 5. Skill Priority Update
 
 | Skill | Priority | Urgency | Req. Depth | Change | Reason | Weekly Effort |
 |---|---|---|---|---|---|---|
 | **Deep Focus** | | | | | | |
-| ROS2 | 5/5 | 5/5 | 4/5 | ↑ | Signals: physical ai | 5 h |
-| C++20 and safety logic | 5/5 | 5/5 | 5/5 | ↑ | Signals: embedded software | 5 h |
-| AI perception monitoring | 5/5 | 4/5 | 5/5 | → | No new signals this week | 4 h |
-| Soft skills and interview communication | 5/5 | 5/5 | 4/5 | → | No new signals this week | 2 h |
-| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 3 h |
+| External job search and applications | 5/5 | 5/5 | 4/5 | → | No new signals this week | 5 h |
+| Interview communication and case studies | 5/5 | 5/5 | 4/5 | → | No new signals this week | 3 h |
+| Functional safety and system safety architecture | 5/5 | 5/5 | 5/5 | ↑ | Signals: functional safety, iso 26262 | 3 h |
+| ISO 13849 and CMSE | 5/5 | 4/5 | 4/5 | → | No new signals this week | 2 h |
+| GitHub portfolio and documentation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 2 h |
 | **Serious** | | | | | | |
-| Python automation | 4/5 | 5/5 | 3/5 | → | No new signals this week | 3 h |
-| Linux practical skills | 4/5 | 4/5 | 3/5 | → | No new signals this week | 2 h |
-| ISO 13849 and CMSE | 4/5 | 4/5 | 4/5 | → | No new signals this week | 3 h |
-| SOTIF and ISO/PAS 8800 | 4/5 | 3/5 | 4/5 | → | No new signals this week | 2 h |
-| Requirements engineering and traceability | 4/5 | 3/5 | 4/5 | → | No new signals this week | 2 h |
+| ROS2 | 4/5 | 4/5 | 4/5 | ↑ | Signals: physical ai | 1 h |
+| C++20 and safety logic | 4/5 | 3/5 | 5/5 | ↑ | Signals: embedded software | 1 h |
+| AI perception monitoring | 4/5 | 3/5 | 5/5 | → | No new signals this week | 1 h |
+| SOTIF and ISO/PAS 8800 | 4/5 | 3/5 | 4/5 | → | No new signals this week | 1 h |
+| Linux practical skills | 3/5 | 3/5 | 3/5 | → | No new signals this week | 1 h |
+| QNX and POSIX supervisor concepts | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
 | **Lightweight** | | | | | | |
-| MBSE and SysML2 | 3/5 | 3/5 | 3/5 | → | No new signals this week | 2 h |
-| QNX and POSIX supervisor concepts | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
-| MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
-| Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 1 h |
+| MCP and agentic AI workflow | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
+| Career Intelligence Assistant | 3/5 | 2/5 | 2/5 | → | No new signals this week | 0 h |
+| MBSE and SysML2 | 3/5 | 2/5 | 3/5 | → | No new signals this week | 0 h |
+| General AI trend monitoring | 2/5 | 2/5 | 1/5 | → | No new signals this week | 0 h |
 | **Defer** | | | | | | |
-| Cybersecurity and safety interface | 2/5 | 1/5 | 2/5 | → | No new signals this week | 0 h |
 | Cloud and MLOps | 2/5 | 1/5 | 1/5 | → | No new signals this week | 0 h |
 
 ---
 
-## 5. Recommended Learning Allocation for Next Week
+## 6. Recommended Learning Allocation for Next Week
 
-**Deep Focus**
-- **6 h:** Raspberry Pi ROS2 nodes: camera, ultrasonic, decision, actuator, health — implement, test and document
-- **6 h:** C++20 StateEvaluator, HeartbeatMonitor, TimeoutChecker, PlausibilityChecker — implement with GoogleTest
-- **4 h:** Implement confidence/latency/stale-data monitoring nodes; add fault injection and degraded-mode logic
-- **2 h:** Practice 5 core interview stories: project, safety philosophy, AI trade-offs, cross-domain standards, target role
-- **3 h:** Write README, test report, architecture diagram, demo video — make portfolio externally readable
-  _(Subtotal: 21 h)_
+**Deep Focus — highest return on time this week**
+- **5 h:** Apply to 3–5 roles, update LinkedIn headline, contact 1–2 recruiters or TÜV/consultancy leads
+- **3 h:** Prepare 3 structured interview stories: cross-domain safety, AI safety trade-off, architecture leadership
+- **4 h:** Write one architecture case study or decision record connecting ISO 26262 and ISO 13849 for a robotics/automation context
+- **2 h:** Work through one PLr determination example with Category/MTTFd/DCavg; document in portfolio
+- **2 h:** Update README, add architecture diagram, publish test results — make portfolio externally readable in 5 min
+  _(Subtotal: 16 h)_
 
-**Serious — build steadily**
-- **3 h:** Python camera AI node, fault injection scripts, ROS2 Python nodes, data processing
-- **2 h:** SSH, processes, systemd, GPIO, fault injection via process kill, Ethernet heartbeat
-- **3 h:** Safety function definition, PL/PLr, Categories, MTTFd/DCavg/CCF, SISTEMA basics — apply to robot arm example
-- **2 h:** SOTIF concept, ODD, performance limitations, PAS 8800 overview — connect to AI camera monitoring in demo
-- **2 h:** Write Markdown requirements, YAML interfaces, traceability CSV for the demonstrator — req-to-design-to-test
-  _(Subtotal: 12 h)_
-
-**Lightweight — maintain awareness**
-- **2 h:** Draw architecture diagram (Mermaid), write safety state model, add traceability table to portfolio
-- **1 h:** Implement POSIX watchdog/supervisor on Linux; document QNX portability concept in README
-- **1 h:** Use Claude/Codex via MCP for code review, test generation, requirements drafting — document the workflow
-- **1 h:** Weekly: run pipeline, review report, update cv_skills.yaml self-ratings
-  _(Subtotal: 5 h)_
-
-**Defer**
-  _(Subtotal: 0 h)_
-_Target: 15–20 h/week. This week total: ~38 h. Adjust defer and lightweight items to stay within your available time._
+**Serious — build steadily to stay hireable**
+- **2 h:** Implement one ROS2 safety node; document interface in architecture diagram
+  _(Subtotal: 2 h)_
+_Weekly total: ~18 h (cap: 18 h). ⚠️ Cap applied. Prioritise Deep Focus items — job search first._
 
 ---
 
-## 6. Career Positioning Advice
+## 7. Career Positioning Advice
 
 Based on this week's signals, your positioning in **functional safety + embedded AI systems** remains strategically sound.
 
@@ -274,7 +281,7 @@ Based on this week's signals, your positioning in **functional safety + embedded
 
 ---
 
-## 7. Risks and Hype to Ignore
+## 8. Risks and Hype to Ignore
 
 - **Generic GenAI / chatbot news:** Not relevant unless tied to safety-critical or embedded systems.
 - **Single-startup hype without hiring or technical signal:** Log it, but do not change skill priorities.
@@ -291,7 +298,35 @@ Based on this week's signals, your positioning in **functional safety + embedded
 
 ---
 
-## 8. Source List
+## External Market Fit
+
+**🚗 Automotive Safety (ISO 26262 / SOTIF)**
+Profile fit: **Strong** — primary background. Senior differentiation through cross-domain and AI safety.
+_Active signals this week: none this week._
+
+**🤖 Robotics & Machine Safety (ISO 13849 / IEC 62061)**
+Profile fit: **Growing** — opens industrial automation, collaborative robotics, humanoid markets.
+Active signals this week:
+  - 【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑
+  - MIPI Alliance Forms Physical AI Group Focused on Humanoids
+  - 動かぬ検証機「SEIMEI」に純国産ヒューマノイド開発に向けたKyoHAの覚悟を見た
+
+**🏭 Industrial Automation (IEC 61508 / RAMS)**
+Profile fit: **Adjacent** — cross-domain safety standards apply directly. Underserved by pure automotive engineers.
+Active signals this week:
+  - Figure AI: Bringing Humanoid Robots Into Industry - Thomasne
+
+**🔍 Consulting / TÜV / Assessment**
+Profile fit: **High demand** — senior safety engineers with multi-standard fluency are scarce.
+_Active signals this week: none this week._
+
+**✈️ Adjacent: Railway / Aerospace / Medical Device**
+Profile fit: **Optional** — transferable standards knowledge; only pursue if direct opportunity arises.
+_Active signals this week: none this week._
+
+---
+
+## 9. Source List _(top articles only)_
 
 - [【上海/深圳线下报名】TI工业自动化与机器人功能安全研讨会 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa05XQndUY21TZ1N0VWZMOXc4N1dfQngtb2pxb3hrYU9nV0tQMnF4alA3NlNHQ3A5bjBxWlV3RU5mcnJnUGJHZ2NxMTNlS0NsQUhN?oc=5) — GNews ZH: 机器人安全 (2026-05-13)
 - [MIPI Alliance Forms Physical AI Group Focused on Humanoids](https://www.embedded.com/mipi-alliance-forms-physical-ai-group-focused-on-humanoids/) — Embedded.com (2026-05-12)
@@ -331,975 +366,14 @@ Based on this week's signals, your positioning in **functional safety + embedded
 - [トヨタ『RAV4』新型に搭載、日本精機が「スロープ表示」HUD出展へ…人とくるまのテクノロジー展2026](https://response.jp/article/2026/05/13/411213.html) — Response.jp (2026-05-13)
 - [Unitree zeigt mehr als 3 m hohen Mecha-artigen humanoiden Roboter GD01](https://www.heise.de/news/Unitree-zeigt-mehr-als-3-m-hohen-Mecha-artigen-humanoiden-Roboter-GD01-11292566.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
 - [Mercedes-Benz to roll out n8n AI platform globally](https://www.automotiveworld.com/news/mercedes-benz-to-roll-out-n8n-ai-platform-globally/) — Automotive World (2026-05-12)
-- [Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization](https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/) — NVIDIA Developer Blog (2026-05-11)
-- [Tesla Robotaxi’s ‘convenience issues’ are hiding the real safety bottleneck](https://electrek.co/2026/05/12/tesla-robotaxi-convenience-issues-hide-safety-bottleneck/) — Electrek (2026-05-12)
-- [Tesla China retail sales fall 10% in April despite reports of 36% surge](https://electrek.co/2026/05/11/tesla-china-retail-sales-decline-april-2026-wholesale-misleading/) — Electrek (2026-05-11)
-- [South Korea Exploring Using Hyundai Robots as Army Numbers Fall - Bloomberg.com](https://news.google.com/rss/articles/CBMitAFBVV95cUxQRWFFRUQ4YzF2WmxWSk1VaG9NTDlnNjR4WTBLUGdieXB1NFNXLTZJaHJGdGdrQ0FEaXpUTVJHUHEtdFQ3TWVUX1Nja0pKajN3d296X3NuU1dIaWZVemM3WWZtdTN3YXVFLWtPZ3hOU3A1d2p3TTlDMGh4UlMwV3B5aDZwYjFoMDdleHdhcXJHaEk1enVySHZZLUtoTnV3VzZhNktSa0J4TktObFNJc3lkcXhiaXM?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [BYD’s cheapest EV now has a roof-mounted LiDAR, and it still starts at just $13,000](https://electrek.co/2026/05/11/byd-upgrades-cheapest-ev-with-lidar-still-starts-at-13k/) — Electrek (2026-05-11)
-- [Neutralizing the Gigascale Problem: How to Solve the Physical Power Paradox of Extreme AI Training Loads](https://spectrum.ieee.org/gigascale-ai-datacenter-power) — IEEE Spectrum (2026-05-12)
-- [CUDA Proves Nvidia Is a Software Company](https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company/) — Wired (2026-05-11)
-- [林俊旸创业，新公司估值约20亿美金丨智能涌现独家](https://36kr.com/p/3807382930251523?f=rss) — 36氪 36Kr (2026-05-13)
-- [先导智能与北京人形机器人创新中心签署战略合作协议 - 金融界](https://news.google.com/rss/articles/CBMib0FVX3lxTFBoNDgxZTY1Uk9SSTVTNDZIQTJDN2N2b25FWGdfRlRYWnY2Y1FMN3k3Z2VENUJLZjZGYkRld2JCTGp2cHN3eHAxbkNmQld6VXRHeUx5MHFRTUpuSVZCNkhFUUQ0Q1hMNUJuVlR0aGNqOA?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [Toyota steps up India ambitions, targets one million upa](https://www.automotiveworld.com/analysis/toyota-steps-up-india-ambitions-targets-one-million-upa/) — Automotive World (2026-05-11)
-- [Automobilbranche: Autoindustrie rechnet mit größerem Stellenabbau](https://www.handelsblatt.com/politik/deutschland/automobilbranche-autoindustrie-rechnet-mit-groesserem-stellenabbau/100224763.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy](https://www.wired.com/story/unitree-gd01-mecha-robot/) — Wired (2026-05-12)
-- [【研报 A118】具身智能机器人和移动通信技术研究报告：端网云协同重构汽车智造与自动驾驶 - blog.csdn.net](https://news.google.com/rss/articles/CBMiakFVX3lxTE5BbXI4M0JqakhabVZFRVBDb3MtcnZ0S1NyRzVicFJWUHdPMU03SzRGNmpKc2JuTGlFdG5xVkFuMW9sQktzemZoZnc0UkxrR2U4RjZCZDFUbzdNYmVuQ2kySTdaaHplM2VMMEE?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [常州具身智能数据实验平台正式投运 - 中国科技网](https://news.google.com/rss/articles/CBMicEFVX3lxTE9YVTREU01tLXJNeGkzd2VmTzBWR3lEOXhyOHNyMmNWWWl2ZjUzaE8tN3hwRmZJSnVaSVJEbzR3bVIzdTIzMEZvTnVDQXdqcF9CNXBCSHVYajdOSGdsRTNQYWlkVkQtR01CVE9VWFZtdGU?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers](https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat) — Arm Newsroom (2026-05-11)
-- [Hyundai's robot dogs, mobile platforms move closer to Korea’s front lines - KED Global](https://news.google.com/rss/articles/CBMib0FVX3lxTE1VYkdYZG9sRnhIVGpKTFdJc0wweTlhNWdrM05ZNEpjTGhMWDRFd0tUU093NW5iTmc1QnJ1cDl4LTQyMl9mZEs3WlFhcm5kNFdYMVE2LW5fSm52UTBrUXk3ZFNoTnRyTlVRbTBmd3F3QQ?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [Hong Kong activist investor Oasis reports 5.4% stake in Japan's Kanadevia](https://asia.nikkei.com/business/markets/equities/hong-kong-activist-investor-oasis-reports-5.4-stake-in-japan-s-kanadevia) — Nikkei Asia (2026-05-12)
-- [2026 BMW 550e xDrive Review: A Plug-In Marvel in Need of Common Sense](https://www.thedrive.com/car-reviews/2026-bmw-550e-xdrive-review) — The Drive (2026-05-11)
-- [The new BMW iX3 costs nearly $1,000 a month to lease](https://electrek.co/2026/05/11/new-bmw-ix3-costs-nearly-1000-a-month-to-lease/) — Electrek (2026-05-11)
-- [First Shift: GM boosts pickup inventory](https://www.autonews.com/video/first-shift-gm-boosts-pickup-inventory/) — Automotive News (2026-05-11)
-- [Polestar 3 gains 350kW charging and Nvidia Orin chip](https://www.automotiveworld.com/news/polestar-3-gains-350kw-charging-and-nvidia-orin-chip/) — Automotive World (2026-05-12)
-- [Daimler Truck opens US$110m plant in Argentina](https://www.automotiveworld.com/news/daimler-truck-opens-us110m-plant-in-argentina/) — Automotive World (2026-05-12)
-- [Comau and OMRON Robotics partner to offer robotics for more industries](https://www.therobotreport.com/comau-omron-robotics-partner-offer-robotics-more-industries/) — The Robot Report (2026-05-12)
-- [先导智能与北京人形机器人创新中心签署战略合作协议 - 盖世汽车社区](https://news.google.com/rss/articles/CBMiUEFVX3lxTE94OWM2YjQ3anR4RXRoczdTd3NEc0hvSXY1aTlTNVhUVE9IWFZCdktnR2lSTURxazhqTU0yS3N3RlFXLWVTNDNDOGVsZ2w5dk5y?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [Toyota and Lexus just made EV road trips way easier](https://electrek.co/2026/05/12/toyota-lexus-just-made-ev-road-trips-way-easier/) — Electrek (2026-05-12)
-- [„Passwort“ Folge 58: Fail-News mit KI-Fail, copy.fail und S/MIME-Fail](https://www.heise.de/news/Passwort-Folge-58-Fail-News-mit-KI-Fail-copy-fail-und-S-MIME-Fail-11284855.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [heise+ | Bildklassifikation ohne Cloud mit überschaubarem Programmieraufwand](https://www.heise.de/ratgeber/Bildklassifikation-ohne-Cloud-mit-ueberschaubarem-Programmieraufwand-11265968.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-13)
-- [Sicherheit: Kein Gefahrenbewusstsein: Wie China auf deutsche Exzellenzunis zielt](https://www.handelsblatt.com/politik/deutschland/sicherheit-wie-china-auf-deutsche-exzellenz-unis-zielt/100224035.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Mazda trims EV spend 20% as global hybrid demand surges](https://www.automotiveworld.com/news/mazda-trims-ev-spend-20-as-global-hybrid-demand-surges/) — Automotive World (2026-05-13)
-- [Xpeng ramps up its dual-powertrain product offensive](https://www.automotiveworld.com/news/xpeng-ramps-up-its-dual-powertrain-product-offensive/) — Automotive World (2026-05-11)
-- [Tesla moves Basic Autopilot features to paid FSD where available](https://electrek.co/2026/05/12/tesla-removes-basic-autopilot-netherlands-fsd-only/) — Electrek (2026-05-12)
-- [Chery tries to crack Japan’s 95% domestic market wall](https://www.automotiveworld.com/analysis/chery-tries-to-crack-japans-95-domestic-market-wall/) — Automotive World (2026-05-11)
-- [IEEE Program Aims to Connect the Billions Who Are Still Offline](https://spectrum.ieee.org/ieee-connect-the-unconnected) — IEEE Spectrum (2026-05-12)
-- [Unifor president: 5 million imported cars are North America’s real problem; Mazda delays EV by 2 years](https://www.autonews.com/podcasts/daily-drive/an-daily-drive-lana-payne-usmca-mazda-ev-delay/) — Automotive News (2026-05-12)
-- [Al Qaeda's shadow returns](https://asia.nikkei.com/opinion/al-qaeda-s-shadow-returns) — Nikkei Asia (2026-05-13)
-- [米Kodiak、自動運転トラックによる貨物輸送サービス開始…ダラス～ヒューストン間で週4往復](https://response.jp/article/2026/05/12/411139.html) — Response.jp (2026-05-12)
-- [自動運転トラック実装支援事業、国土交通省が公募開始…補助上限は1億円](https://response.jp/article/2026/05/12/411141.html) — Response.jp (2026-05-12)
-- [Mini outlines safety tech stack across model range](https://www.automotiveworld.com/news/mini-outlines-safety-tech-stack-across-model-range/) — Automotive World (2026-05-11)
-- [GM’s Ultium Ohio plant in limbo as US battery retreat deepens](https://www.automotiveworld.com/news/gms-ultium-ohio-plant-in-limbo-as-us-battery-retreat-deepens/) — Automotive World (2026-05-13)
-- [Quartalszahlen: Eon verdient zum Jahresauftakt mehr – Prognosen bestätigt](https://www.handelsblatt.com/unternehmen/energie/quartalszahlen-eon-verdient-zum-jahresauftakt-mehr-prognosen-bestaetigt/100224737.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Quartalszahlen: Allianz verdient im ersten Quartal so viel wie nie zuvor](https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherer/quartalszahlen-allianz-verdient-im-ersten-quartal-so-viel-wie-nie-zuvor/100222155.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Quartalszahlen: Rückenwind für RWE – Erneuerbare lassen Ergebnis steigen](https://www.handelsblatt.com/unternehmen/energie/quartalszahlen-rueckenwind-fuer-rwe-erneuerbare-lassen-ergebnis-steigen/100224749.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Waymo recalls robotaxis after software flaw leads to flooded roadway incident](https://www.autonews.com/news/an-waymo-robotaxi-recall-flooded-road-0512/) — Automotive News (2026-05-12)
-- [Robot dogs instead of recruits: South Korea plans to militarize Hyundai's robots - gagadget.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxOX1ZDXzJOclZyeDJNeTVVbUV1NGtUN1Z1QWxPMndwR1MwR01CTXR0STE1TVRYQjJRZUxobkRkUWVMb01ab3dUdG5JeXZwYkdlNGJ4VzdVUWxod3ZCbDE2MnhhLTdBb2RxaC1CaGJVYTBOVFQ3amtXNkk5WkdoLWdNM0Vsck43SEZZX0FGcnBZZnhpbURaRW8tRmVSTWY1T2hLb0k1RDlhOC1EdHRJN0FN0gG0AUFVX3lxTE1PdllEWUpKVms1eE15dGluV1llSVBpOFNmekt6ZzVIRWlLeGpHNHVBUmtPa3lvN1E4MDlyZUZpSUtuVE83YW1EWERXUTE2VEtZSFdTbHZVd2NoU3pMbXdKXzBKWWYzY1RXQWRPRE5DaFItWHRSRVNBd08tbTlSd0p5d0k4OVVIOS1CYkhkc3BlRDZTYXlzY1FFLW1vUERCUk1sOTJUVEZvTE16ZXFyTjh5NEVVZg?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [Nissan cuts tariff costs by $2.3 billion; Geely lands first in Canada](https://www.autonews.com/podcasts/daily-drive/an-daily-drive-nissan-tariff-costs-anders-bell-volvo/) — Automotive News (2026-05-11)
-- [Googleロボタクシー勝手に出発、乗客が取り残され炎上](https://jidounten-lab.com/u_62168) — 自動運転Lab (2026-05-12)
-- [Waymoの自動運転タクシー、NYから追放か](https://jidounten-lab.com/u_62147) — 自動運転Lab (2026-05-11)
-- [港科广陈昶昊团队：只用一张 RGB 图像，让机器读懂室内 3D 空间丨CVPR 2026](https://www.leiphone.com/category/ai/5gfzILpQeBo3Okjm.html) — 雷锋网 Leiphone (2026-05-12)
-- [从「座上宾」到「主战场」：具身智能如何完成对计算机视觉的「范式夺权」？| CVPR 2026](https://www.leiphone.com/category/ai/HjikQc8qSRrbSlIL.html) — 雷锋网 Leiphone (2026-05-12)
-- [对话简智朱雁鸣：不卷模型卷基建，具身智能核心是读懂人的数据](https://www.leiphone.com/category/robot/vNZuXhOJsA0EWTuG.html) — 雷锋网 Leiphone (2026-05-12)
-- [How One Dealership Increased Revenue 800% in Just 180 Days](https://www.autonews.com/resource_center/an-what-dealers-can-learn-from-paragon-hondas-explosive-online-parts-growth/) — Automotive News (2026-05-11)
-- [ロボット・AI用語集を『ロボスタ』が公開---急速に増える専門用語](https://response.jp/article/2026/05/12/411159.html) — Response.jp (2026-05-12)
-- [Waymo recalls 3,791 robotaxis over flooded road incident, deploying OTA software fix](https://electrek.co/2026/05/12/waymo-recalls-3791-robotaxis-flooded-road-ota-software-fix/) — Electrek (2026-05-12)
-- [Schaeffler, ThunderSoft partner on SDV computing](https://www.automotiveworld.com/news/schaeffler-thundersoft-partner-on-sdv-computing/) — Automotive World (2026-05-11)
-- [XPeng (XPEV) reveals Mona L03 SUV with 650 km range for ~$20,500](https://electrek.co/2026/05/11/xpeng-mona-l03-suv-650-km-range-20000/) — Electrek (2026-05-11)
-- [Hello Robot’s latest Stretch 4 is bigger, faster, and stronger than previous versions](https://www.therobotreport.com/hello-robots-latest-stretch-4-is-bigger-faster-and-stronger-than-previous-versions/) — The Robot Report (2026-05-12)
-- [More Than 12,000 Ram HD Trucks Recalled Because They Can Go Too Fast for Their Tires](https://www.thedrive.com/news/more-than-12000-ram-hd-trucks-recalled-because-they-can-go-too-fast-for-their-tires) — The Drive (2026-05-11)
-- [Elon Musk Had ‘Hair-Raising’ Idea of Passing OpenAI On to His Kids, Sam Altman Says](https://www.wired.com/story/sam-altman-testifies-musk-v-altman-trial/) — Wired (2026-05-13)
-- [自動運転中、中国人女性は「化粧」する](https://jidounten-lab.com/u_62129) — 自動運転Lab (2026-05-11)
-- [AI agents are running hospital records and factory inspections. Enterprise IAM was never built for them.](https://venturebeat.com/security/cisco-dickman-agentic-ai-trust-identity-governance-microsegmentation) — VentureBeat AI (2026-05-11)
-- [鹿明机器人完成数亿元A1及A2轮融资，产业巨头深度参与，累计融资近10亿元](https://www.leiphone.com/category/industrynews/VqCT68PHdtdfvHXy.html) — 雷锋网 Leiphone (2026-05-11)
-- [魔法原子登陆硅谷，行业首个「自进化具身大脑」发布](https://www.leiphone.com/category/ai/c9KxiRBbg7PfqVqH.html) — 雷锋网 Leiphone (2026-05-11)
-- [马斯克爆出「权力暗桩」，奥特曼进入反击时刻？](https://www.leiphone.com/category/ai/VZm3rt1QhzalTW22.html) — 雷锋网 Leiphone (2026-05-12)
-- [普罗宇宙机器人全球合作伙伴大会启幕，正式发布全域共生生态战略](https://www.leiphone.com/category/industrynews/i0S6E3PbvdhtjDhl.html) — 雷锋网 Leiphone (2026-05-12)
-- [Nissan, Red Hat partner on SDV operating system](https://www.automotiveworld.com/news/nissan-red-hat-partner-on-sdv-operating-system/) — Automotive World (2026-05-11)
-- [BYD is upgrading its top selling EVs with 5-min flash charging and nearly 400 miles of range](https://electrek.co/2026/05/11/byd-upgrading-top-selling-evs-with-5-min-charging/) — Electrek (2026-05-11)
-- [Lotus plans hybrid supercar for 2028 as shift from electric-only plan accelerates](https://www.autonews.com/geely/lotus/ane-lotus-v8-supercar-due-2028-0512/) — Automotive News (2026-05-11)
-- [免费 1500 次背后，商汤在下一盘什么棋](http://www.geekpark.net/news/364099) — 极客公园 Geekpark (2026-05-13)
-- [Auto Research 来了：当 AI 开始接管科研里最苦的活，意味着什么](http://www.geekpark.net/news/364100) — 极客公园 Geekpark (2026-05-13)
-- [深耕“具身智能+建筑大模型”底座，重构万亿建筑业，「方石机器人」完成近亿元A轮融资 | 36氪首发](https://36kr.com/p/3807039782116865?f=rss) — 36氪 36Kr (2026-05-13)
-- [Anzeige: Cyber Resilience und Compliance: NIS 2, DORA, AI Act einordnen](https://www.golem.de/news/anzeige-cyber-resilience-und-compliance-nis-2-dora-ai-act-einordnen-2605-208552.html) — Golem.de (2026-05-13)
-- [Europe drove global EV sales in April as China exports surged](https://electrek.co/2026/05/12/europe-drove-global-ev-sales-in-april-as-china-exports-surged/) — Electrek (2026-05-12)
-- [The ICE age is over: gas car sales drop 37% in world’s biggest market](https://electrek.co/2026/05/12/the-ice-age-is-over-gas-car-sales-drop-37-in-worlds-biggest-market/) — Electrek (2026-05-13)
-- [Figure AI 发布新 demo：两个机器人点头致意，我们一起把被子拉开](http://www.geekpark.net/news/363963) — 极客公园 Geekpark (2026-05-11)
-- [0.2 元 / 通，淘天用 AI 店小蜜重新定义了电商客服价格](http://www.geekpark.net/news/364035) — 极客公园 Geekpark (2026-05-12)
-- [对话维他动力余轶南：融资 5 亿，如何跨过从 Demo 到量产的 5 个月](http://www.geekpark.net/news/364058) — 极客公园 Geekpark (2026-05-12)
-- [硬氪专访 | 拿到行业最大单笔融资后，余轶南说万里长征才走了第一步](https://36kr.com/p/3804282431659779?f=rss) — 36氪 36Kr (2026-05-11)
-- [KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html) — Heise Developer (2026-05-13)
-- [KI-Ära erzwingt Reformen: GitLab strukturiert um](https://www.heise.de/news/KI-Aera-erzwingt-Reformen-GitLab-strukturiert-um-11291662.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [具身智能，选城如选命](https://www.tmtpost.com/7986300.html) — 钛媒体 TMTpost (2026-05-13)
-- [「有人変形ロボット」登場、二足→四足歩行に　量産型で価格は1億円、中国Unitree](https://www.itmedia.co.jp/aiplus/articles/2605/12/news115.html) — ITmedia AI+ (2026-05-12)
-- [Mazda delays EV launch by 2 years, slashes investment in pivot to hybrids](https://www.autonews.com/mazda/an-mazda-delays-ev-launch-pivots-to-hybrids-4q-earnings-financial-results-profit-0512/) — Automotive News (2026-05-12)
-- [Autoliv to end car parts production in Turkey as part of global slowdown](https://www.autonews.com/manufacturing/suppliers/ane-autoliv-turkey-output-ending-global-slowdown-0511/) — Automotive News (2026-05-11)
-- [自動車用LiDAR市場は自動運転技術と先進運転支援システムの普及拡大を背景に2035年までに61億4560万米ドル規模へ成長見通し 年平均成長率19.5 - Newscast.jp](https://news.google.com/rss/articles/CBMiT0FVX3lxTE16WlY2THQzbjdXelJlVGhiLVgzOUttYkVkancwakhRVFBNYlM0b1dUaVNiSEc1cENrY29aS0p6cXd0d2lDeTNvc2JRVmxaQ3c?oc=5) — GNews JA: 自動運転安全 (2026-05-13)
-- [GMO AIR、空港でヒューマノイドロボット活用の実証実験を開始 - ドローンジャーナル](https://news.google.com/rss/articles/CBMieEFVX3lxTE9hdHc3TUtfZmNYZVphV1Z3V0R6Y2FLZ19VS29pRUo0Q0RPSWNqZkpPc1RRMExTZmpJS2p6MUwySEFLWV91Q29fbXFyT2wzdEdVaFRINWxrUVpnYzV4ckRiazg1dEg3UWxtaGVvN2cwc2lCUF9ja0Fucw?oc=5) — GNews JA: 人型ロボット (2026-05-12)
-- [2026具身智能：从春晚到IPO，人形机器人告别野蛮生长时代 - thepaper.cn](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zNFFZazBxUVFXNXN0Si10aUxYaVFsS3NIcHFwdVJKLUN6THhRUHNnbVl0d0ZRdmNBN1Q3SnIxV0cwdkJpaWRHWDlHYVFTeUU0SU9MVWxsb2dxdDlFb2xIbQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [何小鹏“四问”具身模型，直言“具身智能正重复自动驾驶的故事” - thepaper.cn](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XUkhZODNBQjVqYzlpaUd0WkpiNFNGcVJGQkppN2ZLaC1rTmZxS1d2eFpSMjlLOWlUdUFLWGx0Z09oT1gwSXA0NWxxRE5BYmFBQVkzcTQ3cGJCMXB6dnJ5Qg?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [同润智能量产4D雷达开启自动驾驶全天候感知与国产AEB新纪元 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PRzRFcFI1bUN1bnhpYU02OFFTTmg4dFRCZ29lZ25pT0NPUlp1M3gtd2R2UUNyb0hNQjVFU0RoWXFWX3JfcXExTjI2QUN4NjFZX3VZ?oc=5) — GNews ZH: 自动驾驶安全 (2026-05-11)
-- [Infostealer auf KI-Plattform Hugging Face tarnt sich als OpenAI-Repository](https://www.heise.de/news/Infostealer-auf-KI-Plattform-Hugging-Face-tarnt-sich-als-OpenAI-Repository-11290607.html) — Heise Developer (2026-05-12)
-- [Microsoft veröffentlicht Evaluations-Tool für Copilot-Agenten](https://www.heise.de/news/Microsoft-veroeffentlicht-Evaluations-Tool-fuer-Copilot-Agenten-11290815.html) — Heise Developer (2026-05-12)
-- [Entscheidung zu Dieselgate?: Die offene Milliarden-Frage zur VW-Dieselaffäre](https://www.handelsblatt.com/politik/deutschland/entscheidung-zu-dieselgate-die-offene-milliarden-frage-zur-vw-dieselaffaere/100224512.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [AI for Dealerships: What’s working right now](https://www.autonews.com/resource_center/pinewoodai/an-ai-for-dealerships-whats-working-right-now/) — Automotive News (2026-05-12)
-- [indie to buy ams OSRAM CMOS image sensor unit](https://www.automotiveworld.com/news/indie-to-buy-ams-osram-cmos-image-sensor-unit/) — Automotive World (2026-05-11)
-- [商汤善惠烧卖购机器人小店上海“开业”，让机器人真正落地线下零售](https://www.qbitai.com/2026/05/416590.html) — 量子位 Qbitai (2026-05-12)
-- [Mazda cuts EV investment by 20% on slowing US demand](https://asia.nikkei.com/business/automobiles/mazda-cuts-ev-investment-by-20-on-slowing-us-demand2) — Nikkei Asia (2026-05-12)
-- [ドコマップジャパン、新開発のデジタコやGPS機器を展示へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411214.html) — Response.jp (2026-05-13)
-- [Automobilbranche: Autoindustrie rechnet mit größerem Stellenabbau](https://www.handelsblatt.com/unternehmen/industrie/automobilbranche-autoindustrie-rechnet-mit-groesserem-stellenabbau/100224752.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [愿景2036丨一场关于未来10年AI技术主权争夺战，追觅打了头阵](https://www.leiphone.com/category/weiwu/qzNsjHpqOoV0W2HX.html) — 雷锋网 Leiphone (2026-05-12)
-- [拓竹发布纯净PLA耗材：3D打印聚焦材料本质，家庭场景成新赛场](https://www.leiphone.com/category/weiwu/dc2HCy53KBEaGH2w.html) — 雷锋网 Leiphone (2026-05-12)
-- [Notenbank: US-Senat bestätigt Kevin Warsh als Fed‑Gouverneur – Weg zum Notenbank-Chef frei](https://www.handelsblatt.com/finanzen/geldpolitik/notenbank-us-senat-bestaetigt-kevin-warsh-als-neuen-fed-gouverneur/100224623.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Lectric Memorial Day offers $694 bundles + up to $500 off e-bikes, Mammotion LUBA 3 AWD robot mowers, more](https://electrek.co/2026/05/12/lectric-memorial-day-e-bikes-mammotion-luba-3-awd-robot-mowers-more/) — Electrek (2026-05-12)
-- [BYD takes six models to SMMT Test Day with Denza debut](https://www.automotiveworld.com/news/byd-takes-six-models-to-smmt-test-day-with-denza-debut/) — Automotive World (2026-05-12)
-- [Microsoft veröffentlicht Evaluations-Tool für Copilot-Agenten](https://www.heise.de/news/Microsoft-veroeffentlicht-Evaluations-Tool-fuer-Copilot-Agenten-11290815.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands](https://www.therobotreport.com/rlwrld-releases-rldx-1-a-dexterity-first-foundation-model-for-robot-hands/) — The Robot Report (2026-05-11)
-- [谷歌在安卓上全面强化 Gemini AI；宇树发布全球首款载人机甲，售价 390 万元；追觅高管回应「崩老头」](http://www.geekpark.net/news/364062) — 极客公园 Geekpark (2026-05-13)
-- [日本大型银行最快将于本月开始使用Anthropic公司的Mythos系统](https://36kr.com/newsflashes/3807240731909639?f=rss) — 36氪 36Kr (2026-05-13)
-- [韩国交易所开始在资本市场监测工作中采用AI技术](https://36kr.com/newsflashes/3807332244020736?f=rss) — 36氪 36Kr (2026-05-13)
-- [8点1氪丨宇树发布载人变形机甲，定价390万起；微信确认不会开发已读、访客功能；国内航线燃油附加费将再上调](https://36kr.com/p/3806970999955201?f=rss) — 36氪 36Kr (2026-05-13)
-- [Daily 5 report for May 12: Promising 6-figure jobs isn’t enough. To address the service technician shortage, you have to address cultural barriers](https://www.autonews.com/newsletters/daily-5/an-daily-5-auto-technician-shortage-crisis-0512/) — Automotive News (2026-05-12)
-- [Ensure that Parts Suppliers Provide EV-Compliant Parts](https://www.autonews.com/sponsored/webinars/an-ensure-that-parts-suppliers-provide-ev-compliant-parts/) — Automotive News (2026-05-12)
-- [Ensure that Parts Suppliers Provide EV-Compliant Parts](https://www.autonews.com/resource_center/dassault-systemes/an-ensure-that-parts-suppliers-provide-ev-compliant-parts-0602/) — Automotive News (2026-05-12)
-- [氪星晚报 ｜千问与淘宝打通，正式上线AI购物；泡泡玛特将在5月13日举行2026年一季度业务更新电话会](https://36kr.com/p/3804795647729411?f=rss) — 36氪 36Kr (2026-05-11)
-- [8点1氪丨美国总统特朗普：非常期待中国之行  ；OPPO发布母亲节文案事件问责通告；快手计划分拆可灵AI，融资20亿美元](https://36kr.com/p/3805557782486785?f=rss) — 36氪 36Kr (2026-05-12)
-- [36氪首发｜新加坡博士团队创业获种子轮融资，首款产品做“会飞的家庭管家”](https://36kr.com/p/3805672617959173?f=rss) — 36氪 36Kr (2026-05-12)
-- [不用再找了，AI落地最全的实战打法，都在亦庄这场大会里](https://36kr.com/p/3806179759496711?f=rss) — 36氪 36Kr (2026-05-12)
-- [氪星晚报 ｜宇树科技发布载人机甲，投资人回应；京东：第一季度营收3157亿元，日本恩格尔系数创1980年以来最高水平同比增长4.9%](https://36kr.com/p/3806196073242112?f=rss) — 36氪 36Kr (2026-05-12)
-- [Magna CEO says clarity on headwinds key to finding right solutions amid uncertainty](https://www.autonews.com/canada/anc-magna-international-headwinds-uncertainty-cp-0512/) — Automotive News (2026-05-12)
-- [NVIDIA and SAP Bring Trust to Specialized Agents](https://blogs.nvidia.com/blog/sap-specialized-agents/) — NVIDIA Blog (2026-05-12)
-- [Strahlungsresistente Roboter-Raupe der ESA kriecht mit nur einem Aktuator](https://www.heise.de/news/ESA-Strahlungsresistente-Roboter-Raupe-koennte-Planeten-erkunden-11290875.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [How to teach the same skill to different robots](https://robohub.org/how-to-teach-the-same-skill-to-different-robots/) — Robohub (2026-05-11)
-- [Speed ads outpace safety messages, IIHS study finds](https://www.automotiveworld.com/news/speed-ads-outpace-safety-messages-iihs-study-finds/) — Automotive World (2026-05-12)
-- [【钛晨报】腾讯收购喜马拉雅，获市场监管总局附条件批准，两公司最新回应；马斯克、库克随特朗普访华；中国国内航线燃油附加费5月16日起再上调](https://www.tmtpost.com/7985766.html) — 钛媒体 TMTpost (2026-05-12)
-- [Firmware Testing Still Falls Short of What We Need](https://www.embedded.com/firmware-testing-still-falls-short-of-what-we-need/) — Embedded.com (2026-05-12)
-- [独家丨腾讯混元3幕后：重构架构，姚顺雨一场非典型的「逆袭」](https://www.leiphone.com/category/industrynews/RcXIQ9rNkYJhHTCE.html) — 雷锋网 Leiphone (2026-05-11)
-- [机器人的手和人类的手还差多远？ - 第一财经](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBqbjI1NFpZNTlTbHhxRmNZeUl1S19ZR3dVQkV5TkpEZVFGM0ZrdngzQXpKMXZvZEotb0ZTa2VPUHpsLTg2STJfX2d0dlJkeHJHVmtXVg?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [常州具身智能数据实验平台正式投入运营|常州市|江苏省|机器人|作业|场景_手机新浪网 - 新浪财经](https://news.google.com/rss/articles/CBMisgFBVV95cUxPQUJ4NUZjYnBvdjZuX013ekNjR1N3OTZKaWpTaV82ZmRoQmlNeXY0Wmk3WmhGaUVDa0pxdmREblBrVGZKNUpkSkVNY0JNcHV5NXdTU3NSZkNmRHVPTVV0VkRBWGE1QVlQcTZueHJuMzFldnE0aGxlZTBVeWhMckxlNmpabk9qUkhFUFRxUHpBV3JrWDJlbDhEY0dndVAzZGJsa0NDY25BWG1CcnJIYTU2dGZB?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [李想回应核心技术骨干离职：多数转向机器人行业 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdnl2SUx0QmRVQmJ0eGhPV1hTaEIzY3hMM2VnRGxKQTUtb2xnai1rYUNUdThsbmZOc3BaaGJldS0ybTRrQXQ4aGJybVlIM2FoWnVwTXpxbTZvQUpObFVxUWVlczNZYUlHdTl2TXRRX3JwYjdCSUFwRm5weTI3aV9UV0N2bHl0azBZ?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [三家具身智能企业同日官宣融资：工厂、家庭场景各辟战场，数据飞轮成共识 - 证券时报](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1icjNDMjBTV3pUeTRWT0V4NU5wV3h2LUZjeTEwbEI4YzZkSFhxRWNqRUhGSnNsV3pMWjhiZS1qM0NpZTFkUmEweGdFS1BpZmhpajkySG53NlVFVGhL?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [贾跃亭宣布转战具身智能机器人，透露自己被任命为FF全球CEO；12年前他曾官宣造车，过去十年总共只交付了不到20辆 - 大众网](https://news.google.com/rss/articles/CBMie0FVX3lxTE4wQzRFdDhIYlVmZXFHZjdjblcxMjlMdVA5VXR5dnFubGk0c0tKcWRteGg4UXZxZGhWcUFpT2xGX3VtbjhyRENhWjhCSjV1aXEzRlhSckRlLXhkUDhfY2pnSjZuVG9jdUgwTXFMSXdnaHFZcVc4S0hrMXRDRQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [全国首支机器人交警中队亮相背后：杭州的机器人是如何进化的 - thepaper.cn](https://news.google.com/rss/articles/CBMickFVX3lxTE9jX3MzWkhpYUNfclJpV2dUYzFjX2NrTGlneHZHYTNQX1ZFbkNJa1A0RjhiWmlJQjQxNVVmczFpSzQ4NDFKSlJSU2lJa05nMFdJSkl1THNlOFJBZzUtTTQ4ZzVuanMwRHlCa2xZeDJ2SEwwZw?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [消费级具身智能企业「Vbot维他动力」完成近5亿元Pre-A轮融资 - 品牌方舟BrandArk](https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4MXppanpGQ3d0b1VxOHBidGh4QVFGRm5vY2RlbUhVQUUwdlhOMUxLallZZUZtdUdzM1prRi1xQzlmcFJlQlB0VkMyQQ?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [李家超现身首届香港具身智能产业峰会，赛感科技创始人郭传飞作为特邀嘉宾出席峰会发布仪式 - icloudnews.net](https://news.google.com/rss/articles/CBMiUkFVX3lxTE90a1E1NkR0Sk5ENVBpdjhVWUxpWm1yOElHQ2ZwRUdEQW52LVQ2NnlQdFhhUkhTVkEzZDJIYk5uNTZJbld6dmFwNEtFQ2JseWhKWUE?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [中信建投：未来产业投资地图系列之“具身智能” - AgeClub](https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wT2NBTnNZajFCLXZpOHFtSHF2R0VSM0NKZEdmem1GRFR3T25fdHJBLWRoVVpVanRCTmxxSnN6OEtWMlE4ZGxRQUFBcFJmN0pJZ0tmSU9n?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [李彦宏：全球智能体日活将很容易超过100亿，CEO需要思考人和智能体如何共同进化 - thepaper.cn](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WTFZmZ21rdTJmOUdUUjJlT3dLbHpFTHJIVlBTem1vMTZpZVo1anBMWVFJb1FrYU00ejdYa3JmeDFSTjNaVzJtQ3J4WEdwdzJxb3QyWXc2U1ZWYWZRdnI1ZA?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [从造车到"造人"：机器人是不是汽车行业最新的出路？ - 车家号](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jOTJLUjIxc0pfZnBSZGRXZTNkT2VXS2lkMVJ2dVNYa3hWbTNJX1FmN1VfZjd2dXhTMi1UV2pBTWxhN2hPd2JRM1c0aEpKSlplSS10LUxMT2xGdnc?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [李想罗永浩谈机器人时代_新浪新闻 - 手机新浪网](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBzRVZwTXlpOHVuSExlYUZ4cWpNZXZLTXJjdmREVnlaXzV0UnB3RklYM0pFQXdyR2FkQWxwMXJuVTktN0dXMlZGUEtoeEZweXdxQXJlZ2JURnBaZDgyalZxSC1Pbw?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [产业资金密集加码，具身智能赛道融资风向转向量产能力 - 大河财立方](https://news.google.com/rss/articles/CBMiakFVX3lxTE1MbnRMUU1GQjZ0OV9vY3pHM2R6UFdnTTU0T0Q0N1RzZ0NJNkl4VmREd0lpYUg5N01uNldFUmlNZ0RSY3g1VC12cGMzQnhJRFI1eGgxcVlYMGVpX2p5aFFaLU96MjdZLXlKMVE?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [智元邓泰华：具身智能进入“部署态”元年，将立足香港共创产业蓝图 - 搜狐网](https://news.google.com/rss/articles/CBMijAFBVV95cUxNcXQwTl9WM3l4aVdTVGVZcm9Oa2JtWUJQQVQ5cXBoMUxpODhsZ2pXMDhiZlczc196ckU2Slp6V3BMODRuaFgyNjVUc1dpZFpKN29la1RSUEdacDRPLTd1a19zNzQtLTFnbV95YUttckNBYjdrZzBscEJNZ08zdWxOY0tZa1o5RDhCdWk2eg?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [具身智能，选城如选命 - 富途牛牛](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1fVjhhTnA3Q1RKNTZHQWpEMDRmYV80Qk83VkhtR3R5Ymp1bnV6SHhCcDR6X1FHdEx1UW5PSFhjUHhKMjBxeEZVVVltLWdBUQ?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [李想谈具身智能两阶段_新浪新闻 - 手机新浪网](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5zR1RIYWNkSFJ1MDdCWnpBVzM2V2xkRWowRlBFd0s3UjVEelFaaTcxSFJHMlB1NFkyNEZXUkJzUTJ4bDFKVkprT254VUhrSlV1Q09uYV9YcFo4VGtKU19TUXl0dw?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [具身智能“ChatGPT时刻”还有多远？它石丁文超：约两年可见明显拐点 - 品玩](https://news.google.com/rss/articles/CBMiSEFVX3lxTE41LXdHRWpDeGxvVVQ3Q2dWWWhlQWh1alcya0stQ2JTRXRCdTBfYkVOSDJCWHFYNzVWUFp0dk1Ha3R0dVdJRUlVdw?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [资本加速布局具身智能，交付能力成估值锚点 - 21财经](https://news.google.com/rss/articles/CBMijwFBVV95cUxPRTZUaXlBQll5SnFZc09jV1FINWJ4NS02M0g1OE5hWHptRXJ6NHc0bm5JX1g3anFkVTYwN09Ic0x2RUJDUEZuNHNNT254ZG1EbkJ1VElQZFJDNk9vbVB6ME1VZGdmaGFBTmRZMzVFRXo3Ry02S3VhNjkyMXc4ZWd3T3BrWFdaaS03RG14S3o0Zw?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [Construction Robotics Market Is Going to Boom | Boston Dynamics , Built Robotics - openPR.com](https://news.google.com/rss/articles/CBMingFBVV95cUxPRUYyVmM5RXJBYlo5c1RqTGdMb0dRbDZvbFpvR1M0c1gzbDdGeXdDbnFYVFdmTms0MHZNNXR5M2RxSVRkYWhtMVNlb2dDVzBxMklrbnFvVGMzaHNiZXFucFZXclZMTFlNMng0MnNpYmlvQjd3eVdPckZOVlZvbERubmVsa2VOUHNRX0J2cDZFUzBjRzMyZ0xIdmtTUHduUQ?oc=5) — GNews: Boston Dynamics (2026-05-13)
-- [5 times Boston Dynamics robots scared the sh*t out of us - Mashable](https://news.google.com/rss/articles/CBMia0FVX3lxTE9TaVgtTEhKbmpSVWhMVW1LT3lkTjMyUERhckx4WFpuQzRkM0F5ajVrbTlsaHN4ZzlsRmhEVkxtTjJIVy1Cd3BQaF9zUEJrRXc4cHpTWEVCWnUwQTlINDQ2d0g1dk9WNE9QYTJV?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [具身智能借港出海：智元开启「部署态」元年，机器人不再只会跳舞了 - 雷科技](https://news.google.com/rss/articles/CBMiTkFVX3lxTFB1OS11T2RoLVNYc1lWdmJENGxKbXlyMFFzdGxmbXpQUjRTN09tYXI3TzQ2WUxaX2xON1ZxLS1jSTllck81d2pPZDNSMEUwUQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [国民技术：覆盖机器人多模块，提供MCU+安全+蓝牙全栈芯片解决方案 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tTzRNdUJXeE9EX1l6c3hWaFA2Y0tVOHR5X0MtSVRaYmJ0Q1N2Z3FyMmNCZFo1MDYtRmZ2OHBzSjA3UGZGQjIwTkJYWC1tVE9rQ3pV?oc=5) — GNews ZH: 机器人安全 (2026-05-12)
-- [GM just laid off hundreds of IT workers to hire those with stronger AI skills](https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/) — TechCrunch AI (2026-05-11)
-- [This electric SUV with a semi-solid-state EV batttery costs under $15,000 in China](https://electrek.co/2026/05/11/15000-electric-suv-has-semi-solid-state-battery/) — Electrek (2026-05-11)
-- [Gastkommentar: Warum Abschottung Deutschlands KI-Zukunft gefährdet](https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-warum-abschottung-deutschlands-ki-zukunft-gefaehrdet/100224132.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Anthropic: Deutsche Politiker und Sicherheitsbehörden fordern schärfere Regeln für riskante KI-Modelle](https://www.handelsblatt.com/politik/deutschland/kuenstliche-intelligenz-politiker-fordern-schaerfere-regeln-fuer-riskante-ki-modelle/100223982.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [日野自動車、ごみ収集向けソリューション「ごみると」紹介へ…2026NEW環境展](https://response.jp/article/2026/05/13/411178.html) — Response.jp (2026-05-12)
-- [ヒョンデとキアの次世代商用EV、ホワイトハウスが出展へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411189.html) — Response.jp (2026-05-13)
-- [走った距離に応じて税負担---EV時代の自動車税、「走行距離課税」の背景](https://response.jp/article/2026/05/13/411199.html) — Response.jp (2026-05-13)
-- [ヒョンデ『アイオニック5』、ベストEVエクスペリエンス賞に…米CarGurusのConfidence Awardsで](https://response.jp/article/2026/05/13/411200.html) — Response.jp (2026-05-13)
-- [フォックスコン、エレクトロモビリティと戦略的提携…ポーランドにEV生産拠点を設立へ](https://response.jp/article/2026/05/13/411203.html) — Response.jp (2026-05-13)
-- [栗山自動車、販売・レンタル・サブスクを車両一覧で比較可能に…公式サイトをリニューアル](https://response.jp/article/2026/05/13/411204.html) — Response.jp (2026-05-13)
-- [heise-Angebot: Mastering GitOps 2026: Rendered Manifests, Argo CD und Platform Engineering](https://www.heise.de/news/Mastering-GitOps-2026-Rendered-Manifests-Argo-CD-und-Platform-Engineering-11290861.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [自動車税とは何か？ 約9割が「重量税との違いを説明できない」](https://response.jp/article/2026/05/12/411144.html) — Response.jp (2026-05-12)
-- [大同特殊鋼、SmFeN磁石材料を拡充…自動車分野などでの需要に対応](https://response.jp/article/2026/05/12/411157.html) — Response.jp (2026-05-12)
-- [BセグメントEVプラットフォームを共同開発へ、CATLのシャシー部門CAITとトルコのToggが戦略的提携](https://response.jp/article/2026/05/12/411171.html) — Response.jp (2026-05-12)
-- [Mehr KI und neue Optik: Google aktualisiert Android Auto und Automotive](https://www.heise.de/news/Android-Auto-Mehr-Gemini-KI-und-immersive-Navigation-kommen-11291808.html) — Heise Auto (2026-05-12)
-- [Hubschrauber mit Brennstoffzellenantrieb fliegt zum ersten Mal](https://www.heise.de/news/Hubschrauber-mit-Brennstoffzellenantrieb-fliegt-zum-ersten-Mal-11292320.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Mehr KI und neue Optik: Google aktualisiert Android Auto und Automotive](https://www.heise.de/news/Android-Auto-Mehr-Gemini-KI-und-immersive-Navigation-kommen-11291808.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [heise+ | Warum die Zukunft der deutschen Autos in China liegt](https://www.heise.de/hintergrund/Warum-die-Zukunft-der-deutschen-Autos-in-China-liegt-11187065.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-11)
-- [高市総理、サイバー攻撃対策指示　「Claude Mythos」巡り](https://www.itmedia.co.jp/aiplus/articles/2605/12/news102.html) — ITmedia AI+ (2026-05-12)
-- [Europe’s minicar rebound reveals how incentives, hybrids are reshaping entry segment](https://www.autonews.com/europe/ane-minicars-gain-ev-hybrid-shift-0513/) — Automotive News (2026-05-13)
-- [Iran Is Using Tiny ‘Mosquito’ Boats to Shut Down the Strait of Hormuz](https://www.wired.com/story/iran-is-using-tiny-mosquito-boats-to-shut-down-the-strait-of-hormuz/) — Wired (2026-05-12)
-- [The Audemars Piguet x Swatch Collaboration Is Here for Real](https://www.wired.com/story/this-is-the-real-swatch-x-audemars-piguet-royal-pop-collaboration/) — Wired (2026-05-12)
-- [MAHA Keeps Being Weird as Hell About Fertility](https://www.wired.com/story/maha-is-still-creepily-obsessed-with-your-fertility/) — Wired (2026-05-12)
-- [Foxconn Ransomware Attack Shows Nothing Is Safe Forever](https://www.wired.com/story/foxconn-ransomware-attack-shows-nothing-is-safe-forever/) — Wired (2026-05-12)
-- [H&R Block Coupon: 25% Off DIY + Tax Pro Assist](https://www.wired.com/story/hr-block-coupon/) — Wired (2026-05-13)
-- [GM fined US$12.75m over driving data it promised not to sell](https://www.automotiveworld.com/news/gm-fined-us12-75m-over-driving-data-it-promised-not-to-sell/) — Automotive World (2026-05-11)
-- [Shady Selling of Driver Data Just Cost GM Another $12.75 Million](https://www.thedrive.com/news/shady-selling-of-driver-data-just-cost-gm-another-12-75-million) — The Drive (2026-05-11)
-- [BYD launches new Seagull with LiDAR for $13,000, setting a first for entry-level EVs [Video]](https://electrek.co/2026/05/12/byd-launches-seagull-ev-with-lidar-for-13000-first-in-its-class/) — Electrek (2026-05-12)
-- [Rivian rolls out ‘Hey Rivian’ AI assistant with full vehicle control](https://electrek.co/2026/05/12/rivian-hey-rivian-ai-assistant-vehicle-control/) — Electrek (2026-05-12)
-- [Europe's Largest Robotics Training Center Planned || Picture 1 / 2 - All-About-Industries](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM09OMzNvQ1V2TC1VeC1uVkE1Vi0xY2Q5d2l5bVg1X1A3UnRHU0E4UnhOblJiWTNObEhwb3hvV0V2blFxWVpSYUowZ09ScHNDdjhrTlllV2ZDRXpiMTlydkdpeTExNlBfMXNTME96cGJGZW1rQWxqOGFXTWpIS01feGNiWE55Q0tqdmduUGsxSXRCLUotU3JVR2FwX2txYm5ETjVaMEZvZ0ppSi02bmNzZmJTWEpGYWdNT09CY1F6dmw?oc=5) — GNews: NEURA Robotics (2026-05-12)
-- [Audi previews Q9 flagship SUV ahead of summer launch](https://www.automotiveworld.com/news/audi-previews-q9-flagship-suv-ahead-of-summer-launch/) — Automotive World (2026-05-12)
-- [Software-defined vehicles create cybersecurity risks industry struggles to manage](https://www.autonews.com/technology/ane-cybersecurity-threat-connected-sdv-tech-0505/) — Automotive News (2026-05-11)
-- [Thyssenkrupp cuts sales outlook after steel and automotive weakness weigh on results](https://www.autonews.com/manufacturing/suppliers/ane-thyssenkrupp-sales-outlook-cut-steel-demand-down-0512/) — Automotive News (2026-05-12)
-- [Volvo Trucks launches new electric and diesel range](https://www.automotiveworld.com/news/volvo-trucks-launches-new-electric-and-diesel-range/) — Automotive World (2026-05-12)
-- [摩根大通据称将对投行业务高层进行改组](https://36kr.com/newsflashes/3807257150381572?f=rss) — 36氪 36Kr (2026-05-13)
-- [中国移动发布“灵犀数霄”具身智能训练场 - 光明网](https://news.google.com/rss/articles/CBMiYEFVX3lxTE84bDIteTcyUTJZV29ITEozSS1vTFNmN205Q203TTFJYW9MUVZ3Zk03ajZ5VGE5dEx3WG1selRzSnBLRE1Va2xUVU5sWDZSZll5aTQwUDVYME1KYldIQVlleQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [超2000亿！中国具身智能企业估值TOP10，都在用什么大模型？ - AgeClub](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QLXQyVXU2VGQ5RHROUlJzdEVrc19UUmRfQndDVDZJbUxXUjROdVFkZi11NGZNYy0yT3JHcW92T2Y2VmlfWXV5NnpUdWo1YzJYNE1GeFdn?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [Europe's Largest Robotics Training Eenter Planned || Picture 1 / 2 - All-About-Industries](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaTVaMEdYVGFpYXR1X195TzB3aFFPYnNRNXAwM01qMTlFQW1LWVROU0lpb1IwYWxYdmdfdE93cEJFUEFQVnN5RUNaUHpDbjNtRjlEejJGSGdoRWszY2xMa0NkbmVjbldiM2dkTEdDejZsVkZWSXJ6RjltWEFSTkF2VHp4aWlISVJLVS10ZVREUkUycG0xZ2x6b2xwdEJyX0dIV3FtdUtJdkRjY0ZPbE8xLVJvc1hia3liYWFlLV9lYzg?oc=5) — GNews: NEURA Robotics (2026-05-12)
-- [TUM and Neura plan Europe's largest robotics center - All-About-Industries](https://news.google.com/rss/articles/CBMioAFBVV95cUxPSlBaSHRpTnlFNFMyY3JqMVpla1ktRi1PbGUtVTFnQ0daaVBMSHFVa21reWFhcS0xU2FKTVBEbFVLeF9PSEJrUFRVOXlSY1lMZ0xNSVJWMmVhWVAzOElaQU83LU41MVNvbGNQQ3dFWXpFZWlQUWItbnZYR0lQNHVlYnZabzAxSWhKazMyWDVLNzZuQXZNUHZ0dFdqRWZBUEps?oc=5) — GNews: NEURA Robotics (2026-05-12)
-- [ReachがAI自動車向けフルスタック製品群を発表…北京モーターショー2026](https://response.jp/article/2026/05/13/411183.html) — Response.jp (2026-05-12)
-- [オートバックスセブン、中国製EVの日本導入に関する報道を否定…「可能性について検討を進めている段階」](https://response.jp/article/2026/05/12/411146.html) — Response.jp (2026-05-12)
-- [「Claude Mythos」、メガバンク3社が利用へ　日経など報道](https://www.itmedia.co.jp/aiplus/articles/2605/13/news101.html) — ITmedia AI+ (2026-05-13)
-- [Wooptix Targets AI Packaging Bottleneck with Astronomy Tech](https://www.eetimes.com/wooptix-targets-ai-packaging-bottleneck-with-astronomy-tech/) — EE Times (2026-05-11)
-- [Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets](https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/) — TechCrunch AI (2026-05-12)
-- [Report: Google and SpaceX in talks to put data centers into orbit](https://techcrunch.com/2026/05/12/report-google-and-spacex-in-talks-to-put-data-centers-into-orbit/) — TechCrunch AI (2026-05-12)
-- [Chinese automaker Chery to launch EV brand with Japan's Autobacs Seven](https://asia.nikkei.com/business/automobiles/electric-vehicles/chinese-automaker-chery-to-launch-ev-brand-with-japan-s-autobacs-seven) — Nikkei Asia (2026-05-12)
-- [Unifor targets Ford in 2026 contract talks](https://www.autonews.com/manufacturing/anc-unifor-targets-ford-contract-talks-2026/) — Automotive News (2026-05-11)
-- [Learn why AI is changing the industry at the Automotive News Europe Congress](https://www.autonews.com/events/congress/ane-congress-2026-a1-panel-0512/) — Automotive News (2026-05-12)
-- [Sale details emerge in proposed Toledo Molding & Die acquisition by JVIS affiliate](https://www.autonews.com/manufacturing/suppliers/pn-toledo-molding-jvis-sale-details-first-brands-bankruptcy/) — Automotive News (2026-05-12)
-- [Germany’s subsidy programme prompts BEV sales uptick](https://www.automotiveworld.com/topics/e-mobility/germanys-ev-subsidy-programme-prompts-bev-sales-uptick/) — Automotive World (2026-05-11)
-- [California bets on sodium-ion batteries for extreme heat regions](https://electrek.co/2026/05/12/california-bets-on-sodium-ion-batteries-for-extreme-heat-regions/) — Electrek (2026-05-12)
-- [Genesis GV90 with coach doors found abandoned with no camouflage [Images]](https://electrek.co/2026/05/12/genesis-gv90-with-coach-doors-abandoned-no-camo-images/) — Electrek (2026-05-12)
-- [This chic beach car EV concept even has a pickup bed [Images]](https://electrek.co/2026/05/12/chic-beach-car-ev-concept-pickup-bed-images/) — Electrek (2026-05-12)
-- [韩国将从7月起实施电动汽车补贴评估制度](https://36kr.com/newsflashes/3807281857191426?f=rss) — 36氪 36Kr (2026-05-13)
-- [OTA 升级后续航减 200 KM，央视揭秘新能源汽车「锁电」真相；黄仁勋：别怕 AI，今天是应届生最好时机：微信测试「组合支付」功能｜极客早知道](http://www.geekpark.net/news/363937) — 极客公园 Geekpark (2026-05-11)
-- [OPPO 就母亲节文案发布问责通告；OpenAI 投资 40 亿美元成立新公司加速企业级 AI 落地；Claude 勒索行为源于网络邪恶信息](http://www.geekpark.net/news/364004) — 极客公园 Geekpark (2026-05-12)
-- [理想整车研发负责人刘立国：说理想不重视技术，是大大的误解](https://36kr.com/p/3804380633554696?f=rss) — 36氪 36Kr (2026-05-11)
-- [heise+ | Open-Source-Pager mit LoRa-Modem, GNSS, WLAN & Bluetooth im Test](https://www.heise.de/tests/Open-Source-Pager-mit-LoRa-Modem-GNSS-WLAN-Bluetooth-im-Test-11166374.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Keysight Expands PCIe® 7.0 Test Portfolio with New Receiver Stress Calibration](https://www.eejournal.com/industry_news/keysight-expands-pcie-7-0-test-portfolio-with-new-receiver-stress-calibration/) — EE Journal (2026-05-11)
-- [Rising EV and AI Loads Bring Connectors Into Early Design Decisions](https://www.eetimes.com/rising-ev-and-ai-loads-bring-connectors-into-early-design-decisions/) — EE Times (2026-05-12)
-- [2027 Mercedes S-Class First-Drive Review: At the Top of Its Game, Except for That Ugly Screen](https://www.thedrive.com/car-reviews/2027-mercedes-s-class-first-drive-review-at-the-top-of-its-game-except-for-that-ugly-screen) — The Drive (2026-05-12)
-- [Seven Saab Prototypes Left Behind at the Factory Are Headed to Auction](https://www.thedrive.com/news/seven-saab-prototypes-left-behind-at-the-factory-are-headed-to-auction) — The Drive (2026-05-12)
-- [Entlastung der Stromnetze: Parkende Elektroautos laden Elektrofähren auf](https://www.heise.de/news/Entlastung-der-Stromnetze-Parkende-Elektroautos-laden-Elektrofaehren-auf-11290565.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [The 2027 Audi Q9 Flagship Has Cupholders Big Enough for a Stanley and a Sound System That Vibrates Your Seat](https://www.thedrive.com/news/the-2027-audi-q9-flagship-has-cupholders-big-enough-for-a-stanley-and-a-sound-system-that-vibrates-your-seat) — The Drive (2026-05-11)
-- [Ford launches Ford Energy subsidiary to build 20 GWh of battery storage annually](https://electrek.co/2026/05/11/ford-energy-launches-battery-storage-subsidiary-20gwh-bess/) — Electrek (2026-05-11)
-- [Ford’s Oakville, Ont., retool nears completion, as investment in Super Duty climbs to nearly $5B](https://www.autonews.com/ford/anc-ford-super-duty-retool-nears-completion-0508/) — Automotive News (2026-05-11)
-- [South Korea explores using Hyundai robots as army numbers fall](https://www.autonews.com/hyundai/an-south-korea-hyundai-robots-military-deployment-0511/) — Automotive News (2026-05-11)
-- [印尼拟推出电动车补贴应对高油价](https://36kr.com/newsflashes/3807350035373568?f=rss) — 36氪 36Kr (2026-05-13)
-- [创业板指涨逾2%，上涨个股近3300只](https://36kr.com/newsflashes/3807302307667721?f=rss) — 36氪 36Kr (2026-05-13)
-- [36氪首发 | 清华系光计算芯片企业完成数千万天使轮融资，瞄准全波光计算架构](https://36kr.com/p/3807043342475009?f=rss) — 36氪 36Kr (2026-05-13)
-- [云南锗业：2025年度化合物半导体材料产品营收约1.38亿元，占比较低](https://36kr.com/newsflashes/3806249796525571?f=rss) — 36氪 36Kr (2026-05-12)
-- [Aptiv to supply Volvo Cars with Gen 8 ADAS radar](https://www.automotiveworld.com/news/aptiv-to-supply-volvo-cars-with-gen-8-adas-radar/) — Automotive World (2026-05-12)
-- [量子计算、AI与汽车安全威胁推动芯片安全架构变革 - 信息化观察网](https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zUzd2UG5PQ2Ryc09IU1BPNFVxSVg1cVFsUVdIQ2VtT2tKcXZ3c2hUM2hzRk8xZVdiTDRHeVd0TXBuZTJBOEdkUHdfUW5OVXBXampzMzRKUnFXMmFRbzBJZQ?oc=5) — GNews ZH: 嵌入式AI汽车 (2026-05-11)
-- [Sell Used Cars Faster with AI-Powered Financing Tool](https://www.autonews.com/sponsored/webinars/an-sell-used-cars-faster-with-ai-powered-financing-tool/) — Automotive News (2026-05-12)
-- [MountAIn, Alif Advance Low-Power Computer Vision at the Edge](https://www.embedded.com/mountain-alif-advance-low-power-computer-vision-at-the-edge/) — Embedded.com (2026-05-11)
-- [米国防総省、Anthropic排除継続も「Mythos」は導入　「国家安全保障上の重要局面」](https://www.itmedia.co.jp/aiplus/articles/2605/13/news118.html) — ITmedia AI+ (2026-05-13)
-- [2026 Jeep Grand Cherokee 2.0 Turbo reviews: A new engine wrapped in a bigger box](https://www.autonews.com/car-concepts/an-2026-jeep-grand-cherokee-2-liter-4-turbo-reviews-critics-corner-0512/) — Automotive News (2026-05-12)
-- [7 Strategies for Smarter Automotive Supply Chains](https://www.autonews.com/resource_center/4flow/an-strategies-smarter-automotive-supply-chains/) — Automotive News (2026-05-12)
-- [Guest commentary: Those 6-figure trade jobs the auto sector can’t fill reflect a cultural shift](https://www.autonews.com/opinion/guest-commentary/an-guest-commentary-tech-shortage-0512/) — Automotive News (2026-05-12)
-- [Factorial-Cartesian III SPAC deal clears US SEC review](https://www.automotiveworld.com/news/factorial-cartesian-iii-spac-deal-clears-us-sec-review/) — Automotive World (2026-05-11)
-- [Why Mitsubishi Electric won't follow Hitachi by selling appliance arm](https://asia.nikkei.com/business/electronics/why-mitsubishi-electric-won-t-follow-hitachi-by-selling-appliance-arm) — Nikkei Asia (2026-05-12)
-- [Chipentwickler: Elmos-Gründer steigen teilweise bei Chipentwickler aus](https://www.handelsblatt.com/technik/it-internet/chipentwickler-elmos-gruender-steigen-teilweise-bei-chipentwickler-aus/100224425.html) — Handelsblatt Technologie (2026-05-12)
-- [How Nissan cut tariff costs by $2.3 billion with its America-first strategy](https://www.autonews.com/nissan/an-nissan-slashes-23b-in-tariff-costs-with-made-in-usa-push-0511/) — Automotive News (2026-05-11)
-- [Threads tests a Meta AI integration that works similarly to Grok](https://techcrunch.com/2026/05/12/threads-tests-a-meta-ai-integration-that-works-similarly-to-grok/) — TechCrunch AI (2026-05-12)
-- [SAP setzt auf KI: Autonomous Suite und Business AI Platform vorgestellt](https://www.heise.de/news/Altes-Wissen-neue-KI-SAPs-Strategie-fuer-das-autonome-Unternehmen-11292097.html) — Heise Developer (2026-05-12)
-- [Kommentar: Merz bleibt Antworten schuldig](https://www.handelsblatt.com/meinung/kommentare/kommentar-merz-bleibt-antworten-schuldig/100224072.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Belästigung oder Gefahr?: So werden Sie lästige Neuwagengerüche schneller los](https://www.handelsblatt.com/mobilitaet/motor/belaestigung-oder-gefahr-so-werden-sie-laestige-neuwagengerueche-schneller-los/100224582.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Chiphersteller: Nexperia-Streit geht weiter: Chinesischer Konzern will Milliarden von Den Haag](https://www.handelsblatt.com/unternehmen/industrie/chiphersteller-chinesischer-konzern-fordert-in-nexperia-streit-milliarden/100224520.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Automated Tire decloaks with new autonomous tire-changing SmartBay](https://www.therobotreport.com/automated-tire-decloaks-smartbay-autonomous-tire-changing/) — The Robot Report (2026-05-12)
-- [2026 RBR50 Robotics Innovation Awards](https://www.therobotreport.com/rbr50-2026-report/) — The Robot Report (2026-05-12)
-- [US lawmakers make last-ditch push to block cave on China EVs](https://www.automotiveworld.com/topics/e-mobility/us-lawmakers-make-last-ditch-push-to-block-cave-on-china-evs/) — Automotive World (2026-05-12)
-- [Guest commentary: Why European automakers could miss out on global EV boom](https://www.autonews.com/ev/ane-guest-column-poliscanova-evs-0511/) — Automotive News (2026-05-11)
-- [Europe has invested €200 billion so far to boost EV sector, report says](https://www.autonews.com/ev/ane-europe-investment-evs-batteries-0511/) — Automotive News (2026-05-11)
-- [Protect your enterprise now from the Shai-Hulud worm and npm vulnerability in 6 actionable steps](https://venturebeat.com/security/shai-hulud-worm-172-npm-pypi-packages-valid-provenance-ci-cd-audit) — VentureBeat AI (2026-05-12)
-- [2050学习节「AGI 4 Science」专场：17位青年学者「挤」在3小时里，都讲了些什么？](https://www.leiphone.com/category/academic/kpP0KxjMEzOcZe3b.html) — 雷锋网 Leiphone (2026-05-11)
-- [存储现货部分「闪崩」最全详解：该离场，还是该囤货？](https://www.leiphone.com/category/chips/67Z7qfkV6TdqJtxz.html) — 雷锋网 Leiphone (2026-05-12)
-- [Septentrio extends its GNSS module family with mosaic-G5 P6](https://www.eejournal.com/industry_news/septentrio-extends-its-gnss-module-family-with-mosaic-g5-p6/) — EE Journal (2026-05-12)
-- [u-blox unveils GNSS modules for ADAS and autonomy](https://www.automotiveworld.com/news/u-blox-unveils-gnss-modules-for-adas-and-autonomy/) — Automotive World (2026-05-12)
-- [Henkel adds two thermal materials for EV batteries](https://www.automotiveworld.com/news/henkel-adds-two-thermal-materials-for-ev-batteries/) — Automotive World (2026-05-12)
-- [SDV survey: AI diagnostics top automakers’ priority list](https://www.automotiveworld.com/news/sdv-survey-ai-diagnostics-top-automakers-priority-list/) — Automotive World (2026-05-12)
-- [Waymo recalls its 3,800-unit robotaxi fleet over flood risk](https://www.automotiveworld.com/news/waymo-recalls-its-3800-unit-robotaxi-fleet-over-flood-risk/) — Automotive World (2026-05-12)
-- [Smarter Kuschelroboter SwitchBot Kata spaziert, blinzelt und plaudert mit KI](https://www.heise.de/news/Smarter-Kuschelroboter-SwitchBot-Kata-spaziert-blinzelt-und-plaudert-mit-KI-11290555.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [SAP setzt auf KI: Autonomous Suite und Business AI Platform vorgestellt](https://www.heise.de/news/Altes-Wissen-neue-KI-SAPs-Strategie-fuer-das-autonome-Unternehmen-11292097.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [36氪专访 | 安克创新eufy Make负责人：众筹超4000万美金后，还在红海寻找缝隙](https://36kr.com/p/3806507139390984?f=rss) — 36氪 36Kr (2026-05-13)
-- [8点1氪丨SK海力士回应“员工人均奖金达610万元”传闻；世界杯中国转播费从3亿美元腰斩到1.5亿；曝三星中国家电部门裁员补偿N+4，还送手机](https://36kr.com/p/3804132892646919?f=rss) — 36氪 36Kr (2026-05-11)
-- [KI: OpenAI geht in die Offensive – „Das Geschäft läuft auf Hochtouren“](https://www.handelsblatt.com/technik/ki/openai-vertriebschefin-das-geschaeft-laeuft-auf-hochtouren/100222751.html) — Handelsblatt Technologie (2026-05-11)
-- [Robots to the rescue? South Korea looks for solutions to falling army numbers - South China Morning Post](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcGJiZTg1cVVteEZHSEdtNzNxSkRBTm91RTJjZ0tJMEUwWkdVemIzbUFWNnp5VnZvMlQ4YnRzdG5rVDdBV1R1SzNNdGJKNnZndFdndlNPZnl5NGVKYXgzYUotamhBVmdMUTJ4ZTNnWjcxOXd1YUhnVUNSVnBtTXRjVmVzWW9sbEgwWFh2QkQxcXRCSC04bDE4aHdrWWlta0t2ZkR2Sm9Vd3Q2N0Faa0RZbkZ1OWpPYnJFSVBxVmpybEtFdw?oc=5) — GNews: Boston Dynamics (2026-05-11)
-- [These robots read head nods, not code, to tidy a bedroom - The Daily Star](https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmFWZU5ZWWJXbFF0QXNsajVUTUJnX0lrZHY1Sk1aS1hNSlh4eENpZ0V0Sm1sU3AtUE5id2RCempFMXFzNUthQTlQX2Nhb2stZUprc1ZqV1pMdVNRV1E2RjhhMmVrOUxvVkFEVGlDZUVSWnRuODJlSzZTNFdLVWhQVzR2Q19ndDFFaDEzX2U5ZDN1YUw1bUJpbHNDMkttb3Bla1VfbnJHeFZUWHZxY3c?oc=5) — GNews: Figure AI Robotics (2026-05-12)
-- [heise-Angebot: iX-Konferenz: Hilfreiche Architektur-Dokumentation in weniger als 60 Minuten](https://www.heise.de/news/iX-Konferenz-Hilfreiche-Architektur-Dokumentation-in-weniger-als-60-Minuten-11286027.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Kia Wants Another Stinger, But It’s Being Patient: TDS](https://www.thedrive.com/news/kia-wants-another-stinger-but-its-being-patient-tds) — The Drive (2026-05-11)
-- [Tomarchio brothers to debut new tire concept in Baltimore area](https://www.autonews.com/retail/service-and-parts/tb-tamarchio-joe-tires-only-baltimore/) — Automotive News (2026-05-11)
-- [Audi Q9 interior illustrates just how big critically needed three-row crossover will be](https://www.autonews.com/volkswagen/audi/an-audi-q9-interior-0511/) — Automotive News (2026-05-11)
-- [芯片厂商联发科发布AI智能体化引擎2.0，与多家手机厂商合作系统原生Claw](https://36kr.com/newsflashes/3807358730657287?f=rss) — 36氪 36Kr (2026-05-13)
-- [heise+ | Dienstwagen mit eigenem PV-Strom laden: Zwischen Einspeisung und Erstattung](https://www.heise.de/ratgeber/Dienstwagen-mit-eigenem-PV-Strom-laden-Zwischen-Einspeisung-und-Erstattung-11275083.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’](https://www.wired.com/story/ilya-sutskever-testifies-musk-v-altman-trial/) — Wired (2026-05-11)
-- [China April auto sales fall for seventh month, exports soar](https://www.automotiveworld.com/news/china-april-auto-sales-fall-for-seventh-month-exports-soar/) — Automotive World (2026-05-12)
-- [China April sales drop as war hits demand for gasoline cars](https://www.autonews.com/retail/sales/ane-china-sales-april-ice-ev-iran-war-0511/) — Automotive News (2026-05-11)
-- [What’s at stake for auto as U.S., Mexico and Canada evaluate free trade](https://www.autonews.com/manufacturing/an-usmca-tariffs-reorder-global-trade-0511/) — Automotive News (2026-05-11)
-- [Thinking Machines shows off preview of near-realtime AI voice and video conversation with new 'interaction models'](https://venturebeat.com/technology/thinking-machines-shows-off-preview-of-near-realtime-ai-voice-and-video-conversation-with-new-interaction-models) — VentureBeat AI (2026-05-11)
-- [Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google) — VentureBeat AI (2026-05-12)
-- [Entspannung auf spitzen Nadeln: Therapie oder nur Wohlfühlhilfe? Was Akupressurmatten können](https://www.handelsblatt.com/technik/medizin/entspannung-auf-spitzen-nadeln-therapie-oder-nur-wohlfuehlhilfe-was-akupressurmatten-koennen/100224647.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [嵌入式智能：重构工程设计的“确定性”新范式 - 电子工程专辑](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sMk1vZ1M1dG5KSDlwd3N5ZjZQSzVYSVhuYmw5WU1YWmdHMUgzVXBPTzB0cDdXQWloOU02ZVhFcTI2ZlNsZzduSm1NSU13Ykk4SzNDa0h6Q1h4OE9N?oc=5) — GNews ZH: 嵌入式AI汽车 (2026-05-12)
-- [Anthropic findet Antwort: Darum erpresste Claude Software-Entwickler](https://www.heise.de/news/Anthropic-findet-Antwort-Darum-erpresste-Claude-Software-Entwickler-11290625.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [SMIC secures approval for $5.9 billion acquisition in China’s largest domestic wafer foundry M&A](https://technode.com/2026/05/12/smic-secures-approval-for-5-9-billion-acquisition-in-chinas-largest-domestic-wafer-foundry-ma/) — Technode (2026-05-12)
-- [Why Canada is seeking a return to normalcy on auto trade amid U.S. ‘violations’ of USMCA](https://www.autonews.com/manufacturing/an-usmca-tariffs-us-canada-talks-0512/) — Automotive News (2026-05-12)
-- [Interview: Infosys-Chairman: „KI wird eine Menge neuer Arbeit schaffen“](https://www.handelsblatt.com/technik/it-internet/infosys-chairman-ki-wird-eine-menge-neuer-arbeit-schaffen/100221979.html) — Handelsblatt Technologie (2026-05-11)
-- [Solar firms in US allege Chinese tariff evasion through Ethiopia](https://asia.nikkei.com/business/energy/solar-firms-in-us-allege-chinese-tariff-evasion-through-ethiopia) — Nikkei Asia (2026-05-12)
-- [World Models: 10 Things That Matter in AI Right Now](https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/) — MIT Technology Review (2026-05-12)
-- [WHILLの免許不要モビリティ、旭川で5月21日から貸し出しへ](https://response.jp/article/2026/05/12/411166.html) — Response.jp (2026-05-12)
-- [The Memory Wall Is Real, Here Is the Door](https://www.eetimes.com/the-memory-wall-is-real-here-is-the-door/) — EE Times (2026-05-11)
-- [AWS-Chef Matt Garman: „Das Angebot wird weiter beschränkt bleiben“](https://www.handelsblatt.com/technik/ki/aws-chef-matt-garman-das-angebot-wird-weiter-beschraenkt-bleiben/100222364.html) — Handelsblatt Technologie (2026-05-12)
-- [Kia’s cyber-inspired electric sports car is ‘90% production-ready’](https://electrek.co/2026/05/11/kias-cyber-inspired-electric-sports-car-is-90-production-ready/) — Electrek (2026-05-11)
-- [Galerien-Event in München: Eine Stadt im Kunstfieber](https://www.handelsblatt.com/arts_und_style/kunstmarkt/galerien-event-in-muenchen-eine-stadt-im-kunstfieber/100218361.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Vermögen: Bin ich schon reich oder nicht? Dieser Rechner liefert Ihnen die Antwort](https://www.handelsblatt.com/finanzen/anlagestrategie/vermoegen-so-finden-sie-heraus-wie-reich-sie-wirklich-sind/100149729.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Longevity: „Die Wirkstoffe der Abnehmspritzen könnten das Altern verlangsamen“](https://www.handelsblatt.com/technik/medizin/longevity-heute-kann-das-biologische-alter-jedes-organs-ermittelt-werden/100222136.html) — Handelsblatt Technologie (2026-05-12)
-- [Dealer-funded technician training program hopes automakers will help it grow](https://www.autonews.com/retail/service-and-parts/an-new-jersey-tap-program-sidebar-0512/) — Automotive News (2026-05-12)
-- [AI Data Centers in Space: Bonkers or Visionary?](https://www.eejournal.com/article/ai-data-centers-in-space-bonkers-or-visionary/) — EE Journal (2026-05-12)
-- [Infineon’s new XHP™ 2 CoolSiC™ high-power modules boost efficiency and power density in high-voltage energy systems](https://www.eejournal.com/industry_news/infineons-new-xhp-2-coolsic-high-power-modules-boost-efficiency-and-power-density-in-high-voltage-energy-systems/) — EE Journal (2026-05-12)
-- [HellermannTyton Heat Shrink Moulded Shapes from Lane Electronics Protect Interconnects in Demanding Environments](https://www.eejournal.com/industry_news/hellermanntyton-heat-shrink-moulded-shapes-from-lane-electronics-protect-interconnects-in-demanding-environments/) — EE Journal (2026-05-12)
-- [Vishay Intertechnology ESD Protection Diode Passes IEEE 10BASE-T1S Compliance Tests](https://www.eejournal.com/industry_news/vishay-intertechnology-esd-protection-diode-passes-ieee-10base-t1s-compliance-tests/) — EE Journal (2026-05-12)
-- [AMP IT raises funds for EV charging-as-a-service push](https://www.automotiveworld.com/news/amp-it-raises-funds-for-ev-charging-as-a-service-push/) — Automotive World (2026-05-12)
-- [Valeo joins GIC project on automotive plastic recycling](https://www.automotiveworld.com/news/valeo-joins-gic-project-on-automotive-plastic-recycling/) — Automotive World (2026-05-12)
-- [MAN wins 112-bus Lion’s City E order for Vilnius](https://www.automotiveworld.com/news/man-wins-112-bus-lions-city-e-order-for-vilnius/) — Automotive World (2026-05-12)
-- [Motive adds AI fatigue and eating detection for fleets](https://www.automotiveworld.com/news/motive-adds-ai-fatigue-and-eating-detection-for-fleets/) — Automotive World (2026-05-12)
-- [Aptera Motors builds first five validation vehicles](https://www.automotiveworld.com/news/aptera-motors-builds-first-five-validation-vehicles/) — Automotive World (2026-05-12)
-- [Driivz wins Duracell UK ultra-fast charging contract](https://www.automotiveworld.com/news/driivz-wins-duracell-uk-ultra-fast-charging-contract/) — Automotive World (2026-05-12)
-- [Mazda sets sights on 191% EBIT growth in fiscal 2027](https://www.automotiveworld.com/analysis/mazda-sets-sights-on-191-ebit-growth-in-fiscal-2027/) — Automotive World (2026-05-12)
-- [Sicherheitsfixes: Warum man schnell auf iOS 26.5 & Co. aktualisieren sollte](https://www.heise.de/news/macOS-26-5-iOS-26-5-und-Co-Apple-stopft-zahlreiche-Sicherheitsluecken-11290897.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [《Science》最新专访：中国材料科学领域顶级学者李昊和AI for Science的三项代表性工作](https://www.leiphone.com/category/ai/GI33oajsC5xZEdmF.html) — 雷锋网 Leiphone (2026-05-11)
-- [Two Humanoid Robots Clean a Bedroom, Organizing, Hanging Clothes, and Making the Bed - Gadget Review](https://news.google.com/rss/articles/CBMirwFBVV95cUxOWEctakxpcXQ1RmlwNGFhT1BISm94MVUwaDYteGpfN1pzVHdrbjZhcVAwa2lndG1PUmlsTlJWcVZKU0VGcFY0dzhHMkp6dG8yV2RHakZ3NmJzRVAxMUZyOGlqYU5pSkdWYllGTjZnNkZCQkZYeEY0WmxoRVV6NHh3dlJBaTNJdUttOW5qQVZ0d2RtNTFkcE1fLXpWaXhJN0JEV2M3cHIyMEZqWWFYdzZF?oc=5) — GNews: Figure AI Robotics (2026-05-11)
-- [AI Delivers Faster, Actionable DRC Closure for Complex SoC Designs](https://www.eetimes.com/ai-delivers-faster-actionable-drc-closure-for-complex-soc-designs/) — EE Times (2026-05-12)
-- [Epson Lifestudio Grand Plus Review: Rich Colors, Gemini Support](https://www.wired.com/review/epson-lifestudio-grand-plus/) — Wired (2026-05-12)
-- [Why Soccer Still Defies Statistical Analysis](https://www.wired.com/story/book-excerpt-how-to-watch-soccer-like-a-genius-nick-greene/) — Wired (2026-05-12)
-- [Ford explains every Mustang Mach-E has a distinct ‘personality’](https://electrek.co/2026/05/12/ford-explains-every-mustang-mach-e-ev-distinct-personality/) — Electrek (2026-05-12)
-- [爱思唯尔把Meta告了：拿Sci-Hub盗版论文训练大模型](https://www.qbitai.com/2026/05/416576.html) — 量子位 Qbitai (2026-05-13)
-- [Lotus Dumps EV Plan for a New V8 Supercar: TDS](https://www.thedrive.com/news/lotus-dumps-ev-plan-for-a-new-v8-supercar-tds) — The Drive (2026-05-12)
-- [‘If You Don’t Like It, You Don’t Have to Watch’: Nico Hulkenberg Talks 2026 Rules and Audi’s F1 Fight](https://www.thedrive.com/news/nico-hulkenberg-interview-talks-2026-rules-and-audi-f1-fight) — The Drive (2026-05-12)
-- [Sell Used Cars Faster with AI-Powered Financing Tool](https://www.autonews.com/resource_center/Upstart/an-sell-used-cars-faster-with-ai-powered-financing-tool-0512/) — Automotive News (2026-05-12)
-- [Alibaba to merge Qwen AI with Taobao in push for new AI-powered shopping](https://technode.com/2026/05/11/alibaba-to-merge-qwen-ai-with-taobao-in-push-for-new-ai-powered-conversational-shopping-experience/) — Technode (2026-05-11)
-- [Is your enterprise adaptive to AI?](https://venturebeat.com/orchestration/is-your-enterprise-adaptive-to-ai) — VentureBeat AI (2026-05-12)
-- [Turning AI cost spikes into strategic growth opportunities](https://venturebeat.com/orchestration/turning-ai-cost-spikes-into-strategic-growth-opportunities) — VentureBeat AI (2026-05-12)
-- [Musk mulled handing OpenAI to his children, Altman testifies](https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/) — TechCrunch AI (2026-05-12)
-- [360内部启动“龙虾计划”：每人1亿Token自动到账 “龙虾教练”即将亮相](https://www.leiphone.com/category/industrynews/ovhSH6doEiluAvyZ.html) — 雷锋网 Leiphone (2026-05-11)
-- [腾讯 AI · 五问丨混元的三年战争](https://www.leiphone.com/category/industrynews/HY5vV5CioWW4KDg6.html) — 雷锋网 Leiphone (2026-05-11)
-- [谁来解决大模型的“最后一公里”工程难题？](https://www.leiphone.com/category/industrynews/rT4Gl5nSCqJunF8o.html) — 雷锋网 Leiphone (2026-05-12)
-- [何恺明团队论文全景扫描：一场关于「生成范式」的多角度突破 | CVPR 2026](https://www.leiphone.com/category/ai/dIG98W2KaEKFQ5Xp.html) — 雷锋网 Leiphone (2026-05-12)
-- [乐橙×火山引擎：给安防注入AI能力，让监控从“被动记录”进化为“主动思考”](https://www.leiphone.com/category/industrynews/SaxKkVxHTp7fQEq9.html) — 雷锋网 Leiphone (2026-05-12)
-- [中国移动“灵犀数霄”具身智能训练场发布 - 新华网浙江](https://news.google.com/rss/articles/CBMiggFBVV95cUxOdW1IT2pVeHJMV1libE92WXdNVE5SYU41Wm9udWliRjhNS0g3aXBCSHZMVGY1UEdnSmlqUzc1RzhGa2Zua0ZBTEFhX1Z4U0NlcTBORXJJUFc1cGJhYkxseXRnck8wOFZqT3BuQXFaU1hzM0hFRWdNNEpmLXVzNlJVNzlR?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [New Jersey dealers launch free service technician training to fill talent gap](https://www.autonews.com/retail/service-and-parts/an-new-jersey-dealers-create-technician-training-0512/) — Automotive News (2026-05-12)
-- [Best Robotics Developments in AI Integration - Analytics Insight](https://news.google.com/rss/articles/CBMingFBVV95cUxOZTVQWURLbG1RVnR2UWUzeTEzV29SX3pMU0xBTU5Hc2ZsTGFETWhlenRUd2doYTk3WFVHZTZPQlJxWXVReDFNWUItZjJBN2VlZGlwYkpqOTZqYVpwaWpVRFlzYkRiTDByV1BJM2JDYUhoNUQwZm9jODlLZWlRTUZ5VlFLdkRlTkJQZnNqbi1nWHZWbkszQ2N1VFROeVFSQdIBngFBVV95cUxOZTVQWURLbG1RVnR2UWUzeTEzV29SX3pMU0xBTU5Hc2ZsTGFETWhlenRUd2doYTk3WFVHZTZPQlJxWXVReDFNWUItZjJBN2VlZGlwYkpqOTZqYVpwaWpVRFlzYkRiTDByV1BJM2JDYUhoNUQwZm9jODlLZWlRTUZ5VlFLdkRlTkJQZnNqbi1nWHZWbkszQ2N1VFROeVFSQQ?oc=5) — GNews: Figure AI Robotics (2026-05-12)
-- [OpenAI 前 CTO，拿出了一个「最人性」的 AI](http://www.geekpark.net/news/364044) — 极客公园 Geekpark (2026-05-12)
-- [3M加入行业联盟，推进人工智能数据中心光互联技术发展](https://36kr.com/newsflashes/3806269522779648?f=rss) — 36氪 36Kr (2026-05-12)
-- [Walulu：用六个月撕开一条新赛道](https://36kr.com/p/3805761383751427?f=rss) — 36氪 36Kr (2026-05-12)
-- [Corrupt DoT head takes oil money to film reality TV show during oil price spike](https://electrek.co/2026/05/12/corrupt-dot-head-takes-oil-money-to-film-reality-tv-show-during-oil-price-spike/) — Electrek (2026-05-12)
-- [heise+ | 3D-Welten aus einem kurzen Video: Gaussian Splats selbst erstellen](https://www.heise.de/ratgeber/3D-Welten-aus-einem-kurzen-Video-Gaussian-Splats-selbst-erstellen-11275448.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-11)
-- [Interview zu Europas Bankwesen: „Regulierung könnte auch ein Vorteil sein“](https://www.heise.de/hintergrund/Banken-KI-und-die-Cloud-Regulierung-koennte-auch-ein-Vorteil-sein-11290533.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [ByteDance boosts AI infrastructure spending by 25% to $28 billion this year](https://technode.com/2026/05/11/bytedance-boosts-ai-infrastructure-spending-by-25-to-28-billion-this-year/) — Technode (2026-05-11)
-- [Running Claude Code or Claude in Chrome? Here's the audit matrix for every blind spot your security stack misses](https://venturebeat.com/security/claude-confused-deputy-audit-matrix-security-blind-spots) — VentureBeat AI (2026-05-12)
-- [OpenAI 前 CTO 的创业模型首秀，与面壁智能「撞车」了](https://www.leiphone.com/category/industrynews/jwMxsiSwMNl3Wmju.html) — 雷锋网 Leiphone (2026-05-12)
-- [在中国市场搞「付费订阅」，豆包咋想的？](http://www.geekpark.net/news/364059) — 极客公园 Geekpark (2026-05-12)
-- [量子计算走出“科幻片”，「波色量子」在肿瘤、脑机等领域交出百余个落地案例](https://36kr.com/p/3804356346879495?f=rss) — 36氪 36Kr (2026-05-12)
-- [Kuaishou Technology may spin off King AI in bid to capture AI market frenzy](https://technode.com/2026/05/12/kuaishou-technology-may-spin-off-king-ai-in-bid-to-capture-ai-market-frenzy/) — Technode (2026-05-12)
-- [Japan's SoftBank enters battery business to power AI data centers](https://asia.nikkei.com/business/energy/japan-s-softbank-enters-battery-business-to-power-ai-data-centers) — Nikkei Asia (2026-05-12)
-- [Column: How the Automotive News Leadership Academy taught me to focus on strengths, let weaknesses go](https://www.autonews.com/manufacturing/an-2026-leading-women-leadership-academy-0511/) — Automotive News (2026-05-11)
-- [KI-Transparenz: EU-Kommission konkretisiert Regeln gegen digitale Täuschung](https://www.heise.de/news/KI-Transparenz-EU-Kommission-konkretisiert-Regeln-gegen-digitale-Taeuschung-11290417.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Von KI gefundene Zero-Day-Lücke: Google verhindert angeblich Cyberangriff](https://www.heise.de/news/Google-Cyberangriff-mittels-per-KI-gefundener-Zero-Day-Luecke-abgewehrt-11290551.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [There aren’t enough rockets for space data centers — Cowboy Space raised $275M to build them](https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them/) — TechCrunch AI (2026-05-11)
-- [Vietnam's workers power Japan Inc but face AI risks at home](https://asia.nikkei.com/economy/vietnam-s-workers-power-japan-inc-but-face-ai-risks-at-home) — Nikkei Asia (2026-05-12)
-- [LPWAN for IIoT: A Technical Comparison of LoRaWAN and NB-IoT](https://www.embedded.com/lpwan-for-iiot-a-technical-comparison-of-lorawan-and-nb-iot/) — Embedded.com (2026-05-11)
-- [Kriminalität: „Effizient, effektiv, schnell“ – Was KI-Cyberattacken so gefährlich macht](https://www.handelsblatt.com/politik/deutschland/bundeslagebild-wenn-ki-angreift-bka-warnt-vor-massiven-cyberattacken/100223978.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [heise+ | Einsatzbereite KI-Features mit LangGraph umsetzen](https://www.heise.de/ratgeber/Einsatzbereite-KI-Features-mit-LangGraph-umsetzen-11281968.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-11)
-- [Karriere: Dieser Chatbot hilft Ihnen, das Maximum bei der Gehaltsverhandlung herauszuholen](https://www.handelsblatt.com/karriere/gehalt-dieser-chatbot-bereitet-sie-ideal-auf-gehaltsverhandlungen-vor/100114961.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [KI kann den Chef ersetzen – aber nicht mich](https://www.heise.de/news/KI-kann-den-Chef-ersetzen-aber-nicht-mich-11290037.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [The Download: a Nobel winner on AI, and the case for fixing everything](https://www.technologyreview.com/2026/05/12/1137103/the-download-nobel-winner-ai-maintenance-of-everything/) — MIT Technology Review (2026-05-12)
-- [Three things in AI to watch, according to a Nobel-winning economist](https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist/) — MIT Technology Review (2026-05-11)
-- [I Work in Hollywood. Everyone Who Used to Make TV Is Now Secretly Training AI](https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/) — Wired (2026-05-11)
-- [heise-Angebot: iX-Workshop: Make.com und n8n – Geschäftsprozesse mit KI-Agenten automatisieren](https://www.heise.de/news/iX-Workshop-Make-com-und-n8n-Geschaeftsprozesse-mit-KI-Agenten-automatisieren-11280761.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Künstliche Intelligenz: „Mit 75 Prozent Wahrscheinlichkeit passiert genau das: Die Blase platzt“](https://www.handelsblatt.com/technik/ki/ki-koennen-ceos-von-kuenstlicher-intelligenz-ersetzt-werden/100189694.html) — Handelsblatt Technologie (2026-05-12)
-- [heise-Angebot: KI im Unternehmen: So gelingt der sichere GPT-Einsatz](https://www.heise.de/news/KI-im-Unternehmen-So-gelingt-der-sichere-GPT-Einsatz-11287713.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Digg tries again, this time as an AI news aggregator](https://techcrunch.com/2026/05/11/digg-tries-again-this-time-as-an-ai-news-aggregator/) — TechCrunch AI (2026-05-11)
-- [Thinking Machines wants to build an AI that actually listens while it talks](https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/) — TechCrunch AI (2026-05-12)
-- [Noom Promo Codes: 50% Off Best Deals & Free Trials for April 2026](https://www.wired.com/story/noom-promo-code/) — Wired (2026-05-12)
-- [KI-Update: Verstörende Chatbots, Neue Audio-Modelle, Mythos, Cloudflare](https://www.heise.de/news/KI-Update-Verstoerende-Chatbots-Neue-Audio-Modelle-Mythos-Cloudflare-11288660.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Fostering breakthrough AI innovation through customer-back engineering](https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/) — MIT Technology Review (2026-05-11)
-- [Implementing advanced AI technologies in finance](https://www.technologyreview.com/2026/05/11/1136786/implementing-advanced-ai-technologies-in-finance/) — MIT Technology Review (2026-05-11)
-- [Rücktrittsforderungen: Der „standhafte“ Premierminister: Starmer hält an sich fest](https://www.handelsblatt.com/politik/international/ruecktrittsforderungen-der-standhafte-premierminister-starmer-haelt-an-sich-fest/100224451.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Kleinwagen: Das sind die wichtigsten Polo-Konkurrenten](https://www.handelsblatt.com/mobilitaet/elektromobilitaet/e-auto-diese-fuenf-modelle-machen-dem-vw-id.polo-ernsthafte-konkurrenz/100222482.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Autoindustrie: Tesla will Batteriezellfertigung in Grünheide ausbauen](https://www.handelsblatt.com/unternehmen/industrie/autoindustrie-tesla-will-batteriezellfertigung-in-gruenheide-ausbauen/100224574.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [AWS-Chef Matt Garman: „Google versucht immer, Aufmerksamkeit zu bekommen“](https://www.handelsblatt.com/technik/ki/aws-chef-matt-garman-google-versucht-immer-aufmerksamkeit-zu-bekommen/100222364.html) — Handelsblatt Technologie (2026-05-12)
-- [Rechenzentrum in Georgia entnimmt unbemerkt 110 Millionen Liter Wasser](https://www.heise.de/news/Rechenzentrum-in-Georgia-entnimmt-unbemerkt-110-Millionen-Liter-Wasser-11290889.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Red Hat AI 3.4: Eigene Inferenzplattformen statt externer API-Calls](https://www.heise.de/news/Red-Hat-AI-3-4-mit-Agenten-Kontrolle-und-erweiterter-Inferenz-11291804.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Tesla invests $250M more in Giga Berlin battery cells, boosting capacity to 18 GWh](https://electrek.co/2026/05/12/tesla-giga-berlin-250-million-battery-cell-investment-18-gwh/) — Electrek (2026-05-12)
-- [Tesla finally launches Supercharger virtual queue pilot after fights broke out](https://electrek.co/2026/05/12/tesla-supercharger-virtual-queue-pilot-5-locations/) — Electrek (2026-05-12)
-- [Tencent Music reports Q1 2026 revenue up 7.3% as non-membership music services rise 28%](https://technode.com/2026/05/12/tencent-music-reports-q1-2026-revenue-up-7-3-as-non-membership-music-services-rise-28/) — Technode (2026-05-12)
-- [Cybersicherheit: Auch China entwickelt KI-Modelle mit „Superhacking“-Fähigkeiten – Wird Europa abgehängt?](https://www.handelsblatt.com/politik/deutschland/cybersecurity-auch-china-entwickelt-ki-modelle-mit-superhacking-faehigkeiten-01/100223903.html) — Handelsblatt Schlagzeilen (2026-05-14)
-- [Former long-time Tesla CFO Deepak Ahuja joins JB Straubel’s Redwood Materials](https://electrek.co/2026/05/11/former-tesla-cfo-deepak-ahuja-joins-jb-straubel-redwood-materials/) — Electrek (2026-05-11)
-- [Interview: Neuer Merck-Chef: „Wir verschenken zu viel Geschwindigkeit“](https://www.handelsblatt.com/unternehmen/industrie/interview-wir-verschenken-zu-viel-geschwindigkeit/100222129.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Arbeit und Gesundheit: DIW: Mehr Fehltage nicht allein wegen E-Krankschreibung](https://www.handelsblatt.com/politik/deutschland/arbeit-und-gesundheit-diw-mehr-fehltage-nicht-allein-wegen-e-krankschreibung/100224768.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Versicherung: Allianz verdient im ersten Quartal so viel wie nie zuvor](https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherer/versicherung-allianz-verdient-im-ersten-quartal-so-viel-wie-nie-zuvor/100222155.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Apple-Intel Foundry Deal Could Reshape U.S. Chip Manufacturing](https://www.eetimes.com/apple-intel-foundry-deal-could-reshape-u-s-chip-manufacturing/) — EE Times (2026-05-12)
-- [Japan's Murata rewards in-house innovators to keep global capacitor lead](https://asia.nikkei.com/business/electronics/japan-s-murata-rewards-in-house-innovators-to-keep-global-capacitor-lead) — Nikkei Asia (2026-05-13)
-- [Japan Inc., households step up overseas investment despite weak yen](https://asia.nikkei.com/business/markets/japan-inc.-households-step-up-overseas-investment-despite-weak-yen) — Nikkei Asia (2026-05-13)
-- [Japan megabanks to gain access to Anthropic's powerful AI model Mythos](https://asia.nikkei.com/business/finance/japan-megabanks-to-gain-access-to-anthropic-s-powerful-ai-model-mythos) — Nikkei Asia (2026-05-13)
-- [Japan aims to set first new global standard for second in 63 years](https://asia.nikkei.com/business/science/japan-aims-to-set-first-new-global-standard-for-second-in-63-years) — Nikkei Asia (2026-05-12)
-- [The AI space race: US and China bet big on orbital data centers](https://asia.nikkei.com/business/technology/tech-asia/the-ai-space-race-us-and-china-bet-big-on-orbital-data-centers) — Nikkei Asia (2026-05-13)
-- [China loves food deliveries. Restaurants are starving as a result](https://asia.nikkei.com/business/food-beverage/china-loves-food-deliveries.-restaurants-are-starving-as-a-result) — Nikkei Asia (2026-05-13)
-- [China widens oil purchases to extend influence from US to Iran](https://asia.nikkei.com/politics/international-relations/china-widens-oil-purchases-to-extend-influence-from-us-to-iran) — Nikkei Asia (2026-05-13)
-- [China, US trade chiefs huddle for last-minute talks before Trump visit](https://asia.nikkei.com/economy/trade-war/china-us-trade-chiefs-huddle-for-last-minute-talks-before-trump-visit) — Nikkei Asia (2026-05-13)
-- [Clemens Fuest: Amerika im Turbo und Deutschland im Kriechgang](https://www.handelsblatt.com/meinung/wirtschaftsforum/wirtschaftsforum-amerika-im-turbo-und-deutschland-im-kriechgang/100224214.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Treffen von Trump und Xi: Das sind die drei wichtigsten Streitpunkte zwischen den USA und China](https://www.handelsblatt.com/politik/international/treffen-von-trump-und-xi-das-sind-die-drei-wichtigsten-streitpunkte/100223178.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Lage im Überblick: Trump spielt Differenzen mit China über Iran-Krieg herunter](https://www.handelsblatt.com/politik/international/lage-im-ueberblick-trump-spielt-differenzen-mit-china-ueber-iran-krieg-herunter/100224669.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Nikkei: Geopolitische Spannungen und Inflationssorgen belasten Asiens Börsen](https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-geopolitische-spannungen-und-inflationssorgen-belasten-asiens-boersen/100224718.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Börse am 13. Mai: Sechs Punkte die für Anleger heute wichtig sind](https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sechs-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Treffen mit Xi: Nvidia-Chef reist doch mit Trump nach China](https://www.handelsblatt.com/politik/international/treffen-mit-xi-nvidia-chef-reist-doch-mit-trump-nach-china/100224722.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Telekommunikation: Telekom mit robusten Zahlen – Jahresziele leicht angehoben](https://www.handelsblatt.com/technik/it-internet/telekommunikation-telekom-mit-robusten-zahlen-jahresziele-leicht-angehoben/100224103.html) — Handelsblatt Technologie (2026-05-13)
-- [Kolumne „Out of the box“: Der teuerste Irrtum des Jahrhunderts](https://www.handelsblatt.com/meinung/kolumnen/kolumne-out-of-the-box-der-teuerste-irrtum-des-jahrhunderts/100224262.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Künstliche Intelligenz: So sieht Deutschlands jüngste Professorin den KI-Boom](https://www.handelsblatt.com/technik/ki/ki-expertin-wie-sieht-deutschlands-juengste-professorin-den-ki-boom/100188740.html) — Handelsblatt Technologie (2026-05-12)
-- [Künstliche Intelligenz: N8N steigt dank SAP zur wertvollsten deutschen KI-Firma auf](https://www.handelsblatt.com/technik/ki/ki-n8n-steigt-dank-sap-zur-wertvollsten-deutschen-ki-firma-auf/100223115.html) — Handelsblatt Technologie (2026-05-12)
-- [Künstliche Intelligenz: „Eine neue SAP“ – Softwarehersteller stellt Vision für autonome Unternehmen vor](https://www.handelsblatt.com/technik/it-internet/kuenstliche-intelligenz-sap-stellt-vision-fuer-autonome-unternehmen-vor/100223581.html) — Handelsblatt Technologie (2026-05-12)
-- [Crash Leaves Sportbike Hanging From Traffic Light in Accidental Trick-Shot Parking Job](https://www.thedrive.com/news/crash-leaves-sportbike-hanging-from-traffic-light-in-accidental-trick-shot-parking-job) — The Drive (2026-05-11)
-- [Trade. Tariffs. The Road Ahead.](https://www.autonews.com/manufacturing/an-trade-tariffs-the-road-ahead/) — Automotive News (2026-05-12)
-- [heise+ | Bit-Rauschen: Riesige KI-Chips und winzige fürs In-Memory-Computing](https://www.heise.de/hintergrund/Bit-Rauschen-Riesige-KI-Chips-und-winzige-fuers-In-Memory-Computing-11147718.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Zukunft von Microsofts Milliarden-Rechenzentrum in Kenia unsicher](https://www.heise.de/news/Zukunft-von-Microsofts-Milliarden-Rechenzentrum-in-Kenia-unsicher-11290027.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Bessent says FX volatility 'undesirable' after meeting Japan's Takaichi](https://asia.nikkei.com/business/markets/bessent-says-fx-volatility-undesirable-after-meeting-japan-s-takaichi) — Nikkei Asia (2026-05-12)
-- [Japan's Nidec suspected of over 1,000 cases of quality tampering](https://asia.nikkei.com/business/companies/japan-s-nidec-suspected-of-over-1-000-cases-of-quality-tampering) — Nikkei Asia (2026-05-12)
-- [Japan's NYK Line eyes more oil tankers for supplies outside Mideast: CEO](https://asia.nikkei.com/editor-s-picks/interview/japan-s-nyk-line-eyes-more-oil-tankers-for-supplies-outside-mideast-ceo) — Nikkei Asia (2026-05-12)
-- [Japan bearing makers NSK, NTN agree to merge into world's top player](https://asia.nikkei.com/business/business-deals/japan-bearing-makers-nsk-ntn-agree-to-merge-into-world-s-top-player) — Nikkei Asia (2026-05-12)
-- [Anzeige: Microsoft 365 Administration: Identitäten, Security, Intune](https://www.golem.de/news/anzeige-microsoft-365-administration-identitaeten-security-intune-2605-208509.html) — Golem.de (2026-05-11)
-- [+++ USA +++: Trump stellt Gespräche mit Kuba in Aussicht](https://www.handelsblatt.com/politik/international/supreme-court-ebnet-republikanern-den-weg-fuer-wahlkreiszuschnitte/29669594.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Wall Street: So viel Substanz steckt in der Börsenrally in den USA](https://www.handelsblatt.com/finanzen/anlagestrategie/trends/wall-street-so-viel-substanz-steckt-in-der-boersenrally-in-den-usa/100222530.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Handelsblatt Live: US-Börsenexperte Koch: Inflationsdaten schwächen Wall Street](https://www.handelsblatt.com/video/finanzen/handelsblatt-live-us-boersenexperte-koch-inflationsdaten-schwaechen-wall-street/100224594.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Zölle: JP-Morgan-Chef Dimon fordert Ende des „dummen“ Handelskonflikts zwischen USA und Brüssel](https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/usa-jp-morgan-chef-fordert-ende-des-dummen-handelskonflikts/100224607.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Trump-Xi summit live: Beijing prepares for US president's evening arrival](https://asia.nikkei.com/spotlight/trump-xi-summit/trump-xi-summit-live-beijing-prepares-for-us-president-s-evening-arrival) — Nikkei Asia (2026-05-13)
-- [SoftBank's annual profit quadruples as it doubles down on OpenAI bet](https://asia.nikkei.com/business/softbank/softbank-s-annual-profit-quadruples-as-it-doubles-down-on-openai-bet) — Nikkei Asia (2026-05-13)
-- [Myanmar's political transition leaves ASEAN in a quandary](https://asia.nikkei.com/spotlight/myanmar-crisis/myanmar-s-political-transition-leaves-asean-in-a-quandary) — Nikkei Asia (2026-05-13)
-- [Luang Prabang's World Heritage status at risk over Mekong dam](https://asia.nikkei.com/economy/luang-prabang-s-world-heritage-status-at-risk-over-mekong-dam) — Nikkei Asia (2026-05-13)
-- [Will Singapore warm to nuclear as 20% of electricity goes to data centers?](https://asia.nikkei.com/business/technology/artificial-intelligence/will-singapore-warm-to-nuclear-as-20-of-electricity-goes-to-data-centers) — Nikkei Asia (2026-05-13)
-- [Texas Instruments boosts in-house chip output for AI infrastructure boom](https://asia.nikkei.com/business/tech/semiconductors/texas-instruments-boosts-in-house-chip-output-for-ai-infrastructure-boom) — Nikkei Asia (2026-05-13)
-- [Samsung strike looms after marathon wage talks collapse](https://asia.nikkei.com/spotlight/work/samsung-strike-looms-after-marathon-wage-talks-collapse) — Nikkei Asia (2026-05-13)
-- [India's Tata Sons faces growing IPO pressure after RBI rule change](https://asia.nikkei.com/business/markets/ipo/india-s-tata-sons-faces-growing-ipo-pressure-after-rbi-rule-change) — Nikkei Asia (2026-05-13)
-- [Trump-Xi summit: 5 things to watch as world's most powerful men meet](https://asia.nikkei.com/spotlight/trump-xi-summit/trump-xi-summit-5-things-to-watch-as-world-s-most-powerful-men-meet) — Nikkei Asia (2026-05-13)
-- [Nidec confirms 'suspected improper conduct' over quality irregularities](https://asia.nikkei.com/business/companies/nidec-confirms-suspected-improper-conduct-over-quality-irregularities) — Nikkei Asia (2026-05-13)
-- [Qualcomm broadens Vietnam R&D into chip design amid talent race](https://asia.nikkei.com/business/technology/qualcomm-broadens-vietnam-r-d-into-chip-design-amid-talent-race) — Nikkei Asia (2026-05-13)
-- [Nepal protests India's plan to reopen Himalayan pass to Tibet](https://asia.nikkei.com/politics/international-relations/nepal-protests-india-s-plan-to-reopen-himalayan-pass-to-tibet) — Nikkei Asia (2026-05-13)
-- [China ice cream chain Mixue takes page from Labubu with Snow King merch](https://asia.nikkei.com/business/retail/china-ice-cream-chain-mixue-takes-page-from-labubu-with-snow-king-merch) — Nikkei Asia (2026-05-12)
-- [Japan's NEC seeks edge in undersea cable with high-capacity fiber](https://asia.nikkei.com/business/telecommunication/japan-s-nec-seeks-edge-in-undersea-cable-with-high-capacity-fiber) — Nikkei Asia (2026-05-12)
-- [Steuern: So werden Eheleute ungewollt zu Steuerhinterziehern](https://www.handelsblatt.com/finanzen/steuern-recht/steuern/steuern-so-werden-eheleute-ungewollt-zu-steuerhinterziehern/100215535.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Finanzamt: Wegzugsteuer trifft auch Erben im Ausland – so schützen Sie Ihr Vermögen](https://www.handelsblatt.com/finanzen/steuern-recht/steuern/steuern-so-bewahren-sie-ihr-erbe-vor-der-wegzugsteuer/100213720.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Beyond the obvious: Finger weg von den deutschen Goldreserven!](https://www.handelsblatt.com/audio/bto/beyond-the-obvious-finger-weg-von-den-deutschen-goldreserven/100224733.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Tourismus: Tui spürt Folgen des Iran-Kriegs – Urlauber zögern](https://www.handelsblatt.com/politik/deutschland/tourismus-tui-spuert-folgen-des-iran-kriegs-urlauber-zoegern/100224761.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Immobilien: Stadtsparkasse Langenfeld prüft Privatflüge ihres Chefs auf die Malediven](https://www.handelsblatt.com/finanzen/immobilien/stadtsparkasse-langenfeld-prueft-privatfluege-ihres-chefs-auf-die-malediven/100220741.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Quartalszahlen: Hormus-Blockade bremst Hapag-Lloyd aus](https://www.handelsblatt.com/unternehmen/handel-konsumgueter/quartalszahlen-hormus-blockade-bremst-hapag-lloyd-aus/100224755.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Online-Handel: Ebay lehnt Übernahme durch Gamestop ab](https://www.handelsblatt.com/technik/it-internet/online-handel-ebay-lehnt-uebernahme-durch-gamestop-ab/100224517.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Welthandel: US-Gericht setzt Urteil gegen Trumps Zölle zunächst aus](https://www.handelsblatt.com/politik/deutschland/welthandel-us-gericht-setzt-urteil-gegen-trumps-zoelle-zunaechst-aus/100224638.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Wahlfreiheit deutlich gestutzt: Firmenauto nicht genutzt? - Probleme mit der Steuer drohen](https://www.handelsblatt.com/finanzen/steuern-recht/wahlfreiheit-deutlich-gestutzt-firmenauto-nicht-genutzt-probleme-mit-der-steuer-drohen/100224648.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Lake Superior in Ontario: Thunder Bay: Wo Wetter und Wellen den Ton angeben](https://www.handelsblatt.com/unternehmen/dienstleister/lake-superior-in-ontario-thunder-bay-wo-wetter-und-wellen-den-ton-angeben/100224653.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Schwarz-rotes Spitzentreffen: Koalitionsberatungen nach sechs Stunden beendet](https://www.handelsblatt.com/politik/deutschland/schwarz-rotes-spitzentreffen-koalitionsberatungen-nach-sechs-stunden-beendet/100224656.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Ukraine-Krieg: Mindestens zwei Tote nach russischem Angriff in der Ukraine](https://www.handelsblatt.com/politik/international/ukraine-krieg-mindestens-zwei-tote-nach-russischem-angriff-in-der-ukraine/100224660.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Britische Regierungskrise: Vier Rücktritte und ein König: So ist die Lage in London](https://www.handelsblatt.com/politik/international/britische-regierungskrise-vier-ruecktritte-und-ein-koenig-so-ist-die-lage-in-london/100224670.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Invest: Fondsmanager Oldenkott zu KI: „Alle Anzeichen stehen auf Beschleunigung“](https://www.handelsblatt.com/audio/handelsblatt-invest/invest-fondsmanager-oldenkott-zu-ki-alle-anzeichen-stehen-auf-beschleunigung/100224628.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Invest: Fondsmanager Oldenkott zu KI: „Alle Anzeichen stehen auf Beschleunigung“](https://www.handelsblatt.com/audio/handelsblatt-invest/invest-fondsmanager-oldenkott-zu-ki-alle-anzeichen-stehen-auf-beschleunigung/100221381.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Markenstreit: Darf eine Waffe „Obelix“ heißen? EU-Gericht urteilt](https://www.handelsblatt.com/politik/deutschland/markenstreit-darf-eine-waffe-obelix-heissen-eu-gericht-urteilt/100224676.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Faktencheck: Was das Hantavirus von der Corona-Pandemie unterscheidet](https://www.handelsblatt.com/technik/forschung-innovation/faktencheck-was-das-hantavirus-von-der-corona-pandemie-unterscheidet/100224709.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Interview: Bundesbank-Chef erwartet deutlich höhere Inflation und fordert Zinserhöhung](https://www.handelsblatt.com/finanzen/geldpolitik/bundesbank-chef-nagel-bei-der-inflation-kann-einiges-auf-uns-zukommen/100222123.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Zinsen: „Voreilig“ oder „gerechtfertigt“? Experten streiten über EZB-Kurs](https://www.handelsblatt.com/finanzen/geldpolitik/zinsen-experten-streiten-ueber-ezb-kurs/100224440.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Gesundheitsbehörde warnt: Bundesinstitut warnt vor Risiken bei Drip-Spa-Infusionen](https://www.handelsblatt.com/technik/forschung-innovation/gesundheitsbehoerde-warnt-bundesinstitut-warnt-vor-risiken-bei-drip-spa-infusionen/100224712.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [US-Besitzansprüche: Venezuela als „51. Bundesstaat“ - Trump provoziert mit Post](https://www.handelsblatt.com/politik/international/us-besitzansprueche-venezuela-als-51-bundesstaat-trump-provoziert-mit-post/100224713.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Schwarz-rotes Spitzentreffen: Koalition vereinbart „Arbeitsprozess“ für Reformen](https://www.handelsblatt.com/politik/deutschland/schwarz-rotes-spitzentreffen-koalition-vereinbart-arbeitsprozess-fuer-reformen/100224726.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Morning Briefing Podcast: Preise: Die 4-Prozent-Inflationssorge des Bundesbankchefs](https://www.handelsblatt.com/audio/podcast-morning-briefing/morning-briefing-podcast-preise-die-4-prozent-inflationssorge-des-bundesbankchefs/100224725.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Morning Briefing: Und dann ignoriert Bärbel Bas beim DGB einfach den Koalitionsvertrag](https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-und-dann-ignoriert-baerbel-bas-einfach-den-koalitionsvertrag/100224364.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [+++ Bundespolitik +++: Koalition vereinbart „Arbeitsprozess“ für Reformen](https://www.handelsblatt.com/politik/deutschland/bundespolitik-koalition-vereinbart-arbeitsprozess-fuer-reformen/100137034.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Technologiekonzern: Siemens profitiert vom Rechenzentren-Boom – neues Aktienrückkaufprogramm](https://www.handelsblatt.com/unternehmen/industrie/technologiekonzern-siemens-profitiert-vom-rechenzentren-boom/100222238.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Reisekonzern: Tui sieht sich gut gewappnet für herausforderndes Sommergeschäft](https://www.handelsblatt.com/unternehmen/dienstleister/reisekonzern-tui-sieht-sich-gut-gewappnet-fuer-herausforderndes-sommergeschaeft/100224744.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Bahn-Kooperation: Google Maps mit Kauf-Button für S-Bahnen und Regionalzüge](https://www.handelsblatt.com/technik/it-internet/bahn-kooperation-google-maps-mit-kauf-button-fuer-s-bahnen-und-regionalzuege/100224717.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [+++ Geschäftszahlen +++: Allianz verdient so viel wie noch nie – Tui senkt Verluste](https://www.handelsblatt.com/unternehmen/industrie/geschaeftszahlen-newsblog-allianz-verdient-so-viel-wie-noch-nie-tui-senkt-verluste/24098412.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Immobilien: LEG erhöht Mieten und bestätigt Prognose](https://www.handelsblatt.com/finanzen/immobilien/immobilien-leg-erhoeht-mieten-und-bestaetigt-prognose/100224146.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Industrie: Siemens trotzt den Krisen - aber nicht ohne Schrammen](https://www.handelsblatt.com/politik/deutschland/industrie-siemens-trotzt-den-krisen-aber-nicht-ohne-schrammen/100224738.html) — Handelsblatt Schlagzeilen (2026-05-13)
-- [Klage von Elon Musk: OpenAI-Chef Altman weist Kritik im Zeugenstand zurück](https://www.handelsblatt.com/technik/ki/klage-von-elon-musk-openai-chef-altman-weist-kritik-im-zeugenstand-zurueck/100224711.html) — Handelsblatt Technologie (2026-05-13)
-- [Unruheregion: Behördenvertreter: Zehn Tote nach Explosion in Pakistan](https://www.handelsblatt.com/politik/international/unruheregion-behoerdenvertreter-zehn-tote-nach-explosion-in-pakistan/100224396.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Google gibt Ausblick: Bald neu in Android: Bessere KI und Apple-Kompatibilität](https://www.handelsblatt.com/technik/it-internet/google-gibt-ausblick-bald-neu-in-android-bessere-ki-und-apple-kompatibilitaet/100224618.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Von den Nazis verfolgt: Holocaust-Überlebender Weinberg mit 101 Jahren gestorben](https://www.handelsblatt.com/politik/deutschland/von-den-nazis-verfolgt-holocaust-ueberlebender-weinberg-mit-101-jahren-gestorben/100224620.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [+++ Ukraine-Krieg +++: Russischer Zerstörer vor Fehmarn unterwegs](https://www.handelsblatt.com/politik/international/ukraine-russischer-zerstoerer-vor-fehmarn-unterwegs/27982126.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Oliver Zipse: Unbequem, aber erfolgreich](https://www.handelsblatt.com/unternehmen/industrie/oliver-zipse-unbequem-aber-erfolgreich/100222442.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Steuerhinterziehung: Zehn Jahre Haft für Cum-Ex-Anwalt Hanno Berger](https://www.handelsblatt.com/finanzen/steuern-recht/steuerhinterziehung-zehn-jahre-haft-fuer-cum-ex-anwalt-hanno-berger/100224624.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Wall Street: Gewinnmitnahmen bei Tech – und die Kerninflation zieht an](https://www.handelsblatt.com/audio/wall-street/wall-street-gewinnmitnahmen-bei-tech-und-die-kerninflation-zieht-an/100224580.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Beschäftigung: Streit um Wochenarbeitszeit – Bas will Gewerkschaften und Arbeitgeber an einen Tisch bringen](https://www.handelsblatt.com/politik/deutschland/wochenarbeitszeit-bas-will-gewerkschaften-und-arbeitgeber-an-einen-tisch-bringen/100224464.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [+++ US-Zollpoltik +++: US-Berufungsgericht setzt Trumps weltweite Zölle vorerst wieder in Kraft](https://www.handelsblatt.com/politik/international/us-zoelle-us-gericht-setzt-trumps-weltweite-zoelle-vorerst-wieder-in-kraft/30026990.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Rheinmetall und Telekom entwickeln Anti-Drohnen-Abwehrschirm](https://www.heise.de/news/Rheinmetall-und-Telekom-entwickeln-Anti-Drohnen-Abwehrschirm-11290017.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Infrastruktur: Cashcow Kupferkabel: Warum die Telekom kein großes Interesse am Glasfaserausbau hat](https://www.handelsblatt.com/technik/it-internet/deutsche-telekom-der-kampf-um-das-kupfernetz/100224139.html) — Handelsblatt Technologie (2026-05-11)
-- [Battery recycling obligations could saddle automakers with outdated, inflated costs](https://www.autonews.com/ev/ane-ev-batteries-recycling-end-of-life-0505/) — Automotive News (2026-05-13)
-- [Anthropic warns investors against secondary platforms offering access to its shares](https://techcrunch.com/2026/05/12/anthropic-warns-investors-against-secondary-platforms-offering-access-to-its-shares/) — TechCrunch AI (2026-05-12)
-- [First Shift: Nissan slashes tariff costs](https://www.autonews.com/video/first-shift-nissan-slashes-tariff-costs/) — Automotive News (2026-05-12)
-- [Außenhandel: Paketflut und Schwarzarbeit – Zoll soll gestärkt werden](https://www.handelsblatt.com/unternehmen/handel-konsumgueter/aussenhandel-paketflut-und-schwarzarbeit-zoll-soll-gestaerkt-werden/100224547.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Microsoft Purview: KI-Prompts trotz Anonymisierung einsehbar](https://www.heise.de/news/Microsoft-Purview-Analysten-koennen-KI-Prompts-und-Antworten-deanonymisieren-11290021.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Next-Gen Integrated Voltage Regulators with Multilayer Power Inductors and Ceramic Capacitors](https://www.eetimes.com/next-gen-integrated-voltage-regulators-with-multilayer-power-inductors-and-ceramic-capacitors/) — EE Times (2026-05-12)
-- [Kioxia's rising shares signal Japan market shift from autos to chips](https://asia.nikkei.com/business/markets/kioxia-s-rising-shares-signal-japan-market-shift-from-autos-to-chips) — Nikkei Asia (2026-05-12)
-- [Mitsubishi Heavy expects profit surge as Japan eases arms export rules](https://asia.nikkei.com/business/companies/mitsubishi-heavy-expects-profit-surge-as-japan-eases-arms-export-rules) — Nikkei Asia (2026-05-12)
-- [Börsengang: Österreichischer Gasmotoren-Hersteller Innio will an die Nasdaq](https://www.handelsblatt.com/finanzen/maerkte/aktien/boersengang-oesterreichischer-gasmotoren-hersteller-innio-will-an-die-nasdaq/100224390.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Duracell taps Driivz to power its new EV fast charger network](https://electrek.co/2026/05/11/duracell-taps-driivz-to-power-its-new-ev-fast-charger-network/) — Electrek (2026-05-11)
-- [Nvidia's Jensen Huang heads to Beijing with Trump after all](https://asia.nikkei.com/business/technology/nvidia-s-jensen-huang-heads-to-beijing-with-trump-after-all) — Nikkei Asia (2026-05-13)
-- [KI-Kamera von Flox Intelligence soll Wildtiere von Bahnstrecken vertreiben](https://www.heise.de/news/KI-Kamera-von-Flox-Intelligence-soll-Wildtiere-von-Bahnstrecken-vertreiben-11290457.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Luftfahrt: Notrutschen-Einsatz bei Lufthansa-Flug – drei Verletzte](https://www.handelsblatt.com/unternehmen/dienstleister/lufthansa-notrutschen-einsatz-bei-flug-von-athen-nach-muenchen/100224387.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Gnädige Natur: Munich Re: hoher Gewinn dank ausgebliebener Katastrophen](https://www.handelsblatt.com/politik/deutschland/gnaedige-natur-munich-re-hoher-gewinn-dank-ausgebliebener-katastrophen/100224418.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Paketsteuer 2 Euro: Klingt einfach, ist kompliziert](https://www.heise.de/hintergrund/Paketsteuer-2-Euro-Klingt-einfach-ist-kompliziert-11292562.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Warum Prepaid-Handys an Bedeutung verlieren](https://www.heise.de/news/Prepaid-Handys-kommen-aus-der-Mode-11292652.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [テスラの電動トラック『セミ』、量産開始…2017年の初公開から9年](https://response.jp/article/2026/05/13/411177.html) — Response.jp (2026-05-12)
-- [ホンダ『N-BOX』、累計販売300万台を突破…ホンダ四輪で最速記録](https://response.jp/article/2026/05/13/411179.html) — Response.jp (2026-05-12)
-- [ジャパントラックショー2026、物流2024年問題後の「次世代物流」集結　5月5月14-16日](https://response.jp/article/2026/05/13/411180.html) — Response.jp (2026-05-12)
-- [マツダ「コンパクトモデルは登場する」上層部が断言！ マツダ2は2028年以降か](https://response.jp/article/2026/05/13/411181.html) — Response.jp (2026-05-12)
-- [不適切会計で経営危機のニデック、無断で設計変更など品質関連でも不正の疑い［新聞ウォッチ］](https://response.jp/article/2026/05/13/411182.html) — Response.jp (2026-05-12)
-- [トヨタ、『JPN TAXI』を一部改良…制動灯表示灯を標準装備](https://response.jp/article/2026/05/13/411185.html) — Response.jp (2026-05-13)
-- [マツダ、電動化投資を1兆2000億円に“最適化”　毛籠社長「多様性が経営アセット」](https://response.jp/article/2026/05/13/411187.html) — Response.jp (2026-05-13)
-- [MAHLE、電動化・熱管理・内燃エンジン向け新製品を展示…人とくるまのテクノロジー展 2026](https://response.jp/article/2026/05/13/411188.html) — Response.jp (2026-05-13)
-- [ジェイテクト、eAxle向け超高速回転深溝ボールベアリング開発…6月から量産へ](https://response.jp/article/2026/05/13/411190.html) — Response.jp (2026-05-13)
-- [GMがAIで製造革新、溶接・塗装の品質検査を自動化…不良車両を数時間で特定](https://response.jp/article/2026/05/13/411191.html) — Response.jp (2026-05-13)
-- [R34型スカイラインGT-R、伝説のニスモ「Z-tune」仕様がスケールモデルで登場](https://response.jp/article/2026/05/13/411193.html) — Response.jp (2026-05-13)
-- [日産e-POWER車にも対応、ブリッツがOBD2アダプターの新モデル「OBD2-BR2A」発売](https://response.jp/article/2026/05/13/411194.html) — Response.jp (2026-05-13)
-- [ポルシェ、Car-IT部門を廃止…R&D部門に統合へ](https://response.jp/article/2026/05/13/411196.html) — Response.jp (2026-05-13)
-- [レイズ VOLK RACING TE37が30周年！ 4WD乗りに刺さる特別仕様『Ultra LARGE P.C.D.』の魅力](https://response.jp/article/2026/05/13/411197.html) — Response.jp (2026-05-13)
-- [車中泊仕様の『ノア/ヴォクシー』モデリスタが発売、「2段ラゲージ」標準装備…価格は407万円から](https://response.jp/article/2026/05/13/411198.html) — Response.jp (2026-05-13)
-- [ドリフトするベントレー「Supersports：FULL SEND」、2つのスケールで再現…限定ミニチュア発売](https://response.jp/article/2026/05/13/411201.html) — Response.jp (2026-05-13)
-- [エアバッグの「オートリブ」、トルコ工場を2028年前半に閉鎖へ…約2200人に影響](https://response.jp/article/2026/05/13/411202.html) — Response.jp (2026-05-13)
-- [ケータハム『セブン』、「マイアミ スペシャルエディション」は世界限定12台…アクアカラーにビビッドピンク](https://response.jp/article/2026/05/13/411205.html) — Response.jp (2026-05-13)
-- [車両開発支援に関する多彩なサービス、オートテクニックジャパンが紹介へ…人とくるまのテクノロジー展 2026](https://response.jp/article/2026/05/13/411207.html) — Response.jp (2026-05-13)
-- [トラック向け車両管理ソリューション、パルテックが展示へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411208.html) — Response.jp (2026-05-13)
-- [レクサス『LBX』、高性能版「MORIZO RR」が一部改良で新色追加…680万円から](https://response.jp/article/2026/05/13/411209.html) — Response.jp (2026-05-13)
-- [商用車用鍛造アルミホイール「FORGEAL」と新塗装「CRYSTONE」、トピー工業が発表へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411210.html) — Response.jp (2026-05-13)
-- [Batterieproduktion in Grünheide: Tesla setzt auf lokale Wertschöpfung](https://www.heise.de/news/Tesla-inverstiert-in-Gruenheide-Batterienfertigtung-wird-massiv-ausgebaut-11292496.html) — Heise Auto (2026-05-13)
-- [Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html) — Heise Auto (2026-05-13)
-- [Motorrad Fantic Stealth 500: Sportlicher Einzylinder mit Kampfansage](https://www.heise.de/news/Motorrad-Fantic-Stealth-500-Sportlicher-Einzylinder-mit-Kampfansage-11292111.html) — Heise Auto (2026-05-13)
-- [Google Maps mit Kauf-Button für S-Bahnen und Regionalzüge](https://www.heise.de/news/Google-Maps-mit-Kauf-Button-fuer-S-Bahnen-und-Regionalzuege-11292572.html) — Heise Auto (2026-05-13)
-- [Münchens IT-Wende: Open Source ist für die neue Koalition der Normalfall](https://www.heise.de/news/Muenchens-IT-Wende-Open-Source-ist-fuer-die-neue-Koalition-der-Normalfall-11292444.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Anker Solix Solarbank 4: Mehr Speicher, mehr Leistung, mehr Wieland](https://www.heise.de/news/Anker-Solix-Solarbank-4-Mehr-Speicher-mehr-Leistung-mehr-Wieland-11292263.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Xperia 1 VIII: Sony streicht den Zoom, aber nicht die Klinkenbuchse](https://www.heise.de/news/Xperia-1-VIII-Sony-streicht-den-Zoom-aber-nicht-die-Klinkenbuchse-11292241.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Auch Google ist offenbar an SpaceX-Rechenzentren im Weltraum interessiert](https://www.heise.de/news/Auch-Google-ist-offenbar-an-SpaceX-Rechenzentren-im-Weltraum-interessiert-11292472.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Batterieproduktion in Grünheide: Tesla setzt auf lokale Wertschöpfung](https://www.heise.de/news/Tesla-inverstiert-in-Gruenheide-Batterienfertigtung-wird-massiv-ausgebaut-11292496.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Verhandlungen gescheitert: 18-tägiger Streik bei Samsung immer wahrscheinlicher](https://www.heise.de/news/Verhandlungen-gescheitert-18-taegiger-Streik-bei-Samsung-immer-wahrscheinlicher-11292492.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Patchday Microsoft: Kritische DNS-Client-Lücke bedroht Windows](https://www.heise.de/news/Patchday-Microsoft-Kritische-DNS-Client-Luecke-bedroht-Windows-11292506.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [heise+ | 8-Watt-Mini: Kompakten, sparsamen und leisen Mini-PC selbst bauen](https://www.heise.de/ratgeber/8-Watt-Mini-Kompakten-sparsamen-und-leisen-Mini-PC-selbst-bauen-11251816.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-13)
-- [Auf überschwemmte Straßen gefahren: Waymo verteilt Updates an autonome Taxis](https://www.heise.de/news/Auf-ueberschwemmte-Strassen-gefahren-Waymo-verteilt-Updates-an-autonome-Taxis-11292524.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [Google Maps mit Kauf-Button für S-Bahnen und Regionalzüge](https://www.heise.de/news/Google-Maps-mit-Kauf-Button-fuer-S-Bahnen-und-Regionalzuege-11292572.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [BMWグループ、ボッシュの道路危険警告サービス採用…クラウドベースの逆走警告機能も](https://response.jp/article/2026/05/12/411127.html) — Response.jp (2026-05-11)
-- [4月の国内新車販売、スズキ『スペーシア』約2年ぶり総合首位、ホンダ『N-BOX』は3位転落［新聞ウォッチ］](https://response.jp/article/2026/05/12/411128.html) — Response.jp (2026-05-11)
-- [日産『クリッパー』に改良新型、先進安全装備を全車標準化…145万4200円から](https://response.jp/article/2026/05/12/411130.html) — Response.jp (2026-05-12)
-- [MaaSサービス「mixway」シリーズ、「駅すぱあと」のヴァル研究所が出展へ…自治体DX展2026](https://response.jp/article/2026/05/12/411131.html) — Response.jp (2026-05-12)
-- [出光興産、MIT発スタートアップATOM-Xに出資…常温・常圧でe-メタノール製造技術を実用化へ](https://response.jp/article/2026/05/12/411132.html) — Response.jp (2026-05-12)
-- [医薬品流通のアルフレッサ、災害時の医薬品供給モデル提案へ…スマートシティ推進EXPO 2026](https://response.jp/article/2026/05/12/411133.html) — Response.jp (2026-05-12)
-- [アウディの新型フルサイズSUV『Q9』、インテリアを先行公開…ブランド初の電動ドア採用](https://response.jp/article/2026/05/12/411134.html) — Response.jp (2026-05-12)
-- [JVCケンウッド、IP無線機の最新モデル「KBX-P51」発表へ…地域防災EXPO 2026](https://response.jp/article/2026/05/12/411135.html) — Response.jp (2026-05-12)
-- [NewtonSuite-MOR「MOR 2025.1」リリース、3DCAEの縮退を高度化…ニュートンワークス](https://response.jp/article/2026/05/12/411136.html) — Response.jp (2026-05-12)
-- [道路巡回ソリューション、通信×AIで現場データ活用を一体支援…電気興業が自治体・公共Week 2026出展へ](https://response.jp/article/2026/05/12/411137.html) — Response.jp (2026-05-12)
-- [マセラティ新作ウォッチ「SORPASSO」、レーシングDNAをスポーティ＆エレガンスに昇華…先行発売](https://response.jp/article/2026/05/12/411138.html) — Response.jp (2026-05-12)
-- [ハリアーの純正JBLが激変！ DIY派オーナーが驚いたプロのカーオーディオ施工［car audio newcomer］by BREEZE　前編](https://response.jp/article/2026/05/12/411140.html) — Response.jp (2026-05-12)
-- [フィアットはガソリン回帰か？ 新世代『グランデパンダ』にもアバルト、ターボ＆MTでスタンバイ!?](https://response.jp/article/2026/05/12/411142.html) — Response.jp (2026-05-12)
-- [「とんでもない走り」VW『ゴルフGTI』が『タイプR』破りFF車ニュル最速に！ SNSでは悲喜こもごもの反響](https://response.jp/article/2026/05/12/411143.html) — Response.jp (2026-05-12)
-- [モーターキャンプエキスポ2026、SUVやキャンピングカーが集結…大阪・万博記念公園で6月開催](https://response.jp/article/2026/05/12/411145.html) — Response.jp (2026-05-12)
-- [ブリヂストン台湾、新竹工場の生産活動を停止…販売・サービス特化へ事業転換](https://response.jp/article/2026/05/12/411147.html) — Response.jp (2026-05-12)
-- [ソフトバンク、国産バッテリー事業を開始…発火しない革新型セルを2027年度に量産へ](https://response.jp/article/2026/05/12/411148.html) — Response.jp (2026-05-12)
-- [ランボルギーニ、世界15台限定「フェノメノ ロードスター」発表…V12ハイブリッドで1080馬力](https://response.jp/article/2026/05/12/411150.html) — Response.jp (2026-05-12)
-- [ウーバー・ルーシッドと連携、米カリフォルニア州でロボタクシーの有人パイロット許可を取得…Nuro](https://response.jp/article/2026/05/12/411151.html) — Response.jp (2026-05-12)
-- [京セラAVX、48V電源システム向け高温車載グレードMLVをTransGuard VTシリーズに追加](https://response.jp/article/2026/05/12/411152.html) — Response.jp (2026-05-12)
-- [Dryve、リチウムイオン電池企業としてカナダで再始動…pCAM不要の乾式合成プラットフォーム商業化へ](https://response.jp/article/2026/05/12/411153.html) — Response.jp (2026-05-12)
-- [トヨタ『カローラ』60周年記念仕様、「ACTIVE SPORT」発売…一部改良も](https://response.jp/article/2026/05/12/411154.html) — Response.jp (2026-05-12)
-- [センコー、草加ロジスティクスセンター開設…首都圏向け物流拠点を強化](https://response.jp/article/2026/05/12/411155.html) — Response.jp (2026-05-12)
-- [日立ハイテクと栗本鐵工所、電池製造の混練プロセスをAIで最適化へ…協業開始](https://response.jp/article/2026/05/12/411156.html) — Response.jp (2026-05-12)
-- [マツダ株価が急反発…大幅増収増益見込む今期業績予想を好感](https://response.jp/article/2026/05/12/411158.html) — Response.jp (2026-05-12)
-- [NEC、3D点群データを90%軽量化する世界初のAI変換技術を開発…2027年度実用化へ](https://response.jp/article/2026/05/12/411160.html) — Response.jp (2026-05-12)
-- [マツダの2026年3月期決算、営業利益72.3％減…新型 CX-5 投入で今期は回復見込む](https://response.jp/article/2026/05/12/411161.html) — Response.jp (2026-05-12)
-- [コスモ石油、AI自動給油許可監視システム「AiQ PERMISSION」導入開始…全国セルフSSに](https://response.jp/article/2026/05/12/411162.html) — Response.jp (2026-05-12)
-- [倍率44倍の争奪戦！ 5MTターボ化された“走るミライース”がついに市場投入へ](https://response.jp/article/2026/05/12/411164.html) — Response.jp (2026-05-12)
-- [空飛ぶクルマ「SKYDRIVE（SD-05）」、東北エアサービスと1機購入の基本合意](https://response.jp/article/2026/05/12/411165.html) — Response.jp (2026-05-12)
-- [ヒューテックノオリン、静岡に初の拠点開設…冷凍食品の共同配送機能を強化](https://response.jp/article/2026/05/12/411167.html) — Response.jp (2026-05-12)
-- [ホイールの選び方、鍛造と鋳造の違いからサイズ・インセット・ハブ径まで解説～カスタムHOW TO～](https://response.jp/article/2026/05/12/411168.html) — Response.jp (2026-05-12)
-- [NOK、モルガン・スタンレーのESG格付けで「A」評価を獲得…2年連続](https://response.jp/article/2026/05/12/411169.html) — Response.jp (2026-05-12)
-- [スズキのライダーが米モトクロスレース最高峰で16年ぶりチャンピオン、『RM-Z450』の素性が貢献](https://response.jp/article/2026/05/12/411170.html) — Response.jp (2026-05-12)
-- [トヨタ ノア/ヴォクシー、ウェルキャブが改良…ワンタッチ式車いす固定装置を新設定](https://response.jp/article/2026/05/12/411172.html) — Response.jp (2026-05-12)
-- [「GRぴよりん」も登場！トヨタGR、「ラリージャパン2026」で勝田貴元WRC初優勝記念グッズなど販売へ](https://response.jp/article/2026/05/12/411173.html) — Response.jp (2026-05-12)
-- [ペットボトルで給水できるコードレス高圧洗浄機、サンコーが発売　9980円](https://response.jp/article/2026/05/12/411174.html) — Response.jp (2026-05-12)
-- [ミシュラン新スタッドレス『X-ICE SNOW+』全97サイズで登場、転がり抵抗5.6％低減・長寿命設計](https://response.jp/article/2026/05/12/411175.html) — Response.jp (2026-05-12)
-- [「今以上に進化するのか！」GRヤリスとGRカローラをパワーアップ！ トヨタGRのアップグレード製品にSNSでも驚き](https://response.jp/article/2026/05/12/411176.html) — Response.jp (2026-05-12)
-- [Google Cloud: „Wenn Anthropic das richtige LLM hat, sollen Kunden Claude nutzen“](https://www.heise.de/hintergrund/Google-Cloud-Wenn-Anthropic-das-richtige-LLM-hat-sollen-Kunden-Claude-nutzen-11291278.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Google stellt Gemini Intelligence für Android vor](https://www.heise.de/news/Google-stellt-Gemini-Intelligence-fuer-Android-vor-11289291.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Googlebook: Google stellt Android-basierte Notebooks mit Gemini Intelligence vor](https://www.heise.de/news/Googlebook-Google-stellt-Android-basierte-Notebooks-mit-Gemini-Intelligence-vor-11290195.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Android 17 bringt AirDrop-Support für weitere Geräte und neue Funktionen](https://www.heise.de/news/Android-17-Einfacher-Umzug-von-iOS-mehr-AirDrop-und-Tools-fuer-Kreative-11290699.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Top 10: Die beste Sportuhr im Test – Garmin vor Huawei und Polar](https://www.heise.de/bestenlisten/testsieger/top-10-die-beste-sportuhr-im-test-garmin-vor-huawei-und-polar/hxd2jx4?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [AI OCRや改正貨物法対応、ロジックスが紹介へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411212.html) — Response.jp (2026-05-13)
-- [Autobauer: Mercedes-Benz verkauft Autohäuser in Berlin und Brandenburg](https://www.handelsblatt.com/unternehmen/industrie/autobauer-mercedes-benz-verkauft-autohaeuser-in-berlin-und-brandenburg/100224640.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Today: SAP macht N8N zum wertvollsten KI-Start-up in Deutschland](https://www.handelsblatt.com/audio/today/today-sap-macht-n8n-zum-wertvollsten-ki-start-up-in-deutschland/100224589.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [高度なkintoneカスタマイズを専門知識なしで　AIでシステム改善できる新サービス](https://kn.itmedia.co.jp/kn/articles/2605/13/news057.html) — ITmedia AI+ (2026-05-12)
-- [AIがAndroidスマホを操作、音声入力も効率化　「Gemini Intelligence」登場](https://www.itmedia.co.jp/aiplus/articles/2605/13/news080.html) — ITmedia AI+ (2026-05-13)
-- [Claude Mythosがもたらすセキュリティビジネス激変の可能性　二極化していく“業界のこれから”](https://www.itmedia.co.jp/news/articles/2605/12/news077.html) — ITmedia AI+ (2026-05-13)
-- [自民党、生成AIを悪用したディープフェイク広告に対策案　罰則含めた法整備求める](https://www.itmedia.co.jp/news/articles/2605/13/news097.html) — ITmedia AI+ (2026-05-13)
-- [まだ信用されていない「AIエージェントによる意思決定」　“人の目”による主な検証方法とは](https://atmarkit.itmedia.co.jp/ait/articles/2605/13/news054.html) — ITmedia AI+ (2026-05-13)
-- [阿波おどりの「AI活用ポスター」公募　徳島県鳴門市](https://www.itmedia.co.jp/aiplus/articles/2605/13/news110.html) — ITmedia AI+ (2026-05-13)
-- [AIエージェントが「Figma」でデザインを作成・編集可能に　“意図しないUI生成”を防ぐ仕組みとは](https://atmarkit.itmedia.co.jp/ait/articles/2605/11/news041.html) — ITmedia AI+ (2026-05-11)
-- [NTTグループはAIで「GAFAM級」の存在感を発揮できるか？](https://www.itmedia.co.jp/enterprise/articles/2605/11/news060.html) — ITmedia AI+ (2026-05-11)
-- [十時CEOが明かす“ソニー流”AI活用術　ゲーム開発にも導入、クリエイティブを支える工夫](https://www.itmedia.co.jp/aiplus/articles/2605/11/news118.html) — ITmedia AI+ (2026-05-11)
-- [AIの「倫理的に不適切な選択」はSF作品の暴走AIを模倣していた──Anthropicが解決手法を公開](https://www.itmedia.co.jp/news/articles/2605/11/news080.html) — ITmedia AI+ (2026-05-11)
-- [GPT-5.5は最高性能ではないのに、なぜエンジニアが熱狂？　カギは“最後まで自走する力”](https://atmarkit.itmedia.co.jp/ait/articles/2605/12/news009.html) — ITmedia AI+ (2026-05-11)
-- [OpenAI、企業向けAI導入支援を本格展開　「Deployment Company」設立](https://www.itmedia.co.jp/news/articles/2605/12/news053.html) — ITmedia AI+ (2026-05-11)
-- [北陸銀行が音声AIを試験導入　パンク状態の窓口を自動化し「あふれ呼」を解消へ](https://kn.itmedia.co.jp/kn/articles/2605/12/news027.html) — ITmedia AI+ (2026-05-11)
-- [AIエージェントなどを活用している企業の8割が「人減らし」　費用対効果に明暗の理由は？](https://www.itmedia.co.jp/enterprise/articles/2605/12/news050.html) — ITmedia AI+ (2026-05-11)
-- [NECが独自AIを活用した「世界初」の変換技術を開発　3D点群データを90％軽量化](https://monoist.itmedia.co.jp/mn/articles/2605/12/news045.html) — ITmedia AI+ (2026-05-12)
-- [OpenAI、企業のAI導入を支援する新会社設立　6000億円投資とAIコンサル買収で資金と人員を確保](https://www.itmedia.co.jp/aiplus/articles/2605/12/news064.html) — ITmedia AI+ (2026-05-12)
-- [海洋堂のフィギュア写真に「AIで生成」ラベル誤表示　Xの自動判定ミス](https://www.itmedia.co.jp/aiplus/articles/2605/12/news099.html) — ITmedia AI+ (2026-05-12)
-- [Z世代の新入社員、研修の切り札はAI　パソコン相手に接客特訓、システム開発　リスクは](https://www.itmedia.co.jp/news/articles/2605/12/news111.html) — ITmedia AI+ (2026-05-12)
-- [第一三共「世界トップ5」へ　AI活用で挑む「売上収益3兆円」「コスト2000億円削減」の青写真](https://www.itmedia.co.jp/business/articles/2605/12/news089.html) — ITmedia AI+ (2026-05-12)
-- [警視庁、「シャドーAI」に注意喚起　リスクをゆるめの図で解説](https://www.itmedia.co.jp/aiplus/articles/2605/12/news144.html) — ITmedia AI+ (2026-05-12)
-- [「AI製ゼロデイ攻撃」ついに出現か　Google、攻撃者による生成AI悪用の新局面を報告](https://www.itmedia.co.jp/aiplus/articles/2605/12/news147.html) — ITmedia AI+ (2026-05-12)
-- [何恺明首个语言模型：105M参数，不走GPT自回归老路](https://www.qbitai.com/2026/05/416628.html) — 量子位 Qbitai (2026-05-13)
-- [奥特曼趁马斯克出差爆猛料：他曾想让子女继承OpenAI](https://www.qbitai.com/2026/05/416739.html) — 量子位 Qbitai (2026-05-13)
-- [Auto Research时代，47个没有标准答案的任务成了Agent能力必测榜](https://www.qbitai.com/2026/05/416754.html) — 量子位 Qbitai (2026-05-13)
-- [AI步入“自我进化”时代，李彦宏首提AI时代度量衡“DAA”｜Create2026百度AI开发者⼤会速览](https://www.qbitai.com/2026/05/416762.html) — 量子位 Qbitai (2026-05-13)
-- [AI拿婚外情写勒索邮件，查一年告诉我科幻小说教坏的](https://www.qbitai.com/2026/05/416831.html) — 量子位 Qbitai (2026-05-13)
-- [高德与千问C端应用团队开源AGenUI：首个覆盖iOS、安卓、鸿蒙三端的原生A2UI框架](https://www.qbitai.com/2026/05/416864.html) — 量子位 Qbitai (2026-05-13)
-- [xAI Adds 19 New Gas Turbines Despite Ongoing Lawsuit](https://www.wired.com/story/xai-adds-19-new-gas-turbines-despite-ongoing-lawsuit/) — Wired (2026-05-13)
-- [Dyson Promo Codes: 25% Off in May 2026](https://www.wired.com/story/dyson-cordless-vacuum-promo-code/) — Wired (2026-05-13)
-- [Peacock Promo Codes: 40% Off May 2026](https://www.wired.com/story/peacock-promo-code/) — Wired (2026-05-13)
-- [Top Nomad Goods Promo Codes: Get 25% Off in May 2026](https://www.wired.com/story/nomad-discount-code/) — Wired (2026-05-13)
-- [Google Workspace Promo Codes: 14% Off for May](https://www.wired.com/story/google-workspace-promo-code/) — Wired (2026-05-13)
-- [20% Off LG Promo Code & Coupons | May 2026](https://www.wired.com/story/lg-promo-code/) — Wired (2026-05-13)
-- [Naturepedic Promo Codes and Deals: 20% Off](https://www.wired.com/story/naturepedic-promo-code/) — Wired (2026-05-13)
-- [Valvoline Coupons & Promo Codes for May 2026](https://www.wired.com/story/valvoline-coupons/) — Wired (2026-05-13)
-- [Corsair Discount Code: 50% Off on Gaming Gear in May 2026](https://www.wired.com/story/corsair-coupon/) — Wired (2026-05-13)
-- [OpenClaw低调更新重磅版本，龙虾长手长脚了](https://www.qbitai.com/2026/05/416034.html) — 量子位 Qbitai (2026-05-12)
-- [估值200亿美元！可灵AI被曝剥离快手单独融资](https://www.qbitai.com/2026/05/416056.html) — 量子位 Qbitai (2026-05-12)
-- [Markdown要凉…卡帕西也站HTML了](https://www.qbitai.com/2026/05/416339.html) — 量子位 Qbitai (2026-05-12)
-- [龙虾退烧后，荣耀给它造了一个宇宙](https://www.qbitai.com/2026/05/416081.html) — 量子位 Qbitai (2026-05-12)
-- [AI第一金主黄仁勋：日均花掉20亿](https://www.qbitai.com/2026/05/416540.html) — 量子位 Qbitai (2026-05-12)
-- [360发布OpenClaw生态安全报告：AI智能体风险进入自动化审计阶段](https://www.qbitai.com/2026/05/416582.html) — 量子位 Qbitai (2026-05-12)
-- [原来Ilya还有70亿美元OpenAI股权](https://www.qbitai.com/2026/05/416597.html) — 量子位 Qbitai (2026-05-12)
-- [Googlebook Is Google’s New AI-Powered Laptop Platform Built on Android](https://www.wired.com/story/googlebook-laptop-platform/) — Wired (2026-05-12)
-- [The Top New Features in Google’s Android 17—and Gemini Intelligence—Coming This Summer](https://www.wired.com/story/android-17-gemini-top-new-features/) — Wired (2026-05-12)
-- [Koalition: Haushaltssanierung per Rasenmäher – kommt jetzt der pauschale Subventionsabbau?](https://www.handelsblatt.com/politik/deutschland/haushalt-sanierung-per-rasenmaeher-kommt-der-pauschale-subventionsabbau/100224379.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Blue Origins Mondlandefahrzeug Blue Moon MK1 besteht wichtigen Test der NASA](https://www.heise.de/news/Blue-Origins-Mondlandefahrzeug-Blue-Moon-MK1-besteht-wichtigen-Test-der-NASA-11290207.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Fake-Module: Betrüger bauen Speicherchips mit Glasgewebe nach](https://www.heise.de/news/Nutzloser-Arbeitsspeicher-mit-Fake-Chips-im-Umlauf-11290071.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Texas verklagt Netflix: „When you watch Netflix, Netflix watches you“](https://www.heise.de/news/Wegen-Datensammelei-Texas-verklagt-Netflix-11290559.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Einzelhandel: Mäc Geiz stellt Insolvenzantrag](https://www.handelsblatt.com/politik/deutschland/einzelhandel-maec-geiz-stellt-insolvenzantrag/100224465.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Telekommunikationskonzern: Vodafone verliert Kunden in Deutschland](https://www.handelsblatt.com/technik/it-internet/vodafone-telekommunikationskonzern-verliert-kunden-in-deutschland/100224368.html) — Handelsblatt Technologie (2026-05-12)
-- [Amazon to stop selling ‘hooligan bikes’ in California after investigation](https://electrek.co/2026/05/11/amazon-to-stop-selling-hooligan-bikes-in-california-after-investigation/) — Electrek (2026-05-11)
-- [GM to cut hundreds of IT workers in department overhaul​](https://www.autonews.com/general-motors/an-gm-it-layoffs-0511/) — Automotive News (2026-05-11)
-- [How to Eliminate Pipeline Friction in AI Model Serving](https://developer.nvidia.com/blog/how-to-eliminate-pipeline-friction-in-ai-model-serving/) — NVIDIA Developer Blog (2026-05-12)
-- [CVPR 2026 3D 视觉前沿梳理：模型正在学会理解、生成和构建世界](https://www.leiphone.com/category/ai/AgZr3UPqBUgK1Dv2.html) — 雷锋网 Leiphone (2026-05-12)
-- [Software Testing: Der Blaue Engel für Software](https://www.heise.de/blog/Software-Testing-Der-Blaue-Engel-fuer-Software-11290279.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Gehaltsreport 2026: 1,3 Millionen Gehaltsdaten im Vergleich: Gehören Sie zu den Besserverdienern in Deutschland?](https://www.handelsblatt.com/karriere/gehalt-welche-berufe-werden-in-deutschland-2026-am-besten-bezahlt/100179922.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [A股三大指数集体收涨，创业板指刷新历史新高](https://36kr.com/newsflashes/3807375173131783?f=rss) — 36氪 36Kr (2026-05-13)
-- [创业板指突破4037.96点，创历史新高](https://36kr.com/newsflashes/3807348528864771?f=rss) — 36氪 36Kr (2026-05-13)
-- [谷歌开了一场「读作 Android，写作 Gemini」的硬件发布会](http://www.geekpark.net/news/364060) — 极客公园 Geekpark (2026-05-12)
-- [中汽股份在海南成立试验场公司，注册资本3000万](https://36kr.com/newsflashes/3807215342362120?f=rss) — 36氪 36Kr (2026-05-13)
-- [欧盟拟出台法案让儿童延迟使用社媒](https://36kr.com/newsflashes/3807232473112070?f=rss) — 36氪 36Kr (2026-05-13)
-- [贝索斯旗下蓝色起源考虑首次外部融资](https://36kr.com/newsflashes/3807247988727302?f=rss) — 36氪 36Kr (2026-05-13)
-- [沪深两市成交额连续第23个交易日突破2万亿](https://36kr.com/newsflashes/3807258238000896?f=rss) — 36氪 36Kr (2026-05-13)
-- [西门子第二季度净利润22.4亿欧元](https://36kr.com/newsflashes/3807259974917634?f=rss) — 36氪 36Kr (2026-05-13)
-- [创业板指涨逾1%](https://36kr.com/newsflashes/3807263168863747?f=rss) — 36氪 36Kr (2026-05-13)
-- [创业板指午后持续拉升突破4000点，创下十年新高](https://36kr.com/newsflashes/3807293832175361?f=rss) — 36氪 36Kr (2026-05-13)
-- [B站视频播客内容单日播放时长首次破亿](https://36kr.com/newsflashes/3807299892715268?f=rss) — 36氪 36Kr (2026-05-13)
-- [深成指站上16000点](https://36kr.com/newsflashes/3807301923020547?f=rss) — 36氪 36Kr (2026-05-13)
-- [沪深两市成交额连续第14个交易日突破2.5万亿](https://36kr.com/newsflashes/3807302482894338?f=rss) — 36氪 36Kr (2026-05-13)
-- [越南考虑将航空公司外资持股上限提高至49%](https://36kr.com/newsflashes/3807308793044485?f=rss) — 36氪 36Kr (2026-05-13)
-- [港股AI应用股走强，智谱涨超15%](https://36kr.com/newsflashes/3807325413809920?f=rss) — 36氪 36Kr (2026-05-13)
-- [巴西取消50美元及以下进口商品联邦税](https://36kr.com/newsflashes/3807339105410816?f=rss) — 36氪 36Kr (2026-05-13)
-- [国家药监局：2025年我国药品申报和审结数量双创新高](https://36kr.com/newsflashes/3807342717509377?f=rss) — 36氪 36Kr (2026-05-13)
-- [长江材料：控股股东拟减持公司不超3%股份](https://36kr.com/newsflashes/3806214450913025?f=rss) — 36氪 36Kr (2026-05-12)
-- [先锋电子：控股股东拟减持公司不超1%股份](https://36kr.com/newsflashes/3806223536561924?f=rss) — 36氪 36Kr (2026-05-12)
-- [拼多多千亿 “新拼姆” 计划：百人团队、大牌工厂、Temu变重](https://36kr.com/newsflashes/3806226535685641?f=rss) — 36氪 36Kr (2026-05-12)
-- [赣锋锂业：副总裁傅利华拟减持公司不超4万股股份](https://36kr.com/newsflashes/3806233641524737?f=rss) — 36氪 36Kr (2026-05-12)
-- [杭州园林：股东拟减持公司不超2.73%股份](https://36kr.com/newsflashes/3806252842622729?f=rss) — 36氪 36Kr (2026-05-12)
-- [宏德股份：拟定增募资不超5.6亿元](https://36kr.com/newsflashes/3806256423493384?f=rss) — 36氪 36Kr (2026-05-12)
-- [泰格医药：实控人因涉嫌持股变动相关信息披露违法违规被立案](https://36kr.com/newsflashes/3806281951419910?f=rss) — 36氪 36Kr (2026-05-12)
-- [SK海力士回应进入兴福电子前十大流通股东：系上市前投资](https://36kr.com/newsflashes/3806282623147526?f=rss) — 36氪 36Kr (2026-05-12)
-- [4连板宝鼎科技：目前未有高速覆铜板M7和M9产品销售](https://36kr.com/newsflashes/3806296372797193?f=rss) — 36氪 36Kr (2026-05-12)
-- [美股大型科技股盘前普跌，英特尔跌超3%](https://36kr.com/newsflashes/3806300280217351?f=rss) — 36氪 36Kr (2026-05-12)
-- [热门中概股美股盘前多数上涨，腾讯音乐涨超6%](https://36kr.com/newsflashes/3806303451012868?f=rss) — 36氪 36Kr (2026-05-12)
-- [日本精工とNTNが経営統合へ、共同持株会社設立で基本合意…軸受世界大手が結集](https://response.jp/article/2026/05/13/411184.html) — Response.jp (2026-05-12)
-- [フィアット、ジャパントラックショー2026に初出展　『スクード』を日本初披露へ](https://response.jp/article/2026/05/13/411186.html) — Response.jp (2026-05-13)
-- [タムラ製作所、中国子会社の田村汽車電子を譲渡…車載用昇圧リアクタの生産を日本に集約](https://response.jp/article/2026/05/13/411192.html) — Response.jp (2026-05-13)
-- [スバル『ゲッタウェイ』は最高のSUV？ 日本導入を望む声も…4月の口コミ記事ベスト5](https://response.jp/article/2026/05/13/411195.html) — Response.jp (2026-05-13)
-- [日本初のドイツ製緩み止めホイールナットなど、パーマンが展示へ…ジャパントラックショー2026](https://response.jp/article/2026/05/13/411206.html) — Response.jp (2026-05-13)
-- [Gigabit überholt endlich Schneckentempoanschlüsse in Deutschland](https://www.heise.de/news/Gigabit-ueberholt-endlich-Schneckentempoanschluesse-in-Deutschland-11292434.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Mittwoch: Handy-Neuheit mit alten Funktionen, Google-Interesse an SpaceX-Plänen](https://www.heise.de/news/Mittwoch-Handy-Neuheit-mit-alten-Funktionen-Google-Interesse-an-SpaceX-Plaenen-11292484.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-13)
-- [NX汽車物流、中国広州で植樹活動…全民義務植樹運動45周年に合わせて](https://response.jp/article/2026/05/12/411129.html) — Response.jp (2026-05-11)
-- [横浜ゴム、中国・杭州市に研究開発センター新設…現地開発体制を強化](https://response.jp/article/2026/05/12/411149.html) — Response.jp (2026-05-12)
-- [東急不動産とJR西日本、千葉県市原市に新たな物流倉庫「LOGI'Q市原」を竣工](https://response.jp/article/2026/05/12/411163.html) — Response.jp (2026-05-12)
-- [Edge AI Daily 早报（5月13日）](https://www.tmtpost.com/7985992.html) — 钛媒体 TMTpost (2026-05-12)
-- [200亿美元押注量子计算“iPhone时刻”：复刻AI，还是重演SPAC？](https://www.tmtpost.com/7983452.html) — 钛媒体 TMTpost (2026-05-13)
-- [1万亿美元，Anthropic凭什么超越OpenAI？](https://www.tmtpost.com/7986029.html) — 钛媒体 TMTpost (2026-05-13)
-- [黄仁勋很孤独](https://www.tmtpost.com/7985999.html) — 钛媒体 TMTpost (2026-05-13)
-- [华大基因收购重庆新一产，实现“基因组+蛋白质组+空间组”多维整合](https://www.tmtpost.com/7985542.html) — 钛媒体 TMTpost (2026-05-13)
-- [长鹰硬科的奇特现象：“买对手原料、做对手产品、赚比对手更高利润”｜IPO观察](https://www.tmtpost.com/7985237.html) — 钛媒体 TMTpost (2026-05-13)
-- [蔚来饼干“钓鱼”](https://www.tmtpost.com/7985800.html) — 钛媒体 TMTpost (2026-05-13)
-- [千问接淘宝，豆包连抖音，两种AI电商路线浮现](https://www.tmtpost.com/7985764.html) — 钛媒体 TMTpost (2026-05-13)
-- [太阳能股票有望继续走高，First Solar、SolarEdge 技术面看涨](https://www.tmtpost.com/7986224.html) — 钛媒体 TMTpost (2026-05-13)
-- [腾讯需要一场2026年的首胜](https://www.tmtpost.com/7986281.html) — 钛媒体 TMTpost (2026-05-13)
-- [海辰储能王鹏程：2027年将成为AIDC储能商业化应用元年](https://www.tmtpost.com/7986262.html) — 钛媒体 TMTpost (2026-05-13)
-- [“缺芯少算”，长电科技千亿市值“稳了”](https://www.tmtpost.com/7984929.html) — 钛媒体 TMTpost (2026-05-12)
-- [掌阅科技升级旗下AI漫剧平台，AI短剧产业自闭环将成为头部大厂的必选项？](https://www.tmtpost.com/7985014.html) — 钛媒体 TMTpost (2026-05-12)
-- [200亿美金估值的可灵，值母公司七成市值](https://www.tmtpost.com/7985061.html) — 钛媒体 TMTpost (2026-05-12)
-- [沃尔沃需要吉利，但不能太像吉利](https://www.tmtpost.com/7985297.html) — 钛媒体 TMTpost (2026-05-12)
-- [3000元手搓《爱死机》，这部国产AI短片为何能外网刷屏？](https://www.tmtpost.com/7985284.html) — 钛媒体 TMTpost (2026-05-12)
-- [中纪委点名，国资做LP，亏了200亿](https://www.tmtpost.com/7984699.html) — 钛媒体 TMTpost (2026-05-12)
-- [中标即投诉，投诉即废标，医疗设备集采乱象如何解？](https://www.tmtpost.com/7985428.html) — 钛媒体 TMTpost (2026-05-12)
-- [千问重构淘宝，阿里“推翻”阿里](https://www.tmtpost.com/7984593.html) — 钛媒体 TMTpost (2026-05-12)
-- [体验千问内淘宝后，我发现自己低估了AI购物](https://www.tmtpost.com/7984130.html) — 钛媒体 TMTpost (2026-05-12)
-- [ST百利再触信披红线，一年半两度立案，“新主”入主难破危局](https://www.tmtpost.com/7985648.html) — 钛媒体 TMTpost (2026-05-12)
-- [连亏4年还要定增7亿，海量数据押注HTAP与多模态，技术迭代还是故事迭代？](https://www.tmtpost.com/7985857.html) — 钛媒体 TMTpost (2026-05-12)
-- [Chrome: Wie privat ist die lokale KI in Googles Browser?](https://www.heise.de/news/Chrome-Wie-privat-ist-die-lokale-KI-in-Googles-Browser-11290687.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [A Chevron Texas Power Plant Seeks School District Tax Break](https://www.wired.com/story/chevron-wants-school-district-tax-break-data-center-power-plant-texas/) — Wired (2026-05-11)
-- [【独自調査】日本語でAIを使うと「約1.5倍」高く付く？　AI利用のコスパを左右する“トークン効率”を比較](https://atmarkit.itmedia.co.jp/ait/articles/2605/13/news011.html) — ITmedia AI+ (2026-05-12)
-- [アクセンチュアがAnthropicとの協業を国内本格化　Claudeを活用した4つの支援領域とは](https://www.itmedia.co.jp/enterprise/articles/2605/13/news046.html) — ITmedia AI+ (2026-05-12)
-- [“ChatGPT以後”に公開のWebサイト、35％がAI生成に？　米スタンフォード大などが調査　広まる「不自然に明るい文章」](https://www.itmedia.co.jp/news/articles/2605/11/news027.html) — ITmedia AI+ (2026-05-11)
-- [バクラク、契約業務の自動化を支援する新サービスを今夏提供予定　27年度以降適用の「新リース会計基準」の判定にも対応](https://www.itmedia.co.jp/news/articles/2605/11/news114.html) — ITmedia AI+ (2026-05-11)
-- [日本のAI普及率上昇は"世界平均の3倍ペース"　モデルの日本語性能改善が要因か](https://www.itmedia.co.jp/aiplus/articles/2605/11/news122.html) — ITmedia AI+ (2026-05-11)
-- [Oppo issues renewed apology over Mother’s Day ad controversy, senior China head demoted](https://technode.com/2026/05/11/oppo-issues-renewed-apology-over-mothers-day-ad-controversy-senior-china-head-demoted/) — Technode (2026-05-11)
-- [Medicare’s new payment model is built for AI, and most of the tech world has no idea](https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/) — TechCrunch AI (2026-05-13)
-- [Google adds Gemini-powered Dictation to Gboard, which could be bad news for dictation startups](https://techcrunch.com/2026/05/12/google-adds-gemini-powered-dictation-to-gboard-which-could-be-bad-news-for-dictation-startups/) — TechCrunch AI (2026-05-12)
-- [Google’s ‘Create My Widget’ feature will let you vibe code your own widgets](https://techcrunch.com/2026/05/12/googles-create-my-widget-feature-will-let-you-vibe-code-your-own-widgets/) — TechCrunch AI (2026-05-12)
-- [The AI legal services industry is heating up. Anthropic is getting in on the action.](https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/) — TechCrunch AI (2026-05-12)
-- [Google brings agentic AI and vibe-coded widgets to Android](https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/) — TechCrunch AI (2026-05-12)
-- [Learntec 2026: Den Stöpsel gezogen?](https://www.heise.de/hintergrund/Learntec-2026-Den-Stoepsel-gezogen-11289495.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [heise+ | Kritik an der geplanten Vorratsdatenspeicherung](https://www.heise.de/hintergrund/Kritik-an-der-geplanten-Vorratsdatenspeicherung-11271011.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Led by industry, Japan and Taiwan plant seeds of drone cooperation](https://asia.nikkei.com/business/aerospace-defense-industries/led-by-industry-japan-and-taiwan-plant-seeds-of-drone-cooperation) — Nikkei Asia (2026-05-12)
-- [Japan's Fukuoka blossoms into tech hub for foreign startups, local IT firms](https://asia.nikkei.com/business/technology/japan-s-fukuoka-blossoms-into-tech-hub-for-foreign-startups-local-it-firms) — Nikkei Asia (2026-05-12)
-- [Aufstiegschancen: „Excel statt Exzellenz“: Drei Faktoren entscheiden, wer es in deutschen Firmen nach ganz oben schafft](https://www.handelsblatt.com/karriere/karriere-diese-faktoren-zaehlen-beim-karriereaufstieg-in-deutschen-firmen/100147821.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [The UK delivers Europe’s largest vanadium flow battery system](https://electrek.co/2026/05/11/uk-delivers-europes-largest-vanadium-flow-battery-system/) — Electrek (2026-05-11)
-- [硅谷刷屏的AI护城河新论：代码能抄，产品能抄，但有一样东西，谁都抄不走](https://www.qbitai.com/2026/05/415842.html) — 量子位 Qbitai (2026-05-11)
-- [做AI漫剧的、搞Agent的、投硅谷的，5.20这些赛道顶流碰头了｜最新嘉宾阵容](https://www.qbitai.com/2026/05/415263.html) — 量子位 Qbitai (2026-05-11)
-- [邯郸市共享智造股权投资基金登记成立，出资额10亿](https://36kr.com/newsflashes/3807385710845697?f=rss) — 36氪 36Kr (2026-05-13)
-- [在国内做了20年女装后，这个团队靠「轻出海」把增长拓向东南亚](https://www.leiphone.com/category/industrynews/9bcdHqAkFcRwKyZp.html) — 雷锋网 Leiphone (2026-05-13)
-- [Major Japanese petroleum company expects Hormuz crisis to subside in July](https://asia.nikkei.com/spotlight/iran-tensions/iran-war/major-japanese-petroleum-company-expects-hormuz-crisis-to-subside-in-july3) — Nikkei Asia (2026-05-12)
-- [Australia takes aim at rising fuel prices with annual budget](https://asia.nikkei.com/economy/australia-takes-aim-at-rising-fuel-prices-with-annual-budget) — Nikkei Asia (2026-05-12)
-- [Tokio Marine gets green light for talks to buy Malaysia's RHB Insurance](https://asia.nikkei.com/business/business-deals/tokio-marine-gets-green-light-for-talks-to-buy-malaysia-s-rhb-insurance) — Nikkei Asia (2026-05-12)
-- [Singapore's Sea logs drop in e-commerce profit as competition intensifies](https://asia.nikkei.com/business/technology/singapore-s-sea-logs-drop-in-e-commerce-profit-as-competition-intensifies) — Nikkei Asia (2026-05-12)
-- [韩国政府称将支持三星与工会对话解决纠纷，以避免罢工](https://36kr.com/newsflashes/3807381350948608?f=rss) — 36氪 36Kr (2026-05-13)
-- [AI 为什么一定会成为这代人的全新购物入口](http://www.geekpark.net/news/364101) — 极客公园 Geekpark (2026-05-13)
-- [中微公司战略收购杭州众硅项目注册生效](https://36kr.com/newsflashes/3807284100324865?f=rss) — 36氪 36Kr (2026-05-13)
-- [传可灵计划独立融资上市：300 亿美元的快手长出 200 亿美元的 AI 视频子公司](http://www.geekpark.net/news/364057) — 极客公园 Geekpark (2026-05-12)
-- [亚马逊计划将“Amazon Now”服务扩展至数百万用户](https://36kr.com/newsflashes/3806247708483332?f=rss) — 36氪 36Kr (2026-05-12)
-- [日本大型电机制造企业尼得科公司被曝大规模造假](https://36kr.com/newsflashes/3806250874920710?f=rss) — 36氪 36Kr (2026-05-12)
-- [*ST凯鑫：股票交易撤销退市风险警示，明起停牌一天](https://36kr.com/newsflashes/3806264399027714?f=rss) — 36氪 36Kr (2026-05-12)
-- [美国4月CPI同比增长3.8%](https://36kr.com/newsflashes/3806283290418694?f=rss) — 36氪 36Kr (2026-05-12)
-- [美国4月核心CPI同比增长2.8%](https://36kr.com/newsflashes/3806286554095104?f=rss) — 36氪 36Kr (2026-05-12)
-- [万科A：就220亿股东借款与深铁集团签署补充协议](https://36kr.com/newsflashes/3806306691374596?f=rss) — 36氪 36Kr (2026-05-12)
-- [牵头打造的全国统一电力交易App上线？中电联全面否认](https://36kr.com/newsflashes/3806310406430212?f=rss) — 36氪 36Kr (2026-05-12)
-- [Rowdy Honda Single-Seater Gained 100 HP With an 800cc Snowmobile Engine Swap](https://www.thedrive.com/news/rowdy-honda-single-seater-gained-100-hp-with-an-800cc-snowmobile-engine-swap) — The Drive (2026-05-12)
-- [Major Android Auto Update Will Bring YouTube to Your Car’s Screen](https://www.thedrive.com/news/major-android-auto-update-will-bring-youtube-to-your-cars-screen) — The Drive (2026-05-12)
-- [Supply-Chain-Angriff auf TanStack: 42 Pakete kompromittiert](https://www.heise.de/news/Supply-Chain-Angriff-auf-TanStack-42-Pakete-kompromittiert-11290715.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [中国正在成为世界内容工厂](https://www.tmtpost.com/7985910.html) — 钛媒体 TMTpost (2026-05-13)
-- [揭秘「全民养龙虾」：2026中国OpenClaw用户及企业应用调研报告](https://www.tmtpost.com/7984923.html) — 钛媒体 TMTpost (2026-05-12)
-- [沃尔沃中国换帅，段建军接下最难一棒](https://www.tmtpost.com/7985380.html) — 钛媒体 TMTpost (2026-05-12)
-- [Debian macht ernst: Nur noch reproduzierbare Pakete in „testing“](https://www.heise.de/news/Debian-14-Reproduzierbare-Builds-werden-zur-Pflicht-11289259.html) — Heise Developer (2026-05-11)
-- [C++-Entwickler nutzen KI häufiger, bleiben aber skeptisch](https://www.heise.de/news/C-Entwickler-nutzen-KI-haeufiger-bleiben-aber-skeptisch-11287695.html) — Heise Developer (2026-05-11)
-- [Software Testing: Der Blaue Engel für Software](https://www.heise.de/blog/Software-Testing-Der-Blaue-Engel-fuer-Software-11290279.html) — Heise Developer (2026-05-12)
-- [Supply-Chain-Angriff auf TanStack: 42 Pakete kompromittiert](https://www.heise.de/news/Supply-Chain-Angriff-auf-TanStack-42-Pakete-kompromittiert-11290715.html) — Heise Developer (2026-05-12)
-- [Red Hat OpenShift: Souveräne KI, Migration und Virtualisierung](https://www.heise.de/news/Red-Hat-OpenShift-Souveraene-KI-Migration-und-Virtualisierung-11291049.html) — Heise Developer (2026-05-12)
-- [Fedora plant KI-Linux-Desktop](https://www.heise.de/news/Fedora-plant-KI-Linux-Desktop-11291654.html) — Heise Developer (2026-05-12)
-- [Hamburg: Verkehrsbetriebe schaffen wieder Busse mit Verbrenner an](https://www.heise.de/news/Hamburg-Verkehrsbetriebe-schaffen-wieder-Busse-mit-Verbrenner-an-11288880.html) — Heise Auto (2026-05-11)
-- [Chinesischer Automarkt: Verkäufe im April deutlich eingebrochen](https://www.heise.de/news/Chinesischer-Automarkt-Verkaeufe-im-April-deutlich-eingebrochen-11289263.html) — Heise Auto (2026-05-11)
-- [Audi Q9 vorgestellt: XXL-SUV mit Verbrenner](https://www.heise.de/news/Audi-Q9-vorgestellt-XXL-SUV-mit-Verbrenner-11290663.html) — Heise Auto (2026-05-12)
-- [Energiekrise in Indien: Modi mahnt zu Sparsamkeit und lokalem Konsum](https://www.heise.de/news/Energiekrise-Indiens-Regierungschef-mahnt-zu-Spritsparen-und-Homeoffice-11290879.html) — Heise Auto (2026-05-12)
-- [Polestar: Umstellung auf 800 Volt soll Laden beschleunigen](https://www.heise.de/news/Polestar-3-bekommt-DC-Laden-mit-800-Volt-11291648.html) — Heise Auto (2026-05-12)
-- [Familienunternehmen: Dussmann zeigt sich krisenfest – davon profitieren auch Kunden](https://www.handelsblatt.com/unternehmen/mittelstand/familienunternehmer/dienstleister-dussmann-zeigt-sich-krisenfest-davon-profitieren-auch-kunden/100223535.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Ukraine-Krieg: Waffenruhe ausgelaufen: Russland und Ukraine schießen wieder](https://www.handelsblatt.com/politik/international/ukraine-krieg-waffenruhe-ausgelaufen-russland-und-ukraine-schiessen-wieder/100224317.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Quiet Quitting: „Mein Chef hat keinen Bock mehr“: So können Unternehmen reagieren](https://www.handelsblatt.com/karriere/quiet-quitting-so-erreichen-unternehmen-resignierte-fuehrungskraefte-wieder/100139907.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Sportwagen: Mit 1080 PS unter freiem Himmel – Das kann der Lamborghini Fenomeno Roadster](https://www.handelsblatt.com/mobilitaet/motor/lamborghini-fenomeno-super-roadster-beeindruckt-mit-1080-ps-unter-freiem-himmel/100224399.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Teuerung: US-Inflation auf höchstem Wert seit fast drei Jahren – Ölpreis-Schock treibt Preise](https://www.handelsblatt.com/finanzen/geldpolitik/teuerung-us-inflation-springt-auf-38-prozent-oelpreis-schock-treibt-preise/100223956.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Landgericht Verden: Im Klette-Prozess wird der Gerichtssaal zur Bühne](https://www.handelsblatt.com/politik/deutschland/landgericht-verden-im-klette-prozess-wird-der-gerichtssaal-zur-buehne/100224466.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Krampfadern: Schwere Beine? Welche Warnsignale für Venenprobleme sprechen](https://www.handelsblatt.com/technik/medizin/krampfadern-schwere-beine-welche-warnsignale-fuer-venenprobleme-sprechen/100224569.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Finanzielle Freiheit: Dieser Rechner zeigt, wann Sie von Ihrem Vermögen leben können](https://www.handelsblatt.com/finanzen/anlagestrategie/trends/finanzielle-freiheit-berechnen-sie-ab-wann-sie-von-ihrem-vermoegen-leben-koennen/100141875.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [EU: Mittelstreckenwaffen – Tomahawk-Frage beschäftigt auch EU](https://www.handelsblatt.com/politik/international/eu-mittelstreckenwaffen-tomahawk-frage-beschaeftigt-auch-eu/100224564.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [+++ Ukraine-Krieg +++: Verteidigungsminister Pistorius sieht „Phase der Schwäche“ bei Russland](https://www.handelsblatt.com/politik/international/ukraine-pistorius-sieht-phase-der-schwaeche-bei-russland/27982126.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Ukraine: Razzia im Präsidialamt – Stürzt Präsident Selenskyj über einen Korruptionsskandal?](https://www.handelsblatt.com/politik/international/ukraine-stuerzt-praesident-selenskyj-ueber-einen-korruptionsskandal/100224370.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Vermögenssteuer: CDU-Regierungschef Wegner will Vermögende stärker besteuern](https://www.handelsblatt.com/politik/deutschland/vermoegenssteuer-cdu-regierungschef-wegner-will-vermoegende-staerker-besteuern/100224563.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Rundfunkbeitrag: Kommission pocht auf weitere Reformen bei ARD und ZDF](https://www.handelsblatt.com/unternehmen/it-medien/rundfunkbeitrag-kommission-pocht-auf-weitere-reformen-bei-ard-und-zdf/100224572.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Technologie: Siemens sortiert die Macht im Aufsichtsrat neu](https://www.handelsblatt.com/unternehmen/industrie/technologie-siemens-sortiert-die-macht-im-aufsichtsrat-neu/100222237.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Bürgerkrieg: Türkei öffnet Grenzübergang nach Syrien](https://www.handelsblatt.com/politik/international/buergerkrieg-tuerkei-oeffnet-grenzuebergang-nach-syrien/100224576.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Abfindung: Wie Sie das Maximum aus Ihrem Jobverlust rausholen](https://www.handelsblatt.com/karriere/fuehrungskraefte-warum-eine-hohe-abfindung-nicht-immer-die-beste-option-ist/100165683.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Spritpreise: Shell hat wegen Fehleingabe Diesel zu günstig verkauft – die Korrektur der Ungenauigkeit wurde noch nicht behoben](https://www.handelsblatt.com/unternehmen/energie/spritpreise-shell-hat-wegen-fehleingabe-diesel-zu-guenstig-verkauft/100224538.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Zulieferer: Mahle schließt Werk in Bayern mit 350 Mitarbeitern](https://www.handelsblatt.com/unternehmen/industrie/zulieferer-mahle-schliesst-werk-in-bayern-mit-350-mitarbeitern/100224584.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Essenslieferant: Delivery Hero gibt Aktionärsdruck nach – Chef Östberg tritt ab](https://www.handelsblatt.com/unternehmen/dienstleister/delivery-hero-firmengruender-gibt-fuehrung-nach-aktionaersdruck-ab/100224509.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Trouble mit Geräten: Reklamation bei Ratenkauf: Diese Hürde droht](https://www.handelsblatt.com/technik/it-internet/trouble-mit-geraeten-reklamation-bei-ratenkauf-diese-huerde-droht/100224587.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [DGB-Bundeskongress: DGB-Kongress mit Pfiffen für Merz - und Applaus für Bas](https://www.handelsblatt.com/politik/deutschland/dgb-bundeskongress-dgb-kongress-mit-pfiffen-fuer-merz-und-applaus-fuer-bas/100224321.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Strategische Partnerschaft: Pistorius in den Herzkammern des ukrainischen Drohnenkriegs](https://www.handelsblatt.com/politik/international/strategische-partnerschaft-pistorius-in-den-herzkammern-des-ukrainischen-drohnenkriegs/100224581.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Superkleber auf der Fahrbahn: Bewährungsstrafe für deutsche Klimaaktivistin Windl](https://www.handelsblatt.com/politik/international/superkleber-auf-der-fahrbahn-bewaehrungsstrafe-fuer-deutsche-klimaaktivistin-windl/100224591.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [US-Börsen: US-Indizes nach Inflationsdaten schwach – Tech-Werte verlieren](https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-zwei-indizes-erreichen-neue-hoechststaende/100224555.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Phishing-Warnung: Rundfunkbeitrag: Vorsicht vor Mail-Betrug mit Zahlungstermin](https://www.handelsblatt.com/finanzen/steuern-recht/phishing-warnung-rundfunkbeitrag-vorsicht-vor-mail-betrug-mit-zahlungstermin/100224601.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Volksbanken: VR Altmark kann Warengeschäft losschlagen – kein Stützungsfall](https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/volksbanken-vr-altmark-kann-warengeschaeft-losschlagen-kein-stuetzungsfall/100224213.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Immobilien: Analystencall abrupt beendet? – Vonovia irritiert britischen Investor](https://www.handelsblatt.com/finanzen/immobilien/immobilien-analystencall-abrupt-beendet-vonovia-irritiert-investor/100224550.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Tagesgeld: Fünf Prozent für ganz viel Daumendrücken](https://www.handelsblatt.com/finanzen/anlagestrategie/trends/tagesgeld-fuenf-prozent-fuer-ganz-viel-daumendruecken/100224549.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Märkte-Insight: Die Anleihe-Bürgerwehr straft Europa ab](https://www.handelsblatt.com/finanzen/anlagestrategie/kolumnen/staatsanleihen-die-anleihe-buergerwehr-straft-europa-ab/100224014.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [+++ Iran-Krieg +++: Pentagon schätzt Kosten des Iran-Kriegs auf 29 Milliarden Dollar](https://www.handelsblatt.com/politik/international/iran-pentagon-schaetzt-kosten-des-iran-kriegs-auf-29-milliarden-dollar/100136895.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Sachsen-Anhalt: Ex-Verfassungsschutzchef Maaßen als AfD-Innenminister im Gespräch](https://www.handelsblatt.com/politik/deutschland/afd-ex-verfassungsschutzchef-maassen-als-innenminister-im-gespraech/100224599.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Wirtschaftsforschung: Zahl industrieller Betriebe sinkt](https://www.handelsblatt.com/politik/deutschland/wirtschaftsforschung-zahl-industrieller-betriebe-sinkt/100224610.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Interview: „Die Räuberbarone des 19. Jahrhunderts gleichen der Tech-Elite“](https://www.handelsblatt.com/technik/it-internet/historikerin-omara-tech-milliardaere-glauben-an-ihre-genetische-ueberlegenheit/100178613.html) — Handelsblatt Technologie (2026-05-12)
-- [Jeep summons Captain America for campaigns tied to nation’s 250th anniversary](https://www.autonews.com/stellantis/an-jeep-marketing-superhero-campaign-0512/) — Automotive News (2026-05-12)
-- [Baden-Württemberg: Grün-Schwarz streicht den Datenschutz zusammen](https://www.golem.de/news/baden-wuerttemberg-gruen-schwarz-streicht-den-datenschutz-zusammen-2605-208528.html) — Golem.de (2026-05-11)
-- [Schweizer Gesundheitsdaten: Eidgenossen gegen US-Cloud-Dominanz](https://www.heise.de/news/Schweizer-Gesundheitsdaten-Eidgenossen-gegen-US-Cloud-Dominanz-11290393.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Trump-Xi meeting keeps Taiwan on edge, eyeing subtle US shifts](https://asia.nikkei.com/politics/international-relations/taiwan-tensions/trump-xi-meeting-keeps-taiwan-on-edge-eyeing-subtle-us-shifts) — Nikkei Asia (2026-05-12)
-- [Kommentar: Willkommen im Land der Besitzstandswahrer](https://www.handelsblatt.com/meinung/kommentare/kommentar-willkommen-im-land-der-besitzstandswahrer/100222808.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Nikkei, Yen, Hang Seng: Höhenflug bei Chip-Aktien kühlt sich in Asien ab – Ölpreis legt zu](https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-hoehenflug-bei-chip-aktien-kuehlt-sich-in-asien-ab-oelpreis-legt-zu/100224320.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Betriebliche Altersvorsorge: Diese Zusatzrenten bieten Deutschlands wertvollste Unternehmen](https://www.handelsblatt.com/finanzen/vorsorge/altersvorsorge-so-gestalten-deutsche-unternehmen-ihre-betriebsrenten/100210939.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Geld: Der Millionenerbe, der die Millionen nicht will](https://www.handelsblatt.com/finanzen/steuern-recht/erbe-deshalb-verzichtet-ein-millionenerbe-bewusst-auf-sein-vermoegen/100204748.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Eltifs: „Höchste Vorsicht geboten“: Bafin sieht Private-Debt-Fonds für Privatanleger kritisch](https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/eltifs-bafin-sieht-private-debt-fonds-fuer-privatanleger-kritisch/100223600.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Dax aktuell: ﻿Dax kämpft um 24.000-Punkte-Marke – und unterschreitet wichtige Linie](https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-startet-im-minus-blick-auf-us-inflation/100224350.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Antibody discovery platform Immunocan closes RMB250 million Series A](https://technode.com/2026/05/13/antibody-discovery-platform-immunocan-closes-rmb250-million-series-a/) — Technode (2026-05-13)
-- [国芯科技(688262):2025年年度股东会会议资料 - 中财网](https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EZ0R0WFZVQW44Nm9wU0JxTVEyTHQ4RXlfbDN6dXpjT0JJMG1xMWVNemNnMHdPQ1pHN0p0S2RjS09mTFBXN3Z2VFB5YWxBVzVZVHFsQ3JB?oc=5) — GNews ZH: 嵌入式AI汽车 (2026-05-11)
-- [浙江嘉兴：一座制造业重镇的智慧进化 - 浙江省经济信息中心](https://news.google.com/rss/articles/CBMickFVX3lxTE1oaEhFSURaZEFNTml5Y0V1djJTOEZJZDN2VFZaaThaRXVFeFhjVjc1ZWZyYmVlaHRqd0x3ZVdibXhNeU5uYm9NY1BaQlpyQTNtZlpZQTFORmZqLUthYXlhYzhjbWNGMWdOLThlUWNJWmN3QQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [企业协同平台AI应用的全生命周期安全管控实践 - 51CTO](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jR25NQm1SVlJ3VFlrbjhDUjN6dW0yQm5zWDVwcE51X1FGdk1QNERKN3BvaFB5TVVqa0F0RkxpVGgwYlVmRVM1Vk91anE1NElDVDVj?oc=5) — GNews ZH: 机器人安全 (2026-05-12)
-- [Hyundai Rolls Out FIFA World Cup 2026 Theme for Digital Cluster - тарантас ньюс](https://news.google.com/rss/articles/CBMipAFBVV95cUxQQjVobjZIdXY1ZV9USU4temRucjJfVXlTY2ZZX2Z1el9waW5uM2RDZk9EV3paZkp2OUhrVlhRMUU0QmxBZ0IxZFB4VndSakhCd2ozLW10b0F3Tmc5WENoT2VhaXdKVDdvdWxaQW9DajczTHNyMERGUEowRlpScGxjUzdINURTM0g5LUlaOGVrRnpBLTdvM1Z4a1RSQVY0M1B5a05ONNIBqAFBVV95cUxOT2JLMU5OVmFlcUtJWVE4djlFcjNBNkNvYWlxQUJ1S2tRdDFPV1Bid3F4YUREZGF5eXQ4MjFvM3NGTWJJVmVJa3h3WE9oR0ZvSmJ6c0hWUmtuRDVDY05qLXgteE80RVNoVjVoNFRHU3BwcURSeXVuaUNWd0JNcFZHN3ZtWFVJdkY5QW9pYml5aUo3RTZ2cjdoaWdUVF9ha3hDZmM3dC1vNnc?oc=5) — GNews: Boston Dynamics (2026-05-12)
-- [Sereact融资1.1亿美元，让具身智能在真实场景落地 - 36氪](https://news.google.com/rss/articles/CBMiTkFVX3lxTE95cnNjVzItWDl3ODluTXBydjdxRlQySjFKbDBiUHFRMGlnZ2JyZkxvRm1GV1NKNmpicTlUUTZpVE9majFRUlZic1BiaUVHUQ?oc=5) — GNews ZH: 人形机器人 (2026-05-11)
-- [香港将设“AI+与产业发展策略委员会” 聚焦具身智能推动产业升级 - 新浪网](https://news.google.com/rss/articles/CBMieEFVX3lxTE1HRTBBOFFRMzFhcy1wVXEwVlNxTVBPd0FSVUJzNHdCQUhNUHpqeHM2c1ItcWhBd1M1WW43SVVnR0NST0dBTThfSGFxNndqWnY0LTEtTWt5ZVcwbHZrQWRyeWFjdFF2Y2ZDclJrWmZxSmRObWRjUG1veA?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [大洋电机：目前公司在具身智能业务方面尚未形成营业收入 - 东方财富](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDYzhwS0kwcHVYV1RBQ3h0Umh3aFotODdGOTkwbDZrLUhZR1UzY0UxXzd2WGk2bmFUNHVPcHQweERoWUVYVFNnMjhHb3BtX2lNbmZOdUNzaEZETmVpd1dKRUtkdnFCdw?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [化工企业为何“扎堆”低空经济、具身智能？背后是万亿级增量市场 - 21财经](https://news.google.com/rss/articles/CBMijwFBVV95cUxPQ0lzSDhoQ05hS05hUFNuMW1CdEdlUDFvZ0UxcUVlN1dGODNDVGpNb0NKMExvOXlEclV2VzI1a3ROc2JuRUVTd09MMjRYSEVLY3liSUdXWDNrUkZGalc3d01iYm9FNkN5bkIwdTBtYmdMTTdlRlZtT25FdDZDUmYwT2x2dnkySHlSMEpVaDdYTQ?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [李家超：香港为具身智能提供了理想的试验与应用场景 - 新京报](https://news.google.com/rss/articles/CBMiZEFVX3lxTE41RzNLRUpfeFNmdFR4RWU5SkJ6RE5CSU10eVpGY1FMeDZ2d19JTXhuaG9USlVKN0J4Y3NWZFRUdWFuNFJFSzVyUHpwZzZvWUVUdi0wWnRGcXd6d2RrOEhCZ0ZYT0s?oc=5) — GNews ZH: 人形机器人 (2026-05-12)
-- [Altech Smart Relays and Multi-Timer Combine Scalable Control and Fast Installation](https://www.eejournal.com/industry_news/altech-smart-relays-and-multi-timer-combine-scalable-control-and-fast-installation/) — EE Journal (2026-05-12)
-- [Apple führt RCS-Verschlüsselung in iOS 26.5 ein: Das ist zu beachten](https://www.heise.de/news/Ende-zu-Ende-Verschluesselung-fuer-RCS-mit-iOS-26-5-So-geht-s-11291023.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [GameStop will sich um den Faktor 2,5 verwässern](https://www.heise.de/news/GameStop-will-sich-um-den-Faktor-2-5-verwaessern-11291061.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Neue Studie: Leben lässt sich statistisch nachweisen](https://www.heise.de/news/Forscher-finden-neue-Methode-fuer-den-Nachweis-von-Leben-11291380.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [„Blade Runner“ kehrt zurück: Neues XR-Erlebnis startet 2027](https://www.heise.de/news/Blade-Runner-kehrt-zurueck-Neues-XR-Erlebnis-startet-2027-11291302.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [EuGH-Urteil zum Leistungsschutz: Meta muss für Presseinhalte in Italien zahlen](https://www.heise.de/news/EuGH-Urteil-zum-Leistungsschutz-Meta-muss-fuer-Presseinhalte-in-Italien-zahlen-11291400.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [tvOS, visionOS, watchOS und HomePod Software: Details zu Version 26.5](https://www.heise.de/news/tvOS-visionOS-watchOS-und-HomePod-Software-Details-zu-Version-26-5-11291079.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Warken: Digitalisierung entlastet Gesundheitswesen nur teilweise](https://www.heise.de/news/Warken-Digitalisierung-und-Entbuerokratisierung-loesen-Finanzprobleme-nicht-11291338.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [heise+ | Aktive Sicherheitsstrategie: So funktioniert autonome IT-Abwehr im XDR-Verbund](https://www.heise.de/ratgeber/Aktive-Sicherheitsstrategie-So-funktioniert-autonome-IT-Abwehr-im-XDR-Verbund-11283716.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Zahlen, bitte! 5400 Kilometer über die Arktis im ersten Nordpolüberflug](https://www.heise.de/hintergrund/Zahlen-bitte-5400-Kilometer-ueber-die-Arktis-im-ersten-Nordpolueberflug-11247540.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [SAP-Patchday: Kritische Sicherheitslücken erlauben unbefugte Anmeldung](https://www.heise.de/news/SAP-Patchday-Kritische-Sicherheitsluecken-erlauben-unbefugte-Anmeldung-11291173.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [E-Mail-Schutz von Apple: Sinnvoll, doch immer noch schwer zu bedienen](https://www.heise.de/news/Apples-E-Mail-Adresse-verbergen-Nuetzlich-aber-leider-kaum-verbessert-11289817.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Schattenbibliothek: Buchverlage wollen Anna's Archive abschalten](https://www.heise.de/news/Schattenbibliothek-Buchverlage-wollen-Anna-s-Archive-abschalten-11291414.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [heise-Angebot: iX-Workshop: Keycloak – der fundierte Einstieg in IAM und SSO](https://www.heise.de/news/iX-Workshop-Keycloak-der-fundierte-Einstieg-in-IAM-und-SSO-11280096.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Galaxy S26 zuerst: Samsung öffnet One UI 9 Beta](https://www.heise.de/news/Galaxy-S26-Serie-Samsung-oeffnet-Betaprogramm-fuer-One-UI-9-11291610.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Red Hat OpenShift: Souveräne KI, Migration und Virtualisierung](https://www.heise.de/news/Red-Hat-OpenShift-Souveraene-KI-Migration-und-Virtualisierung-11291049.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [eBay lehnt Gamestop-Übernahme ab](https://www.heise.de/news/eBay-lehnt-Gamestop-Uebernahme-ab-11291744.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Einschlag Anfang August: Raketenstufe von SpaceX auf Kollisionskurs mit dem Mond](https://www.heise.de/news/Einschlag-Anfang-August-Raketenstufe-von-SpaceX-auf-Kollisionskurs-mit-dem-Mond-11291512.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Polestar: Umstellung auf 800 Volt soll Laden beschleunigen](https://www.heise.de/news/Polestar-3-bekommt-DC-Laden-mit-800-Volt-11291648.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Mythos findet nur eine Sicherheitslücke in curl](https://www.heise.de/news/Mythos-findet-nur-eine-Sicherheitsluecke-in-curl-11291666.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [United Internet wächst: Ionos dynamisch, 1&1 verhalten](https://www.heise.de/news/United-Internet-waechst-Ionos-dynamisch-1-1-verhalten-11291958.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Fedora plant KI-Linux-Desktop](https://www.heise.de/news/Fedora-plant-KI-Linux-Desktop-11291654.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Aferiy P280 im Test: Powerstation mit 2800 Watt, 2 kWh und ausbaubar bis 10 kWh](https://www.heise.de/bestenlisten/testbericht/aferiy-p280-im-test-powerstation-mit-2800-watt-2-kwh-und-ausbaubar-bis-10-kwh/f47jh3y?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Darknet Diaries Deutsch: Eine Frau, das Netz und der Terror (Teil 2)](https://www.heise.de/news/Darknet-Diaries-Deutsch-Eine-Frau-das-Netz-und-der-Terror-Teil-2-11256179.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [„Die Pflege braucht ihre eigene Informatik-Initiative“](https://www.heise.de/hintergrund/Digitalisierung-Warum-die-Pflege-mehr-Mitsprache-fordert-11291706.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Dobrindt: „Abschrecken, abwehren und abschalten“ in Kürze](https://www.heise.de/news/Dobrindt-Abschrecken-abwehren-und-abschalten-in-Kuerze-11292023.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [CERN öffnet seine KiCad-Bauteilbibliothek: 17.000 Komponenten für Maker](https://www.heise.de/news/CERN-oeffnet-seine-KiCad-Bauteilbibliothek-17-000-Komponenten-fuer-Maker-11291640.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Apple kauft deutsches Color-Grading-Tool Color.io](https://www.heise.de/news/Apple-kauft-deutsches-Color-Grading-Tool-Color-io-11292201.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [heise+ | FAQ: So bootet Windows per UEFI](https://www.heise.de/ratgeber/FAQ-So-bootet-Windows-per-UEFI-11252332.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [沪深两市成交额突破3万亿元](https://36kr.com/newsflashes/3807366888529415?f=rss) — 36氪 36Kr (2026-05-13)
-- [A New Hantavirus Vaccine Is in the Works](https://www.wired.com/story/a-new-hantavirus-vaccine-is-in-the-works/) — Wired (2026-05-11)
-- [Hynix shares jump 11%, driving KOSPI to record high](https://asia.nikkei.com/business/markets/hynix-shares-jump-11-driving-kospi-to-record-high) — Nikkei Asia (2026-05-12)
-- [The Creators of ‘Hacks’ Really, Really, Really Hate AI](https://www.wired.com/story/the-big-interview-podcast-hacks-cocreators-paul-w-downs-lucia-aniello/) — Wired (2026-05-12)
-- [Some Women Are Obsessively Testing Their Vaginas to Optimize Them](https://www.wired.com/story/some-women-are-obsessively-testing-their-vaginas-to-optimize-them/) — Wired (2026-05-12)
-- [Hantavirus Conspiracy Theories Are Already Spreading Online](https://www.wired.com/story/hantavirus-conspiracy-theories-are-already-spreading-online/) — Wired (2026-05-12)
-- [All Your Hantavirus Questions, Answered by an Infectious Disease Expert](https://www.wired.com/story/all-your-hantavirus-questions-answered-by-an-infectious-disease-expert/) — Wired (2026-05-12)
-- [Trump Media Scales Back Plans for Its Own Prediction Market](https://www.wired.com/story/trump-media-scales-back-plans-for-its-own-prediction-market/) — Wired (2026-05-12)
-- [China Inc.'s global growth curbs Trump tariff powers undercut by courts](https://asia.nikkei.com/economy/trade-war/trump-tariffs/china-inc.-s-global-growth-curbs-trump-tariff-powers-undercut-by-courts) — Nikkei Asia (2026-05-12)
-- [Für die Sommerferien: Bahn bringt Familienticket zum Pauschalpreis](https://www.handelsblatt.com/unternehmen/dienstleister/fuer-die-sommerferien-bahn-bringt-familienticket-zum-pauschalpreis/100224410.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Gewerkschaften: Pfiffe und Buhrufe für Merz beim DGB-Kongress](https://www.handelsblatt.com/politik/deutschland/gewerkschaften-pfiffe-und-buhrufe-fuer-merz-beim-dgb-kongress/100224321.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [AI voice startup Vapi hits $500M valuation after winning Amazon Ring over 40 rivals](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) — TechCrunch AI (2026-05-12)
-- [Dessn raises $6M for its production focused design tool](https://techcrunch.com/2026/05/12/dessn-raises-6m-for-its-production-focused-design-tool/) — TechCrunch AI (2026-05-12)
-- [South Korea floats using AI profits for 'people's dividend'](https://asia.nikkei.com/business/technology/south-korea-floats-using-ai-profits-for-people-s-dividend) — Nikkei Asia (2026-05-12)
-- [2025年全国广播电视和网络视听行业总收入同比增长5.22%](https://36kr.com/newsflashes/3807356997410569?f=rss) — 36氪 36Kr (2026-05-13)
-- [After cops failed to catch hooligan bike riders, state asks locals for help](https://electrek.co/2026/05/12/after-cops-failed-to-catch-hooligan-bike-riders-state-asks-locals-for-help/) — Electrek (2026-05-12)
-- [Südkorea: Börse stürzt wegen Ruf nach KI-Gewinnbeteilung der Bevölkerung ab](https://www.heise.de/news/Suedkorea-Boerse-stuerzt-wegen-Ruf-nach-KI-Gewinnbeteilung-der-Bevoelkerung-ab-11290569.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Trump and Xi need to master a new art of the deal](https://asia.nikkei.com/opinion/trump-and-xi-need-to-master-a-new-art-of-the-deal) — Nikkei Asia (2026-05-12)
-- [Afghanistan: EU will mit Taliban in Brüssel über Abschiebungen verhandeln](https://www.handelsblatt.com/politik/international/afghanistan-eu-will-mit-taliban-in-bruessel-ueber-abschiebungen-verhandeln/100224453.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Empowering Engineers With Greater Design Flexibility and Integrated Steam System Performance](https://www.eejournal.com/industry_news/empowering-engineers-with-greater-design-flexibility-and-integrated-steam-system-performance/) — EE Journal (2026-05-11)
-- [Canon to shut down Philippine laser printer plant as demand falls](https://asia.nikkei.com/business/electronics/canon-to-shut-down-philippine-laser-printer-plant-as-demand-falls) — Nikkei Asia (2026-05-12)
-- [Streamingdienst: Texas verklagt Netflix wegen Suchtgefahr](https://www.handelsblatt.com/technik/it-internet/netflix-texas-verklagt-streaming-plattform-wegen-suchtgefahr/100224337.html) — Handelsblatt Technologie (2026-05-12)
-- [Zeem celebrates 350,000th successful charging session at LAX [video]](https://electrek.co/2026/05/11/zeem-celebrates-350000th-successful-charging-session-at-lax-video/) — Electrek (2026-05-11)
-- [The FCC Received Hundreds of Complaints About Bad Bunny’s ‘Vulgar’ Super Bowl Performance](https://www.wired.com/story/bad-bunny-super-bowl-fcc-complaints/) — Wired (2026-05-11)
-- [China's aggressive squid fishing linked to sharp drops in catches](https://asia.nikkei.com/business/fisheries/china-s-aggressive-squid-fishing-linked-to-sharp-drops-in-catches) — Nikkei Asia (2026-05-12)
-- [China's yuan hits three-year high days before Xi-Trump summit](https://asia.nikkei.com/business/markets/currencies/china-s-yuan-hits-three-year-high-days-before-xi-trump-summit) — Nikkei Asia (2026-05-12)
-- [软银集团第四季度净利润1.83万亿](https://36kr.com/newsflashes/3807351957069314?f=rss) — 36氪 36Kr (2026-05-13)
-- [Samsung union open to averting strike, wants pay transparency](https://asia.nikkei.com/spotlight/work/samsung-union-open-to-averting-strike-wants-pay-transparency) — Nikkei Asia (2026-05-12)
-- [Data-Driven Strategies to Strengthen Fixed Ops Profitability](https://www.autonews.com/resource_center/dynatron-software/an-data-driven-strategies-strengthen-fixed-ops-profitability/) — Automotive News (2026-05-11)
-- [Bay of Bengal cooperation is critical amid the global crisis: BIMSTEC chief](https://asia.nikkei.com/politics/international-relations/bay-of-bengal-cooperation-is-critical-amid-the-global-crisis-bimstec-chief) — Nikkei Asia (2026-05-12)
-- [Zenobē keeps “Winnings” with Australian electric truck deal](https://electrek.co/2026/05/12/zenobe-keeps-winnings-with-australian-electric-truck-deal/) — Electrek (2026-05-12)
-- [李想谈AI与车企发展_新浪新闻 - 手机新浪网](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Wa1pCbUZYVXo5Qnc2dE10d1FIRVFzUkJkazI1UzkwZjRiajVxZnZZWVhpR01tQTZ4UVluYVU3QS1NbVRRS01TVlV0eHQtMlp0WE9SVV94aWVCOEFfSHVfNUgzUQ?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [李想谈具身智能发展_新浪新闻 - 手机新浪网](https://news.google.com/rss/articles/CBMiY0FVX3lxTE93UFF1MFRiYTlhTkRPSF9rU3ZIM0Y0WFJtNXB2bjN0bzE2S0pHdHNteFdzZElBVk0tZGQwOWNyVXZtSHZJMTJGYmhYQnJWMzVuenZURjU0dDBBRERvSm9QVjdwNA?oc=5) — GNews ZH: 人形机器人 (2026-05-13)
-- [ノルウェー電池メーカーMorrow、破産申請…世界的な電池市場の供給過剰と価格下落が影響](https://response.jp/article/2026/05/13/411211.html) — Response.jp (2026-05-13)
-- [Update Your iPhone Now for Better Encrypted Messaging With Android](https://www.wired.com/story/update-your-iphone-now-for-better-encrypted-messaging-with-android/) — Wired (2026-05-11)
-- [Squarespace Promo Codes: 20% Off in May 2026](https://www.wired.com/story/squarespace-promo-code/) — Wired (2026-05-12)
-- [Dell Coupon Codes: 20% Off for May 2026](https://www.wired.com/story/dell-coupon-code/) — Wired (2026-05-12)
-- [Beatbot Pool-Cleaning Robots Are on Sale](https://www.wired.com/story/beatbot-deals-may-2026/) — Wired (2026-05-12)
-- [Riding an AI rally, Robinhood preps second retail venture IPO](https://techcrunch.com/2026/05/11/riding-an-ai-rally-robinhood-preps-second-retail-venture-ipo/) — TechCrunch AI (2026-05-12)
-- [Snack maker Calbee's packages go black and white amid Iran war ink crunch](https://asia.nikkei.com/business/food-beverage/snack-maker-calbee-s-packages-go-black-and-white-amid-iran-war-ink-crunch) — Nikkei Asia (2026-05-12)
-- [Sportwagen: Mit 1080 PS unter freiem Himmel – Das kann der Lamborghini Fenomeno Roadster](https://www.handelsblatt.com/mobilitaet/motor/lamborghini-fenomeno-mit-1080-ps-unter-freiem-himmel-das-kann-der-super-roadster/100224399.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Infostealer auf KI-Plattform Hugging Face tarnt sich als OpenAI-Repository](https://www.heise.de/news/Infostealer-auf-KI-Plattform-Hugging-Face-tarnt-sich-als-OpenAI-Repository-11290607.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [heise+ | Raus aus der Wolke: So funktionieren Apples lokale KI-Modelle](https://www.heise.de/hintergrund/Raus-aus-der-Wolke-So-funktionieren-Apples-lokale-KI-Modelle-11280126.html?wt_mc=rss.red.ho.ho.atom.beitrag_plus.beitrag_plus) — Heise Online (2026-05-12)
-- [Node.js: Abermals Ausbruch aus vm2-Sandbox möglich](https://www.heise.de/news/Node-js-Abermals-Ausbruch-aus-vm2-Sandbox-moeglich-11290901.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Canvys Expands 4K Display Platform for Medical Applications with New 32-Inch Monitor](https://www.eejournal.com/industry_news/canvys-expands-4k-display-platform-for-medical-applications-with-new-32-inch-monitor/) — EE Journal (2026-05-11)
-- [Exiting OPEC, UAE seeks greater flexibility and growth led by its own oil](https://asia.nikkei.com/opinion/exiting-opec-uae-seeks-greater-flexibility-and-growth-led-by-its-own-oil) — Nikkei Asia (2026-05-12)
-- [Rise of Anthropic's Mythos spurs Japan to bolster cybersecurity on infrastructure](https://asia.nikkei.com/spotlight/cybersecurity/rise-of-anthropic-s-mythos-spurs-japan-to-bolster-cybersecurity-on-infrastructure) — Nikkei Asia (2026-05-12)
-- [Helium tank and solvent shortages latest Iran war pain for tech suppliers](https://asia.nikkei.com/spotlight/supply-chain/helium-tank-and-solvent-shortages-latest-iran-war-pain-for-tech-suppliers2) — Nikkei Asia (2026-05-12)
-- [The Download: the hantavirus outbreak and Musk v. Altman week 2](https://www.technologyreview.com/2026/05/11/1137031/the-download-hantavirus-outbreak-musk-altman-trial/) — MIT Technology Review (2026-05-11)
-- [Dienstag: Rechtsstreit zwischen Shein und Temu, Schweiz gegen US-Cloud-Dominanz](https://www.heise.de/news/Dienstag-Rechtsstreit-zwischen-Shein-und-Temu-Schweiz-gegen-US-Cloud-Dominanz-11290529.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Asian private equity fund MBK to acquire Japanese aluminum components maker](https://asia.nikkei.com/business/business-deals/asian-private-equity-fund-mbk-to-acquire-japanese-aluminum-components-maker) — Nikkei Asia (2026-05-12)
-- [Japan space startups to train engineers from India, Philippines, Indonesia](https://asia.nikkei.com/business/aerospace-defense-industries/japan-space-startups-to-train-engineers-from-india-philippines-indonesia) — Nikkei Asia (2026-05-12)
-- [Cybersicherheit: Jeder neunte Internetnutzer von Kriminalität betroffen](https://www.handelsblatt.com/technik/it-internet/cybersicherheit-jeder-neunte-internetnutzer-von-kriminalitaet-betroffen/100224039.html) — Handelsblatt Technologie (2026-05-11)
-- [香港快运将于5月16日起削减部分航班燃油附加费](https://36kr.com/newsflashes/3807355949801218?f=rss) — 36氪 36Kr (2026-05-13)
-- [摩根大通拟重组投行高管团队，开启大规模人事调整](https://36kr.com/newsflashes/3807342596890120?f=rss) — 36氪 36Kr (2026-05-13)
-- [Gmail: Erneut Probleme mit Exchange ActiveSync](https://www.heise.de/news/Gmail-Erneut-Probleme-mit-Exchange-ActiveSync-11289841.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [iOS 26.5, macOS 26.5 & Co. sind da: Das ist neu auf iPhones, iPads und Macs](https://www.heise.de/news/iOS-26-5-macOS-26-5-Co-sind-da-Das-ist-neu-auf-iPhones-iPads-und-Macs-11290421.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Lieferketten im Rampenlicht: Rechtsstreit zwischen Shein und Temu](https://www.heise.de/news/Lieferketten-im-Rampenlicht-Rechtsstreit-zwischen-Shein-und-Temu-11290479.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Anonymisierendes Linux Tails: Notfallupdate 7.7.3 fixt DirtyFrag-Lücke](https://www.heise.de/news/Anonymisierendes-Linux-Tails-Notfallupdate-7-7-3-fixt-DirtyFrag-Luecke-11290621.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Video: 2,5 Gbit/s – Unterschätzt eure alte Telefonleitung nicht!](https://www.heise.de/news/Video-2-5-Gbit-s-Unterschaetzt-eure-alte-Telefonleitung-nicht-11290671.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [VR-Spiele lassen sich jetzt mit Joy-Cons am Monitor spielen](https://www.heise.de/news/VR-Spiele-lassen-sich-jetzt-mit-Joy-Cons-am-Monitor-spielen-11290403.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Papa Johns Is Getting Into Drone Delivery—but Not for Pizza](https://www.wired.com/story/papa-johns-is-getting-into-drone-delivery-but-its-not-flying-pizza/) — Wired (2026-05-11)
-- [China's EcoFlow to sell solar panels in British supermarkets soon](https://asia.nikkei.com/business/energy/china-s-ecoflow-to-sell-solar-panels-in-british-supermarkets-soon) — Nikkei Asia (2026-05-12)
-- [Natural rubber prices soar on Iran tensions, boosting Asian suppliers](https://asia.nikkei.com/business/markets/trading-asia/natural-rubber-prices-soar-on-iran-tensions-boosting-asian-suppliers) — Nikkei Asia (2026-05-12)
-- [Alphabet set to issue its first yen-denominated bonds](https://asia.nikkei.com/business/technology/artificial-intelligence/alphabet-set-to-issue-its-first-yen-denominated-bonds) — Nikkei Asia (2026-05-12)
-- [Major Japanese university to avoid alternative assets in $3bn endowment](https://asia.nikkei.com/business/finance/major-japanese-university-to-avoid-alternative-assets-in-3bn-endowment) — Nikkei Asia (2026-05-12)
-- [Finanzen: Bafin warnt vor riskanten Immobilienkrediten und Cybergefahr](https://www.handelsblatt.com/technik/it-internet/finanzen-bafin-warnt-vor-riskanten-immobilienkrediten-und-cybergefahr/100224409.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Beratungen: So funktionieren Aufstieg und Einfluss bei den Big Four 2026](https://www.handelsblatt.com/karriere/big-four-im-wandel-was-es-2026-braucht-um-top-berater-zu-werden-19-04/100179879.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [The case for a proactive CRM engagement platform](https://www.autonews.com/sponsored/publishing-partners/an-case-for-proactive-crm-engagement-platform/) — Automotive News (2026-05-11)
-- [F&I sales growth: how dealers can drive profit beyond the sale](https://www.autonews.com/sponsored/executive-insights/an-best-practices-for-boosting-increasingly-vital-fi-sales/) — Automotive News (2026-05-11)
-- [Extended auto loans bring buyers back sooner — but with tougher equity gaps to bridge](https://www.autonews.com/retail/finance-insurance/an-jd-power-84-month-loans-0511/) — Automotive News (2026-05-11)
-- [How the Automotive News Leadership Academy taught me to focus on my strengths](https://www.autonews.com/video/how-the-automotive-news-leadership-academy-taught-me-to-focus-on-my-strengths/) — Automotive News (2026-05-11)
-- [Innovation abounds in device charging](https://www.technologyreview.com/2026/05/11/1136406/innovation-abounds-in-device-charging/) — MIT Technology Review (2026-05-11)
-- [Judge calls $15K Land Rover export penalty unfair to consumers](https://www.autonews.com/retail/anc-jaguar-land-rover-export-penalty-overturned-0512/) — Automotive News (2026-05-12)
-- [„Directive 8020“ angespielt: Tod im All](https://www.heise.de/tests/Directive-8020-angespielt-Tod-im-All-11288289.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Huawei Watch Fit 5 im Test: Vom Fitnesstracker zur starken Sportuhr](https://www.heise.de/bestenlisten/testbericht/huawei-watch-fit-5-im-test-vom-fitnesstracker-zur-starken-sportuhr/g5qj40x?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [PC-Selbstbau: Markt steht vor einem massiven Einbruch](https://www.heise.de/news/Einbruch-auf-ganzer-Linie-Mainboard-Hersteller-rechnen-mit-starkem-Rueckgang-11290387.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [Top 7: Die beste Kompressor-Kühlbox im Test](https://www.heise.de/bestenlisten/testsieger/top-7-die-beste-kompressor-kuehlbox-im-test-anker-solix-vor-ecoflow-und-dometic/8jwmngt?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-11)
-- [heise-Angebot: iX-Workshop: Active Directory hacken und schützen](https://www.heise.de/news/iX-Workshop-Active-Directory-hacken-und-schuetzen-11280076.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [„Forza Horizon 6“: Rennspiel vor Release geleakt und gecrackt](https://www.heise.de/news/Forza-Horizon-6-Rennspiel-vor-Release-geleakt-11290585.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [USB-Adapter bringt klassische SNES-Spiele auf moderne Computer und Handhelds](https://www.heise.de/news/USB-Adapter-bringt-klassische-SNES-Spiele-auf-moderne-Computer-und-Handhelds-11290961.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Überraschender Fund nach Vulkanausbruch: Methan wurde direkt wieder abgebaut](https://www.heise.de/news/Ueberraschender-Fund-nach-Vulkanausbruch-Methan-wurde-direkt-wieder-abgebaut-11290911.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Pi-hole-Update schließt dnsmasq-Sicherheitslücken](https://www.heise.de/news/Pi-hole-Update-schliesst-dnsmasq-Sicherheitsluecken-11291003.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
-- [Keyboard Shortcuts I Learned From My Cat](https://www.wired.com/story/keyboard-shortcuts-i-learned-from-my-cat/) — Wired (2026-05-11)
-- [There’s an Unhinged New Video Game About Trump and the Iran War](https://www.wired.com/story/video-game-trump-iran-war/) — Wired (2026-05-11)
-- [Testing for ‘Bad Cholesterol’ Doesn’t Tell the Whole Story](https://www.wired.com/story/moving-beyond-bad-cholesterol-test/) — Wired (2026-05-11)
-- [30% Off Samsung Promo Code | May 2026](https://www.wired.com/story/samsung-promo-codes/) — Wired (2026-05-12)
-- [Priceline Promo Codes: 10% Off May 2026](https://www.wired.com/story/priceline-promo-code/) — Wired (2026-05-12)
-- [Paramount+ Coupon Codes and Deals for May 2026](https://www.wired.com/story/paramount-plus-coupon-code/) — Wired (2026-05-12)
-- [30% Off Canon Promo Codes | May 2026](https://www.wired.com/story/canon-promo-code/) — Wired (2026-05-12)
-- [Booking.com Promo Codes: 20% Off | May 2026](https://www.wired.com/story/booking-com-promo-code/) — Wired (2026-05-12)
-- [Chewy Promo Codes: $20 Off May 2026](https://www.wired.com/story/chewy-promo-code/) — Wired (2026-05-12)
-- [50% Off Home Depot Promo Codes | May 2026](https://www.wired.com/story/home-depot-promo-code/) — Wired (2026-05-12)
-- [Hoka Coupon Codes: 30% Off | May 2026](https://www.wired.com/story/hoka-coupon-code/) — Wired (2026-05-12)
-- [Nike Promo Codes and Discounts: 30% for May 2026](https://www.wired.com/story/nike-promo-code/) — Wired (2026-05-12)
-- [OnePlus Promo Code: $70 Off | 2026](https://www.wired.com/story/oneplus-promo-code/) — Wired (2026-05-12)
-- [What Happens When You Try to Treat OCD With Psilocybin](https://www.wired.com/story/book-excerpt-how-to-not-know-simone-stolzoff/) — Wired (2026-05-12)
-- [A Tale of Two Multimeters – Part 2: The Keithley 179 DMM and a journey to Aladdin’s Cave of Wonders](https://www.eejournal.com/article/a-tale-of-two-multimeters-part-2-the-keithley-179-dmm-and-a-journey-to-aladdins-cave-of-wonders/) — EE Journal (2026-05-11)
-- [IK Multimedia Announces TONEX ONE+, Adding Wireless Mobile Control via TONEX Control App and MIDI to Its Ultra-Compact Pedal](https://www.eejournal.com/industry_news/ik-multimedia-announces-tonex-one-adding-wireless-mobile-control-via-tonex-control-app-and-midi-to-its-ultra-compact-pedal/) — EE Journal (2026-05-11)
-- [Footloose in Ho Chi Minh City: 5 new-ish things to do in old Saigon](https://asia.nikkei.com/life-arts/life/destinations/footloose-in-ho-chi-minh-city-5-new-ish-things-to-do-in-old-saigon) — Nikkei Asia (2026-05-12)
-- [How Sony leveraged data to make the Demon Slayer film a hit](https://asia.nikkei.com/business/media-entertainment/how-sony-leveraged-data-to-make-the-demon-slayer-film-a-hit) — Nikkei Asia (2026-05-12)
-- [Trump visits China, vote on Sara Duterte impeachment, SoftBank earnings](https://asia.nikkei.com/spotlight/your-week-in-asia/trump-visits-china-vote-on-sara-duterte-impeachment-softbank-earnings) — Nikkei Asia (2026-05-12)
-- [Fiscal policy response to Iran war risks worsening inflation: BIS chief](https://asia.nikkei.com/editor-s-picks/interview/fiscal-policy-response-to-iran-war-risks-worsening-inflation-bis-chief) — Nikkei Asia (2026-05-12)
-- [North Korea reaps huge economic boost from Ukraine war](https://asia.nikkei.com/spotlight/north-korea-tensions/north-korea-reaps-huge-economic-boost-from-ukraine-war) — Nikkei Asia (2026-05-12)
-- [China confirms Trump visit to Beijing, setting up high-stakes summit](https://asia.nikkei.com/politics/international-relations/china-confirms-trump-visit-to-beijing-setting-up-high-stakes-summit) — Nikkei Asia (2026-05-12)
-- [Thailand's Thaksin Shinawatra released from prison after 8 months](https://asia.nikkei.com/politics/turbulent-thailand/thailand-s-thaksin-shinawatra-released-from-prison-after-8-months) — Nikkei Asia (2026-05-12)
-- [Indonesian state banks surge, private rivals sag over Prabowo's policies](https://asia.nikkei.com/business/finance/indonesian-state-banks-surge-private-rivals-sag-over-prabowo-s-policies) — Nikkei Asia (2026-05-12)
-- [Philippine rice farmers bear brunt of expensive fuel and El Nino](https://asia.nikkei.com/spotlight/iran-tensions/iran-war/philippine-rice-farmers-bear-brunt-of-expensive-fuel-and-el-nino) — Nikkei Asia (2026-05-12)
-- [Philippine lawmakers vote overwhelmingly to impeach VP Sara Duterte](https://asia.nikkei.com/politics/philippine-lawmakers-vote-overwhelmingly-to-impeach-vp-sara-duterte) — Nikkei Asia (2026-05-12)
-- [Japan developers warn of risk for new condo delays due to Iran war](https://asia.nikkei.com/business/markets/property/japan-developers-warn-of-risk-for-new-condo-delays-due-to-iran-war) — Nikkei Asia (2026-05-12)
-- [Panama Canal oil shipments soar 70% as Asian buyers turn to US crude](https://asia.nikkei.com/business/transportation/panama-canal-oil-shipments-soar-70-as-asian-buyers-turn-to-us-crude) — Nikkei Asia (2026-05-12)
-- [Sony to buy music catalog from Blackstone with Singapore's GIC](https://asia.nikkei.com/business/business-deals/sony-to-buy-music-catalog-from-blackstone-with-singapore-s-gic) — Nikkei Asia (2026-05-12)
-- [From stigma to listing: F88 brings Vietnam pawnshops into the mainstream](https://asia.nikkei.com/spotlight/asean-money/from-stigma-to-listing-f88-brings-vietnam-pawnshops-into-the-mainstream) — Nikkei Asia (2026-05-12)
-- [ICC confirms arrest warrant issued for Duterte ally over drug war](https://asia.nikkei.com/spotlight/society/crime/icc-confirms-arrest-warrant-issued-for-duterte-ally-over-drug-war) — Nikkei Asia (2026-05-12)
-- [Japanese expats being sent home from Thailand as employers cut costs](https://asia.nikkei.com/economy/japanese-expats-being-sent-home-from-thailand-as-employers-cut-costs) — Nikkei Asia (2026-05-12)
-- [Chinese rare-earth miners bullish ahead of Trump-Xi summit](https://asia.nikkei.com/business/materials/chinese-rare-earth-miners-bullish-ahead-of-trump-xi-summit) — Nikkei Asia (2026-05-12)
-- [Bond yields jump in Japan and South Korea as US-Iran talks snag](https://asia.nikkei.com/business/markets/bond-yields-jump-in-japan-and-south-korea-as-us-iran-talks-snag) — Nikkei Asia (2026-05-12)
-- [Private equity firm EQT to buy Japan restaurant review operator for $3.7bn](https://asia.nikkei.com/business/business-deals/private-equity-firm-eqt-to-buy-japan-restaurant-review-operator-for-3.7bn) — Nikkei Asia (2026-05-12)
-- [Karriere: Plötzlich arbeitslos – wie Manager auf ihre Kündigung reagieren sollten](https://www.handelsblatt.com/karriere/kuendigung-experte-raet-wie-fuehrungskraefte-im-krisenfall-reagieren-sollen/100184083.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Folge des Nahost-Kriegs: Inflation steigt auf höchsten Stand seit Januar 2024](https://www.handelsblatt.com/politik/deutschland/folge-des-nahost-kriegs-inflation-steigt-auf-hoechsten-stand-seit-januar-2024/100224376.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Staatsverschuldung: Ökonomen warnen: Klingbeils Haushaltspläne verstoßen gegen EU-Schuldenregeln](https://www.handelsblatt.com/politik/deutschland/haushalt-oekonomen-warnen-klingbeil-vor-verstoss-gegen-eu-schuldenregeln-01/100224031.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Infos vom Verfassungsschutz: Antisemitische Symbole erkennen - Veröffentlichungen des BfV](https://www.handelsblatt.com/politik/deutschland/infos-vom-verfassungsschutz-antisemitische-symbole-erkennen-veroeffentlichungen-des-bfv/100224408.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [DGB: Merz fordert beim DGB-Bundeskongress eine Kraftanstrengung und wird ausgebuht](https://www.handelsblatt.com/politik/deutschland/dgb-bundeskongress-merz-fordert-kraftanstrengung-und-wird-ausgebuht/100224402.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Asyl: Weniger Schutzsuchende in Deutschland](https://www.handelsblatt.com/politik/deutschland/asyl-weniger-schutzsuchende-in-deutschland/100224394.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Arne Freundt: Ehemaliger Puma-Chef startet bei Bogner](https://www.handelsblatt.com/unternehmen/handel-konsumgueter/arne-freundt-ehemaliger-puma-chef-startet-bei-bogner/100224416.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Unruheregion: Behördenvertreter: Neun Tote nach Explosion in Pakistan](https://www.handelsblatt.com/politik/international/unruheregion-behoerdenvertreter-neun-tote-nach-explosion-in-pakistan/100224396.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [FIRE-Bewegung: Wer finanziell frei werden will, sollte auf diese sechs Punkte achten](https://www.handelsblatt.com/finanzen/anlagestrategie/fire-so-koennen-sie-fehler-vermeiden-und-ihren-traum-der-fruehen-rente-erfuellen/100164519.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Friendflation: Warum Geld in Beziehungen relevanter wird](https://www.handelsblatt.com/finanzen/friendflation-warum-heute-immer-mehr-freundschaften-am-geld-scheitern/100154689.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Drohender Jobverlust: Vorsicht, Falle! Wie Führungskräfte ihre schleichende Degradierung erkennen – und gegensteuern](https://www.handelsblatt.com/karriere/kuendigung-erkennen-warnsignale-und-gegenmassnahmen-fuer-manager/100173417.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [USA: Supreme Court erlaubt Republikanern umstrittene Wahlkreiszuschnitte](https://www.handelsblatt.com/video/politik/usa-supreme-court-erlaubt-republikanern-umstrittene-wahlkreiszuschnitte/100224429.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Iran-Krieg: Trump: Waffenruhe „hängt am seidenen Faden“](https://www.handelsblatt.com/video/politik/iran-krieg-trump-waffenruhe-haengt-am-seidenen-faden/100224436.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Großbritannien: Labour-Abgeordnete fordern Rücktritt von Premierminister Keir Starmer](https://www.handelsblatt.com/video/politik/grossbritannien-labour-abgeordnete-fordern-ruecktritt-von-premierminister-keir-starmer/100224435.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Resilienz: Die Tricks der Top-Manager für Stress und Krisen: „In diesem Moment wird Ihre Leistung bis zu 25 Prozent besser“](https://www.handelsblatt.com/karriere/fuehrungskraefte-wie-topmanager-am-besten-mit-druck-und-stress-umgehen/100167396.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Lufthansa: Airline will ITA Airways im Juni ganz übernehmen](https://www.handelsblatt.com/unternehmen/dienstleister/lufthansa-airline-will-ita-airways-im-juni-ganz-uebernehmen/100224437.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Reichtum: „Am oberen Ende der Vermögensverteilung verschwindet die Einkommensteuer fast vollständig“](https://www.handelsblatt.com/politik/konjunktur/reichtum-warum-eine-mindeststeuer-superreiche-fair-besteuern-koennte/100188438.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Rücktrittsforderungen: Britischer Premierminister Starmer will im Amt bleiben](https://www.handelsblatt.com/politik/international/ruecktrittsforderungen-britischer-premierminister-starmer-will-im-amt-bleiben/100224451.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Krise in London: Trotz Rücktrittsforderungen: Britischer Premier Starmer will im Amt bleiben](https://www.handelsblatt.com/politik/international/grossbritannien-britischer-premier-starmer-will-im-amt-bleiben/100224264.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [+++ Geschäftszahlen +++: Uniper schreibt im Quartal Gewinn – Prognose steht](https://www.handelsblatt.com/unternehmen/industrie/geschaeftszahlen-newsblog-uniper-schreibt-im-quartal-gewinn-prognose-steht/24098412.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Interview: „Ich rate niemandem dazu, Stress zu vermeiden“](https://www.handelsblatt.com/karriere/hirnforscher-wie-gelingt-der-richtige-umgang-mit-stress/100184636.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Immobilien: Steigender Bedarf durch Migration – fünf Grafiken zeigen Ursachen und Folgen der Wohnungsnot](https://www.handelsblatt.com/politik/deutschland/immobilien-verteilungskonflikte-um-wohnraum-nehmen-zu/100222513.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Schnelles Sparen: Ein Euro kommt zum anderen: Geldfresser im Alltag aufspüren](https://www.handelsblatt.com/finanzen/steuern-recht/schnelles-sparen-ein-euro-kommt-zum-anderen-geldfresser-im-alltag-aufspueren/100224467.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Landgericht Verden: Klette-Prozess: Nebenklage fordert elf Jahre Haft](https://www.handelsblatt.com/politik/deutschland/landgericht-verden-klette-prozess-nebenklage-fordert-elf-jahre-haft/100224466.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Lage im Überblick: Trump zweifelt an Waffenruhe - angespanntes Warten im Iran](https://www.handelsblatt.com/politik/international/lage-im-ueberblick-trump-zweifelt-an-waffenruhe-angespanntes-warten-im-iran/100224308.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [TGI: „Jetzt ist Schluss mit lustig“: Goldhändler Kaltenegger droht Kritikern](https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/gold-schluss-mit-lustig-tgi-goldhaendler-kaltenegger-droht-kritikern/100224085.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Pharmabranche: Bayer übertrifft dank Agrarsparte die Prognosen deutlich – Aktie legt zu](https://www.handelsblatt.com/unternehmen/industrie/bayer-konzern-uebertrifft-dank-agrarsparte-die-prognosen-deutlich/100222492.html) — Handelsblatt Schlagzeilen (2026-05-12)
-- [Rechtsstreit: Sängerin Dua Lipa verklagt Samsung wegen Werbung für TV-Geräte](https://www.handelsblatt.com/technik/it-internet/rechtsstreit-saengerin-dua-lipa-verklagt-samsung-wegen-werbung-fuer-tv-geraete/100224104.html) — Handelsblatt Technologie (2026-05-11)
-- [Fast and Furious TV Show Confirmed, and Vin Diesel Is Involved](https://www.thedrive.com/news/fast-and-furious-tv-show-confirmed-and-vin-diesel-is-involved) — The Drive (2026-05-11)
-- [Survey Sunday: How much home battery backup do YOU need?](https://electrek.co/2026/05/10/survey-sunday-how-much-home-battery-backup-do-you-need/) — Electrek (2026-05-11)
-- [Velotric GoMad smart utility e-bike bundle deals from $2,125, Anker SOLIX 3,840Wh F3800 power station $1,709 low, EcoFlow, more](https://electrek.co/2026/05/11/velotric-gomad-smart-utility-e-bike-anker-solix-3840wh-f3800-power-station-ecoflow-more/) — Electrek (2026-05-11)
-- [Kia dealership denies wrongdoing in Truth in Lending Act lawsuit](https://www.autonews.com/retail/finance-insurance/an-truth-in-lending-act-lawsuit-0512/) — Automotive News (2026-05-11)
-- [Daily 5 report for May 11: ‘As a woman, I am intimately aware of the amount of pressure there is to be perfect’](https://www.autonews.com/newsletters/daily-5/an-daily-5-intro-cliftonstrengths-0511/) — Automotive News (2026-05-11)
-- [Why Mastering EVM Is Essential for Next-Generation Wireless Systems](https://content.knowledgehub.wiley.com/understanding-evm-error-vector-magnitude-in-modern-wireless-communications/) — IEEE Spectrum (2026-05-11)
-- [Energiekrise in Indien: Modi mahnt zu Sparsamkeit und lokalem Konsum](https://www.heise.de/news/Energiekrise-Indiens-Regierungschef-mahnt-zu-Spritsparen-und-Homeoffice-11290879.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) — Heise Online (2026-05-12)
 
 ---
 
-## 9. Skill Gap Analysis
+## Skill Gap Analysis
 
 _(See HTML version for full table.)_
 
 ---
 
-_Career Intelligence Assistant · rule-based classifier v1_
+_Career Intelligence Assistant · external_transition mode_
 _Human review required before changing career direction. Not financial advice._
