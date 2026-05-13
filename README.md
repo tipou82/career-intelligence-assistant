@@ -129,7 +129,7 @@ python -m src.main send-email                  # send HTML report via Gmail SMTP
 python -m src.main send-email --week last      # send last week's report
 
 # ── Analysis ───────────────────────────────────────────────────
-python -m src.main qualifications              # qualification recommendations (Xi Liu)
+python -m src.main qualifications              # qualification recommendations (config/qualification_actions.yaml)
 python -m src.main skill-gap                   # CV self-ratings vs job market demand
 python -m src.main status                      # database stats + job demand summary
 ```
@@ -147,7 +147,7 @@ The qualification layer recommends targeted qualification actions for a specific
 **1. Fill in the candidate profile** in `config/qualification_actions.yaml`:
 ```yaml
 qualification_strategy:
-  target_person: "Xi Liu"
+  target_person: "Erika Mustermann"
   weekly_hours_cap: 8
   candidate_profile:
     language_levels:
@@ -459,4 +459,4 @@ pytest tests/ -v
 
 ---
 
-_Built as a personal career decision-support tool. Not affiliated with Bosch or any other company listed._
+_Built as a personal career decision-support tool. Not affiliated with any company listed._

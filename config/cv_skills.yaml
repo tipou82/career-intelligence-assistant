@@ -18,7 +18,7 @@ profile:
   target_positioning: >
     Senior System Safety / Functional Safety Architect for safety-critical embedded
     systems, robotics, ADAS, industrial automation, and AI-enabled systems.
-  current_employer: "Bosch (Bosch Drehscheibe — active, external transition)"
+  current_employer: "[current employer]"
   target_roles:
     - "Functional Safety Architect (automotive / robotics / automation)"
     - "System Safety Engineer — senior / lead"
@@ -34,7 +34,7 @@ skills:
     self_rating: 8
     cv_claimed: true
     evidence: >
-      Bosch project experience: developed safety concepts, safety requirements,
+      [Employer] project experience: developed safety concepts, safety requirements,
       safety mechanisms, and technical safety concepts for embedded automotive
       platforms. Led architecture trade-off decisions including ASIL decomposition,
       safety mechanism selection, and cross-system safety argument construction.
@@ -48,12 +48,12 @@ skills:
     self_rating: 8
     cv_claimed: true
     evidence: >
-      Extensive Bosch experience writing safety requirements at system and
+      Extensive [employer] experience writing safety requirements at system and
       subsystem level. Familiar with requirements traceability from safety goals
       down to implementation tests. Used in-house tooling for requirements
       management and impact analysis.
     limitations: >
-      Tooling experience is mostly in Bosch-internal tools (DOORS variants).
+      Tooling experience is mostly in [employer]-internal tools (DOORS variants).
       Less experience with DOORS NG / Jama / Polarion as independent tools.
       Agile-style requirements (user stories with safety) is an area to develop.
 
@@ -61,12 +61,12 @@ skills:
     self_rating: 7
     cv_claimed: true
     evidence: >
-      Practical MBSE experience at Bosch: system architecture modelling,
+      Practical MBSE experience at [employer]: system architecture modelling,
       interface definition, and requirements traceability using model-based
       approaches. Familiar with SysML block definitions, activity diagrams,
       state machines, and interface tables.
     limitations: >
-      Primary tooling experience is Bosch-internal. Less experience with Capella
+      Primary tooling experience is [employer]-internal. Less experience with Capella
       or open-source SysML2 tools. Textual SysML2 is new — portfolio work in
       progress with Mermaid diagrams as an entry point.
 
@@ -195,7 +195,7 @@ skills:
     evidence: >
       Experienced professional communicator in German (native) and English
       (proficient). Proven ability to present safety architecture decisions to
-      technical and management audiences at Bosch. Can structure STAR-format
+      technical and management audiences at [employer]. Can structure STAR-format
       interview stories.
     limitations: >
       Interview story preparation for external market is still in progress.
@@ -203,13 +203,13 @@ skills:
       safety concept process", and "how do you handle disagreement with a
       safety assessor". Japanese business level is beginner only.
 
-  # ── Additional Bosch context skills (not in skill_matrix but relevant) ────
+  # ── Additional [employer] context skills (not in skill_matrix but relevant) ────
 
   - name: "ISO 26262"
     self_rating: 8
     cv_claimed: true
     evidence: >
-      Primary professional expertise from Bosch automotive projects.
+      Primary professional expertise from [employer] automotive projects.
       Covered: HARA, FSC, TSC, safety requirements, safety mechanisms,
       safety analyses, confirmation measures, and safety case construction.
     limitations: >
@@ -222,7 +222,7 @@ skills:
     cv_claimed: false
     evidence: >
       German: native-level professional. English: proficient (working language
-      in international Bosch teams). Japanese: beginner — can handle basic
+      in international [employer] teams). Japanese: beginner — can handle basic
       business introductions and simple email context.
     limitations: >
       Japanese is not sufficient for technical safety discussions. Bosch Japan

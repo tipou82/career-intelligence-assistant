@@ -39,7 +39,7 @@
 # ────────────────────────────────────────────────────────────────────────────
 
 qualification_strategy:
-  target_person: "Xi Liu"
+  target_person: "Erika Mustermann"
   weekly_hours_cap: 8      # sustainable weekly time budget for qualification
   currency: "EUR"
 
@@ -58,10 +58,10 @@ qualification_strategy:
     - "Distinguish clearly between certificate (proof of learning) and experience (proof of doing)."
 
   # ──────────────────────────────────────────────────────────────────────────
-  # CANDIDATE PROFILE — fill in Xi Liu's actual background here
+  # CANDIDATE PROFILE — fill in Erika Mustermann's actual background here
   # ──────────────────────────────────────────────────────────────────────────
   candidate_profile:
-    name: "Xi Liu"
+    name: "Erika Mustermann"
     nationality: "Chinese"
     current_location: "Germany"
     highest_education: "Bachelor or Master — specify field"   # UPDATE THIS
@@ -84,7 +84,7 @@ qualification_strategy:
       # Add more gaps here as you discover them from job rejections
 
   # ──────────────────────────────────────────────────────────────────────────
-  # TARGET ROLES — list the actual roles Xi Liu is applying for or targeting
+  # TARGET ROLES — list the actual roles Erika Mustermann is applying for or targeting
   # ──────────────────────────────────────────────────────────────────────────
   target_roles:
     - title: "UPDATE — e.g. Office Manager"
@@ -102,7 +102,7 @@ qualification_strategy:
 # ────────────────────────────────────────────────────────────────────────────
 # QUALIFICATION ACTIONS
 # Each action is scored and classified automatically.
-# Update profile_gap_score when Xi Liu's actual gaps are known.
+# Update profile_gap_score when Erika Mustermann's actual gaps are known.
 # ────────────────────────────────────────────────────────────────────────────
 
 qualification_actions:
@@ -296,7 +296,7 @@ qualification_actions:
       cost_time_penalty:   0.20
     profile_gap_addressed: "Foreign degree unrecognised in Germany; reduces credibility for professional roles"
     recommended_action: >
-      Check anabin.kmk.org for recognition status of Xi Liu's degree.
+      Check anabin.kmk.org for recognition status of Erika Mustermann's degree.
       Apply for recognition via Kultusministerkonferenz (KMK) or relevant authority.
       For non-regulated professions: get certified translation + have employer confirm equivalence.
       Contact Make it in Germany (make-it-in-germany.com) for free guidance.
@@ -393,7 +393,7 @@ qualification_actions:
     reason_for_deferral_if_any: >
       Too broad for the current employment goal. Unless specific tech roles are
       targeted, this investment will not produce the expected return.
-      Only pursue if Xi Liu transitions to data or tech roles with a clear job target.
+      Only pursue if Erika Mustermann transitions to data or tech roles with a clear job target.
 
   - id: "ielts_toefl"
     name: "IELTS or TOEFL certificate"
