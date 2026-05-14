@@ -238,7 +238,7 @@ _JOB_AD_TITLE_SUBSTRINGS = (
     "stellenausschreibung", "lehrauftrag",
     "anzeige: it-jobs",
 )
-_JOB_AD_SOURCE_PREFIXES = ("gnews stepstone",)
+_JOB_AD_SOURCE_PREFIXES = ("gnews stepstone", "gnews zeit stellenmarkt", "gnews nmz stellenmarkt")
 _JOB_AD_SUCHT_WORDS = (
     "projektmanager", "leiter", "koordinator", "referent",
     "engineer", "ingenieur", "entwickler", "developer",
